@@ -127,6 +127,7 @@ sup.ref a {
 }
 .rel .kind { color: var(--accent); font-size: 12px; margin-left: 6px; }
 .rel .dir { color: var(--muted); font-size: 11px; margin-left: 6px; }
+.rel:hover, .rel:hover * { text-decoration: none; }
 
 /* 来源 */
 .sources { list-style: none; padding: 0; margin: 0; font-size: 14px; }
@@ -159,6 +160,9 @@ button.chip[aria-pressed="true"] { background: var(--accent); border-color: var(
   box-shadow: 0 1px 2px rgba(28, 26, 23, .04);
 }
 .card:hover { border-color: var(--accent); box-shadow: 0 4px 16px rgba(28, 26, 23, .08); transform: translateY(-2px); }
+/* 卡片是容器型链接：悬停整块不再画下划线，只给标题一条 */
+.card:hover, .card:hover * { text-decoration: none; }
+.card:hover .name { text-decoration: none; }
 .card .name { font-family: var(--serif); font-size: 20px; }
 .card .alias { color: var(--muted); font-size: 12px; margin-left: 6px; }
 .card .desc { color: var(--muted); font-size: 13px; margin-top: 6px; line-height: 1.6; }

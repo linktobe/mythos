@@ -6,7 +6,7 @@ interface Props {
   description?: string;
 }
 
-const { title, description = '神话人物图鉴：以原典为主干的中文词条与关系图谱。' } = Astro.props;
+const { title, description = '北欧诸神的中文词条，每段故事都注了出处。' } = Astro.props;
 const path = Astro.url.pathname;
 const active = (p: string) => (p === '/' ? path === '/' : path.startsWith(p));
 ---

@@ -99,6 +99,16 @@ const Entry = z.object({
     )
     .default([]),
   legacy: z.array(z.string()).default([]),
+  adaptations: z
+    .array(
+      z.object({
+        work: z.string().min(4),
+        kind: z.enum(['电影', '剧集', '游戏', '小说', '动画']).default('电影'),
+        portrayal: z.string().min(10),
+        divergences: z.array(z.string().min(6)).min(1),
+      })
+    )
+    .default([]),
 });
 
 /* ---------- 读取词条 ---------- */

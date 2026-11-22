@@ -152,6 +152,27 @@ const isT1Only = (refs: string[]) => refs.every((id) => srcById.get(id)?.tier ==
       </>
     )}
 
+    {entry.adaptations.length > 0 && (
+      <>
+        <h2>改编形象对照</h2>
+        {entry.adaptations.map((a) => (
+          <div class="adapt">
+            <div class="adapt-head">
+              <span class="adapt-work">{a.work}</span>
+              <span class="adapt-kind">{a.kind}</span>
+            </div>
+            <p class="adapt-portray">{a.portrayal}</p>
+            <div class="adapt-diff">
+              <span class="adapt-label">与原典的出入</span>
+              <ul>
+                {a.divergences.map((d) => <li>{d}</li>)}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </>
+    )}
+
     <h2>引用来源</h2>
     <ol class="sources">
       {usedRefs.map((id) => {

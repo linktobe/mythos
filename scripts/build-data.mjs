@@ -72,6 +72,7 @@ const IdentityAxis = z.array(AxisItem).min(1);
 const Entry = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/, 'id 只能是小写字母、数字、连字符'),
   pantheon: z.string(),
+  entity_type: z.enum(['神祇', '巨人', '异兽', '器物', '群体']).default('神祇'),
   name: z.string().min(1),
   aliases: z.array(z.string()).default([]),
   summary: z.string().min(1),

@@ -1,0 +1,36 @@
+id: valkyries
+pantheon: norse
+name: 女武神
+aliases: [Valkyries, 瓦尔基里]
+entity_type: 群体
+summary: 奥丁的侍女，在战场上拣选战死者，送往英灵殿。
+role:
+  title: "战死者的挑选者"
+  brief: "她们决定谁倒在战场上、谁被带往英灵殿，平日在殿中为英灵奉酒。诸神黄昏的兵力，由她们一手挑选而成。"
+identity:
+  lineage:
+    - { id: aesir, note: 多为其侍从 }
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard, note: 英灵殿 }
+narrative:
+  - text: "「女武神」一词意为「挑选战死者的人」。她们在战场上决定谁该死、谁该被带往英灵殿。"
+    refs: [grimnismal]
+  - text: "《格里姆尼尔之歌》列举其名，如 Skuld、Skögul、Hildr 等，数目与名目诸书不一；她们的日常职责之一，是在英灵殿中为英灵奉酒。"
+    refs: [grimnismal, gylfaginning]
+variants:
+  - claim: "女武神的数目与名单各家记载不同，《格里姆尼尔之歌》所列与《诗语》所举并不一致。"
+    refs: [grimnismal, skaldskaparmal]
+relations:
+  - { target: odin, kind: 从属, detail: 奉其命拣选战死者, refs: [grimnismal] }
+legacy:
+  - 瓦格纳《尼伯龙根的指环》中的布伦希尔德即取材于女武神；漫威《雷神3》另设「瓦尔基里」一角。
+adaptations:
+  - work: "漫威电影宇宙《雷神3：诸神黄昏》（2017）"
+    kind: 电影
+    portrayal: "阿斯加德的女战士军团，被海拉屠杀殆尽；仅存的瓦尔基里（布伦希尔德）酗酒流落萨卡星，后随托尔归来。"
+    divergences:
+      - "原典中女武神是群体、是奥丁的侍女，负责在战场拣选战死者；MCU 把她们写成阿斯加德的常规军队。"
+      - "原典的核心职能是「挑选谁进英灵殿」；MCU 完全没有这层宗教含义。"
+      - "原典中布伦希尔德是独立的女武神形象；MCU 把她压缩成「最后一个幸存者」的叙事。"

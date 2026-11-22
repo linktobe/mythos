@@ -68,6 +68,7 @@ const tagOf = (axis, id) => vocabIndex[axis]?.get(id)?.zh ?? id;
           </div>
           <div class="desc">{e.summary}</div>
           <div class="tags">
+            {e.entity_type !== '神祇' && <span class="tag-type">{e.entity_type}</span>}
             <span class="tag-role">{e.role.title}</span>
             {e.identity.lineage.slice(0, 1).map((x) => <span>{tagOf('lineage', x.id)}</span>)}
             {e.identity.realm.slice(0, 1).map((x) => <span>{tagOf('realm', x.id)}</span>)}

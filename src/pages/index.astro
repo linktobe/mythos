@@ -53,9 +53,10 @@ const tagOf = (axis, id) => vocabIndex[axis]?.get(id)?.zh ?? id;
     </section>
 
     <section class="cards" id="cards">
-      {entries.map((e) => (
+      {entries.map((e, i) => (
         <a
-          class="card"
+          class="card reveal"
+          style={`--d:${i * 45}ms`}
           href={`/shen/${e.id}`}
           data-lineage={e.identity.lineage.map((x) => x.id).join(' ')}
           data-camp={e.identity.camp.map((x) => x.id).join(' ')}

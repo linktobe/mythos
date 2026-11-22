@@ -58,12 +58,12 @@ const isT1Only = (refs: string[]) => refs.every((id) => srcById.get(id)?.tier ==
 
 <Base title={`${entry.name} · 神话图鉴`} description={entry.summary}>
   <div class="wrap">
-    <header class="entry-head">
+    <header class="entry-head reveal">
       <h1>{entry.name}</h1>
       {entry.aliases.length > 0 && <p class="aliases">又称：{entry.aliases.join(' · ')}</p>}
       <p class="summary">{entry.summary}</p>
 
-      <div class="role">
+      <div class="role reveal">
         <span class="role-label">角色</span>
         <div class="role-body">
           <strong>{entry.role.title}</strong>
@@ -110,7 +110,7 @@ const isT1Only = (refs: string[]) => refs.every((id) => srcById.get(id)?.tier ==
       <>
         <h2>异文</h2>
         {entry.variants.map((v) => (
-          <div class="variant">
+          <div class="variant reveal">
             <span class="tag">版本差异</span>
             <div>
               {v.claim}
@@ -156,7 +156,7 @@ const isT1Only = (refs: string[]) => refs.every((id) => srcById.get(id)?.tier ==
       <>
         <h2>改编形象对照</h2>
         {entry.adaptations.map((a) => (
-          <div class="adapt">
+          <div class="adapt reveal">
             <div class="adapt-head">
               <span class="adapt-work">{a.work}</span>
               <span class="adapt-kind">{a.kind}</span>

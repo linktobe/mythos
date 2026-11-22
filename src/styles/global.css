@@ -59,7 +59,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- 标题 ---------- */
 h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.35; }
-h1 { font-size: 40px; margin: 0 0 8px; letter-spacing: 0.06em; }
+h1 { font-size: clamp(26px, 4.6vw, 40px); margin: 0 0 8px; letter-spacing: 0.06em; }
 h2 {
   font-size: 15px; letter-spacing: 0.3em; color: var(--muted); font-weight: 400;
   margin: 56px 0 16px; padding-bottom: 10px; border-bottom: 1px solid var(--line);
@@ -239,3 +239,88 @@ button.chip[aria-pressed="true"] { background: var(--accent); border-color: var(
 }
 .adapt-diff ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 15px; }
 .adapt-diff li { margin-bottom: 6px; }
+
+/* ---------- 四级正典说明 ---------- */
+.tiers { list-style: none; margin: 18px 0 20px; padding: 0; display: grid; gap: 10px; }
+.tiers li {
+  display: grid; grid-template-columns: 42px 86px 1fr; gap: 12px; align-items: baseline;
+  border: 1px solid var(--line); border-radius: 12px; background: #fff; padding: 12px 16px;
+  box-shadow: 0 1px 2px rgba(28, 26, 23, .03);
+}
+.tier {
+  font-size: 11px; letter-spacing: .08em; border: 1px solid; border-radius: 5px;
+  padding: 1px 0; text-align: center; font-family: var(--sans);
+}
+.tier.t0 { color: var(--t0); border-color: var(--t0); }
+.tier.t1 { color: var(--muted); border-color: var(--muted); }
+.tier.t2 { color: #8a6a3a; border-color: #c9a76d; }
+.tier.t3 { color: #7a5a86; border-color: #b393bf; }
+.tier-name { font-family: var(--serif); font-size: 16px; letter-spacing: .04em; }
+.tier-desc { color: var(--muted); font-size: 14.5px; line-height: 1.7; }
+
+/* ---------- 过渡动画 ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  html { scroll-behavior: smooth; }
+
+  a, button, .chip, .rel, .card { transition: color .18s ease, border-color .18s ease, background-color .18s ease, transform .18s ease, box-shadow .18s ease; }
+
+  .site-head { animation: fade .45s ease both; }
+  .js .reveal { opacity: 0; }
+  /* 入场动画由载入脚本一次性触发，不做滚动拦截 */
+  .js .reveal.in { animation: rise .55s cubic-bezier(.2, .7, .3, 1) forwards; animation-delay: var(--d, 0ms); }
+  .graph-svg .node circle { transition: stroke .18s ease, fill .18s ease; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal { opacity: 1; }
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width: 900px) {
+  .wrap-wide { padding: 0 18px; }
+  .nav { gap: 16px; }
+}
+
+@media (max-width: 720px) {
+  body { font-size: 15.5px; }
+  .wrap, .wrap-wide { padding: 0 16px; }
+  .site-head .inner { padding: 14px 16px; gap: 12px; }
+  .nav { margin-left: 0; width: 100%; gap: 18px; font-size: 13.5px; }
+
+  .list-head, .entry-head { padding-top: 34px; }
+  .stats { gap: 16px; flex-wrap: wrap; }
+
+  .identity .axis { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .filter-row { flex-direction: column; align-items: flex-start; gap: 8px; }
+
+  .cards { grid-template-columns: 1fr; gap: 12px; }
+  .card { padding: 16px; }
+
+  .role { flex-direction: column; gap: 8px; padding: 16px; }
+  .adapt { padding: 16px; }
+  .tiers li { grid-template-columns: 40px 1fr; gap: 8px 12px; }
+  .tier-desc { grid-column: 1 / -1; }
+
+  /* 关系图在窄屏横向滚动，保证节点文字可读 */
+  .graph-wrap { overflow-x: auto; border-radius: 14px; }
+  .graph-svg { min-width: 640px; }
+  .legend { flex-wrap: wrap; gap: 10px; }
+
+  .sources li { font-size: 13.5px; }
+  h2 { margin-top: 40px; }
+}
+
+@media (max-width: 420px) {
+  h1 { font-size: 26px; }
+  .card .name { font-size: 18px; }
+  .chips { gap: 6px; }
+  .chip { font-size: 13px; padding: 3px 11px; }
+}

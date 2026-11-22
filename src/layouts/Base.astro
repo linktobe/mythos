@@ -19,6 +19,8 @@ const active = (p: string) => (p === '/' ? path === '/' : path.startsWith(p));
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="color-scheme" content="light" />
+    <script is:inline>document.documentElement.classList.add('js');</script>
+    <noscript><style>.reveal{opacity:1 !important;}</style></noscript>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23f7f3ec'/><text x='16' y='23' font-size='20' text-anchor='middle' fill='%239c3b2e' font-family='serif'>神</text></svg>" />
   </head>
   <body>
@@ -46,5 +48,13 @@ const active = (p: string) => (p === '/' ? path === '/' : path.startsWith(p));
         <p>代码 MIT · 词条文本 CC BY-SA 4.0 · 所引古典文本属公有领域</p>
       </div>
     </footer>
+    <script>
+      // 载入即入场：所有 .reveal 一次性加上 .in，由 CSS 的 --d 变量做错峰。
+      // 不做滚动触发——文本站常有深链接，内容不能因为没滚动就一直隐身。
+      const els = Array.from(document.querySelectorAll('.reveal'));
+      requestAnimationFrame(() => {
+        for (const el of els) el.classList.add('in');
+      });
+    </script>
   </body>
 </html>

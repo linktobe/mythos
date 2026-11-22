@@ -45,6 +45,15 @@ for (const r of entry.related) {
 }
 
 const labelOf = (axis: string, id: string) => vocabIndex[axis as 'lineage'].get(id);
+
+// 关系分组固定顺序，避免"血盟"排在"亲缘"前面这种随机感
+const KIND_ORDER = ['亲缘', '婚姻', '血盟', '敌对', '宿命', '从属', '师承', '化生', '同源'];
+const orderedGroups = [...groupMap.entries()].sort(
+  (a, b) => (KIND_ORDER.indexOf(a[0]) + 1 || 99) - (KIND_ORDER.indexOf(b[0]) + 1 || 99)
+);
+
+// 一段叙事若只挂 T1 来源，说明该情节在 T0 里没有，必须显性提示读者
+const isT1Only = (refs: string[]) => refs.every((id) => srcById.get(id)?.tier === 'T1');
 ---
 
 <Base title={`${entry.name} · 神话图鉴`} description={entry.summary}>
@@ -84,6 +93,7 @@ const labelOf = (axis: string, id: string) => vocabIndex[axis as 'lineage'].get(
           {p.refs.map((id) => (
             <sup class="ref"><a href={`#src-${id}`}>{refNo.get(id)}</a></sup>
           ))}
+          {isT1Only(p.refs) && <span class="tier-note">此段仅见 T1 汇编</span>}
         </p>
       ))}
     </div>
@@ -108,7 +118,7 @@ const labelOf = (axis: string, id: string) => vocabIndex[axis as 'lineage'].get(
     {groupMap.size > 0 && (
       <>
         <h2>关系</h2>
-        {[...groupMap.entries()].map(([kind, items]) => (
+        {orderedGroups.map(([kind, items]) => (
           <div class="rel-group">
             <h3>{kind}</h3>
             <div class="rel-list">

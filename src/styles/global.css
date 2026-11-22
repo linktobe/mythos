@@ -98,6 +98,15 @@ sup.ref a {
   padding: 0 1px; text-decoration: none;
 }
 
+/* 仅见 T1 汇编的提示：告诉读者这一段不是从 T0 原典来的 */
+.tier-note {
+  display: inline-block; margin-left: 8px; font-size: 11px;
+  letter-spacing: .08em; color: var(--muted);
+  border: 1px solid var(--line); border-radius: 2px; padding: 0 6px;
+  vertical-align: 2px;
+  font-family: var(--sans);
+}
+
 /* 异文 */
 .variant {
   background: var(--paper-2); border: 1px solid var(--line);

@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import data from '../generated/entities.json';
+
+const samples = data.entries.slice(0, 6);
+---
+
+<Base title="页面不存在 · 神话图鉴">
+  <div class="wrap" style="padding-top: 96px; padding-bottom: 96px;">
+    <h1>此处无词条</h1>
+    <p class="summary">这一页不在谱系里。可能是链接旧了，或者这位存在还没被收录。</p>
+
+    <h2>从这里继续</h2>
+    <div class="rel-list">
+      <a class="rel" href="/">全部词条</a>
+      <a class="rel" href="/tu/">关系图</a>
+      <a class="rel" href="/about/">编例</a>
+    </div>
+
+    <h2>随便看看</h2>
+    <div class="rel-list">
+      {samples.map((e) => <a class="rel" href={`/shen/${e.id}`}>{e.name}</a>)}
+    </div>
+  </div>
+</Base>

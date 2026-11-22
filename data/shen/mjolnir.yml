@@ -26,6 +26,8 @@ variants:
   - claim: "锤柄短一截的缘由见于《诗语》；《女巫的预言》只记末日中托尔杀蛇而亡，不及此锤来历。"
     refs: [skaldskaparmal, voluspa]
 relations:
+  - { target: sindri, kind: 从属, detail: 由其铸造, refs: [skaldskaparmal] }
+  - { target: brokkr, kind: 从属, detail: 由其鼓风助铸, refs: [skaldskaparmal] }
   - { target: thor, kind: 从属, detail: 为其兵器, refs: [skaldskaparmal] }
   - { target: jormungandr, kind: 敌对, detail: 末日以此击杀巨蟒, refs: [voluspa] }
   - { target: loki, kind: 敌对, detail: 曾设法阻其铸成, refs: [skaldskaparmal] }

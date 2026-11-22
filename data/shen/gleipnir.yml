@@ -1,7 +1,8 @@
 id: gleipnir
 pantheon: norse
 name: 格莱普尼尔
-aliases: [Gleipnir, 缚狼之绳]
+name_latin: "Gleipnir"
+aliases: [缚狼之绳]
 entity_type: 器物
 summary: 矮人所制的细绳，用来缚住巨狼芬里尔。
 role:

@@ -2,6 +2,7 @@ id: njord
 pantheon: norse
 entity_type: 神祇
 name: 尼约德
+name_latin: "Njörðr"
 aliases: [尼奥尔德, 海神]
 summary: 华纳神族的海洋之神，两族议和时作为人质入阿萨。
 role:

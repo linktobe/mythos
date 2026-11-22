@@ -1,7 +1,8 @@
 id: surtr
 pantheon: norse
 name: 苏尔特尔
-aliases: [Surtr, 火巨人]
+name_latin: "Surtr"
+aliases: [火巨人]
 entity_type: 巨人
 summary: 火之界穆斯贝尔海姆的统治者，诸神黄昏时携火而来，烧尽世界。
 role:

@@ -1,7 +1,8 @@
 id: valkyries
 pantheon: norse
 name: 女武神
-aliases: [Valkyries, 瓦尔基里]
+name_latin: "Valkyrjur"
+aliases: [瓦尔基里]
 entity_type: 群体
 summary: 奥丁的侍女，在战场上拣选战死者，送往英灵殿。
 role:

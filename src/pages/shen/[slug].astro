@@ -61,7 +61,7 @@ const allT1 = entry.narrative.every((p) => isT1Only(p.refs));
   <div class="wrap">
     <header class="entry-head reveal">
       <h1>{entry.name}<span class="etype">{entry.entity_type}</span></h1>
-      {entry.aliases.length > 0 && <p class="aliases">又称：{entry.aliases.join(' · ')}</p>}
+      <p class="aliases"><span class="latin">{entry.name_latin}</span>{entry.aliases.length > 0 && <>　又称：{entry.aliases.join(' · ')}</>}</p>
       <p class="summary">{entry.summary}</p>
 
       <div class="role reveal">

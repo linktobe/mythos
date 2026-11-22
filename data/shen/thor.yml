@@ -2,6 +2,7 @@ id: thor
 pantheon: norse
 entity_type: 神祇
 name: 托尔
+name_latin: "Þórr"
 aliases: [雷神, 索尔]
 summary: 阿萨神族的武力担当，与尘世巨蟒互为宿命。
 role:

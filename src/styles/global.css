@@ -71,6 +71,7 @@ p { margin: 0 0 14px; }
 /* ---------- 词条页 ---------- */
 .entry-head { padding: 56px 0 8px; }
 .aliases { color: var(--muted); font-size: 14px; letter-spacing: 0.05em; }
+.aliases .latin { font-style: italic; color: var(--ink-soft); letter-spacing: .02em; }
 .summary {
   font-family: var(--serif); font-size: 19px; color: var(--ink-soft);
   border-left: 2px solid var(--accent); padding-left: 16px; margin: 20px 0 0;
@@ -343,3 +344,11 @@ button.chip[aria-pressed="true"] { background: var(--accent); border-color: var(
   font-size: 12.5px; color: var(--muted); letter-spacing: .04em;
   border-left: 2px solid var(--line); padding-left: 10px; margin: -4px 0 18px;
 }
+
+/* 首页顶部的器物入口 */
+.vessel-link {
+  margin: 26px 0 0; font-size: 14px; color: var(--muted);
+  border-left: 2px solid var(--line); padding-left: 12px;
+}
+.vessel-link a { color: var(--ink-soft); }
+.vessel-link a.more { color: var(--accent); margin-left: 4px; }

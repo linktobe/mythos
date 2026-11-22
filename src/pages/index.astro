@@ -4,6 +4,10 @@ import data from '../generated/entities.json';
 
 const { entries, vocab, counts } = data;
 
+// 器物另列一页，不与人神混排
+const people = entries.filter((e) => e.entity_type !== '器物');
+const vessels = entries.filter((e) => e.entity_type === '器物');
+
 const vocabIndex = {
   lineage: new Map(vocab.lineage.map((x) => [x.id, x])),
   camp: new Map(vocab.camp.map((x) => [x.id, x])),
@@ -13,7 +17,7 @@ const vocabIndex = {
 // 只列出被实际使用过的词表项，避免出现空筛选项
 const used = (axis) => {
   const ids = new Set();
-  for (const e of entries) for (const item of e.identity[axis]) ids.add(item.id);
+  for (const e of people) for (const item of e.identity[axis]) ids.add(item.id);
   return vocab[axis].filter((x) => ids.has(x.id));
 };
 
@@ -32,11 +36,19 @@ const tagOf = (axis, id) => vocabIndex[axis]?.get(id)?.zh ?? id;
       <h1>神话图鉴</h1>
       <p style="color: var(--muted); margin: 0;">北欧诸神的中文词条。所载故事各著出处；诸书异说，并列存之。</p>
       <div class="stats">
-        <span>{counts.entries} 个词条</span>
+        <span>{people.length} 个人物</span>
+        <span>{vessels.length} 件器物</span>
         <span>{counts.relations} 条关系</span>
         <span>{counts.sources} 种来源</span>
       </div>
     </header>
+
+    {vessels.length > 0 && (
+      <p class="vessel-link">
+        器物另列一栏：{vessels.map((v, i) => (<>{i > 0 && '、'}<a href={`/shen/${v.id}`}>{v.name}</a></>))}
+        　<a class="more" href="/qi">查看器物 →</a>
+      </p>
+    )}
 
     <section class="filters" aria-label="按身份筛选">
       {axes.map((axis) => (
@@ -53,7 +65,7 @@ const tagOf = (axis, id) => vocabIndex[axis]?.get(id)?.zh ?? id;
     </section>
 
     <section class="cards" id="cards">
-      {entries.map((e, i) => (
+      {people.map((e, i) => (
         <a
           class="card reveal"
           style={`--d:${i * 45}ms`}

@@ -1,0 +1,32 @@
+id: bifrost
+pantheon: norse
+entity_type: 器物
+name: 彩虹桥
+name_latin: "Bifröst"
+aliases: [碧弗罗丝特]
+summary: 连接米德加德与阿斯加德的桥，由诸神所造，海姆达尔守之。
+role:
+  title: "九界唯一的通道"
+  brief: "诸神往返人间与阿斯加德，走的都是这座桥。它由三色构成，红的一端被认为是火；末日来临时，桥断。"
+identity:
+  lineage:
+    - { id: aesir, note: 诸神所造 }
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard, note: 连接米德加德与阿斯加德 }
+narrative:
+  - text: "诸神在人间与阿斯加德之间架了一座桥，名为碧弗罗丝特。你曾见过它，只是你叫它彩虹。它有三色，红的那一端是燃烧的火。"
+    refs: [gylfaginning]
+  - text: "桥头由海姆达尔守望，诸神经此往来于米德加德。"
+    refs: [gylfaginning, grimnismal]
+  - text: "末日到来时，穆斯贝尔之子骑马过桥，桥身断裂。"
+    refs: [gylfaginning]
+variants:
+  - claim: "「三色」与「红为火」之说见于《欺骗古鲁菲》；诗体埃达只说诸神筑桥，未详其色。"
+    refs: [gylfaginning, grimnismal]
+relations:
+  - { target: heimdallr, kind: 从属, detail: 由他守望, refs: [gylfaginning] }
+  - { target: surtr, kind: 宿命, detail: 末日随火断毁, refs: [gylfaginning] }
+legacy:
+  - 现代游戏常以其为「九界传送门」的原型，机制属再创作。

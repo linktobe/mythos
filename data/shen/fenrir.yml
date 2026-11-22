@@ -2,6 +2,7 @@ id: fenrir
 pantheon: norse
 entity_type: 异兽
 name: 芬里尔
+name_latin: "Fenrir"
 aliases: [芬里斯狼, 巨狼]
 summary: 洛基之子，挣脱束缚后吞下奥丁。
 role:

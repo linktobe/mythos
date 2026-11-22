@@ -74,6 +74,7 @@ const Entry = z.object({
   pantheon: z.string(),
   entity_type: z.enum(['神祇', '巨人', '异兽', '器物', '群体']).default('神祇'),
   name: z.string().min(1),
+  name_latin: z.string().min(2),
   aliases: z.array(z.string()).default([]),
   summary: z.string().min(1),
   role: z.object({

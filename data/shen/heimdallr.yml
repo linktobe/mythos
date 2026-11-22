@@ -1,7 +1,8 @@
 id: heimdallr
 pantheon: norse
 name: 海姆达尔
-aliases: [Heimdallr, 守望之神]
+name_latin: "Heimdallr"
+aliases: [守望之神]
 entity_type: 神祇
 summary: 守护彩虹桥的守望者，诸神黄昏时与洛基同归于尽。
 role:

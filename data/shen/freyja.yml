@@ -3,6 +3,9 @@ pantheon: norse
 name: 芙蕾雅
 aliases: [弗蕾亚, 弗雷娅]
 summary: 华纳神族的女神，掌爱欲、丰饶与战争，战后收其半数亡魂。
+role:
+  title: "丰饶与战争的双面女神"
+  brief: "掌生育、财富与战死者；作为华纳人质入阿萨，本身就是两族和解的人格化象征。"
 identity:
   lineage: [vanir]
   camp:

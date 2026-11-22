@@ -3,6 +3,9 @@ pantheon: norse
 name: 斯卡蒂
 aliases: [斯卡迪, 滑雪女神]
 summary: 巨人之女，携械入阿斯加德讨说法，后嫁尼约德。
+role:
+  title: "雪山与狩猎"
+  brief: "代表巨人与神族和解的可能；与尼约德的婚姻失败，象征两种生活方式终究无法调和。"
 identity:
   lineage: [jotunn]
   camp:

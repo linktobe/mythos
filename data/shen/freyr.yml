@@ -3,6 +3,9 @@ pantheon: norse
 name: 弗雷
 aliases: [弗蕾, 丰饶之神]
 summary: 华纳神族，掌丰饶与和平，因失剑而死于诸神黄昏。
+role:
+  title: "和平与丰收的赐予者"
+  brief: "掌管雨水、阳光与收成。因求娶巨人而失去宝剑，最终无兵可战——和平之神在末日的无力。"
 identity:
   lineage: [vanir]
   camp:

@@ -3,6 +3,9 @@ pantheon: norse
 name: 海拉
 aliases: [赫尔]
 summary: 洛基之女，统辖冥界，半数身躯已死。
+role:
+  title: "冥界的执掌者"
+  brief: "收容因病、老而死的人，以冷酷的规则执行死亡秩序——其中包括拒绝把巴德尔还给诸神。"
 identity:
   lineage: [jotunn, being]
   camp:

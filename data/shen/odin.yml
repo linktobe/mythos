@@ -3,6 +3,9 @@ pantheon: norse
 name: 奥丁
 aliases: [众神之父, 独眼者, 高者]
 summary: 阿萨神族之首，以自我献祭换取智慧与卢恩。
+role:
+  title: "众神之王"
+  brief: "九界秩序的制定者与维护者。以一只眼睛与九夜自悬换取智慧与卢恩，用英灵殿囤积战力；明知诸神黄昏不可免，仍为之备战。"
 identity:
   lineage: [aesir]
   camp:

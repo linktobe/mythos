@@ -3,6 +3,9 @@ pantheon: norse
 name: 弗丽嘉
 aliases: [弗丽格, 弗丽加]
 summary: 奥丁之妻、巴德尔之母，掌婚姻与生育。
+role:
+  title: "神后与家族庇护者"
+  brief: "掌婚姻与生育。她为巴德尔求遍万物起誓，唯独漏掉槲寄生——这一疏漏正显出命运不可违逆。"
 identity:
   lineage: [aesir]
   camp:

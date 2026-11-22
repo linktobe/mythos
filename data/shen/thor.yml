@@ -3,6 +3,9 @@ pantheon: norse
 name: 托尔
 aliases: [雷神, 索尔]
 summary: 阿萨神族的武力担当，与尘世巨蟒互为宿命。
+role:
+  title: "神族与人间的武力屏障"
+  brief: "守护米德加德、抵御巨人，是诸神在正面战场上的主战力；也是末日里唯一能与尘世巨蟒同归于尽的力量。"
 identity:
   lineage: [aesir, jotunn]
   camp:

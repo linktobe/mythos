@@ -3,6 +3,9 @@ pantheon: norse
 name: 芬里尔
 aliases: [芬里斯狼, 巨狼]
 summary: 洛基之子，挣脱束缚后吞下奥丁。
+role:
+  title: "被束缚的毁灭者"
+  brief: "诸神对失控力量的恐惧所化。它挣断锁链的一刻，就是末日的宣告。"
 identity:
   lineage: [jotunn, being]
   camp:

@@ -3,6 +3,9 @@ pantheon: norse
 name: 洛基
 aliases: [洛奇, 诡计之神]
 summary: 巨人之子却列于阿萨，善变形，巴德尔之死的直接策划者。
+role:
+  title: "秩序的搅局者"
+  brief: "替诸神解决难题，也把难题变成灾难。他既是阿萨神族的功臣，又是诸神黄昏的引信。"
 identity:
   lineage: [jotunn]
   camp:

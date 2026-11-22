@@ -3,6 +3,9 @@ pantheon: norse
 name: 巴德尔
 aliases: [光明之神, 巴尔德]
 summary: 奥丁与弗丽嘉之子，其死是诸神黄昏的起点。
+role:
+  title: "光明与美善的象征"
+  brief: "其死是诸神黄昏的第一块骨牌；而他在新世界归来，则标志毁灭之后的重新开始。"
 identity:
   lineage: [aesir]
   camp:

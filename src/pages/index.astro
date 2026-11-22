@@ -42,10 +42,12 @@ const tagOf = (axis, id) => vocabIndex[axis]?.get(id)?.zh ?? id;
       {axes.map((axis) => (
         <div class="filter-row" data-axis={axis.key}>
           <span class="axis-label">{axis.label}</span>
-          <button class="chip" data-value="" aria-pressed="true">全部</button>
-          {used(axis.key).map((item) => (
-            <button class="chip" data-value={item.id} aria-pressed="false">{item.zh}</button>
-          ))}
+          <div class="chips">
+            <button class="chip" data-value="" aria-pressed="true">全部</button>
+            {used(axis.key).map((item) => (
+              <button class="chip" data-value={item.id} aria-pressed="false">{item.zh}</button>
+            ))}
+          </div>
         </div>
       ))}
     </section>
@@ -65,6 +67,7 @@ const tagOf = (axis, id) => vocabIndex[axis]?.get(id)?.zh ?? id;
           </div>
           <div class="desc">{e.summary}</div>
           <div class="tags">
+            <span class="tag-role">{e.role.title}</span>
             {e.identity.lineage.slice(0, 1).map((x) => <span>{tagOf('lineage', x.id)}</span>)}
             {e.identity.realm.slice(0, 1).map((x) => <span>{tagOf('realm', x.id)}</span>)}
           </div>

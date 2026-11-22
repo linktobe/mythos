@@ -75,6 +75,10 @@ const Entry = z.object({
   name: z.string().min(1),
   aliases: z.array(z.string()).default([]),
   summary: z.string().min(1),
+  role: z.object({
+    title: z.string().min(2),
+    brief: z.string().min(10),
+  }),
   identity: z.object({
     lineage: IdentityAxis,
     camp: IdentityAxis,

@@ -3,6 +3,9 @@ pantheon: norse
 name: 尼约德
 aliases: [尼奥尔德, 海神]
 summary: 华纳神族的海洋之神，两族议和时作为人质入阿萨。
+role:
+  title: "海与财富的赐予者"
+  brief: "掌渔业与航运，是人与海之间的中介；作为议和人质入阿萨，象征两族的和解。"
 identity:
   lineage: [vanir]
   camp:

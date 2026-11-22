@@ -3,6 +3,9 @@ pantheon: norse
 name: 耶梦加得
 aliases: [尘世巨蟒, 约尔曼冈德]
 summary: 洛基之子，环绕米德加德之海，与托尔互为宿命。
+role:
+  title: "环绕世界的边界"
+  brief: "被掷入海中，长到自衔其尾，划定米德加德的边界；与托尔的宿命对决是秩序与混沌的终局。"
 identity:
   lineage: [jotunn, being]
   camp:

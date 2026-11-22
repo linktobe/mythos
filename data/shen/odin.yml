@@ -1,0 +1,29 @@
+id: odin
+pantheon: norse
+name: 奥丁
+aliases: [众神之父, 独眼者, 高者]
+summary: 阿萨神族之首，以自我献祭换取智慧与卢恩。
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard, note: 常居 }
+narrative:
+  - text: 阿萨神族之首。父为博尔，母为巨人贝斯特拉；他与兄弟维利、维共同杀死始祖巨人尤弥尔，以尤弥尔的身躯造成世界。
+    refs: [gylfaginning]
+  - text: 为求智慧，他将一只眼睛质押在巨人密米尔守护的泉水里；又自述曾悬挂于风摇之树九夜、以矛自刺，由此取得卢恩文字。
+    refs: [gylfaginning, havamal]
+  - text: 他居阿斯加德，坐高座俯瞰九界；两鸦胡金与穆宁每日飞巡报讯，两狼基利与弗雷基随行；持枪冈格尼尔，臂环德罗普尼尔每九夜生出九枚同重之环。
+    refs: [grimnismal]
+variants:
+  - claim: 他与洛基的关系，《散文埃达》记为二人结为血兄弟；《洛基的争辩》中洛基亦以此自陈，但语气近乎要挟。
+    refs: [lokasenna]
+relations:
+  - { target: thor, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: baldr, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: frigg, kind: 婚姻, detail: 夫妻, refs: [gylfaginning] }
+  - { target: loki, kind: 血盟, detail: 结为血兄弟, refs: [lokasenna] }
+  - { target: fenrir, kind: 宿命, detail: 诸神黄昏为其所吞, refs: [gylfaginning] }
+legacy:
+  - 瓦格纳《尼伯龙根的指环》以其为原型；漫威宇宙与《战神》（2018）另有大幅改写。

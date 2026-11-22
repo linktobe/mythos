@@ -1,0 +1,28 @@
+id: freyr
+pantheon: norse
+name: 弗雷
+aliases: [弗蕾, 丰饶之神]
+summary: 华纳神族，掌丰饶与和平，因失剑而死于诸神黄昏。
+identity:
+  lineage: [vanir]
+  camp:
+    - { id: vanir, until: 两族议和 }
+    - { id: aesir, from: 作为人质入阿斯加德 }
+  realm:
+    - { id: vanaheim, note: 出身 }
+    - { id: asgard, note: 常居 }
+narrative:
+  - text: 尼约德之子、芙蕾雅之兄，华纳神族，掌丰饶、雨水与和平，随父入阿萨为质。
+    refs: [gylfaginning]
+  - text: 他有一柄能自行斩击的剑，后由侍从斯基尼尔携往求娶女巨人葛德；剑自此不复归他。
+    refs: [skaldskaparmal]
+  - text: 诸神黄昏时他因无剑在身，被火巨人苏尔特所杀。
+    refs: [gylfaginning]
+variants:
+  - claim: 求娶葛德一事的主要叙述在《斯基尼尔之歌》（诗体埃达），《诗语》仅作典故征引。
+    refs: [skaldskaparmal]
+relations:
+  - { target: njord, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: freyja, kind: 亲缘, detail: 兄妹, refs: [gylfaginning] }
+legacy:
+  - 瑞典古名有 "弗雷的领地" 之说，属后世推测。

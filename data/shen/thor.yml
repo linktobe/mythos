@@ -1,0 +1,27 @@
+id: thor
+pantheon: norse
+name: 托尔
+aliases: [雷神, 索尔]
+summary: 阿萨神族的武力担当，与尘世巨蟒互为宿命。
+identity:
+  lineage: [aesir, jotunn]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: 奥丁之子，母为大地女神约尔德（本属巨人）。掌雷锤妙尔尼尔，配力之腰带与铁手套，是神族与人间最主要的武力。
+    refs: [gylfaginning]
+  - text: 他与尘世巨蟒耶梦加得结怨于一次垂钓：以牛头为饵将巨蟒钓至船边，同行的巨人希米尔惊恐割断钓线，巨蟒脱钩入海。
+    refs: [hymiskvida]
+  - text: 诸神黄昏时他与耶梦加得互杀，中毒身亡；其子马格尼与莫迪继承雷锤。
+    refs: [voluspa, gylfaginning]
+variants:
+  - claim: 钓蛇一节，《希米尔之歌》写托尔已举锤欲击而线断；《欺骗古鲁菲》则补入巨人希米尔因恐惧而割线的动机。
+    refs: [hymiskvida, gylfaginning]
+relations:
+  - { target: odin, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: jormungandr, kind: 宿命, detail: 诸神黄昏互杀, refs: [voluspa] }
+  - { target: loki, kind: 敌对, detail: 屡受其欺, refs: [gylfaginning] }
+legacy:
+  - 英语 Thursday 源自其名；漫威塑造为幽默英雄；《战神》（2018）中为可交战对象。

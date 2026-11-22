@@ -1,0 +1,28 @@
+id: jormungandr
+pantheon: norse
+name: 耶梦加得
+aliases: [尘世巨蟒, 约尔曼冈德]
+summary: 洛基之子，环绕米德加德之海，与托尔互为宿命。
+identity:
+  lineage: [jotunn, being]
+  camp:
+    - { id: hostile }
+  realm:
+    - { id: midgard, note: 环绕之海 }
+narrative:
+  - text: 洛基与安格尔波达之子。奥丁将其掷入环绕米德加德的大海，它在那里长到足以自衔其尾。
+    refs: [gylfaginning]
+  - text: 它曾险些被托尔钓起：托尔以牛头为饵将它拉至船边，巨人希米尔割断钓线，巨蟒沉回海中。
+    refs: [hymiskvida]
+  - text: 诸神黄昏时它自海中涌出，与托尔互杀。
+    refs: [voluspa]
+variants:
+  - claim: 《欺骗古鲁菲》另记托尔在巨人 Útgarða-Loki 处 "举起一只猫"，实为巨蟒的幻形，与钓蛇情节互不取代。
+    refs: [gylfaginning]
+relations:
+  - { target: loki, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: thor, kind: 宿命, detail: 诸神黄昏互杀, refs: [voluspa] }
+  - { target: fenrir, kind: 亲缘, detail: 兄弟, refs: [gylfaginning] }
+  - { target: hel, kind: 亲缘, detail: 兄妹, refs: [gylfaginning] }
+legacy:
+  - 常被比附为 "衔尾蛇"，但希腊的衔尾蛇意象与之并非同源。

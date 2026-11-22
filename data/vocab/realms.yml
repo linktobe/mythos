@@ -1,0 +1,61 @@
+# 界（空间归属）
+# 回答"他住哪 / 从哪来"，与阵营无关。
+
+- id: asgard
+  zh: 阿斯加德
+  en: Ásgarðr
+  pantheon: norse
+  note: 阿萨神族的领域，英灵殿与瓦尔哈拉在此。
+
+- id: vanaheim
+  zh: 华纳海姆
+  en: Vanaheimr
+  pantheon: norse
+
+- id: alfheim
+  zh: 亚尔夫海姆
+  en: Álfheimr
+  pantheon: norse
+  note: 光精灵之界。
+
+- id: midgard
+  zh: 米德加德
+  en: Miðgarðr
+  pantheon: norse
+  note: 人类所居的中界，四周为巨蟒环绕之海。
+
+- id: jotunheim
+  zh: 约顿海姆
+  en: Jötunheimr
+  pantheon: norse
+  note: 巨人之界。
+
+- id: svartalfheim
+  zh: 斯瓦塔尔法海姆
+  en: Svartálfaheimr
+  pantheon: norse
+  note: 矮人/黑暗精灵之界；与尼达维利尔是否同一地，学界有争议。
+
+- id: muspelheim
+  zh: 穆斯贝尔海姆
+  en: Múspellsheimr
+  pantheon: norse
+  note: 火之界，苏尔特所居。
+
+- id: niflheim
+  zh: 尼福尔海姆
+  en: Niflheimr
+  pantheon: norse
+  note: 雾与冰之界，赫瓦格密尔泉所在。
+
+- id: helheim
+  zh: 赫尔海姆
+  en: Helheimr
+  pantheon: norse
+  note: 亡者之国，海拉统辖。
+
+- id: beyond
+  zh: 界外 / 未定
+  en: Beyond
+  pantheon: norse
+  note: 不属于任何一界，或原典未明言者。

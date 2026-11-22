@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+import data from '../generated/entities.json';
+const { counts } = data;
+---
+
+<Base title="编例 · 神话图鉴" description="本站的编纂原则：原典优先、异文并列、三轴身份、来源可核。">
+  <div class="wrap" style="padding-top: 56px; padding-bottom: 64px;">
+    <h1>编例</h1>
+    <p class="summary">神话没有唯一正典。本站不伪装成"就是那样"，而是把每个说法的来路摊开。</p>
+
+    <h2>一、正典分级</h2>
+    <p>叙事主干只用 <strong>T0 原典</strong>（如诗体埃达）；<strong>T1 古代汇编</strong>（如 Snorri 的散文埃达）仅在 T0 缺失时兜底，并在引用处标注层级。<strong>T2 后世重述</strong>与<strong>T3 现代改编</strong>（游戏、影视）一律压缩成一句，移入"后世演绎"。</p>
+
+    <h2>二、异文并列，不做缝合</h2>
+    <p>不同来源互相矛盾时，两说并列，各注出处，由读者判断。本站不做"取一个看起来最顺的版本"这种编辑裁决。</p>
+
+    <h2>三、三轴身份</h2>
+    <p>每个词条标注三项，彼此独立：</p>
+    <ul>
+      <li><strong>族（lineage）</strong>：血统上是什么，如巨人、阿萨神族。</li>
+      <li><strong>阵营（camp）</strong>：政治归属站哪一边，可随时间变化。</li>
+      <li><strong>界（realm）</strong>：居于何处、从何而来。</li>
+    </ul>
+    <p>三者经常互相打架——洛基血统是巨人、阵营是阿萨、居所是阿斯加德。把它们拆开，才说得清这类角色。</p>
+
+    <h2>四、来源可核</h2>
+    <p>每条叙事段落都必须挂在具体来源上，页面底部列出所用原典，并附公有领域原文库的链接，供读者自行核对。引文一律"原文 + 自译"，不转抄现代中译本。</p>
+
+    <h2>五、当前规模</h2>
+    <p>{counts.entries} 个词条 · {counts.relations} 条关系 · {counts.sources} 种来源。数据全部在 <code>data/</code> 下，纯文本，可 diff。</p>
+
+    <h2>六、许可</h2>
+    <p>代码 MIT；本站撰写的词条文本 CC BY-SA 4.0；所引古典文本属公有领域。</p>
+  </div>
+</Base>

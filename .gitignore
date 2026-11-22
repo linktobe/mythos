@@ -1,0 +1,25 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+.astro/
+src/generated/
+
+# env / os
+.env
+.env.*
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
+
+# logs
+npm-debug.log*
+*.log
+
+# local caches (workspace-local, not committed)
+.npmcache/
+.npmtmp/

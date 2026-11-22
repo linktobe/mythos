@@ -1,0 +1,32 @@
+id: loki
+pantheon: norse
+name: 洛基
+aliases: [洛奇, 诡计之神]
+summary: 巨人之子却列于阿萨，善变形，巴德尔之死的直接策划者。
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: aesir, from: 与奥丁结为血兄弟, until: 巴德尔之死 }
+    - { id: hostile, from: 巴德尔之死 }
+  realm:
+    - { id: asgard, note: 常居 }
+    - { id: jotunheim, note: 出身 }
+narrative:
+  - text: 巨人法布提与劳菲之子，却与奥丁结为血兄弟，位列阿萨神族。善变形，曾化为鲑鱼、苍蝇、老妇，亦曾化为母马。
+    refs: [gylfaginning, lokasenna]
+  - text: 他曾化母马与神马斯瓦迪尔法利交配，生下八足马斯雷普尼尔，献与奥丁。
+    refs: [gylfaginning]
+  - text: 他与女巨人安格尔波达生下芬里尔、耶梦加得与海拉；又诱使盲神霍德尔以槲寄生投掷巴德尔，致其身亡。事败后被缚于三石之上，毒蛇滴毒，妻子西格恩持碗承接。
+    refs: [gylfaginning]
+variants:
+  - claim: 《洛基的争辩》中他自陈 "是我使巴德尔不能再归来"，语气与《欺骗古鲁菲》的第三人称叙述明显不同。
+    refs: [lokasenna]
+relations:
+  - { target: odin, kind: 血盟, detail: 结为血兄弟, refs: [lokasenna] }
+  - { target: fenrir, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: jormungandr, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: hel, kind: 亲缘, detail: 父女, refs: [gylfaginning] }
+  - { target: baldr, kind: 敌对, detail: 设计致死, refs: [gylfaginning] }
+  - { target: thor, kind: 敌对, detail: 屡以诡计相欺, refs: [gylfaginning] }
+legacy:
+  - 漫威与《战神》均大幅改写其动机；《战神》（2018）设定其为阿特柔斯之父，纯属原创。

@@ -1,0 +1,103 @@
+---
+import Base from '../layouts/Base.astro';
+import data from '../generated/entities.json';
+
+const { entries, vocab, counts } = data;
+
+const vocabIndex = {
+  lineage: new Map(vocab.lineage.map((x) => [x.id, x])),
+  camp: new Map(vocab.camp.map((x) => [x.id, x])),
+  realm: new Map(vocab.realm.map((x) => [x.id, x])),
+};
+
+// 只列出被实际使用过的词表项，避免出现空筛选项
+const used = (axis) => {
+  const ids = new Set();
+  for (const e of entries) for (const item of e.identity[axis]) ids.add(item.id);
+  return vocab[axis].filter((x) => ids.has(x.id));
+};
+
+const axes = [
+  { key: 'lineage', label: '族' },
+  { key: 'camp', label: '阵营' },
+  { key: 'realm', label: '界' },
+];
+
+const tagOf = (axis, id) => vocabIndex[axis]?.get(id)?.zh ?? id;
+---
+
+<Base title="神话图鉴 · 词条">
+  <div class="wrap">
+    <header class="list-head">
+      <h1>神话图鉴</h1>
+      <p style="color: var(--muted); margin: 0;">以原典为主干的中文神话人物词条。每条叙事都挂在具体来源上，冲突版本并列呈现。</p>
+      <div class="stats">
+        <span>{counts.entries} 个词条</span>
+        <span>{counts.relations} 条关系</span>
+        <span>{counts.sources} 种来源</span>
+      </div>
+    </header>
+
+    <section class="filters" aria-label="按身份筛选">
+      {axes.map((axis) => (
+        <div class="filter-row" data-axis={axis.key}>
+          <span class="axis-label">{axis.label}</span>
+          <button class="chip" data-value="" aria-pressed="true">全部</button>
+          {used(axis.key).map((item) => (
+            <button class="chip" data-value={item.id} aria-pressed="false">{item.zh}</button>
+          ))}
+        </div>
+      ))}
+    </section>
+
+    <section class="cards" id="cards">
+      {entries.map((e) => (
+        <a
+          class="card"
+          href={`/shen/${e.id}`}
+          data-lineage={e.identity.lineage.map((x) => x.id).join(' ')}
+          data-camp={e.identity.camp.map((x) => x.id).join(' ')}
+          data-realm={e.identity.realm.map((x) => x.id).join(' ')}
+        >
+          <div class="name">
+            {e.name}
+            {e.aliases.length > 0 && <span class="alias">{e.aliases[0]}</span>}
+          </div>
+          <div class="desc">{e.summary}</div>
+          <div class="tags">
+            {e.identity.lineage.slice(0, 1).map((x) => <span>{tagOf('lineage', x.id)}</span>)}
+            {e.identity.realm.slice(0, 1).map((x) => <span>{tagOf('realm', x.id)}</span>)}
+          </div>
+        </a>
+      ))}
+    </section>
+  </div>
+
+  <script>
+    const state = { lineage: '', camp: '', realm: '' };
+    const rows = document.querySelectorAll('.filter-row');
+    const cards = Array.from(document.querySelectorAll('.card'));
+
+    function apply() {
+      for (const card of cards) {
+        const ok = Object.entries(state).every(([axis, value]) => {
+          if (!value) return true;
+          return (card.dataset[axis] || '').split(' ').includes(value);
+        });
+        card.hidden = !ok;
+      }
+    }
+
+    rows.forEach((row) => {
+      const axis = row.dataset.axis;
+      row.querySelectorAll('button.chip').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          row.querySelectorAll('button.chip').forEach((b) => b.setAttribute('aria-pressed', 'false'));
+          btn.setAttribute('aria-pressed', 'true');
+          state[axis] = btn.dataset.value;
+          apply();
+        });
+      });
+    });
+  </script>
+</Base>

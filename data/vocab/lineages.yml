@@ -1,0 +1,50 @@
+# 族（血统 / 种族）
+# 只登记"血统意义上是什么"，政治归属见 camps.yml，居所见 realms.yml。
+# 三轴可以同时成立：洛基的血统是巨人，阵营是阿萨，居所是阿斯加德。
+
+- id: aesir
+  zh: 阿萨神族
+  en: Æsir
+  pantheon: norse
+  parent: god
+  note: 战争、王权与统治的神族，居阿斯加德。
+
+- id: vanir
+  zh: 华纳神族
+  en: Vanir
+  pantheon: norse
+  parent: god
+  note: 丰饶、海洋与性爱的神族；与阿萨交战议和后交换人质。
+
+- id: jotunn
+  zh: 巨人
+  en: Jötnar
+  pantheon: norse
+  parent: giant
+  note: 与神族同源的另一支势力，常与神族通婚，不宜简单视为"怪物"。
+
+- id: alf
+  zh: 光精灵
+  en: Ljósálfar
+  pantheon: norse
+  parent: elf
+
+- id: dwarf
+  zh: 矮人
+  en: Dvergar
+  pantheon: norse
+  parent: dwarf
+  note: 又作黑暗精灵，能锻造神器。
+
+- id: human
+  zh: 凡人
+  en: Humans
+  pantheon: norse
+  parent: mortal
+
+- id: being
+  zh: 非人存在
+  en: Being
+  pantheon: norse
+  parent: other
+  note: 既非神族亦非巨人者（如巨狼、巨蟒的"政治身份"），血统仍多半记入 jotunn。

@@ -1,0 +1,41 @@
+# 阵营（政治归属）
+# 回答"他站哪一边"，可随时间变化；与血统无关，与居所也无关。
+
+- id: aesir
+  zh: 阿萨神族
+  en: Æsir
+  pantheon: norse
+  note: 以奥丁为首的统治集团，含人质性质入伙的华纳神。
+
+- id: vanir
+  zh: 华纳神族
+  en: Vanir
+  pantheon: norse
+
+- id: jotnar
+  zh: 巨人阵营
+  en: Jötnar
+  pantheon: norse
+  note: 与阿萨长期对立，但成员常与神族联姻，立场并不统一。
+
+- id: hel
+  zh: 冥界
+  en: Hel
+  pantheon: norse
+  note: 亡者之国的独立势力。
+
+- id: hostile
+  zh: 敌对者
+  en: Hostile
+  pantheon: norse
+  note: 诸神黄昏中站在神族对立面者（洛基、芬里尔、苏尔特等）。
+
+- id: neutral
+  zh: 独立 / 中立
+  en: Neutral
+  pantheon: norse
+
+- id: human
+  zh: 人间
+  en: Human
+  pantheon: norse

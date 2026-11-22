@@ -1,0 +1,23 @@
+{
+  "name": "mythos",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "中文神话人物与关系图鉴（T0 原典优先）",
+  "scripts": {
+    "data": "node scripts/build-data.mjs",
+    "graph": "node scripts/layout.mjs",
+    "dev": "npm run data && npm run graph && astro dev",
+    "build": "npm run data && npm run graph && astro build",
+    "preview": "astro preview",
+    "check": "npm run data && npm run graph && astro check"
+  },
+  "dependencies": {
+    "astro": "latest"
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0",
+    "zod": "^3.23.8",
+    "d3-force": "^3.0.0"
+  }
+}

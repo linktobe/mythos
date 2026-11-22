@@ -1,0 +1,25 @@
+id: frigg
+pantheon: norse
+name: 弗丽嘉
+aliases: [弗丽格, 弗丽加]
+summary: 奥丁之妻、巴德尔之母，掌婚姻与生育。
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard, note: 芬撒里尔宫 }
+narrative:
+  - text: 奥丁之妻，巴德尔之母。为使儿子免于一切伤害，她令万物起誓不伤巴德尔，唯独漏过被认为无害的槲寄生。
+    refs: [gylfaginning]
+  - text: 巴德尔死后，她遣赫尔莫德骑马往冥界向海拉求还其子。
+    refs: [gylfaginning]
+variants:
+  - claim: 学界有 "弗丽嘉与芙蕾雅本为同一女神分化" 的假说（如 Ellis Davidson 等），本站并置两说，不合并词条。
+    refs: [gylfaginning]
+relations:
+  - { target: odin, kind: 婚姻, detail: 夫妻, refs: [gylfaginning] }
+  - { target: baldr, kind: 亲缘, detail: 母子, refs: [gylfaginning] }
+  - { target: freyja, kind: 同源, detail: 学界假说，存疑, refs: [gylfaginning] }
+legacy:
+  - 英语 Friday 有源自其名一说，学界尚有争议。

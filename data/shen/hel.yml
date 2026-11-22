@@ -1,0 +1,26 @@
+id: hel
+pantheon: norse
+name: 海拉
+aliases: [赫尔]
+summary: 洛基之女，统辖冥界，半数身躯已死。
+identity:
+  lineage: [jotunn, being]
+  camp:
+    - { id: hel }
+  realm:
+    - { id: helheim, note: 统辖者 }
+narrative:
+  - text: 洛基与安格尔波达之女。奥丁将她投入尼福尔海姆，命她统辖九界中因疾病与衰老而死的人。
+    refs: [gylfaginning]
+  - text: 她半身是生人的肤色，半身是死尸的乌黑；居所名埃柳德尼尔，餐盘名为 "饥饿"，餐刀名为 "饥荒"。
+    refs: [gylfaginning]
+variants:
+  - claim: 她是否算 "巨人" 还是独立一类，原典未作明确区分；本站按血统记巨人，按政治身份记冥界。
+    refs: [gylfaginning]
+relations:
+  - { target: loki, kind: 亲缘, detail: 父女, refs: [gylfaginning] }
+  - { target: baldr, kind: 敌对, detail: 拒绝归还, refs: [gylfaginning] }
+  - { target: fenrir, kind: 亲缘, detail: 兄妹, refs: [gylfaginning] }
+  - { target: jormungandr, kind: 亲缘, detail: 兄妹, refs: [gylfaginning] }
+legacy:
+  - 现代作品常将其简化为 "死亡女神"，与原文中 "收容病死者" 的职能有出入。

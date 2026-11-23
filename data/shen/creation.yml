@@ -26,6 +26,8 @@ variants:
 relations:
   - { target: ymir, kind: 从属, detail: 以其身躯造世界, refs: [gylfaginning] }
   - { target: odin, kind: 从属, detail: 三兄弟主其事, refs: [gylfaginning] }
+  - { target: vili, kind: 从属, detail: 参与造世界与造人, refs: [gylfaginning] }
+  - { target: ve, kind: 从属, detail: 参与造世界与造人, refs: [gylfaginning] }
   - { target: midgard, kind: 从属, detail: 以其眉围成, refs: [gylfaginning] }
 legacy:
   - 现代作品常把创世简化为「巨人倒下化作山川」，原典还多出母牛与布利这一支世系。

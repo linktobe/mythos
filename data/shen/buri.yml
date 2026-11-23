@@ -1,0 +1,29 @@
+id: buri
+pantheon: norse
+entity_type: 神祇
+name: 布利
+name_latin: "Búri"
+aliases: [布里]
+summary: 最早的神，由母牛奥德姆拉从盐冰中舔出，博尔之父。
+role:
+  title: "从冰里舔出来的第一个人"
+  brief: "他没有事迹，只有来历：一头牛舔了三天冰，先舔出头发，再舔出头，最后舔出整个人。整个阿萨神族的谱系，都从这块冰开始。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: niflheim, note: 自冰中化出 }
+narrative:
+  - text: "母牛奥德姆拉以舌舔食带盐的冰。第一日舔出头发，第二日舔出头颅，第三日舔出一个完整的人形，名为布利。"
+    refs: [gylfaginning]
+  - text: "布利生子博尔。除此之外，原典未载他的事迹、配偶与结局。"
+    refs: [gylfaginning]
+variants:
+  - claim: "布利的来历仅见于《欺骗古鲁菲》；诗体埃达诸篇未载此名。"
+    refs: [gylfaginning, voluspa]
+relations:
+  - { target: borr, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: odin, kind: 亲缘, detail: 祖孙, refs: [gylfaginning] }
+legacy:
+  - 现代作品极少写到这一代，通常从奥丁讲起。

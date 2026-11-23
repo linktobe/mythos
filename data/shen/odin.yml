@@ -25,6 +25,10 @@ variants:
   - claim: 他与洛基的关系，《散文埃达》记为二人结为血兄弟；《洛基的争辩》中洛基亦以此自陈，但语气近乎要挟。
     refs: [lokasenna]
 relations:
+  - { target: borr, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: bestla, kind: 亲缘, detail: 母子, refs: [gylfaginning] }
+  - { target: vili, kind: 亲缘, detail: 兄弟, refs: [gylfaginning] }
+  - { target: ve, kind: 亲缘, detail: 兄弟, refs: [gylfaginning] }
   - { target: thor, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
   - { target: baldr, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
   - { target: frigg, kind: 婚姻, detail: 夫妻, refs: [gylfaginning] }

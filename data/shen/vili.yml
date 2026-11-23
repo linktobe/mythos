@@ -1,0 +1,32 @@
+id: vili
+pantheon: norse
+entity_type: 神祇
+name: 维利
+name_latin: "Vili"
+aliases: [威利]
+summary: 奥丁之弟，与两位兄弟共同杀死始祖巨人、造出世界与人类。
+role:
+  title: "三兄弟之一"
+  brief: "他没有独立故事，但创世是三个人一起做的：杀尤弥尔、造世界、造人，维利都在场。原典只肯给他名字和这一份共同功劳。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: beyond }
+narrative:
+  - text: "他是博尔与女巨人贝斯特拉之子，奥丁之弟。"
+    refs: [gylfaginning]
+  - text: "他与奥丁、维三兄弟共同杀死始祖巨人尤弥尔，以其身躯造出世界；其后又一同以海边拾得的两棵树造人。"
+    refs: [gylfaginning]
+  - text: "原典未载其单独事迹，也无结局。"
+    refs: [gylfaginning]
+variants:
+  - claim: "《女巫的预言》写到造人时只说「三位神」而未列名；三兄弟之名与分工，主要见于《欺骗古鲁菲》。"
+    refs: [voluspa, gylfaginning]
+relations:
+  - { target: odin, kind: 亲缘, detail: 兄弟, refs: [gylfaginning] }
+  - { target: ve, kind: 亲缘, detail: 兄弟, refs: [gylfaginning] }
+  - { target: creation, kind: 从属, detail: 参与造世界与造人, refs: [gylfaginning] }
+legacy:
+  - 现代改编几乎不出现这一位，多数只保留奥丁。

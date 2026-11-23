@@ -16,7 +16,8 @@ identity:
     - { id: beyond }
 narrative:
   - text: "他是博尔与贝斯特拉之子，奥丁与维利之弟。"
-    refs: [gylfaginning]
+    refs: [gylfaginning, voluspa]
+    at: { voluspa: "4" }
   - text: "他与两位兄长共同杀死尤弥尔、以巨人身躯造世界；造人时，三兄弟分别赋予阿斯克与恩布拉呼吸、心智与感官。"
     refs: [gylfaginning]
   - text: "原典未载其单独事迹与结局。"

@@ -19,6 +19,8 @@ narrative:
   - text: "此事之后，诸神缚住洛基，末日的第一张多米诺骨牌就此倒下。"
     refs: [gylfaginning]
 variants:
+  - claim: "原典亦无「巴德尔之死」的事件名：此处据诗篇《巴德尔的梦》与《欺骗古鲁菲》相关章节拟定，供索引之用。"
+    refs: [baldrs-draumar, gylfaginning]
   - claim: "《巴德尔的梦》只写奥丁赴冥界问卜儿子之死，无槲寄生、霍德尔与托克等情节；这些仅见于《欺骗古鲁菲》。"
     refs: [baldrs-draumar, gylfaginning]
 relations:

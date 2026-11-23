@@ -19,6 +19,8 @@ narrative:
   - text: "诸神又以尤弥尔的眉毛围出中间的一块地，名米德加德；再取海边拾得的两棵树造人，名为阿斯克与恩布拉。"
     refs: [gylfaginning]
 variants:
+  - claim: "原典并无「创世」这一事件名：此处借古诺斯语 skǫpun（创造）作栏目名，事迹散见于《女巫的预言》与《欺骗古鲁菲》。"
+    refs: [voluspa, gylfaginning]
   - claim: "《女巫的预言》开篇只述世界由诸神自巨人身体造出，不及尤弥尔、母牛与布利诸节；这些细节主要见于《欺骗古鲁菲》。"
     refs: [voluspa, gylfaginning]
 relations:

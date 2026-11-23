@@ -102,6 +102,26 @@ const Entry = z.object({
     )
     .default([]),
   legacy: z.array(z.string()).default([]),
+  profiles: z
+    .array(
+      z.object({
+        name: z.string().min(1),
+        name_latin: z.string().min(2),
+        story: z.string().min(20),
+        refs: RefList,
+      })
+    )
+    .default([]),
+  weapons: z
+    .array(
+      z.object({
+        name: z.string().min(1),
+        name_latin: z.string().min(1),
+        note: z.string().min(6),
+        refs: RefList,
+      })
+    )
+    .default([]),
   adaptations: z
     .array(
       z.object({

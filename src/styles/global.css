@@ -382,3 +382,27 @@ button.chip[aria-pressed="true"] { background: var(--accent); border-color: var(
 @media (max-width: 720px) {
   .back { margin-top: 20px; }
 }
+
+/* 代表个体 */
+.profile {
+  border: 1px solid var(--line); border-radius: 16px; background: #fff;
+  padding: 18px 20px; margin: 0 0 14px;
+  box-shadow: 0 1px 2px rgba(28, 26, 23, .04);
+}
+.profile h3 { margin: 0 0 8px; font-size: 18px; }
+.profile .p-latin {
+  font-style: italic; font-weight: 400; font-size: 13px;
+  color: var(--muted); margin-left: 10px; letter-spacing: .02em;
+}
+.profile p { margin: 0; color: var(--ink-soft); font-size: 15.5px; }
+
+/* 持用之物 */
+.weapons { list-style: none; margin: 0; padding: 0; }
+.weapons li {
+  border: 1px solid var(--line); border-radius: 14px; background: #fff;
+  padding: 14px 18px; margin: 0 0 10px;
+}
+.weapons .w-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.weapons .w-name { font-family: var(--serif); font-size: 16px; letter-spacing: .04em; }
+.weapons .w-latin { font-style: italic; font-size: 12.5px; color: var(--muted); }
+.weapons p { margin: 6px 0 0; color: var(--muted); font-size: 14.5px; line-height: 1.75; }

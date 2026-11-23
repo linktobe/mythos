@@ -31,3 +31,8 @@ relations:
   - { target: freyja, kind: 亲缘, detail: 兄妹, refs: [gylfaginning] }
 legacy:
   - 瑞典古名有 "弗雷的领地" 之说，属后世推测。
+weapons:
+  - name: 弗雷之剑
+    name_latin: "Freyr's sword"
+    note: "能自行斩击的宝剑。弗雷遣侍从斯基尼尔持此剑往求葛德，剑自此不归；末日他无兵可用，死于苏尔特尔之手。"
+    refs: [skaldskaparmal, gylfaginning]

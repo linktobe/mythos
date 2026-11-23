@@ -37,3 +37,12 @@ adaptations:
       - "原典中海姆达尔由九位母亲所生；MCU 未提其出身。"
       - "原典中他与洛基在诸神黄昏互斗、同归于尽；MCU 中他死于灭霸之手，与洛基无终局对决。"
       - "原典中他吹响号角加拉尔示警；MCU 无号角，改用剑开启彩虹桥。"
+weapons:
+  - name: 加拉尔
+    name_latin: "Gjallarhorn"
+    note: "号角，声闻九界。末日来临时海姆达尔吹响它，召集诸神。"
+    refs: [voluspa, gylfaginning]
+  - name: 霍夫德
+    name_latin: "Hofund"
+    note: "其佩剑，仅见于《诗语》的器物名录，无事迹可考。"
+    refs: [skaldskaparmal]

@@ -30,6 +30,8 @@ const note = (refs: string[]) => {
 };
 entry.narrative.forEach((p) => note(p.refs));
 entry.variants.forEach((p) => note(p.refs));
+entry.profiles.forEach((p) => note(p.refs));
+entry.weapons.forEach((w) => note(w.refs));
 entry.relations.forEach((r) => note(r.refs));
 entry.related.forEach((r) => note(r.refs));
 const refNo = new Map(usedRefs.map((id, i) => [id, i + 1]));
@@ -137,6 +139,45 @@ const allT1 = entry.narrative.every((p) => isT1Only(p.refs));
             </div>
           </div>
         ))}
+      </>
+    )}
+
+    {entry.profiles.length > 0 && (
+      <>
+        <h2>代表个体</h2>
+        {entry.profiles.map((p) => (
+          <div class="profile">
+            <h3>{p.name}<span class="p-latin">{p.name_latin}</span></h3>
+            <p>
+              {p.story}
+              {p.refs.map((id) => (
+                <sup class="ref"><a href={`#src-${id}`}>{refNo.get(id)}</a></sup>
+              ))}
+            </p>
+          </div>
+        ))}
+      </>
+    )}
+
+    {entry.weapons.length > 0 && (
+      <>
+        <h2>持用之物</h2>
+        <ul class="weapons">
+          {entry.weapons.map((w) => (
+            <li>
+              <div class="w-head">
+                <span class="w-name">{w.name}</span>
+                <span class="w-latin">{w.name_latin}</span>
+              </div>
+              <p>
+                {w.note}
+                {w.refs.map((id) => (
+                  <sup class="ref"><a href={`#src-${id}`}>{refNo.get(id)}</a></sup>
+                ))}
+              </p>
+            </li>
+          ))}
+        </ul>
       </>
     )}
 

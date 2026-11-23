@@ -1,0 +1,30 @@
+id: ymir
+pantheon: norse
+entity_type: 巨人
+name: 尤弥尔
+name_latin: "Ymir"
+aliases: [伊米尔, 始祖巨人]
+summary: 最初的生命，巨人族的始祖；被杀后，他的身体成了世界。
+role:
+  title: "世界的材料"
+  brief: "他先于一切存在，也先于一切死去。诸神杀他之后，用他的血、骨、肉、颅骨造出海洋、山、大地与天空——九界都建立在他的尸体上。"
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: jotnar }
+  realm:
+    - { id: niflheim, note: 自冰中化生 }
+narrative:
+  - text: "世界尚未成形时，北方尼福尔海姆的冰与南方穆斯贝尔海姆的火在金伦加鸿沟相遇。冰遇火而融，融水中生出一个巨人，名为尤弥尔。"
+    refs: [gylfaginning]
+  - text: "他沉睡时出汗，腋下生出一男一女两个巨人；双腿之间又生出六头巨人。巨人一族自此繁衍。"
+    refs: [gylfaginning]
+  - text: "奥丁与兄弟维利、维杀死了他。他的血汇成海，肉化为大地，骨堆成山，颅骨扣成天空，脑散作云。"
+    refs: [gylfaginning]
+variants:
+  - claim: "这段创世叙述主要见于《欺骗古鲁菲》；《女巫的预言》只写到世界由诸神从巨人身体中造出，未详其过程。"
+    refs: [gylfaginning, voluspa]
+relations:
+  - { target: odin, kind: 敌对, detail: 为其三兄弟所杀, refs: [gylfaginning] }
+legacy:
+  - 后世作品常称其为「冰霜巨人之祖」，原典只说他是巨人族的开端，未限定属性。

@@ -1,0 +1,29 @@
+id: nornir
+pantheon: norse
+entity_type: 群体
+name: 诺伦三女神
+name_latin: "Nornir"
+aliases: [命运三女神]
+summary: 居于世界树下的三位女神，裁断神与人的命运。
+role:
+  title: "命运的执掌者"
+  brief: "她们不在诸神的序列里，也不听奥丁的号令：诸神的结局同样由她们定下。这一节没有关系线，因为命运不在那张网里。"
+identity:
+  lineage:
+    - { id: being, note: 原典未明言其族属 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond, note: 乌尔德泉畔，在世界树下 }
+narrative:
+  - text: "三位女神居于世界树下的乌尔德泉旁，名唤乌尔德、薇儿丹蒂、诗寇蒂。"
+    refs: [voluspa, gylfaginning]
+  - text: "她们自泉中取水浇灌世界树，并在木上刻下符文，为每个人定下寿数与际遇；诸神的后代亦由其裁断。"
+    refs: [gylfaginning, voluspa]
+  - text: "除这三位之外，另有众多诺伦往来于世间，凡有婴孩出生，便前去定命——出身或为神族，或为精灵，或为矮人。"
+    refs: [voluspa]
+variants:
+  - claim: "三个名字的字义约近「应当」「正在」「必须」，后世多解作过去、现在、未来；原典并未明言三人分管三时。"
+    refs: [voluspa, gylfaginning]
+legacy:
+  - 现代作品常把她们简化成「纺线的三姐妹」，原典中她们在泉边取水浇树、刻写符文，并未纺线。

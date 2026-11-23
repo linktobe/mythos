@@ -1,0 +1,31 @@
+id: andvaranaut
+pantheon: norse
+entity_type: 器物
+name: 安德瓦拉瑙特
+name_original: "Andvaranaut"
+aliases: [安德瓦利之戒, 诅咒之环]
+summary: 安德瓦利所藏的指环，随那宗被诅咒的黄金一路流转，从水底到龙窟，再到英雄手中。
+role:
+  title: "带诅咒的环"
+  brief: "它不是最贵重的宝物，却是命最长的一件：水底的私藏、水獭的赎金、龙窟的陪葬、火葬堆上的遗物，都经过它。"
+identity:
+  lineage:
+    - { id: dwarf, note: 矮人所藏 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond, note: 随宝藏流转，不属一界 }
+narrative:
+  - text: "安德瓦利被夺去全部黄金时，唯一求留的就是这枚环；洛基没有答应。"
+    refs: [reginsmol]
+  - text: "这宗黄金被当作水獭的赎金交出，先归赫雷德玛，再被法夫纳独占，成了龙窟里的陪葬。"
+    refs: [reginsmol]
+  - text: "齐格鲁德屠龙之后，环与宝藏一并落到他手里。"
+    refs: [fafnismol]
+variants:
+  - claim: "环后来如何转手、又怎样回到布伦希尔德手上，诗体埃达的篇章没有一路写完；完整的流转要靠《沃尔松格萨迦》。"
+    refs: [fafnismol, sigurtharkvitha]
+relations:
+  - { target: andvari, kind: 从属, detail: 原为其所藏, refs: [reginsmol] }
+  - { target: fafnir, kind: 从属, detail: 曾随宝藏归其看守, refs: [reginsmol] }
+  - { target: sigurd, kind: 从属, detail: 屠龙后归其所有, refs: [fafnismol] }

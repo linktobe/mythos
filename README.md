@@ -30,8 +30,7 @@ data/
     ├── vocab/            本体系词表：族 / 阵营 / 界
     └── sources.yml       本体系原典登记表，带公版原文链接
 scripts/
-├── build-data.mjs        校验并按体系生成 src/generated/entities/<体系>.json
-└── layout.mjs            按体系预计算关系图坐标，生成 src/generated/graph/<体系>.json
+└── build-data.mjs        校验并按体系生成 src/generated/entities/<体系>.json 与 search-index.json
 src/
 ├── lib/content.ts        构建产物的统一入口，页面不直接 import JSON
 ├── components/           卡片墙 + 前端筛选

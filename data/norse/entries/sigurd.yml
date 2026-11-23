@@ -1,0 +1,37 @@
+id: sigurd
+pantheon: norse
+entity_type: 英雄
+name: 齐格鲁德
+name_original: "Sigurðr"
+aliases: [西古尔德, 齐格弗里德, 屠龙者]
+summary: 屠龙者，持格拉姆杀死法夫纳、唤醒布伦希尔德，最终死于亲族之手。
+role:
+  title: "屠龙者"
+  brief: "他几乎拥有全部：名剑、良马、宝藏、爱情。这些东西后来一样接一样，把他送进了火堆。"
+identity:
+  lineage: [human]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: midgard }
+narrative:
+  - text: "父为西格蒙德，母为希奥尔迪斯；父战死，他由雷金抚养长大。"
+    refs: [reginsmol]
+  - text: "雷金激他去屠龙，他以重铸的格拉姆刺死法夫纳，又斩雷金、尽取宝藏。"
+    refs: [fafnismol]
+  - text: "他上山破开火墙，唤醒沉睡的女武神布伦希尔德；她授他卢恩，与他立誓相许。"
+    refs: [sigrdrifumal]
+  - text: "后来他在异邦误饮忘川之酒，忘了前约，娶古德伦为妻，又代兄弟贡纳尔向布伦希尔德求婚。"
+    refs: [sigurtharkvitha]
+  - text: "旧约被负、婚事被欺，布伦希尔德催动贡纳尔一党，将他刺杀于林中。"
+    refs: [brot-sigurtharkvithu]
+variants:
+  - claim: "「齐格弗里德」是德语系统的名字（Nibelungenlied），北欧系统作 Sigurðr；两条传统的故事大体同源，细节各有出入。"
+    refs: [sigurtharkvitha]
+relations:
+  - { target: brynhildr, kind: 宿命, detail: 立誓相许而后相负，终至同死, refs: [sigurtharkvitha] }
+  - { target: gudrun, kind: 婚姻, detail: 夫妻, refs: [sigurtharkvitha] }
+  - { target: regin, kind: 师承, detail: 养父兼铸剑师, refs: [reginsmol] }
+  - { target: fafnir, kind: 敌对, detail: 屠龙, refs: [fafnismol] }
+  - { target: gram, kind: 从属, detail: 为其佩剑, refs: [reginsmol] }
+  - { target: andvaranaut, kind: 从属, detail: 屠龙后所得, refs: [fafnismol] }

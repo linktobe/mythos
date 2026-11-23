@@ -22,10 +22,6 @@ const entryModules = import.meta.glob<AnyRecord>('../generated/entities/*.json',
   eager: true,
   import: 'default',
 });
-const graphModules = import.meta.glob<AnyRecord>('../generated/graph/*.json', {
-  eager: true,
-  import: 'default',
-});
 
 const idOf = (filePath: string) => filePath.split('/').pop()!.replace(/\.json$/, '');
 
@@ -34,13 +30,7 @@ for (const [filePath, mod] of Object.entries(entryModules)) {
   systems[idOf(filePath)] = mod as AnyRecord;
 }
 
-export const graphs: Record<string, AnyRecord> = {};
-for (const [filePath, mod] of Object.entries(graphModules)) {
-  graphs[idOf(filePath)] = mod as AnyRecord;
-}
-
 export const getSystem = (id: string): AnyRecord | undefined => systems[id];
-export const getGraph = (id: string): AnyRecord | undefined => graphs[id];
 
 /** 词条页地址 */
 export const entryHref = (pantheonId: string, entryId: string) => `/${pantheonId}/entry/${entryId}/`;

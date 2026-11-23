@@ -1,0 +1,34 @@
+id: fafnir
+pantheon: norse
+entity_type: 异兽
+name: 法夫纳
+name_original: "Fáfnir"
+aliases: [法芙尼尔, 守宝之龙]
+summary: 为独占黄金而杀死父亲、化为毒龙的赫雷德玛之子，被齐格鲁德所杀。
+role:
+  title: "守宝的龙"
+  brief: "北欧的龙几乎不飞、不吐火，只趴在地上守着一堆金子。把它变成龙的，是贪欲，不是魔法。"
+identity:
+  lineage:
+    - { id: dwarf, note: 赫雷德玛之子，后化龙 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond, note: 尼达山旁的荒原 }
+narrative:
+  - text: "赫雷德玛之子。父亲收下诸神赔付的水獭赎金后，他为了独占那宗黄金，杀死父亲。"
+    refs: [reginsmol]
+  - text: "此后他化为毒龙，伏在巢中守财，连亲兄弟雷金也不敢近前一步。"
+    refs: [reginsmol]
+  - text: "雷金引齐格鲁德前来，令他在龙饮水的路上挖一道壕沟；齐格鲁德自下方刺入，剑穿龙身。"
+    refs: [fafnismol]
+  - text: "垂死的法夫纳与齐格鲁德问答，讲命运、讲贪欲，也警告他这些金子会要他的命——后来都应验了。"
+    refs: [fafnismol]
+variants:
+  - claim: "「龙形」不是原典的变身仪式，各路记载都只说他据守财宝、名为毒龙；「因贪变成龙」是后世读法的归纳。"
+    refs: [reginsmol, fafnismol]
+relations:
+  - { target: regin, kind: 亲缘, detail: 兄弟, refs: [reginsmol] }
+  - { target: sigurd, kind: 敌对, detail: 为其所杀, refs: [fafnismol] }
+  - { target: andvaranaut, kind: 从属, detail: 所守宝藏之一, refs: [reginsmol] }
+  - { target: gram, kind: 敌对, detail: 死于该剑, refs: [fafnismol] }

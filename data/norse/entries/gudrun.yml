@@ -1,0 +1,27 @@
+id: gudrun
+pantheon: norse
+entity_type: 英雄
+name: 古德伦
+name_original: "Guðrún"
+aliases: [古德露恩]
+summary: 齐格鲁德之妻；丈夫被杀后改嫁阿特利，最终亲手杀死丈夫为兄弟报仇。
+role:
+  title: "两次婚姻里的复仇者"
+  brief: "她一生没拿过剑，却连着两场血案：前夫被人所杀，后夫被她所杀。"
+identity:
+  lineage: [human]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: midgard }
+narrative:
+  - text: "基雅尔人之女，嫁给齐格鲁德。"
+    refs: [sigurtharkvitha]
+  - text: "齐格鲁德被杀后她伏尸痛哭，声震屋宇，几次欲随他而死。"
+    refs: [guthrunarkvitha]
+  - text: "后来她被嫁与匈人之王阿特利；阿特利为夺宝藏杀死她的兄弟，她便亲手了结了阿特利。"
+    refs: [atlakvitha]
+relations:
+  - { target: sigurd, kind: 婚姻, detail: 夫妻, refs: [sigurtharkvitha] }
+  - { target: brynhildr, kind: 敌对, detail: 情敌，亦为夫仇, refs: [sigurtharkvitha] }
+  - { target: atli, kind: 婚姻, detail: 改嫁, refs: [atlakvitha] }

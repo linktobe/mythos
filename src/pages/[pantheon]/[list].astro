@@ -8,8 +8,8 @@ export function getStaticPaths() {
   for (const p of livePantheons) {
     const system = getSystem(p.id);
     for (const s of p.sections) {
-      // 体系首页（route 为空）与关系图另有页面
-      if (s.route === '' || s.key === 'graph') continue;
+      // 体系首页（route 为空）另有页面
+      if (s.route === '') continue;
       paths.push({ params: { pantheon: p.id, list: s.route }, props: { p, system, section: s } });
     }
   }

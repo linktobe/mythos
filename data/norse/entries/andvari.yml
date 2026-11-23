@@ -1,0 +1,27 @@
+id: andvari
+pantheon: norse
+entity_type: 矮人
+name: 安德瓦利
+name_original: "Andvari"
+aliases: [安德瓦里]
+summary: 藏金于水中的矮人，被洛基捉住后交出全部黄金与一枚指环，并下了诅咒。
+role:
+  title: "黄金的看守"
+  brief: "他交出了全部金子，却留下一句诅咒。此后这宗黄金经过的每一只手，都不得善终。"
+identity:
+  lineage: [dwarf]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond, note: 安德瓦瀑布的水中 }
+narrative:
+  - text: "他化鱼藏身水中，守着积攒的黄金。洛基为筹水獭的赎金，借澜的网将他捉住，逼他交出全部金子。"
+    refs: [reginsmol]
+  - text: "他只求留下那枚指环，洛基不肯。于是他诅咒这宗黄金：凡得此金者，必遭祸殃。"
+    refs: [reginsmol]
+  - text: "洛基把金子交出去时，把这句诅咒一并留下了。"
+    refs: [reginsmol]
+relations:
+  - { target: andvaranaut, kind: 从属, detail: 为其所藏之戒, refs: [reginsmol] }
+  - { target: loki, kind: 敌对, detail: 被其强夺全部黄金, refs: [reginsmol] }
+  - { target: fafnir, kind: 从属, detail: 其金后为法夫纳所据, refs: [reginsmol] }

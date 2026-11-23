@@ -1,0 +1,23 @@
+id: sigurd-death
+pantheon: norse
+entity_type: 事件
+name: 齐格鲁德之死
+name_original: "Brot af Sigurðarkviðu"
+aliases: [林中行刺, 布伦希尔德复仇]
+summary: 布伦希尔德察觉受欺，催动贡纳尔一党在林中刺杀齐格鲁德；她随后自尽同焚。
+role:
+  title: "一句谎话换一条命"
+  brief: "整件事起于一场替人求婚的骗局：换过容貌、换过名字，只有誓言是真的。"
+identity: {}
+narrative:
+  - text: "布伦希尔德见齐格鲁德忘了旧约、自己又被骗嫁与贡纳尔，遂当面发难，要他们动手。"
+    refs: [brot-sigurtharkvithu]
+  - text: "贡纳尔一党在林中伏击齐格鲁德，将他刺杀。"
+    refs: [brot-sigurtharkvithu]
+  - text: "布伦希尔德随后自尽，与他同焚于火葬堆；两人至死都是彼此的债主。"
+    refs: [sigurtharkvitha]
+relations:
+  - { target: sigurd, kind: 从属, detail: 被杀者, refs: [brot-sigurtharkvithu] }
+  - { target: brynhildr, kind: 从属, detail: 主谋, refs: [brot-sigurtharkvithu] }
+  - { target: gudrun, kind: 从属, detail: 遗孀, refs: [guthrunarkvitha] }
+  - { target: andvaranaut, kind: 从属, detail: 血案的根由, refs: [brot-sigurtharkvithu] }

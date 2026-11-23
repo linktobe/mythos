@@ -1,0 +1,28 @@
+id: gram
+pantheon: norse
+entity_type: 器物
+name: 格拉姆
+name_original: "Gramr"
+aliases: [格拉墨, 屠龙之剑]
+summary: 齐格鲁德的剑，由父亲西格蒙德留下的断剑重铸而成，屠龙用的就是它。
+role:
+  title: "重铸的断剑"
+  brief: "一把剑传了两代人：父亲把它折断，儿子把它重铸。它劈开的不只是龙，还有一段被诅咒的家产。"
+identity:
+  lineage:
+    - { id: dwarf, note: 雷金重铸 }
+  camp:
+    - { id: neutral, note: 英雄所持 }
+  realm:
+    - { id: midgard }
+narrative:
+  - text: "雷金把西格蒙德留下的断剑重铸成剑，名为格拉姆。"
+    refs: [reginsmol]
+  - text: "齐格鲁德试剑，一剑将雷金的铁砧劈为两半，剑锋不损。"
+    refs: [reginsmol]
+  - text: "屠龙时他自壕沟中由下刺入，法夫纳的毒血顺着剑身流下。"
+    refs: [fafnismol]
+relations:
+  - { target: regin, kind: 从属, detail: 由其重铸, refs: [reginsmol] }
+  - { target: sigurd, kind: 从属, detail: 为其佩剑, refs: [reginsmol] }
+  - { target: fafnir, kind: 敌对, detail: 以此剑刺死, refs: [fafnismol] }

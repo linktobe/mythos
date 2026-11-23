@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import EntryGrid from '../../components/EntryGrid.astro';
-import { livePantheons, getSystem, getGraph, sectionHref } from '../../lib/content';
+import { livePantheons, getSystem, sectionHref } from '../../lib/content';
 
 export function getStaticPaths() {
   return livePantheons.map((p) => ({ params: { pantheon: p.id }, props: { p } }));
@@ -9,16 +9,13 @@ export function getStaticPaths() {
 
 const { p } = Astro.props;
 const system = getSystem(p.id)!;
-const graph = getGraph(p.id);
 const entries = system.entries ?? [];
 
-const countOf = (section: any) => {
-  if (section.key === 'graph') return graph?.nodes?.length ?? 0;
-  return entries.filter((e: any) => section.types.includes(e.entity_type)).length;
-};
+const countOf = (section: any) =>
+  entries.filter((e: any) => section.types.includes(e.entity_type)).length;
 
 const unitOf = (section: any) =>
-  section.key === 'graph' ? '人' : section.key === 'object' ? '件' : section.key === 'place' ? '处' : section.key === 'event' ? '起' : '条';
+  section.key === 'object' ? '件' : section.key === 'place' ? '处' : section.key === 'event' ? '起' : '条';
 
 const lead = p.sections.find((s: any) => s.key === 'entry') ?? p.sections[0];
 const people = entries.filter((e: any) => e.section === lead.key);

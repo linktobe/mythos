@@ -148,3 +148,75 @@
   lang: 古诺斯语
   url: https://sacred-texts.com/book/the-poetic-edda/vafthruthnismol
   note: 奥丁与智者瓦夫斯鲁德尼尔斗智问答；末段记末日之后马格尼与莫迪继承雷锤。
+- id: reginsmol
+  pantheon: norse
+  tier: T0
+  title: 雷金的歌
+  original: Reginsmál
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/reginsmol
+  note: 前半为水獭的赎金与安德瓦利的诅咒，后半为雷金教齐格鲁德、铸格拉姆。
+
+- id: fafnismol
+  pantheon: norse
+  tier: T0
+  title: 法夫纳之歌
+  original: Fáfnismál
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/fafnismol
+  note: 屠龙一节的核心文本；法夫纳垂死时与齐格鲁德论命运，后附鸟语与斩雷金。
+
+- id: sigurtharkvitha
+  pantheon: norse
+  tier: T0
+  title: 齐格鲁德之歌（短）
+  original: Sigurðarkviða in skamma
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/sigurtharkvitha-en-skamma
+  note: 布伦希尔德与齐格鲁德的悲剧全貌，含她自尽一节。
+
+- id: brot-sigurtharkvithu
+  pantheon: norse
+  tier: T0
+  title: 齐格鲁德之歌残篇
+  original: Brot af Sigurðarkviðu
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/brot-af-sigurtharkvithu
+  note: 只存后半，记林中行刺与布伦希尔德的发难。
+
+- id: guthrunarkvitha
+  pantheon: norse
+  tier: T0
+  title: 古德伦之歌
+  original: Guðrúnarkviða in fyrsta
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/guthrunarkvitha-i
+  note: 古德伦在齐格鲁德尸前的悲恸，是全集里最集中的一段哭丧。
+
+- id: atlakvitha
+  pantheon: norse
+  tier: T0
+  title: 阿特利之歌
+  original: Atlakviða in grœnlenzka
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 9 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/atlakvitha-en-gronlenzka
+  note: 尼伯龙根宝藏的下落与古德伦复仇，风格在诗体埃达中最古拙冷硬。
+

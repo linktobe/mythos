@@ -1,0 +1,26 @@
+id: atli
+pantheon: norse
+entity_type: 英雄
+name: 阿特利
+name_original: "Atli"
+aliases: [阿提拉, 匈人之王]
+summary: 匈人之王，古德伦的第二任丈夫；为夺尼伯龙根的黄金杀妻兄弟，终被妻子所杀。
+role:
+  title: "为黄金而来的国王"
+  brief: "他不是神也不是怪物，只是一个想得到那批金子的国王——而金子归谁，从来不由他决定。"
+identity:
+  lineage: [human]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: midgard, note: 匈人王庭 }
+narrative:
+  - text: "匈人之王，娶古德伦为妻。"
+    refs: [atlakvitha]
+  - text: "他觊觎尼伯龙根那批黄金，诱骗古德伦的兄弟贡纳尔与赫格尼前来，逼问宝藏下落，不得便将二人杀害。"
+    refs: [atlakvitha]
+  - text: "古德伦以宴饮为掩护，在席间将他杀死，又放火烧了厅堂。"
+    refs: [atlakvitha]
+relations:
+  - { target: gudrun, kind: 婚姻, detail: 夫妻，后被其杀, refs: [atlakvitha] }
+  - { target: andvaranaut, kind: 从属, detail: 为夺此金起兵, refs: [atlakvitha] }

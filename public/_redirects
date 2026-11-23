@@ -12,5 +12,7 @@
 /di/           /norse/di/            301
 /shi           /norse/shi/           301
 /shi/          /norse/shi/           301
-/tu            /norse/tu/            301
-/tu/           /norse/tu/            301
+/tu           /norse/              301
+/tu/          /norse/              301
+/norse/tu     /norse/              301
+/norse/tu/    /norse/              301

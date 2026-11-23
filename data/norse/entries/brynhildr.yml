@@ -1,0 +1,31 @@
+id: brynhildr
+pantheon: norse
+entity_type: 英雄
+name: 布伦希尔德
+name_original: "Brynhildr"
+aliases: [布琳希德, 希格德里法]
+summary: 违逆奥丁的女武神，被刺以睡棘囚于火墙之后；被齐格鲁德唤醒，又因他另娶而策划复仇。
+role:
+  title: "醒着的女武神"
+  brief: "她是整条尼伯龙根线的轴：立誓、被负、复仇、自焚，四件事都在她一个人身上收束。"
+identity:
+  lineage:
+    - { id: aesir, note: 奥丁的女武神 }
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: beyond, note: 欣达山上的火墙 }
+narrative:
+  - text: "原为奥丁的女武神。两王相争，奥丁许了其中一方胜利，她却杀了被许诺的那一位；奥丁于是以睡棘刺她，令她沉睡，并定下「此后须嫁人」的条件。"
+    refs: [sigrdrifumal]
+  - text: "齐格鲁德破开火墙，割开她的甲胄，她醒来，授他卢恩的技艺与处世的告诫。"
+    refs: [sigrdrifumal]
+  - text: "二人在山上立誓相许，约以婚娶；这一步成了后来所有血案的债根。"
+    refs: [sigurtharkvitha]
+  - text: "齐格鲁德忘约另娶，又代贡纳尔来求她；她察觉受欺，遂催动贡纳尔一党杀死齐格鲁德，随后自尽于他的火葬堆。"
+    refs: [sigurtharkvitha, brot-sigurtharkvithu]
+relations:
+  - { target: valkyries, kind: 从属, detail: 原为其一员, refs: [sigrdrifumal] }
+  - { target: odin, kind: 从属, detail: 被其刺以睡棘, refs: [sigrdrifumal] }
+  - { target: sigurd, kind: 宿命, detail: 相许而后相负，终至同死, refs: [sigurtharkvitha] }
+  - { target: gudrun, kind: 敌对, detail: 因其嫁齐格鲁德而起杀心, refs: [sigurtharkvitha] }

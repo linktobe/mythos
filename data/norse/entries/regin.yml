@@ -1,0 +1,30 @@
+id: regin
+pantheon: norse
+entity_type: 矮人
+name: 雷金
+name_original: "Reginn"
+aliases: [雷金, 铸剑的师父]
+summary: 法夫纳的兄弟，矮人工匠，抚养齐格鲁德并为其铸剑，最后被自己的徒弟所杀。
+role:
+  title: "铸剑的师父"
+  brief: "他教齐格鲁德一切本领，只为借这双手报仇；事成之后，徒弟忽然听懂了鸟语。"
+identity:
+  lineage: [dwarf]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: midgard, note: 希亚尔普雷克之家 }
+narrative:
+  - text: "赫雷德玛之子，法夫纳之弟。父亲收下那宗带诅咒的黄金后被杀，法夫纳独占宝藏、化为毒龙。"
+    refs: [reginsmol]
+  - text: "他离开家门，在人间收养齐格鲁德，教他武艺与文字，又把断剑重铸成格拉姆。"
+    refs: [reginsmol]
+  - text: "屠龙之后，他剖开龙心令齐格鲁德炙烤；齐格鲁德吮指尝到龙血，忽然听懂鸟语——鸟在说雷金打算杀他。"
+    refs: [fafnismol]
+  - text: "齐格鲁德先下手，一剑斩了雷金。"
+    refs: [fafnismol]
+relations:
+  - { target: fafnir, kind: 亲缘, detail: 兄弟, refs: [reginsmol] }
+  - { target: sigurd, kind: 师承, detail: 养父兼铸剑师, refs: [reginsmol] }
+  - { target: andvaranaut, kind: 从属, detail: 其父所收赃金之一, refs: [reginsmol] }
+  - { target: gram, kind: 从属, detail: 由其重铸, refs: [reginsmol] }

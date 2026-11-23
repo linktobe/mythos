@@ -33,6 +33,11 @@
       desc: 神祇、巨人、矮人、异兽
       route: ''
       types: [神祇, 巨人, 矮人, 异兽]
+    - key: legend
+      label: 英雄传说
+      desc: 屠龙者与尼伯龙根的黄金
+      route: yingxiong
+      types: [英雄]
     - key: group
       label: 群体
       desc: 族群与军团
@@ -53,14 +58,9 @@
       desc: 把人物串成时间线
       route: shi
       types: [事件]
-    - key: graph
-      label: 关系图
-      desc: 人物之间的关系网
-      route: tu
-      types: []
   order:
     place: [asgard, vanaheim, alfheim, midgard, jotunheim, svartalfheim, muspelheim, niflheim, helheim]
-    event: [creation, aesir-vanir-war, idunn-apples, hammer-theft, baldr-death, loki-binding, ragnarok]
+    event: [creation, aesir-vanir-war, idunn-apples, hammer-theft, baldr-death, loki-binding, ragnarok, sigurd-death]
 
 - id: japanese
   zh: 日本神话

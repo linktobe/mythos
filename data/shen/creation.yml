@@ -1,0 +1,29 @@
+id: creation
+pantheon: norse
+entity_type: 事件
+name: 创世
+name_latin: "Skǫpun"
+aliases: [开天辟地]
+summary: 冰与火在鸿沟中相遇，化出始祖巨人；诸神杀之，以其身躯造出世界。
+role:
+  title: "从一具尸体开始"
+  brief: "这片天地不是被「创造」出来的，是拆出来的：先有巨人，再有神，最后才有山川海陆——它们都是巨人的骨血。"
+identity: {}
+narrative:
+  - text: "世界未成形时，只有金伦加鸿沟。北方是雾与冰，南方是火；冰与火在鸿沟中相遇，融水里化出巨人尤弥尔，以及一头名叫奥德姆拉的母牛。"
+    refs: [gylfaginning]
+  - text: "母牛舔食冰上的盐霜，舔出一个人形，名为布利。布利之子博尔娶巨人贝斯特拉，生下奥丁、维利与维三兄弟。"
+    refs: [gylfaginning]
+  - text: "三兄弟杀死尤弥尔，以他的身躯造世界：血汇成海，肉化为大地，骨堆成山，颅骨扣成天空，脑散作云。"
+    refs: [gylfaginning]
+  - text: "诸神又以尤弥尔的眉毛围出中间的一块地，名米德加德；再取海边拾得的两棵树造人，名为阿斯克与恩布拉。"
+    refs: [gylfaginning]
+variants:
+  - claim: "《女巫的预言》开篇只述世界由诸神自巨人身体造出，不及尤弥尔、母牛与布利诸节；这些细节主要见于《欺骗古鲁菲》。"
+    refs: [voluspa, gylfaginning]
+relations:
+  - { target: ymir, kind: 从属, detail: 以其身躯造世界, refs: [gylfaginning] }
+  - { target: odin, kind: 从属, detail: 三兄弟主其事, refs: [gylfaginning] }
+  - { target: midgard, kind: 从属, detail: 以其眉围成, refs: [gylfaginning] }
+legacy:
+  - 现代作品常把创世简化为「巨人倒下化作山川」，原典还多出母牛与布利这一支世系。

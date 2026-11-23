@@ -2,7 +2,14 @@
 import Base from '../layouts/Base.astro';
 import data from '../generated/entities.json';
 
-const events = data.entries.filter((e) => e.entity_type === '事件');
+const ORDER = ['creation', 'baldr-death', 'ragnarok'];
+const events = data.entries
+  .filter((e) => e.entity_type === '事件')
+  .sort((a, b) => {
+    const ia = ORDER.indexOf(a.id);
+    const ib = ORDER.indexOf(b.id);
+    return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+  });
 ---
 
 <Base title="事件 · 神话图鉴" description="北欧神话中的关键事件：诸神黄昏。">

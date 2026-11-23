@@ -1,0 +1,30 @@
+id: baldr-death
+pantheon: norse
+entity_type: 事件
+name: 巴德尔之死
+name_latin: "Baldrsdauði"
+aliases: [光明神之死]
+summary: 洛基借槲寄生与盲神霍德尔之手杀死巴德尔，诸神黄昏由此起算。
+role:
+  title: "第一块骨牌"
+  brief: "一场看似玩笑的投掷，把光明神送进了冥界，也把洛基送进了锁链。此后一切——绑狼、缚洛基、末日——都从这里往回数。"
+identity: {}
+narrative:
+  - text: "巴德尔屡做噩梦，预示死期。弗丽嘉为使儿子免于伤害，令万物起誓不伤他，唯独漏过被认作无害的槲寄生。"
+    refs: [gylfaginning]
+  - text: "众神以为他已刀枪不入，遂以投掷兵器伤他为戏。洛基探知槲寄生之事，取来交与盲神霍德尔；霍德尔投出，巴德尔当场身亡。"
+    refs: [gylfaginning]
+  - text: "诸神将遗体抬上船火葬。赫尔莫德骑马往冥界求还，海拉开出的条件是万物皆哭；女巨人托克（洛基所化）拒绝哭泣，巴德尔遂留在冥界。"
+    refs: [gylfaginning]
+  - text: "此事之后，诸神缚住洛基，末日的第一张多米诺骨牌就此倒下。"
+    refs: [gylfaginning]
+variants:
+  - claim: "《巴德尔的梦》只写奥丁赴冥界问卜儿子之死，无槲寄生、霍德尔与托克等情节；这些仅见于《欺骗古鲁菲》。"
+    refs: [baldrs-draumar, gylfaginning]
+relations:
+  - { target: baldr, kind: 从属, detail: 事件主角, refs: [gylfaginning] }
+  - { target: loki, kind: 从属, detail: 主谋, refs: [gylfaginning] }
+  - { target: frigg, kind: 从属, detail: 令万物起誓者, refs: [gylfaginning] }
+  - { target: hel, kind: 从属, detail: 拒绝归还, refs: [gylfaginning] }
+legacy:
+  - 《战神》（2018）把巴德尔改写为受诅咒的不死战士，与这场「玩笑」无关。

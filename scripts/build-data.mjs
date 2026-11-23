@@ -430,6 +430,7 @@ const pantheonsOut = {
     status: p.status,
     accent: p.accent,
     description: p.description,
+    tier_note: p.tier_note,
     sections: p.sections,
     axes: p.axes,
     graph_center: p.graph_center ?? null,

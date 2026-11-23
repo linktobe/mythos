@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import EntryGrid from '../../components/EntryGrid.astro';
-import { livePantheons, getSystem, sectionHref } from '../../lib/content';
+import { livePantheons, getSystem } from '../../lib/content';
 
 export function getStaticPaths() {
   const paths = [];
@@ -54,8 +54,5 @@ const relationKindCount = new Set(system.entries.flatMap((e: any) => e.relations
 
     <EntryGrid system={system} pantheonId={p.id} items={items} />
 
-    <p class="list-foot">
-      <a href={sectionHref(p.id, '')}>← 回到{p.zh}全部词条</a>
-    </p>
   </div>
 </Base>

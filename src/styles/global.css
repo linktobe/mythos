@@ -452,7 +452,6 @@ button.chip[aria-pressed="true"] { background: var(--accent); border-color: var(
 .search-empty { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
 
 /* ---------- 其余 ---------- */
-.list-foot { margin: -40px 0 64px; font-size: 13px; }
 .section-card.planned { opacity: .55; cursor: default; }
 .section-card.planned:hover { transform: none; border-color: var(--line); }
 .legend-end { margin-left: auto; }
@@ -477,7 +476,6 @@ button.chip[aria-pressed="true"] { background: var(--accent); border-color: var(
 @media (max-width: 720px) {
   .sections { grid-template-columns: repeat(2, 1fr); }
   .crumbs { font-size: 12.5px; }
-  .list-foot { margin-top: -28px; }
   .search-hit { flex-direction: column; gap: 2px; }
   .search-meta { white-space: normal; }
 }

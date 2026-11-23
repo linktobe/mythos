@@ -355,7 +355,7 @@ button.chip[aria-pressed="true"] { background: var(--accent); border-color: var(
 
 /* 首页四类入口 */
 .sections {
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(5, 1fr);
   gap: 12px; margin: 30px 0 8px;
 }
 .section-card {
@@ -371,4 +371,14 @@ button.chip[aria-pressed="true"] { background: var(--accent); border-color: var(
 @media (max-width: 720px) {
   .sections { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .section-card { padding: 14px; }
+}
+
+/* 返回上一级 */
+.back {
+  display: inline-block; margin: 28px 0 -12px;
+  font-size: 13px; color: var(--muted); letter-spacing: .04em;
+}
+.back:hover { color: var(--accent); text-decoration: none; }
+@media (max-width: 720px) {
+  .back { margin-top: 20px; }
 }

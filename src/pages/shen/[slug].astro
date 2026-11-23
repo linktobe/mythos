@@ -47,6 +47,12 @@ for (const r of entry.related) {
 
 const labelOf = (axis: string, id: string) => vocabIndex[axis as 'lineage'].get(id);
 
+const parent =
+  entry.entity_type === '器物' ? { href: '/qi', label: '器物' }
+  : entry.entity_type === '地区' ? { href: '/di', label: '地区' }
+  : entry.entity_type === '群体' ? { href: '/qun', label: '群体' }
+  : { href: '/', label: '词条' };
+
 // 关系分组固定顺序，避免"血盟"排在"亲缘"前面这种随机感
 const KIND_ORDER = ['亲缘', '婚姻', '血盟', '敌对', '宿命', '从属', '师承', '化生', '同源'];
 const orderedGroups = [...groupMap.entries()].sort(
@@ -60,6 +66,7 @@ const allT1 = entry.narrative.every((p) => isT1Only(p.refs));
 
 <Base title={`${entry.name} · 神话图鉴`} description={entry.summary}>
   <div class="wrap">
+    <a class="back" href={parent.href}>← 返回{parent.label}</a>
     <header class="entry-head reveal">
       <h1>{entry.name}<span class="etype">{entry.entity_type}</span></h1>
       <p class="aliases"><span class="latin">{entry.name_latin}</span>{entry.aliases.length > 0 && <>　又称：{entry.aliases.join(' · ')}</>}</p>

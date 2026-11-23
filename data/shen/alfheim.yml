@@ -1,0 +1,31 @@
+id: alfheim
+pantheon: norse
+entity_type: 地区
+name: 亚尔夫海姆
+name_latin: "Álfheimr"
+aliases: [光精灵之国]
+summary: 光精灵所居之地，原典记载极少，曾作为「齿礼」赠予弗雷。
+role:
+  title: "留给精灵的一界"
+  brief: "诸神分地时把它给了弗雷，理由是「齿礼」——孩子长牙时的赠礼。除此之外，原典几乎没写这片土地长什么样。"
+identity:
+  lineage:
+    - { id: alf, note: 光精灵所居 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: alfheim }
+narrative:
+  - text: "《格里姆尼尔之歌》记诸神在分地时，将亚尔夫海姆赠予弗雷，作为他长牙时的礼物。"
+    refs: [grimnismal]
+  - text: "居于此地的是光精灵。原典对这一族的描写，比对他们的土地多。"
+    refs: [gylfaginning]
+  - text: "此地风貌原典未详，只以「光」名之；与矮人所居的地下之界相比，恰成一对。"
+    refs: [gylfaginning]
+variants:
+  - claim: "光精灵与黑暗精灵的分别，主要靠《欺骗古鲁菲》的一句话；诗体埃达未作系统区分。"
+    refs: [gylfaginning]
+relations:
+  - { target: freyr, kind: 从属, detail: 受赠于此界, refs: [grimnismal] }
+legacy:
+  - 现代作品常把此地设为精灵王国，原典只留下一个名字与「光」的暗示。

@@ -15,6 +15,7 @@ const vocabIndex = {
 };
 const nameById = new Map(data.entries.map((e) => [e.id, e.name]));
 const srcById = new Map(data.sources.map((s) => [s.id, s]));
+const placeIds = new Set(data.entries.filter((e) => e.entity_type === '地区').map((e) => e.id));
 
 const axes = [
   { key: 'lineage', label: '族' },
@@ -78,9 +79,11 @@ const allT1 = entry.narrative.every((p) => isT1Only(p.refs));
             <span class="axis-label">{axis.label}</span>
             {entry.identity[axis.key].map((item) => {
               const v = vocabIndex[axis.key].get(item.id);
+              const label = v?.zh ?? item.id;
+              const linked = axis.key === 'realm' && placeIds.has(item.id) && item.id !== entry.id;
               return (
                 <span class="chip">
-                  {v?.zh ?? item.id}
+                  {linked ? <a href={`/shen/${item.id}`}>{label}</a> : label}
                   {(item.note || item.from || item.until) && (
                     <em>
                       {[item.from, item.until ? `至${item.until}` : '', item.note].filter(Boolean).join(' · ')}

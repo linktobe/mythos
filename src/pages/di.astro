@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import data from '../generated/entities.json';
+
+const ORDER = ['asgard', 'vanaheim', 'alfheim', 'midgard', 'jotunheim', 'svartalfheim', 'muspelheim', 'niflheim', 'helheim'];
+const places = data.entries
+  .filter((e) => e.entity_type === '地区')
+  .sort((a, b) => {
+    const ia = ORDER.indexOf(a.id);
+    const ib = ORDER.indexOf(b.id);
+    return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+  });
+const lineageName = new Map(data.vocab.lineage.map((l) => [l.id, l.zh]));
+---
+
+<Base title="地区 · 神话图鉴" description="北欧神话中的九界：诞生、居民与自然环境。">
+  <div class="wrap">
+    <header class="list-head">
+      <h1>地区</h1>
+      <p style="color: var(--muted); margin: 0;">九界及其来历。每一条都写明三件事：这一界怎样产生、住着什么人、环境是什么样。</p>
+      <div class="stats">
+        <span>{places.length} 处</span>
+      </div>
+    </header>
+
+    <section class="cards">
+      {places.map((e, i) => (
+        <a class="card reveal" style={`--d:${i * 45}ms`} href={`/shen/${e.id}`}>
+          <div class="name">
+            {e.name}
+            <span class="alias">{e.name_latin}</span>
+          </div>
+          <div class="desc">{e.summary}</div>
+          <div class="tags">
+            <span class="tag-role">{e.role.title}</span>
+            {e.identity.lineage.slice(0, 1).map((x) => <span>居民·{lineageName.get(x.id) ?? x.id}</span>)}
+          </div>
+        </a>
+      ))}
+    </section>
+  </div>
+</Base>

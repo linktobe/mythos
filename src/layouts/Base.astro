@@ -32,7 +32,9 @@ const active = (p: string) => (p === '/' ? path === '/' : path.startsWith(p));
         </a>
         <nav class="nav">
           <a href="/" aria-current={active('/') ? 'page' : undefined}>词条</a>
+          <a href="/qun" aria-current={active('/qun') ? 'page' : undefined}>群体</a>
           <a href="/qi" aria-current={active('/qi') ? 'page' : undefined}>器物</a>
+          <a href="/di" aria-current={active('/di') ? 'page' : undefined}>地区</a>
           <a href="/tu" aria-current={active('/tu') ? 'page' : undefined}>关系图</a>
           <a href="/about" aria-current={active('/about') ? 'page' : undefined}>编例</a>
         </nav>

@@ -1,0 +1,31 @@
+id: midgard
+pantheon: norse
+entity_type: 地区
+name: 米德加德
+name_latin: "Miðgarðr"
+aliases: [中界, 人间]
+summary: 人类所居的中界，以巨人尤弥尔的眉毛围成，四周是巨蟒环绕之海。
+role:
+  title: "人的世界"
+  brief: "诸神造完世界之后，专门圈出一块地方给人住，还用巨人的眉毛做了围墙。可这堵墙挡得住巨人，挡不住命运。"
+identity:
+  lineage:
+    - { id: human, note: 人类所居 }
+  camp:
+    - { id: human }
+  realm:
+    - { id: midgard }
+narrative:
+  - text: "诸神以尤弥尔的眉毛造了一道围墙，圈出中间的一块地，称为米德加德，供人类居住。"
+    refs: [gylfaginning]
+  - text: "最早的人由奥丁三兄弟从海边拾得的两棵树造成，名为阿斯克与恩布拉。"
+    refs: [gylfaginning]
+  - text: "此地四面环海，海中盘着一条自衔其尾的巨蟒，首尾相接，把人间围在正中。"
+    refs: [gylfaginning]
+variants:
+  - claim: "围墙取自尤弥尔眉毛之说见于《欺骗古鲁菲》，诗体埃达只言诸神造人，不及围墙。"
+    refs: [gylfaginning]
+relations:
+  - { target: jormungandr, kind: 宿命, detail: 环海而居，围住此界, refs: [gylfaginning] }
+legacy:
+  - 英语中的「Middle-earth」即由此名而来。

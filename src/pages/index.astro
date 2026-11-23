@@ -4,29 +4,24 @@ import data from '../generated/entities.json';
 
 const { entries, vocab, counts } = data;
 
-// 器物另列一页，不与人神混排
-const people = entries.filter((e) => e.entity_type !== '器物');
+const KIND_PEOPLE = new Set(['神祇', '巨人', '矮人', '异兽']);
+const people = entries.filter((e) => KIND_PEOPLE.has(e.entity_type));
+const groups = entries.filter((e) => e.entity_type === '群体');
 const vessels = entries.filter((e) => e.entity_type === '器物');
+const places = entries.filter((e) => e.entity_type === '地区');
+
+const sections = [
+  { href: '/', label: '词条', desc: '神祇、巨人、矮人、异兽', n: people.length },
+  { href: '/qun', label: '群体', desc: '族群与军团', n: groups.length },
+  { href: '/qi', label: '器物', desc: '兵刃、宝物与桥', n: vessels.length },
+  { href: '/di', label: '地区', desc: '九界与它们的来历', n: places.length },
+];
 
 const vocabIndex = {
   lineage: new Map(vocab.lineage.map((x) => [x.id, x])),
   camp: new Map(vocab.camp.map((x) => [x.id, x])),
   realm: new Map(vocab.realm.map((x) => [x.id, x])),
 };
-
-// 只列出被实际使用过的词表项，避免出现空筛选项
-const used = (axis) => {
-  const ids = new Set();
-  for (const e of people) for (const item of e.identity[axis]) ids.add(item.id);
-  return vocab[axis].filter((x) => ids.has(x.id));
-};
-
-const axes = [
-  { key: 'lineage', label: '族' },
-  { key: 'camp', label: '阵营' },
-  { key: 'realm', label: '界' },
-];
-
 const tagOf = (axis, id) => vocabIndex[axis]?.get(id)?.zh ?? id;
 ---
 
@@ -36,85 +31,42 @@ const tagOf = (axis, id) => vocabIndex[axis]?.get(id)?.zh ?? id;
       <h1>神话图鉴</h1>
       <p style="color: var(--muted); margin: 0;">北欧诸神的中文词条。所载故事各著出处；诸书异说，并列存之。</p>
       <div class="stats">
-        <span>{people.length} 个人物与族群</span>
-        <span>{vessels.length} 件器物</span>
+        <span>{counts.entries} 条词目</span>
         <span>{counts.relations} 条关系</span>
-        <span>{counts.sources} 种来源</span>
+        <span>{counts.sources} 种典籍</span>
       </div>
     </header>
 
-    {vessels.length > 0 && (
-      <p class="vessel-link">
-        器物另列一栏：{vessels.map((v, i) => (<>{i > 0 && '、'}<a href={`/shen/${v.id}`}>{v.name}</a></>))}
-        　<a class="more" href="/qi">查看器物 →</a>
-      </p>
-    )}
-
-    <section class="filters" aria-label="按身份筛选">
-      {axes.map((axis) => (
-        <div class="filter-row" data-axis={axis.key}>
-          <span class="axis-label">{axis.label}</span>
-          <div class="chips">
-            <button class="chip" data-value="" aria-pressed="true">全部</button>
-            {used(axis.key).map((item) => (
-              <button class="chip" data-value={item.id} aria-pressed="false">{item.zh}</button>
-            ))}
-          </div>
-        </div>
+    <nav class="sections" aria-label="分类">
+      {sections.map((s) => (
+        <a class="section-card" href={s.href}>
+          <span class="section-n">{s.n}</span>
+          <span class="section-name">{s.label}</span>
+          <span class="section-desc">{s.desc}</span>
+        </a>
       ))}
-    </section>
+    </nav>
 
-    <section class="cards" id="cards">
+    <h2>最近收录</h2>
+    <section class="cards">
       {people.map((e, i) => (
-        <a
-          class="card reveal"
-          style={`--d:${i * 45}ms`}
-          href={`/shen/${e.id}`}
-          data-lineage={e.identity.lineage.map((x) => x.id).join(' ')}
-          data-camp={e.identity.camp.map((x) => x.id).join(' ')}
-          data-realm={e.identity.realm.map((x) => x.id).join(' ')}
-        >
+        <a class="card reveal" style={`--d:${i * 45}ms`} href={`/shen/${e.id}`}>
           <div class="name">
             {e.name}
-            {e.aliases.length > 0 && <span class="alias">{e.aliases[0]}</span>}
+            <span class="alias">{e.name_latin}</span>
           </div>
           <div class="desc">{e.summary}</div>
           <div class="tags">
             {e.entity_type !== '神祇' && <span class="tag-type">{e.entity_type}</span>}
             <span class="tag-role">{e.role.title}</span>
-            {e.identity.lineage.slice(0, 1).map((x) => <span>{tagOf('lineage', x.id)}</span>)}
+            {e.identity.lineage.slice(0, 1).map((x) => {
+              const t = tagOf('lineage', x.id);
+              return t === e.entity_type ? null : <span>{t}</span>;
+            })}
             {e.identity.realm.slice(0, 1).map((x) => <span>{tagOf('realm', x.id)}</span>)}
           </div>
         </a>
       ))}
     </section>
   </div>
-
-  <script>
-    const state = { lineage: '', camp: '', realm: '' };
-    const rows = document.querySelectorAll('.filter-row');
-    const cards = Array.from(document.querySelectorAll('.card'));
-
-    function apply() {
-      for (const card of cards) {
-        const ok = Object.entries(state).every(([axis, value]) => {
-          if (!value) return true;
-          return (card.dataset[axis] || '').split(' ').includes(value);
-        });
-        card.hidden = !ok;
-      }
-    }
-
-    rows.forEach((row) => {
-      const axis = row.dataset.axis;
-      row.querySelectorAll('button.chip').forEach((btn) => {
-        btn.addEventListener('click', () => {
-          row.querySelectorAll('button.chip').forEach((b) => b.setAttribute('aria-pressed', 'false'));
-          btn.setAttribute('aria-pressed', 'true');
-          state[axis] = btn.dataset.value;
-          apply();
-        });
-      });
-    });
-  </script>
 </Base>

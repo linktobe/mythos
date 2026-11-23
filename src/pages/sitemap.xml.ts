@@ -7,7 +7,9 @@ export const GET: APIRoute = () => {
   const urls = [
     { loc: '/', priority: '1.0' },
     ...data.entries.map((e) => ({ loc: `/shen/${e.id}/`, priority: '0.8' })),
+    { loc: '/qun/', priority: '0.5' },
     { loc: '/qi/', priority: '0.5' },
+    { loc: '/di/', priority: '0.6' },
     { loc: '/tu/', priority: '0.5' },
     { loc: '/about/', priority: '0.3' },
   ];

@@ -1,0 +1,32 @@
+id: helheim
+pantheon: norse
+entity_type: 地区
+name: 赫尔海姆
+name_latin: "Helheimr"
+aliases: [冥界, 亡者之国]
+summary: 亡者所居之地，海拉统辖，收容病死者与老者。
+role:
+  title: "非战死者的归处"
+  brief: "战死者去英灵殿，其余的人来这里。它不惩罚谁，只是把病死与老死的人收进一片寒冷的黑暗里，连巴德尔也一度被留在这里。"
+identity:
+  lineage:
+    - { id: jotunn, note: 海拉所统 }
+  camp:
+    - { id: hel }
+  realm:
+    - { id: helheim }
+narrative:
+  - text: "奥丁将洛基之女海拉投入尼福尔海姆，命她统辖一处，收容因病、因老而死的人；此地遂称赫尔海姆。"
+    refs: [gylfaginning]
+  - text: "居于此地的是海拉与死者。她的居所名埃柳德尼尔，餐盘名为「饥饿」，餐刀名为「饥荒」。"
+    refs: [gylfaginning]
+  - text: "此地寒冷阴暗，与火之界、雾之界同属世界边缘。巴德尔死后被留在此处，直到末日方归。"
+    refs: [gylfaginning, voluspa]
+variants:
+  - claim: "赫尔海姆与尼福尔海姆的界限，原典交代不清：有说它在此界之内，也有将二者并列为一界者。"
+    refs: [gylfaginning]
+relations:
+  - { target: hel, kind: 从属, detail: 由海拉统辖, refs: [gylfaginning] }
+  - { target: baldr, kind: 从属, detail: 死後留居于此, refs: [gylfaginning] }
+legacy:
+  - 现代作品常把这里画成火焰地狱，原典只写寒冷与黑暗。

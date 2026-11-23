@@ -4,6 +4,7 @@ import data from '../generated/entities.json';
 const { counts } = data;
 const people = data.entries.filter((e) => e.entity_type !== '器物').length;
 const vessels = data.entries.filter((e) => e.entity_type === '器物').length;
+const places = data.entries.filter((e) => e.entity_type === '地区').length;
 ---
 
 <Base title="编例 · 神话图鉴" description="这些词条怎么写的：依据、异文、身份、职责、改编与出处。">
@@ -60,7 +61,7 @@ const vessels = data.entries.filter((e) => e.entity_type === '器物').length;
     <p>每段叙述之后均附引用编号，点击即可跳转至所引的具体书籍。页面末尾列出全部引用书目，并附公版原文的链接，以便读者核对。</p>
 
     <h2>七、规模</h2>
-    <p>目前收录人物与族群 {people} 条、器物 {vessels} 件、关系 {counts.relations} 条、典籍 {counts.sources} 种。数据都是纯文本，逐条可查。</p>
+    <p>目前收录人物与族群 {people} 条、器物 {vessels} 件、地区 {places} 处、关系 {counts.relations} 条、典籍 {counts.sources} 种。数据都是纯文本，逐条可查。</p>
 
     <h2>八、版权</h2>
     <p>代码使用 MIT 许可，词条文本使用 CC BY-SA 4.0，所引古籍属于公有领域。</p>

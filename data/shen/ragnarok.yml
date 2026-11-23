@@ -1,0 +1,30 @@
+id: ragnarok
+pantheon: norse
+entity_type: 事件
+name: 诸神黄昏
+name_latin: "Ragnarök"
+aliases: [诸神的黄昏, 末日]
+summary: 神与巨人同归于尽的终局之战，世界烧尽之后复又从海中升起。
+role:
+  title: "被预告过的终局"
+  brief: "它不是一场突袭，而是一套早知道结局的程序：冬天连着冬天，狼吞日月，锁链断裂，然后一切烧尽。诸神知道它要来，仍照常赴约。"
+identity: {}
+narrative:
+  - text: "先兆是芬布尔之冬：连过三个不见夏日的冬天，兄弟相残，父子相杀，世间的道义崩坏；随后狼群吞下日月。"
+    refs: [voluspa]
+  - text: "天地震动，锁链尽断。芬里尔挣脱束缚，耶梦加得自海中涌出，洛基率冥界之众乘船而来，苏尔特尔自南方携火而至。"
+    refs: [voluspa, gylfaginning]
+  - text: "诸神应战：奥丁被芬里尔吞下，维达随即杀狼；托尔击杀巨蟒后中毒而亡；海姆达尔与洛基同归于尽；苏尔特尔放火烧尽世界。"
+    refs: [voluspa, gylfaginning]
+  - text: "大火之后，大地自海中重新升起，依旧青绿；巴德尔自冥界归来，幸存的两人在一处重新繁衍。"
+    refs: [voluspa]
+variants:
+  - claim: "末日之后世界重生一节，主要见于《女巫的预言》后半与 Snorri 的叙述；各本细节不一，诗体埃达相关篇章亦有残缺。"
+    refs: [voluspa, gylfaginning]
+relations:
+  - { target: fenrir, kind: 从属, detail: 吞下奥丁, refs: [gylfaginning] }
+  - { target: surtr, kind: 从属, detail: 焚尽世界, refs: [voluspa] }
+  - { target: thor, kind: 从属, detail: 杀蛇后中毒而亡, refs: [voluspa] }
+  - { target: loki, kind: 从属, detail: 与海姆达尔同归于尽, refs: [voluspa] }
+legacy:
+  - 瓦格纳《尼伯龙根的指环》末部即名《诸神的黄昏》，取材于此。

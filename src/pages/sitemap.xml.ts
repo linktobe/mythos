@@ -10,6 +10,7 @@ export const GET: APIRoute = () => {
     { loc: '/qun/', priority: '0.5' },
     { loc: '/qi/', priority: '0.5' },
     { loc: '/di/', priority: '0.6' },
+    { loc: '/shi/', priority: '0.6' },
     { loc: '/tu/', priority: '0.5' },
     { loc: '/about/', priority: '0.3' },
   ];

@@ -47,10 +47,13 @@ for (const r of entry.related) {
 
 const labelOf = (axis: string, id: string) => vocabIndex[axis as 'lineage'].get(id);
 
+const hasIdentity = ['lineage', 'camp', 'realm'].some((k) => entry.identity[k].length > 0);
+
 const parent =
   entry.entity_type === '器物' ? { href: '/qi', label: '器物' }
   : entry.entity_type === '地区' ? { href: '/di', label: '地区' }
   : entry.entity_type === '群体' ? { href: '/qun', label: '群体' }
+  : entry.entity_type === '事件' ? { href: '/shi', label: '事件' }
   : { href: '/', label: '词条' };
 
 // 关系分组固定顺序，避免"血盟"排在"亲缘"前面这种随机感
@@ -80,6 +83,7 @@ const allT1 = entry.narrative.every((p) => isT1Only(p.refs));
         </div>
       </div>
 
+      {hasIdentity && (
       <div class="identity">
         {axes.map((axis) => (
           <div class="axis">
@@ -102,6 +106,7 @@ const allT1 = entry.narrative.every((p) => isT1Only(p.refs));
           </div>
         ))}
       </div>
+      )}
     </header>
 
     <h2>原典叙事</h2>

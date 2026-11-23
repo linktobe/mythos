@@ -9,12 +9,14 @@ const people = entries.filter((e) => KIND_PEOPLE.has(e.entity_type));
 const groups = entries.filter((e) => e.entity_type === '群体');
 const vessels = entries.filter((e) => e.entity_type === '器物');
 const places = entries.filter((e) => e.entity_type === '地区');
+const events = entries.filter((e) => e.entity_type === '事件');
 
 const sections = [
   { href: '/', label: '词条', desc: '神祇、巨人、矮人、异兽', n: people.length },
   { href: '/qun', label: '群体', desc: '族群与军团', n: groups.length },
   { href: '/qi', label: '器物', desc: '兵刃、宝物与桥', n: vessels.length },
   { href: '/di', label: '地区', desc: '九界与它们的来历', n: places.length },
+  { href: '/shi', label: '事件', desc: '把人物串成时间线', n: events.length },
   { href: '/tu', label: '关系图', desc: '人物之间的关系网', n: counts.relations },
 ];
 

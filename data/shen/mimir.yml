@@ -1,0 +1,31 @@
+id: mimir
+pantheon: norse
+entity_type: 神祇
+name: 密米尔
+name_latin: "Mímir"
+aliases: [智慧者, 密米尔之泉的守者]
+summary: 阿萨神族中最有智慧者，被斩首后由奥丁保存头颅，遇事问计。
+role:
+  title: "会说话的答案"
+  brief: "诸神遇事不决时，去问密米尔。他被送去当人质、被砍了头，头颅却还在给奥丁出主意——这大概是最早的「智库」意象。"
+identity:
+  lineage:
+    - { id: aesir, note: 一说本属巨人 }
+  camp:
+    - { id: aesir, until: 议和后作为人质 }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "他是阿萨神族中最有智慧的一位。两族议和时，他与海尼尔一同被送往华纳海姆做人质。"
+    refs: [gylfaginning]
+  - text: "华纳神族很快发现，海尼尔离了密米尔便不能决断，自感受骗，于是斩下密米尔的首级送回阿萨。"
+    refs: [gylfaginning]
+  - text: "奥丁以草药保存其头，施以咒术，使它仍能言语；此后遇有疑难，便向这颗头颅问计。"
+    refs: [gylfaginning]
+variants:
+  - claim: "泉水的守护者与被斩首的智者是否同一人，原典未明说；有学者分作两位密米尔。"
+    refs: [gylfaginning]
+relations:
+  - { target: odin, kind: 从属, detail: 奥丁常向其问计, refs: [gylfaginning] }
+legacy:
+  - 现代作品里的「会说话的头颅」，多可追到这一段。

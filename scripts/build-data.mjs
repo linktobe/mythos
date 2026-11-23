@@ -67,12 +67,13 @@ const AxisItem = z
   ])
   .transform((v) => (typeof v === 'string' ? { id: v } : v));
 
-const IdentityAxis = z.array(AxisItem).min(1);
+// 事件类没有血统/阵营/居所，允许留空，由下面的 superRefine 区分
+const IdentityAxis = z.array(AxisItem).default([]);
 
 const Entry = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/, 'id 只能是小写字母、数字、连字符'),
   pantheon: z.string(),
-  entity_type: z.enum(['神祇', '巨人', '矮人', '异兽', '器物', '群体', '地区']).default('神祇'),
+  entity_type: z.enum(['神祇', '巨人', '矮人', '异兽', '器物', '群体', '地区', '事件']).default('神祇'),
   name: z.string().min(1),
   name_latin: z.string().min(2),
   aliases: z.array(z.string()).default([]),
@@ -111,7 +112,18 @@ const Entry = z.object({
       })
     )
     .default([]),
-});
+}).superRefine((e, ctx) => {
+  if (e.entity_type === '事件') return;
+  for (const [axis, items] of Object.entries(e.identity)) {
+    if (!items.length) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: ['identity', axis],
+        message: '身份三项不能为空（仅事件类可留空）',
+      });
+    }
+  }
+});;
 
 /* ---------- 读取词条 ---------- */
 const dir = path.join(DATA, 'shen');

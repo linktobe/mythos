@@ -24,7 +24,7 @@ narrative:
   - text: 她佩戴项链布里辛嘉曼，车驾由两猫牵引；又曾以 seidr 之术授奥丁。
     refs: [gylfaginning, skaldskaparmal]
 variants:
-  - claim: 学界有 "芙蕾雅与弗丽嘉本为同一女神分化" 的假说，<em>《欺骗古鲁菲》</em> 中二者的职司确有重叠。
+  - claim: 学界有「芙蕾雅与弗丽嘉本为同一女神分化」的假说，《欺骗古鲁菲》中二者的职司确有重叠。
     refs: [gylfaginning]
 relations:
   - { target: njord, kind: 亲缘, detail: 父女, refs: [gylfaginning] }

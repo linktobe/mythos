@@ -307,6 +307,19 @@ for (const p of pantheons) {
         fail(`${p.id}/${file}: 关系类型 "${r.kind}" 未在本体系 relation_kinds 中启用`);
       }
     }
+    // 正文一律纯文本：模板会自动转义，混进标签只会原样显示出来
+    const HTML_TAG = /<\/?[a-zA-Z][a-zA-Z0-9-]*(\s[^>]*)?>/;
+    const scanTags = (value, where) => {
+      if (typeof value === 'string') {
+        if (HTML_TAG.test(value)) fail(`${p.id}/${file}: ${where} 含 HTML 标签，正文应为纯文本`);
+      } else if (Array.isArray(value)) {
+        value.forEach((v, i) => scanTags(v, `${where}[${i}]`));
+      } else if (value && typeof value === 'object') {
+        for (const [k, v] of Object.entries(value)) scanTags(v, where ? `${where}.${k}` : k);
+      }
+    };
+    scanTags({ ...e, file: undefined }, '');
+
     entries.push({ ...e, file });
   }
 

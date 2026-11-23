@@ -132,10 +132,5 @@
       desc: 战争与远征
       route: shi
       types: [事件]
-    - key: graph
-      label: 关系图
-      desc: 神谱关系网
-      route: tu
-      types: []
   order:
     event: []

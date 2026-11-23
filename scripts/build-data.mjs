@@ -373,16 +373,13 @@ for (const p of pantheons) {
 
   /* 排序用的固定顺序：order.realms / order.events 等按 section key 匹配 */
   for (const e of entries) {
-    const cat = catByZh.get(e.entity_type);
     e.section = p.sections.find((s) => s.types.includes(e.entity_type))?.key ?? null;
-    e.graph = cat?.graph === true;
   }
 
   const counts = {
     entries: entries.length,
     relations: entries.reduce((n, e) => n + e.relations.length, 0),
     sources: sources.length,
-    graphNodes: entries.filter((e) => e.graph).length,
   };
 
   systems.push({ pantheon: p, vocab, sources, entries, counts });
@@ -458,7 +455,6 @@ const pantheonsOut = {
       entries: 0,
       relations: 0,
       sources: 0,
-      graphNodes: 0,
     },
   })),
 };

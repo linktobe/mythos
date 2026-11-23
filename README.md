@@ -1,6 +1,6 @@
 # mythos · 神话人物图鉴（中文）
 
-以 **T0 原典** 为主干的中文神话人物词条库，带结构化关系与三轴身份（阵营 / 界 / 族）。
+以原始文本为主干的中文神话人物词条库。每个人物都标注身份、关系和出处，不设唯一正典。
 
 - 语种：仅中文
 - 体裁：纯文本，无图片
@@ -8,25 +8,46 @@
 
 ## 编例（摘要）
 
-1. 叙事主干只用 T0 原典；T1 仅在 T0 缺失时兜底并标注；T2/T3（后世重述、游戏影视）压缩成一句，放在词条末尾的「后世演绎」。
-2. 冲突版本**并列**，不缝合、不裁决。
-3. 每条关键断言必须挂到具体来源（`data/sources.yml` 中的 id）。
-4. 三类身份拆成三轴：`lineage`（血统/族）、`camp`（阵营/归属）、`realm`（界/居所），可随时间变化。
-5. 每个词条须写明其在神话世界中的**角色与责任**（`role.title` / `role.brief`）。
+1. 故事以成书最早的原始文本为主。原书没有写到的，才退一步采用后人整理的汇编，并在引用处注明是哪一本。后来的小说、电影、游戏只作一句交代，放在词条末尾的「后世演绎」。
+2. 不同的书说法冲突时，并排列出，各自注明出处。不挑一个「读起来更顺」的当作定论。
+3. 每段叙述都要能追到具体来源，来源清单在 `data/sources.yml`。
+4. 每个词条标三项身份：族（血统）、阵营（政治归属）、界（居所）。三项分别记录，可以随时间变化。
+5. 每个词条还要写清它在神话里承担什么：一句角色定位，一段职责说明。
+
+分级标准与完整原则见站内「编例」页（`src/pages/about.astro`）。
+
+## 词条字段
+
+| 字段 | 含义 |
+| --- | --- |
+| `id` / `name` / `name_latin` | 文件标识、中文名、原文名 |
+| `entity_type` | 神祇 / 巨人 / 矮人 / 群体 / 异兽 / 器物 |
+| `summary` | 一句话概括 |
+| `role.title` / `role.brief` | 角色定位、职责说明 |
+| `identity.lineage` | 血统所属 |
+| `identity.camp` | 政治归属，可带起止时间 |
+| `identity.realm` | 居所 |
+| `narrative[]` | 主叙事段落，每段挂 `refs` |
+| `variants[]` | 异文，各挂 `refs` |
+| `relations[]` | 关系：目标、类型、说明、出处 |
+| `legacy[]` | 一句话带过的后世演绎 |
+| `adaptations[]` | 改编作品对照：作品、形象、与原典的出入 |
 
 ## 目录
 
 ```
 data/
-├── vocab/            受控词表：camps / realms / lineages
-├── sources.yml       原典登记表（T0/T1），带公版原文链接
-└── shen/             人物词条，一人一文件（YAML）
+├── vocab/            词表：族 / 阵营 / 界
+├── sources.yml       原典登记表，带公版原文链接
+└── shen/             词条，一条一文件（YAML）
 scripts/
-├── build-data.mjs    校验 + 生成 src/generated/entities.json
-└── layout.mjs        预计算关系图布局，生成 graph.json
+├── build-data.mjs    校验并生成 src/generated/entities.json
+└── layout.mjs        预先算好关系图坐标，生成 graph.json
 src/
-├── pages/            index / shen/[slug] / tu / about
-└── components/       身份标签、关系列表、关系图
+├── layouts/          页面骨架
+├── pages/            index / shen/[slug] / qi / tu / about
+├── styles/           全站样式
+└── generated/        构建产物（不入库）
 ```
 
 ## 本地开发
@@ -39,13 +60,13 @@ npm run build    # 产物在 dist/
 
 ## 数据校验
 
-`npm run data` 会做这些检查，任何一条不过就构建失败：
+`npm run data` 会逐项检查，任何一条不过，构建直接失败：
 
 - 词条 id 唯一，且与文件名一致
-- `identity` 三个轴引用的 id 必须在 `data/vocab/*.yml` 中存在
-- `relations[].target` 必须指向已存在的词条
-- 叙事段落必须至少挂一个 `refs`，且 ref 必须在 `data/sources.yml` 中
-- `tier` 只能是 T0/T1（T2/T3 不允许出现在叙事里）
+- 身份三项引用的 id 必须在 `data/vocab/*.yml` 中存在
+- 关系指向的条目必须存在
+- 叙事段落至少挂一个来源，且来源必须在 `data/sources.yml` 中
+- 来源等级只允许原典与古代汇编；后世重述和现代改编不能进叙事
 
 ## 许可
 

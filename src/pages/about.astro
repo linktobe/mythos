@@ -6,28 +6,28 @@ const people = data.entries.filter((e) => e.entity_type !== '器物').length;
 const vessels = data.entries.filter((e) => e.entity_type === '器物').length;
 ---
 
-<Base title="编例 · 神话图鉴" description="本站的编纂体例：依据、异文、三轴、职司、改编与出处。">
+<Base title="编例 · 神话图鉴" description="这些词条怎么写的：依据、异文、身份、职责、改编与出处。">
   <div class="wrap" style="padding-top: 56px; padding-bottom: 64px;">
     <h1>编例</h1>
-    <p class="summary reveal">神话无唯一正典。同一人物、同一事件，诸书所载每有出入。本站不以一说为定论，凡所征引，各著其出处。</p>
+    <p class="summary">神话没有唯一的正典。同一个人物、同一件事，不同的书常有不同说法。这里不选定一个标准答案，只把说法和出处一起列出来。</p>
 
     <h2>一、依据</h2>
-    <p>所据文献分为四级，别其亲疏：</p>
+    <p>故事以成书最早、记载最完整的文本为主。原书没有写到的，才退一步采用后人整理的汇编，并在引用处注明是哪一本。文本分四级，按可靠程度往下排：</p>
     <ul class="tiers">
       <li class="reveal" style="--d:0ms">
         <span class="tier t0">T0</span>
         <span class="tier-name">原典</span>
-        <span class="tier-desc">成书最早、直接记载神话的文本，如《诗体埃达》诸篇。</span>
+        <span class="tier-desc">成书最早、直接记载神话的文本，如《诗体埃达》各篇。</span>
       </li>
       <li class="reveal" style="--d:60ms">
         <span class="tier t1">T1</span>
         <span class="tier-name">古代汇编</span>
-        <span class="tier-desc">同代或稍晚的整理，如 Snorri《散文埃达》。记载最全，然作者去神话之世已二百年。</span>
+        <span class="tier-desc">同时代或稍晚的整理，如 Snorri 的《散文埃达》。记载最全，但作者距神话时代已有两百年。</span>
       </li>
       <li class="reveal" style="--d:120ms">
         <span class="tier t2">T2</span>
         <span class="tier-name">后世重述</span>
-        <span class="tier-desc">中古以降的文学改写，如《尼伯龙根之歌》。</span>
+        <span class="tier-desc">中古以后的文学改写，如《尼伯龙根之歌》。</span>
       </li>
       <li class="reveal" style="--d:180ms">
         <span class="tier t3">T3</span>
@@ -35,34 +35,34 @@ const vessels = data.entries.filter((e) => e.entity_type === '器物').length;
         <span class="tier-desc">电影、剧集、游戏，如漫威系列、《战神》。</span>
       </li>
     </ul>
-    <p>叙事主干止于 T0。T0 未备，始降取 T1，并于引用处注明；故北欧诸条多标 T1，非因轻信晚书，实因原典残缺。</p>
-    <p>T2、T3 一概不预正文，惟于页末「后世演绎」中一语带过，或于「改编形象对照」中逐条具列其异。</p>
+    <p>叙事只到原典为止。原典没有的，才降一级采用汇编，并注明出处。所以北欧条目大多标着 T1——不是轻信晚出的书，而是原典本身就残缺。北欧神话几乎全靠《散文埃达》保存，而它写于十三世纪，作者是基督徒，离神话时代已经两百年。</p>
+    <p>T2 和 T3 不进正文，只在页末用一句话带过，或者单列在「改编形象对照」里。</p>
 
     <h2>二、异文</h2>
-    <p>诸书抵牾，则两说并列，各注所出，不事弥缝。本站不取「文从字顺者为准」之例，去取之权，归于读者。</p>
+    <p>两本书讲得不一样，就并排放着，各自标明出处。不挑一个「读起来更顺」的当作定论，怎么取舍交给读者。</p>
 
     <h2>三、三轴</h2>
-    <p>每条分标三事，不相合并：</p>
+    <p>每个词条标三样东西，分开记录，因为它们经常对不上：</p>
     <ul>
-      <li><strong>族</strong>：血统所出。洛基为巨人。</li>
-      <li><strong>阵营</strong>：所与同列。洛基列于阿萨。</li>
-      <li><strong>界</strong>：居止之地。洛基居阿斯加德。</li>
+      <li><strong>族</strong>：血统上属于什么。洛基是巨人。</li>
+      <li><strong>阵营</strong>：和谁站在一起。洛基列在阿萨神族。</li>
+      <li><strong>界</strong>：住在哪里。洛基住在阿斯加德。</li>
     </ul>
-    <p>三者常相违异，洛基即其例：血统为巨人，阵营属阿萨，居阿斯加德。合而为一，则其人不可解。</p>
+    <p>这三样在洛基身上全不一致：血统是巨人，阵营在阿萨，住在阿斯加德。合成一项，就没法说清他是谁。</p>
 
-    <h2>四、职司</h2>
-    <p>三轴明其「为谁」，复须明其「所司」。每条各系一句：奥丁主秩序，托尔御巨人，洛基乱其成。无此一句，人物页徒存谱系。</p>
+    <h2>四、职责</h2>
+    <p>说清「他是谁」还不够，还要说清「他做什么」。所以每个词条都有一句定位：奥丁维持秩序，托尔抵挡巨人，洛基破坏秩序。少了这一句，人物页就只剩家谱。</p>
 
     <h2>五、改编</h2>
-    <p>电影、剧集、游戏之改作，别为一节，逐条具列其异。本站不评其优劣，惟辨何语出于原书，何语出于编剧。</p>
+    <p>电影、剧集、游戏怎么改，单独列一节，一条一条写明改了什么。这里不评价好坏，只说明哪句话出自原书，哪句话是编剧的创作。</p>
 
     <h2>六、出处</h2>
-    <p>每段之后系以编号，可径至所引之书。页末总列书目，附公版原文库链接，以便覆核。</p>
+    <p>每段叙述后面都有编号，点进去是所引的那本书。页面末尾列出全部书目，附公版原文库的链接，方便核对。</p>
 
-    <h2>七、著录</h2>
-    <p>今著录人物与族群 {people} 条、器物 {vessels} 件、关系 {counts.relations} 条、典籍 {counts.sources} 种。数据均为纯文本，逐条可校。</p>
+    <h2>七、规模</h2>
+    <p>目前收录人物与族群 {people} 条、器物 {vessels} 件、关系 {counts.relations} 条、典籍 {counts.sources} 种。数据都是纯文本，逐条可查。</p>
 
     <h2>八、版权</h2>
-    <p>代码依 MIT 许可，词条文本依 CC BY-SA 4.0，所引古籍属公有领域。</p>
+    <p>代码使用 MIT 许可，词条文本使用 CC BY-SA 4.0，所引古籍属于公有领域。</p>
   </div>
 </Base>

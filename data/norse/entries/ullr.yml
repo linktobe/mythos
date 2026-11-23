@@ -1,0 +1,28 @@
+id: ullr
+pantheon: norse
+entity_type: 神祇
+name: 乌勒尔
+name_original: "Ullr"
+aliases: [乌尔, 弓神]
+summary: 弓箭与滑雪之神，居伊达利尔；名号极响，故事极少。
+role:
+  title: "雪上与弓上的神"
+  brief: "他是那种「称号压过叙事」的神：誓词、地名、别名里处处有他，长故事里却几乎不露面。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard, note: 伊达利尔 }
+narrative:
+  - text: "以弓术与滑雪见称，居伊达利尔；决斗时以盾为舟，渡水而过。"
+    refs: [grimnismal, gylfaginning]
+  - text: "他相貌俊美，有战士之姿；凡向他决斗者，皆可望见其盾上的纹样。"
+    refs: [gylfaginning]
+  - text: "诸神与人立誓，常以他的名字为证，故有「乌勒尔之誓」一语。"
+    refs: [gylfaginning]
+  - text: "一说他是希芙之子、索尔的继子——这层母子关系由《诗语》补出，正典诸篇未提。"
+    refs: [skaldskaparmal]
+relations:
+  - { target: sif, kind: 亲缘, detail: 母子, refs: [skaldskaparmal] }
+  - { target: thor, kind: 亲缘, detail: 继父子, refs: [skaldskaparmal] }

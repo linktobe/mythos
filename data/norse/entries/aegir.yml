@@ -1,0 +1,29 @@
+id: aegir
+pantheon: norse
+entity_type: 巨人
+name: 埃吉尔
+name_original: "Ægir"
+aliases: [埃吉尔, 海神]
+summary: 掌海的巨人，常设宴款待诸神；《洛基的争辩》就发生在他的厅堂里。
+role:
+  title: "宴席的主人"
+  brief: "他是巨人，却与诸神同席饮酒——「巨人」在这套神话里是血统，不是立场。"
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: neutral, note: 与神族往来而不结盟 }
+  realm:
+    - { id: beyond, note: 海上 }
+narrative:
+  - text: "掌海的巨人，与妻子澜一同辖制海面；诸神常赴他的宴席，他也乐得做东。"
+    refs: [gylfaginning, lokasenna]
+  - text: "《洛基的争辩》一诗，即在他的厅堂里展开：洛基不请自来，逐个辱骂诸神与女神，直到索尔赶到才收场。"
+    refs: [lokasenna]
+  - text: "他有两个仆人，菲玛芬与埃尔德；宴席上以一口大锅煮酒供众神饮用。"
+    refs: [lokasenna]
+  - text: "那口大锅是索尔专程从巨人希米尔处取来的——埃吉尔要办宴，缺的正是这件家伙。"
+    refs: [hymiskvida]
+relations:
+  - { target: loki, kind: 敌对, detail: 在其厅中辱骂众神, refs: [lokasenna] }
+  - { target: thor, kind: 从属, detail: 为其宴席取来煮酒大锅, refs: [hymiskvida] }
+  - { target: bragi, kind: 从属, detail: 席间由其讲述诸神旧事, refs: [skaldskaparmal] }

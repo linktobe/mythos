@@ -1,0 +1,27 @@
+id: nidhogg
+pantheon: norse
+entity_type: 异兽
+name: 尼德霍格
+name_original: "Níðhǫggr"
+aliases: [尼德霍格, 攫食者, 尼德霍格龙]
+summary: 伏在世界树根下的黑龙，与群蛇一同啃食树根，末日中振翅而来。
+role:
+  title: "树下的啃食者"
+  brief: "它不参与任何一场战斗，只负责从底下把世界啃空；诸神在树上议事时，它在根下进食。"
+identity:
+  lineage:
+    - { id: being, note: 龙蛇之类 }
+  camp:
+    - { id: neutral, note: 不属任何一方 }
+  realm:
+    - { id: niflheim, note: 赫瓦格米尔泉 }
+narrative:
+  - text: "它伏在尼福尔海姆的赫瓦格米尔泉边，与群蛇一同啃啮世界树的三根之一。"
+    refs: [grimnismal, gylfaginning]
+  - text: "树顶的鹰与它之间，松鼠拉塔托斯克往返传话，把彼此的辱骂来回搬运。"
+    refs: [grimnismal]
+  - text: "《女巫的预言》写它在末日中自尼达山飞下，双翅上载着死者的尸体。"
+    refs: [voluspa]
+relations:
+  - { target: yggdrasil, kind: 敌对, detail: 啃啮其根, refs: [grimnismal] }
+  - { target: hel, kind: 从属, detail: 居其所辖的尼福尔海姆, refs: [gylfaginning] }

@@ -60,7 +60,7 @@
       types: []
   order:
     place: [asgard, vanaheim, alfheim, midgard, jotunheim, svartalfheim, muspelheim, niflheim, helheim]
-    event: [creation, baldr-death, ragnarok]
+    event: [creation, aesir-vanir-war, idunn-apples, hammer-theft, baldr-death, loki-binding, ragnarok]
 
 - id: japanese
   zh: 日本神话

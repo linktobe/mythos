@@ -1,0 +1,28 @@
+id: hermodr
+pantheon: norse
+entity_type: 神祇
+name: 赫尔莫德
+name_original: "Hermóðr"
+aliases: [赫尔莫德, 赫尔莫兹]
+summary: 奥丁之子，受命骑斯雷普尼尔下冥界，向海拉求还巴德尔。
+role:
+  title: "往冥界的信使"
+  brief: "他是诸神里唯一一个下去又回来的人。带回来的不是巴德尔，是一句话：万物皆哭，方可放还。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "奥丁之子。巴德尔死后，诸神派他骑斯雷普尼尔往冥界求还。"
+    refs: [gylfaginning]
+  - text: "他骑行九夜，越过冥河，见到海拉；海拉的条件是万物皆为巴德尔哭泣，方可放还。"
+    refs: [gylfaginning]
+  - text: "诸神遍求哭丧，唯女巨人托克（洛基所化）不肯落泪，事遂不成。"
+    refs: [gylfaginning]
+relations:
+  - { target: odin, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: baldr, kind: 从属, detail: 为其赴冥界求还, refs: [gylfaginning] }
+  - { target: hel, kind: 敌对, detail: 开出万物皆哭的条件, refs: [gylfaginning] }
+  - { target: sleipnir, kind: 从属, detail: 借其骑行九夜, refs: [gylfaginning] }

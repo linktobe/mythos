@@ -1,0 +1,31 @@
+id: vali
+pantheon: norse
+entity_type: 神祇
+name: 瓦利
+name_original: "Váli"
+aliases: [瓦利, 复仇者]
+summary: 奥丁之子，甫生即长成，射杀霍德尔以偿巴德尔之命。
+role:
+  title: "一日长成的复仇者"
+  brief: "他的出生几乎只为了一件事：替被杀的兄弟索命。事毕之后，原典把他留到新世界。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "奥丁与女巨人琳达所生，生下来便长成，未及梳洗就取了兵器。"
+    refs: [gylfaginning]
+  - text: "他一箭射杀盲神霍德尔，为兄弟巴德尔报仇——这场仇杀是诸神之间少有的一次内部流血。"
+    refs: [gylfaginning, voluspa]
+  - text: "末日之后他存活下来，与维达同住于诸神旧日的圣地。"
+    refs: [voluspa]
+variants:
+  - claim: "另有一个同名的「瓦利」，是洛基与西格恩之子，被诸神变成狼、咬死了兄弟纳尔弗；两人不是同一个。"
+    refs: [gylfaginning]
+relations:
+  - { target: odin, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: hodr, kind: 敌对, detail: 为其所杀，以偿巴德尔之命, refs: [voluspa] }
+  - { target: baldr, kind: 亲缘, detail: 为其复仇, refs: [gylfaginning] }
+  - { target: vidarr, kind: 亲缘, detail: 兄弟，末日同存, refs: [voluspa] }

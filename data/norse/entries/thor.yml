@@ -20,7 +20,7 @@ narrative:
   - text: 他与尘世巨蟒耶梦加得结怨于一次垂钓：以牛头为饵将巨蟒钓至船边，同行的巨人希米尔惊恐割断钓线，巨蟒脱钩入海。
     refs: [hymiskvida]
   - text: 诸神黄昏时他与耶梦加得互杀，中毒身亡；其子马格尼与莫迪继承雷锤。
-    refs: [voluspa, gylfaginning]
+    refs: [voluspa, gylfaginning, vafthrudnismal]
 variants:
   - claim: 钓蛇一节，《希米尔之歌》写索尔已举锤欲击而线断；《欺骗古鲁菲》则补入巨人希米尔因恐惧而割线的动机。
     refs: [hymiskvida, gylfaginning]
@@ -40,7 +40,7 @@ kinship:
     name: 莫迪
     name_original: "Móði"
     note: 与马格尼并称，同为索尔之子。除名字与「末日之后继承雷锤」一句结局外，原典没有给他自己的故事。
-    refs: [gylfaginning]
+    refs: [gylfaginning, vafthrudnismal]
   - relation: 女
     name: 斯露德
     name_original: "Þrúðr"

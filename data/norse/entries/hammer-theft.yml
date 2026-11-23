@@ -1,0 +1,31 @@
+id: hammer-theft
+pantheon: norse
+entity_type: 事件
+name: 索尔的锤被偷
+name_original: "Þrymskviða"
+aliases: [索尔扮新娘, 索列姆偷锤]
+summary: 巨人索列姆偷走雷锤，索尔扮作新娘赴宴，才把锤拿回来。
+role:
+  title: "一场婚礼骗局"
+  brief: "诸神拿雷神开了最大的一次玩笑：让他穿上婚纱。原典毫不掩饰其中的滑稽，也不觉得这有损神威。"
+identity: {}
+narrative:
+  - text: "索尔一觉醒来，锤不见了。洛基借来弗蕾亚的鹰羽飞出去查，查得锤在巨人索列姆手中，索列姆索弗蕾亚为妻，方肯还锤。"
+    refs: [thrymskvida]
+  - text: "弗蕾亚当场断然拒绝，连婚宴上的神器都掷了回去。海姆达尔献策：让索尔扮新娘，洛基扮随行侍女，同赴约顿海姆。"
+    refs: [thrymskvida]
+  - text: "宴席上索尔食量惊人、目光如炬，索列姆生疑；洛基以「新娘思念丈夫、八夜未食」搪塞过去。"
+    refs: [thrymskvida]
+  - text: "索列姆命人将锤取来，按在新娘膝上祝圣。索尔一握在手，先杀索列姆，再将其族人尽数了结。"
+    refs: [thrymskvida]
+variants:
+  - claim: "此事不见于《欺骗古鲁菲》，只有《诗体埃达》留下完整一篇。全诗近于闹剧，没有一句为索尔的扮相作辩解。"
+    refs: [thrymskvida, gylfaginning]
+relations:
+  - { target: thor, kind: 从属, detail: 失锤者与取回者, refs: [thrymskvida] }
+  - { target: loki, kind: 从属, detail: 扮侍女同行, refs: [thrymskvida] }
+  - { target: heimdallr, kind: 从属, detail: 献策, refs: [thrymskvida] }
+  - { target: freyja, kind: 从属, detail: 索列姆索取之人, refs: [thrymskvida] }
+  - { target: mjolnir, kind: 从属, detail: 被窃而终得复归, refs: [thrymskvida] }
+legacy:
+  - 现代作品常把这节处理成喜剧；原典本身就是喜剧，不是后人的发挥。

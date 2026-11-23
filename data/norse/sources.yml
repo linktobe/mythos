@@ -124,3 +124,27 @@
   lang: 古诺斯语
   url: https://www.sacred-texts.com/neu/poe/index.htm
   note: 女武神希格露恩与英雄海尔吉的故事，分前后两篇。原文见该诗集目录。
+
+- id: thrymskvida
+  pantheon: norse
+  tier: T0
+  title: 索列姆之歌
+  original: Þrymskviða
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/thrymskvitha
+  note: 索尔扮作新娘取回雷锤，全篇近于闹剧，是雷神少见的滑稽场面。
+
+- id: vafthrudnismal
+  pantheon: norse
+  tier: T0
+  title: 瓦夫斯鲁德尼尔之歌
+  original: Vafþrúðnismál
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/vafthruthnismol
+  note: 奥丁与智者瓦夫斯鲁德尼尔斗智问答；末段记末日之后马格尼与莫迪继承雷锤。

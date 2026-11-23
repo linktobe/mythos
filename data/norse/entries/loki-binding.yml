@@ -1,0 +1,26 @@
+id: loki-binding
+pantheon: norse
+entity_type: 事件
+name: 洛基受缚
+name_original: "Loki bundinn"
+aliases: [洛基被缚, 三石之缚]
+summary: 巴德尔死后诸神捉住洛基，把他缚在三块石头上，直到末日。
+role:
+  title: "末日的引信"
+  brief: "他被缚的每一天，蛇都在他头顶滴毒；他挣脱的那一天，就是诸神黄昏。"
+identity: {}
+narrative:
+  - text: "巴德尔死后，诸神追查主谋，洛基出逃，化作鲑鱼藏在水里，还是被索尔一把抓住。"
+    refs: [gylfaginning]
+  - text: "诸神把他的儿子瓦利变成狼，咬死了兄弟纳尔弗；再用纳尔弗的肠子，把洛基缚在三块石头上。"
+    refs: [gylfaginning]
+  - text: "一条蛇被悬在他头顶滴毒。妻子西格恩持碗承接，碗满时转身去倒，毒液便落在洛基脸上，他痛得抽搐，大地随之震动。"
+    refs: [gylfaginning]
+  - text: "他被缚至末日；到那时挣脱锁链，与诸神一同赴死。"
+    refs: [voluspa, gylfaginning]
+relations:
+  - { target: loki, kind: 从属, detail: 受缚者, refs: [gylfaginning] }
+  - { target: baldr, kind: 从属, detail: 起因, refs: [gylfaginning] }
+  - { target: ragnarok, kind: 从属, detail: 末日挣脱锁链, refs: [voluspa] }
+legacy:
+  - 「被缚的洛基」是现代改编最常取用的母题：蛇、妻子接毒、抽搐引发地震，三样都被反复搬演。

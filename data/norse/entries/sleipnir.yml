@@ -1,0 +1,28 @@
+id: sleipnir
+pantheon: norse
+entity_type: 异兽
+name: 斯雷普尼尔
+name_original: "Sleipnir"
+aliases: [八足骏马, 斯莱普尼尔]
+summary: 奥丁的八足灰马，洛基所生，能行于海陆空。
+role:
+  title: "神王的坐骑"
+  brief: "它既是奥丁的脚力，也是洛基生育史里最反常的一笔：一匹种马生下的八足马。"
+identity:
+  lineage:
+    - { id: jotunn, note: 洛基所生 }
+  camp:
+    - { id: aesir, note: 归奥丁所有 }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "诸神筑城墙时，有个匠人（实为巨人）以名马斯瓦迪尔法利助工，索价是弗蕾亚与日月。洛基化作母马把种马诱走，匠人失期，被索尔一锤了结。"
+    refs: [gylfaginning]
+  - text: "洛基因此受孕，生下八足小马，即斯雷普尼尔，后来成为奥丁的坐骑。"
+    refs: [gylfaginning]
+  - text: "巴德尔死后，赫尔莫德骑它下到冥界，骑行九夜方至海拉的宫殿。"
+    refs: [gylfaginning]
+  - text: "末日时奥丁骑它出阵，迎战芬里尔。"
+    refs: [gylfaginning]
+legacy:
+  - 八足的形象常被现代作品读作「速度」的夸张符号，也有考据认为八足本与葬礼抬棺的四人八足有关。

@@ -1,0 +1,27 @@
+id: vidarr
+pantheon: norse
+entity_type: 神祇
+name: 维达
+name_original: "Víðarr"
+aliases: [维达尔, 沉默之神]
+summary: 奥丁之子，沉默而强壮，末日中踩住芬里尔的下颚，为父报仇。
+role:
+  title: "末日的复仇者"
+  brief: "诸神在末日一个个倒下，最后补上致命一击的，是最沉默的那一个。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard, note: 维迪，草木繁茂之地 }
+narrative:
+  - text: "奥丁之子，被称为「沉默之神」，力气仅次于索尔；原典给他的篇幅极少，几乎全用在末日一场戏上。"
+    refs: [gylfaginning]
+  - text: "芬里尔吞下奥丁之后，维达上前，一脚踩住狼的下颚——那只脚上套着一只攒了千百年的鞋，用人们剪下的鞋料做成——双手抓住上颚，将其撕裂，为父报仇。"
+    refs: [gylfaginning]
+  - text: "末日之后他与瓦利存活下来，住在诸神旧日的圣地。"
+    refs: [voluspa]
+relations:
+  - { target: odin, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: fenrir, kind: 敌对, detail: 撕裂其口，为父报仇, refs: [gylfaginning] }
+  - { target: vali, kind: 亲缘, detail: 兄弟，末日同存, refs: [voluspa] }

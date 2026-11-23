@@ -1,0 +1,26 @@
+id: bragi
+pantheon: norse
+entity_type: 神祇
+name: 布拉吉
+name_original: "Bragi"
+aliases: [布拉基, 诗神]
+summary: 诗歌之神，伊登之夫；以辞令与诗艺侍于诸神之侧，宴席上讲古的是他。
+role:
+  title: "诗与辞令"
+  brief: "他几乎不参加战斗，职责是在宴席上把发生过的事说成诗——神话能留下来，靠的就是这一类人。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "以辞令与诗艺著称，「诗歌」一词在古诺斯语里本就用他的名字。"
+    refs: [skaldskaparmal]
+  - text: "海神埃吉尔设宴款待诸神，席间由布拉吉讲述诸神与巨人的旧事——《诗语》的骨架即由此搭起。"
+    refs: [skaldskaparmal]
+  - text: "与伊登为夫妻，二人同住阿斯加德；伊登的苹果与他的诗，一起构成神族「不衰」的两面。"
+    refs: [skaldskaparmal]
+relations:
+  - { target: idunn, kind: 婚姻, detail: 夫妻, refs: [skaldskaparmal] }
+  - { target: aegir, kind: 从属, detail: 在其宴席上讲述诸神旧事, refs: [skaldskaparmal] }

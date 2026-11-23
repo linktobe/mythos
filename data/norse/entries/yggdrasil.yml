@@ -1,0 +1,34 @@
+id: yggdrasil
+pantheon: norse
+entity_type: 器物
+name: 世界树
+name_original: "Yggdrasill"
+aliases: [宇宙树, 乾坤树]
+summary: 撑起九界的白蜡树，诸神每日在树下议事，树根下盘着龙与蛇。
+role:
+  title: "九界之轴"
+  brief: "九界不是并列的九个房间，而是挂在同一棵树上的枝、干与根。它的存亡与诸神的存亡同步。"
+identity:
+  lineage:
+    - { id: being, note: 巨木，非神非人 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond, note: 不在九界之内，九界悬于其上 }
+narrative:
+  - text: "此树为白蜡，三根巨根各通一处：一根伸向诸神，一根伸向霜巨人，一根伸向尼福尔海姆。三根之下各有一泉。"
+    refs: [gylfaginning]
+  - text: "树顶立一鹰，鹰与根下的龙之间，有一只叫拉塔托斯克的松鼠往返传话，彼此搬弄是非。"
+    refs: [grimnismal]
+  - text: "四头鹿在枝间啃食嫩芽；尼德霍格与群蛇在根下啃啮，从底下把世界一点点掏空。"
+    refs: [grimnismal]
+  - text: "诸神每日在此树下议事、断案——九界的秩序是在这棵树的荫下决定的。"
+    refs: [grimnismal]
+  - text: "奥丁曾自悬于此树九夜，以矛自刺，换来卢恩的文字。树因此又名「奥丁的绞架」。"
+    refs: [havamal]
+relations:
+  - { target: nidhogg, kind: 从属, detail: 龙在其根下啃啮, refs: [grimnismal] }
+  - { target: nornir, kind: 从属, detail: 三女神在树下之泉边定命, refs: [gylfaginning] }
+  - { target: odin, kind: 从属, detail: 奥丁自悬于此树九夜求得卢恩, refs: [havamal] }
+legacy:
+  - 现代常被画成「九界连接图」的视觉符号；原典里的它是活的，有鹿、蛇、鹰与松鼠在动。

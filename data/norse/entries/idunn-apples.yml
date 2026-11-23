@@ -1,0 +1,28 @@
+id: idunn-apples
+pantheon: norse
+entity_type: 事件
+name: 伊登与金苹果
+name_original: "Iðunnar rán"
+aliases: [青春苹果被劫, 夏基夺伊登]
+summary: 巨人夏基劫走伊登与她的苹果，诸神骤然衰老，直到洛基把她带回来。
+role:
+  title: "青春被偷走的那一次"
+  brief: "神族唯一一次显出老态。解法不是神力，是洛基化作鹰、把女神变成一颗坚果飞回来。"
+identity: {}
+narrative:
+  - text: "奥丁、海尼尔与洛基出游，烤不熟牛，只因一头巨鹰屡屡阻挠。鹰落在树上，提出条件：把伊登与她的苹果交出来。"
+    refs: [skaldskaparmal]
+  - text: "洛基诱伊登带着苹果出城，夏基化鹰将她掳往约顿海姆。诸神骤然衰老，须发变白，逼洛基去把人带回来。"
+    refs: [skaldskaparmal]
+  - text: "洛基借弗蕾亚的鹰羽飞去，将伊登变成一颗坚果带回。夏基追至城墙，被诸神堆起的火燎落，索尔补上一击。"
+    refs: [skaldskaparmal]
+  - text: "夏基之女斯卡蒂披甲持械前来索偿；诸神让她择婿、又令洛基逗她发笑，才把这笔账了结。"
+    refs: [skaldskaparmal]
+variants:
+  - claim: "「伊登与金苹果」是编者所加的索引名，原典只把这件事串在《诗语》的叙述里，未给它单独的标题。"
+    refs: [skaldskaparmal]
+relations:
+  - { target: idunn, kind: 从属, detail: 被劫者, refs: [skaldskaparmal] }
+  - { target: loki, kind: 从属, detail: 起因，也是解救者, refs: [skaldskaparmal] }
+  - { target: skadi, kind: 从属, detail: 因其父之死而来索偿, refs: [skaldskaparmal] }
+  - { target: odin, kind: 从属, detail: 同行诸神之一, refs: [skaldskaparmal] }

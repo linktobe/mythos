@@ -1,0 +1,29 @@
+id: gungnir
+pantheon: norse
+entity_type: 器物
+name: 冈格尼尔
+name_original: "Gungnir"
+aliases: [冈尼尔, 奥丁之枪]
+summary: 奥丁的长枪，矮人所造，掷出必中，从不落空。
+role:
+  title: "神王的矛"
+  brief: "它不像雷锤那样用来打仗，而是用来定局：奥丁把枪掷向哪一边，战争的走向就倒向哪一边。"
+identity:
+  lineage:
+    - { id: dwarf, note: 矮人所铸 }
+  camp:
+    - { id: aesir, note: 奥丁所持 }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "此枪由矮人伊瓦尔第之子所铸，是洛基为赔偿希芙金发而求来的三件宝物之一，同批还有那头发与斯基德布拉德尼尔。"
+    refs: [skaldskaparmal]
+  - text: "枪尖刻有卢恩；掷出必中，从不落空。"
+    refs: [sigrdrifumal]
+  - text: "末日时奥丁持它出阵迎战芬里尔，仍被吞下——神王的武器挡不住那头狼。"
+    refs: [gylfaginning]
+relations:
+  - { target: odin, kind: 从属, detail: 为其兵器, refs: [skaldskaparmal] }
+  - { target: dvergar, kind: 从属, detail: 由其打造, refs: [skaldskaparmal] }
+  - { target: sif, kind: 从属, detail: 为赔偿其金发而铸, refs: [skaldskaparmal] }
+  - { target: fenrir, kind: 宿命, detail: 末日持之出战而亡, refs: [gylfaginning] }

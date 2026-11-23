@@ -1,0 +1,30 @@
+id: sif
+pantheon: norse
+entity_type: 神祇
+name: 希芙
+name_original: "Sif"
+aliases: [西芙, 金发女神]
+summary: 索尔之妻，以一头金发闻名；头发被洛基剪去，成了矮人打造神器的一场赌局的起因。
+role:
+  title: "索尔的妻子"
+  brief: "她的金发是诸神宝物谱系的起点：洛基剪了它，才不得不去求矮人，才有了后来的雷锤与金鬃野猪。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "索尔之妻，阿萨女神之一，以一头金发著称。"
+    refs: [gylfaginning]
+  - text: "洛基趁她熟睡剪去她的头发。索尔大怒，几乎要拆了洛基的骨头，洛基只得去求矮人打造一头真金的长发相抵。"
+    refs: [skaldskaparmal]
+  - text: "矮人伊瓦尔第之子为她锻出会自行生长的金发，同批还造了斯基德布拉德尼尔（可折叠的船）与冈格尼尔（奥丁的枪）。"
+    refs: [skaldskaparmal]
+  - text: "洛基拿这三件宝物作赌注，与布洛克、辛德里相较，输赢之间才有了雷锤、德罗普尼尔与金鬃野猪。"
+    refs: [skaldskaparmal]
+relations:
+  - { target: thor, kind: 婚姻, detail: 夫妻, refs: [skaldskaparmal] }
+  - { target: loki, kind: 敌对, detail: 剪去其发, refs: [skaldskaparmal] }
+  - { target: dvergar, kind: 从属, detail: 为其锻金发, refs: [skaldskaparmal] }
+  - { target: gungnir, kind: 从属, detail: 为其金发之故所铸, refs: [skaldskaparmal] }

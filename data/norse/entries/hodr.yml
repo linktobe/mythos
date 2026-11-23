@@ -1,0 +1,30 @@
+id: hodr
+pantheon: norse
+entity_type: 神祇
+name: 霍德尔
+name_original: "Höðr"
+aliases: [霍德, 盲神]
+summary: 奥丁之子，双目失明，受洛基摆布投出槲寄生，杀死兄弟巴德尔。
+role:
+  title: "无心的凶手"
+  brief: "他没有恶意，甚至不知道手里拿的是什么。原典把这场谋杀写成一次被操纵的盲投，凶手与主谋是两个人。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "奥丁之子，双目失明，力气过人；众神以投掷兵器伤巴德尔为戏时，他站在一旁，无人递给他任何东西。"
+    refs: [gylfaginning]
+  - text: "洛基把槲寄生枝塞进他手里，引着他的手对准巴德尔；投出即中，巴德尔当场倒地身亡。"
+    refs: [gylfaginning]
+  - text: "事后奥丁之子瓦利持弓将他射杀，以偿巴德尔之命。"
+    refs: [gylfaginning, voluspa]
+  - text: "新世界里他与巴德尔一同自冥界归来，兄弟二人同住。"
+    refs: [voluspa]
+relations:
+  - { target: odin, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: baldr, kind: 亲缘, detail: 兄弟，为其所杀, refs: [gylfaginning] }
+  - { target: loki, kind: 敌对, detail: 被其引手投出槲寄生, refs: [gylfaginning] }
+  - { target: vali, kind: 敌对, detail: 为其所杀, refs: [voluspa] }

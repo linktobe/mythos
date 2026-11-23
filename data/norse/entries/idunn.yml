@@ -1,0 +1,32 @@
+id: idunn
+pantheon: norse
+entity_type: 神祇
+name: 伊登
+name_original: "Iðunn"
+aliases: [伊敦, 青春女神]
+summary: 布拉吉之妻，看守使人常葆青春的苹果；曾被巨人夏基掳走，诸神因此显出老态。
+role:
+  title: "青春苹果的看守"
+  brief: "她的苹果是神族不老的原因。少了它，诸神立刻须发变白——这是北欧神话里少数直说「神会老」的地方。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "布拉吉之妻，掌管使人常葆青春的苹果。诸神一老，取食即回壮年。"
+    refs: [skaldskaparmal]
+  - text: "洛基被她连人带苹果诱出阿斯加德，巨人夏基化鹰将她掳往约顿海姆。诸神骤然衰老，逼洛基把她救回来。"
+    refs: [skaldskaparmal]
+  - text: "洛基借来弗蕾亚的鹰羽，将她变成一颗坚果带回；夏基追至城墙，被诸神堆起的火燎落，索尔补上致命一击。"
+    refs: [skaldskaparmal]
+  - text: "夏基之女斯卡蒂因此持械来到阿斯加德索偿，最后以让她择夫、并令洛基逗她发笑而和解。"
+    refs: [skaldskaparmal]
+variants:
+  - claim: "《欺骗古鲁菲》只说她看守苹果，被劫一段完整见于《诗语》；两书都没有说明苹果从何而来。"
+    refs: [gylfaginning, skaldskaparmal]
+relations:
+  - { target: bragi, kind: 婚姻, detail: 夫妻, refs: [skaldskaparmal] }
+  - { target: loki, kind: 敌对, detail: 被其诱出而遭劫, refs: [skaldskaparmal] }
+  - { target: skadi, kind: 敌对, detail: 夏基之女，因其父之死而来, refs: [skaldskaparmal] }

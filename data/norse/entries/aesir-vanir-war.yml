@@ -1,0 +1,29 @@
+id: aesir-vanir-war
+pantheon: norse
+entity_type: 事件
+name: 阿萨—华纳战争
+name_original: "Fyrst stríð"
+aliases: [第一次战争, 神族内战]
+summary: 两族神祇的第一次战争，以议和与人质交换收场，华纳神由此并入阿萨。
+role:
+  title: "第一次战争"
+  brief: "神话里唯一一场「神打神」的战争。没有胜负，只有停战与人质——而人质换出了往后所有故事。"
+identity: {}
+narrative:
+  - text: "华纳神族的古尔薇格来到阿斯加德，诸神以矛刺她、三度将她投入火中，她三度重生。这被视为战争的起因。"
+    refs: [voluspa]
+  - text: "两族在战场上相遇，互有攻守，城墙被破，僵持不下。"
+    refs: [voluspa]
+  - text: "双方议和，交换人质：华纳送出尼约德、弗雷、弗蕾亚，阿萨送出海尼尔与密米尔。"
+    refs: [gylfaginning]
+  - text: "议和时众神共唾一器，造出智者克瓦希尔；他的血后来被酿成「诗歌的蜜酒」——诗艺的源头也在这场和约里。"
+    refs: [skaldskaparmal]
+variants:
+  - claim: "《女巫的预言》只留下几句残句，战争的前后与代表人物的处置，主要靠《欺骗古鲁菲》补足。"
+    refs: [voluspa, gylfaginning]
+relations:
+  - { target: odin, kind: 从属, detail: 阿萨一方主事者, refs: [voluspa] }
+  - { target: njord, kind: 从属, detail: 华纳所遣人质, refs: [gylfaginning] }
+  - { target: freyr, kind: 从属, detail: 华纳所遣人质, refs: [gylfaginning] }
+  - { target: freyja, kind: 从属, detail: 华纳所遣人质, refs: [gylfaginning] }
+  - { target: mimir, kind: 从属, detail: 阿萨所遣人质, refs: [gylfaginning] }

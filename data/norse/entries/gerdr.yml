@@ -16,9 +16,9 @@ identity:
     - { id: jotunheim }
 narrative:
   - text: "她是约顿海姆的女巨人。弗雷坐于高座望见她的身影，一见倾心，遂派侍从斯基尼尔携剑前往求亲。"
-    refs: [skaldskaparmal]
+    refs: [skirnismol]
   - text: "葛德起初拒绝。斯基尼尔以剑相胁、以咒相逼，她终于允诺，约定九夜之后在森林中相会。"
-    refs: [skaldskaparmal]
+    refs: [skirnismol]
   - text: "弗雷为这一趟求亲失去了那柄能自行斩击的宝剑。诸神黄昏时他无兵可用，死于苏尔特尔之手。"
     refs: [gylfaginning]
 variants:

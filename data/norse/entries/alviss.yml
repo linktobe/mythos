@@ -1,0 +1,25 @@
+id: alviss
+pantheon: norse
+entity_type: 矮人
+name: 阿尔维斯
+name_original: "Alvíss"
+aliases: [阿尔维斯, 全知的矮人]
+summary: 想娶斯露德的矮人，被索尔以整夜问难拖到日出，化为石头。
+role:
+  title: "被日出烧掉的求婚者"
+  brief: "诸神许下的婚事，索尔用一场通宵问答赖掉了——矮人什么都知道，就是不知道怎么赢过天亮。"
+identity:
+  lineage: [dwarf]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond, note: 石中 }
+narrative:
+  - text: "诸神把索尔之女斯露德许给了矮人阿尔维斯，他上门来讨人。"
+    refs: [alvissmol]
+  - text: "索尔拦下他，说要先考他各地对事物的称呼——天、月、树、风，一样一样问过去。"
+    refs: [alvissmol]
+  - text: "问答直到天明，日光照到矮人身上，他当场化为石头。婚事就此作废。"
+    refs: [alvissmol]
+relations:
+  - { target: thor, kind: 敌对, detail: 被其拖到日出而化石化, refs: [alvissmol] }

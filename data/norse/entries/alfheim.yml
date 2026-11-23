@@ -18,6 +18,7 @@ identity:
 narrative:
   - text: "《格里姆尼尔之歌》记诸神在分地时，将亚尔夫海姆赠予弗雷，作为他长牙时的礼物。"
     refs: [grimnismal]
+    at: { grimnismal: "5" }
   - text: "居于此地的是光精灵。原典对这一族的描写，比对他们的土地多。"
     refs: [gylfaginning]
   - text: "此地风貌原典未详，只以「光」名之；与矮人所居的地下之界相比，恰成一对。"

@@ -22,6 +22,7 @@ narrative:
     refs: [grimnismal]
   - text: "《女巫的预言》写它在末日中自尼达山飞下，双翅上载着死者的尸体。"
     refs: [voluspa]
+    at: { voluspa: "66" }
 relations:
   - { target: yggdrasil, kind: 敌对, detail: 啃啮其根, refs: [grimnismal] }
   - { target: hel, kind: 从属, detail: 居其所辖的尼福尔海姆, refs: [gylfaginning] }

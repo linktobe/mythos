@@ -219,4 +219,62 @@
   lang: 古诺斯语
   url: https://sacred-texts.com/book/the-poetic-edda/atlakvitha-en-gronlenzka
   note: 尼伯龙根宝藏的下落与古德伦复仇，风格在诗体埃达中最古拙冷硬。
+- id: skirnismol
+  pantheon: norse
+  tier: T0
+  title: 斯基尼尔之歌
+  original: Skírnismál
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/skirnismol
+  note: 弗雷遣斯基尼尔向葛德求婚，剑由此送出；是弗雷唯一有完整篇章的故事。
+- id: volundarkvitha
+  pantheon: norse
+  tier: T0
+  title: 沃伦德之歌
+  original: Völundarkviða
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/volundarkvitha
+  note: 匠人复仇的故事，风格近于民间传说，与诸神主线相对独立。
+
+- id: rigsthula
+  pantheon: norse
+  tier: T0
+  title: 里格的歌
+  original: Rígsþula
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/rigsthula
+  note: 以海姆达尔化名里格游历人间，解释奴隶、自由民与贵族三等级的来历。
+
+- id: alvissmol
+  pantheon: norse
+  tier: T0
+  title: 阿尔维斯之歌
+  original: Alvíssmál
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/alvissmol
+  note: 索尔以通宵问难拖住矮人，等日出将其化为石头。
+
+- id: harbarthsljoth
+  pantheon: norse
+  tier: T0
+  title: 哈尔巴德之歌
+  original: Hárbarðsljóð
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/harbarthsljoth
+  note: 索尔与渡口船夫互揭短处的一篇对话诗，是全集里对诸神最不敬的一首。
 

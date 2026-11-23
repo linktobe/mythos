@@ -1,0 +1,23 @@
+id: rigsthula
+pantheon: norse
+entity_type: 事件
+name: 三等级的起源
+name_original: "Rígsþula"
+aliases: [里格的行程]
+summary: 海姆达尔化名里格游历人间，先后留下三等人：奴隶、自由民与贵族。
+role:
+  title: "社会等级的来历"
+  brief: "别的神话解释世界怎么来的，这一篇解释为什么有人是主人、有人是仆役。"
+identity: {}
+narrative:
+  - text: "里格沿路行走，先后在贫苦人家、中等人家、富贵人家各住三夜。"
+    refs: [rigsthula]
+  - text: "三家先后生下孩子：粗陋笨拙的奴隶、灵巧的自由民，以及金发俊美的贵族雅尔。"
+    refs: [rigsthula]
+  - text: "里格又回来教导雅尔，教他卢恩与家世，使他成为贵族之祖。"
+    refs: [rigsthula]
+variants:
+  - claim: "诗中的里格未明说身份，一般据名字与职能推定为海姆达尔；诗末残缺，抄本到此中断。"
+    refs: [rigsthula]
+relations:
+  - { target: heimdallr, kind: 从属, detail: 主角，一般认为即海姆达尔, refs: [rigsthula] }

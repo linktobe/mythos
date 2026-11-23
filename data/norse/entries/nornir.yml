@@ -18,8 +18,10 @@ identity:
 narrative:
   - text: "三位女神居于世界树下的乌尔德泉旁，名唤乌尔德、薇儿丹蒂、诗寇蒂。"
     refs: [voluspa, gylfaginning]
+    at: { voluspa: "20" }
   - text: "她们自泉中取水浇灌世界树，并在木上刻下符文，为每个人定下寿数与际遇；诸神的后代亦由其裁断。"
     refs: [gylfaginning, voluspa]
+    at: { voluspa: "20" }
   - text: "除这三位之外，另有众多诺伦往来于世间，凡有婴孩出生，便前去定命——出身或为神族，或为精灵，或为矮人。"
     refs: [voluspa]
 variants:

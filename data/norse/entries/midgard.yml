@@ -19,7 +19,8 @@ narrative:
   - text: "诸神以尤弥尔的眉毛造了一道围墙，圈出中间的一块地，称为米德加德，供人类居住。"
     refs: [gylfaginning]
   - text: "最早的人由奥丁三兄弟从海边拾得的两棵树造成，名为阿斯克与恩布拉。"
-    refs: [gylfaginning]
+    refs: [gylfaginning, voluspa]
+    at: { voluspa: "17" }
   - text: "此地四面环海，海中盘着一条自衔其尾的巨蟒，首尾相接，把人间围在正中。"
     refs: [gylfaginning]
 variants:

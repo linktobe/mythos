@@ -16,7 +16,7 @@ identity:
     - { id: asgard }
 narrative:
   - text: "索尔之妻，阿萨女神之一，以一头金发著称。"
-    refs: [gylfaginning]
+    refs: [gylfaginning, lokasenna]
   - text: "洛基趁她熟睡剪去她的头发。索尔大怒，几乎要拆了洛基的骨头，洛基只得去求矮人打造一头真金的长发相抵。"
     refs: [skaldskaparmal]
   - text: "矮人伊瓦尔第之子为她锻出会自行生长的金发，同批还造了斯基德布拉德尼尔（可折叠的船）与冈格尼尔（奥丁的枪）。"

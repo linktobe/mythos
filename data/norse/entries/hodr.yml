@@ -21,8 +21,10 @@ narrative:
     refs: [gylfaginning]
   - text: "事后奥丁之子瓦利持弓将他射杀，以偿巴德尔之命。"
     refs: [gylfaginning, voluspa]
+    at: { voluspa: "35" }
   - text: "新世界里他与巴德尔一同自冥界归来，兄弟二人同住。"
     refs: [voluspa]
+    at: { voluspa: "62" }
 relations:
   - { target: odin, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
   - { target: baldr, kind: 亲缘, detail: 兄弟，为其所杀, refs: [gylfaginning] }

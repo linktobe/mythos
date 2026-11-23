@@ -21,6 +21,7 @@ narrative:
     refs: [gylfaginning]
   - text: 诸神黄昏时它挣脱束缚，吞下奥丁，随后被维达所杀。
     refs: [voluspa, gylfaginning]
+    at: { voluspa: "53" }
 variants:
   - claim: 格莱普尼尔的制法（猫的脚步、女人的胡须、山的根、熊的肌腱、鱼的呼吸、鸟的唾液）见于《欺骗古鲁菲》，属 Snorri 的文学化铺陈。
     refs: [gylfaginning]

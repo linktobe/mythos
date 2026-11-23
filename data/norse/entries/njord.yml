@@ -18,9 +18,10 @@ identity:
     - { id: asgard, note: 诺阿通 }
 narrative:
   - text: 华纳神族，掌海与航海，司掌渔获与财富。两族议和后，他作为人质入阿萨神族。
-    refs: [gylfaginning]
+    refs: [gylfaginning, vafthrudnismal]
+    at: { vafthrudnismal: "38" }
   - text: 他与巨人斯卡蒂成婚，却因居所之争难以同住——她愿居山中，他愿居海边，终至分离。
-    refs: [gylfaginning, skaldskaparmal]
+    refs: [gylfaginning, skaldskaparmal, lokasenna]
 variants:
   - claim: 《欺骗古鲁菲》把二人分离写成 "九天山中、九天海边" 的轮居失败；《诗语》侧重于婚事如何议成。
     refs: [gylfaginning, skaldskaparmal]

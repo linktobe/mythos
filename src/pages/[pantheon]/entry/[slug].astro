@@ -41,6 +41,24 @@ entry.relations.forEach((n: any) => note(n.refs));
 entry.related.forEach((n: any) => note(n.refs));
 const refNo = new Map(usedRefs.map((id, i) => [id, i + 1]));
 
+// 节次：把本页所有 at 按来源汇总，显示在「引用来源」里
+const atBySrc = new Map<string, string[]>();
+const collectAt = (at: any) => {
+  if (!at) return;
+  for (const [k, v] of Object.entries(at)) {
+    const list = atBySrc.get(k) ?? [];
+    if (!list.includes(v as string)) list.push(v as string);
+    atBySrc.set(k, list);
+  }
+};
+entry.narrative.forEach((n: any) => collectAt(n.at));
+entry.variants.forEach((n: any) => collectAt(n.at));
+const atTitle = (id: string, at: any) => {
+  const span = at?.[id];
+  if (!span) return undefined;
+  return `${srcById.get(id)?.title ?? id} 第 ${span} 节`;
+};
+
 // 关系按类型分组
 // 「亲属」区已经列过的家人，不再在「关系」里重复一遍
 const kinTargets = new Set((entry.kinship ?? []).map((k: any) => k.target).filter(Boolean));
@@ -125,7 +143,7 @@ const crumbs = [
         <p>
           {n.text}
           {n.refs.map((id: string) => (
-            <sup class="ref"><a href={`#src-${id}`}>{refNo.get(id)}</a></sup>
+            <sup class="ref"><a href={`#src-${id}`} title={atTitle(id, n.at)}>{refNo.get(id)}</a></sup>
           ))}
           {!allT1 && isT1Only(n.refs) && <span class="tier-note">此段仅见 T1 汇编</span>}
         </p>
@@ -141,7 +159,7 @@ const crumbs = [
             <div>
               {v.claim}
               {v.refs.map((id: string) => (
-                <sup class="ref"><a href={`#src-${id}`}>{refNo.get(id)}</a></sup>
+                <sup class="ref"><a href={`#src-${id}`} title={atTitle(id, v.at)}>{refNo.get(id)}</a></sup>
               ))}
             </div>
           </div>
@@ -158,7 +176,7 @@ const crumbs = [
             <p>
               {pr.story}
               {pr.refs.map((id: string) => (
-                <sup class="ref"><a href={`#src-${id}`}>{refNo.get(id)}</a></sup>
+                <sup class="ref"><a href={`#src-${id}`} title={atTitle(id, pr.at)}>{refNo.get(id)}</a></sup>
               ))}
             </p>
           </div>
@@ -179,7 +197,7 @@ const crumbs = [
               <p>
                 {w.note}
                 {w.refs.map((id: string) => (
-                  <sup class="ref"><a href={`#src-${id}`}>{refNo.get(id)}</a></sup>
+                  <sup class="ref"><a href={`#src-${id}`} title={atTitle(id, w.at)}>{refNo.get(id)}</a></sup>
                 ))}
               </p>
             </li>
@@ -205,7 +223,7 @@ const crumbs = [
                 <p>
                   {k.note}
                   {k.refs.map((id: string) => (
-                    <sup class="ref"><a href={`#src-${id}`}>{refNo.get(id)}</a></sup>
+                    <sup class="ref"><a href={`#src-${id}`} title={atTitle(id, k.at)}>{refNo.get(id)}</a></sup>
                   ))}
                 </p>
               )}
@@ -275,7 +293,8 @@ const crumbs = [
             <span class={`tier ${s.tier === 'T0' ? '' : 't1'}`}>{s.tier}</span>
             <strong>{s.title}</strong>（{s.original}）
             <span class="meta">
-              {s.work} · {s.date}{s.author ? ` · ${s.author}` : ''}　
+              {s.work} · {s.date}{s.author ? ` · ${s.author}` : ''}
+              {atBySrc.get(id) && <span class="at">第 {atBySrc.get(id)!.join('、')} 节</span>}　
               <a href={s.url} rel="noopener noreferrer" target="_blank">核对原文 ↗</a>
             </span>
           </li>

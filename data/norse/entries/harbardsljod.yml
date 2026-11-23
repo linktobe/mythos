@@ -1,0 +1,24 @@
+id: harbardsljod
+pantheon: norse
+entity_type: 事件
+name: 渡口对骂
+name_original: "Hárbarðsljóð"
+aliases: [哈尔巴德之歌]
+summary: 索尔行至渡口，船夫拒绝载他，两人隔着水互揭短处，一路骂到诗末。
+role:
+  title: "父子相讥"
+  brief: "整首诗就是两个神在对骂，骂的是彼此的战功与情史。北欧神话里对诸神最不敬的一篇。"
+identity: {}
+narrative:
+  - text: "索尔自约顿海姆归来，在渡口请船夫载他过河。船夫自称哈尔巴德，出言相讥，不肯撑船。"
+    refs: [harbarthsljoth]
+  - text: "两人一路对骂：索尔夸耀自己杀过多少巨人，船夫则夸耀如何诱骗女子、离间君臣。"
+    refs: [harbarthsljoth]
+  - text: "索尔终究没能渡河，只得绕道而行。"
+    refs: [harbarthsljoth]
+variants:
+  - claim: "船夫的身份诗中未点明，「哈尔巴德」是奥丁的别名之一，故历来读作奥丁化身；也有人认为只是一个刁难的摆渡人。"
+    refs: [harbarthsljoth]
+relations:
+  - { target: thor, kind: 从属, detail: 被拒渡者, refs: [harbarthsljoth] }
+  - { target: odin, kind: 从属, detail: 船夫一般认为是其化身, refs: [harbarthsljoth] }

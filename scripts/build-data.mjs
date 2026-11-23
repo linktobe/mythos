@@ -121,6 +121,8 @@ const AxisItem = z
   .transform((v) => (typeof v === 'string' ? { id: v } : v));
 
 const RefList = z.array(z.string()).min(1, '至少一个引用');
+// 节次：{ 来源 id: "3–6" }。只登记能在该篇里核对到出处的段落。
+const AtMap = z.record(z.string()).optional();
 
 function makeEntrySchema(p) {
   const identityShape = Object.fromEntries(p.axes.map((axis) => [axis, z.array(AxisItem).default([])]));
@@ -135,8 +137,8 @@ function makeEntrySchema(p) {
       summary: z.string().min(1),
       role: z.object({ title: z.string().min(2), brief: z.string().min(10) }),
       identity: z.object(identityShape).default({}),
-      narrative: z.array(z.object({ text: z.string().min(10), refs: RefList })).min(1, '叙事至少一段'),
-      variants: z.array(z.object({ claim: z.string().min(5), refs: RefList })).default([]),
+      narrative: z.array(z.object({ text: z.string().min(10), refs: RefList, at: AtMap })).min(1, '叙事至少一段'),
+      variants: z.array(z.object({ claim: z.string().min(5), refs: RefList, at: AtMap })).default([]),
       relations: z
         .array(
           z.object({
@@ -330,8 +332,20 @@ for (const p of pantheons) {
         }
       }
     }
-    e.narrative.forEach((n, i) => checkRefs(`${p.id}/${e.id}: narrative[${i}]`, n.refs));
-    e.variants.forEach((n, i) => checkRefs(`${p.id}/${e.id}: variants[${i}]`, n.refs));
+    const checkAt = (where, n) => {
+      if (!n.at) return;
+      for (const k of Object.keys(n.at)) {
+        if (!n.refs.includes(k)) fail(`${where}: at 里的「${k}」不在 refs 中`);
+      }
+    };
+    e.narrative.forEach((n, i) => {
+      checkRefs(`${p.id}/${e.id}: narrative[${i}]`, n.refs);
+      checkAt(`${p.id}/${e.id}: narrative[${i}]`, n);
+    });
+    e.variants.forEach((n, i) => {
+      checkRefs(`${p.id}/${e.id}: variants[${i}]`, n.refs);
+      checkAt(`${p.id}/${e.id}: variants[${i}]`, n);
+    });
     e.profiles.forEach((n, i) => checkRefs(`${p.id}/${e.id}: profiles[${i}]`, n.refs));
     e.weapons.forEach((n, i) => checkRefs(`${p.id}/${e.id}: weapons[${i}]`, n.refs));
     e.kinship.forEach((k, i) => {

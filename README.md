@@ -73,6 +73,7 @@ Node 版本见 `.node-version`（22.23.4），Astro 钉在 `7.4.13`。
 - 身份各项引用的 id 必须在本体系 `vocab/` 中存在；`parent` 不得悬空，归类节点（`abstract`）不得被引用
 - 关系类型必须在本体系 `relation_kinds` 里启用过；关系目标必须是同体系词条
 - 叙事段落至少挂一个来源，来源必须在**本体系** `sources.yml` 中，且只允许 T0/T1
+- 段落上的 `at`（节次）只能是该段 `refs` 里出现过的来源
 - 改编体裁必须在 `adaptation-kinds.yml` 中登记
 - 对称关系去重时把体系并入键
 

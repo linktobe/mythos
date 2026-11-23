@@ -15,7 +15,7 @@ narrative:
   - text: "母牛舔食冰上的盐霜，舔出一个人形，名为布利。布利之子博尔娶巨人贝斯特拉，生下奥丁、维利与维三兄弟。"
     refs: [gylfaginning]
   - text: "三兄弟杀死尤弥尔，以他的身躯造世界：血汇成海，肉化为大地，骨堆成山，颅骨扣成天空，脑散作云。"
-    refs: [gylfaginning]
+    refs: [grimnismal, gylfaginning, vafthrudnismal]
   - text: "诸神又以尤弥尔的眉毛围出中间的一块地，名米德加德；再取海边拾得的两棵树造人，名为阿斯克与恩布拉。"
     refs: [gylfaginning]
 variants:

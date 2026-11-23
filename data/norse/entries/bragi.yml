@@ -18,7 +18,7 @@ narrative:
   - text: "以辞令与诗艺著称，「诗歌」一词在古诺斯语里本就用他的名字。"
     refs: [skaldskaparmal]
   - text: "海神埃吉尔设宴款待诸神，席间由布拉吉讲述诸神与巨人的旧事——《诗语》的骨架即由此搭起。"
-    refs: [skaldskaparmal]
+    refs: [skaldskaparmal, lokasenna]
   - text: "与伊登为夫妻，二人同住阿斯加德；伊登的苹果与他的诗，一起构成神族「不衰」的两面。"
     refs: [skaldskaparmal]
 relations:

@@ -19,7 +19,7 @@ narrative:
   - text: "世界以尤弥尔的身躯造好之后，巨人被安置在人类所居之地以外的荒远之处。"
     refs: [gylfaginning]
   - text: "居于此地的是巨人。神族与他们通婚、结盟、争斗，多数神祇的母系都能追到这里。"
-    refs: [gylfaginning, skaldskaparmal]
+    refs: [gylfaginning, skaldskaparmal, vafthrudnismal]
   - text: "此地多山而荒凉，有铁森林与巨人加斯特巴纳的居所；索尔东行所遇的巨人，多在此界。"
     refs: [skaldskaparmal, gylfaginning]
 variants:

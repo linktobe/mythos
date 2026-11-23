@@ -16,7 +16,8 @@ identity:
     - { id: beyond }
 narrative:
   - text: "他是布利之子。娶女巨人贝斯特拉为妻，生下奥丁、维利与维三子。"
-    refs: [gylfaginning]
+    refs: [gylfaginning, voluspa]
+    at: { voluspa: "4" }
   - text: "原典对他别无所载：既无战绩，也无结局。"
     refs: [gylfaginning]
 variants:

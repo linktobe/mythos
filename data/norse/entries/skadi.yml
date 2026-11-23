@@ -20,7 +20,8 @@ narrative:
   - text: 巨人夏基之女。父亲被诸神所杀后，她披甲持械赶赴阿斯加德讨要说法，诸神以和解相待：允她择一神为夫，并令洛基逗她发笑。
     refs: [skaldskaparmal]
   - text: 她择夫时只看脚，误选尼约德；婚后二人因居所不合而分离。
-    refs: [skaldskaparmal]
+    refs: [skaldskaparmal, grimnismal]
+    at: { grimnismal: "11" }
 variants:
   - claim: 分离后她另嫁奥丁之说见于《诗语》，但叙述简略，学界多存疑。
     refs: [skaldskaparmal]

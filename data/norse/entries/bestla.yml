@@ -16,7 +16,7 @@ identity:
     - { id: jotunheim }
 narrative:
   - text: "她是女巨人，父名 Bölþorn。嫁与博尔，生下奥丁、维利与维三子。"
-    refs: [gylfaginning]
+    refs: [gylfaginning, havamal]
   - text: "原典未载她的其他事迹；她的意义几乎全在这条血脉上——诸神之主的外祖父是巨人。"
     refs: [gylfaginning]
 variants:

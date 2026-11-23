@@ -486,3 +486,6 @@ button.chip[aria-pressed="true"] { background: var(--accent); border-color: var(
 .kinship .k-name { font-family: var(--serif); font-size: 16px; letter-spacing: .04em; }
 .kinship .k-original { font-style: italic; font-size: 12.5px; color: var(--muted); }
 .kinship p { margin: 6px 0 0; color: var(--muted); font-size: 14.5px; line-height: 1.75; }
+
+/* 引用节次 */
+.sources .at { color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; font-size: 11.5px; }

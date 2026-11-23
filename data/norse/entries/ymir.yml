@@ -20,7 +20,8 @@ narrative:
   - text: "他沉睡时出汗，腋下生出一男一女两个巨人；双腿之间又生出六头巨人。巨人一族自此繁衍。"
     refs: [gylfaginning]
   - text: "奥丁与兄弟维利、维杀死了他。他的血汇成海，肉化为大地，骨堆成山，颅骨扣成天空，脑散作云。"
-    refs: [gylfaginning]
+    refs: [gylfaginning, grimnismal, vafthrudnismal]
+    at: { grimnismal: "40", vafthrudnismal: "21" }
 variants:
   - claim: "这段创世叙述主要见于《欺骗古鲁菲》；《女巫的预言》只写到世界由诸神从巨人身体中造出，未详其过程。"
     refs: [gylfaginning, voluspa]

@@ -1,26 +1,42 @@
 ---
 import '../styles/global.css';
+import { livePantheons } from '../lib/content';
 
 interface Props {
   title: string;
   description?: string;
+  /** 当前体系；有值时给 <html> 加 data-pantheon，用于覆盖辅助色 */
+  pantheon?: any;
+  /** 面包屑：神话图鉴 › 北欧神话 › 词条 › 奥丁 */
+  crumbs?: { label: string; href?: string }[];
 }
 
-const { title, description = '北欧诸神的中文词条。所载故事各著出处；诸书异说，并列存之。' } = Astro.props;
-const path = Astro.url.pathname;
-const active = (p: string) => (p === '/' ? path === '/' : path.startsWith(p));
+const {
+  title,
+  description = '多套神话的中文词条库。所载故事各著出处；诸书异说，并列存之。',
+  pantheon,
+  crumbs = [],
+} = Astro.props;
+
+// 精确匹配，不用 startsWith：/norse/qun 不该同时点亮 /norse
+const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const isCurrent = (p: string) => p === path;
 ---
 
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-pantheon={pantheon?.id}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="color-scheme" content="light" />
-    <script is:inline>document.documentElement.classList.add('js');</script>
-    <noscript><style>.reveal{opacity:1 !important;}</style></noscript>
+    <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+    <!-- 各体系辅助色：由注册表注入，不写死在 CSS 里 -->
+    <style
+      is:inline
+      set:html={livePantheons.map((p) => `html[data-pantheon="${p.id}"]{--accent:${p.accent}}`).join('')}
+    />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23f7f3ec'/><text x='16' y='23' font-size='20' text-anchor='middle' fill='%239c3b2e' font-family='serif'>神</text></svg>" />
   </head>
   <body>
@@ -28,12 +44,33 @@ const active = (p: string) => (p === '/' ? path === '/' : path.startsWith(p));
       <div class="inner">
         <a class="brand" href="/">
           神话图鉴
-          <small>MYTHOS · 原典优先</small>
+          <small>MYTHOS</small>
         </a>
-        <nav class="nav">
-          <a href="/about" aria-current={active('/about') ? 'page' : undefined}>编例</a>
+        <nav class="nav" aria-label="主导航">
+          {
+            livePantheons.map((p) => (
+              <a href={`/${p.id}/`} aria-current={pantheon?.id === p.id ? 'true' : undefined}>
+                {p.zh}
+              </a>
+            ))
+          }
+          <a href="/about/" aria-current={isCurrent('/about') ? 'page' : undefined}>编例</a>
         </nav>
       </div>
+      {crumbs.length > 0 && (
+        <div class="inner">
+          <nav class="crumbs" aria-label="所在位置">
+            {
+              crumbs.map((c, i) => (
+                <>
+                  {i > 0 && <span class="sep" aria-hidden="true">›</span>}
+                  {c.href ? <a href={c.href}>{c.label}</a> : <span aria-current="page">{c.label}</span>}
+                </>
+              ))
+            }
+          </nav>
+        </div>
+      )}
     </header>
 
     <main>
@@ -46,13 +83,30 @@ const active = (p: string) => (p === '/' ? path === '/' : path.startsWith(p));
         <p>代码 MIT · 词条文本 CC BY-SA 4.0 · 所引古典文本属公有领域</p>
       </div>
     </footer>
+
     <script>
-      // 载入即入场：所有 .reveal 一次性加上 .in，由 CSS 的 --d 变量做错峰。
-      // 不做滚动触发——文本站常有深链接，内容不能因为没滚动就一直隐身。
+      // 渐显：默认可见，脚本成功接管后才隐藏未进入视口的元素。
+      // 这样脚本失败、被拦截或浏览器太老时，全站照常可读，不会一片空白。
       const els = Array.from(document.querySelectorAll('.reveal'));
-      requestAnimationFrame(() => {
-        for (const el of els) el.classList.add('in');
-      });
+      if (els.length) {
+        if (!('IntersectionObserver' in window)) {
+          for (const el of els) el.classList.add('in');
+        } else {
+          document.documentElement.classList.add('reveal-ready');
+          const io = new IntersectionObserver(
+            (entries) => {
+              for (const en of entries) {
+                if (en.isIntersecting) {
+                  en.target.classList.add('in');
+                  io.unobserve(en.target);
+                }
+              }
+            },
+            { rootMargin: '0px 0px -6% 0px' }
+          );
+          for (const el of els) io.observe(el);
+        }
+      }
     </script>
   </body>
 </html>

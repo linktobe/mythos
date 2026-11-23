@@ -1,0 +1,141 @@
+# 体系注册表（唯一真源）
+#
+# 全站有几套神话、每套叫什么、有哪些列表页、关系图以谁为中心，全部写在这里。
+# 新增一套体系＝在这里加一条 + 建 data/<id>/ 目录，不改 schema、不改页面代码。
+#
+# 字段：
+#   id            稳定标识，也是 URL 前缀（/norse/、/japanese/）
+#   zh / en       显示名
+#   status        live = 已上线；planned = 已登记、还没有内容（不进构建、不出路由）
+#   accent        辅助色，覆盖全站 --accent
+#   description   体系简介，用在该体系首页
+#   tier_note     T0/T1 在本体系里各指哪一类文本（各体系不同，不能全局硬编码）
+#   axes          本体系启用的身份轴，取值范围 lineage / camp / realm
+#   graph_center  关系图中心词条 id
+#   sections      列表页配置；types 里列出的类别即为本体系启用项
+#   order         排序用的固定顺序（避免每页各写一份数组）
+
+- id: norse
+  zh: 北欧神话
+  en: Norse
+  status: live
+  accent: '#9c3b2e'
+  description: 以《诗体埃达》与《散文埃达》为主干。异说并列，各著出处。
+  tier_note:
+    T0: 诗体埃达及同期诗歌
+    T1: 斯诺里《散文埃达》等古代汇编
+  axes: [lineage, camp, realm]
+  relation_kinds: [亲缘, 血盟, 婚姻, 敌对, 宿命, 从属, 师承, 化生, 同源]
+  graph_center: odin
+  sections:
+    - key: entry
+      label: 词条
+      desc: 神祇、巨人、矮人、异兽
+      route: ''
+      types: [神祇, 巨人, 矮人, 异兽]
+    - key: group
+      label: 群体
+      desc: 族群与军团
+      route: qun
+      types: [群体]
+    - key: object
+      label: 器物
+      desc: 兵刃、宝物与桥
+      route: qi
+      types: [器物]
+    - key: place
+      label: 地区
+      desc: 九界与它们的来历
+      route: di
+      types: [地区]
+    - key: event
+      label: 事件
+      desc: 把人物串成时间线
+      route: shi
+      types: [事件]
+    - key: graph
+      label: 关系图
+      desc: 人物之间的关系网
+      route: tu
+      types: []
+  order:
+    place: [asgard, vanaheim, alfheim, midgard, jotunheim, svartalfheim, muspelheim, niflheim, helheim]
+    event: [creation, baldr-death, ragnarok]
+
+- id: japanese
+  zh: 日本神话
+  en: Japanese
+  status: planned
+  accent: '#7a5a86'
+  description: 以《古事记》《日本书纪》为主干。
+  tier_note:
+    T0: 古事记、日本书纪
+    T1: 古语拾遗、先代旧事本纪等
+  # 八百万神不强调「界」，只启用两轴
+  axes: [lineage, camp]
+  relation_kinds: [亲缘, 从属, 敌对, 宿命, 分灵, 御灵, 化生, 同源]
+  graph_center: amaterasu
+  sections:
+    - key: entry
+      label: 神祇
+      desc: 记纪所载诸神
+      route: ''
+      types: [神祇]
+    - key: heroes
+      label: 英雄
+      desc: 人神之间的行动者
+      route: yingxiong
+      types: [英雄]
+    - key: monsters
+      label: 妖怪
+      desc: 不与神同列的另一类
+      route: yaoguai
+      types: [妖怪]
+  order:
+    event: []
+
+- id: greco-roman
+  zh: 古希腊罗马神话
+  en: Greco-Roman
+  status: planned
+  accent: '#3b6d5e'
+  description: 以赫西俄德、荷马与奥维德为主干；罗马与希腊视为同一谱系的两套名义。
+  tier_note:
+    T0: 赫西俄德《神谱》、荷马史诗
+    T1: 阿波罗多洛斯《书库》、奥维德《变形记》、保萨尼亚斯
+  axes: [lineage, camp, realm]
+  relation_kinds: [亲缘, 婚姻, 敌对, 宿命, 从属, 师承, 化生, 同源, 等同, 对应]
+  graph_center: zeus
+  sections:
+    - key: entry
+      label: 神祇
+      desc: 奥林匹斯与更早的一代
+      route: ''
+      types: [神祇, 泰坦, 宁芙, 英雄]
+    - key: monsters
+      label: 怪物
+      desc: 与英雄互为敌手
+      route: guaiwu
+      types: [怪物]
+    - key: object
+      label: 器物
+      desc: 兵刃与宝物
+      route: qi
+      types: [器物]
+    - key: place
+      label: 地区
+      desc: 山川、冥界与诸岛
+      route: di
+      types: [地区]
+    - key: event
+      label: 事件
+      desc: 战争与远征
+      route: shi
+      types: [事件]
+    - key: graph
+      label: 关系图
+      desc: 神谱关系网
+      route: tu
+      types: []
+  order:
+    event: []

@@ -1,0 +1,16 @@
+# Cloudflare Pages 301 重定向
+# 旧地址（单体系时期）→ 新地址（/体系/...）
+# 注意：不要用 Astro 的 redirects 配置，静态输出那边生成的是 HTML meta refresh，不是 301。
+
+/shen/:slug    /norse/entry/:slug/   301
+
+/qun           /norse/qun/           301
+/qun/          /norse/qun/           301
+/qi            /norse/qi/            301
+/qi/           /norse/qi/            301
+/di            /norse/di/            301
+/di/           /norse/di/            301
+/shi           /norse/shi/           301
+/shi/          /norse/shi/           301
+/tu            /norse/tu/            301
+/tu/           /norse/tu/            301

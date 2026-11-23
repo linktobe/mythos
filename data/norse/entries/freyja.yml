@@ -1,0 +1,35 @@
+id: freyja
+pantheon: norse
+entity_type: 神祇
+name: 芙蕾雅
+name_original: "Freyja"
+aliases: [弗蕾亚, 弗雷娅]
+summary: 华纳神族的女神，掌爱欲、丰饶与战争，战后收其半数亡魂。
+role:
+  title: "丰饶与战争的双面女神"
+  brief: "掌生育、财富与战死者；作为华纳人质入阿萨，本身就是两族和解的人格化象征。"
+identity:
+  lineage: [vanir]
+  camp:
+    - { id: vanir, until: 两族议和 }
+    - { id: aesir, from: 作为人质入阿斯加德 }
+  realm:
+    - { id: vanaheim, note: 出身 }
+    - { id: asgard, note: 常居 }
+narrative:
+  - text: 尼约德之女、弗雷之妹，属华纳神族。华纳与阿萨议和后，她随父兄作为人质入阿斯加德。
+    refs: [gylfaginning]
+  - text: 她掌爱欲、丰饶与战争；战死者一半归她的福尔克万格，另一半归奥丁的英灵殿。
+    refs: [grimnismal]
+  - text: 她佩戴项链布里辛嘉曼，车驾由两猫牵引；又曾以 seidr 之术授奥丁。
+    refs: [gylfaginning, skaldskaparmal]
+variants:
+  - claim: 学界有 "芙蕾雅与弗丽嘉本为同一女神分化" 的假说，<em>《欺骗古鲁菲》</em> 中二者的职司确有重叠。
+    refs: [gylfaginning]
+relations:
+  - { target: njord, kind: 亲缘, detail: 父女, refs: [gylfaginning] }
+  - { target: freyr, kind: 亲缘, detail: 兄妹, refs: [gylfaginning] }
+  - { target: odin, kind: 师承, detail: 授其 seidr, refs: [gylfaginning] }
+  - { target: frigg, kind: 同源, detail: 学界假说，存疑, refs: [gylfaginning] }
+legacy:
+  - 英语 Friday 亦有一说源自其名；漫威将其塑造成战场女武神。

@@ -1,0 +1,101 @@
+# 全局类别词表（唯一真源）
+#
+# entity_type 只能取这里的 zh，写错立即构建失败。
+# 新增体系时不要改这个文件以外的地方：体系里启用哪些类别，写在 pantheons.yml 的
+# sections[].types 里；只登记、未启用也没关系。
+#
+# 字段：
+#   id     稳定标识，供程序使用
+#   zh     词条里 entity_type 取的值
+#   en     英文名
+#   axes   该类别是否必须填三轴身份（事件不填）
+#   graph  是否进关系图（人物类进，器物/地区/事件不进）
+
+# ── 北欧现有 ──────────────────────────────────────────
+- id: deity
+  zh: 神祇
+  en: Deity
+  axes: true
+  graph: true
+
+- id: giant
+  zh: 巨人
+  en: Giant
+  axes: true
+  graph: true
+
+- id: dwarf
+  zh: 矮人
+  en: Dwarf
+  axes: true
+  graph: true
+
+- id: beast
+  zh: 异兽
+  en: Beast
+  axes: true
+  graph: true
+
+- id: object
+  zh: 器物
+  en: Artefact
+  axes: true
+  graph: false
+
+- id: group
+  zh: 群体
+  en: Group
+  axes: true
+  graph: false
+
+- id: place
+  zh: 地区
+  en: Realm
+  axes: true
+  graph: false
+
+- id: event
+  zh: 事件
+  en: Event
+  axes: false
+  graph: false
+
+# ── 为后续体系预留（已登记，未启用）─────────────────────
+- id: hero
+  zh: 英雄
+  en: Hero
+  axes: true
+  graph: true
+  note: 半人半神的行动者，区别于纯血神祇。
+
+- id: titan
+  zh: 泰坦
+  en: Titan
+  axes: true
+  graph: true
+  note: 希腊神话中先于奥林匹斯神的一代。
+
+- id: monster
+  zh: 怪物
+  en: Monster
+  axes: true
+  graph: true
+
+- id: nymph
+  zh: 宁芙
+  en: Nymph
+  axes: true
+  graph: true
+  note: 山林水泽的次级神，多与特定地点绑定。
+
+- id: youkai
+  zh: 妖怪
+  en: Yokai
+  axes: true
+  graph: true
+
+- id: undead
+  zh: 亡灵
+  en: Undead
+  axes: true
+  graph: true

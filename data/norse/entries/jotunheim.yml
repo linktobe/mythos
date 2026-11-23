@@ -1,0 +1,32 @@
+id: jotunheim
+pantheon: norse
+entity_type: 地区
+name: 约顿海姆
+name_original: "Jötunheimr"
+aliases: [巨人之国]
+summary: 巨人所居之地，在世界边缘，多山、荒凉，有铁森林。
+role:
+  title: "世界之外的邻居"
+  brief: "诸神把巨人安置在陆地之外，用围墙和彩虹桥隔开。可巨人与神族通婚、往来、结仇，这条边界从来没真正隔住过谁。"
+identity:
+  lineage:
+    - { id: jotunn, note: 巨人所居 }
+  camp:
+    - { id: jotnar }
+  realm:
+    - { id: jotunheim }
+narrative:
+  - text: "世界以尤弥尔的身躯造好之后，巨人被安置在人类所居之地以外的荒远之处。"
+    refs: [gylfaginning]
+  - text: "居于此地的是巨人。神族与他们通婚、结盟、争斗，多数神祇的母系都能追到这里。"
+    refs: [gylfaginning, skaldskaparmal]
+  - text: "此地多山而荒凉，有铁森林与巨人加斯特巴纳的居所；托尔东行所遇的巨人，多在此界。"
+    refs: [skaldskaparmal, gylfaginning]
+variants:
+  - claim: "约顿海姆与「巨人国」是否同指一地，原典用语并不严格；诗体埃达多以族名称地，不着意区分。"
+    refs: [gylfaginning]
+relations:
+  - { target: skadi, kind: 从属, detail: 出于此界的女巨人, refs: [skaldskaparmal] }
+  - { target: surtr, kind: 从属, detail: 火巨人出于巨人一族, refs: [gylfaginning] }
+legacy:
+  - 现代作品多把此地写成冰封荒原，原典只强调山与荒远，未及气候。

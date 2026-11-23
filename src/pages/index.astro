@@ -1,75 +1,141 @@
 ---
 import Base from '../layouts/Base.astro';
-import data from '../generated/entities.json';
+import { pantheons, totals, livePantheons, systems, entryHref } from '../lib/content';
 
-const { entries, vocab, counts } = data;
-
-const KIND_PEOPLE = new Set(['神祇', '巨人', '矮人', '异兽']);
-const people = entries.filter((e) => KIND_PEOPLE.has(e.entity_type));
-const groups = entries.filter((e) => e.entity_type === '群体');
-const vessels = entries.filter((e) => e.entity_type === '器物');
-const places = entries.filter((e) => e.entity_type === '地区');
-const events = entries.filter((e) => e.entity_type === '事件');
-
-const sections = [
-  { href: '/', label: '词条', desc: '神祇、巨人、矮人、异兽', n: people.length },
-  { href: '/qun', label: '群体', desc: '族群与军团', n: groups.length },
-  { href: '/qi', label: '器物', desc: '兵刃、宝物与桥', n: vessels.length },
-  { href: '/di', label: '地区', desc: '九界与它们的来历', n: places.length },
-  { href: '/shi', label: '事件', desc: '把人物串成时间线', n: events.length },
-  { href: '/tu', label: '关系图', desc: '人物之间的关系网', n: counts.relations },
-];
-
-const vocabIndex = {
-  lineage: new Map(vocab.lineage.map((x) => [x.id, x])),
-  camp: new Map(vocab.camp.map((x) => [x.id, x])),
-  realm: new Map(vocab.realm.map((x) => [x.id, x])),
-};
-const tagOf = (axis, id) => vocabIndex[axis]?.get(id)?.zh ?? id;
+// 速览：各体系取前几条，凑够 8 条
+const preview = [];
+for (const p of livePantheons) {
+  const sys = systems[p.id];
+  for (const e of (sys?.entries ?? []).slice(0, 8)) {
+    if (preview.length >= 8) break;
+    preview.push({ ...e, pantheon: p.id, pantheonZh: p.zh });
+  }
+}
 ---
 
-<Base title="神话图鉴 · 词条">
+<Base title="神话图鉴 · 多体系中文词条库">
   <div class="wrap">
     <header class="list-head">
       <h1>神话图鉴</h1>
-      <p style="color: var(--muted); margin: 0;">北欧诸神的中文词条。所载故事各著出处；诸书异说，并列存之。</p>
+      <p class="lede">
+        几套神话的中文词条，各自成体系。所载故事各著出处；诸书异说，并列存之，不设唯一正典。
+      </p>
       <div class="stats">
-        <span>{counts.entries} 条词目</span>
-        <span>{counts.relations} 条关系</span>
-        <span>{counts.sources} 种典籍</span>
+        <span>{livePantheons.length} 套体系</span>
+        <span>{totals.entries} 条词目</span>
+        <span>{totals.relations} 条关系</span>
+        <span>{totals.sources} 种典籍</span>
       </div>
     </header>
 
-    <nav class="sections" aria-label="分类">
-      {sections.map((s) => (
-        <a class="section-card" href={s.href}>
-          <span class="section-n">{s.n}</span>
-          <span class="section-name">{s.label}</span>
-          <span class="section-desc">{s.desc}</span>
-        </a>
-      ))}
+    <section class="search-block" aria-label="全站搜索">
+      <label class="search-label" for="q">搜索全部体系</label>
+      <div class="search-box">
+        <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="输入中文名、原文名或别名，如 奥丁 / Óðinn" />
+        <kbd class="search-hint">/</kbd>
+      </div>
+      <ul class="search-results" id="results" role="listbox" aria-label="搜索结果"></ul>
+      <p class="search-empty" id="search-empty" hidden>没有匹配的词条。</p>
+    </section>
+
+    <h2>各体系</h2>
+    <nav class="sections pantheons" aria-label="神话体系">
+      {
+        pantheons.map((p) => (
+          <a class:list={['section-card', { planned: p.status !== 'live' }]} href={p.status === 'live' ? `/${p.id}/` : undefined} aria-disabled={p.status !== 'live' ? 'true' : undefined}>
+            <span class="section-n">{p.status === 'live' ? p.counts.entries : '—'}</span>
+            <span class="section-name">{p.zh}</span>
+            <span class="section-desc">{p.status === 'live' ? p.description : '筹备中，尚未开放'}</span>
+          </a>
+        ))
+      }
     </nav>
 
     <h2>最近收录</h2>
     <section class="cards">
-      {people.map((e, i) => (
-        <a class="card reveal" style={`--d:${i * 45}ms`} href={`/shen/${e.id}`}>
-          <div class="name">
-            {e.name}
-            <span class="alias">{e.name_latin}</span>
-          </div>
-          <div class="desc">{e.summary}</div>
-          <div class="tags">
-            {e.entity_type !== '神祇' && <span class="tag-type">{e.entity_type}</span>}
-            <span class="tag-role">{e.role.title}</span>
-            {e.identity.lineage.slice(0, 1).map((x) => {
-              const t = tagOf('lineage', x.id);
-              return t === e.entity_type ? null : <span>{t}</span>;
-            })}
-            {e.identity.realm.slice(0, 1).map((x) => <span>{tagOf('realm', x.id)}</span>)}
-          </div>
-        </a>
-      ))}
+      {
+        preview.map((e, i) => (
+          <a class="card reveal" style={`--d:${i * 45}ms`} href={entryHref(e.pantheon, e.id)}>
+            <div class="name">
+              {e.name}
+              <span class="alias">{e.name_original}</span>
+            </div>
+            <div class="desc">{e.summary}</div>
+            <div class="tags">
+              <span class="tag-type">{e.pantheonZh}</span>
+              <span class="tag-role">{e.role.title}</span>
+            </div>
+          </a>
+        ))
+      }
     </section>
   </div>
+
+  <script>
+    // 全站搜索：首屏不加载索引，聚焦后才取，避免每页都背一份 JSON
+    const input = document.getElementById('q');
+    const list = document.getElementById('results');
+    const empty = document.getElementById('search-empty');
+    let index = null;
+    let loading = null;
+
+    const load = () => {
+      if (!loading) {
+        loading = fetch('/search-index.json')
+          .then((r) => r.json())
+          .then((data) => (index = data))
+          .catch(() => (index = []));
+      }
+      return loading;
+    };
+
+    const render = (hits) => {
+      list.textContent = '';
+      empty.hidden = hits.length > 0;
+      for (const h of hits) {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = h.url;
+        a.className = 'search-hit';
+        a.textContent = h.name;
+        const meta = document.createElement('span');
+        meta.className = 'search-meta';
+        meta.textContent = [h.name_original, h.entity_type, h.pantheon_zh].filter(Boolean).join(' · ');
+        a.append(meta);
+        li.append(a);
+        list.append(li);
+      }
+    };
+
+    const search = async (q) => {
+      const term = q.trim().toLowerCase();
+      if (!term) {
+        render([]);
+        empty.hidden = true;
+        return;
+      }
+      await load();
+      const hits = index
+        .filter((h) => {
+          const hay = [h.name, h.name_original, ...(h.aliases || [])].join(' ').toLowerCase();
+          return hay.includes(term);
+        })
+        .slice(0, 12);
+      render(hits);
+    };
+
+    input?.addEventListener('input', (e) => search((e.target as HTMLInputElement).value));
+    input?.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const first = list.querySelector('a');
+        if (first) window.location.href = first.href;
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === '/' && document.activeElement !== input) {
+        e.preventDefault();
+        input?.focus();
+      }
+    });
+  </script>
 </Base>

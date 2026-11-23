@@ -1,0 +1,41 @@
+id: fenrir
+pantheon: norse
+entity_type: 异兽
+name: 芬里尔
+name_original: "Fenrir"
+aliases: [芬里斯狼, 巨狼]
+summary: 洛基之子，挣脱束缚后吞下奥丁。
+role:
+  title: "被束缚的毁灭者"
+  brief: "诸神对失控力量的恐惧所化。它挣断锁链的一刻，就是末日的宣告。"
+identity:
+  lineage: [jotunn, being]
+  camp:
+    - { id: hostile }
+  realm:
+    - { id: beyond, note: 被缚于孤岛林格维 }
+narrative:
+  - text: 洛基与女巨人安格尔波达之子。诸神惧其日长，两度以粗重锁链相试，皆被它轻易挣脱。
+    refs: [gylfaginning]
+  - text: 第三次用的是矮人所制的细绳格莱普尼尔。提尔将右手放入它口中为质，芬里尔被缚，随即咬断提尔之手。
+    refs: [gylfaginning]
+  - text: 诸神黄昏时它挣脱束缚，吞下奥丁，随后被维达所杀。
+    refs: [voluspa, gylfaginning]
+variants:
+  - claim: 格莱普尼尔的制法（猫的脚步、女人的胡须、山的根、熊的肌腱、鱼的呼吸、鸟的唾液）见于《欺骗古鲁菲》，属 Snorri 的文学化铺陈。
+    refs: [gylfaginning]
+relations:
+  - { target: loki, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: odin, kind: 宿命, detail: 吞杀奥丁, refs: [gylfaginning] }
+  - { target: jormungandr, kind: 亲缘, detail: 兄弟, refs: [gylfaginning] }
+  - { target: hel, kind: 亲缘, detail: 兄妹, refs: [gylfaginning] }
+legacy:
+  - 现代改编多以其作为 "诸神黄昏的终结者" 符号出现。
+adaptations:
+  - work: "漫威电影宇宙《雷神3：诸神黄昏》（2017）"
+    kind: 电影
+    portrayal: "海拉豢养的巨狼，与浩克交战，最终被推下彩虹桥。"
+    divergences:
+      - "原典芬里尔是洛基之子，被诸神以格莱普尼尔束缚、咬断提尔之手；MCU 与洛基无血缘，也无束缚情节。"
+      - "原典芬里尔是诸神黄昏的关键破坏者，吞下奥丁；MCU 中它只是一头坐骑级的猛兽。"
+      - "原典奥丁死于芬里尔之口；MCU 里奥丁是自然衰亡。"

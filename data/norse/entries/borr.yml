@@ -1,0 +1,32 @@
+id: borr
+pantheon: norse
+entity_type: 神祇
+name: 博尔
+name_original: "Borr"
+aliases: [波尔]
+summary: 布利之子，娶女巨人贝斯特拉，生奥丁、维利与维。
+role:
+  title: "承上启下的一代"
+  brief: "他自己几乎没有故事，作用全在谱系上：父亲是冰里舔出来的布利，妻子是女巨人，三个儿子杀了始祖巨人、造了世界。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: beyond }
+narrative:
+  - text: "他是布利之子。娶女巨人贝斯特拉为妻，生下奥丁、维利与维三子。"
+    refs: [gylfaginning]
+  - text: "原典对他别无所载：既无战绩，也无结局。"
+    refs: [gylfaginning]
+variants:
+  - claim: "博尔之名与世系仅见于《欺骗古鲁菲》；诗体埃达提到奥丁时，多称其为「博尔之子」而不展开。"
+    refs: [gylfaginning, voluspa]
+relations:
+  - { target: buri, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: bestla, kind: 婚姻, detail: 夫妻, refs: [gylfaginning] }
+  - { target: odin, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: vili, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: ve, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+legacy:
+  - 现代改编大多略去这一代，直接从奥丁三兄弟杀尤弥尔讲起。

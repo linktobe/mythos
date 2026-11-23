@@ -1,0 +1,31 @@
+id: niflheim
+pantheon: norse
+entity_type: 地区
+name: 尼福尔海姆
+name_original: "Niflheimr"
+aliases: [雾之国]
+summary: 世界未成时便已存在的雾与冰之界，有赫瓦格密尔泉与毒龙尼德霍格。
+role:
+  title: "世界北端的冷"
+  brief: "它与火之界一同先于世界存在。冰与火在鸿沟里相遇，化出始祖巨人；世界的账，从这里开始算。"
+identity:
+  lineage:
+    - { id: jotunn, note: 与冥界相邻 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: niflheim }
+narrative:
+  - text: "世界尚未成形时，北方已有雾与冰之国，其中有泉名赫瓦格密尔，九条河水自此流出。"
+    refs: [gylfaginning]
+  - text: "毒龙尼德霍格伏于泉下，啃食世界树的根；这口泉与这棵树，是此界最古老的景物。"
+    refs: [gylfaginning, voluspa]
+  - text: "此地终年寒雾笼罩，与南方的火之国隔鸿沟相望。两界之物在鸿沟中相遇，才有了始祖巨人。"
+    refs: [gylfaginning]
+variants:
+  - claim: "赫尔海姆是否即尼福尔海姆的一部分，原典说法不一：有以海拉之国为尼福尔海姆境内一处，也有将二者并列。"
+    refs: [gylfaginning]
+relations:
+  - { target: hel, kind: 从属, detail: 冥界在其境内, refs: [gylfaginning] }
+legacy:
+  - 现代作品多把此地写成冰封冥府，实际原典中它与冥界并非完全等同。

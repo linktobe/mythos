@@ -1,0 +1,30 @@
+id: tyr
+pantheon: norse
+entity_type: 神祇
+name: 提尔
+name_original: "Týr"
+aliases: [战神, 独手之神]
+summary: 阿萨神族中最勇者，掌战争与誓约；为缚住巨狼而失去右手。
+role:
+  title: "誓约的担保人"
+  brief: "诸神要骗巨狼入套，却没人敢把手放进它嘴里。提尔伸了手。这一咬换来芬里尔被缚，也让他成了「守约」这件事的代价本身。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "他是阿萨神族中最勇敢的一位，掌战争与誓约，也主掌胜负。"
+    refs: [gylfaginning]
+  - text: "诸神以细绳格莱普尼尔缚芬里尔，巨狼疑心有诈，索要一只手放入口中为质。提尔伸出右手，众神得手，他的手被咬断。"
+    refs: [gylfaginning]
+  - text: "《洛基的争辩》中，洛基当众提起断手之事，以此讥讽他；提尔则反唇相讥，点破洛基的子女之祸。"
+    refs: [lokasenna]
+variants:
+  - claim: "有学者认为提尔原为日耳曼民族地位最高的神，其后为奥丁取代；此说属后世推论，原典并无记载。"
+    refs: [gylfaginning]
+relations:
+  - { target: fenrir, kind: 宿命, detail: 以右手为质，被其咬断, refs: [gylfaginning] }
+legacy:
+  - 英语 Tuesday 即源自其名，原典中他与「法」和「誓」的关系比与战争更深。

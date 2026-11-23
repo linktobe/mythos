@@ -1,0 +1,59 @@
+---
+import Base from '../../layouts/Base.astro';
+import EntryGrid from '../../components/EntryGrid.astro';
+import { livePantheons, getSystem, getGraph, sectionHref } from '../../lib/content';
+
+export function getStaticPaths() {
+  return livePantheons.map((p) => ({ params: { pantheon: p.id }, props: { p } }));
+}
+
+const { p } = Astro.props;
+const system = getSystem(p.id)!;
+const graph = getGraph(p.id);
+const entries = system.entries ?? [];
+
+const countOf = (section: any) => {
+  if (section.key === 'graph') return graph?.nodes?.length ?? 0;
+  return entries.filter((e: any) => section.types.includes(e.entity_type)).length;
+};
+
+const unitOf = (section: any) =>
+  section.key === 'graph' ? '人' : section.key === 'object' ? '件' : section.key === 'place' ? '处' : section.key === 'event' ? '起' : '条';
+
+const lead = p.sections.find((s: any) => s.key === 'entry') ?? p.sections[0];
+const people = entries.filter((e: any) => e.section === lead.key);
+---
+
+<Base
+  title={`${p.zh} · 神话图鉴`}
+  description={p.description}
+  pantheon={p}
+  crumbs={[{ label: '神话图鉴', href: '/' }, { label: p.zh }]}
+>
+  <div class="wrap">
+    <header class="list-head">
+      <h1>{p.zh}<span class="etype">{p.en}</span></h1>
+      <p class="lede">{p.description}</p>
+      <div class="stats">
+        <span>{system.counts.entries} 条词目</span>
+        <span>{system.counts.relations} 条关系</span>
+        <span>{system.counts.sources} 种典籍</span>
+      </div>
+    </header>
+
+    <nav class="sections" aria-label="分类">
+      {
+        p.sections.map((s: any) => (
+          <a class="section-card" href={sectionHref(p.id, s.route)}>
+            <span class="section-n">{countOf(s)}</span>
+            <span class="section-name">{s.label}</span>
+            <span class="section-desc">{s.desc}</span>
+          </a>
+        ))
+      }
+    </nav>
+
+    <h2>{lead.label}</h2>
+    <EntryGrid system={system} pantheonId={p.id} items={people} />
+  </div>
+</Base>

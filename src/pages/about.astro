@@ -1,48 +1,68 @@
 ---
 import Base from '../layouts/Base.astro';
-import data from '../generated/entities.json';
-const { counts } = data;
-const people = data.entries.filter((e) => e.entity_type !== '器物').length;
-const vessels = data.entries.filter((e) => e.entity_type === '器物').length;
-const places = data.entries.filter((e) => e.entity_type === '地区').length;
-const events = data.entries.filter((e) => e.entity_type === '事件').length;
+import { livePantheons, totals, getSystem } from '../lib/content';
+
+const systems = livePantheons.map((p) => ({ p, system: getSystem(p.id) }));
+const tiers = [
+  { key: 'T0', name: '原典', desc: '成书最早、直接记载神话的文本。' },
+  { key: 'T1', name: '古代汇编', desc: '同时代或稍晚的整理，记载最全，但作者已距神话时代较远。' },
+  { key: 'T2', name: '后世重述', desc: '中古以后的文学改写。' },
+  { key: 'T3', name: '现代改编', desc: '电影、剧集、游戏。' },
+];
 ---
 
-<Base title="编例 · 神话图鉴" description="这些词条怎么写的：依据、异文、身份、职责、改编与出处。">
-  <div class="wrap" style="padding-top: 56px; padding-bottom: 64px;">
-    <a class="back" href="/" style="margin-top:0">← 返回首页</a>
+<Base title="编例 · 神话图鉴" description="这些词条怎么写的：依据、异文、身份、职责、改编、出处与立条标准。">
+  <div class="wrap">
+    <a class="back" href="/">← 返回首页</a>
     <h1>编例</h1>
-    <p class="summary">神话没有唯一的正典。同一个人物、同一件事，不同的书常有不同说法。这里不选定一个标准答案，只把说法和出处一起列出来。</p>
+    <p class="lede">
+      神话没有唯一的正典。同一个人物、同一件事，不同的书常有不同说法。这里不选定一个标准答案，
+      只把说法和出处一起列出来。
+    </p>
 
     <h2>一、依据</h2>
-    <p>故事以成书最早、记载最完整的文本为主。原书没有写到的，才退一步采用后人整理的汇编，并在引用处注明是哪一本。文本分四级，按可靠程度往下排：</p>
+    <p>
+      故事以成书最早、记载最完整的文本为主。原书没有写到的，才退一步采用后人整理的汇编，并在引用处注明是哪一本。
+      文本分四级，按可靠程度往下排：
+    </p>
     <ul class="tiers">
-      <li class="reveal" style="--d:0ms">
-        <span class="tier t0">T0</span>
-        <span class="tier-name">原典</span>
-        <span class="tier-desc">成书最早、直接记载神话的文本，如《诗体埃达》各篇。</span>
-      </li>
-      <li class="reveal" style="--d:60ms">
-        <span class="tier t1">T1</span>
-        <span class="tier-name">古代汇编</span>
-        <span class="tier-desc">同时代或稍晚的整理，如 Snorri 的《散文埃达》。记载最全，但作者距神话时代已有两百年。</span>
-      </li>
-      <li class="reveal" style="--d:120ms">
-        <span class="tier t2">T2</span>
-        <span class="tier-name">后世重述</span>
-        <span class="tier-desc">中古以后的文学改写，如《尼伯龙根之歌》。</span>
-      </li>
-      <li class="reveal" style="--d:180ms">
-        <span class="tier t3">T3</span>
-        <span class="tier-name">现代改编</span>
-        <span class="tier-desc">电影、剧集、游戏，如漫威系列、《战神》。</span>
-      </li>
+      {
+        tiers.map((t, i) => (
+          <li class="reveal" style={`--d:${i * 60}ms`}>
+            <span class={`tier ${t.key.toLowerCase()}`}>{t.key}</span>
+            <span class="tier-name">{t.name}</span>
+            <span class="tier-desc">{t.desc}</span>
+          </li>
+        ))
+      }
     </ul>
-    <p>叙事只到原典为止。原典没有的，才降一级采用汇编，并注明出处。所以北欧条目大多标着 T1——不是轻信晚出的书，而是原典本身就残缺。北欧神话几乎全靠《散文埃达》保存，而它写于十三世纪，作者是基督徒，离神话时代已经两百年。</p>
     <p>T2 和 T3 不进正文，只在页末用一句话带过，或者单列在「改编形象对照」里。</p>
+    <p>
+      四级的界线由各体系自己划定。同一本书在两套神话里未必同级：一部公元一世纪的著作，
+      对希腊神话是当时人的记录，对北欧神话却晚了一千年。各体系 T0、T1 具体指哪些书，见下表。
+    </p>
+    <table class="tier-table">
+      <thead>
+        <tr><th>体系</th><th>T0 原典</th><th>T1 古代汇编</th></tr>
+      </thead>
+      <tbody>
+        {
+          systems.map(({ p }) => (
+            <tr>
+              <td>{p.zh}</td>
+              <td>{p.tier_note?.T0 ?? '—'}</td>
+              <td>{p.tier_note?.T1 ?? '—'}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
 
     <h2>二、异文</h2>
-    <p>当两种文献对同一事项的记载不一致时，本编将两种说法并列呈现，并各自注明出处；不将其中读来较顺的一种定为确论，取舍交由读者自行判断。</p>
+    <p>
+      当两种文献对同一事项的记载不一致时，本编将两种说法并列呈现，并各自注明出处；
+      不将其中读来较顺的一种定为确论，取舍交由读者自行判断。
+    </p>
 
     <h2>三、三轴</h2>
     <p>每个词条沿三个维度分别标注、分开记录，因为这三者常常并不一致：</p>
@@ -51,21 +71,55 @@ const events = data.entries.filter((e) => e.entity_type === '事件').length;
       <li><strong>阵营</strong>：立场上所归属的集团。洛基列于阿萨神族。</li>
       <li><strong>界</strong>：所居住的世界。洛基居于阿斯加德。</li>
     </ul>
-    <p>这三项在洛基身上全不统一：血统为巨人，阵营属阿萨，居所在阿斯加德。若将三者合并为一项，便无法清楚说明他的身份。</p>
+    <p>
+      这三项在洛基身上全不统一：血统为巨人，阵营属阿萨，居所在阿斯加德。若将三者合并为一项，便无法清楚说明他的身份。
+    </p>
+    <p>
+      并非每套神话都合用三轴。「界」要求神有明确居所，八百万神并无固定住处，故日本神话只标两轴。
+      各体系启用哪几轴，由注册表声明，词条按声明校验。
+    </p>
 
     <h2>四、职责</h2>
-    <p>仅说明「他是谁」尚不足够，还须说明「他做什么」。因此每个词条均附一句职能定位：奥丁维持秩序，托尔抵挡巨人，洛基破坏秩序。若缺此一句，人物条目便只剩家谱，而失却职能的交代。</p>
+    <p>
+      仅说明「他是谁」尚不足够，还须说明「他做什么」。因此每个词条均附一句职能定位：
+      奥丁维持秩序，托尔抵挡巨人，洛基破坏秩序。若缺此一句，人物条目便只剩家谱，而失却职能的交代。
+    </p>
 
     <h2>五、改编</h2>
-    <p>电影、剧集与游戏所作的改动，单独列为一节，逐条写明改动了什么。本节不评价改编的优劣，只区分哪些语句出自原书、哪些语句属于编剧的创作。</p>
+    <p>
+      电影、剧集与游戏所作的改动，单独列为一节，逐条写明改动了什么。
+      本节不评价改编的优劣，只区分哪些语句出自原书、哪些语句属于编剧的创作。
+    </p>
 
     <h2>六、出处</h2>
-    <p>每段叙述之后均附引用编号，点击即可跳转至所引的具体书籍。页面末尾列出全部引用书目，并附公版原文的链接，以便读者核对。</p>
+    <p>
+      每段叙述之后均附引用编号，点击即可跳转至所引的具体书籍。页面末尾列出全部引用书目，
+      并附公版原文的链接，以便读者核对。词条只能引用本体系的典籍，跨体系对照另列一表，不混入关系。
+    </p>
 
-    <h2>七、规模</h2>
-    <p>目前收录人物与族群 {people} 条、器物 {vessels} 件、地区 {places} 处、事件 {events} 起、关系 {counts.relations} 条、典籍 {counts.sources} 种。数据都是纯文本，逐条可查。</p>
+    <h2>七、立条</h2>
+    <p>
+      是否单独立条，先看原典里有没有属于它自己的一段。有的，立条；没有的，不勉强撑起一个空页面，
+      改写进相邻词条的一句关系或一句提及里。地名、器物也照此办理——一个名字若只出现在别人的故事里，
+      就留在那一条里。
+    </p>
+    <p>过了这一关，再看文本层级：原典有的作主干，只见于汇编的照立，但注明取自汇编；只见于后世重述与现代改编的，不立条。</p>
 
-    <h2>八、版权</h2>
+    <h2>八、规模</h2>
+    <ul>
+      {
+        systems.map(({ p }) => (
+          <li>
+            <strong>{p.zh}</strong>：词目 {p.counts.entries} 条、关系 {p.counts.relations} 条、典籍 {p.counts.sources} 种。
+          </li>
+        ))
+      }
+    </ul>
+    <p>
+      合计 {totals.entries} 条词目、{totals.relations} 条关系、{totals.sources} 种典籍。数据都是纯文本，逐条可查。
+    </p>
+
+    <h2>九、版权</h2>
     <p>代码使用 MIT 许可，词条文本使用 CC BY-SA 4.0，所引古籍属于公有领域。</p>
   </div>
 </Base>

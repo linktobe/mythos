@@ -1,0 +1,61 @@
+---
+import Base from '../../layouts/Base.astro';
+import EntryGrid from '../../components/EntryGrid.astro';
+import { livePantheons, getSystem, sectionHref } from '../../lib/content';
+
+export function getStaticPaths() {
+  const paths = [];
+  for (const p of livePantheons) {
+    const system = getSystem(p.id);
+    for (const s of p.sections) {
+      // 体系首页（route 为空）与关系图另有页面
+      if (s.route === '' || s.key === 'graph') continue;
+      paths.push({ params: { pantheon: p.id, list: s.route }, props: { p, system, section: s } });
+    }
+  }
+  return paths;
+}
+
+const { p, system, section } = Astro.props;
+
+const order: string[] = system.pantheon.order?.[section.key] ?? [];
+const items = system.entries
+  .filter((e: any) => section.types.includes(e.entity_type))
+  .sort((a: any, b: any) => {
+    const ia = order.indexOf(a.id);
+    const ib = order.indexOf(b.id);
+    return (ia < 0 ? 999 : ia) - (ib < 0 ? 999 : ib);
+  });
+
+const unit = section.key === 'object' ? '件' : section.key === 'place' ? '处' : section.key === 'event' ? '起' : '类';
+const relationKindCount = new Set(system.entries.flatMap((e: any) => e.relations.map((r: any) => r.kind))).size;
+---
+
+<Base
+  title={`${section.label} · ${p.zh}`}
+  description={`${p.zh}·${section.label}：${section.desc}`}
+  pantheon={p}
+  crumbs={[
+    { label: '神话图鉴', href: '/' },
+    { label: p.zh, href: `/${p.id}/` },
+    { label: section.label },
+  ]}
+>
+  <div class="wrap">
+    <a class="back" href={`/${p.id}/`}>← 返回{p.zh}</a>
+    <header class="list-head">
+      <h1>{section.label}</h1>
+      <p class="lede">{section.desc}</p>
+      <div class="stats">
+        <span>{items.length} {unit}</span>
+        {section.key === 'event' && <span>{relationKindCount} 种关系</span>}
+      </div>
+    </header>
+
+    <EntryGrid system={system} pantheonId={p.id} items={items} />
+
+    <p class="list-foot">
+      <a href={sectionHref(p.id, '')}>← 回到{p.zh}全部词条</a>
+    </p>
+  </div>
+</Base>

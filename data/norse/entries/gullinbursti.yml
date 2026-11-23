@@ -1,0 +1,33 @@
+id: gullinbursti
+pantheon: norse
+entity_type: 器物
+name: 金鬃野猪
+name_original: "Gullinbursti"
+aliases: [古林布尔斯提]
+summary: 矮人所铸的金鬃野猪，弗雷的坐骑，能行于水空之上。
+role:
+  title: "弗雷的神驹"
+  brief: "一头用炉火铸出来的活猪。鬃毛照得四周发亮，昼可驰于水上、夜可行于空中；它是丰饶之神的坐骑，也是矮人技艺的凭证。"
+identity:
+  lineage:
+    - { id: dwarf, note: 矮人所铸 }
+  camp:
+    - { id: aesir, note: 归弗雷所有 }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "金鬃野猪与雷锤、德罗普尼尔同出矮人辛德里与布洛克之炉，为其所铸三宝之一。"
+    refs: [skaldskaparmal]
+  - text: "它的鬃毛如金，能照彻四周；可驰于水上、行于空中，昼夜兼程，快于任何骏马。"
+    refs: [gylfaginning, skaldskaparmal]
+  - text: "此猪赠予弗雷，为其坐骑。"
+    refs: [skaldskaparmal]
+variants:
+  - claim: "「行于水空」之说见于《欺骗古鲁菲》；《诗语》只记其为三宝之一，未详其能。"
+    refs: [gylfaginning, skaldskaparmal]
+relations:
+  - { target: freyr, kind: 从属, detail: 为其坐骑, refs: [skaldskaparmal] }
+  - { target: sindri, kind: 从属, detail: 由其铸造, refs: [skaldskaparmal] }
+  - { target: brokkr, kind: 从属, detail: 由其鼓风助铸, refs: [skaldskaparmal] }
+legacy:
+  - 后世金鬃野猪的形象常用于纹章与游戏，多取其「光」与「丰饶」两面。

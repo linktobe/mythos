@@ -1,0 +1,32 @@
+id: ve
+pantheon: norse
+entity_type: 神祇
+name: 维
+name_original: "Vé"
+aliases: [伟]
+summary: 奥丁之弟，三兄弟之一，参与造世界、造人。
+role:
+  title: "三兄弟中最末一位"
+  brief: "与维利一样，他的名字只在创世时出现一次。三人分工给了人类三样东西：呼吸、心智与感官——原典没有说谁给了哪一样。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: beyond }
+narrative:
+  - text: "他是博尔与贝斯特拉之子，奥丁与维利之弟。"
+    refs: [gylfaginning]
+  - text: "他与两位兄长共同杀死尤弥尔、以巨人身躯造世界；造人时，三兄弟分别赋予阿斯克与恩布拉呼吸、心智与感官。"
+    refs: [gylfaginning]
+  - text: "原典未载其单独事迹与结局。"
+    refs: [gylfaginning]
+variants:
+  - claim: "三兄弟各赐何物，原典只并列三项而未逐一对应到人；后世注家常作推测，不宜当作原文。"
+    refs: [gylfaginning]
+relations:
+  - { target: odin, kind: 亲缘, detail: 兄弟, refs: [gylfaginning] }
+  - { target: vili, kind: 亲缘, detail: 兄弟, refs: [gylfaginning] }
+  - { target: creation, kind: 从属, detail: 参与造世界与造人, refs: [gylfaginning] }
+legacy:
+  - 「Vé」在古诺斯语中另有「圣所」之义，与神名同形，易被混淆。

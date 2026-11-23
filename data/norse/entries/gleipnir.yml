@@ -1,0 +1,32 @@
+id: gleipnir
+pantheon: norse
+name: 格莱普尼尔
+name_original: "Gleipnir"
+aliases: [缚狼之绳]
+entity_type: 器物
+summary: 矮人所制的细绳，用来缚住巨狼芬里尔。
+role:
+  title: "诸神唯一的缰绳"
+  brief: "两条铁链都被芬里尔挣断，诸神只好求矮人另制一物。它的用处不在力量，而在让那头狼自己走进圈套。"
+identity:
+  lineage:
+    - { id: dwarf, note: 矮人所制 }
+  camp:
+    - { id: aesir, note: 诸神所用 }
+  realm:
+    - { id: beyond, note: 缚于巨石 }
+narrative:
+  - text: "芬里尔两度挣断诸神的锁链。第三次，诸神向矮人求制一条绳索，用料是六样东西：猫的脚步、女人的胡须、山的根、熊的肌腱、鱼的呼吸、鸟的唾液。"
+    refs: [gylfaginning]
+  - text: "绳成，细软如丝带。芬里尔疑心有诈，提出须有人把手放进它口中为质；提尔伸出右手，遂被咬断。"
+    refs: [gylfaginning]
+  - text: "芬里尔自此被缚于巨石，诸神又以剑撑开其口，直至诸神黄昏。"
+    refs: [gylfaginning]
+variants:
+  - claim: "六样材料之说仅见于《欺骗古鲁菲》，属 Snorri 的文学铺陈；诗体埃达未记此绳的制法。"
+    refs: [gylfaginning]
+relations:
+  - { target: fenrir, kind: 宿命, detail: 用以束缚巨狼, refs: [gylfaginning] }
+  - { target: odin, kind: 从属, detail: 诸神所用, refs: [gylfaginning] }
+legacy:
+  - 后世奇幻作品常以「格莱普尼尔」代指不可挣脱的束缚。

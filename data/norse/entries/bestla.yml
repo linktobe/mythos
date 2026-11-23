@@ -1,0 +1,31 @@
+id: bestla
+pantheon: norse
+entity_type: 巨人
+name: 贝斯特拉
+name_original: "Bestla"
+aliases: [贝斯特拉巨人]
+summary: 女巨人，博尔之妻，奥丁三兄弟之母；阿萨主神由此带上一半巨人血统。
+role:
+  title: "神族的巨人血统"
+  brief: "她是奥丁的母亲。最高神有一半巨人血统——这条血脉解释了诸神为何与巨人既世代为敌，又世代通婚。"
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: jotnar }
+  realm:
+    - { id: jotunheim }
+narrative:
+  - text: "她是女巨人，父名 Bölþorn。嫁与博尔，生下奥丁、维利与维三子。"
+    refs: [gylfaginning]
+  - text: "原典未载她的其他事迹；她的意义几乎全在这条血脉上——诸神之主的外祖父是巨人。"
+    refs: [gylfaginning]
+variants:
+  - claim: "她的父名 Bölþorn 在部分抄本中写作 Bölþorn 或 Bölþor，拼写不一；其族属则各本一致为巨人。"
+    refs: [gylfaginning]
+relations:
+  - { target: borr, kind: 婚姻, detail: 夫妻, refs: [gylfaginning] }
+  - { target: odin, kind: 亲缘, detail: 母子, refs: [gylfaginning] }
+  - { target: vili, kind: 亲缘, detail: 母子, refs: [gylfaginning] }
+  - { target: ve, kind: 亲缘, detail: 母子, refs: [gylfaginning] }
+legacy:
+  - 现代作品常强调奥丁的巨人血统，源头即在这一代。

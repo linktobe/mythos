@@ -1,0 +1,38 @@
+id: frigg
+pantheon: norse
+entity_type: 神祇
+name: 弗丽嘉
+name_original: "Frigg"
+aliases: [弗丽格, 弗丽加]
+summary: 奥丁之妻、巴德尔之母，掌婚姻与生育。
+role:
+  title: "神后与家族庇护者"
+  brief: "掌婚姻与生育。她为巴德尔求遍万物起誓，唯独漏掉槲寄生——这一疏漏正显出命运不可违逆。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard, note: 芬撒里尔宫 }
+narrative:
+  - text: 奥丁之妻，巴德尔之母。为使儿子免于一切伤害，她令万物起誓不伤巴德尔，唯独漏过被认为无害的槲寄生。
+    refs: [gylfaginning]
+  - text: 巴德尔死后，她遣赫尔莫德骑马往冥界向海拉求还其子。
+    refs: [gylfaginning]
+variants:
+  - claim: 学界有 "弗丽嘉与芙蕾雅本为同一女神分化" 的假说（如 Ellis Davidson 等），本站并置两说，不合并词条。
+    refs: [gylfaginning]
+relations:
+  - { target: odin, kind: 婚姻, detail: 夫妻, refs: [gylfaginning] }
+  - { target: baldr, kind: 亲缘, detail: 母子, refs: [gylfaginning] }
+  - { target: freyja, kind: 同源, detail: 学界假说，存疑, refs: [gylfaginning] }
+legacy:
+  - 英语 Friday 有源自其名一说，学界尚有争议。
+adaptations:
+  - work: "漫威电影宇宙《雷神》《雷神2：黑暗世界》（2011–2013）"
+    kind: 电影
+    portrayal: "奥丁之妻，托尔与洛基的养母，温和而有权势的王后；在《黑暗世界》中被黑暗精灵所杀。"
+    divergences:
+      - "原典弗丽嘉最重要的情节是为巴德尔求万物起誓、独漏槲寄生；MCU 没有巴德尔，这一核心职能被整体删除。"
+      - "原典中弗丽嘉与芙蕾雅是否同源存在争议；MCU 只保留弗丽嘉，等于默认合并，且不设芙蕾雅一角。"
+      - "原典中奥丁曾长期离家、另有情事；MCU 把这段婚姻简化为模范夫妻。"

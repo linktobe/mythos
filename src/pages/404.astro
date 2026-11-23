@@ -1,25 +1,35 @@
 ---
 import Base from '../layouts/Base.astro';
-import data from '../generated/entities.json';
+import { livePantheons, getSystem, entryHref } from '../lib/content';
 
-const samples = data.entries.slice(0, 6);
+const first = livePantheons[0];
+const system = first ? getSystem(first.id) : null;
+const samples = (system?.entries ?? []).slice(0, 6);
 ---
 
 <Base title="页面不存在 · 神话图鉴">
   <div class="wrap" style="padding-top: 96px; padding-bottom: 96px;">
     <h1>此处无词条</h1>
-    <p class="summary">这一页不在谱系里。可能是链接旧了，或者这位存在还没被收录。</p>
+    <p class="lede">这一页不在谱系里。可能是链接旧了，或者这位存在还没被收录。</p>
 
     <h2>从这里继续</h2>
     <div class="rel-list">
-      <a class="rel" href="/">全部词条</a>
-      <a class="rel" href="/tu/">关系图</a>
+      <a class="rel" href="/">全部体系</a>
+      {livePantheons.map((p) => <a class="rel" href={`/${p.id}/`}>{p.zh}</a>)}
       <a class="rel" href="/about/">编例</a>
     </div>
 
-    <h2>随便看看</h2>
-    <div class="rel-list">
-      {samples.map((e) => <a class="rel" href={`/shen/${e.id}`}>{e.name}</a>)}
-    </div>
+    {
+      samples.length > 0 && (
+        <>
+          <h2>随便看看</h2>
+          <div class="rel-list">
+            {samples.map((e: any) => (
+              <a class="rel" href={entryHref(first.id, e.id)}>{e.name}</a>
+            ))}
+          </div>
+        </>
+      )
+    }
   </div>
 </Base>

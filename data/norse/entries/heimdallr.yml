@@ -1,0 +1,48 @@
+id: heimdallr
+pantheon: norse
+name: 海姆达尔
+name_original: "Heimdallr"
+aliases: [守望之神]
+entity_type: 神祇
+summary: 守护彩虹桥的守望者，诸神黄昏时与洛基同归于尽。
+role:
+  title: "彩虹桥的守望者"
+  brief: "他守在九界唯一的通道旁，号角一响，便是末日已至。整座阿斯加德的预警，都压在他一人的耳目上。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard, note: 希敏堡 }
+narrative:
+  - text: "他居于彩虹桥侧的希敏堡，司守望。传说他所需睡眠少于飞鸟，昼夜皆能视物，可望见百里之外；更能听见草生长、羊毛落地的声响。"
+    refs: [gylfaginning, grimnismal]
+  - text: "他持号角加拉尔。末日将至时，他吹响此角，召集诸神。"
+    refs: [voluspa, gylfaginning]
+  - text: "《女巫的预言》记他与洛基在诸神黄昏中互斗，同归于尽。"
+    refs: [voluspa]
+variants:
+  - claim: "他由九位母亲所生，此说仅见于《欺骗古鲁菲》；诗体埃达未言其出身。"
+    refs: [gylfaginning]
+relations:
+  - { target: loki, kind: 宿命, detail: 诸神黄昏互斗而同归于尽, refs: [voluspa] }
+  - { target: odin, kind: 从属, detail: 侍奉阿萨神族, refs: [gylfaginning] }
+legacy:
+  - 漫威电影宇宙以其为彩虹桥守护者，最终死于灭霸之手。
+adaptations:
+  - work: "漫威电影宇宙《雷神》系列与《复仇者联盟3：无限战争》（2011–2018）"
+    kind: 电影
+    portrayal: "阿斯加德的守门人，凭一把剑开启彩虹桥，能看见九界众生；最终被灭霸所杀。"
+    divergences:
+      - "原典中海姆达尔由九位母亲所生；MCU 未提其出身。"
+      - "原典中他与洛基在诸神黄昏互斗、同归于尽；MCU 中他死于灭霸之手，与洛基无终局对决。"
+      - "原典中他吹响号角加拉尔示警；MCU 无号角，改用剑开启彩虹桥。"
+weapons:
+  - name: 加拉尔
+    name_original: "Gjallarhorn"
+    note: "号角，声闻九界。末日来临时海姆达尔吹响它，召集诸神。"
+    refs: [voluspa, gylfaginning]
+  - name: 霍夫德
+    name_original: "Hofund"
+    note: "其佩剑，仅见于《诗语》的器物名录，无事迹可考。"
+    refs: [skaldskaparmal]

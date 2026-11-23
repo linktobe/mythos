@@ -1,0 +1,34 @@
+id: draupnir
+pantheon: norse
+entity_type: 器物
+name: 德罗普尼尔
+name_original: "Draupnir"
+aliases: [滴落之环]
+summary: 奥丁的臂环，每九夜滴下八枚同重的戒指。
+role:
+  title: "无尽的财源"
+  brief: "它不是武器，是钱。每九夜自环上滴落八枚等重的戒指，诸神以此支应一切用度。巴德尔火葬时，奥丁把它放上了柴堆。"
+identity:
+  lineage:
+    - { id: dwarf, note: 矮人所铸 }
+  camp:
+    - { id: aesir, note: 奥丁所有 }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "此环为矮人辛德里与布洛克所铸，与雷锤、金鬃野猪同出一炉。"
+    refs: [skaldskaparmal]
+  - text: "其性特异：每经九夜，环上滴落八枚戒指，与自身等重。奥丁以此为无尽的财源。"
+    refs: [skaldskaparmal]
+  - text: "巴德尔火葬时，奥丁将此环置于柴堆之上；其后赫尔莫德自冥界归来，又将此环带回。"
+    refs: [gylfaginning]
+variants:
+  - claim: "「每九夜生八环」之说见于《诗语》；《欺骗古鲁菲》只记它随巴德尔入火、又被带回，未言其生环之能。"
+    refs: [skaldskaparmal, gylfaginning]
+relations:
+  - { target: odin, kind: 从属, detail: 为其臂环, refs: [skaldskaparmal] }
+  - { target: sindri, kind: 从属, detail: 由其铸造, refs: [skaldskaparmal] }
+  - { target: brokkr, kind: 从属, detail: 由其鼓风助铸, refs: [skaldskaparmal] }
+  - { target: baldr, kind: 从属, detail: 随其火葬, refs: [gylfaginning] }
+legacy:
+  - 后世常以「德罗普尼尔」代指自我增殖的财富，与雷锤并列为北欧最知名的两件宝物。

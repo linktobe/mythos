@@ -1,0 +1,32 @@
+id: vanaheim
+pantheon: norse
+entity_type: 地区
+name: 华纳海姆
+name_original: "Vanaheimr"
+aliases: [华纳神族之国]
+summary: 华纳神族所居之地，原典只留下名字与族属，几乎没有风物记载。
+role:
+  title: "记载最少的一界"
+  brief: "九界里最空的一页：我们知道它属于华纳神族，却几乎不知道它长什么样。这条条目保留这份空白，不做补写。"
+identity:
+  lineage:
+    - { id: vanir, note: 华纳神族所居 }
+  camp:
+    - { id: vanir }
+  realm:
+    - { id: vanaheim }
+narrative:
+  - text: "《欺骗古鲁菲》提到华纳神族的居所名为华纳海姆，与阿萨神族的阿斯加德并列。"
+    refs: [gylfaginning]
+  - text: "居于此地的是华纳神族，掌丰饶、海洋与情欲的那一支。"
+    refs: [gylfaginning]
+  - text: "此地风貌，原典未作描写：没有山、没有河、没有建筑，只有一个名字和它的居民。"
+    refs: [gylfaginning]
+variants:
+  - claim: "华纳海姆在现存文本中仅数见，且多为地名罗列；其地理与景观，原典未予交代。"
+    refs: [gylfaginning]
+relations:
+  - { target: njord, kind: 从属, detail: 出于此界, refs: [gylfaginning] }
+  - { target: freyja, kind: 从属, detail: 出于此界, refs: [gylfaginning] }
+legacy:
+  - 现代作品常替它补出森林与海岸，属合理想象，并非原典所有。

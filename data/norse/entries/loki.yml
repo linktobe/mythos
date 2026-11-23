@@ -1,0 +1,46 @@
+id: loki
+pantheon: norse
+entity_type: 神祇
+name: 洛基
+name_original: "Loki"
+aliases: [洛奇, 诡计之神]
+summary: 巨人之子却列于阿萨，善变形，巴德尔之死的直接策划者。
+role:
+  title: "秩序的搅局者"
+  brief: "替诸神解决难题，也把难题变成灾难。他既是阿萨神族的功臣，又是诸神黄昏的引信。"
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: aesir, from: 与奥丁结为血兄弟, until: 巴德尔之死 }
+    - { id: hostile, from: 巴德尔之死 }
+  realm:
+    - { id: asgard, note: 常居 }
+    - { id: jotunheim, note: 出身 }
+narrative:
+  - text: 巨人法布提与劳菲之子，却与奥丁结为血兄弟，位列阿萨神族。善变形，曾化为鲑鱼、苍蝇、老妇，亦曾化为母马。
+    refs: [gylfaginning, lokasenna]
+  - text: 他曾化母马与神马斯瓦迪尔法利交配，生下八足马斯雷普尼尔，献与奥丁。
+    refs: [gylfaginning]
+  - text: 他与女巨人安格尔波达生下芬里尔、耶梦加得与海拉；又诱使盲神霍德尔以槲寄生投掷巴德尔，致其身亡。事败后被缚于三石之上，毒蛇滴毒，妻子西格恩持碗承接。
+    refs: [gylfaginning]
+variants:
+  - claim: 《洛基的争辩》中他自陈 "是我使巴德尔不能再归来"，语气与《欺骗古鲁菲》的第三人称叙述明显不同。
+    refs: [lokasenna]
+relations:
+  - { target: odin, kind: 血盟, detail: 结为血兄弟, refs: [lokasenna] }
+  - { target: fenrir, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: jormungandr, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: hel, kind: 亲缘, detail: 父女, refs: [gylfaginning] }
+  - { target: baldr, kind: 敌对, detail: 设计致死, refs: [gylfaginning] }
+  - { target: thor, kind: 敌对, detail: 屡以诡计相欺, refs: [gylfaginning] }
+legacy:
+  - 漫威与《战神》均大幅改写其动机；《战神》（2018）设定其为阿特柔斯之父，纯属原创。
+adaptations:
+  - work: "漫威电影宇宙《雷神》系列、《复仇者联盟》与《洛基》剧集（2011–2023）"
+    kind: 电影
+    portrayal: "奥丁的养子、托尔的弟弟，诡计与幻术之神；从《复仇者联盟》的反派转为反英雄，最终死于灭霸之手。"
+    divergences:
+      - "原典洛基与奥丁是结为血兄弟的同辈；MCU 的「养子」设定属原创。"
+      - "原典洛基与女巨人安格尔波达生下芬里尔、耶梦加得与海拉；MCU 完全没有这条子女线。"
+      - "原典洛基的结局是被诸神缚于石上、毒蛇滴毒；MCU 改为被灭霸掐死，另开时间线分支。"
+      - "原典洛基是诸神黄昏的主动引爆者（设计杀死巴德尔）；MCU 的末日来自海拉与苏尔特尔，与他无关。"

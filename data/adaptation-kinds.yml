@@ -1,0 +1,30 @@
+# 改编体裁词表
+# 各体系的改编形式不同（电影/能剧/歌剧），但体裁本身是通用概念，故全局登记。
+# 词条 adaptations[].kind 只能取这里的 zh。
+
+- id: film
+  zh: 电影
+- id: series
+  zh: 剧集
+- id: game
+  zh: 游戏
+- id: novel
+  zh: 小说
+- id: anime
+  zh: 动画
+- id: manga
+  zh: 漫画
+- id: anime-film
+  zh: 动画电影
+- id: noh
+  zh: 能剧
+- id: kabuki
+  zh: 歌舞伎
+- id: theatre
+  zh: 戏剧
+- id: opera
+  zh: 歌剧
+- id: painting
+  zh: 绘画
+- id: ukiyoe
+  zh: 浮世绘

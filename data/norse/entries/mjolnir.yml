@@ -1,0 +1,35 @@
+id: mjolnir
+pantheon: norse
+entity_type: 器物
+name: 雷神之锤
+name_original: "Mjölnir"
+aliases: [妙尔尼尔, 姆乔尔尼尔]
+summary: 矮人所造的雷锤，托尔所持，击中必中，可飞回手中。
+role:
+  title: "托尔的雷霆"
+  brief: "这件兵器的用处不在杀伤，而在镇压：诸神靠它把巨人挡在边界之外。柄短一截，是洛基捣乱的结果。"
+identity:
+  lineage:
+    - { id: dwarf, note: 矮人所造 }
+  camp:
+    - { id: aesir, note: 托尔所持 }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "此锤由矮人布洛克与辛德里兄弟所造。洛基与人打赌，怕他们赢，化作牛虻捣乱，炉火一停，锤柄便短了一截。"
+    refs: [skaldskaparmal]
+  - text: "锤成之后，可击必中，掷出必回，又可缩小藏于衣内。托尔持之，用以压制巨人。"
+    refs: [skaldskaparmal]
+  - text: "诸神黄昏时，托尔以此锤击杀尘世巨蟒耶梦加得；巨蟒垂死之际喷出毒液，托尔中之后退九步而亡。"
+    refs: [voluspa]
+variants:
+  - claim: "锤柄短一截的缘由见于《诗语》；《女巫的预言》只记末日中托尔杀蛇而亡，不及此锤来历。"
+    refs: [skaldskaparmal, voluspa]
+relations:
+  - { target: sindri, kind: 从属, detail: 由其铸造, refs: [skaldskaparmal] }
+  - { target: brokkr, kind: 从属, detail: 由其鼓风助铸, refs: [skaldskaparmal] }
+  - { target: thor, kind: 从属, detail: 为其兵器, refs: [skaldskaparmal] }
+  - { target: jormungandr, kind: 敌对, detail: 末日以此击杀巨蟒, refs: [voluspa] }
+  - { target: loki, kind: 敌对, detail: 曾设法阻其铸成, refs: [skaldskaparmal] }
+legacy:
+  - 英语 Thursday 源自托尔，其雷锤形象则被现代漫画放大为「呼唤雷电」的符号，原典无此用法。

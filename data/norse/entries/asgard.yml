@@ -1,0 +1,32 @@
+id: asgard
+pantheon: norse
+entity_type: 地区
+name: 阿斯加德
+name_original: "Ásgarðr"
+aliases: [诸神之境]
+summary: 阿萨神族的居所，建于伊达沃勒平原之上，与人间以彩虹桥相连。
+role:
+  title: "诸神的城"
+  brief: "九界之中唯一由诸神亲手经营出来的一界：金宫议事，英灵殿屯兵，城墙围起的是一片永远在备战的平原。"
+identity:
+  lineage:
+    - { id: aesir, note: 阿萨神族所居 }
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "诸神杀死始祖巨人尤弥尔、以他的身躯造出世界之后，在伊达沃勒平原上建起自己的居所。"
+    refs: [gylfaginning]
+  - text: "居于此地的是阿萨神族。奥丁的金宫与英灵殿皆在其中；阵亡的战士被迎入英灵殿，日夜操练，以备末日。"
+    refs: [gylfaginning, grimnismal]
+  - text: "此地与人间以彩虹桥相通，桥头由海姆达尔守望。原典写它高悬于天，不在人间的地面之上。"
+    refs: [gylfaginning]
+variants:
+  - claim: "阿斯加德究竟是天上一界、还是人间以东的一块地，原典用词并不统一；Snorri 把它写成天上的城。"
+    refs: [gylfaginning]
+relations:
+  - { target: heimdallr, kind: 从属, detail: 守桥者驻于桥头, refs: [gylfaginning] }
+  - { target: bifrost, kind: 从属, detail: 以此为与外界的通道, refs: [gylfaginning] }
+legacy:
+  - 现代作品多把阿斯加德画成金顶浮空城，原典只提到平原、宫殿与城墙。

@@ -1,0 +1,134 @@
+---
+/**
+ * 词条卡片墙 + 前端筛选。
+ *
+ * 数据在构建期全量渲染进 HTML（几百条以内都扛得住），
+ * 筛选只是在浏览器里按 data-f 属性显隐，不请求接口、不需要索引。
+ */
+interface Props {
+  system: any;
+  pantheonId: string;
+  items: any[];
+  /** 是否显示「界」这一行筛选 */
+  showType?: boolean;
+}
+
+const { system, pantheonId, items, showType = true } = Astro.props;
+
+const axes = [
+  { key: 'lineage', label: '族' },
+  { key: 'camp', label: '阵营' },
+  { key: 'realm', label: '界' },
+].filter((a) => (system.pantheon.axes ?? []).includes(a.key));
+
+const optionsFor = (axis: string) => {
+  const used = new Set<string>();
+  for (const e of items) for (const x of e.identity?.[axis] ?? []) used.add(x.id);
+  return (system.vocab[axis] ?? []).filter((v: any) => used.has(v.id) && !v.abstract);
+};
+
+const types = [...new Set(items.map((e: any) => e.entity_type))];
+const tag = (axis: string, id: string) =>
+  system.vocab[axis]?.find((v: any) => v.id === id)?.zh ?? id;
+
+const filters = [
+  ...axes.map((a) => ({ axis: a.key, label: a.label, options: optionsFor(a.key) })),
+  ...(showType && types.length > 1 ? [{ axis: 'type', label: '类', options: types.map((t) => ({ id: t, zh: t })) }] : []),
+].filter((f) => f.options.length > 1);
+
+const facets = (e: any) => {
+  const out: string[] = [];
+  for (const a of axes) for (const x of e.identity?.[a.key] ?? []) out.push(`${a.key}:${x.id}`);
+  out.push(`type:${e.entity_type}`);
+  return out.join(' ');
+};
+---
+
+{
+  filters.length > 0 && (
+    <div class="filters" data-filters>
+      {filters.map((f) => (
+        <div class="filter-row" data-axis={f.axis}>
+          <span class="axis-label">{f.label}</span>
+          <div class="chips">
+            <button class="chip" type="button" data-value="" aria-pressed="true">
+              全部
+            </button>
+            {f.options.map((o: any) => (
+              <button class="chip" type="button" data-value={o.id} aria-pressed="false">
+                {o.zh}
+              </button>
+            ))}
+          </div>
+        </div>
+      ))}
+      <p class="filter-count" data-count aria-live="polite">
+        {items.length} 条
+      </p>
+    </div>
+  )
+}
+
+<section class="cards" data-grid>
+  {
+    items.map((e: any, i: number) => (
+      <a class="card reveal" style={`--d:${i * 45}ms`} href={`/${pantheonId}/entry/${e.id}/`} data-f={facets(e)}>
+        <div class="name">
+          {e.name}
+          <span class="alias">{e.name_original}</span>
+        </div>
+        <div class="desc">{e.summary}</div>
+        <div class="tags">
+          <span class="tag-type">{e.entity_type}</span>
+          <span class="tag-role">{e.role.title}</span>
+          {e.identity.lineage?.slice(0, 1).map((x: any) => {
+            const t = tag('lineage', x.id);
+            return t === e.entity_type ? null : <span>{t}</span>;
+          })}
+          {e.identity.realm?.slice(0, 1).map((x: any) => <span>{tag('realm', x.id)}</span>)}
+        </div>
+      </a>
+    ))
+  }
+</section>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-filters]');
+  const grid = document.querySelector<HTMLElement>('[data-grid]');
+  if (root && grid) {
+    const cards = Array.from(grid.querySelectorAll<HTMLElement>('.card'));
+    const count = root.querySelector('[data-count]');
+    const rows = Array.from(root.querySelectorAll<HTMLElement>('.filter-row'));
+
+    const apply = () => {
+      const active = rows
+        .map((row) => {
+          const btn = row.querySelector<HTMLButtonElement>('button[aria-pressed="true"]');
+          return { axis: row.dataset.axis!, value: btn?.dataset.value ?? '' };
+        })
+        .filter((a) => a.value);
+
+      let shown = 0;
+      for (const card of cards) {
+        const facets = (card.dataset.f ?? '').split(' ');
+        const ok = active.every((a) => facets.includes(`${a.axis}:${a.value}`));
+        card.hidden = !ok;
+        if (ok) {
+          shown += 1;
+          card.classList.add('in'); // 筛选后才出现的卡不能停在透明态
+        }
+      }
+      if (count) count.textContent = `${shown} 条`;
+    };
+
+    for (const row of rows) {
+      row.addEventListener('click', (event) => {
+        const btn = (event.target as HTMLElement).closest<HTMLButtonElement>('button[data-value]');
+        if (!btn) return;
+        for (const other of row.querySelectorAll('button')) other.setAttribute('aria-pressed', 'false');
+        btn.setAttribute('aria-pressed', 'true');
+        apply();
+      });
+    }
+  }
+</script>

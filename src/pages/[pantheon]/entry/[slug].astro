@@ -1,0 +1,254 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { livePantheons, getSystem, entryHref, parentSection } from '../../../lib/content';
+
+export function getStaticPaths() {
+  const paths = [];
+  for (const p of livePantheons) {
+    const system = getSystem(p.id);
+    for (const entry of system?.entries ?? []) {
+      paths.push({ params: { pantheon: p.id, slug: entry.id }, props: { p, system, entry } });
+    }
+  }
+  return paths;
+}
+
+const { p, system, entry } = Astro.props;
+
+const vocabIndex: Record<string, Map<string, any>> = {
+  lineage: new Map(system.vocab.lineage?.map((x: any) => [x.id, x]) ?? []),
+  camp: new Map(system.vocab.camp?.map((x: any) => [x.id, x]) ?? []),
+  realm: new Map(system.vocab.realm?.map((x: any) => [x.id, x]) ?? []),
+};
+const nameById: Map<string, any> = new Map(system.entries.map((e: any) => [e.id, e.name]));
+const srcById: Map<string, any> = new Map(system.sources.map((s: any) => [s.id, s]));
+const placeIds = new Set(system.entries.filter((e: any) => e.entity_type === '地区').map((e: any) => e.id));
+
+const axisLabels: Record<string, string> = { lineage: '族', camp: '阵营', realm: '界' };
+const axes = (system.pantheon.axes as string[]).map((key) => ({ key, label: axisLabels[key] ?? key }));
+
+// 收集本页用到的来源，按首次出现顺序编号
+const usedRefs: string[] = [];
+const note = (refs: string[]) => {
+  for (const r of refs) if (!usedRefs.includes(r)) usedRefs.push(r);
+};
+entry.narrative.forEach((n: any) => note(n.refs));
+entry.variants.forEach((n: any) => note(n.refs));
+entry.profiles.forEach((n: any) => note(n.refs));
+entry.weapons.forEach((n: any) => note(n.refs));
+entry.relations.forEach((n: any) => note(n.refs));
+entry.related.forEach((n: any) => note(n.refs));
+const refNo = new Map(usedRefs.map((id, i) => [id, i + 1]));
+
+// 关系按类型分组
+const groupMap = new Map<string, any[]>();
+for (const r of entry.relations) {
+  if (!groupMap.has(r.kind)) groupMap.set(r.kind, []);
+  groupMap.get(r.kind)!.push({ target: r.target, kind: r.kind, detail: r.detail, reverse: false });
+}
+for (const r of entry.related) {
+  if (!groupMap.has(r.kind)) groupMap.set(r.kind, []);
+  groupMap.get(r.kind)!.push({ target: r.target, kind: r.kind, detail: r.detail, reverse: true });
+}
+
+const hasIdentity = axes.some((a) => entry.identity[a.key]?.length > 0);
+const parent = parentSection(system, entry);
+
+// 关系分组固定顺序，避免"血盟"排在"亲缘"前面这种随机感
+const KIND_ORDER = system.pantheon.relation_kinds ?? [];
+const orderedGroups = [...groupMap.entries()].sort(
+  (a, b) => (KIND_ORDER.indexOf(a[0]) + 1 || 99) - (KIND_ORDER.indexOf(b[0]) + 1 || 99)
+);
+
+// 一段叙事若只挂 T1 来源，说明该情节在 T0 里没有，必须显性提示读者
+const isT1Only = (refs: string[]) => refs.every((id) => srcById.get(id)?.tier === 'T1');
+const allT1 = entry.narrative.every((n: any) => isT1Only(n.refs));
+
+const crumbs = [
+  { label: '神话图鉴', href: '/' },
+  { label: p.zh, href: `/${p.id}/` },
+  ...(parent ? [{ label: parent.label, href: parent.href }] : []),
+  { label: entry.name },
+];
+---
+
+<Base title={`${entry.name} · ${p.zh}`} description={entry.summary} pantheon={p} crumbs={crumbs}>
+  <div class="wrap">
+    <a class="back" href={parent?.href ?? `/${p.id}/`}>← 返回{parent?.label ?? '体系首页'}</a>
+
+    <header class="entry-head reveal">
+      <h1>{entry.name}<span class="etype">{entry.entity_type}</span></h1>
+      <p class="aliases"><span class="original">{entry.name_original}</span>{entry.aliases.length > 0 && <>　又称：{entry.aliases.join(' · ')}</>}</p>
+      <p class="summary">{entry.summary}</p>
+
+      <div class="role reveal">
+        <span class="role-label">角色</span>
+        <div class="role-body">
+          <strong>{entry.role.title}</strong>
+          <p>{entry.role.brief}</p>
+        </div>
+      </div>
+
+      {hasIdentity && (
+        <div class="identity">
+          {axes.map((axis) => (
+            <div class="axis">
+              <span class="axis-label">{axis.label}</span>
+              {entry.identity[axis.key].map((item: any) => {
+                const v = vocabIndex[axis.key].get(item.id);
+                const label = v?.zh ?? item.id;
+                const linked = axis.key === 'realm' && placeIds.has(item.id) && item.id !== entry.id;
+                return (
+                  <span class="chip">
+                    {linked ? <a href={entryHref(p.id, item.id)}>{label}</a> : label}
+                    {(item.note || item.from || item.until) && (
+                      <em>{[item.from, item.until ? `至${item.until}` : '', item.note].filter(Boolean).join(' · ')}</em>
+                    )}
+                  </span>
+                );
+              })}
+            </div>
+          ))}
+        </div>
+      )}
+    </header>
+
+    <h2>原典叙事</h2>
+    {allT1 && <p class="tier-note-block">本节材料均出自 T1 汇编，T0 原典未见相应记载。</p>}
+    <div class="narrative">
+      {entry.narrative.map((n: any) => (
+        <p>
+          {n.text}
+          {n.refs.map((id: string) => (
+            <sup class="ref"><a href={`#src-${id}`}>{refNo.get(id)}</a></sup>
+          ))}
+          {!allT1 && isT1Only(n.refs) && <span class="tier-note">此段仅见 T1 汇编</span>}
+        </p>
+      ))}
+    </div>
+
+    {entry.variants.length > 0 && (
+      <>
+        <h2>异文</h2>
+        {entry.variants.map((v: any) => (
+          <div class="variant reveal">
+            <span class="tag">版本差异</span>
+            <div>
+              {v.claim}
+              {v.refs.map((id: string) => (
+                <sup class="ref"><a href={`#src-${id}`}>{refNo.get(id)}</a></sup>
+              ))}
+            </div>
+          </div>
+        ))}
+      </>
+    )}
+
+    {entry.profiles.length > 0 && (
+      <>
+        <h2>代表个体</h2>
+        {entry.profiles.map((pr: any) => (
+          <div class="profile">
+            <h3>{pr.name}<span class="p-original">{pr.name_original}</span></h3>
+            <p>
+              {pr.story}
+              {pr.refs.map((id: string) => (
+                <sup class="ref"><a href={`#src-${id}`}>{refNo.get(id)}</a></sup>
+              ))}
+            </p>
+          </div>
+        ))}
+      </>
+    )}
+
+    {entry.weapons.length > 0 && (
+      <>
+        <h2>持用之物</h2>
+        <ul class="weapons">
+          {entry.weapons.map((w: any) => (
+            <li>
+              <div class="w-head">
+                <span class="w-name">{w.name}</span>
+                <span class="w-original">{w.name_original}</span>
+              </div>
+              <p>
+                {w.note}
+                {w.refs.map((id: string) => (
+                  <sup class="ref"><a href={`#src-${id}`}>{refNo.get(id)}</a></sup>
+                ))}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    {groupMap.size > 0 && (
+      <>
+        <h2>关系</h2>
+        {orderedGroups.map(([kind, items]) => (
+          <div class="rel-group">
+            <h3>{kind}</h3>
+            <div class="rel-list">
+              {items.map((r) => (
+                <a class="rel" href={entryHref(p.id, r.target)}>
+                  {nameById.get(r.target) ?? r.target}
+                  {r.detail && <span class="dir">{r.detail}</span>}
+                  <span class="kind">{r.reverse ? '←' : '→'}{r.kind}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
+      </>
+    )}
+
+    {entry.legacy.length > 0 && (
+      <>
+        <h2>后世演绎</h2>
+        <ul class="legacy">
+          {entry.legacy.map((l: string) => <li>{l}</li>)}
+        </ul>
+      </>
+    )}
+
+    {entry.adaptations.length > 0 && (
+      <>
+        <h2>改编形象对照</h2>
+        {entry.adaptations.map((a: any) => (
+          <div class="adapt reveal">
+            <div class="adapt-head">
+              <span class="adapt-work">{a.work}</span>
+              <span class="adapt-kind">{a.kind}</span>
+            </div>
+            <p class="adapt-portray">{a.portrayal}</p>
+            <div class="adapt-diff">
+              <span class="adapt-label">与原典的出入</span>
+              <ul>
+                {a.divergences.map((d: string) => <li>{d}</li>)}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </>
+    )}
+
+    <h2>引用来源</h2>
+    <ol class="sources">
+      {usedRefs.map((id) => {
+        const s = srcById.get(id);
+        if (!s) return null;
+        return (
+          <li id={`src-${id}`}>
+            <span class={`tier ${s.tier === 'T0' ? '' : 't1'}`}>{s.tier}</span>
+            <strong>{s.title}</strong>（{s.original}）
+            <span class="meta">
+              {s.work} · {s.date}{s.author ? ` · ${s.author}` : ''}　
+              <a href={s.url} rel="noopener noreferrer" target="_blank">核对原文 ↗</a>
+            </span>
+          </li>
+        );
+      })}
+    </ol>
+  </div>
+</Base>

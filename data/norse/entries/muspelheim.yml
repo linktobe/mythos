@@ -1,0 +1,31 @@
+id: muspelheim
+pantheon: norse
+entity_type: 地区
+name: 穆斯贝尔海姆
+name_original: "Múspellsheimr"
+aliases: [火之国]
+summary: 世界未成时便已存在的火之界，苏尔特尔居此，诸神黄昏时从此而来。
+role:
+  title: "世界南端的热"
+  brief: "它与冰之界一同先于世界存在，在鸿沟两侧相望。落进鸿沟的冰与火化出了始祖巨人，也化出了末日。"
+identity:
+  lineage:
+    - { id: jotunn, note: 火巨人所居 }
+  camp:
+    - { id: hostile }
+  realm:
+    - { id: muspelheim }
+narrative:
+  - text: "世界尚未成形时，南方已有火之国，北方则是雾与冰之国，两者之间隔着一条空荡的鸿沟。"
+    refs: [gylfaginning]
+  - text: "居于此地的是火巨人，以苏尔特尔为首。"
+    refs: [gylfaginning]
+  - text: "此地尽是火与熔岩。末日来临时，苏尔特尔自南方而来，携火焚尽九界。"
+    refs: [voluspa, gylfaginning]
+variants:
+  - claim: "「火之国先于世界存在」出自《欺骗古鲁菲》的开篇叙述；诗体埃达提到苏尔特尔自南方来，未言此界之始。"
+    refs: [gylfaginning, voluspa]
+relations:
+  - { target: surtr, kind: 从属, detail: 此界之主, refs: [gylfaginning] }
+legacy:
+  - 现代作品常把此地设为火属性的关卡地图，与原典的「世界南端」定位相去不远。

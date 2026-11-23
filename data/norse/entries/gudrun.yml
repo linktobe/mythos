@@ -21,7 +21,22 @@ narrative:
     refs: [guthrunarkvitha]
   - text: "后来她被嫁与匈人之王阿特利；阿特利为夺宝藏杀死她的兄弟，她便亲手了结了阿特利。"
     refs: [atlakvitha]
+  - text: "她与齐格鲁德生有一女斯万希尔德；改嫁阿特利后又生哈姆迪尔、瑟利与埃尔普三子。"
+    refs: [guthrunarhvot, hamthesmol]
+  - text: "斯万希尔德被哥特王约尔蒙雷克处死，她催两个儿子前去行刺，三子皆死于此事，唯她独活。这条家史到她才收尾。"
+    refs: [guthrunarhvot, hamthesmol]
 relations:
   - { target: sigurd, kind: 婚姻, detail: 夫妻, refs: [sigurtharkvitha] }
   - { target: brynhildr, kind: 敌对, detail: 情敌，亦为夫仇, refs: [sigurtharkvitha] }
   - { target: atli, kind: 婚姻, detail: 改嫁, refs: [atlakvitha] }
+  - { target: svanhildr, kind: 亲缘, detail: 母女, refs: [guthrunarhvot] }
+  - { target: jormunrekkr, kind: 敌对, detail: 其女为其所杀，催子复仇, refs: [hamthesmol] }
+
+adaptations:
+  - work: "瓦格纳《尼伯龙根的指环》（1876）"
+    kind: 歌剧
+    portrayal: "古特鲁妮，贡特之妹，被迷药摆布而嫁给齐格弗里德，此后一无所知。"
+    divergences:
+      - "瓦格纳把她写成被动的受害者；原典的古德伦经历两次婚姻、两场复仇，是极为主动的人物。"
+      - "歌剧中她的戏份止于齐格弗里德之死；原典她此后还有嫁阿特利、杀阿特利、催子复仇三段。"
+      - "原典的错位由忘川之酒与替身求婚造成，歌剧中改由迷药与变形完成，机制相近但人物知情程度不同。"

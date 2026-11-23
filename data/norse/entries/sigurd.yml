@@ -35,3 +35,12 @@ relations:
   - { target: fafnir, kind: 敌对, detail: 屠龙, refs: [fafnismol] }
   - { target: gram, kind: 从属, detail: 为其佩剑, refs: [reginsmol] }
   - { target: andvaranaut, kind: 从属, detail: 屠龙后所得, refs: [fafnismol] }
+
+adaptations:
+  - work: "瓦格纳《尼伯龙根的指环》（1876）"
+    kind: 歌剧
+    portrayal: "不知恐惧为何物的齐格弗里德，以重铸的诺通剑杀死巨龙，随后被阴谋吞没。"
+    divergences:
+      - "瓦格纳把北欧的齐格鲁德与德语的齐格弗里德合成一人，家世与名字都做了合并。"
+      - "原典断剑由雷金重铸；歌剧中米梅铸不成，须由齐格弗里德自己动手。"
+      - "原典屠龙之后他听懂鸟语、斩雷金；歌剧保留这一层，但把指环的诅咒抬成了全局主线。"

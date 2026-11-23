@@ -1,0 +1,28 @@
+id: oddrun
+pantheon: norse
+entity_type: 英雄
+name: 奥德伦
+name_original: "Oddrún"
+aliases: [奥德露恩]
+summary: 阿特利之妹，与贡纳尔相爱而被兄长拆散；多年后替一个难产的女子接生，才把旧事说出来。
+role:
+  title: "被兄长拆散的人"
+  brief: "整篇诗几乎只做一件事：一个女人替另一个女人接生，然后把无人知晓的往事讲给她听。"
+identity:
+  lineage: [human]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: midgard }
+narrative:
+  - text: "匈人王阿特利之妹，与贡纳尔相爱。阿特利不许这门亲事，将她另许他人。"
+    refs: [oddrunargratr]
+  - text: "她与贡纳尔仍私下往来，后被察觉，贡纳尔因此受到责难。"
+    refs: [oddrunargratr]
+  - text: "多年之后，她在路上遇见难产的博格妮，为她念咒助产，母子俱安。"
+    refs: [oddrunargratr]
+  - text: "产妇问起她的来历，她才把这段从未对人说过的旧情讲出来。"
+    refs: [oddrunargratr]
+relations:
+  - { target: atli, kind: 亲缘, detail: 兄妹，为其所阻, refs: [oddrunargratr] }
+  - { target: gudrun, kind: 亲缘, detail: 姑嫂, refs: [oddrunargratr] }

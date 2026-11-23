@@ -1,0 +1,26 @@
+id: jormunrekkr
+pantheon: norse
+entity_type: 英雄
+name: 约尔蒙雷克
+name_original: "Jörmunrekkr"
+aliases: [艾尔曼纳里克, 哥特王]
+summary: 哥特人之王，听信谗言处死王后斯万希尔德，后被古德伦之子斫去手足而残。
+role:
+  title: "迟暮的暴君"
+  brief: "他是这条线上最后一个「外来的王」。诸神与英雄都已退场，剩下的是人间自己造出来的冤案。"
+identity:
+  lineage: [human]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: midgard }
+narrative:
+  - text: "哥特人之王，娶齐格鲁德之女斯万希尔德为妻。"
+    refs: [hamthesmol]
+  - text: "其子兰德维尔与王后私会，事泄之后抢先进谗，称王后不贞。他先绞死亲子，再命人以马蹄踏死王后。"
+    refs: [hamthesmol]
+  - text: "古德伦的两个儿子长途跋涉前来行刺，斫去他的手足；他呼人掷石，将二人砸死，自己却活了下来。"
+    refs: [hamthesmol]
+relations:
+  - { target: svanhildr, kind: 婚姻, detail: 夫妻，为其所杀, refs: [hamthesmol] }
+  - { target: gudrun, kind: 敌对, detail: 杀其女，招其复仇, refs: [guthrunarhvot] }

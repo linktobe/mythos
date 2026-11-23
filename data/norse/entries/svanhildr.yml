@@ -1,0 +1,32 @@
+id: svanhildr
+pantheon: norse
+entity_type: 英雄
+name: 斯万希尔德
+name_original: "Svanhildr"
+aliases: [天鹅姑娘]
+summary: 齐格鲁德与古德伦之女，嫁与哥特王约尔蒙雷克，被诬不贞，死于马蹄之下。
+role:
+  title: "最后一根柴"
+  brief: "她的死是古德伦最后一次复仇的由头。这位母亲到这一步，已经没有别的可失去了。"
+identity:
+  lineage: [human]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: midgard }
+narrative:
+  - text: "齐格鲁德与古德伦之女。母亲改嫁阿特利后，她被送往哥特王约尔蒙雷克处为妻。"
+    refs: [guthrunarhvot]
+  - text: "约尔蒙雷克之子兰德维尔与她私会，事泄之后，他抢先向父亲进谗，说王后与人通奸。"
+    refs: [hamthesmol]
+  - text: "约尔蒙雷克绞死了自己的儿子，又命人把她捆在马后，任马蹄将她踏死。"
+    refs: [hamthesmol]
+  - text: "古德伦闻讯，催两个儿子前去为她报仇。"
+    refs: [guthrunarhvot]
+variants:
+  - claim: "她与兰德维尔究竟是否有私，各本用词含糊；诗只说她被指为不贞，而进谗者正是兰德维尔本人。"
+    refs: [hamthesmol]
+relations:
+  - { target: gudrun, kind: 亲缘, detail: 母女, refs: [guthrunarhvot] }
+  - { target: sigurd, kind: 亲缘, detail: 父女, refs: [guthrunarhvot] }
+  - { target: jormunrekkr, kind: 婚姻, detail: 夫妻，为其所杀, refs: [hamthesmol] }

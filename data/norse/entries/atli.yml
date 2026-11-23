@@ -24,3 +24,6 @@ narrative:
 relations:
   - { target: gudrun, kind: 婚姻, detail: 夫妻，后被其杀, refs: [atlakvitha] }
   - { target: andvaranaut, kind: 从属, detail: 为夺此金起兵, refs: [atlakvitha] }
+variants:
+  - claim: "同一件事另有一篇《格陵兰的阿特利之歌》：篇幅更长，古德伦的复仇更迂回，阿特利死前更与她有一场对答。两篇的详略与口吻差别很大。"
+    refs: [atlamol, atlakvitha]

@@ -29,3 +29,12 @@ relations:
   - { target: odin, kind: 从属, detail: 被其刺以睡棘, refs: [sigrdrifumal] }
   - { target: sigurd, kind: 宿命, detail: 相许而后相负，终至同死, refs: [sigurtharkvitha] }
   - { target: gudrun, kind: 敌对, detail: 因其嫁齐格鲁德而起杀心, refs: [sigurtharkvitha] }
+
+adaptations:
+  - work: "瓦格纳《尼伯龙根的指环》（1876）"
+    kind: 歌剧
+    portrayal: "违抗沃坦的女武神，被剥去神性、沉睡于火中，只等无畏的英雄前来唤醒。"
+    divergences:
+      - "瓦格纳把「违抗父命」写成主因；原典的希格德里法是因战场上的选择被刺以睡棘。"
+      - "原典她自尽于齐格鲁德的火葬堆；歌剧中她骑入火中、以指环终结一切，动机与结局都不相同。"
+      - "歌剧中齐格弗里德冒名求婚一折，对应原典里他替贡纳尔向布伦希尔德求婚的那一段。"

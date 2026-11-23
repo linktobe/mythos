@@ -1,0 +1,24 @@
+id: gudrun-revenge
+pantheon: norse
+entity_type: 事件
+name: 古德伦的最后一次复仇
+name_original: "Hamðismál"
+aliases: [斯万希尔德之死, 诸子行刺]
+summary: 斯万希尔德被约尔蒙雷克处死，古德伦催两个儿子前去行刺，三人无一生还。
+role:
+  title: "英雄时代的收尾"
+  brief: "这是尼伯龙根线的最后一章：兄弟相残、子侄尽死，活下来的只有一个母亲。"
+identity: {}
+narrative:
+  - text: "古德伦与阿特利所生的哈姆迪尔与瑟利，途中遇见同母异父的兄弟埃尔普。二人嫌他话多、不肯出力，先将他杀了。"
+    refs: [hamthesmol]
+  - text: "同行的只剩两人，他们仍闯进约尔蒙雷克的营地，斫去其手足。"
+    refs: [hamthesmol]
+  - text: "约尔蒙雷克呼人掷石，将二人砸死。为斯万希尔德报仇的事，到此为止。"
+    refs: [hamthesmol]
+  - text: "古德伦此后独活，诗以她为这段家史收尾——从齐格鲁德到她，四代人的血债到此了结。"
+    refs: [guthrunarhvot]
+relations:
+  - { target: gudrun, kind: 从属, detail: 主使者, refs: [guthrunarhvot] }
+  - { target: svanhildr, kind: 从属, detail: 起因, refs: [hamthesmol] }
+  - { target: jormunrekkr, kind: 从属, detail: 行刺对象, refs: [hamthesmol] }

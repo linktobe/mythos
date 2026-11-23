@@ -277,4 +277,51 @@
   lang: 古诺斯语
   url: https://sacred-texts.com/book/the-poetic-edda/harbarthsljoth
   note: 索尔与渡口船夫互揭短处的一篇对话诗，是全集里对诸神最不敬的一首。
+- id: hamthesmol
+  pantheon: norse
+  tier: T0
+  title: 哈姆迪尔之歌
+  original: Hamðismál
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/hamthesmol
+  note: 尼伯龙根线的最后一章：斯万希尔德之死与古德伦诸子的行刺。
+
+- id: guthrunarhvot
+  pantheon: norse
+  tier: T0
+  title: 古德伦的催促
+  original: Guðrúnarhvöt
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/guthrunarhvot
+  note: 古德伦催促儿子为斯万希尔德复仇，与《哈姆迪尔之歌》互为表里。
+
+- id: oddrunargratr
+  pantheon: norse
+  tier: T0
+  title: 奥德伦的哀歌
+  original: Oddrúnargrátr
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/oddrunargratr
+  note: 阿特利之妹奥德伦与贡纳尔的旧情，借一次接生自述出来。
+
+- id: atlamol
+  pantheon: norse
+  tier: T0
+  title: 格陵兰的阿特利之歌
+  original: Atlamál in grœnlenzku
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 11 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/atlamol-en-gronlenzku
+  note: 阿特利故事的另一版本，篇幅更长，细节与《阿特利之歌》出入不小。
 

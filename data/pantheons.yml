@@ -61,7 +61,7 @@
   order:
     group: [aesir, vanir, jotnar, dvergar, humans, beasts, valkyries, nornir]
     place: [asgard, vanaheim, alfheim, midgard, jotunheim, svartalfheim, muspelheim, niflheim, helheim]
-    event: [creation, aesir-vanir-war, idunn-apples, hammer-theft, baldr-death, loki-binding, ragnarok, sigurd-death]
+    event: [creation, aesir-vanir-war, idunn-apples, hammer-theft, baldr-death, loki-binding, ragnarok, sigurd-death, gudrun-revenge]
 
 - id: japanese
   zh: 日本神话

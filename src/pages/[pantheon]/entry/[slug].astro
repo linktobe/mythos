@@ -36,6 +36,7 @@ entry.narrative.forEach((n: any) => note(n.refs));
 entry.variants.forEach((n: any) => note(n.refs));
 entry.profiles.forEach((n: any) => note(n.refs));
 entry.weapons.forEach((n: any) => note(n.refs));
+entry.kinship?.forEach((k: any) => note(k.refs));
 entry.relations.forEach((n: any) => note(n.refs));
 entry.related.forEach((n: any) => note(n.refs));
 const refNo = new Map(usedRefs.map((id, i) => [id, i + 1]));
@@ -177,6 +178,33 @@ const crumbs = [
                   <sup class="ref"><a href={`#src-${id}`}>{refNo.get(id)}</a></sup>
                 ))}
               </p>
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    {entry.kinship?.length > 0 && (
+      <>
+        <h2>亲属</h2>
+        <ul class="kinship">
+          {entry.kinship.map((k: any) => (
+            <li>
+              <div class="k-head">
+                <span class="k-rel">{k.relation}</span>
+                <span class="k-name">
+                  {k.target ? <a href={entryHref(p.id, k.target)}>{k.name}</a> : k.name}
+                </span>
+                <span class="k-original">{k.name_original}</span>
+              </div>
+              {k.note && (
+                <p>
+                  {k.note}
+                  {k.refs.map((id: string) => (
+                    <sup class="ref"><a href={`#src-${id}`}>{refNo.get(id)}</a></sup>
+                  ))}
+                </p>
+              )}
             </li>
           ))}
         </ul>

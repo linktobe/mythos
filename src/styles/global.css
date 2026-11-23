@@ -483,3 +483,18 @@ button.chip[aria-pressed="true"] { background: var(--accent); border-color: var(
 /* 筛选计数 */
 .filter-count { margin: 2px 0 0; font-size: 12px; color: var(--muted); letter-spacing: .08em; }
 .filters .chips { flex-wrap: wrap; }
+
+/* 亲属：没有独立词条的家人，只在这里占一行 */
+.kinship { list-style: none; margin: 0; padding: 0; }
+.kinship li {
+  border: 1px solid var(--line); border-radius: 14px; background: #fff;
+  padding: 14px 18px; margin: 0 0 10px;
+}
+.kinship .k-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.kinship .k-rel {
+  font-size: 11px; letter-spacing: .18em; color: var(--accent);
+  border: 1px solid var(--accent); border-radius: 999px; padding: 1px 9px;
+}
+.kinship .k-name { font-family: var(--serif); font-size: 16px; letter-spacing: .04em; }
+.kinship .k-original { font-style: italic; font-size: 12.5px; color: var(--muted); }
+.kinship p { margin: 6px 0 0; color: var(--muted); font-size: 14.5px; line-height: 1.75; }

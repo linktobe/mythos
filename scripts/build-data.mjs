@@ -158,6 +158,20 @@ function makeEntrySchema(p) {
           })
         )
         .default([]),
+      // 亲属：只写没有独立词条的家人，避免为一两个名字撑起空页面。
+      // 日后若立条，填上 target 即可变成站内链接。
+      kinship: z
+        .array(
+          z.object({
+            relation: z.string().min(1),
+            name: z.string().min(1),
+            name_original: z.string().min(1),
+            note: z.string().optional(),
+            target: z.string().optional(),
+            refs: RefList,
+          })
+        )
+        .default([]),
       weapons: z
         .array(
           z.object({
@@ -320,6 +334,12 @@ for (const p of pantheons) {
     e.variants.forEach((n, i) => checkRefs(`${p.id}/${e.id}: variants[${i}]`, n.refs));
     e.profiles.forEach((n, i) => checkRefs(`${p.id}/${e.id}: profiles[${i}]`, n.refs));
     e.weapons.forEach((n, i) => checkRefs(`${p.id}/${e.id}: weapons[${i}]`, n.refs));
+    e.kinship.forEach((k, i) => {
+      checkRefs(`${p.id}/${e.id}: kinship[${i}]`, k.refs);
+      if (k.target && !entryIds.has(k.target)) {
+        fail(`${p.id}/${e.id}: kinship[${i}] 的 target "${k.target}" 不存在`);
+      }
+    });
     for (const r of e.relations) {
       if (!entryIds.has(r.target)) fail(`${p.id}/${e.id}: relation target "${r.target}" 不存在`);
       if (r.target === e.id) fail(`${p.id}/${e.id}: 不能指向自己`);

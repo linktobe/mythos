@@ -79,6 +79,6 @@ Node 版本见 `.node-version`（22.23.4），Astro 钉在 `7.4.13`。
 
 ## 许可
 
-- 代码：MIT（见 `LICENSE`）
-- 词条文本（`data/` 下自有撰写部分）：CC BY-SA 4.0
+- 代码：MIT（见 [LICENSE](./LICENSE)）
+- 词条文本（`data/` 下自有撰写部分）：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh)
 - 引用的古籍原文属公有领域；原文链接指向各公版库

@@ -1,9 +1,9 @@
 id: thor
 pantheon: norse
 entity_type: 神祇
-name: 托尔
+name: 索尔
 name_original: "Þórr"
-aliases: [雷神, 索尔]
+aliases: [雷神, 托尔]
 summary: 阿萨神族的武力担当，与尘世巨蟒互为宿命。
 role:
   title: "神族与人间的武力屏障"
@@ -22,12 +22,30 @@ narrative:
   - text: 诸神黄昏时他与耶梦加得互杀，中毒身亡；其子马格尼与莫迪继承雷锤。
     refs: [voluspa, gylfaginning]
 variants:
-  - claim: 钓蛇一节，《希米尔之歌》写托尔已举锤欲击而线断；《欺骗古鲁菲》则补入巨人希米尔因恐惧而割线的动机。
+  - claim: 钓蛇一节，《希米尔之歌》写索尔已举锤欲击而线断；《欺骗古鲁菲》则补入巨人希米尔因恐惧而割线的动机。
     refs: [hymiskvida, gylfaginning]
 relations:
   - { target: odin, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
   - { target: jormungandr, kind: 宿命, detail: 诸神黄昏互杀, refs: [voluspa] }
   - { target: loki, kind: 敌对, detail: 屡受其欺, refs: [gylfaginning] }
+# 子女未单独立条：原典给了名字，却没给他们自己的一段故事。
+# 等其中哪一位够格立条，把 target 填上，此处会自动变成链接。
+kinship:
+  - relation: 子
+    name: 马格尼
+    name_original: "Magni"
+    note: 母为女巨人雅恩莎萨。索尔与巨人赫伦格尼尔决斗后被对方尸身压住，出生三日的马格尼赶来挪开。
+    refs: [skaldskaparmal]
+  - relation: 子
+    name: 莫迪
+    name_original: "Móði"
+    note: 与马格尼并称，同为索尔之子。除名字与「末日之后继承雷锤」一句结局外，原典没有给他自己的故事。
+    refs: [gylfaginning]
+  - relation: 女
+    name: 斯露德
+    name_original: "Þrúðr"
+    note: 索尔之女。原典只记其名与父女关系，未附事迹。
+    refs: [gylfaginning]
 legacy:
   - 英语 Thursday 源自其名；漫威塑造为幽默英雄；《战神》（2018）中为可交战对象。
 adaptations:
@@ -36,13 +54,13 @@ adaptations:
     portrayal: "雷霆之神、阿斯加德王子；从傲慢的继承者，成长为失去父亲、弟弟与锤子的流浪者，叙事大量喜剧化。"
     divergences:
       - "MCU 把「神」解释为高度发达的外星种族，人类祖先误认其为神；原典中神就是神，不需要科学化解释。"
-      - "原典托尔的核心是对巨人的长期战争，以及与尘世巨蟒耶梦加得的宿命互杀；MCU 里这两个对手都不存在。"
-      - "原典托尔有妻子西芙、情人女巨人雅恩莎萨，生子马格尼与莫迪；MCU 中西芙只是战友，子嗣线完全删除。"
-      - "原典托尔直率、屡受洛基捉弄；MCU 保留这点，但加入大量自嘲式幽默，使其更接近超级英雄而非神祇。"
+      - "原典索尔的核心是对巨人的长期战争，以及与尘世巨蟒耶梦加得的宿命互杀；MCU 里这两个对手都不存在。"
+      - "原典索尔有妻子西芙、情人女巨人雅恩莎萨，生子马格尼与莫迪；MCU 中西芙只是战友，子嗣线完全删除。"
+      - "原典索尔直率、屡受洛基捉弄；MCU 保留这点，但加入大量自嘲式幽默，使其更接近超级英雄而非神祇。"
 weapons:
   - name: 妙尔尼尔
     name_original: "Mjölnir"
-    note: "雷锤，击必中、掷必回，柄短一截。托尔以之镇压巨人，末日以此击杀尘世巨蟒。"
+    note: "雷锤，击必中、掷必回，柄短一截。索尔以之镇压巨人，末日以此击杀尘世巨蟒。"
     refs: [skaldskaparmal]
   - name: 梅金吉奥德
     name_original: "Megingjörð"

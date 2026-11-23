@@ -27,6 +27,7 @@ relations:
   - { target: baldr, kind: 从属, detail: 事件主角, refs: [gylfaginning] }
   - { target: loki, kind: 从属, detail: 主谋, refs: [gylfaginning] }
   - { target: frigg, kind: 从属, detail: 令万物起誓者, refs: [gylfaginning] }
+  - { target: hodr, kind: 从属, detail: 投出槲寄生者, refs: [gylfaginning] }
   - { target: hel, kind: 从属, detail: 拒绝归还, refs: [gylfaginning] }
 legacy:
   - 《战神》（2018）把巴德尔改写为受诅咒的不死战士，与这场「玩笑」无关。

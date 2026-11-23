@@ -24,6 +24,8 @@ narrative:
 variants:
   - claim: 格莱普尼尔的制法（猫的脚步、女人的胡须、山的根、熊的肌腱、鱼的呼吸、鸟的唾液）见于《欺骗古鲁菲》，属 Snorri 的文学化铺陈。
     refs: [gylfaginning]
+  - claim: 洛基另有一子也叫瓦利，被诸神变成狼、咬死了兄弟纳尔弗。那是另一头狼，与芬里尔不是同一个；两头「狼」常被后人混为一谈。
+    refs: [gylfaginning]
 relations:
   - { target: loki, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
   - { target: odin, kind: 宿命, detail: 吞杀奥丁, refs: [gylfaginning] }

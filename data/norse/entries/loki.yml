@@ -33,6 +33,42 @@ relations:
   - { target: hel, kind: 亲缘, detail: 父女, refs: [gylfaginning] }
   - { target: baldr, kind: 敌对, detail: 设计致死, refs: [gylfaginning] }
   - { target: thor, kind: 敌对, detail: 屡以诡计相欺, refs: [gylfaginning] }
+# 子女总表：母系分三支——安格尔波达、西格恩、以及他自己以外形所生
+kinship:
+  - relation: 子
+    name: 芬里尔
+    name_original: "Fenrir"
+    target: fenrir
+    note: 母为女巨人安格尔波达。诸神设计缚之，末日吞杀奥丁。
+    refs: [gylfaginning]
+  - relation: 子
+    name: 耶梦加得
+    name_original: "Jörmungandr"
+    target: jormungandr
+    note: 母为安格尔波达。被奥丁抛入深海，环绕米德加德，与索尔互为宿命。
+    refs: [gylfaginning]
+  - relation: 女
+    name: 海拉
+    name_original: "Hel"
+    target: hel
+    note: 母为安格尔波达。被奥丁掷入尼福尔海姆，掌冥界。
+    refs: [gylfaginning]
+  - relation: 子
+    name: 瓦利
+    name_original: "Váli"
+    note: 母为西格恩。被诸神变成狼，咬死兄弟纳尔弗；与奥丁之子瓦利同名，不是同一人。
+    refs: [gylfaginning]
+  - relation: 子
+    name: 纳尔弗
+    name_original: "Narfi"
+    note: 母为西格恩。被兄弟所化的狼咬死，肠子用来缚住洛基。
+    refs: [gylfaginning]
+  - relation: 子
+    name: 斯雷普尼尔
+    name_original: "Sleipnir"
+    target: sleipnir
+    note: 洛基化身母马，与匠人的种马斯瓦迪尔法利交配所生，八足，后归奥丁。
+    refs: [gylfaginning]
 legacy:
   - 漫威与《战神》均大幅改写其动机；《战神》（2018）设定其为阿特柔斯之父，纯属原创。
 adaptations:

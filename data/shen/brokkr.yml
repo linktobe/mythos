@@ -23,6 +23,8 @@ narrative:
 relations:
   - { target: sindri, kind: 亲缘, detail: 兄弟, refs: [skaldskaparmal] }
   - { target: mjolnir, kind: 从属, detail: 所铸, refs: [skaldskaparmal] }
+  - { target: draupnir, kind: 从属, detail: 所铸, refs: [skaldskaparmal] }
+  - { target: gullinbursti, kind: 从属, detail: 所铸, refs: [skaldskaparmal] }
   - { target: loki, kind: 敌对, detail: 铸器时受其阻挠, refs: [skaldskaparmal] }
 legacy:
   - 现代作品里的「矮人工匠」形象，多由他与辛德里这一对兄弟而来。

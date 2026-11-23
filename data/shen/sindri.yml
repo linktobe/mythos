@@ -28,6 +28,8 @@ variants:
 relations:
   - { target: brokkr, kind: 亲缘, detail: 兄弟, refs: [skaldskaparmal] }
   - { target: mjolnir, kind: 从属, detail: 所铸, refs: [skaldskaparmal] }
+  - { target: draupnir, kind: 从属, detail: 所铸, refs: [skaldskaparmal] }
+  - { target: gullinbursti, kind: 从属, detail: 所铸, refs: [skaldskaparmal] }
   - { target: loki, kind: 敌对, detail: 赌约对手, refs: [skaldskaparmal] }
 legacy:
   - 后世「矮人善铸神器」的印象，源头正是这一段。

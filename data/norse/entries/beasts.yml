@@ -1,0 +1,35 @@
+id: beasts
+pantheon: norse
+entity_type: 群体
+name: 异兽
+name_original: "Dýr"
+aliases: [巨兽, 非人者]
+summary: 狼、蟒、龙、马——既非神也非人的那些角色。原典不给它们统称，此处归作一类以便索引。
+role:
+  title: "神与人的对面"
+  brief: "它们不结盟、不议事，只按自己的本性行事。诸神许多故事，是跟这些东西缠斗出来的。"
+identity:
+  lineage:
+    - { id: being }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond, note: 各处散居，不属一界 }
+narrative:
+  - text: "芬里尔与耶梦加得是洛基与安格尔波达所生，被诸神分置三处：狼缚于荒岛，蟒抛入深海。"
+    refs: [gylfaginning]
+  - text: "尼德霍格伏于世界树根下啃啮，法夫纳为守财而化为毒龙——二者都因贪与毁而远离了本来的族类。"
+    refs: [grimnismal, reginsmol]
+  - text: "斯雷普尼尔是洛基化母马所生的八足马，反为奥丁所用，是这一类里唯一与神同行的。"
+    refs: [gylfaginning]
+  - text: "末日中芬里尔吞杀奥丁，耶梦加得与索尔互杀——诸神的终点，正是由这两头所生之物决定的。"
+    refs: [voluspa]
+variants:
+  - claim: "「异兽」是本编为索引所设的归类，原典没有对应词。北欧的龙与狼也不像后来的奇幻设定那样有统一的种族谱系。"
+    refs: [gylfaginning]
+relations:
+  - { target: fenrir, kind: 从属, detail: 归入此类, refs: [gylfaginning] }
+  - { target: jormungandr, kind: 从属, detail: 归入此类, refs: [gylfaginning] }
+  - { target: nidhogg, kind: 从属, detail: 归入此类, refs: [grimnismal] }
+  - { target: sleipnir, kind: 从属, detail: 归入此类, refs: [gylfaginning] }
+  - { target: fafnir, kind: 从属, detail: 归入此类, refs: [reginsmol] }

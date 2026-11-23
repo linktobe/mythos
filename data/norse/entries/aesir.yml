@@ -1,0 +1,34 @@
+id: aesir
+pantheon: norse
+entity_type: 群体
+name: 阿萨神族
+name_original: "Æsir"
+aliases: [阿萨, 诸神]
+summary: 以奥丁为首的神族，掌权柄与战争，居阿斯加德；与华纳交战议和后两族混居，界限自此模糊。
+role:
+  title: "掌权的一支"
+  brief: "阿萨不是「所有神」的总称，只是两支神族之一。另一支是华纳，而在两者之外还有巨人、精灵与矮人。"
+identity:
+  lineage:
+    - { id: aesir }
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "以奥丁为首的一族，重权柄、战争与智谋，居于阿斯加德。诸神之中掌权者多出自此族。"
+    refs: [gylfaginning]
+  - text: "与华纳神族交战后议和，华纳送出尼约德、弗雷与弗蕾亚为人质，两族自此混居，很难再截然分开。"
+    refs: [gylfaginning, voluspa]
+  - text: "入阿萨者不限血统：洛基出身巨人，仍列于阿萨；提尔、海姆达尔等亦各有所出。此族是立场，不是族谱。"
+    refs: [gylfaginning]
+  - text: "末日中阿萨诸神大半战死，奥丁、索尔、提尔皆殁；余者与新归来的巴德尔共居新世界。"
+    refs: [voluspa]
+variants:
+  - claim: "「阿萨」与「诸神」常被混用，但原典的 áss 专指这一族；华纳神另称 vanr。中文译作「阿萨神族」即为此故。"
+    refs: [gylfaginning]
+relations:
+  - { target: odin, kind: 从属, detail: 其首领, refs: [gylfaginning] }
+  - { target: thor, kind: 从属, detail: 其主战力, refs: [gylfaginning] }
+  - { target: vanir, kind: 敌对, detail: 曾交战，后议和混居, refs: [voluspa] }
+  - { target: loki, kind: 从属, detail: 血统属巨人而列于阿萨, refs: [gylfaginning] }

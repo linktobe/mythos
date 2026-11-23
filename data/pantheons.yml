@@ -59,6 +59,7 @@
       route: shi
       types: [事件]
   order:
+    group: [aesir, vanir, jotnar, dvergar, humans, beasts, valkyries, nornir]
     place: [asgard, vanaheim, alfheim, midgard, jotunheim, svartalfheim, muspelheim, niflheim, helheim]
     event: [creation, aesir-vanir-war, idunn-apples, hammer-theft, baldr-death, loki-binding, ragnarok, sigurd-death]
 

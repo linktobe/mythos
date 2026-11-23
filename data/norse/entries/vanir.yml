@@ -1,0 +1,31 @@
+id: vanir
+pantheon: norse
+entity_type: 群体
+name: 华纳神族
+name_original: "Vanir"
+aliases: [华纳]
+summary: 掌丰饶、海洋与生育的神族，与阿萨交战议和后以三神入质，自此并入阿萨诸神之列。
+role:
+  title: "丰饶的一支"
+  brief: "阿萨打仗，华纳管收成与航路。两族打完谁也没赢，只是换了人质——而人质换出了往后许多故事。"
+identity:
+  lineage:
+    - { id: vanir }
+  camp:
+    - { id: vanir }
+  realm:
+    - { id: vanaheim }
+narrative:
+  - text: "与阿萨并列的另一支神族，掌丰饶、海洋与生育，居华纳海姆。"
+    refs: [gylfaginning, vafthrudnismal]
+  - text: "两族的战争起于古尔薇格：诸神以矛刺她、三度将她投入火中，她三度重生。"
+    refs: [voluspa]
+  - text: "议和后华纳送出尼约德、弗雷与弗蕾亚为人质，阿萨送出海尼尔与密米尔。"
+    refs: [gylfaginning]
+  - text: "华纳很快发现海尼尔离了密米尔便不能决断，自感受骗，于是斩下密米尔的首级送回阿萨。"
+    refs: [gylfaginning]
+relations:
+  - { target: njord, kind: 从属, detail: 所遣人质, refs: [gylfaginning] }
+  - { target: freyr, kind: 从属, detail: 所遣人质, refs: [gylfaginning] }
+  - { target: freyja, kind: 从属, detail: 所遣人质, refs: [gylfaginning] }
+  - { target: mimir, kind: 敌对, detail: 察其受骗而斩其首, refs: [gylfaginning] }

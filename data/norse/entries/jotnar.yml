@@ -1,0 +1,35 @@
+id: jotnar
+pantheon: norse
+entity_type: 群体
+name: 巨人
+name_original: "Jötnar"
+aliases: [约特纳, 霜巨人, 山巨人]
+summary: 与诸神同源的古老一族，力大寿长，散居约顿海姆；与神族通婚、结盟、争斗，关系远非单纯的敌对。
+role:
+  title: "诸神的旧亲"
+  brief: "大多数神的母系都能追到巨人：奥丁之母、索尔之母、洛基本人。把这一族当作「怪物阵营」，会看不懂一半的故事。"
+identity:
+  lineage:
+    - { id: jotunn }
+  camp:
+    - { id: jotnar }
+  realm:
+    - { id: jotunheim }
+narrative:
+  - text: "始祖尤弥尔即是巨人。三兄弟杀他之后，以他的身躯造成世界，巨人一族出自他的肢腋。"
+    refs: [gylfaginning, grimnismal]
+  - text: "神族与巨人并非纯然对立：奥丁之母贝斯特拉、索尔之母约尔德都是巨人，洛基也出身此族。"
+    refs: [gylfaginning]
+  - text: "巨人中亦有与诸神交好者，如掌海的埃吉尔常设宴款待诸神，斯卡蒂更以婚约入阿萨。"
+    refs: [lokasenna, skaldskaparmal]
+  - text: "末日中巨人自各方来攻，苏尔特尔自南方携火焚尽九界。"
+    refs: [voluspa]
+relations:
+  - { target: ymir, kind: 从属, detail: 始祖, refs: [gylfaginning] }
+  - { target: loki, kind: 从属, detail: 出身此族, refs: [gylfaginning] }
+  - { target: surtr, kind: 从属, detail: 火巨人一支, refs: [gylfaginning] }
+  - { target: odin, kind: 亲缘, detail: 母贝斯特拉出身巨人, refs: [gylfaginning] }
+  - { target: skadi, kind: 从属, detail: 以婚约入阿萨, refs: [skaldskaparmal] }
+variants:
+  - claim: "「霜巨人」「山巨人」「火巨人」都是这一族的分支称谓，原典并未把它们列为不同种族。"
+    refs: [gylfaginning]

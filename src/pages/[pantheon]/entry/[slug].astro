@@ -101,13 +101,21 @@ const atTitle = (id: string, at: any) => {
 // 「亲属」区已经列过的家人，不再在「关系」里重复一遍
 const kinTargets = new Set((entry.kinship ?? []).map((k: any) => k.target).filter(Boolean));
 const groupMap = new Map<string, any[]>();
+// 同一对「对象＋关系」只留一条：本页写过的，反向那条不再重复列出
+const seenPair = new Set<string>();
 for (const r of entry.relations) {
   if (kinTargets.has(r.target)) continue;
+  const key = `${r.target}|${r.kind}`;
+  if (seenPair.has(key)) continue;
+  seenPair.add(key);
   if (!groupMap.has(r.kind)) groupMap.set(r.kind, []);
   groupMap.get(r.kind)!.push({ target: r.target, kind: r.kind, detail: r.detail, reverse: false });
 }
 for (const r of entry.related) {
   if (kinTargets.has(r.target)) continue;
+  const key = `${r.target}|${r.kind}`;
+  if (seenPair.has(key)) continue;
+  seenPair.add(key);
   if (!groupMap.has(r.kind)) groupMap.set(r.kind, []);
   groupMap.get(r.kind)!.push({ target: r.target, kind: r.kind, detail: r.detail, reverse: true });
 }

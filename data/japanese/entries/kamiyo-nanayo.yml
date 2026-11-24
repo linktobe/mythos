@@ -37,3 +37,4 @@ variants:
 relations:
   - { target: izanagi, kind: 亲缘, detail: 第七代, refs: [kojiki] }
   - { target: izanami, kind: 亲缘, detail: 第七代, refs: [kojiki] }
+  - { target: kuniumi, kind: 从属, detail: 第七代二神受命造国, refs: [kojiki] }

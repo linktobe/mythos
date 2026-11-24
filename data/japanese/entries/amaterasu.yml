@@ -42,6 +42,16 @@ relations:
   - { target: susanoo, kind: 亲缘, detail: 姐弟，同为禊祓所生, refs: [kojiki] }
   - { target: susanoo, kind: 敌对, detail: 争于高天原，终将其逐出, refs: [kojiki] }
   - { target: tsukuyomi, kind: 亲缘, detail: 姐弟, refs: [kojiki] }
+  - { target: ninigi, kind: 亲缘, detail: 孙，其子天之忍穗耳所生, refs: [kojiki] }
+  - { target: kuniyuzuri, kind: 从属, detail: 由其发起，屡遣使者, refs: [kojiki] }
+  - { target: tenson-korin, kind: 从属, detail: 授三神器并命其下降, refs: [kojiki] }
+  - { target: yaoyorozu, kind: 从属, detail: 八百万神受其命集会, refs: [kojiki] }
+kinship:
+  - relation: 子
+    name: 天之忍穗耳命
+    name_original: "アメノオシホミミ"
+    note: 天照最初命他下治苇原中国，他登天浮桥见国土喧扰而返，改由其子天孙降临。
+    refs: [kojiki]
 legacy:
   - "伊势神宫内宫以她为祭神，所奉神体即八咫镜；日本皇室的始祖神叙事以她为顶点。"
 adaptations:

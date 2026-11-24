@@ -35,6 +35,9 @@ narrative:
   - text: 斩至中尾时剑刃缺，剖开尾肉，内中得一柄大刀。他把刀取下，献于天照。此后建须贺宫，咏「八云立，出云八重垣」之歌；娶栉名田比卖，生八岛士奴美神，出云一系自此开端。
     refs: [kojiki]
     at: { kojiki: "18–20" }
+  - text: 此后他迁往根之坚洲国，长久不再出场——直到多年以后，被庶兄追杀的外孙大国主闯进来。他设蛇室、蜈蚣蜂室与火焚之野三重试炼，全被自己的女儿暗中化解；最后反而把女儿、生大刀、生弓矢与「大国主」的名号一并许给了这个年轻人。
+    refs: [kojiki]
+    at: { kojiki: "23" }
 variants:
   - claim: 「天丛云剑」之名出自《日本书纪》；《古事记》称此剑为都牟刈之大刀，又名草那艺之大刀。今日通称的「草薙剑」是同一柄剑的第三种写法。
     refs: [kojiki, nihonshoki]
@@ -42,5 +45,10 @@ variants:
   - claim: 《日本书纪》卷一另列「一书曰」数种，记素戔嗚尊求婚、以酒醉蛇之事大同小异，但斩蛇之地与所得剑名互有出入。
     refs: [nihonshoki]
     at: { nihonshoki: "卷一" }
+relations:
+  - { target: okuninushi, kind: 亲缘, detail: 女婿；设三重试炼而后以女与国土许之, refs: [kojiki] }
+  - { target: suseri-bime, kind: 亲缘, detail: 父女, refs: [kojiki] }
+  - { target: ne-no-kuni, kind: 从属, detail: 被逐后所居, refs: [kojiki] }
+  - { target: kagutsuchi, kind: 同源, detail: 皆出自伊邪那岐之身, refs: [kojiki] }
 legacy:
   - "后世以「牛头天王」之名在祇园、八坂一带奉祀他，与佛教的祇园精舍传说合流，形象与原典的暴乱之神相去甚远。"

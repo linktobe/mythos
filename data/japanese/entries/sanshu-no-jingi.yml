@@ -35,5 +35,8 @@ variants:
 relations:
   - { target: amaterasu, kind: 从属, detail: 由她授予天孙, refs: [kojiki] }
   - { target: susanoo, kind: 从属, detail: 剑由他取自大蛇之尾, refs: [kojiki] }
+  - { target: ninigi, kind: 从属, detail: 受此三物而降, refs: [kojiki] }
+  - { target: tenson-korin, kind: 从属, detail: 授受即在此役, refs: [kojiki] }
+  - { target: amano-iwato, kind: 从属, detail: 镜与玉出自此役, refs: [kojiki] }
 legacy:
   - "八咫镜奉于伊势神宫内宫，天丛云剑奉于尾张热田神宫，八尺琼勾玉存于皇居——三件分置三地，从未同处一室。"

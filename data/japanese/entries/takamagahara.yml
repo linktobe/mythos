@@ -31,3 +31,6 @@ narrative:
 relations:
   - { target: amaterasu, kind: 从属, detail: 受命治理此界, refs: [kojiki] }
   - { target: ashihara, kind: 同源, detail: 上下二层，同属记纪的空间结构, refs: [kojiki] }
+  - { target: amano-iwato, kind: 从属, detail: 变生于此界之侧, refs: [kojiki] }
+  - { target: kuniyuzuri, kind: 从属, detail: 其议在此议定, refs: [kojiki] }
+  - { target: tenson-korin, kind: 从属, detail: 天孙自此降下, refs: [kojiki] }

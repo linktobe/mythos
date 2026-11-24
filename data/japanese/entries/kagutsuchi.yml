@@ -32,5 +32,8 @@ variants:
   - claim: 《日本书纪》卷一作「轲遇突智」，斩之者为伊奘诺尊，用剑作「十握剑」；所化生诸神的名目与《古事记》多有出入，且另列一书记其尸化山神之说。
     refs: [nihonshoki]
     at: { nihonshoki: "卷一" }
+relations:
+  - { target: kamiumi, kind: 从属, detail: 神生み之最后一子, refs: [kojiki] }
+  - { target: amaterasu, kind: 同源, detail: 皆伊邪那岐之子女，一为所斩、一为所生, refs: [kojiki] }
 legacy:
   - "后世神社中另有以「火产灵」神号奉祀火神者，与迦具土常被视作同一种格的不同名号。"

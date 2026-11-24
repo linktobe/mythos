@@ -37,5 +37,8 @@ variants:
 relations:
   - { target: takamagahara, kind: 同源, detail: 上下二层，同属记纪的空间结构, refs: [kojiki] }
   - { target: yomi, kind: 同源, detail: 上下二层，同属记纪的空间结构, refs: [kojiki] }
+  - { target: okuninushi, kind: 从属, detail: 由他开拓，又由他让出, refs: [kojiki] }
+  - { target: kuniyuzuri, kind: 从属, detail: 所让之国即此, refs: [kojiki] }
+  - { target: ninigi, kind: 从属, detail: 天孙降于此国, refs: [kojiki] }
 legacy:
   - "后世以「苇原中国」为日本国土的古称之一，与「大八岛」「瑞穗国」并用。"

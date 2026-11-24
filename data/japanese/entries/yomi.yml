@@ -37,5 +37,6 @@ variants:
 relations:
   - { target: izanami, kind: 从属, detail: 黄泉津大神镇此, refs: [kojiki] }
   - { target: izanagi, kind: 从属, detail: 他曾入此、又自比良坂逃出, refs: [kojiki] }
+  - { target: yomi-visit, kind: 从属, detail: 其事即在此国与其坂口, refs: [kojiki] }
 legacy:
   - "「黄泉」一词后世泛指死后世界；《古事记》以桃子驱鬼一节，被认为是桃木辟邪习俗的由来。"

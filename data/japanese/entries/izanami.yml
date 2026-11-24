@@ -38,5 +38,13 @@ variants:
     at: { nihonshoki: "卷一" }
 relations:
   - { target: kagutsuchi, kind: 亲缘, detail: 母子，生他时被灼而死, refs: [kojiki] }
+  - { target: yomi-visit, kind: 从属, detail: 被追者；隔千引石立誓, refs: [kojiki] }
+  - { target: yomi, kind: 从属, detail: 神避之后镇此, refs: [kojiki] }
+kinship:
+  - relation: 子
+    name: 水蛭子
+    name_original: "ヒルコ"
+    note: 初次成婚所生，因「女人先言」而不良，载苇船流去。其名又见于后世西宫惠比寿之说，但记纪无此记载。
+    refs: [kojiki]
 legacy:
   - "后世把黄泉国、秽与「女人先言」的禁忌都系在她身上；熊野、出云一带另有奉祀她的神社。"

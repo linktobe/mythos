@@ -29,5 +29,7 @@ variants:
 relations:
   - { target: amaterasu, kind: 从属, detail: 其事即以她为主角, refs: [kojiki] }
   - { target: susanoo, kind: 从属, detail: 因他作乱而起, refs: [kojiki] }
+  - { target: yaoyorozu, kind: 从属, detail: 八百万神聚议设策, refs: [kojiki] }
+  - { target: sanshu-no-jingi, kind: 从属, detail: 镜与玉于此役登场, refs: [kojiki] }
 legacy:
   - "注连绳与神乐舞的起源常被追溯至此；《古事记》未言其象征意义，后世的解释则层层叠加。"

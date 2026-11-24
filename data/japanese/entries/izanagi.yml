@@ -53,5 +53,20 @@ relations:
   - { target: tsukuyomi, kind: 亲缘, detail: 父子，洗右眼所生, refs: [kojiki] }
   - { target: susanoo, kind: 亲缘, detail: 父子，洗鼻所生, refs: [kojiki] }
   - { target: kagutsuchi, kind: 亲缘, detail: 父子，为其所斩, refs: [kojiki] }
+  - { target: kuniumi, kind: 从属, detail: 与妻共行, refs: [kojiki] }
+  - { target: kamiumi, kind: 从属, detail: 与妻共行，至火神而止, refs: [kojiki] }
+  - { target: yomi-visit, kind: 从属, detail: 追妻而入黄泉者, refs: [kojiki] }
+  - { target: misogi, kind: 从属, detail: 归来洗身，三贵子生焉, refs: [kojiki] }
+kinship:
+  - relation: 子
+    name: 水蛭子
+    name_original: "ヒルコ"
+    note: 二神初次成婚所生，因「女人先言」而不良，三岁不能立，载于苇船而流去。
+    refs: [kojiki]
+  - relation: 子
+    name: 淡岛
+    name_original: "アハシマ"
+    note: 水蛭子之后所生，记纪明言「不入子数」。后世以「淡岛」为岛名，亦为祭神之名。
+    refs: [kojiki]
 legacy:
   - "禊祓成为神道洁净观的原型：后世神社祭祀中的「祓」，追认的源头就是他这一洗。"

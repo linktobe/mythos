@@ -1,0 +1,29 @@
+id: sinfjotli
+pantheon: norse
+entity_type: 英雄
+name: 辛菲奥特利
+name_original: "Sinfjötli"
+aliases: [辛菲奥提]
+summary: 西格蒙德与亲妹西格妮之子；与父亲一同杀死西格吉尔，终被继母博尔希尔德以毒酒害死。
+role:
+  title: "近亲所生的儿子"
+  brief: "他是复仇计划的一部分：西格妮换上女巫的形貌去见兄长，生下的孩子用来杀自己的丈夫。这段家史从这里就已经不对了。"
+identity:
+  lineage: [human]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: midgard }
+narrative:
+  - text: "西格妮嫁给西格吉尔后，父亲与兄弟被杀，她要复仇，便把两个儿子送去给西格蒙德试炼，都撑不住。最后她换上女巫的形貌去找兄长，生下辛菲奥特利。"
+    refs: [volsungasaga]
+  - text: "这孩子自幼与父亲在林中长大，十岁便敢杀人。父子二人后来回到哥特，放火烧了西格吉尔的厅，把这位姑父兼杀父仇人烧死在里面。"
+    refs: [volsungasaga]
+  - text: "回国之后，他为一女子与王后博尔希尔德的兄弟相争，杀了对方。博尔希尔德设宴下毒，西格蒙德受得住毒，替他挡了两轮；第三轮她直接把酒递到辛菲奥特利手里，他一饮而尽，当场倒地。"
+    refs: [volsungasaga, fra-dautha-sinfjotla]
+variants:
+  - claim: "他的故事主要见于《沃尔松格萨迦》；诗体埃达里，他只在《海尔吉》组诗中与人吵过一场架，另有一段散文记其死。"
+    refs: [volsungasaga, fra-dautha-sinfjotla]
+relations:
+  - { target: sigmund, kind: 亲缘, detail: 父子，母为西格妮, refs: [volsungasaga] }
+  - { target: volsung, kind: 亲缘, detail: 祖孙, refs: [volsungasaga] }

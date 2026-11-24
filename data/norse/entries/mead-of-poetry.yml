@@ -1,0 +1,35 @@
+id: mead-of-poetry
+pantheon: norse
+entity_type: 器物
+name: 诗之蜜酒
+name_original: "Skáldskapar mjöðr"
+aliases: [诗歌的蜜酒, 奥德莱里尔]
+summary: 以克瓦希尔的血调蜜酿成的酒；谁喝了，谁就成为诗人。三个瓮分别叫奥德莱里尔、颂、博德恩。
+role:
+  title: "被喝掉的那一款"
+  brief: "它不是粮食酿的，是一个人的血。这酒在矮人、巨人、神手里转过三圈，最后落在阿斯加德，从此凡人也分到一点——只是漏出来的那一点。"
+identity:
+  lineage:
+    - { id: being, note: 以克瓦希尔的血调和而成，非天然之物 }
+  camp:
+    - { id: aesir, note: 终归诸神所有 }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "矮人菲亚拉与加拉尔杀了克瓦希尔，把他的血盛在两瓮一釜里，和蜂蜜调成酒。三件容器各有名字：釜叫奥德莱里尔，瓮叫颂与博德恩。"
+    refs: [skaldskaparmal]
+  - text: "这酒后来被巨人苏图恩拿走，藏在尼特山，命女儿贡露看守。奥丁化名做工、钻通岩壁，与贡露共处三夜，三口喝干了三瓮。"
+    refs: [skaldskaparmal]
+  - text: "他化鹰飞回阿斯加德，诸神在城下摆好容器；他把酒吐进瓮里，只有一点从身后漏了出去——据说会写歪诗的人，分到的就是这一点。"
+    refs: [skaldskaparmal]
+  - text: "《高者之歌》里奥丁自述此事，只提「我从奥德莱里尔那里得到一口」，不肯把话说全，还立誓不把最后那一口告诉外人。"
+    refs: [havamal]
+    at: { havamal: "107–110" }
+variants:
+  - claim: "这酒的来历有两层：《诗语》说是矮人杀克瓦希尔后所酿，《高者之歌》里奥丁只说自己取来，不提血。两处合起来才是完整的一条线。"
+    refs: [skaldskaparmal, havamal]
+relations:
+  - { target: kvasir, kind: 从属, detail: 以其血酿成, refs: [skaldskaparmal] }
+  - { target: suttungr, kind: 从属, detail: 曾藏于尼特山, refs: [skaldskaparmal] }
+  - { target: gunnlod, kind: 从属, detail: 由其看守, refs: [skaldskaparmal] }
+  - { target: odin, kind: 从属, detail: 终为奥丁所得, refs: [skaldskaparmal] }

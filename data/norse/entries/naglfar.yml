@@ -1,0 +1,28 @@
+id: naglfar
+pantheon: norse
+entity_type: 器物
+name: 纳吉尔法
+name_original: "Naglfar"
+aliases: [纳格法, 指甲船]
+summary: 用死人的指甲造成的船；末日时载着巨人一方出海。
+role:
+  title: "用指甲造的船"
+  brief: "造船的材料是死人的指甲，所以凡有谁死后没剪指甲，就等于替这条船添了一块板。"
+identity:
+  lineage:
+    - { id: being, note: 以死者指甲所造，非人手打造 }
+  camp:
+    - { id: hostile }
+  realm:
+    - { id: beyond }
+narrative:
+  - text: "《欺骗古鲁菲》说，有一条船叫纳吉尔法，是诸船中最大的，用死人的指甲做成；所以人死后若不剪指甲，便是替这条船添料。"
+    refs: [gylfaginning]
+  - text: "末日来临时，它载着巨人一方渡海而来，与从陆上来的军队合势。"
+    refs: [gylfaginning]
+variants:
+  - claim: "这条船的细节主要见于《欺骗古鲁菲》：《女巫的预言》里虽写了自东方来的船与巨人一方，却没有点船名，也没说它的材料。"
+    refs: [voluspa, gylfaginning]
+relations:
+  - { target: ragnarok, kind: 从属, detail: 末日载巨人一方渡海而来, refs: [gylfaginning] }
+  - { target: loki, kind: 从属, detail: 一般认为由其掌舵, refs: [gylfaginning] }

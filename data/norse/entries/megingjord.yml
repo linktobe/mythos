@@ -1,0 +1,25 @@
+id: megingjord
+pantheon: norse
+entity_type: 器物
+name: 梅金吉奥德
+name_original: "Megingjörð"
+aliases: [力量腰带, 梅金吉尔德]
+summary: 索尔的力量腰带；一系上，他的神力便增加一半。
+role:
+  title: "一倍半的力气"
+  brief: "锤子是他的招牌，腰带才是他的底牌：系上之后，力气直接涨一半。"
+identity:
+  lineage:
+    - { id: being, note: 原典未言其来处 }
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "《欺骗古鲁菲》清点索尔的行头：三件最要紧的宝物——雷锤、力量腰带与铁手套。腰带系上，他体内的神力便增加一半。"
+    refs: [gylfaginning]
+  - text: "《诗语》列举索尔的别称时，也把这条腰带与锤、手套一并列入，视作他的标志。"
+    refs: [skaldskaparmal]
+relations:
+  - { target: thor, kind: 从属, detail: 为其所佩, refs: [gylfaginning] }
+  - { target: mjolnir, kind: 同源, detail: 同为其行头，合则成一套, refs: [gylfaginning, skaldskaparmal] }

@@ -1,0 +1,31 @@
+id: grimhildr
+pantheon: norse
+entity_type: 英雄
+name: 格里姆希尔德
+name_original: "Grímhildr"
+aliases: [格里姆希尔特]
+summary: 吉乌基之妻，贡纳尔、赫格尼与古德伦之母；以西格鲁德喝下忘川酒，使他忘了布伦希尔德。
+role:
+  title: "端酒的人"
+  brief: "她只做了一件事：把一杯酒递到齐格鲁德手里。他喝下去，忘了自己发过的誓，娶了她的女儿——整条尼伯龙根线的悲剧，从这一杯开始。"
+identity:
+  lineage: [human]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: midgard }
+narrative:
+  - text: "吉乌基之妻，贡纳尔、赫格尼、古德伦诸人的母亲。尼伯龙根家的婚配与血案，多以她的厅堂为背景。"
+    refs: [volsungasaga]
+  - text: "齐格鲁德来到他们家时，她备下一剂忘川酒。他喝下，把布伦希尔德忘得干干净净，随后娶了古德伦。"
+    refs: [brot-sigurtharkvithu, volsungasaga]
+  - text: "等布伦希尔德重提旧誓，两边的账已经对不上了。此后杀齐格鲁德、烧厅堂，都是这一杯的余波。"
+    refs: [brot-sigurtharkvithu]
+variants:
+  - claim: "忘川酒这一节，诗体埃达只保留在《齐格鲁德之歌残篇》前后的散文里，没有对应的完整诗章；故事的主体仍靠《沃尔松格萨迦》与德语传统补足。"
+    refs: [brot-sigurtharkvithu, volsungasaga]
+relations:
+  - { target: gudrun, kind: 亲缘, detail: 母女, refs: [volsungasaga] }
+  - { target: gunnar, kind: 亲缘, detail: 母子, refs: [volsungasaga] }
+  - { target: hogni, kind: 亲缘, detail: 母子, refs: [volsungasaga] }
+  - { target: sigurd, kind: 敌对, detail: 以忘川酒断其旧誓, refs: [brot-sigurtharkvithu] }

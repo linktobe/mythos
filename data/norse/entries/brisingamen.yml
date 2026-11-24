@@ -1,0 +1,28 @@
+id: brisingamen
+pantheon: norse
+entity_type: 器物
+name: 布里希嘉曼
+name_original: "Brisingamen"
+aliases: [布里辛嘉曼, 芙蕾雅项链]
+summary: 芙蕾雅佩戴的项链，出典只有《索列姆之歌》里的一句；它一被扯上，项链便迸断了。
+role:
+  title: "被扯断的项链"
+  brief: "原典给她的只有这一处描写：众神要她穿嫁衣去巨人那里，她气得发抖，项链当场崩断。"
+identity:
+  lineage:
+    - { id: being, note: 来历未详，或以为矮人所造 }
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "诸神发现雷锤被索列姆偷走，要芙蕾雅穿起嫁衣去换回。她当场发怒，怒得「诸神的厅堂都震了」，脖子上那条布里希嘉曼应声迸断。"
+    refs: [thrymskvida]
+  - text: "这是诗体埃达里它唯一一次出场：没有来历，没有打造者，也没有后续，只有这一声断裂。"
+    refs: [thrymskvida]
+variants:
+  - claim: "项链的打造、被洛基偷走、由海姆达尔夺回等情节，都属于后来的《索尔拉故事》一系，不在《诗体埃达》与《散文埃达》里；本站不收作叙事，只此一句为准。"
+    refs: [thrymskvida]
+relations:
+  - { target: freyja, kind: 从属, detail: 为其所佩, refs: [thrymskvida] }
+  - { target: thor, kind: 从属, detail: 索尔借其衣饰扮作新娘时被提起, refs: [thrymskvida] }

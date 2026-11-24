@@ -1,0 +1,28 @@
+id: hringhorni
+pantheon: norse
+entity_type: 器物
+name: 赫林格霍尔尼
+name_original: "Hringhorni"
+aliases: [赫林霍尔尼, 巴德尔葬船]
+summary: 巴德尔的葬船，诸船中最美的一艘；诸神推不动，只好从约顿海姆请女巨人赫罗金来。
+role:
+  title: "最后一艘船"
+  brief: "它出现在一场葬礼上：丈夫与妻子同船火化。船太大，诸神推不动，最后请了巨人来推。"
+identity:
+  lineage:
+    - { id: being, note: 原典未言其打造者 }
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "巴德尔死后，诸神把遗体抬上他的船赫林格霍尔尼，准备在海上火化。那是诸船中最美的一艘，可也大得推不动。"
+    refs: [gylfaginning]
+  - text: "他们只好派人去约顿海姆请女巨人赫罗金。她骑狼而来，一推之下船滚下水，底下的滚木都被压得迸出火。"
+    refs: [gylfaginning]
+  - text: "索尔举锤为火堆祝圣。船随火漂走，巴德尔与南娜一同烧在船上。"
+    refs: [gylfaginning]
+relations:
+  - { target: baldr, kind: 从属, detail: 为其葬船, refs: [gylfaginning] }
+  - { target: baldr-death, kind: 从属, detail: 葬仪所用之船, refs: [gylfaginning] }
+  - { target: hyrrokkin, kind: 从属, detail: 由其推之入水, refs: [gylfaginning] }

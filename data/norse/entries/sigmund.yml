@@ -1,0 +1,33 @@
+id: sigmund
+pantheon: norse
+entity_type: 英雄
+name: 西格蒙德
+name_original: "Sigmundr"
+aliases: [西格蒙德王]
+summary: 沃尔松格之子，从厅中树上拔出奥丁的剑；齐格鲁德之父，死于那把剑被神亲手折断。
+role:
+  title: "拔剑的人"
+  brief: "剑是神插进树里的，也是神亲手折断的。他一生的胜负都系在这一柄剑上，最后一次，剑替他挡了镰刀，碎了。"
+identity:
+  lineage: [human]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: midgard }
+narrative:
+  - text: "奥丁化作一个独眼、披斗篷的乞丐，走进沃尔松格的厅堂，把剑刺进厅中那棵大树的树干，说：谁拔得出来，剑便归谁。众人轮流上前，无人能拔，只有西格蒙德拔了出来。"
+    refs: [volsungasaga]
+  - text: "他一生仗此剑征战，生下齐格鲁德。晚年与林吉王交兵，阵前忽然来了一个独眼、戴宽边帽、手持镰刀的人，用镰刀一挡，那柄剑当场断成两截——奥丁来收回他给出去的东西了。"
+    refs: [volsungasaga]
+  - text: "他伤重将死，妻子希奥尔迪斯在尸堆里找到他。他交代的不是复仇，是那把剑的碎片：留给儿子，将来重铸。"
+    refs: [volsungasaga]
+variants:
+  - claim: "拔剑、折剑这两段只见于《沃尔松格萨迦》；诗体埃达里对应的只是《辛菲奥利之死》那几段散文梗概，细节远为简略。"
+    refs: [volsungasaga, fra-dautha-sinfjotla]
+relations:
+  - { target: volsung, kind: 亲缘, detail: 父子, refs: [volsungasaga] }
+  - { target: hjordis, kind: 婚姻, detail: 夫妻, refs: [volsungasaga] }
+  - { target: sigurd, kind: 亲缘, detail: 父子, refs: [volsungasaga] }
+  - { target: sinfjotli, kind: 亲缘, detail: 父子, refs: [volsungasaga] }
+  - { target: gram, kind: 从属, detail: 自树中拔出，死后碎片重铸为格拉姆, refs: [volsungasaga] }
+  - { target: odin, kind: 宿命, detail: 剑为其所插，亦为其所折, refs: [volsungasaga] }

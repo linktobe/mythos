@@ -1,0 +1,31 @@
+id: gjallarhorn
+pantheon: norse
+entity_type: 器物
+name: 加拉尔号角
+name_original: "Gjallarhorn"
+aliases: [加勒尔号角, 海姆达尔之角]
+summary: 海姆达尔的号角，平时藏于世界树下；末日来临时一吹，九界皆闻。
+role:
+  title: "最后一声"
+  brief: "它只响一次。响的时候，诸神知道来不及了。"
+identity:
+  lineage:
+    - { id: aesir, note: 为海姆达尔所有 }
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard, note: 平时藏于世界树下 }
+narrative:
+  - text: "守护彩虹桥的海姆达尔持有一只号角，名加拉尔。诸神与巨人都知道它的声音意味着什么。"
+    refs: [gylfaginning]
+  - text: "《女巫的预言》说，这只角平时藏在世界树下，上面有泉水灌注；到了那一天，海姆达尔才把它取出来吹响。"
+    refs: [voluspa]
+    at: { voluspa: "27" }
+  - text: "末日来时，他一吹，诸神齐聚议事，奥丁骑马去密米尔泉边问计，然后披甲出阵。"
+    refs: [gylfaginning]
+variants:
+  - claim: "号角平时放在哪里，两处说法不一：《女巫的预言》说藏在树下，《欺骗古鲁菲》只说它在海姆达尔手中，不交代存放之处。"
+    refs: [voluspa, gylfaginning]
+relations:
+  - { target: heimdallr, kind: 从属, detail: 为其所持, refs: [gylfaginning] }
+  - { target: ragnarok, kind: 从属, detail: 末日吹响，召集诸神, refs: [gylfaginning] }

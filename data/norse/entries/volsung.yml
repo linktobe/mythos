@@ -1,0 +1,26 @@
+id: volsung
+pantheon: norse
+entity_type: 英雄
+name: 沃尔松格
+name_original: "Völsungr"
+aliases: [沃尔松]
+summary: 沃尔松家族的始祖，雷里尔之子；奥丁把剑插进他厅中的大树，等家族里出能拔剑的人。
+role:
+  title: "一族的起点"
+  brief: "整条尼伯龙根线的姓氏来自他。他只留下两样东西：一棵厅中的树，和一场女儿出嫁的婚宴——剑就是在宴上插进去的。"
+identity:
+  lineage: [human]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: midgard }
+narrative:
+  - text: "雷里尔之子，子孙以他为氏，称沃尔松格家。他在厅中长着一棵大树，枝叶穿过屋顶，名为布兰斯托克。"
+    refs: [volsungasaga]
+  - text: "女儿西格妮出嫁那天，奥丁扮作乞丐走进厅来，把剑插进树干，说谁拔得出便归谁。满座无人能拔，只有他的儿子西格蒙德拔了出来。"
+    refs: [volsungasaga]
+  - text: "女婿西格吉尔为夺这柄剑，翻脸杀了他。家族的血仇从此开始，一直烧到诸神黄昏之后的尼伯龙根故事。"
+    refs: [volsungasaga]
+relations:
+  - { target: sigmund, kind: 亲缘, detail: 父子, refs: [volsungasaga] }
+  - { target: odin, kind: 宿命, detail: 剑自其厅中插入，家族由此得剑亦由此招祸, refs: [volsungasaga] }

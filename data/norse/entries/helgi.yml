@@ -1,0 +1,32 @@
+id: helgi
+pantheon: norse
+entity_type: 英雄
+name: 海尔吉
+name_original: "Helgi"
+aliases: [海尔吉·亨丁斯巴纳, 亨丁的克星]
+summary: 西格蒙德与博尔希尔德之子；与女武神希格露恩相爱，被她的兄弟达格刺杀，死后在坟冢中与她重逢一夜。
+role:
+  title: "坟里见过一面的人"
+  brief: "他是西格蒙德的长子，也是海尔吉组诗的主角。仗打完了，婚约也定了，最后死于妻子家人的一支长矛。"
+identity:
+  lineage: [human]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: midgard }
+narrative:
+  - text: "西格蒙德与博尔希尔德之子。年少即以「亨丁斯巴纳」为号，意思是亨丁一族的克星，与亨丁诸子连年交兵。"
+    refs: [helgakvida, helgakvitha-i]
+  - text: "女武神希格露恩自空中的马背上看见他，属意于他；可她父亲已把她许给了霍德布罗德。海尔吉出兵杀了霍德布罗德与她的几个兄弟。"
+    refs: [helgakvida]
+  - text: "她的兄弟达格逃过一死，当场起誓效忠。后来奥丁把自己的长矛借给达格，他在「牲栏之林」一矛刺死了海尔吉。"
+    refs: [helgakvida]
+  - text: "希格露恩在坟冢边哭到夜里，他的坟忽然开了，两人在墓中相见一夜；天亮他说该回去了。诗到这里收束，后文说她不久也死了。"
+    refs: [helgakvida]
+variants:
+  - claim: "诗末的散文说，海尔吉与希格露恩后来转生为「海尔吉·哈丁加斯卡提」与卡拉，再演一遍同样的故事——这一层只见于组诗的收尾注记。"
+    refs: [helgakvida]
+relations:
+  - { target: sigmund, kind: 亲缘, detail: 父子, refs: [helgakvida] }
+  - { target: valkyries, kind: 从属, detail: 与女武神希格露恩相爱, refs: [helgakvida] }
+  - { target: odin, kind: 宿命, detail: 其长矛借与达格，刺死海尔吉, refs: [helgakvida] }

@@ -1,0 +1,28 @@
+id: jarngreipr
+pantheon: norse
+entity_type: 器物
+name: 雅恩格利佩尔
+name_original: "Járngreipr"
+aliases: [铁手套, 雅恩格里普]
+summary: 索尔的铁手套；没有它，他握不住雷锤的柄。
+role:
+  title: "握柄的那只"
+  brief: "锤子太烫、柄太短，空手接不住。他每次挥锤，先戴这副手套。"
+identity:
+  lineage:
+    - { id: being, note: 原典未言其来处 }
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "《欺骗古鲁菲》说索尔另有一件宝物：铁手套。他用锤柄时缺不了它——锤柄太短，锤头又烫，空手根本握不住。"
+    refs: [gylfaginning]
+  - text: "《诗语》把它与锤、腰带并列，作为索尔的标志之一。"
+    refs: [skaldskaparmal]
+variants:
+  - claim: "锤柄之所以短，是因为洛基在矮人锻锤时变成苍蝇捣乱，炉火一停，柄就少了一截；手套正是为补这一截而设。"
+    refs: [skaldskaparmal]
+relations:
+  - { target: thor, kind: 从属, detail: 为其所戴, refs: [gylfaginning] }
+  - { target: mjolnir, kind: 从属, detail: 握锤柄时不可或缺, refs: [gylfaginning] }

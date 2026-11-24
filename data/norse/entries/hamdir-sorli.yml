@@ -1,0 +1,33 @@
+id: hamdir-sorli
+pantheon: norse
+entity_type: 英雄
+name: 哈姆迪尔与瑟尔利
+name_original: "Hamðir ok Sörli"
+aliases: [哈姆迪尔, 瑟尔利, 埃尔普]
+summary: 古德伦与约纳克尔之子；为报同母姊妹斯万希尔德之仇闯营行刺，途中先杀了半弟埃尔普，三人无一得还。
+role:
+  title: "复仇的最后一程"
+  brief: "母亲催他们上路，他们杀了一个不该杀的兄弟，又用石头杀不死的身体去挡石头。这是全部诗篇的最后一篇，也是古德伦这条线的终点。"
+identity:
+  lineage: [human]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: midgard }
+narrative:
+  - text: "古德伦改嫁约纳克尔之后所生的两个儿子，名为哈姆迪尔与瑟尔利；约纳克尔另有一子名埃尔普，与他们不是同母。"
+    refs: [hamthesmol]
+  - text: "同母姊妹斯万希尔德被哥特王约尔蒙雷克害死。古德伦催两个儿子去复仇，话里话说得极重，是《古德伦的催促》全篇的内容。"
+    refs: [guthrunarhvot, hamthesmol]
+  - text: "路上他们遇见埃尔普，问他若同去能帮上什么忙。他答得半吞半吐，两人觉得受了轻慢，当场把他杀了。"
+    refs: [hamthesmol]
+  - text: "到了哥特营中，他们斫去约尔蒙雷克的手脚；要取他性命时，他喊醒兵士。刀剑伤不了这两人，兵士便用石头砸，两人死在石下。"
+    refs: [hamthesmol]
+variants:
+  - claim: "埃尔普究竟说了什么，抄本残损，几乎全靠猜读。诗中兄弟杀他的理由也因此显得突然——这处残缺历来是校勘的难题。"
+    refs: [hamthesmol]
+relations:
+  - { target: gudrun, kind: 亲缘, detail: 母子, refs: [guthrunarhvot] }
+  - { target: svanhildr, kind: 亲缘, detail: 同母姊妹, refs: [guthrunarhvot] }
+  - { target: jormunrekkr, kind: 敌对, detail: 闯营行刺，被石砸死, refs: [hamthesmol] }
+  - { target: gudrun-revenge, kind: 从属, detail: 复仇的执行者, refs: [hamthesmol] }

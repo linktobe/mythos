@@ -1,0 +1,31 @@
+id: skidbladnir
+pantheon: norse
+entity_type: 器物
+name: 斯基德布拉德尼尔
+name_original: "Skíðblaðnir"
+aliases: [斯基德布拉德尼尔船, 弗雷之船]
+summary: 矮人所造的船，是诸船中最大的一艘，却可以像布一样折起来收进袋中；顺风一开，到哪里都赶得上。
+role:
+  title: "能折起来的船"
+  brief: "它同时是两件矛盾的东西：最大，也最便携。船上装得下全部神军，收起来只占一个行囊。"
+identity:
+  lineage:
+    - { id: dwarf, note: 矮人所造 }
+  camp:
+    - { id: aesir, note: 归弗雷所有 }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "洛基为赔偿希芙的头发，从矮人手里得来三件宝物：金发、冈格尼尔与这艘船。船归弗雷。"
+    refs: [skaldskaparmal]
+  - text: "《欺骗古鲁菲》说它由许多部件精巧拼成，收起来可以折成一块布，放进袋里；张开来，是诸船中最大的一艘，连全部神军都装得下。"
+    refs: [gylfaginning]
+  - text: "不论风向如何，只要把帆升起，它便能驶到目的地。"
+    refs: [gylfaginning]
+variants:
+  - claim: "它的名字直译近于「木片拼成的」，正对应「可以拆开折叠」这一点；后世图解常把它画成一艘普通长船，反而丢了这个特征。"
+    refs: [gylfaginning]
+relations:
+  - { target: freyr, kind: 从属, detail: 为其所有, refs: [skaldskaparmal] }
+  - { target: dvergar, kind: 从属, detail: 由其打造, refs: [skaldskaparmal] }
+  - { target: loki, kind: 从属, detail: 随三件宝物一并赔付希芙, refs: [skaldskaparmal] }

@@ -1,0 +1,27 @@
+id: hjordis
+pantheon: norse
+entity_type: 英雄
+name: 希奥尔迪斯
+name_original: "Hjördís"
+aliases: [约尔迪斯]
+summary: 埃利米之女，西格蒙德之妻，齐格鲁德之母；丈夫战死后带着断剑投奔阿尔夫王。
+role:
+  title: "带着碎片走的人"
+  brief: "丈夫死在战场上，剑也断了。她在尸堆里找到他，收下那两截碎片，带着未生的儿子投奔别处。"
+identity:
+  lineage: [human]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: midgard }
+narrative:
+  - text: "她是埃利米之女，嫁给西格蒙德。西格蒙德与林吉王交兵时，她的父亲埃利米也在同一阵中。"
+    refs: [volsungasaga]
+  - text: "两人都战死。战后她走过遍地尸首，找到重伤的西格蒙德；他只剩下交代遗言的气力，要她把断剑的碎片留给腹中的孩子。"
+    refs: [volsungasaga]
+  - text: "她投奔丹麦王阿尔夫，在那里生下齐格鲁德。孩子由雷金抚养长大——这层养育关系，后来变成一场杀局。"
+    refs: [volsungasaga, reginsmol]
+relations:
+  - { target: sigmund, kind: 婚姻, detail: 夫妻, refs: [volsungasaga] }
+  - { target: sigurd, kind: 亲缘, detail: 母子, refs: [volsungasaga] }
+  - { target: regin, kind: 从属, detail: 携子投奔，齐格鲁德由雷金抚养, refs: [reginsmol] }

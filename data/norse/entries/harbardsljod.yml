@@ -12,6 +12,7 @@ identity: {}
 narrative:
   - text: "索尔自约顿海姆归来，在渡口请船夫载他过河。船夫自称哈尔巴德，出言相讥，不肯撑船。"
     refs: [harbarthsljoth]
+    at: { harbarthsljoth: "1–5" }
   - text: "两人一路对骂：索尔夸耀自己杀过多少巨人，船夫则夸耀如何诱骗女子、离间君臣。"
     refs: [harbarthsljoth]
   - text: "索尔终究没能渡河，只得绕道而行。"

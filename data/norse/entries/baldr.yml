@@ -24,6 +24,7 @@ narrative:
 variants:
   - claim: 《巴德尔的梦》只写奥丁赴冥界问卜儿子之死，没有槲寄生、霍德尔等情节；该情节仅见于《欺骗古鲁菲》。
     refs: [baldrs-draumar, gylfaginning]
+    at: { baldrs-draumar: "1–14" }
 relations:
   - { target: odin, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
   - { target: frigg, kind: 亲缘, detail: 母子, refs: [gylfaginning] }

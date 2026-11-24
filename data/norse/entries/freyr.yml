@@ -21,6 +21,7 @@ narrative:
     refs: [gylfaginning, grimnismal]
   - text: 他有一柄能自行斩击的剑，后由侍从斯基尼尔携往求娶女巨人葛德；剑自此不复归他。
     refs: [skaldskaparmal, skirnismol]
+    at: { skirnismol: "8–9" }
   - text: 诸神黄昏时他因无剑在身，被火巨人苏尔特所杀。
     refs: [gylfaginning]
 variants:

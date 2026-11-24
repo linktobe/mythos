@@ -1,0 +1,28 @@
+id: thors-fishing
+pantheon: norse
+entity_type: 事件
+name: 托尔钓巨蛇
+name_original: "Ormstunga"
+aliases: [钓耶梦加得, 索尔钓鱼]
+summary: 索尔随巨人希米尔出海，用牛头做饵，把耶梦加得钓到船边；一个举锤，一个割线。
+role:
+  title: "把蛇钓上来的那一次"
+  brief: "整部神话里，索尔与耶梦加得面对面只有两次：一次在钓鱼的船上，一次在末日。第一次，是他把蛇拽上来的。"
+identity: {}
+narrative:
+  - text: "索尔与提尔去约顿海姆，向提尔之父希米尔要那口能煮众神酒的大锅。希米尔出了难题，其中一道是：先随他出海钓一趟鱼。"
+    refs: [hymiskvida]
+  - text: "希米尔只钓得两条鲸鱼；索尔却取了希米尔最壮那头牛的牛头做饵，把船划到更远处，钓线沉下去，扯上来的是耶梦加得。"
+    refs: [hymiskvida, gylfaginning]
+  - text: "蛇头破水，吐着毒气，索尔握锤要砸；希米尔吓得割断了钓线，蛇沉回海里。"
+    refs: [hymiskvida]
+  - text: "《欺骗古鲁菲》的版本是：索尔已经举锤砸在蛇头上，蛇沉下去，两人才罢手。"
+    refs: [gylfaginning]
+variants:
+  - claim: "两处结局不同：诗里是希米尔割线放走了蛇，散文里是索尔已经打中、蛇逃回海里。哪一种在先无从判断，本站两说并列。"
+    refs: [hymiskvida, gylfaginning]
+relations:
+  - { target: thor, kind: 从属, detail: 钓起巨蛇者, refs: [hymiskvida] }
+  - { target: jormungandr, kind: 从属, detail: 被钓至船边, refs: [hymiskvida, gylfaginning] }
+  - { target: hymir, kind: 从属, detail: 同船而行，割线放走巨蛇, refs: [hymiskvida] }
+  - { target: mjolnir, kind: 从属, detail: 举锤欲击, refs: [hymiskvida] }

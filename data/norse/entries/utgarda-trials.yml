@@ -1,0 +1,28 @@
+id: utgarda-trials
+pantheon: norse
+entity_type: 事件
+name: 乌特加德试炼
+name_original: "Útgarðaferð"
+aliases: [外域试炼, 索尔的三场败仗]
+summary: 索尔一行在乌特加德连输三场，出城后才知对手是野火、思想与衰老，杯子的另一头是海，猫是耶梦加得。
+role:
+  title: "输掉的三个回合"
+  brief: "这是索尔唯一一次连败：吃、跑、喝、举、摔，样样不如人。真相揭开时，他已经没有机会再试一次了。"
+identity: {}
+narrative:
+  - text: "索尔带着洛基与提亚尔菲东行，到了一座大城，城主叫乌特加德-洛基。款待之后，他提议几场比试。"
+    refs: [gylfaginning]
+  - text: "第一场比吃：洛基与一个叫罗吉的同槽进食，洛基吃到槽边，罗吉连槽带骨都吞了。第二场赛跑：提亚尔菲三次都输给一个叫胡吉的少年。"
+    refs: [gylfaginning]
+  - text: "索尔的三场是：从角杯里喝酒，杯子看着不大，三口之后还剩大半；举起一只灰猫，只抬起它一只脚；与一个老妇角力，被压得单膝跪地。"
+    refs: [gylfaginning]
+  - text: "第二天送行时，城主才说明：罗吉是野火，胡吉是思想，老妇是衰老；角杯的另一头连着大海，猫是耶梦加得。索尔怔住，举锤要打，城墙与巨人一起消失。"
+    refs: [gylfaginning]
+variants:
+  - claim: "这一整段只见于《欺骗古鲁菲》，诗体埃达没有。它把索尔的力量写成「没有极限，也没有胜算」，与诗里的索尔判然两人。"
+    refs: [gylfaginning]
+relations:
+  - { target: thor, kind: 从属, detail: 三场皆败的一方, refs: [gylfaginning] }
+  - { target: utgarda-loki, kind: 从属, detail: 设局者, refs: [gylfaginning] }
+  - { target: loki, kind: 从属, detail: 与野火比食, refs: [gylfaginning] }
+  - { target: jormungandr, kind: 从属, detail: 化装成猫被抬起一角, refs: [gylfaginning] }

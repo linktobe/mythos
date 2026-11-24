@@ -1,0 +1,28 @@
+id: hrungnir-duel
+pantheon: norse
+entity_type: 事件
+name: 与赫朗格尼尔的决斗
+name_original: "Hrungnisvíg"
+aliases: [赫朗格尼尔决斗, 石头巨人之战]
+summary: 索尔与石头巨人赫朗格尼尔在边界决斗，一锤碎其磨石棒、再碎其头；碎片留在索尔头里，巨人的腿压住他，被三岁的马格尼搬开。
+role:
+  title: "碎在头里的磨石"
+  brief: "这一战索尔赢了，却留下两样东西：一条压在他身上的腿，和一块取不出来的石片。"
+identity: {}
+narrative:
+  - text: "赫朗格尼尔与奥丁赛马，被引进阿斯加德，喝醉后在诸神面前夸口要搬走英灵殿、杀尽众神。诸神受不了，叫索尔来应战。"
+    refs: [skaldskaparmal]
+  - text: "决斗定在边界。巨人以石为头、以石为盾，武器是一根磨石棒。诸神事先用泥捏了一个巨人给他做帮手，被提亚尔菲骗得尿了裤子。"
+    refs: [skaldskaparmal]
+  - text: "提亚尔菲又骗巨人说索尔会从地下上来，他便把盾立在脚下。索尔自天而降，一锤砸碎磨石棒，碎片扎进头皮，锤势不停，正中其颅。"
+    refs: [skaldskaparmal]
+  - text: "巨人倒下，一条腿压在索尔身上。三岁的马格尼赶来把腿挪开，还说若早到一步，这一锤本可以打得更重。"
+    refs: [skaldskaparmal]
+variants:
+  - claim: "留在索尔头里的那块石片，后来要请女预言者格罗阿来取；这段收尾在《诗语》里有，与决斗本身并不同属一个场面。"
+    refs: [skaldskaparmal]
+relations:
+  - { target: thor, kind: 从属, detail: 决斗的一方，头颅中留石片, refs: [skaldskaparmal] }
+  - { target: hrungnir, kind: 从属, detail: 决斗的另一方，被锤杀, refs: [skaldskaparmal] }
+  - { target: magni-mothi, kind: 从属, detail: 搬开压住索尔的腿, refs: [skaldskaparmal] }
+  - { target: mjolnir, kind: 从属, detail: 碎磨石棒、破其颅, refs: [skaldskaparmal] }

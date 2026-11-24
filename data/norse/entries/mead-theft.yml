@@ -1,0 +1,29 @@
+id: mead-theft
+pantheon: norse
+entity_type: 事件
+name: 诗之蜜酒的取得
+name_original: "Mjöðrinn"
+aliases: [奥丁盗酒, 诗艺的来历]
+summary: 奥丁化名做工、钻通山岩、与贡露共处三夜，把诗之蜜酒喝干后化作鹰飞回阿斯加德。
+role:
+  title: "把诗偷回来的那一次"
+  brief: "诗艺不是神赐的，是偷来的：一个化名的神做了整个夏天苦工，钻透一座山，欺骗一个姑娘，再变成鸟逃掉。"
+identity: {}
+narrative:
+  - text: "诗之蜜酒藏在巨人苏图恩的尼特山岩里，由他的女儿贡露看守。苏图恩的弟弟巴乌吉缺人手，来了个自称「波尔维克」的壮汉，一人做完了九个人的活。"
+    refs: [skaldskaparmal]
+  - text: "工钱只要一口酒。巴乌吉带他去见苏图恩，被拒；两人便拿了钻子拉提去凿岩石。钻通之后，奥丁化作蛇钻了进去。"
+    refs: [skaldskaparmal]
+  - text: "他与贡露共处三夜，每夜换得一口酒，三口下去，三瓮皆空。"
+    refs: [skaldskaparmal]
+  - text: "他化鹰飞走，苏图恩也化鹰追。诸神在阿斯加德城下摆好容器，奥丁把酒吐进瓮里，只漏了一点在身后——那一点，就是会写歪诗的人分到的。"
+    refs: [skaldskaparmal]
+variants:
+  - claim: "《高者之歌》里奥丁自述此事，口气完全两样：他说自己「回报得很坏」，把那姑娘的心伤了；又说有一口酒他绝不向外人透露。同一件事，一个讲得像战功，一个讲得像亏心事。"
+    refs: [havamal]
+relations:
+  - { target: odin, kind: 从属, detail: 主其事者, refs: [skaldskaparmal] }
+  - { target: suttungr, kind: 从属, detail: 藏酒者，追之不及, refs: [skaldskaparmal] }
+  - { target: baugi, kind: 从属, detail: 被其雇工，岩壁由两人凿通, refs: [skaldskaparmal] }
+  - { target: gunnlod, kind: 从属, detail: 看守蜜酒，三夜换三口, refs: [skaldskaparmal] }
+  - { target: mead-of-poetry, kind: 从属, detail: 所窃之物, refs: [skaldskaparmal] }

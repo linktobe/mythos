@@ -1,0 +1,29 @@
+id: rebirth
+pantheon: norse
+entity_type: 事件
+name: 末日后的重生
+name_original: "Endrborinn"
+aliases: [大地重生, 新世界]
+summary: 末日之火熄灭后，大地重出海面；幸存的神回到伊达沃原，人类从利夫与利夫特拉西重新繁衍。
+role:
+  title: "烧完之后"
+  brief: "诸神黄昏不是终点。原典给每一处废墟都安排了回来的人：神回来了，人也回来了，连旧日的金棋子都在草里等着。"
+identity: {}
+narrative:
+  - text: "苏尔特尔的火烧尽之后，大地又从海里升起来，依旧青绿；瀑布奔流，鹰在崖上捕鱼。"
+    refs: [gylfaginning]
+  - text: "维达与瓦利幸存，住在昔日阿斯加德的地方；索尔的两个儿子莫迪与马格尼带着雷锤回来；巴德尔与霍德尔也从冥界归来。众神在伊达沃原重聚，说旧事，又找到当年那些金棋子。"
+    refs: [gylfaginning, voluspa]
+  - text: "人类那一边，利夫与利夫特拉西藏在赫德米米尔的林中，熬过了大火，靠晨露为食；从他们那里，新的人烟又繁盛起来。"
+    refs: [vafthrudnismal, gylfaginning]
+  - text: "《女巫的预言》末尾另有一景：一座比太阳更美的金顶大厅立在吉姆莱，义人住进去，永享安乐。"
+    refs: [voluspa]
+variants:
+  - claim: "「谁活下来」的名单，两处并不一致：《女巫的预言》把巴德尔与霍德尔的归来放在显要处，《欺骗古鲁菲》则先列维达与瓦利、索尔之子，把巴德尔放在后面。次序不同，名单大体相合。"
+    refs: [voluspa, gylfaginning]
+relations:
+  - { target: ragnarok, kind: 从属, detail: 其后事, refs: [gylfaginning] }
+  - { target: idavollr, kind: 从属, detail: 诸神重聚之地, refs: [gylfaginning] }
+  - { target: gimle, kind: 从属, detail: 义人所居的金顶厅, refs: [voluspa] }
+  - { target: humans, kind: 从属, detail: 利夫与利夫特拉西为其遗种, refs: [vafthrudnismal] }
+  - { target: magni-mothi, kind: 从属, detail: 携雷锤归来, refs: [gylfaginning] }

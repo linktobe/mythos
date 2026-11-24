@@ -1,0 +1,25 @@
+id: hjadingavig
+pantheon: norse
+entity_type: 事件
+name: 希露德之战
+name_original: "Hjaðningavíg"
+aliases: [赫加丁加之战, 永不停歇的仗]
+summary: 赫丁抢走赫格尼之女希露德，两家在岛上打了又打；希露德每夜以法术唤醒死者，这场仗至今未停。
+role:
+  title: "打不完的那一场"
+  brief: "阵亡的人夜里被唤醒，第二天照旧上阵。这不是诅咒，是她亲手做的——她既不愿父亲死，也不愿情人死。"
+identity: {}
+narrative:
+  - text: "国王赫格尼有一个女儿名希露德。赫丁王趁赫格尼外出赴会，把她掳走。赫格尼带兵追到，两家在海上的一座岛上开战。"
+    refs: [skaldskaparmal]
+  - text: "希露德夜夜施法，把白天战死的人唤醒。次日清晨，死者照旧起身厮杀，谁也没有真正死掉。"
+    refs: [skaldskaparmal]
+  - text: "这一仗一直打到现在。《诗语》解释诗歌用语时说：战斗可称「赫加丁们的风雪」，武器可称「赫加丁们的火」——典故就出在这件事上。"
+    refs: [skaldskaparmal]
+variants:
+  - claim: "这场仗的结局，原典没有交代。它是北欧材料里少见的「没有结局的故事」，也正因此成了 battle 一词的比喻来源。"
+    refs: [skaldskaparmal]
+  - claim: "此处的赫格尼是希露德之父，与《阿特利之歌》里古德伦之兄赫格尼只是同名，身世事迹全不相干。"
+    refs: [skaldskaparmal, atlakvitha]
+relations:
+  - { target: valkyries, kind: 从属, detail: 希露德为其中一位, refs: [skaldskaparmal] }

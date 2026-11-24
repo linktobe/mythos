@@ -1,0 +1,26 @@
+id: volundr-revenge
+pantheon: norse
+entity_type: 事件
+name: 沃伦德复仇
+name_original: "Völundarkviða"
+aliases: [沃伦德的报复, 匠人的复仇]
+summary: 沃伦德被尼杜德王挑断脚筋、囚在岛上打造器物；他杀其二子、污其女，造翅飞走后对国王说明一切。
+role:
+  title: "匠人的账"
+  brief: "他被弄残、被逼做工、被夺走自由。报复的方式是让那家人最珍视的东西一件件变成器物：头骨做杯，眼睛做宝石，牙齿做胸饰。"
+identity: {}
+narrative:
+  - text: "沃伦德是能工巧匠，与两个兄弟在水边得到三位天鹅少女为妻。七年后她们飞走，兄弟二人各自离岛，只他留下打铁等妻。"
+    refs: [volundarkvitha]
+  - text: "尼杜德王听说他手艺好，趁夜带人把他捉住，挑断脚筋，囚在岛上专为他打造器物。"
+    refs: [volundarkvitha]
+  - text: "他暗中报复：杀了国王的两个儿子，把他们的头骨做成杯、眼睛做成宝石、牙齿做成胸饰，送给国王一家；又使公主怀孕；日后她为了修一枚戒指还来找过他。"
+    refs: [volundarkvitha]
+  - text: "然后他造出翅膀飞走。飞在空中，对岸上的国王说出全部真相——国王再也拿他没办法。"
+    refs: [volundarkvitha]
+variants:
+  - claim: "这是《诗体埃达》里最古老的一篇，语言属于较早的层次；它的报复场面在北欧文学里也属最冷酷的一类，后世改写常把它删改或略过。"
+    refs: [volundarkvitha]
+relations:
+  - { target: volundr, kind: 从属, detail: 主其事者, refs: [volundarkvitha] }
+  - { target: valkyries, kind: 从属, detail: 三位天鹅少女为其妻与嫂, refs: [volundarkvitha] }

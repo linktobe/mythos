@@ -1,0 +1,35 @@
+id: betten
+pantheon: japanese
+entity_type: 群体
+name: 别天神五柱
+name_original: "アメノミナカヌシ ほか"
+aliases: [别天神, 造化三神]
+summary: 天地初发时最先成立的五柱独神，成坐即隐身，此后不再参与叙事。
+role:
+  title: "有名号而无事迹的第一代"
+  brief: "记纪把五柱列在卷首，随即让他们「隐身」。他们不做任何事，却是整部神代谱的起点；其中两柱日后还会换一副面目回来主事。"
+identity:
+  lineage:
+    - { id: hitorigami }
+  camp:
+    - { id: chuu, note: 此时尚无阵营可言 }
+  realm:
+    - { id: takamagahara, note: 记纪只云成于高天原 }
+narrative:
+  - text: 天地初发之时，高天原上先后成神三柱：天之御中主神、高御产巢日神、神产巢日神。三神皆为「独神」，成坐之后即隐身，不留事迹。
+    refs: [kojiki]
+    at: { kojiki: "1" }
+  - text: 其时国土尚如浮脂漂浮，又有如苇芽萌腾之物，其上再成二柱：宇摩志阿斯诃备比古迟神、天之常立神，也是独神而隐身。
+    refs: [kojiki]
+    at: { kojiki: "1" }
+  - text: 五柱合称「别天神」，与之后「神世七代」相对：前者自天而成，后者自地而生。后世又把前三柱单称「造化三神」。
+    refs: [kojiki]
+  - text: 五柱之中只有两柱后来重新登场。高御产巢日神改称「高木神」，在让国与天孙降临两事上出面主事；神产巢日神则屡次救助大国主，又遣少名毗古那下凡协力建国。
+    refs: [kojiki]
+variants:
+  - claim: 《日本书纪》不用「别天神」这一总称。卷一以国常立尊开篇，次列国狭槌尊、丰斟渟尊，与《古事记》的五柱并不相同。
+    refs: [nihonshoki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: kamiyo-nanayo, kind: 同源, detail: 皆天地初发时自生之神，唯先后不同, refs: [kojiki] }
+  - { target: amaterasu, kind: 亲缘, detail: 高御产巢日神之女嫁天照之子天忍穗耳，为天孙外祖, refs: [kojiki] }

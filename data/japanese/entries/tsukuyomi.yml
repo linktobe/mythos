@@ -1,0 +1,35 @@
+id: tsukuyomi
+pantheon: japanese
+entity_type: 神祇
+name: 月读命
+name_original: "ツクヨミノミコト"
+aliases: [月读尊, 月夜见尊]
+summary: 月神，受命治理夜之食国。记纪中事迹极少，唯一完整的情节是杀食物神而致日月分离。
+role:
+  title: "三贵子中最沉默的一位"
+  brief: "他分到的是夜，然后就没有别的事了。整部神代只给他一段情节，而那一段的后果，是太阳和月亮从此不住在一起。"
+identity:
+  lineage:
+    - { id: amatsu }
+  camp:
+    - { id: chuu, note: 本与天照同住高天原，因杀食物神而决裂 }
+  realm:
+    - { id: takamagahara, note: 受命治夜之食国 }
+narrative:
+  - text: 伊邪那岐洗右眼而生，受命治理「夜之食国」。除此之外，记纪几乎没有给他独立的情节。
+    refs: [kojiki]
+    at: { kojiki: "10–11" }
+  - text: 据《日本书纪》，他曾奉天照之命去见保食神。保食神从口、鼻、尻取出食物奉上，他以为污秽，怒而斩之。
+    refs: [nihonshoki]
+    at: { nihonshoki: "卷一" }
+  - text: 保食神死后，头生蚕，眼生稻，耳生粟，鼻生小豆，阴生麦，尻生大豆。天照取其种，是为五谷之始；她因此与之决裂，日月自此分居。
+    refs: [nihonshoki]
+    at: { nihonshoki: "卷一" }
+variants:
+  - claim: 《古事记》没有把这件事记在月读名下。同样「食物神被杀、五谷自尸身而生」的情节，在《古事记》里动手的是须佐之男，被杀的是大气津比卖神，也没有因此牵连日月。
+    refs: [kojiki, nihonshoki]
+relations:
+  - { target: amaterasu, kind: 亲缘, detail: 姐弟, refs: [kojiki] }
+  - { target: amaterasu, kind: 敌对, detail: 五谷之事后决裂，日月分居, refs: [nihonshoki] }
+legacy:
+  - "后世把他与月、潮汐、历法相联系；京都松尾大社、伊势月读宫等以他为祭神，但关于他的传说始终稀少。"

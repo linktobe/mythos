@@ -66,15 +66,15 @@
 - id: japanese
   zh: 日本神话
   en: Japanese
-  status: planned
+  status: live
   accent: '#7a5a86'
-  description: 以《古事记》《日本书纪》为主干。
+  description: 以《古事记》《日本书纪》为主干。异传并列，各著出处。
   tier_note:
     T0: 古事记、日本书纪
-    T1: 古语拾遗、先代旧事本纪等
-  # 八百万神不强调「界」，只启用两轴
-  axes: [lineage, camp]
-  relation_kinds: [亲缘, 从属, 敌对, 宿命, 分灵, 御灵, 化生, 同源]
+    T1: 出云国风土记、古语拾遗、先代旧事本纪、延喜式祝词等古代记录与整理
+  # 记纪的三层空间（高天原／苇原中国／黄泉）比北欧还清楚，故三轴全开。
+  axes: [lineage, camp, realm]
+  relation_kinds: [亲缘, 婚姻, 从属, 敌对, 宿命, 分灵, 御灵, 化生, 同源]
   graph_center: amaterasu
   sections:
     - key: entry
@@ -82,18 +82,30 @@
       desc: 记纪所载诸神
       route: ''
       types: [神祇]
-    - key: heroes
-      label: 英雄
-      desc: 人神之间的行动者
-      route: yingxiong
-      types: [英雄]
-    - key: monsters
-      label: 妖怪
-      desc: 不与神同列的另一类
-      route: yaoguai
-      types: [妖怪]
+    - key: group
+      label: 群体
+      desc: 别天神、神世七代与诸神之群
+      route: qun
+      types: [群体]
+    - key: object
+      label: 器物
+      desc: 神器与诸宝
+      route: qi
+      types: [器物]
+    - key: place
+      label: 地区
+      desc: 高天原、苇原中国与黄泉
+      route: di
+      types: [地区]
+    - key: event
+      label: 事件
+      desc: 从国生み到让国
+      route: shi
+      types: [事件]
   order:
-    event: []
+    group: [betten, kamiyo-nanayo]
+    place: [takamagahara, ashihara, yomi]
+    event: [kuniumi, kamiumi, yomi-visit, misogi, amano-iwato]
 
 - id: greco-roman
   zh: 古希腊罗马神话

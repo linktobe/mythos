@@ -1,0 +1,33 @@
+id: amano-iwato
+pantheon: japanese
+entity_type: 事件
+name: 天岩屋户
+name_original: "アマノイワヤド"
+aliases: [天岩户, 天石屋户]
+summary: 天照因须佐之男作乱而闭居天石屋户，天地成夜；八百万神以镜、玉与舞诱其出户，日光复归。
+role:
+  title: "太阳躲起来的那一次"
+  brief: "一场由兄弟纠纷引起的日蚀。诸神没有砸门，而是造镜、造玉、唱歌跳舞——把神道最核心的几件法器，全都归到这一次事件上。"
+identity: {}
+narrative:
+  - text: 须佐之男毁田埂、填沟渠、于新殿之上便溺，又惊死织女。天照惧而入天石屋户，高天原与苇原中国同时成夜。
+    refs: [kojiki]
+    at: { kojiki: "16" }
+  - text: 八百万神聚于天安河。思金神设策：聚长鸣鸟使鸣，取天安河上游之坚石与天金山之铁，命伊斯许理度卖铸造八咫镜；命玉祖命造八尺琼勾玉；命天儿屋命与布刀玉命取鹿肩骨、天香山之雄鹿皮以占卜。
+    refs: [kojiki]
+    at: { kojiki: "16" }
+  - text: 天宇受卖命把桶倒扣在地，踏之起舞，袒露胸乳，裙带垂至下体，八百万神大笑。天照在户内听得奇怪，稍开户窥视，天手力男神乘势拉出，布刀玉命以尻久米绳封住户门。
+    refs: [kojiki]
+    at: { kojiki: "16" }
+  - text: 天地复明。此事的镜、玉、绳与舞，后世分别被追认为神镜、勾玉、注连绳与神乐的原型。
+    refs: [kojiki]
+    at: { kojiki: "16" }
+variants:
+  - claim: 《日本书纪》卷一亦记此事而并列数种异传：诱出之法或用镜、或用玉、或令众神作乐，细节与《古事记》多有出入。
+    refs: [nihonshoki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: amaterasu, kind: 从属, detail: 其事即以她为主角, refs: [kojiki] }
+  - { target: susanoo, kind: 从属, detail: 因他作乱而起, refs: [kojiki] }
+legacy:
+  - "注连绳与神乐舞的起源常被追溯至此；《古事记》未言其象征意义，后世的解释则层层叠加。"

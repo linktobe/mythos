@@ -1,0 +1,61 @@
+# 族（血统 / 从何而来）
+#
+# 记纪本身用「天津神／国津神」二分，但那是天孙降临之后的政治分类：
+# 二神「神生み」所出的海神、山神、风神既不属高天原，也不属出云。
+# 本表把它们单列一类，宁可多一格，也不把这批神硬塞进二分法里。
+
+- id: hitorigami
+  zh: 独神
+  en: Hitorigami
+  pantheon: japanese
+  parent: kami
+  note: 无父母、独自成坐而隐身的神。别天神五柱与神世七代的前二代属此类。
+
+- id: shinsei
+  zh: 神世七代
+  en: Seven Divine Generations
+  pantheon: japanese
+  parent: kami
+  note: 天地初发之后、国土成形之前的七代。前二代为独神，后五代各为一对男女神；伊邪那岐与伊邪那美是第七代。
+
+- id: kamiumi
+  zh: 神生诸神
+  en: Kami Born of the First Pair
+  pantheon: japanese
+  parent: kami
+  note: 伊邪那岐、伊邪那美「神生み」所出者——海、河、风、木、山、野、火诸神。非天津亦非国津。
+
+- id: amatsu
+  zh: 天津神
+  en: Amatsukami
+  pantheon: japanese
+  parent: kami
+  note: 高天原系。本表指伊邪那岐禊祓时所生三贵子及其后裔，含以「天」为名诸神。
+
+- id: kunitsu
+  zh: 国津神
+  en: Kunitsukami
+  pantheon: japanese
+  parent: kami
+  note: 苇原中国系。主体是须佐之男以下出云诸神；让国后归天津神所治，仍掌幽界。
+
+- id: tenson
+  zh: 皇统
+  en: Imperial Line
+  pantheon: japanese
+  parent: mortal
+  note: 天孙以下的人间王统。神武以后记纪转入人代，此表即人神之分界。
+
+# ── 上层归类（abstract，只作 parent 的落点，不能写进词条的 identity）──
+
+- id: kami
+  zh: 神
+  en: Kami
+  pantheon: japanese
+  abstract: true
+
+- id: mortal
+  zh: 人
+  en: Mortal
+  pantheon: japanese
+  abstract: true

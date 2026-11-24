@@ -2,12 +2,12 @@
 import Base from '../layouts/Base.astro';
 import { pantheons, totals, livePantheons, systems, entryHref } from '../lib/content';
 
-// 速览：各体系取前几条，凑够 8 条
+// 速览：各体系各取几条，凑够 8 条（体系多了就轮着来，不让一套占满）
 const preview = [];
+const perPantheon = Math.max(1, Math.ceil(8 / Math.max(1, livePantheons.length)));
 for (const p of livePantheons) {
   const sys = systems[p.id];
-  for (const e of (sys?.entries ?? []).slice(0, 8)) {
-    if (preview.length >= 8) break;
+  for (const e of (sys?.entries ?? []).slice(0, perPantheon)) {
     preview.push({ ...e, pantheon: p.id, pantheonZh: p.zh });
   }
 }
@@ -57,7 +57,7 @@ for (const p of livePantheons) {
         preview.map((e, i) => (
           <a class="card reveal" style={`--d:${i * 45}ms`} href={entryHref(e.pantheon, e.id)}>
             <div class="name">
-              {e.name}
+              <span class="n">{e.name}</span>
               <span class="alias">{e.name_original}</span>
             </div>
             <div class="desc">{e.summary}</div>

@@ -1,0 +1,39 @@
+id: kamiyo-nanayo
+pantheon: japanese
+entity_type: 群体
+name: 神世七代
+name_original: "カミヨナナヨ"
+aliases: [神代七代]
+summary: 别天神之后、国土成形之前的七代神；前二代为独神，后五代皆为男女成对，伊邪那岐与伊邪那美是第七代。
+role:
+  title: "从「有名号」到「有事迹」的过渡带"
+  brief: "七代之中前六代只是名字，没有故事。到第七代，神开口说话、绕柱成婚、动手造国——叙事从这一代才真正开始。"
+identity:
+  lineage:
+    - { id: shinsei }
+    - { id: hitorigami, note: 前二代 }
+  camp:
+    - { id: chuu, note: 二神降世前不分阵营 }
+  realm:
+    - { id: takamagahara, note: 前二代成于高天原 }
+    - { id: ashihara, note: 第七代降于淤能碁吕岛 }
+narrative:
+  - text: 别天神之后，又相继成神：国之常立神、丰云野神。二柱也是独神，成坐而隐身。
+    refs: [kojiki]
+    at: { kojiki: "2" }
+  - text: 其后五代皆为一对兄妹：宇比地迩与须比智迩、角杙与活杙、意富斗能地与大斗乃弁、於母陀流与阿夜诃志古泥、伊邪那岐与伊邪那美。
+    refs: [kojiki]
+    at: { kojiki: "2" }
+  - text: 自国之常立神至伊邪那岐、伊邪那美，凡十二柱，合称「神世七代」：前二代各计一代，后五代成对，各作一代。
+    refs: [kojiki]
+    at: { kojiki: "2" }
+  - text: 前六代除名号之外无事可述。到第七代，天神命二神「修理固成」那漂浮未定的国土，后面的全部叙事才由此展开。
+    refs: [kojiki]
+    at: { kojiki: "2" }
+variants:
+  - claim: 《日本书纪》卷一同样列七代，名号却不同：作国常立尊、国狭槌尊、丰斟渟尊，其后为泥土煮尊与沙土煮尊等，末代作「伊奘諾尊・伊奘冉尊」。
+    refs: [nihonshoki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: izanagi, kind: 亲缘, detail: 第七代, refs: [kojiki] }
+  - { target: izanami, kind: 亲缘, detail: 第七代, refs: [kojiki] }

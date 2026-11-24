@@ -1,0 +1,39 @@
+id: sanshu-no-jingi
+pantheon: japanese
+entity_type: 器物
+name: 三神器
+name_original: "サンシュノジンギ"
+aliases: [三种神器, 镜剑玉]
+summary: 八咫镜、天丛云剑、八尺琼勾玉。天孙降临之际由天照授予，为皇权正统之证。
+role:
+  title: "三件来历各不相同的东西，被凑成一个整体"
+  brief: "镜出自天岩屋户的骗局，玉出自姐弟的誓约，剑出自一条蛇的尾巴。三者本是三件事的纪念品，直到天孙下凡才被捆成一束。"
+identity:
+  lineage:
+    - { id: amatsu, note: 镜为伊斯许理度卖所铸，玉出于誓约，剑取自大蛇之尾 }
+  camp:
+    - { id: takama }
+  realm:
+    - { id: ashihara, note: 今分奉伊势神宫、热田神宫与皇居 }
+narrative:
+  - text: 八咫镜：天岩屋户之变时，伊斯许理度卖命奉思金神之命所铸，悬于户前，用以诱天照出户。
+    refs: [kojiki]
+    at: { kojiki: "16" }
+  - text: 八尺琼勾玉：出于天照与须佐之男隔天安河立誓之时所用的勾玉；记纪未明言其造者，后世多以玉祖命当之。
+    refs: [kojiki]
+    at: { kojiki: "13" }
+  - text: 天丛云剑：《古事记》作都牟刈之大刀，又名草那艺之大刀。须佐之男斩八岐大蛇，于尾中所得，献于天照。
+    refs: [kojiki]
+    at: { kojiki: "18" }
+  - text: 天孙降临之际，天照把三者一并授予琼琼杵尊，命其永以为皇位之证。此即「三神器」之名的由来。
+    refs: [kojiki]
+    at: { kojiki: "33" }
+variants:
+  - claim: 「天丛云剑」之名出自《日本书纪》，《古事记》称都牟刈之大刀；今日通行的「草薙剑」又是另一种写法。同一柄剑在记纪中三个名字并存，随引用对象而变。
+    refs: [kojiki, nihonshoki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: amaterasu, kind: 从属, detail: 由她授予天孙, refs: [kojiki] }
+  - { target: susanoo, kind: 从属, detail: 剑由他取自大蛇之尾, refs: [kojiki] }
+legacy:
+  - "八咫镜奉于伊势神宫内宫，天丛云剑奉于尾张热田神宫，八尺琼勾玉存于皇居——三件分置三地，从未同处一室。"

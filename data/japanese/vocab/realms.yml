@@ -1,0 +1,46 @@
+# 界（居所 / 从哪里来）
+#
+# 记纪的空间是垂直的：高天原在上，苇原中国在中，黄泉在下；
+# 另有一支横出的「常世」与「根之坚洲国」，性质与黄泉并不相同。
+
+- id: takamagahara
+  zh: 高天原
+  en: Takamagahara
+  pantheon: japanese
+  note: 天神所居之界。天照受命治此，天岩屋户、誓约、让国诸议皆在此发生。
+
+- id: ashihara
+  zh: 苇原中国
+  en: Ashihara-no-Nakatsukuni
+  pantheon: japanese
+  note: 人间国土，即日本列岛。先由大国主开拓，让国后归天孙所治。
+
+- id: yomi
+  zh: 黄泉国
+  en: Yomi-no-Kuni
+  pantheon: japanese
+  note: 死者之国，污秽所出。伊邪那美葬于出云与伯耆交界之比婆山，其神归此。
+
+- id: ne
+  zh: 根之坚洲国
+  en: Ne-no-Katasukuni
+  pantheon: japanese
+  note: 须佐之男所称「亡母之国」，与黄泉相邻而不等同；大国主亦曾赴此求妻。
+
+- id: tokoyo
+  zh: 常世
+  en: Tokoyo
+  pantheon: japanese
+  note: 海外的永久之国。少名毗古那神由此来、亦由此去。
+
+- id: watatsumi
+  zh: 海神之宫
+  en: Palace of the Sea Deity
+  pantheon: japanese
+  note: 绵津见神所居的海底宫室，山幸彦曾至此。
+
+- id: beyond
+  zh: 界外 / 未定
+  en: Beyond
+  pantheon: japanese
+  note: 不属任何一界，或原典未明言者。

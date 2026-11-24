@@ -1,0 +1,57 @@
+id: izanagi
+pantheon: japanese
+entity_type: 神祇
+name: 伊邪那岐命
+name_original: "イザナギノミコト"
+aliases: [伊奘诺尊, 伊弉諾尊]
+summary: 与妹伊邪那美共同生下日本列岛与诸神，在黄泉失去妻子，归来行禊祓，生出天照、月读与须佐之男。
+role:
+  title: "国土的父神"
+  brief: "他一生只做三件事：造国、失妻、洗身。前两件让日本有了土地与死亡，第三件生出天照——整部神代都从他这一洗开始。"
+identity:
+  lineage:
+    - { id: shinsei }
+  camp:
+    - { id: chuu, note: 二神决裂后独居，不入任何一方 }
+  realm:
+    - { id: ashihara, note: 后隐于淡路之多贺 }
+narrative:
+  - text: 神世七代最末一代，与妹伊邪那美受天神之命，立于天浮桥，以天沼矛搅动海水；矛尖滴下的盐水凝成一岛，即淤能碁吕岛。二神降于其上，立天之御柱，造八寻殿。
+    refs: [kojiki]
+    at: { kojiki: "3" }
+  - text: 二神绕柱而行，相遇成婚。初由女神先开口，所生水蛭子与淡岛皆不良；改由男神先言，才依次生下淡路、伊豫二名、隐岐三子、筑紫、壹岐、对马、佐渡、大倭丰秋津等大八岛，又生吉备儿岛等六岛，共十四岛。
+    refs: [kojiki]
+    at: { kojiki: "4–5" }
+  - text: 继而「神生み」，生海神大绵津见、水户神速秋津日子与比卖、风神志那都比古、木神久久能智、山神大山津见、野神鹿屋野比卖、天鸟船神等；最后生火神迦具土，伊邪那美因此被灼。
+    refs: [kojiki]
+    at: { kojiki: "6" }
+  - text: 他斩迦具土，追往黄泉。伊邪那美嘱他不得窥看，他久候不耐，折下梳齿点火一照，见她腐身之上伏着八雷神，仓皇逃出；黄泉丑女、八雷神与黄泉军轮番追赶，他以桃击退，最后以千引石堵住黄泉比良坂，隔石与妻子立誓，生死自此分离。
+    refs: [kojiki]
+    at: { kojiki: "8–9" }
+  - text: 归来后在筑紫日向之阿波岐原行禊祓：投弃杖、带、衣、裤，各化生一神；身上污秽化为八十祸津日神等，矫正之力化为神直毗、大直毗、伊豆能卖三神；洗左眼得天照，洗右眼得月读，洗鼻得须佐之男。
+    refs: [kojiki]
+    at: { kojiki: "10" }
+  - text: 他把高天原交给天照、夜之食国交给月读、海原交给须佐之男，随即退隐，居淡路之多贺，此后再不登场。
+    refs: [kojiki]
+    at: { kojiki: "11" }
+variants:
+  - claim: 《日本书纪》卷一记三贵子之生，次序与《古事记》相同，但在同处并列「一书曰」数种异说：有以镜为神体者，有以玉为神体者，所生次序亦不一。
+    refs: [nihonshoki]
+    at: { nihonshoki: "卷一" }
+weapons:
+  - name: 天沼矛
+    name_original: "アメノヌボコ"
+    note: 与伊邪那美共同用以搅海造岛之矛，又名天之琼矛。矛尖滴下的盐水凝成淤能碁吕岛。
+    refs: [kojiki]
+  - name: 十拳剑
+    name_original: "アメノヲハバリ"
+    note: 斩迦具土之剑，别名天之尾羽张、伊都之尾羽张，长十握，故名。
+    refs: [kojiki]
+relations:
+  - { target: izanami, kind: 婚姻, detail: 既是兄妹，也是夫妻, refs: [kojiki] }
+  - { target: amaterasu, kind: 亲缘, detail: 父女，洗左眼所生, refs: [kojiki] }
+  - { target: tsukuyomi, kind: 亲缘, detail: 父子，洗右眼所生, refs: [kojiki] }
+  - { target: susanoo, kind: 亲缘, detail: 父子，洗鼻所生, refs: [kojiki] }
+  - { target: kagutsuchi, kind: 亲缘, detail: 父子，为其所斩, refs: [kojiki] }
+legacy:
+  - "禊祓成为神道洁净观的原型：后世神社祭祀中的「祓」，追认的源头就是他这一洗。"

@@ -55,10 +55,46 @@ const collectAt = (at: any) => {
 };
 entry.narrative.forEach((n: any) => collectAt(n.at));
 entry.variants.forEach((n: any) => collectAt(n.at));
+// 节次单位：sources.yml 的 unit 决定显示成「第 7 段」还是「卷一」
+const unitOf = (id: string) => {
+  const u = srcById.get(id)?.unit;
+  return u === '' ? '' : (u ?? '节');
+};
+// 同一来源的多条 at（如 10–12、13–14、17）合并为连续区间，避免堆成一长串
+const expandAt = (v: string): number[] => {
+  const out: number[] = [];
+  for (const part of v.split(/[、,，]/)) {
+    const s = part.trim();
+    const m = s.match(/^(\d+)\s*[–—\-~～]\s*(\d+)$/);
+    if (m) for (let i = Number(m[1]); i <= Number(m[2]); i++) out.push(i);
+    else if (/^\d+$/.test(s)) out.push(Number(s));
+  }
+  return out;
+};
+const fmtAt = (list: string[]) => {
+  const per = list.map(expandAt);
+  if (per.some((n) => n.length === 0)) return list.join('、');
+  const nums = [...new Set(per.flat())].sort((a, b) => a - b);
+  const parts: string[] = [];
+  let start = nums[0];
+  let prev = nums[0];
+  for (const n of nums.slice(1)) {
+    if (n === prev + 1) {
+      prev = n;
+      continue;
+    }
+    parts.push(start === prev ? `${start}` : `${start}–${prev}`);
+    start = n;
+    prev = n;
+  }
+  parts.push(start === prev ? `${start}` : `${start}–${prev}`);
+  return parts.join('、');
+};
 const atTitle = (id: string, at: any) => {
   const span = at?.[id];
   if (!span) return undefined;
-  return `${srcById.get(id)?.title ?? id} 第 ${span} 节`;
+  const u = unitOf(id);
+  return u ? `${srcById.get(id)?.title ?? id} 第 ${span} ${u}` : `${srcById.get(id)?.title ?? id} ${span}`;
 };
 
 // 关系按类型分组
@@ -321,7 +357,13 @@ const crumbs = [
             <strong>{s.title}</strong>（{s.original}）
             <span class="meta">
               {s.work} · {s.date}{s.author ? ` · ${s.author}` : ''}
-              {atBySrc.get(id) && <span class="at">第 {atBySrc.get(id)!.join('、')} 节</span>}　
+              {atBySrc.get(id) && (
+                <span class="at">
+                  {unitOf(id)
+                    ? `第 ${fmtAt(atBySrc.get(id)!)} ${unitOf(id)}`
+                    : fmtAt(atBySrc.get(id)!)}
+                </span>
+              )}　
               {s.url && <a href={s.url} rel="noopener noreferrer" target="_blank">核对原文 ↗</a>}
             </span>
           </li>

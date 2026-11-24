@@ -1,0 +1,41 @@
+id: yomi
+pantheon: japanese
+entity_type: 地区
+name: 黄泉国
+name_original: "ヨミノクニ"
+aliases: [黄泉, 黄泉之国, 根之国]
+summary: 死者之国。伊邪那美神避后归此，八雷神伏于其腐身；千引石封住黄泉比良坂之后，生与死自此分界。
+role:
+  title: "死亡这一边的地界"
+  brief: "它不是地狱，没有刑罚，只有腐坏与追逼。真正的分界不在那里，而在黄泉比良坂那块石头——石头之后，死者不能上来，生者不能下去。"
+identity:
+  lineage:
+    - { id: shinsei, note: 伊邪那美归此 }
+  camp:
+    - { id: yomi }
+  realm:
+    - { id: yomi }
+narrative:
+  - text: 伊邪那美神避之后，伊邪那岐追至此地，求她同返。她已食过黄泉之灶，须先与黄泉诸神商议，嘱他不得窥看。
+    refs: [kojiki]
+    at: { kojiki: "9" }
+  - text: 他久候不耐，折下梳齿点火窥视，见她腐身蛆聚，八雷神伏于其上：头有大雷，胸有火雷，四肢各有其雷，共八柱。她怒而遣黄泉丑女追击。
+    refs: [kojiki]
+    at: { kojiki: "9" }
+  - text: 丑女之后是八雷神与千五百黄泉军。伊邪那岐以黑御鬘化为山葡萄、以梳化为竹笋拖延追兵，又取三枚桃子击退众军，逃至黄泉比良坂。
+    refs: [kojiki]
+    at: { kojiki: "9" }
+  - text: 他以千引石塞住坂口，与妻子隔石立誓：一日千人死，一日千五百人生。此坂即今出云之伊赋夜坂。
+    refs: [kojiki]
+    at: { kojiki: "9" }
+variants:
+  - claim: 「黄泉国」与须佐之男所称的「根之坚洲国」是否同一地，记纪皆未明说，学界也有两说。后世常把二者合称「根之国」，是把两处地名并作一处的做法。
+    refs: [kojiki]
+  - claim: 《日本书纪》卷一记此事，多作「泉」或「根之国」，追及之处与石头之名诸本互有出入。
+    refs: [nihonshoki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: izanami, kind: 从属, detail: 黄泉津大神镇此, refs: [kojiki] }
+  - { target: izanagi, kind: 从属, detail: 他曾入此、又自比良坂逃出, refs: [kojiki] }
+legacy:
+  - "「黄泉」一词后世泛指死后世界；《古事记》以桃子驱鬼一节，被认为是桃木辟邪习俗的由来。"

@@ -74,7 +74,7 @@ const facets = (e: any) => {
     items.map((e: any, i: number) => (
       <a class="card reveal" style={`--d:${i * 45}ms`} href={`/${pantheonId}/entry/${e.id}/`} data-f={facets(e)}>
         <div class="name">
-          {e.name}
+          <span class="n">{e.name}</span>
           <span class="alias">{e.name_original}</span>
         </div>
         <div class="desc">{e.summary}</div>

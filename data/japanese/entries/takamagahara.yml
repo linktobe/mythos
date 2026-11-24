@@ -1,0 +1,33 @@
+id: takamagahara
+pantheon: japanese
+entity_type: 地区
+name: 高天原
+name_original: "タカマガハラ"
+aliases: [高天原, 天]
+summary: 天神所居之界。天照受命治此；别天神成于此，天安河誓约、天岩屋户之议与让国的诸次派遣也在此决定。
+role:
+  title: "发号施令的那一层"
+  brief: "整部神代的决定都在这里做出，事却多半发生在下面。高天原不是一个可以走去的地方，是一个位置——谁能在这里议事，谁就是天津神。"
+identity:
+  lineage:
+    - { id: amatsu, note: 天神所居 }
+  camp:
+    - { id: takama }
+  realm:
+    - { id: takamagahara }
+narrative:
+  - text: 天地初发之时，别天神五柱即于此界成坐而隐身；其后神世七代的前二代也成于此。
+    refs: [kojiki]
+    at: { kojiki: "1–2" }
+  - text: 伊邪那岐禊祓之后，把此界交给天照治理，自己退隐淡路。
+    refs: [kojiki]
+    at: { kojiki: "11" }
+  - text: 天安河畔有誓约，天石屋户前有神议，让国诸事也在此多次遣使——记纪把高天原同时用作会场与王座。
+    refs: [kojiki]
+    at: { kojiki: "13–16、30" }
+  - text: 须佐之男被逐之后，此界成为天津神独占之所，与下方的苇原中国相对；「天」与「地」的分野自此定下。
+    refs: [kojiki]
+    at: { kojiki: "17" }
+relations:
+  - { target: amaterasu, kind: 从属, detail: 受命治理此界, refs: [kojiki] }
+  - { target: ashihara, kind: 同源, detail: 上下二层，同属记纪的空间结构, refs: [kojiki] }

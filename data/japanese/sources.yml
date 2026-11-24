@@ -1,1 +1,142 @@
-# 日本神话词条（尚未开始，条目写入 entries/NN-id.yml）
+# 原典登记表（日本）
+# tier: T0 = 原典（记纪）；T1 = 古代记录与整理（风土记、古语拾遗等）；
+#       T2 = 后世重述（中世神道说、近世国学）；T3 = 现代改编。
+#
+# unit 字段 = 「节次」的单位词，用于生成「第 N 段」「卷一」这类标注。
+#   unit: 段  → 显示为「第 11 段」
+#   unit: ''  → 不套「第/节」，at 值本身自带单位（如「卷一」）
+#   省略      → 默认「节」
+#
+# 古事记引文的段号依 Chamberlain 译本的分段（Section I–CLXXX），
+# 卷上为 Section I–XLIII；汉文原本无此分段，故以译本段号为准。
+# 日本书纪引文以「卷」为单位，卷一、卷二为神代。
+
+- id: kojiki
+  pantheon: japanese
+  tier: T0
+  title: 古事记
+  original: 古事記
+  work: 古事记
+  work_original: Kojiki
+  date: 712 年
+  author: 太安万侣 撰，稗田阿礼 诵习
+  lang: 汉文（变体汉文）
+  unit: 段
+  url: https://sacred-texts.com/book/the-kojiki-2
+  note: 三卷。上卷为神代，即本编主干；中卷神武至应神，下卷仁德至推古。段号见上方说明。
+
+- id: nihonshoki
+  pantheon: japanese
+  tier: T0
+  title: 日本书纪
+  original: 日本書紀
+  work: 日本书纪
+  work_original: Nihon Shoki
+  date: 720 年
+  author: 舍人亲王 等
+  lang: 汉文
+  unit: ''
+  url: https://zh.wikisource.org/wiki/日本書紀/卷第一
+  note: 三十卷。卷一、卷二为神代。与《古事记》最大的不同是逐条并列「一书曰」的异传，同一事常有三四种说法。
+
+- id: izumo-fudoki
+  pantheon: japanese
+  tier: T1
+  title: 出云国风土记
+  original: 出雲国風土記
+  work: 风土记
+  work_original: Fudoki
+  date: 733 年
+  author: 出云臣广嶋
+  lang: 汉文
+  unit: ''
+  note: 各国风土记中唯一几乎完整传世者。记出云郡乡山川与地名由来，须佐之男、大国主诸事与记纪可互补。
+
+- id: kogoshui
+  pantheon: japanese
+  tier: T1
+  title: 古语拾遗
+  original: 古語拾遺
+  work: 古语拾遗
+  work_original: Kogoshūi
+  date: 807 年
+  author: 斋部广成
+  lang: 汉文
+  unit: ''
+  note: 为斋部氏争祭祀之权而作，故详于忌部一系的传说，可补记纪所略。
+
+- id: kujiki
+  pantheon: japanese
+  tier: T1
+  title: 先代旧事本纪
+  original: 先代旧事本紀
+  work: 先代旧事本纪
+  work_original: Sendai Kuji Hongi
+  date: 编纂年代存疑（今本约 9 世纪）
+  lang: 汉文
+  unit: ''
+  note: 旧题圣德太子、苏我马子撰，实为后世托名之作。卷三「天神本纪」、卷四「地祇本纪」保存了记纪之外的谱系。
+
+- id: engishiki
+  pantheon: japanese
+  tier: T1
+  title: 延喜式
+  original: 延喜式
+  work: 延喜式
+  work_original: Engishiki
+  date: 927 年
+  lang: 汉文
+  unit: ''
+  note: 卷八收祝词（norito），是现存最古的一批祭祀用语，可与记纪叙事对照。
+
+- id: nihon-ryoiki
+  pantheon: japanese
+  tier: T2
+  title: 日本灵异记
+  original: 日本霊異記
+  work: 日本灵异记
+  work_original: Nihon Ryōiki
+  date: 822 年
+  author: 景戒
+  lang: 汉文
+  unit: ''
+  note: 佛教说话集。神代故事在其中被改写成因果报应的例子，是「重述」而非「原典」。
+
+- id: jinnoshotoki
+  pantheon: japanese
+  tier: T2
+  title: 神皇正统记
+  original: 神皇正統記
+  work: 神皇正统记
+  work_original: Jinnō Shōtōki
+  date: 1339 年
+  author: 北畠亲房
+  lang: 汉文
+  unit: ''
+  note: 南朝正统论的史书，把记纪神代纳入「神器正统」框架，后世天皇观多据此。
+
+- id: kojikiden
+  pantheon: japanese
+  tier: T2
+  title: 古事记传
+  original: 古事記傳
+  work: 古事记传
+  work_original: Kojiki-den
+  date: 1798 年成书
+  author: 本居宣长
+  lang: 日文
+  unit: ''
+  note: 近世国学的集大成注疏，主张以「古意」读记纪、排斥佛儒解释；今日许多通行读法出自此书。
+
+- id: okami
+  pantheon: japanese
+  tier: T3
+  title: 《大神》
+  original: 大神
+  work: 大神
+  work_original: Ōkami
+  date: 2006 年
+  author: Capcom
+  lang: 日文
+  unit: ''
+  note: 以天照为白狼、以笔代剑的动作游戏。神代诸神多被改写成妖怪与土地神。

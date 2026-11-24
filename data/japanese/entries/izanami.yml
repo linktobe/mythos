@@ -1,0 +1,42 @@
+id: izanami
+pantheon: japanese
+entity_type: 神祇
+name: 伊邪那美命
+name_original: "イザナミノミコト"
+aliases: [伊奘冉尊, 伊弉冉尊, 黄泉津大神]
+summary: 生火神时被灼而死，成为黄泉之主；与丈夫隔石立誓，定下每日千人死的定数。
+role:
+  title: "国土之母，也是最初的死者"
+  brief: "她的死是全篇第一起死亡，也是「秽」的来源。此后她不再是生育之神，而是黄泉津大神——管死亡的那一位。"
+identity:
+  lineage:
+    - { id: shinsei }
+  camp:
+    - { id: yomi, note: 神避之后归黄泉 }
+  realm:
+    - { id: yomi }
+    - { id: ashihara, note: 葬于出云与伯耆交界之比婆山 }
+narrative:
+  - text: 与兄伊邪那岐绕柱成婚，共生十四岛、三十五柱神。生火神迦具土时被灼，卧病不起。
+    refs: [kojiki]
+    at: { kojiki: "4–7" }
+  - text: 卧病之际，呕吐物与粪尿各化生金山毗古、金山毗卖、土神等；终于「神避」，葬于出云国与伯耆国境之比婆山。
+    refs: [kojiki]
+    at: { kojiki: "7" }
+  - text: 伊邪那岐追至黄泉，她已食过黄泉之灶，本欲与黄泉诸神商议归返，嘱他不得窥看。他失约窥视，她怒而遣黄泉丑女、八雷神与黄泉军追赶。
+    refs: [kojiki]
+    at: { kojiki: "9" }
+  - text: 追至黄泉比良坂，伊邪那岐以千引石堵住通路。二人隔石立誓：她每日绞杀千人，他每日立千五百产屋。生死之数自此而定。
+    refs: [kojiki]
+    at: { kojiki: "9" }
+  - text: 她因此称「黄泉津大神」；又因曾追至生者之界，另称「道反之大神」——所行之路已与生者相反。
+    refs: [kojiki]
+    at: { kojiki: "9" }
+variants:
+  - claim: 《日本书纪》卷一作「伊奘冉尊」，黄泉之事有大同小异的两种写法；另有「一书曰」记她化为黄泉户大神，追至泉门而与夫对立。
+    refs: [nihonshoki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: kagutsuchi, kind: 亲缘, detail: 母子，生他时被灼而死, refs: [kojiki] }
+legacy:
+  - "后世把黄泉国、秽与「女人先言」的禁忌都系在她身上；熊野、出云一带另有奉祀她的神社。"

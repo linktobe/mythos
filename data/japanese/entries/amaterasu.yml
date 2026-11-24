@@ -1,0 +1,55 @@
+id: amaterasu
+pantheon: japanese
+entity_type: 神祇
+name: 天照大御神
+name_original: "アマテラスオオミカミ"
+aliases: [天照大神, 大日孁贵, 大日孁尊]
+summary: 太阳神，治高天原；因须佐之男作乱而隐居天岩屋户，天地为此常夜，复出后主导让国与天孙降临。
+role:
+  title: "太阳，也是王朝的始祖"
+  brief: "她的权威不是打出来的，是躲出来的——她一进山洞，天地就黑了；众神不得不把她请出来。此后没有人能绕过她。"
+identity:
+  lineage:
+    - { id: amatsu }
+  camp:
+    - { id: takama }
+  realm:
+    - { id: takamagahara }
+narrative:
+  - text: 伊邪那岐自黄泉归来，于阿波岐原洗左眼生天照，洗右眼生月读，洗鼻生须佐之男。伊邪那岐把高天原交给她治理。
+    refs: [kojiki]
+    at: { kojiki: "10–11" }
+  - text: 须佐之男上高天原，她疑其有夺位之心，与他隔天安河立誓：各取对方之物，以天真名井之水涤净、嚼碎吹雾而生子。她取须佐之剑生三女神，须佐取她勾玉生五男神；她判「由我物所生者为吾子」，五男神遂归她。
+    refs: [kojiki]
+    at: { kojiki: "13–14" }
+  - text: 须佐之男毁田埂、填沟渠、污新殿，又惊死织女。她惧而入天石屋户，高天原与苇原中国皆成常夜。
+    refs: [kojiki]
+    at: { kojiki: "15" }
+  - text: 八百万神聚于天安河，思金神设策：命伊斯许理度卖铸八咫镜，玉祖命造八尺琼勾玉，天宇受卖命踏桶起舞，众神大笑。她好奇探头，被天手力男神拉出，布刀玉命以绳封户，天地复明。
+    refs: [kojiki]
+    at: { kojiki: "16" }
+  - text: 她将须佐之男逐出高天原，此后又受他所献、取自八岐大蛇尾中的天丛云剑。让国一事也由她主导：先遣天菩比命、天若日子皆不成，最后以建御雷之男神迫降大国主之子。
+    refs: [kojiki]
+    at: { kojiki: "17–18、30–32" }
+  - text: 让国既定，她命天孙琼琼杵尊降临苇原中国，并授八咫镜、天丛云剑、八尺琼勾玉三神器。
+    refs: [kojiki]
+    at: { kojiki: "33" }
+variants:
+  - claim: 《日本书纪》卷一作「大日孁贵尊」，谓生于左眼；同卷「一书曰」另有以铜镜、勾玉为神体而生之说，天岩屋户一节也并列数种异传。
+    refs: [nihonshoki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: susanoo, kind: 亲缘, detail: 姐弟，同为禊祓所生, refs: [kojiki] }
+  - { target: susanoo, kind: 敌对, detail: 争于高天原，终将其逐出, refs: [kojiki] }
+  - { target: tsukuyomi, kind: 亲缘, detail: 姐弟, refs: [kojiki] }
+legacy:
+  - "伊势神宫内宫以她为祭神，所奉神体即八咫镜；日本皇室的始祖神叙事以她为顶点。"
+adaptations:
+  - work: "《大神》（2006）"
+    refs: [okami]
+    kind: 游戏
+    portrayal: "天照被写成一头白狼，背负「天笔」在苇原中国行走，一路净化被妖气侵蚀的土地。"
+    divergences:
+      - "原典的天照始终居于高天原，几乎不亲自下到苇原中国；游戏让「她」作为旅行者走遍全国。"
+      - "原典以镜、勾玉、剑三神器为皇权之证；游戏把「笔」这一绘画道具抬到核心，与三神器并无对应关系。"
+      - "原典的天照是日神兼皇祖，游戏只保留日神的一面，且以动物形态出现。"

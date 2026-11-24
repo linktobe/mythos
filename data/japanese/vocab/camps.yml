@@ -1,0 +1,29 @@
+# 阵营（站在哪一边）
+#
+# 日本神话的「阵营」比北欧更接近政治现实：高天原与出云是一条明确的
+# 征服—让国线，而黄泉是第三条线。三者都不等于血统：须佐之男出自禊祓，
+# 血统是天津神，却做了出云之祖。
+
+- id: takama
+  zh: 高天原方
+  en: Takamagahara
+  pantheon: japanese
+  note: 天照一方。让国、天孙降临两事皆由此方主导。
+
+- id: izumo
+  zh: 出云方
+  en: Izumo
+  pantheon: japanese
+  note: 须佐之男与大国主一方。让国后不再掌国土，转掌幽界，仍受祀。
+
+- id: yomi
+  zh: 黄泉方
+  en: Yomi
+  pantheon: japanese
+  note: 死者之国一方。伊邪那美神避之后归此，称黄泉津大神。
+
+- id: chuu
+  zh: 中立
+  en: Neutral
+  pantheon: japanese
+  note: 尚未卷入或始终不属任何一方者。

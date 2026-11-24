@@ -1,0 +1,41 @@
+id: ashihara
+pantheon: japanese
+entity_type: 地区
+name: 苇原中国
+name_original: "アシハラノナカツクニ"
+aliases: [苇原之国, 苇原瑞穗国]
+summary: 人间国土，即日本列岛。先由国津神开拓经营，让国之后归天孙所治。
+role:
+  title: "被让出去的那块地"
+  brief: "神代的全部冲突最后都落在这块地上：谁生它、谁开它、谁交出它。它自己不说话，但每一次让国、每一次降临，都是为了它。"
+identity:
+  lineage:
+    - { id: kunitsu, note: 先为国津神所治 }
+    - { id: tenson, note: 让国后归天孙 }
+  camp:
+    - { id: izumo, note: 让国之前 }
+    - { id: takama, note: 让国之后 }
+  realm:
+    - { id: ashihara }
+narrative:
+  - text: 伊邪那岐与伊邪那美所生的大八岛，即此国土的雏形；「苇原」指苇芽丛生的湿地，「中国」指天地之中。
+    refs: [kojiki]
+    at: { kojiki: "5" }
+  - text: 让国之议由天照发起：先遣天菩比命，他却谄附大国主而不复命；再遣天若日子，他又娶大国主之女而久不归。
+    refs: [kojiki]
+    at: { kojiki: "30–31" }
+  - text: 最后遣建御雷之男神与天鸟船神，降于出云伊那佐小滨。建御名方神与之角力而败、逃至科野州羽海被擒，事代主神则爽快应允。大国主以「为我造如高天原之宫殿、退而掌幽界」为条件，交出国土。
+    refs: [kojiki]
+    at: { kojiki: "32" }
+  - text: 天孙琼琼杵尊降临日向高千穗，此界自此归天津神所治；被征服的国津神并未消失，而是转入幽界继续受祀。
+    refs: [kojiki]
+    at: { kojiki: "33" }
+variants:
+  - claim: 让国的具体过程，《日本书纪》与《古事记》不同：前者多记大国主之子先降、大国主随后奉命退隐，后者则以大国主亲口提出「造宫殿、掌幽界」为条件。
+    refs: [kojiki, nihonshoki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: takamagahara, kind: 同源, detail: 上下二层，同属记纪的空间结构, refs: [kojiki] }
+  - { target: yomi, kind: 同源, detail: 上下二层，同属记纪的空间结构, refs: [kojiki] }
+legacy:
+  - "后世以「苇原中国」为日本国土的古称之一，与「大八岛」「瑞穗国」并用。"

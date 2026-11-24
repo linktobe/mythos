@@ -21,7 +21,7 @@ narrative:
     refs: [gylfaginning]
   - text: "事后奥丁之子瓦利持弓将他射杀，以偿巴德尔之命。"
     refs: [gylfaginning, voluspa]
-    at: { voluspa: "35" }
+    at: { voluspa: "33" }
   - text: "新世界里他与巴德尔一同自冥界归来，兄弟二人同住。"
     refs: [voluspa]
     at: { voluspa: "62" }

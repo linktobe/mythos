@@ -12,10 +12,13 @@ identity: {}
 narrative:
   - text: "索尔与提尔去约顿海姆，向提尔之父希米尔要那口能煮众神酒的大锅。希米尔出了难题，其中一道是：先随他出海钓一趟鱼。"
     refs: [hymiskvida]
+    at: { hymiskvida: "1–10" }
   - text: "希米尔只钓得两条鲸鱼；索尔却取了希米尔最壮那头牛的牛头做饵，把船划到更远处，钓线沉下去，扯上来的是耶梦加得。"
     refs: [hymiskvida, gylfaginning]
+    at: { hymiskvida: "21–23" }
   - text: "蛇头破水，吐着毒气，索尔握锤要砸；希米尔吓得割断了钓线，蛇沉回海里。"
     refs: [hymiskvida]
+    at: { hymiskvida: "24–25" }
   - text: "《欺骗古鲁菲》的版本是：索尔已经举锤砸在蛇头上，蛇沉下去，两人才罢手。"
     refs: [gylfaginning]
 variants:

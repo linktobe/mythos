@@ -12,12 +12,16 @@ identity: {}
 narrative:
   - text: "索尔一觉醒来，锤不见了。洛基借来芙蕾雅的鹰羽飞出去查，查得锤在巨人索列姆手中，索列姆索芙蕾雅为妻，方肯还锤。"
     refs: [thrymskvida]
+    at: { thrymskvida: "1–8" }
   - text: "芙蕾雅当场断然拒绝，连婚宴上的神器都掷了回去。海姆达尔献策：让索尔扮新娘，洛基扮随行侍女，同赴约顿海姆。"
     refs: [thrymskvida]
+    at: { thrymskvida: "11–14" }
   - text: "宴席上索尔食量惊人、目光如炬，索列姆生疑；洛基以「新娘思念丈夫、八夜未食」搪塞过去。"
     refs: [thrymskvida]
+    at: { thrymskvida: "24–28" }
   - text: "索列姆命人将锤取来，按在新娘膝上祝圣。索尔一握在手，先杀索列姆，再将其族人尽数了结。"
     refs: [thrymskvida]
+    at: { thrymskvida: "30–32" }
 variants:
   - claim: "此事不见于《欺骗古鲁菲》，只有《诗体埃达》留下完整一篇。全诗近于闹剧，没有一句为索尔的扮相作辩解。"
     refs: [thrymskvida, gylfaginning]

@@ -17,8 +17,10 @@ identity:
 narrative:
   - text: "《希米尔之歌》里，诸神要办宴席，缺一口能煮下所有酒的大锅。提尔说他的父亲希米尔有一口，于是索尔与他同去借。"
     refs: [hymiskvida]
+    at: { hymiskvida: "1–8" }
   - text: "希米尔起初不肯，出了三道难题；索尔一一做到，才把锅抬走。临行前两人还出海一趟：索尔用牛头做饵，把耶梦加得钓到船边，希米尔吓得割断钓线。"
     refs: [hymiskvida]
+    at: { hymiskvida: "10–25" }
   - text: "《欺骗古鲁菲》里也讲这趟钓蛇，但细节不同：索尔举锤砸在蛇头上，蛇沉回海里。两处记载，一诗一文，结局并不一致。"
     refs: [gylfaginning]
 variants:

@@ -19,7 +19,7 @@ narrative:
     at: { voluspa: "53–56" }
   - text: "大火之后，大地自海中重新升起，依旧青绿；巴德尔自冥界归来，幸存的两人在一处重新繁衍。"
     refs: [voluspa]
-    at: { voluspa: "62" }
+    at: { voluspa: "59–62" }
 variants:
   - claim: "末日之后世界重生一节，主要见于《女巫的预言》后半与 Snorri 的叙述；各本细节不一，诗体埃达相关篇章亦有残缺。"
     refs: [voluspa, gylfaginning]

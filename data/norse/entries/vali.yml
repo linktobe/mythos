@@ -19,7 +19,7 @@ narrative:
     refs: [gylfaginning]
   - text: "他一箭射杀盲神霍德尔，为兄弟巴德尔报仇——这场仇杀是诸神之间少有的一次内部流血。"
     refs: [gylfaginning, voluspa]
-    at: { voluspa: "35" }
+    at: { voluspa: "33" }
   - text: "末日之后他存活下来，与维达同住于诸神旧日的圣地。"
     refs: [voluspa]
 variants:

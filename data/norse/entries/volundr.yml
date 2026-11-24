@@ -18,12 +18,16 @@ identity:
 narrative:
   - text: "他与两个兄弟在乌尔夫山谷遇见三位天鹅少女，娶了其中一位。七年后她们飞走，再没有回来。"
     refs: [volundarkvitha]
+    at: { volundarkvitha: "1–7" }
   - text: "他留在谷中打戒指，等妻子归来。国王尼杜德派人捉他，夺走他的剑与戒指，挑断他的脚筋，把他困在岛上做工。"
     refs: [volundarkvitha]
+    at: { volundarkvitha: "9–17" }
   - text: "他以国王两个儿子的尸骨做成酒杯与饰物，送到国王面前；又诱国王之女饮下迷酒。"
     refs: [volundarkvitha]
+    at: { volundarkvitha: "24–27" }
   - text: "他造出翅膀，在飞离之前向国王说明一切，转身而去。国王束手无策。"
     refs: [volundarkvitha]
+    at: { volundarkvitha: "29–33" }
 variants:
   - claim: "此诗在抄本中列于诸神诗之后、英雄诗之前，主角既非神也非英雄世家，风格近于民间传说。"
     refs: [volundarkvitha]

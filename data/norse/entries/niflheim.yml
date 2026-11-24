@@ -20,7 +20,6 @@ narrative:
     refs: [gylfaginning]
   - text: "毒龙尼德霍格伏于泉下，啃食世界树的根；这口泉与这棵树，是此界最古老的景物。"
     refs: [gylfaginning, voluspa]
-    at: { voluspa: "39" }
   - text: "此地终年寒雾笼罩，与南方的火之国隔鸿沟相望。两界之物在鸿沟中相遇，才有了始祖巨人。"
     refs: [gylfaginning]
 variants:

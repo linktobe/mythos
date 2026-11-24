@@ -22,7 +22,7 @@ narrative:
     refs: [gylfaginning]
   - text: "此地尽是火与熔岩。末日来临时，苏尔特尔自南方而来，携火焚尽九界。"
     refs: [voluspa, gylfaginning]
-    at: { voluspa: "47" }
+    at: { voluspa: "52" }
 variants:
   - claim: "「火之国先于世界存在」出自《欺骗古鲁菲》的开篇叙述；诗体埃达提到苏尔特尔自南方来，未言此界之始。"
     refs: [gylfaginning, voluspa]

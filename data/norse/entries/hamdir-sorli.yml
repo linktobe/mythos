@@ -19,10 +19,13 @@ narrative:
     refs: [hamthesmol]
   - text: "同母姊妹斯万希尔德被哥特王约尔蒙雷克害死。古德伦催两个儿子去复仇，话里话说得极重，是《古德伦的催促》全篇的内容。"
     refs: [guthrunarhvot, hamthesmol]
+    at: { hamthesmol: "1–2" }
   - text: "路上他们遇见埃尔普，问他若同去能帮上什么忙。他答得半吞半吐，两人觉得受了轻慢，当场把他杀了。"
     refs: [hamthesmol]
+    at: { hamthesmol: "13–18" }
   - text: "到了哥特营中，他们斫去约尔蒙雷克的手脚；要取他性命时，他喊醒兵士。刀剑伤不了这两人，兵士便用石头砸，两人死在石下。"
     refs: [hamthesmol]
+    at: { hamthesmol: "20–31" }
 variants:
   - claim: "埃尔普究竟说了什么，抄本残损，几乎全靠猜读。诗中兄弟杀他的理由也因此显得突然——这处残缺历来是校勘的难题。"
     refs: [hamthesmol]

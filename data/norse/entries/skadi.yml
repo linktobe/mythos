@@ -21,7 +21,6 @@ narrative:
     refs: [skaldskaparmal]
   - text: 她择夫时只看脚，误选尼约德；婚后二人因居所不合而分离。
     refs: [skaldskaparmal, grimnismal]
-    at: { grimnismal: "11" }
 variants:
   - claim: 分离后她另嫁奥丁之说见于《诗语》，但叙述简略，学界多存疑。
     refs: [skaldskaparmal]

@@ -17,7 +17,6 @@ identity:
 narrative:
   - text: "他是博尔与女巨人贝斯特拉之子，奥丁之弟。"
     refs: [gylfaginning, voluspa]
-    at: { voluspa: "4" }
   - text: "他与奥丁、维三兄弟共同杀死始祖巨人尤弥尔，以其身躯造出世界；其后又一同以海边拾得的两棵树造人。"
     refs: [gylfaginning]
   - text: "原典未载其单独事迹，也无结局。"

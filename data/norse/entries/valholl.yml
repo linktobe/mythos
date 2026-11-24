@@ -1,0 +1,35 @@
+id: valholl
+pantheon: norse
+entity_type: 地区
+name: 英灵殿
+name_original: "Valhöll"
+aliases: [瓦尔哈拉, 战死者之殿]
+summary: 奥丁在格拉兹海姆中的大殿，战死者的一半归此；梁是长矛，顶是盾牌。
+role:
+  title: "囤兵的大厅"
+  brief: "它是一座营房，不是天堂：五百四十道门，每天有人战死被送来，每天有人出去操练，等着末日那一场。"
+identity:
+  lineage:
+    - { id: aesir, note: 奥丁所建 }
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard, note: 格拉兹海姆中 }
+narrative:
+  - text: "诸神居所中第五座是格拉兹海姆，金碧辉煌，英灵殿就立在其中，宽阔得望不到边。奥丁每日在这里拣选战死者。"
+    refs: [grimnismal]
+    at: { grimnismal: "8" }
+  - text: "殿内以长矛为椽，以盾牌为顶，甲胄挂在长凳上。五百四十道门，八百名战士可以一队一队同时走出去。"
+    refs: [grimnismal]
+    at: { grimnismal: "9、23" }
+  - text: "被选中的战士在此日夜操练，以蜜酒与猪肉为食；他们的用处只有一个：末日那天随奥丁出战。"
+    refs: [gylfaginning]
+  - text: "女武神把战死者的一半送往这里，另一半归芙蕾雅的福尔克万格。"
+    refs: [grimnismal]
+variants:
+  - claim: "奥丁收战死者这一条，原典有两种读法：一说他为末日囤兵，一说他只是收集「属于他的人」；《欺骗古鲁菲》取前说，诗里并不解释动机。"
+    refs: [gylfaginning, grimnismal]
+relations:
+  - { target: odin, kind: 从属, detail: 为其所建、所居, refs: [grimnismal] }
+  - { target: valkyries, kind: 从属, detail: 由其在战场拣选战死者送来, refs: [gylfaginning] }
+  - { target: ragnarok, kind: 从属, detail: 末日随奥丁出战的兵力由此而来, refs: [gylfaginning] }

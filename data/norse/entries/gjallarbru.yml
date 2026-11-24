@@ -1,0 +1,31 @@
+id: gjallarbru
+pantheon: norse
+entity_type: 地区
+name: 冥河桥
+name_original: "Gjallarbrú"
+aliases: [加勒尔桥, 冥界之桥]
+summary: 通往赫尔海姆的桥，桥头有少女莫德古德守桥；赫尔莫德为巴德尔求还时走过它。
+role:
+  title: "过桥的那一头"
+  brief: "要去冥界，先过这座桥。桥上的看守只问三件事：名字、家世，和你为什么来。"
+identity:
+  lineage:
+    - { id: being, note: 通往冥界的桥 }
+  camp:
+    - { id: hel }
+  realm:
+    - { id: helheim }
+narrative:
+  - text: "赫尔莫德奉诸神之命，骑奥丁的八足马下冥界求还巴德尔。他走了九天九夜，到一条河上，桥身镀金，此桥名加拉尔。"
+    refs: [gylfaginning]
+  - text: "守桥的少女莫德古德拦住他，问他姓名、家世，又问他为何独自前来。她告诉他：前五日，死者的队伍已经从桥上过去了。"
+    refs: [gylfaginning]
+  - text: "桥下是通往冥界的河，河上响着马蹄。八足马跳过桥头，他径直去往海拉的厅。"
+    refs: [gylfaginning]
+variants:
+  - claim: "这座桥只见于《欺骗古鲁菲》，诗体埃达没有写它；巴尔德的死与赫尔莫德的行程，在诗里只剩零散的几句。"
+    refs: [gylfaginning]
+relations:
+  - { target: helheim, kind: 从属, detail: 通往冥界的桥, refs: [gylfaginning] }
+  - { target: hermodr, kind: 从属, detail: 曾骑马过此桥, refs: [gylfaginning] }
+  - { target: hel, kind: 从属, detail: 过桥即入其境, refs: [gylfaginning] }

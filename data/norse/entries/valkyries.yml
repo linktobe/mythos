@@ -20,7 +20,14 @@ narrative:
     refs: [grimnismal]
   - text: "《格里姆尼尔之歌》列举其名，如 Skuld、Skögul、Hildr 等，数目与名目诸书不一；她们的日常职责之一，是在英灵殿中为英灵奉酒。"
     refs: [grimnismal, gylfaginning]
+  - text: "《格里姆尼尔之歌》一口气列了十三位，赫里斯特、米斯特、斯凯格约尔德、斯库尔、希尔德……名字多半是「摇晃者」「迷雾」「持盾者」一类的称谓，而不是各有事迹的个人。她们在英灵殿里给英灵奉酒。"
+    refs: [grimnismal]
+    at: { grimnismal: "36" }
+  - text: "名单还能再加：《诗语》之后所附的《名目表》另有一套，数目更多；《哈康之歌》《沃伦德之歌》《海尔吉》组诗里又各有几位露面。女武神是一个开放的集合，从来没有定本。"
+    refs: [nafnathulur, hakonarmal, volundarkvitha]
 variants:
+  - claim: "有名未必有故事：名单上多数名字只出现一次，没有独立事迹。真有完整故事的只有布伦希尔德与希格露恩等少数几位；而布伦希尔德与《希格德里法之歌》里那位女武神是否同一人，原诗并没有明说。"
+    refs: [grimnismal, sigrdrifumal, volsungasaga]
   - claim: "女武神的数目与名单各家记载不同，《格里姆尼尔之歌》所列与《诗语》所举并不一致；《诗语》之后所附的《名目表》又是另一套名单，抄本带不带这一节，数目就随之变化。"
     refs: [grimnismal, skaldskaparmal, nafnathulur]
   - claim: "希露德之父赫格尼，与《阿特利之歌》里古德伦之兄赫格尼只是同名，家世与事迹都不相干。北欧材料里同名不同人的情形不止这一处，读时须按篇分流。"
@@ -48,3 +55,19 @@ profiles:
     name_original: "Hildr"
     story: "她的父亲赫格尼与她的情人赫丁交战，她每夜以魔法唤醒死者，令这场仗永远打不完——后世称「希露德之战」。她不属于英灵殿的挑选者，更像把战争本身留了下来的人。"
     refs: [skaldskaparmal]
+  - name: 斯薇法
+    name_original: "Sváva"
+    story: "海尔吉·赫约瓦尔松爱上她，二人成婚。她的父亲也叫埃利米，与齐格鲁德的外公同名不同人。海尔吉后来被阿尔夫所杀，她在诗中悲恸不已。"
+    refs: [helgakvitha-hjorvarthssonar]
+  - name: 卡拉
+    name_original: "Kára"
+    story: "同一篇末尾的散文说，海尔吉与斯薇法转生为「海尔吉·哈丁加斯卡提」与女武神卡拉，再演一遍同样的故事；抄本在这里注了一句，称这段为「老妇人的闲谈」。"
+    refs: [helgakvitha-hjorvarthssonar]
+  - name: 贡杜尔与诗嘉古尔
+    name_original: "Göndul ok Skögul"
+    story: "《哈康之歌》里，奥丁派这两人到诸王之间挑选；她们披甲执矛找到战死的哈康王，与死者有一场问答。这是女武神在诗里真正开口说话的一处。"
+    refs: [hakonarmal]
+  - name: 三位天鹅少女
+    name_original: "Álftir"
+    story: "《沃伦德之歌》开场，三位女子披天鹅羽衣飞来，在湖边纺织，与沃伦德兄弟结为夫妻，七年后飞走。诗里说她们是女武神，却没给她们一个挑选战死者的场面——在这里她们更像会飞的外来者。"
+    refs: [volundarkvitha]

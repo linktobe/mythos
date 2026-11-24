@@ -1,0 +1,32 @@
+id: idavollr
+pantheon: norse
+entity_type: 地区
+name: 伊达沃原
+name_original: "Iðavöllr"
+aliases: [伊达沃勒, 伊达平原]
+summary: 诸神最初聚会建殿的平原，阿斯加德即建于此；末日之后，幸存的神又回到这里。
+role:
+  title: "开头与结尾的同一块地"
+  brief: "诸神在这里起家，建殿、设炉、铸器；烧尽之后，还是这里，他们在草丛里捡回旧日的金棋子。"
+identity:
+  lineage:
+    - { id: being, note: 平原 }
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "《女巫的预言》开头，众神在伊达沃原聚会，筑起神龛与庙宇，设炉锻铁，造出工具，日子过得和乐，金子多得不用吝惜。"
+    refs: [voluspa]
+    at: { voluspa: "7" }
+  - text: "阿斯加德就建在这片平原上；诸神起家时的这一段，是九界秩序的开端。"
+    refs: [gylfaginning]
+  - text: "末日烧尽之后，维达与瓦利幸存，巴德尔与霍德尔自冥界归来，众神又聚在伊达沃原——那里曾是阿斯加德。他们在草里找到诸神旧日的金棋子。"
+    refs: [gylfaginning, voluspa]
+variants:
+  - claim: "末日后的重逢，《女巫的预言》写得简略，《欺骗古鲁菲》补得详细；两处都把地点指回伊达沃原，这一点是一致的。"
+    refs: [voluspa, gylfaginning]
+relations:
+  - { target: asgard, kind: 从属, detail: 阿斯加德建于此地, refs: [gylfaginning] }
+  - { target: ragnarok, kind: 从属, detail: 末日之后诸神重聚于此, refs: [gylfaginning, voluspa] }
+  - { target: odin, kind: 从属, detail: 诸神最初在此建殿议事, refs: [voluspa] }

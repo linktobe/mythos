@@ -1,0 +1,31 @@
+id: urdarbrunnr
+pantheon: norse
+entity_type: 地区
+name: 乌尔德泉
+name_original: "Urðarbrunnr"
+aliases: [命运之泉, 乌尔德之井]
+summary: 世界树根下的圣泉，诺伦三女神每日取水浇树；诸神也在此地开庭断案。
+role:
+  title: "给树浇水的那口井"
+  brief: "世界树靠这口泉活着，诸神靠这口泉断案。三女神在这里定命，也在这里给树续命。"
+identity:
+  lineage:
+    - { id: being, note: 天然之泉 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond, note: 世界树下 }
+narrative:
+  - text: "世界树常青，是因为根下那口泉的水。诗里说它被白水浸着，露水从那里落下，树在乌尔德泉边永远发绿。"
+    refs: [voluspa]
+    at: { voluspa: "19" }
+  - text: "三位诺伦女神自树下的居所出来，每天从泉里取水，和着泥浇在树干上，免得枝叶枯朽。"
+    refs: [gylfaginning]
+  - text: "诸神也把法庭设在这里。他们每日骑马经彩虹桥上来，在泉边议事、断案。九界的秩序，就是在这口井边商定的。"
+    refs: [gylfaginning]
+variants:
+  - claim: "「乌尔德」既是泉名，也是三女神中长者的名字（意为「过去」）；泉与神同名，原典没有区分得很清楚。"
+    refs: [voluspa, gylfaginning]
+relations:
+  - { target: nornir, kind: 从属, detail: 三女神每日于此取水浇树、定命, refs: [gylfaginning] }
+  - { target: yggdrasil, kind: 从属, detail: 在其根下，为树续命, refs: [voluspa] }

@@ -1,0 +1,32 @@
+id: hvergelmir
+pantheon: norse
+entity_type: 地区
+name: 赫瓦格密尔
+name_original: "Hvergelmir"
+aliases: [赫瓦格密尔泉, 众河之源]
+summary: 尼福尔海姆根下的泉，九界诸河皆自此流出；龙与群蛇在泉中啃啮。
+role:
+  title: "所有河的开头"
+  brief: "世界树最冷的一条根伸进雾与冰里，根下是这口泉。诸河从它流出，龙在它里面啃树根。"
+identity:
+  lineage:
+    - { id: being, note: 天然之泉 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond, note: 世界树下，伸向尼福尔海姆的那条根旁 }
+narrative:
+  - text: "世界树的第三根伸向尼福尔海姆，根下就是赫瓦格密尔，龙尼德霍格从底下啃这条根。"
+    refs: [gylfaginning]
+  - text: "《格里姆尼尔之歌》说，雄鹿埃克提尔尼尔站在英灵殿旁啃食树枝，鹿角间落下水滴，滴进赫瓦格密尔，诸河便从那里流出来。"
+    refs: [grimnismal]
+    at: { grimnismal: "26" }
+  - text: "群蛇与龙在泉中盘踞，啃啮树根——九界的地基就从这里被一点点掏空。"
+    refs: [grimnismal, gylfaginning]
+variants:
+  - claim: "「诸河从鹿角滴进泉里、再由泉流出」这个说法，是把两条不同的水路合在一句里讲的；原典本来分作两处，读时不必强求一致。"
+    refs: [grimnismal]
+relations:
+  - { target: nidhogg, kind: 从属, detail: 在泉中啮根, refs: [gylfaginning] }
+  - { target: yggdrasil, kind: 从属, detail: 在其根下，诸河之源, refs: [grimnismal] }
+  - { target: niflheim, kind: 从属, detail: 在其根下, refs: [gylfaginning] }

@@ -1,0 +1,29 @@
+id: vigridr
+pantheon: norse
+entity_type: 地区
+name: 维格里德
+name_original: "Vígríðr"
+aliases: [维格利德, 末日战场]
+summary: 诸神与苏尔特尔决战的平原，长宽各一百里。
+role:
+  title: "最后一战的场地"
+  brief: "它不是一座城，是一片空场。原典只交代了两件事：谁来打，和它有多大。"
+identity:
+  lineage:
+    - { id: being, note: 平原 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "《瓦夫斯鲁德尼尔之歌》里，奥丁问那片平原叫什么名字；巨人答：维格里德，苏尔特尔与诸神在那里交手，方圆各一百里，边界早已划定。"
+    refs: [vafthrudnismal]
+    at: { vafthrudnismal: "18" }
+  - text: "《欺骗古鲁菲》沿用这个数目：维格里德长宽各一百里。"
+    refs: [gylfaginning]
+variants:
+  - claim: "「一百里」是极言其广的说法，不必当作精确丈量；原典用它表明战场之大，不是交给读者换算的。"
+    refs: [vafthrudnismal]
+relations:
+  - { target: ragnarok, kind: 从属, detail: 末日决战之地, refs: [vafthrudnismal] }
+  - { target: surtr, kind: 从属, detail: 与诸神在此交战, refs: [vafthrudnismal] }

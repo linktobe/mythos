@@ -1,0 +1,31 @@
+id: nastrond
+pantheon: norse
+entity_type: 地区
+name: 尸岸
+name_original: "Náströnd"
+aliases: [纳斯特隆德, 尸骨之岸]
+summary: 冥界深处的一处，远隔太阳，门朝北开；杀人者、背誓者与奸淫者在此受苦，毒蛇盘在墙上。
+role:
+  title: "门朝北的那座厅"
+  brief: "赫尔海姆不是一刀切的黑暗。尸岸是它里面点名的一处：住谁、受什么刑、朝哪个方向开门，诗里都写了。"
+identity:
+  lineage:
+    - { id: being, note: 冥界中的一处 }
+  camp:
+    - { id: hel }
+  realm:
+    - { id: helheim }
+narrative:
+  - text: "《女巫的预言》说，她看见一座厅远在太阳之外，立在尸岸，门朝北开；烟囱里滴下毒液，墙四围缠着蛇。"
+    refs: [voluspa]
+    at: { voluspa: "38" }
+  - text: "她在那里看见背誓的人、杀人的人、诱人妻女的人淌过恶水；尼德霍格吸吮死者的血，狼群撕咬他们。"
+    refs: [voluspa]
+    at: { voluspa: "39" }
+variants:
+  - claim: "「尸岸」算不算专门的惩罚之地，两处说法分量不同：《女巫的预言》把它写成有明确住客与刑具的一处，《欺骗古鲁菲》只把冥界笼统说成收容病死者与老者的地方。"
+    refs: [voluspa, gylfaginning]
+relations:
+  - { target: helheim, kind: 从属, detail: 冥界深处的一处, refs: [voluspa] }
+  - { target: nidhogg, kind: 从属, detail: 在此吸吮死者之血, refs: [voluspa] }
+  - { target: hel, kind: 从属, detail: 在其统辖之下, refs: [voluspa, gylfaginning] }

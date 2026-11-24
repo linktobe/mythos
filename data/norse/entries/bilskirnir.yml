@@ -1,0 +1,29 @@
+id: bilskirnir
+pantheon: norse
+entity_type: 地区
+name: 比尔斯基尼尔
+name_original: "Bilskirnir"
+aliases: [索尔之殿]
+summary: 索尔的殿，在斯鲁德海姆；五百四十间房，是诸神居所中最大的一座。
+role:
+  title: "最大的一间屋"
+  brief: "奥丁的英灵殿收战死者，索尔的殿收的是雷雨与巨人之间的那点日常。它比英灵殿还大。"
+identity:
+  lineage:
+    - { id: aesir, note: 索尔所居 }
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard, note: 斯鲁德海姆 }
+narrative:
+  - text: "《格里姆尼尔之歌》数点诸神居所，说索尔的领地叫斯鲁德海姆，是诸神的国中最辽阔的一处。"
+    refs: [grimnismal]
+  - text: "他的殿叫比尔斯基尼尔，有五百四十间房，数目与英灵殿的门相同；原诗说，在他见过的所有屋顶里，儿子的这一座最广。"
+    refs: [grimnismal]
+    at: { grimnismal: "24" }
+variants:
+  - claim: "五百四十这个数目，英灵殿记作「门」，比尔斯基尼尔记作「房」；两处在原诗里紧挨着，数目相同，很可能是同一个数被分给了两座建筑。"
+    refs: [grimnismal]
+relations:
+  - { target: thor, kind: 从属, detail: 为其所居, refs: [grimnismal] }
+  - { target: sif, kind: 从属, detail: 与之同住, refs: [grimnismal] }

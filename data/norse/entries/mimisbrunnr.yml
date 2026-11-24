@@ -1,0 +1,31 @@
+id: mimisbrunnr
+pantheon: norse
+entity_type: 地区
+name: 密米尔之泉
+name_original: "Mímisbrunnr"
+aliases: [智慧之泉, 密米尔之井]
+summary: 世界树根下的智慧之泉，密米尔守之；奥丁以一只眼睛为押，换来一口水。
+role:
+  title: "拿眼睛换的那一口"
+  brief: "泉里有智慧与聪明，守泉的是密米尔。奥丁想要一口，押上的是自己的一只眼睛。"
+identity:
+  lineage:
+    - { id: being, note: 天然之泉 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond, note: 世界树下，伸向巨人的那条根旁 }
+narrative:
+  - text: "世界树伸向霜巨人的那条根下面，有一口泉，其中藏着智慧与聪明。守泉的人叫密米尔，他每晨用加拉尔号角取水而饮，因此满腹旧事。"
+    refs: [gylfaginning]
+  - text: "奥丁来求一口水，密米尔不白给。他押上自己的一只眼睛，才换到那一口。"
+    refs: [gylfaginning]
+  - text: "《女巫的预言》里，女巫对奥丁说：你的眼睛藏在著名的密米尔泉里，密米尔每晨从奥丁的押金中饮酒。"
+    refs: [voluspa]
+    at: { voluspa: "27–28" }
+  - text: "末日来临时，奥丁还要来这里向密米尔问一次计——他明知问了也改变不了结局。"
+    refs: [gylfaginning]
+relations:
+  - { target: mimir, kind: 从属, detail: 为其所守, refs: [gylfaginning] }
+  - { target: odin, kind: 从属, detail: 以一眼为押换了一口水, refs: [voluspa, gylfaginning] }
+  - { target: yggdrasil, kind: 从属, detail: 在其根下, refs: [gylfaginning] }

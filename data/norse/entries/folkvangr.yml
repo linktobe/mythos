@@ -1,0 +1,30 @@
+id: folkvangr
+pantheon: norse
+entity_type: 地区
+name: 福尔克万格
+name_original: "Fólkvangr"
+aliases: [民众之原, 芙蕾雅的厅]
+summary: 芙蕾雅的领地，战死者的另一半归此；她的大厅名「座席充裕」。
+role:
+  title: "另一半战死者"
+  brief: "英灵殿收一半，这里收另一半。九界里唯一能和奥丁平分战死者的，是芙蕾雅。"
+identity:
+  lineage:
+    - { id: aesir, note: 芙蕾雅所辖 }
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "《格里姆尼尔之歌》列举诸神居所时，第九座是福尔克万格，芙蕾雅在那里安排座次；她的大厅名塞斯露姆尼尔，意为「座席充裕」。"
+    refs: [grimnismal]
+    at: { grimnismal: "14" }
+  - text: "诗里说她每日把战死者的一半收归自己，另一半归奥丁。"
+    refs: [grimnismal]
+    at: { grimnismal: "14" }
+variants:
+  - claim: "原典只交代「一半归她」，没有说这一半是哪些人，也没有说她收了人之后做什么。英灵殿有操练与宴饮的描写，福尔克万格完全没有——这座厅在原典里只有名字和名额。"
+    refs: [grimnismal]
+relations:
+  - { target: freyja, kind: 从属, detail: 为其领地与大厅, refs: [grimnismal] }
+  - { target: valholl, kind: 同源, detail: 与英灵殿平分战死者, refs: [grimnismal] }

@@ -1,0 +1,28 @@
+id: gimle
+pantheon: norse
+entity_type: 地区
+name: 吉姆莱
+name_original: "Gimlé"
+aliases: [金顶之殿]
+summary: 末日之后仍在的一座金顶大厅，义人住进去，永享安乐。
+role:
+  title: "末日之后的那座厅"
+  brief: "诸神黄昏烧尽九界，这座厅还在。它不是给战死者的，是给「配得上的人」的。"
+identity:
+  lineage:
+    - { id: being, note: 原典未言其建造者 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond, note: 高处，末日之火不及 }
+narrative:
+  - text: "《女巫的预言》末段，女巫看见一座厅比太阳更美，金顶，立在吉姆莱；义人将在那里居住，永享安乐。"
+    refs: [voluspa]
+    at: { voluspa: "64" }
+  - text: "《欺骗古鲁菲》把它排在天上最南端的一重天里，说末日之火烧不到那里。"
+    refs: [gylfaginning]
+variants:
+  - claim: "这段是《女巫的预言》里最像基督教天堂的一节，学界长期争论它是原诗所有还是后人添写；本站照录，读者自判。"
+    refs: [voluspa]
+relations:
+  - { target: ragnarok, kind: 从属, detail: 末日之后犹存, refs: [voluspa] }

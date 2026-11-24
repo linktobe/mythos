@@ -19,8 +19,10 @@ narrative:
     refs: [atlakvitha]
   - text: "他觊觎尼伯龙根那批黄金，诱骗古德伦的兄弟贡纳尔与赫格尼前来，逼问宝藏下落，不得便将二人杀害。"
     refs: [atlakvitha]
+    at: { atlakvitha: "1–3、19–29" }
   - text: "古德伦以宴饮为掩护，在席间将他杀死，又放火烧了厅堂。"
     refs: [atlakvitha]
+    at: { atlakvitha: "37–45" }
 relations:
   - { target: gudrun, kind: 婚姻, detail: 夫妻，后被其杀, refs: [atlakvitha] }
   - { target: andvaranaut, kind: 从属, detail: 为夺此金起兵, refs: [atlakvitha] }

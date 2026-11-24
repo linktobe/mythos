@@ -21,6 +21,7 @@ narrative:
     refs: [atlakvitha, drap-niflunga]
   - text: "到了阿特利宫中，阿特利要他们交出黄金。他先杀了一个奴隶，捧出心给赫格尼看，赫格尼不动声色；等他们剜出他自己的心，他大笑起来。至此，黄金的下落再无人知道。"
     refs: [atlakvitha]
+    at: { atlakvitha: "22–25" }
 variants:
   - claim: "到底是谁动手杀齐格鲁德，各本不同：有记在赫格尼名下的，也有记作幼弟古托姆下手的，而背后定计的都是这两位兄长。"
     refs: [brot-sigurtharkvithu, sigurtharkvitha]

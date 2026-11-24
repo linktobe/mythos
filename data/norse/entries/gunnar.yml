@@ -21,6 +21,7 @@ narrative:
     refs: [sigurtharkvitha, brot-sigurtharkvithu]
   - text: "齐格鲁德死后，古德伦改嫁阿特利；阿特利索要那批黄金，诱兄弟二人赴宴。贡纳尔被投入蛇坑，双手被缚，用脚拨动琴弦，群蛇一时不动，最终还是死在那里。"
     refs: [atlakvitha, drap-niflunga]
+    at: { atlakvitha: "19–29" }
 variants:
   - claim: "德语传统里他叫 Gunther，是被哈根牵着走的配角；北欧这边，他与赫格尼是杀齐格鲁德的共同主谋，戏份重得多。"
     refs: [nibelungenlied, drap-niflunga]

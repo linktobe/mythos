@@ -19,7 +19,7 @@ narrative:
     refs: [hamthesmol]
   - text: "同母姊妹斯万希尔德被哥特王约尔蒙雷克害死。古德伦催两个儿子去复仇，话里话说得极重，是《古德伦的催促》全篇的内容。"
     refs: [guthrunarhvot, hamthesmol]
-    at: { hamthesmol: "1–2" }
+    at: { hamthesmol: "1–2", guthrunarhvot: "1–8" }
   - text: "路上他们遇见埃尔普，问他若同去能帮上什么忙。他答得半吞半吐，两人觉得受了轻慢，当场把他杀了。"
     refs: [hamthesmol]
     at: { hamthesmol: "13–18" }

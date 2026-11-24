@@ -1,0 +1,29 @@
+id: hrungnir
+pantheon: norse
+entity_type: 巨人
+name: 赫朗格尼尔
+name_original: "Hrungnir"
+aliases: [赫鲁恩格尼尔]
+summary: 头与盾都是石头的巨人，与索尔决斗而死；他倒下时一条腿压住索尔，被三岁的马格尼搬开。
+role:
+  title: "石头做的那一个"
+  brief: "诸神为这场决斗特意捏了一个泥人做他的帮手。结果帮手先垮，巨人后倒，而真正让索尔脱身的，是他三岁的儿子。"
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: jotnar }
+  realm:
+    - { id: jotunheim }
+narrative:
+  - text: "他与奥丁打赌赛马，被引进阿斯加德，喝醉了在诸神面前夸口要搬走英灵殿、杀死众神。诸神受不了，叫索尔来，他才敢应战。"
+    refs: [skaldskaparmal]
+  - text: "决斗定在边界。他的头、盾、武器都是石头，磨石棒是武器。提亚尔菲骗他说索尔会从地下上来，他就把盾立在脚下；索尔自天而降，一锤砸碎了磨石棒，碎片扎进索尔头皮，锤势不停，正中其颅。"
+    refs: [skaldskaparmal]
+  - text: "巨人倒下，一条腿压在索尔身上，谁也搬不动。三岁的马格尼赶来，一把将腿挪开——他说若早到，这一锤本可以打得更重。"
+    refs: [skaldskaparmal]
+variants:
+  - claim: "诸神事先用泥捏了一个九里高的巨人「莫克卡尔菲」给他做帮手，被提亚尔菲骗得尿了裤子；这些细节只见于《诗语》，属于这一段里的插科打诨。"
+    refs: [skaldskaparmal]
+relations:
+  - { target: thor, kind: 敌对, detail: 决斗中被其锤杀，腿压其身, refs: [skaldskaparmal] }
+  - { target: magni-mothi, kind: 宿命, detail: 倒下后压住索尔，被马格尼搬开, refs: [skaldskaparmal] }

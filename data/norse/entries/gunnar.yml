@@ -1,0 +1,32 @@
+id: gunnar
+pantheon: norse
+entity_type: 英雄
+name: 贡纳尔
+name_original: "Gunnarr"
+aliases: [贡纳尔王, 贡纳]
+summary: 尼伯龙根家的长子，吉乌基之子；娶布伦希尔德，后死于阿特利的蛇坑。
+role:
+  title: "黄金的继承人"
+  brief: "他从父亲那里接过的不只是一个王国，还有法夫纳的黄金。这笔钱让他娶到最强的女人，也把他送进蛇坑。"
+identity:
+  lineage: [human]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: midgard }
+narrative:
+  - text: "吉乌基之子，赫格尼之兄、古德伦之兄。兄弟二人分得法夫纳的黄金，也接手了那笔宝藏上的诅咒。"
+    refs: [drap-niflunga]
+  - text: "他求娶布伦希尔德，却过不去她身边那道火墙；齐格鲁德化作他的模样代他走过，她后来才知道受骗。这场婚约是此后所有血案的债根。"
+    refs: [sigurtharkvitha, brot-sigurtharkvithu]
+  - text: "齐格鲁德死后，古德伦改嫁阿特利；阿特利索要那批黄金，诱兄弟二人赴宴。贡纳尔被投入蛇坑，双手被缚，用脚拨动琴弦，群蛇一时不动，最终还是死在那里。"
+    refs: [atlakvitha, drap-niflunga]
+variants:
+  - claim: "德语传统里他叫 Gunther，是被哈根牵着走的配角；北欧这边，他与赫格尼是杀齐格鲁德的共同主谋，戏份重得多。"
+    refs: [nibelungenlied, drap-niflunga]
+relations:
+  - { target: hogni, kind: 亲缘, detail: 兄弟, refs: [drap-niflunga] }
+  - { target: gudrun, kind: 亲缘, detail: 兄妹, refs: [drap-niflunga] }
+  - { target: brynhildr, kind: 婚姻, detail: 夫妻，由齐格鲁德代其穿火墙, refs: [sigurtharkvitha] }
+  - { target: atli, kind: 敌对, detail: 被诱入宫，死于蛇坑, refs: [atlakvitha] }
+  - { target: andvaranaut, kind: 从属, detail: 与黄金一并归其兄弟, refs: [drap-niflunga] }

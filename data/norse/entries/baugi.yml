@@ -1,0 +1,26 @@
+id: baugi
+pantheon: norse
+entity_type: 巨人
+name: 巴乌吉
+name_original: "Baugi"
+aliases: [鲍吉]
+summary: 苏图恩之兄；奥丁化名波尔维克替他做工一夏，换他钻开藏酒的岩壁。
+role:
+  title: "被凿穿的雇主"
+  brief: "他缺人手，来了个自称波尔维克的壮汉，一人干完九个人的活。工钱只要一口酒。等他知道这口酒在哪，已经替人钻通了山。"
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: jotnar }
+  realm:
+    - { id: jotunheim }
+narrative:
+  - text: "奥丁化名波尔维克四处找活，到了巴乌吉家里。巴乌吉说正缺人手收麦，波尔维克便以一当九干了一整夏。"
+    refs: [skaldskaparmal]
+  - text: "工钱只要一口诗之蜜酒。巴乌吉带他去找弟弟苏图恩，苏图恩不答应；两人便拿了钻子拉提，去凿藏酒的山岩。"
+    refs: [skaldskaparmal]
+  - text: "钻通的时候，巴乌吉想用钻子戳死这个雇工，一戳落空。奥丁化作蛇钻进孔里，山岩在他身后合上。"
+    refs: [skaldskaparmal]
+relations:
+  - { target: suttungr, kind: 亲缘, detail: 兄弟, refs: [skaldskaparmal] }
+  - { target: odin, kind: 从属, detail: 雇其为工，反被其钻通岩壁, refs: [skaldskaparmal] }

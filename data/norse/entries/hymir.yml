@@ -1,0 +1,29 @@
+id: hymir
+pantheon: norse
+entity_type: 巨人
+name: 希米尔
+name_original: "Hymir"
+aliases: [希米尔巨人]
+summary: 约顿海姆的巨人，家有一口能煮众神酒的大锅；曾与索尔出海钓起耶梦加得。
+role:
+  title: "同船又同桌的巨人"
+  brief: "他给索尔备了牛头做饵，也亲眼看着那条蛇被钓上来。两人同船一趟，回来后各自记着对方的账。"
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: jotnar }
+  realm:
+    - { id: jotunheim }
+narrative:
+  - text: "《希米尔之歌》里，诸神要办宴席，缺一口能煮下所有酒的大锅。提尔说他的父亲希米尔有一口，于是索尔与他同去借。"
+    refs: [hymiskvida]
+  - text: "希米尔起初不肯，出了三道难题；索尔一一做到，才把锅抬走。临行前两人还出海一趟：索尔用牛头做饵，把耶梦加得钓到船边，希米尔吓得割断钓线。"
+    refs: [hymiskvida]
+  - text: "《欺骗古鲁菲》里也讲这趟钓蛇，但细节不同：索尔举锤砸在蛇头上，蛇沉回海里。两处记载，一诗一文，结局并不一致。"
+    refs: [gylfaginning]
+variants:
+  - claim: "《希米尔之歌》的结局是索尔把锅带走、顺手打死了希米尔的巨人同伴；《欺骗古鲁菲》只写到钓蛇为止。哪个在先、哪个是改写，学界无定论。"
+    refs: [hymiskvida, gylfaginning]
+relations:
+  - { target: thor, kind: 敌对, detail: 同船钓蛇，被其取走大锅, refs: [hymiskvida] }
+  - { target: jormungandr, kind: 敌对, detail: 被钓至船边，割线放走, refs: [hymiskvida] }

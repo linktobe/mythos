@@ -1,0 +1,30 @@
+id: thrymr
+pantheon: norse
+entity_type: 巨人
+name: 索列姆
+name_original: "Þrymr"
+aliases: [斯列姆, 索列姆巨人]
+summary: 约顿海姆的巨人王，偷走雷锤，以「把芙蕾雅嫁给我」为归还条件。
+role:
+  title: "偷锤的人"
+  brief: "他把锤子埋在八寻地下，开价要一位女神。诸神没有硬抢，而是把索尔打扮成新娘送上门——这是全套神话里最像闹剧的一场。"
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: jotnar }
+  realm:
+    - { id: jotunheim }
+narrative:
+  - text: "索尔一觉醒来，锤不见了。洛基借来芙蕾雅的鹰羽飞去约顿海姆，查明是巨人索列姆把它藏在地下八寻深处，条件是：除非把芙蕾雅嫁给他，否则不还。"
+    refs: [thrymskvida]
+  - text: "芙蕾雅断然拒绝。海姆达尔献策：让索尔穿上新娘的嫁衣、戴上项链，洛基扮作侍女随行。索列姆大喜，摆下婚宴。"
+    refs: [thrymskvida]
+  - text: "席上「新娘」吃了整整一头牛、八条鲑鱼和所有点心，又灌下三桶蜜酒，索列姆看得发怔，洛基只推说新娘思嫁心切。等锤子被抬进来给新人祝圣，索尔一把抓起，把索列姆连同满堂宾客一并打死。"
+    refs: [thrymskvida]
+variants:
+  - claim: "这一篇是全诗体埃达里唯一以喜剧收场的诗，也是索尔少数靠计谋而不是靠力气取胜的一回；它是否属于索尔的核心传说，学界看法不一。"
+    refs: [thrymskvida]
+relations:
+  - { target: thor, kind: 敌对, detail: 偷其雷锤，终被其打死, refs: [thrymskvida] }
+  - { target: mjolnir, kind: 从属, detail: 曾埋于地下八寻, refs: [thrymskvida] }
+  - { target: freyja, kind: 敌对, detail: 索求其为妻, refs: [thrymskvida] }

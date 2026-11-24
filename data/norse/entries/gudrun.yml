@@ -30,6 +30,8 @@ variants:
     refs: [nibelungenlied, atlakvitha]
 relations:
   - { target: sigurd, kind: 婚姻, detail: 夫妻, refs: [sigurtharkvitha] }
+  - { target: gunnar, kind: 亲缘, detail: 兄妹, refs: [drap-niflunga] }
+  - { target: hogni, kind: 亲缘, detail: 兄妹, refs: [drap-niflunga] }
   - { target: brynhildr, kind: 敌对, detail: 情敌，亦为夫仇, refs: [sigurtharkvitha] }
   - { target: atli, kind: 婚姻, detail: 改嫁, refs: [atlakvitha] }
   - { target: svanhildr, kind: 亲缘, detail: 母女, refs: [guthrunarhvot] }

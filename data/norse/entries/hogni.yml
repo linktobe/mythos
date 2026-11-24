@@ -1,0 +1,32 @@
+id: hogni
+pantheon: norse
+entity_type: 英雄
+name: 赫格尼
+name_original: "Hǫgni"
+aliases: [赫格尼王]
+summary: 贡纳尔之弟，吉乌基之子；与兄长合谋害死齐格鲁德，后在阿特利宫中宁死不说黄金下落。
+role:
+  title: "不肯开口的人"
+  brief: "他一辈子只做两件事：帮兄长杀人，和替兄长守财。第二次，对方剜出他的心，他笑了。"
+identity:
+  lineage: [human]
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: midgard }
+narrative:
+  - text: "《齐格鲁德之歌残篇》一开场就是这场商议：布伦希尔德要复仇，贡纳尔与赫格尼定计。先开口的是赫格尼，他问齐格鲁德究竟做错了什么。"
+    refs: [brot-sigurtharkvithu]
+  - text: "事后兄弟二人取得法夫纳的黄金，把宝藏沉进莱茵河。这笔钱，成了阿特利索命的口实。"
+    refs: [atlakvitha, drap-niflunga]
+  - text: "到了阿特利宫中，阿特利要他们交出黄金。他先杀了一个奴隶，捧出心给赫格尼看，赫格尼不动声色；等他们剜出他自己的心，他大笑起来。至此，黄金的下落再无人知道。"
+    refs: [atlakvitha]
+variants:
+  - claim: "到底是谁动手杀齐格鲁德，各本不同：有记在赫格尼名下的，也有记作幼弟古托姆下手的，而背后定计的都是这两位兄长。"
+    refs: [brot-sigurtharkvithu, sigurtharkvitha]
+relations:
+  - { target: gunnar, kind: 亲缘, detail: 兄弟, refs: [drap-niflunga] }
+  - { target: gudrun, kind: 亲缘, detail: 兄妹, refs: [drap-niflunga] }
+  - { target: atli, kind: 敌对, detail: 被剜心而死, refs: [atlakvitha] }
+  - { target: andvaranaut, kind: 从属, detail: 与黄金一并沉入莱茵河, refs: [drap-niflunga] }
+  - { target: sigurd-death, kind: 从属, detail: 与贡纳尔同谋, refs: [brot-sigurtharkvithu] }

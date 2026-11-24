@@ -1,0 +1,30 @@
+id: gunnlod
+pantheon: norse
+entity_type: 巨人
+name: 贡露
+name_original: "Gunnlöð"
+aliases: [贡恩露德]
+summary: 苏图恩之女，看守诗之蜜酒；奥丁与她共处三夜，换得三口酒，随后一去不回。
+role:
+  title: "被留下的看守"
+  brief: "她守着一件自己不能用的东西。三夜之后，酒没了，人也没了；奥丁在诗里承认，他对她「回报得很坏」。"
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: jotnar }
+  realm:
+    - { id: jotunheim, note: 尼特山 }
+narrative:
+  - text: "父亲把诗之蜜酒藏进尼特山岩，派她看守。奥丁钻通岩壁进来，与她同处三夜，作为代价，她每夜给他一口酒——三口之后，三瓮皆空。"
+    refs: [skaldskaparmal]
+  - text: "《高者之歌》里是奥丁自己的口气：她让他在金座上喝下那口酒，他给她的回报却不好，让她伤了心；他承认这事做得不体面。"
+    refs: [havamal]
+    at: { havamal: "105–107" }
+  - text: "酒到手的当夜他就走，化鹰飞回阿斯加德。苏图恩在后面追，没追上。她留在山里。"
+    refs: [skaldskaparmal]
+variants:
+  - claim: "《高者之歌》对这段的口气与《诗语》不同：一个把她说成被骗的姑娘并自认理亏，另一个只把她记作看守蜜酒的巨人。同一件事，两种温度。"
+    refs: [havamal, skaldskaparmal]
+relations:
+  - { target: suttungr, kind: 亲缘, detail: 父女, refs: [skaldskaparmal] }
+  - { target: odin, kind: 宿命, detail: 三夜之情换三口酒, refs: [havamal, skaldskaparmal] }

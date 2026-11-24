@@ -1,0 +1,28 @@
+id: hyrrokkin
+pantheon: norse
+entity_type: 巨人
+name: 赫罗金
+name_original: "Hyrrokkin"
+aliases: [希罗金]
+summary: 女巨人，骑狼、以毒蛇作缰绳；诸神推不动巴德尔的葬船，她一来就推下了水。
+role:
+  title: "推船的人"
+  brief: "众神的力量推不动那条船，只好从约顿海姆请她。她一推，滚木底下都迸出火来——也把索尔得罪了。"
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: jotnar }
+  realm:
+    - { id: jotunheim }
+narrative:
+  - text: "巴德尔的遗体要抬上葬船赫林格霍尔尼，可那船太大，诸神推不动，只好派人去约顿海姆请女巨人赫罗金。"
+    refs: [gylfaginning]
+  - text: "她骑着一头狼来，缰绳是两条毒蛇。下船一推，船就滚下水去，底下的滚木都被压得迸出火。索尔动了怒，举锤要打，诸神劝住，才算罢休。"
+    refs: [gylfaginning]
+variants:
+  - claim: "这一幕只见于《欺骗古鲁菲》。她的坐骑与缰绳是北欧记载里女巨人形象的典型笔法，但除此一次，她没有别的故事。"
+    refs: [gylfaginning]
+relations:
+  - { target: baldr, kind: 从属, detail: 为其推葬船下水, refs: [gylfaginning] }
+  - { target: baldr-death, kind: 从属, detail: 葬仪上推动葬船, refs: [gylfaginning] }
+  - { target: thor, kind: 敌对, detail: 推船时几乎被其锤击, refs: [gylfaginning] }

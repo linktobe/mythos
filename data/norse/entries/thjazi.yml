@@ -1,0 +1,33 @@
+id: thjazi
+pantheon: norse
+entity_type: 巨人
+name: 夏基
+name_original: "Þjazi"
+aliases: [提亚齐, 夏齐]
+summary: 会变鹰的巨人，掳走伊登与她的苹果；被诸神烧死，女儿斯卡蒂上门索赔。
+role:
+  title: "掳走青春的那个"
+  brief: "诸神靠伊登的苹果保持年轻。夏基把这层依赖一口气抽走——他自己死了，可他的女儿带着这笔账走进阿斯加德，成了诸神中的一员。"
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: jotnar }
+  realm:
+    - { id: jotunheim, note: 斯里姆海姆 }
+narrative:
+  - text: "奥丁、海尼尔与洛基出游，烤不熟牛，是巨鹰在旁作梗。鹰要分肉，洛基举棒打它，棒子却粘在鹰身上，连人一起被拖走——这头鹰正是夏基。"
+    refs: [skaldskaparmal]
+  - text: "夏基的条件是：把伊登和她的苹果带出阿斯加德。洛基照办，伊登连同苹果被掳走；诸神随即衰老，逼洛基把人要回来。"
+    refs: [skaldskaparmal]
+  - text: "洛基借芙蕾雅的鹰羽飞去，把伊登变成一颗坚果带回。夏基追到城墙，被诸神堆起的火堆烧死。"
+    refs: [skaldskaparmal]
+  - text: "他死后，女儿斯卡蒂披甲上门要赔偿，诸神给了她一个丈夫、一份和约，还有一场让她笑出来的葬礼。"
+    refs: [skaldskaparmal]
+variants:
+  - claim: "夏基之死各家细节不同：《诗语》说是诸神在城墙上点火烧的，也有的版本记作索尔把他砸死。结局一致——他的女儿因此成了阿萨的神眷。"
+    refs: [skaldskaparmal]
+relations:
+  - { target: idunn, kind: 敌对, detail: 将她与苹果一同掳走, refs: [skaldskaparmal] }
+  - { target: idunn-apples, kind: 从属, detail: 事件主使, refs: [skaldskaparmal] }
+  - { target: skadi, kind: 亲缘, detail: 父女, refs: [skaldskaparmal] }
+  - { target: loki, kind: 敌对, detail: 胁迫其交出伊登，终被诸神所杀, refs: [skaldskaparmal] }

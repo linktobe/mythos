@@ -1,0 +1,31 @@
+id: suttungr
+pantheon: norse
+entity_type: 巨人
+name: 苏图恩
+name_original: "Suttungr"
+aliases: [苏通]
+summary: 霜巨人，为报父仇取得诗之蜜酒，藏在尼特山岩里，命女儿贡露看守。
+role:
+  title: "守酒的父亲"
+  brief: "他从矮人手里要来那三瓮酒，以为是天大的赔偿；藏进山里还不够，又押上女儿看管。结果酒被一个化名的神喝光，女儿被留在山里。"
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: jotnar }
+  realm:
+    - { id: jotunheim, note: 尼特山 }
+narrative:
+  - text: "他的父亲吉灵被两个矮人害死，苏图恩把矮人抬到涨潮的礁石上，逼他们交出诗之蜜酒作赔偿——那酒正是用克瓦希尔的血酿成的。"
+    refs: [skaldskaparmal]
+  - text: "他把酒藏进尼特山岩，命女儿贡露守着。奥丁化名波尔维克，替其兄巴乌吉做工，一路钻通岩壁，与贡露共处三夜，换得三口酒。"
+    refs: [skaldskaparmal]
+  - text: "奥丁化为鹰飞走，苏图恩也化为鹰追。诸神在阿斯加德城下摆好容器，奥丁把酒吐进瓮里，只漏了一点出去——那一点，就是会写歪诗的人分到的部分。"
+    refs: [skaldskaparmal]
+variants:
+  - claim: "《高者之歌》里奥丁自述此事，只提「苏图恩的厅」与贡露，语气像一笔旧账；酿酒的来龙去脉，主要靠《诗语》补。"
+    refs: [havamal, skaldskaparmal]
+relations:
+  - { target: gunnlod, kind: 亲缘, detail: 父女, refs: [skaldskaparmal] }
+  - { target: baugi, kind: 亲缘, detail: 兄弟, refs: [skaldskaparmal] }
+  - { target: kvasir, kind: 宿命, detail: 蜜酒由其血酿成，终归其手, refs: [skaldskaparmal] }
+  - { target: odin, kind: 敌对, detail: 蜜酒被其骗走, refs: [skaldskaparmal] }

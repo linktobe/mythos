@@ -1,0 +1,29 @@
+id: vafthrudnir
+pantheon: norse
+entity_type: 巨人
+name: 瓦夫斯鲁德尼尔
+name_original: "Vafþrúðnir"
+aliases: [瓦夫斯鲁德尼尔巨人]
+summary: 约顿海姆最有学问的巨人；奥丁易名上门与他赌头问答，赢了他的脑袋。
+role:
+  title: "被问倒的智者"
+  brief: "九界里最难回答的问题都归他答。奥丁扮作凡人上门，两人以头为注，一问一答——最后问的是一个只有奥丁自己知道答案的问题。"
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: jotnar }
+  realm:
+    - { id: jotunheim }
+narrative:
+  - text: "《瓦夫斯鲁德尼尔之歌》开场，奥丁化名「加格纳拉德」上门，要与这位以博学著称的巨人比试智慧，赌注是输者的头。"
+    refs: [vafthrudnismal]
+  - text: "问答一轮轮过去：天地从何而来，日月由谁驱赶，巨人始祖是谁，末日之后谁还活着。巨人答得滴水不漏。"
+    refs: [vafthrudnismal]
+  - text: "最后一问是奥丁的私事——他儿子巴德尔死后，他对奥丁耳中说了什么。巨人这才明白对面是谁，答不出，赌局输了。"
+    refs: [vafthrudnismal]
+variants:
+  - claim: "这一篇是《诗体埃达》里知识最密集的一篇，九界的来历、诸神与巨人的谱系大半靠它；但它的形式是问答竞赛，情节极少，读来更像一册押韵的百科。"
+    refs: [vafthrudnismal]
+relations:
+  - { target: odin, kind: 敌对, detail: 与之赌头问答，终被问倒, refs: [vafthrudnismal] }
+  - { target: jotnar, kind: 亲缘, detail: 约顿海姆的智者, refs: [vafthrudnismal] }

@@ -1,0 +1,30 @@
+id: utgarda-loki
+pantheon: norse
+entity_type: 巨人
+name: 乌特加德-洛基
+name_original: "Útgarða-Loki"
+aliases: [乌特加德洛基, 外域洛基]
+summary: 约顿海姆外城的主宰，以幻术设下三场试炼，让索尔连败三阵。
+role:
+  title: "造幻术的人"
+  brief: "他没有和索尔动一次手，只安排了三个游戏。索尔输了，回到城里才听说自己赢的是什么——那是全套神话里最伤人的一场胜利。"
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: jotnar }
+  realm:
+    - { id: jotunheim, note: 乌特加德 }
+narrative:
+  - text: "索尔带着洛基与提亚尔菲一路东行，进了一座大城，城主名叫乌特加德-洛基。他设下三场比试：谁吃得快，谁跑得快，谁力气大。"
+    refs: [gylfaginning]
+  - text: "洛基与「罗吉」比吃，同吃一槽，罗吉连骨头带槽都吞了；提亚尔菲与「胡吉」赛跑，三次都落后。索尔则被要求喝酒、举猫、与老妇角力，三样都只差一点。"
+    refs: [gylfaginning]
+  - text: "第二天出城，城主才说明真相：吞食的是野火，赛跑的是思想，老妇是「衰老」；那只角杯连着的另一边是海，猫是耶梦加得。索尔怔住了，举锤要打，城墙与巨人一起消失。"
+    refs: [gylfaginning]
+variants:
+  - claim: "这一整段只见于《欺骗古鲁菲》，诗体埃达没有；它把索尔的力量写成「没有极限，却也没有胜算」，与诗里的索尔判然两人。"
+    refs: [gylfaginning]
+relations:
+  - { target: thor, kind: 敌对, detail: 以幻术设局，令其三试皆败, refs: [gylfaginning] }
+  - { target: loki, kind: 敌对, detail: 令其与野火比食, refs: [gylfaginning] }
+  - { target: jormungandr, kind: 从属, detail: 化装成猫，被索尔抬起一角, refs: [gylfaginning] }

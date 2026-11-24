@@ -1,0 +1,30 @@
+id: thokk
+pantheon: norse
+entity_type: 巨人
+name: 托克
+name_original: "Þökk"
+aliases: [托克巨人]
+summary: 拒绝为巴德尔哭泣的女巨人；她一哭，巴德尔本可回来。
+role:
+  title: "不肯哭的那一个"
+  brief: "万物都在哭，只剩一个不肯。她说「让冥界留着她拿到的吧」——一句话，把巴德尔钉在了那边。"
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: hostile }
+  realm:
+    - { id: jotunheim }
+narrative:
+  - text: "巴德尔死后，赫尔莫德骑马下冥界求还。海拉开出的条件是：九界万物，无一不为他哭泣。"
+    refs: [gylfaginning]
+  - text: "人与神、地与石、金属与树木，都哭了。使者最后找到一个女巨人，名托克，住在一个山洞里，她不肯哭：「活着的时候我没为他哭过，死了也不哭。让冥界留着她拿到的吧。」"
+    refs: [gylfaginning]
+  - text: "于是巴德尔留在冥界。原典紧接着补一句：一般认为，这个女巨人就是洛基。"
+    refs: [gylfaginning]
+variants:
+  - claim: "「托克即洛基」是叙述者加的推测，不是诗里的原话；她的名字意思近于「感谢」，也常被读作反讽。"
+    refs: [gylfaginning]
+relations:
+  - { target: baldr, kind: 敌对, detail: 拒哭，使其不得返还, refs: [gylfaginning] }
+  - { target: baldr-death, kind: 从属, detail: 拒哭者, refs: [gylfaginning] }
+  - { target: loki, kind: 化生, detail: 一般认为即其化身, refs: [gylfaginning] }

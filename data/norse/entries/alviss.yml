@@ -15,7 +15,7 @@ identity:
   realm:
     - { id: beyond, note: 石中 }
 narrative:
-  - text: "诸神把索尔之女斯露德许给了矮人阿尔维斯，他上门来讨人。"
+  - text: "诸神把索尔之女特鲁德许给了矮人阿尔维斯，他上门来讨人。"
     refs: [alvissmol]
   - text: "索尔拦下他，说要先考他各地对事物的称呼——天、月、树、风，一样一样问过去。"
     refs: [alvissmol]

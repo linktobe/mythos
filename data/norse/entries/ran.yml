@@ -1,0 +1,30 @@
+id: ran
+pantheon: norse
+entity_type: 神祇
+name: 澜
+name_original: "Rán"
+aliases: [拉恩]
+summary: 海巨人埃吉尔之妻，九位波涛之女的母亲；她的网曾借给洛基去捉安德瓦利。
+role:
+  title: "收网的那一个"
+  brief: "海是她的，浪是她的女儿。埃达里她只做了一件事：把网借出去——那张网一撒，黄金的诅咒就有了起点。"
+identity:
+  lineage: [jotunn]
+  camp:
+    - { id: neutral, note: 与神族往来而不结盟 }
+  realm:
+    - { id: beyond, note: 海上 }
+narrative:
+  - text: "她是海巨人埃吉尔之妻。《诗语》讲海的别称时说海是「埃吉尔之女的母亲」的领地，也是「拉恩的陆地」——她的九个女儿各是一道浪，名希明格莱瓦、杜法、布洛杜哈达、赫弗琳、乌德、赫伦、比尔格雅、巴拉、科尔加。"
+    refs: [skaldskaparmal]
+  - text: "雷金的歌里，洛基为凑水獭的赎金去捉安德瓦利：先到澜那里借来她的网，撒在瀑布前，鱼跳进网里，再没有脱身。"
+    refs: [reginsmol]
+  - text: "安德瓦利被夺去全部黄金，只求留下一枚指环，洛基没答应。那枚环从此一路流转，带着诅咒。"
+    refs: [reginsmol]
+variants:
+  - claim: "后世常把溺死说成「落到澜的网里」，但在埃达里，她的网只有一次用处——借给洛基捉鱼。收溺者入网这一层，是注家与后来的讲法，原典没有正面写。"
+    refs: [reginsmol, skaldskaparmal]
+relations:
+  - { target: aegir, kind: 婚姻, detail: 夫妻, refs: [skaldskaparmal] }
+  - { target: andvari, kind: 宿命, detail: 其网捉住安德瓦利，诅咒之环由此起, refs: [reginsmol] }
+  - { target: andvaranaut, kind: 宿命, detail: 网中所得，即那只指环, refs: [reginsmol] }

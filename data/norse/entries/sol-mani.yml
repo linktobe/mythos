@@ -1,0 +1,34 @@
+id: sol-mani
+pantheon: norse
+entity_type: 神祇
+name: 苏尔与曼尼
+name_original: "Sól ok Máni"
+aliases: [苏尔与玛尼]
+summary: 太阳与月亮的人格化，蒙迪尔法利之子；诸神命他们驱车行天，末日被狼吞下。
+role:
+  title: "被派去赶车的两个孩子"
+  brief: "父亲给孩子取名「太阳」与「月亮」，诸神觉得这名字太大，索性把两个孩子收去，叫他们真的去拉那两辆车。"
+identity:
+  lineage:
+    - { id: being, note: 蒙迪尔法利之子，原典未记其族 }
+  camp:
+    - { id: aesir, note: 为诸神所役 }
+  realm:
+    - { id: beyond, note: 驱车行于天际 }
+narrative:
+  - text: "《瓦夫斯鲁德尼尔之歌》说，蒙迪尔法利生下了月亮，也生下了发光的太阳；这两个孩子每天绕天一周，替人记时。"
+    refs: [vafthrudnismal]
+    at: { vafthrudnismal: "23" }
+  - text: "太阳的车由两匹马拉着，名阿尔瓦克与阿尔斯维德；车前还立着一面盾，叫斯瓦林，用来挡住日头，否则山与海都要烧起来。"
+    refs: [grimnismal]
+    at: { grimnismal: "37–38" }
+  - text: "两只狼一前一后地追：斯库尔跟在太阳后面，哈蒂等着月亮。到末日，它们会追上来，把日月吞掉。"
+    refs: [grimnismal]
+    at: { grimnismal: "39" }
+  - text: "《欺骗古鲁菲》补了前因：父亲觉得孩子生得好看，就给他们起名「太阳」与「月亮」；诸神认为这名字僭越，索性把这两个名字收归己用，叫孩子去驾车。"
+    refs: [gylfaginning]
+variants:
+  - claim: "苏尔是女孩，曼尼是男孩——原典如此，正与后世把太阳画成男性、月亮画成女性的习惯相反。这一点两处文本倒是一致。"
+    refs: [vafthrudnismal, gylfaginning]
+relations:
+  - { target: ragnarok, kind: 宿命, detail: 末日被狼吞下, refs: [grimnismal] }

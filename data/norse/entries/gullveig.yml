@@ -1,0 +1,34 @@
+id: gullveig
+pantheon: norse
+entity_type: 神祇
+name: 古尔薇格
+name_original: "Gullveig"
+aliases: [海德, 古尔维格]
+summary: 被诸神以矛刺、三度焚烧又三度重生的女巫；阿萨与华纳之战的起因。
+role:
+  title: "烧不死的来客"
+  brief: "她走进阿斯加德，诸神刺她、烧她三次，她三次活回来。此后两族开战——她是这场战争的第一个名字，也是唯一一个没有下文的名字。"
+identity:
+  lineage: [vanir]
+  camp:
+    - { id: vanir }
+  realm:
+    - { id: vanaheim, note: 出身 }
+    - { id: asgard, note: 被焚之处 }
+narrative:
+  - text: "《女巫的预言》追述世界上的第一场战争：诸神以矛刺向古尔薇格，在「高者之厅」里把她烧了；三次烧，三次重生，一次再一次，她始终活着。"
+    refs: [voluspa]
+    at: { voluspa: "21" }
+  - text: "紧接着的一段说，她来到诸神的居处时被称作「海德」，是能看透一切的女巫，以法术蛊惑人心。两个名字指同一人，还是前后相接的两件事，原诗没有交代清楚。"
+    refs: [voluspa]
+    at: { voluspa: "22" }
+  - text: "这一刺一烧，被后世读作两族战争的导火索：华纳神族为之震怒，战事由此而起。"
+    refs: [voluspa]
+variants:
+  - claim: "「古尔薇格」意为「黄金之力」，通常读作第一位来到诸神中间的华纳，她所受的恶待即是战争的直接起因；三焚三生那几行，也常被解作以火炼金。这一层属于解释，不是原诗的话。"
+    refs: [voluspa]
+  - claim: "「海德」与古尔薇格是否同一人，原诗并不清楚：有把这一节接在焚身之后的，也有认为它本指诵诗的女巫本人。此外尚有「古尔薇格即芙蕾雅另一名」的旧说，同属推测。"
+    refs: [voluspa]
+relations:
+  - { target: vanir, kind: 亲缘, detail: 华纳神族, refs: [voluspa] }
+  - { target: aesir-vanir-war, kind: 宿命, detail: 被刺被焚，战争由此而起, refs: [voluspa] }

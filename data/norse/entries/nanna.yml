@@ -1,0 +1,28 @@
+id: nanna
+pantheon: norse
+entity_type: 神祇
+name: 南娜
+name_original: "Nanna"
+aliases: [娜娜]
+summary: 巴德尔之妻，涅普之女；见丈夫被抬上葬船，心碎而死，与他同焚于船上。
+role:
+  title: "同船的人"
+  brief: "她的全部故事只有一场葬礼：丈夫被抬上船，她看着，心碎而死，于是两个人一起烧在那条船上。"
+identity:
+  lineage:
+    - { id: aesir, note: 父为涅普，事迹不传 }
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "她是涅普之女，嫁给巴德尔，生福尔塞提。除此以外，原典没有交代她的来历。"
+    refs: [gylfaginning]
+  - text: "巴德尔的遗体被抬上葬船时，她在一旁看着，心当场碎掉，死了。诸神把她也抬上同一条船，与丈夫一同火化；索尔站在旁边，举雷锤为火堆祝圣。"
+    refs: [gylfaginning]
+variants:
+  - claim: "Saxo 的版本里她完全是另一个人：国王格瓦尔之女，被奥丁之子巴德尔看上，凡人王子霍德尔也来求亲，三人因此结怨。冰岛这边她是巴德尔的妻子，丹麦那边她成了两个男人相争的理由。"
+    refs: [saxo, gylfaginning]
+relations:
+  - { target: baldr, kind: 婚姻, detail: 夫妻, refs: [gylfaginning] }
+  - { target: forseti, kind: 亲缘, detail: 母子, refs: [gylfaginning] }

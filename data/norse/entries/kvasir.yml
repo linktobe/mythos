@@ -1,0 +1,34 @@
+id: kvasir
+pantheon: norse
+entity_type: 神祇
+name: 克瓦希尔
+name_original: "Kvasir"
+aliases: [夸西尔]
+summary: 两族议和时众神共唾一器造出的智者；被杀后血被酿成「诗歌的蜜酒」。
+role:
+  title: "被酿成酒的那位"
+  brief: "他是和约的产物，生来无所不知，走遍人间替人解答疑难。两个矮人杀了他，用他的血调蜜——诗艺的来源，是一桩谋杀。"
+identity:
+  lineage:
+    - { id: being, note: 两族共唾所造，非任何一族所生 }
+  camp:
+    - { id: aesir, note: 和约的见证者 }
+  realm:
+    - { id: asgard }
+    - { id: midgard, note: 遍行人间授业 }
+narrative:
+  - text: "阿萨与华纳议和时，各自走到一口缸前吐唾沫，作为和解的信物。诸神不肯让这东西失掉，就用它造出一个人，名为克瓦希尔。"
+    refs: [skaldskaparmal]
+  - text: "他聪明到没有问不倒的问题，走遍人间替人解惑。后来两个矮人菲亚拉与加拉尔把他骗到僻静处杀掉，放血盛在两瓮一釜里，和蜂蜜调成酒。"
+    refs: [skaldskaparmal]
+  - text: "这酒后来叫「诗歌的蜜酒」：谁喝了，谁就成了诗人或学者。矮人又编谎说克瓦希尔是聪明过头噎死的。"
+    refs: [skaldskaparmal]
+  - text: "《欺骗古鲁菲》里另有一处提到他：洛基化作鱼躲进瀑布，众人想不出如何捕捉，是克瓦希尔第一个从火中的灰烬看出那张网是怎么结的，诸神照样子做了一张。"
+    refs: [gylfaginning]
+variants:
+  - claim: "《英格林格萨迦》讲法不同：议和时华纳派来的「最有智慧的人」就叫克瓦希尔（Kvase），是他本人，不是两族共唾所造。同一件事，一部书把他写成产物的名字，另一部把他写成来使的名字。"
+    refs: [ynglingasaga, skaldskaparmal]
+relations:
+  - { target: aesir-vanir-war, kind: 从属, detail: 和约时共唾所造, refs: [skaldskaparmal] }
+  - { target: odin, kind: 宿命, detail: 以其血酿成的蜜酒，终为奥丁所夺, refs: [skaldskaparmal] }
+  - { target: dvergar, kind: 敌对, detail: 为矮人菲亚拉与加拉尔所杀, refs: [skaldskaparmal] }

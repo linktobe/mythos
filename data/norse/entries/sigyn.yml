@@ -1,0 +1,30 @@
+id: sigyn
+pantheon: norse
+entity_type: 神祇
+name: 西格恩
+name_original: "Sigyn"
+aliases: [西格英]
+summary: 洛基之妻，纳尔弗与瓦利之母；洛基受缚后，守在旁边举碗承接蛇毒。
+role:
+  title: "举着碗的人"
+  brief: "整章里她几乎不说一句话：蛇悬在丈夫头顶，她举着碗接住每一滴毒。碗满的时候，毒就落在他脸上。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "她是洛基的妻子，与他生了纳尔弗（又作纳里）。《欺骗古鲁菲》讲到洛基的家世时只留了这一句，没有提她的出身。"
+    refs: [gylfaginning]
+  - text: "洛基被绑在三块石头上，诸神把一条毒蛇悬在他头顶，让毒液滴到脸上。西格恩站在旁边举着碗接；碗满时她转身去倒，就这一转身的工夫，毒滴在他脸上，他痛得整片大地都跟着抖——那便是地震。"
+    refs: [gylfaginning]
+  - text: "《女巫的预言》写到这里只剩两句：洛基身旁坐着西格恩，她并不为此高兴。"
+    refs: [voluspa]
+    at: { voluspa: "35" }
+variants:
+  - claim: "她的两个儿子在这件事里被当作刑具：一个是瓦利，被变成狼咬死了兄弟纳尔弗，诸神再用纳尔弗的肠子绑住洛基。抄本对这兄弟俩的名字写法不一，别处另有一位「奥丁之子瓦利」，不是同一人。"
+    refs: [gylfaginning]
+relations:
+  - { target: loki, kind: 婚姻, detail: 夫妻, refs: [gylfaginning] }
+  - { target: loki-binding, kind: 宿命, detail: 守在受缚的洛基身旁举碗接毒, refs: [gylfaginning] }

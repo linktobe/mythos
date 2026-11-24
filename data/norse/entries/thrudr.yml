@@ -1,0 +1,29 @@
+id: thrudr
+pantheon: norse
+entity_type: 神祇
+name: 特鲁德
+name_original: "Þrúðr"
+aliases: [斯露德]
+summary: 索尔之女；矮人阿尔维斯来讨她为妻，被索尔用问答拖到天亮。
+role:
+  title: "天亮就散场的新娘"
+  brief: "有个矮人上门要娶她，父亲不说不肯，只说要考考他。一问一答，问了一整夜，天亮时矮人化成了石头。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "《阿尔维斯之歌》开场，一个矮人来到索尔的厅上，要娶他的女儿。索尔不正面回绝，只说：既然要结亲，得先说说各界对同一件事各叫什么——于是一问一答，从黄昏问到天亮。"
+    refs: [alvissmol]
+  - text: "矮人阿尔维斯对答如流，却也拖到了日出。天光一照，他当场化为石头——这诗的全部情节就是这一场问答。"
+    refs: [alvissmol]
+  - text: "诗里始终没有说出新娘的名字。她的名字见于《诗语》：索尔在那里被称作「马格尼、莫迪与特鲁德之父」。"
+    refs: [skaldskaparmal]
+variants:
+  - claim: "把《阿尔维斯之歌》里的新娘认作特鲁德，是后世整理者据《诗语》补上的；诗本身只写「索尔之女」，未点名。特鲁德是否另有母系可考，原典也未明说。"
+    refs: [alvissmol, skaldskaparmal]
+relations:
+  - { target: thor, kind: 亲缘, detail: 父女, refs: [skaldskaparmal] }
+  - { target: alviss, kind: 宿命, detail: 上门求娶的那个矮人，婚事未成, refs: [alvissmol] }

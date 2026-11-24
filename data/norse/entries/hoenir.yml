@@ -1,0 +1,35 @@
+id: hoenir
+pantheon: norse
+entity_type: 神祇
+name: 海尼尔
+name_original: "Hœnir"
+aliases: [霍尼尔]
+summary: 阿萨神族的一员，造人三神之一；两族议和后作为人质去了华纳海姆。
+role:
+  title: "造人的第三人"
+  brief: "他与奥丁、洛德一起把灵魂与知觉分给两棵枯树，又替阿萨出使华纳。名字在诗里反复出现，自己的故事却始终没讲完。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir, until: 议和后为质 }
+    - { id: vanir, from: 入华纳海姆 }
+  realm:
+    - { id: asgard, note: 出身 }
+    - { id: vanaheim, note: 为质 }
+narrative:
+  - text: "奥丁、海尼尔与洛德三人自神族中走出来，在海边见到两棵没有生气的树，把它们造成了人，名阿斯克与恩布拉。奥丁给了灵魂，海尼尔给了知觉，洛德给了体温与血色。"
+    refs: [voluspa]
+    at: { voluspa: "17–18" }
+  - text: "两族议和交换人质，华纳送出尼约德、弗雷与芙蕾雅，阿萨送出的正是海尼尔与密米尔。"
+    refs: [gylfaginning]
+  - text: "到了华纳海姆，他立刻被立为首领，遇事却总要等密米尔在旁边出主意；密米尔不在，他一律答「让别人来出主意吧」。华纳神族因此疑心受了骗，把密米尔杀了，首级送回阿萨。"
+    refs: [ynglingasaga]
+variants:
+  - claim: "造人一段，《女巫的预言》只点了三个名字：奥丁、海尼尔、洛德。第三位洛德在别处几乎不再出现，学界对其身份猜说不一；也有把这三位与奥丁、维利、维看作同一组的。"
+    refs: [voluspa, gylfaginning]
+  - claim: "《英格林格萨迦》里的写法是 Hone，密米尔作 Mime，克瓦希尔作 Kvase——同一批人名在冰岛与挪威的抄本里拼法并不统一。"
+    refs: [ynglingasaga]
+relations:
+  - { target: odin, kind: 同源, detail: 造人三神之一, refs: [voluspa] }
+  - { target: mimir, kind: 宿命, detail: 一同往华纳为质, refs: [gylfaginning, ynglingasaga] }
+  - { target: aesir-vanir-war, kind: 宿命, detail: 议和的交换人质, refs: [gylfaginning] }

@@ -1,0 +1,30 @@
+id: forseti
+pantheon: norse
+entity_type: 神祇
+name: 福尔塞提
+name_original: "Forseti"
+aliases: [弗塞提]
+summary: 巴德尔与南娜之子，居格利特尼尔；凡来求他裁断的，回去时都已和解。
+role:
+  title: "最后的判席"
+  brief: "父亲死了，母亲跟着死，他自己几乎不出场——只留下一座金柱银顶的厅，和一句「神与人之间最好的判席」。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard, note: 格利特尼尔 }
+narrative:
+  - text: "《格里姆尼尔之歌》清点诸神的居所：第十座叫格利特尼尔，柱子是金的，屋顶是银的，福尔塞提多半住在那里，把一切争执了断。"
+    refs: [grimnismal]
+    at: { grimnismal: "15" }
+  - text: "《欺骗古鲁菲》补出家世：他是巴德尔与南娜之子。凡因诉讼来求他裁断的，回去时都已和解；那是神与人之间最好的判席。"
+    refs: [gylfaginning]
+  - text: "除此以外，他没有留下任何故事：父亲死后，他既没有出现在葬礼上，也没有出现在末日里。"
+    refs: [gylfaginning]
+variants:
+  - claim: "「福尔塞提」与古诺斯语的「判席」（forseti）同字，名字本身就是职务。有学者因此认为他原是法庭的拟人，被后来的整理者写进了神谱；这属于推测。"
+    refs: [grimnismal]
+relations:
+  - { target: baldr, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
+  - { target: nanna, kind: 亲缘, detail: 母子, refs: [gylfaginning] }

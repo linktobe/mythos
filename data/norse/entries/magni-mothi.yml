@@ -1,0 +1,31 @@
+id: magni-mothi
+pantheon: norse
+entity_type: 神祇
+name: 马格尼与莫迪
+name_original: "Magni ok Móði"
+aliases: [玛格尼与摩迪]
+summary: 索尔的两个儿子；诸神黄昏之后，雷锤归他们。
+role:
+  title: "接手的人"
+  brief: "父亲与巨蟒同归于尽，锤子掉在战场上。末日过后，捡起它的是这两个儿子。"
+identity:
+  lineage: [aesir]
+  camp:
+    - { id: aesir }
+  realm:
+    - { id: asgard }
+narrative:
+  - text: "《瓦夫斯鲁德尼尔之歌》末段，奥丁问末日之后诸神谁还活着，对方答：维达与瓦利住在神域，莫迪与马格尼将执掌雷锤——那时温格尼尔（索尔的别名）已经倒下。"
+    refs: [vafthrudnismal]
+    at: { vafthrudnismal: "51" }
+  - text: "《欺骗古鲁菲》把这一幕说得更完整：大地重出海面，索尔的两个儿子莫迪与马格尼来到伊达平原，雷锤也到了他们手里。"
+    refs: [gylfaginning]
+  - text: "《诗语》列举索尔的别称时，径称他为「马格尼、莫迪与特鲁德之父」——这两兄弟在诗里没有独立的故事，只以父亲的头衔接入神谱。"
+    refs: [skaldskaparmal]
+variants:
+  - claim: "两人常被称为「力量」（Magni）与「愤怒」（Móði），名字本身就是索尔那两种性格的分身；原典从未让他们单独出场。"
+    refs: [skaldskaparmal]
+relations:
+  - { target: thor, kind: 亲缘, detail: 父子, refs: [gylfaginning, skaldskaparmal] }
+  - { target: mjolnir, kind: 从属, detail: 末日之后归其执掌, refs: [vafthrudnismal, gylfaginning] }
+  - { target: ragnarok, kind: 宿命, detail: 末日之后接手雷锤, refs: [vafthrudnismal] }

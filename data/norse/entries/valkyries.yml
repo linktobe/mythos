@@ -21,8 +21,8 @@ narrative:
   - text: "《格里姆尼尔之歌》列举其名，如 Skuld、Skögul、Hildr 等，数目与名目诸书不一；她们的日常职责之一，是在英灵殿中为英灵奉酒。"
     refs: [grimnismal, gylfaginning]
 variants:
-  - claim: "女武神的数目与名单各家记载不同，《格里姆尼尔之歌》所列与《诗语》所举并不一致。"
-    refs: [grimnismal, skaldskaparmal]
+  - claim: "女武神的数目与名单各家记载不同，《格里姆尼尔之歌》所列与《诗语》所举并不一致；《诗语》之后所附的《名目表》又是另一套名单，抄本带不带这一节，数目就随之变化。"
+    refs: [grimnismal, skaldskaparmal, nafnathulur]
   - claim: "希露德之父赫格尼，与《阿特利之歌》里古德伦之兄赫格尼只是同名，家世与事迹都不相干。北欧材料里同名不同人的情形不止这一处，读时须按篇分流。"
     refs: [skaldskaparmal, atlakvitha]
 relations:
@@ -43,7 +43,7 @@ profiles:
   - name: 希格露恩
     name_original: "Sigrún"
     story: "她与英雄海尔吉相爱成婚。海尔吉后来被她的兄弟达格所杀，她悲恸不已；诗中写他死后重生，二人再度相遇。这一组诗在诗体埃达中分前后两篇，结局各本不同。"
-    refs: [helgakvida]
+    refs: [helgakvida, helgakvitha-i]
   - name: 希露德
     name_original: "Hildr"
     story: "她的父亲赫格尼与她的情人赫丁交战，她每夜以魔法唤醒死者，令这场仗永远打不完——后世称「希露德之战」。她不属于英灵殿的挑选者，更像把战争本身留了下来的人。"

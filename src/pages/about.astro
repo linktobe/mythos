@@ -38,7 +38,7 @@ const tiers = [
       }
     </ul>
     <p>T2 和 T3 不进叙事主干，只在页末的「后世演绎」与「改编形象对照」里出现，并注明是哪一部署名作品。
-      中古的重述（如 Saxo、德国的《尼伯龙根之歌》）可以进「异文」，因为那是另一条传统对同一件事的另一次记载，须与 T0、T1 的说法并排着看；但来源表里会标出层级，不与原典混为一谈。</p>
+      另一条传统的重述（如德国的《尼伯龙根之歌》）可以进「异文」，因为那是另一个传统对同一件事的另一次记载，须与 T0、T1 的说法并排着看；但来源表里会标出层级，不与原典混为一谈。</p>
     <p>每个词条页的标题旁都标着这一条的主干层级：「主干 T0」表示叙事主要能在原典里核到；「主干 T1」表示原典未见，全靠汇编；「主干 T0 · 若干段仅见汇编」则是两种情况混在一条里，逐段另有标记。</p>
     <p>
       四级的界线由各体系自己划定。同一本书在两套神话里未必同级：一部公元一世纪的著作，
@@ -116,13 +116,18 @@ const tiers = [
       {
         systems.map(({ p }) => (
           <li>
-            <strong>{p.zh}</strong>：词目 {p.counts.entries} 条、关系 {p.counts.relations} 条、典籍 {p.counts.sources} 种。
+            <strong>{p.zh}</strong>：词目 {p.counts.entries} 条、关系 {p.counts.relations} 条、典籍 {p.counts.sources} 种
+            （已被词目引用 {p.counts.sourcesUsed} 种）。
           </li>
         ))
       }
     </ul>
     <p>
-      合计 {totals.entries} 条词目、{totals.relations} 条关系、{totals.sources} 种典籍。数据都是纯文本，逐条可查。
+      合计 {totals.entries} 条词目、{totals.relations} 条关系、{totals.sources} 种典籍（已被引用 {totals.sourcesUsed} 种）。数据都是纯文本，逐条可查。
+    </p>
+    <p>
+      登记不等于引用。典籍表里有一部分是先行录入、留待日后立条时才用到的——例如韵格示例一类与叙事无关的书，只登记，不出现在任何词条的来源里。
+      因此「典籍多少种」只说这张表有多长，覆盖率要看后面那句「已被引用多少种」，以及每一页末尾实际列出的书目。本站是人物图鉴，不是文献库；书收得比用得多，是正常的。
     </p>
     <p>
       全站叙事共 {totals.paragraphs} 段，其中 {totals.paraT0} 段（{pct(totals.paraT0, totals.paragraphs)}%）在 T0 原典里有依据，

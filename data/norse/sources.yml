@@ -343,7 +343,7 @@
 
 - id: saxo
   pantheon: norse
-  tier: T2
+  tier: T1
   title: 丹麦人的业绩
   original: Gesta Danorum
   work: 拉丁文史书
@@ -411,3 +411,291 @@
   author: Santa Monica Studio
   lang: 英语
   note: 前作的续篇，末日一线按游戏自己的安排推进，与原典的诸神黄昏出入更大。
+# ── 补登：英雄诗、非 Codex Regius 诗篇与外部旁证 ──
+# 诗体文本按诗计 T0，不论保存于哪部后期抄本或萨迦；散文整理与史书计 T1。
+# 登记不等于引用：没有一条词目引到的，只作备考，见编例「规模」一节的说明。
+
+- id: helreith-brynhildar
+  pantheon: norse
+  tier: T0
+  title: 布伦希尔德的冥府之旅
+  original: Helreið Brynhildar
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10–11 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/helreith-brynhildar
+  note: 布伦希尔德死后的自述，与《齐格鲁德之歌（短）》互为异文；英雄线结尾最缺的一块。
+
+- id: gripisspa
+  pantheon: norse
+  tier: T0
+  title: 格里皮尔的预言
+  original: Grípisspá
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 12 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/gripisspo
+  note: 格里皮尔向侄子齐格鲁德预言其一生，等于先把整组英雄诗撮述一遍；成篇较晚。
+
+- id: guthrunarkvitha-ii
+  pantheon: norse
+  tier: T0
+  title: 古德伦之歌（二）
+  original: Guðrúnarkviða in forna
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10–11 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/guthrunarkvitha-ii-en-forna
+  note: 齐格鲁德死后古德伦的哀歌，与第一篇并行，细节与结局都有出入。
+
+- id: guthrunarkvitha-iii
+  pantheon: norse
+  tier: T0
+  title: 古德伦之歌（三）
+  original: Guðrúnarkviða III
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 11 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/guthrunarkvitha-iii
+  note: 古德伦被诬与提奥德里克私通，以沸水试炼自证；这一组里少见的宫廷是非。
+
+- id: helgakvitha-i
+  pantheon: norse
+  tier: T0
+  title: 海尔吉·亨丁斯巴纳之歌（第一篇）
+  original: Helgakviða Hundingsbana in fyrri
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 10 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/helgakvitha-hundingsbana-i
+  note: 与第二篇讲同一人物，情节更简，细节常与第二篇相左。
+
+- id: helgakvitha-hjorvarthssonar
+  pantheon: norse
+  tier: T0
+  title: 海尔吉·赫约瓦尔松之歌
+  original: Helgakviða Hjörvarðssonar
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 11 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/helgakvitha-hjorvarthssonar
+  note: 另一个海尔吉，家世与事迹都与亨丁斯巴纳那位不同；散文与诗句夹杂。
+
+- id: drap-niflunga
+  pantheon: norse
+  tier: T0
+  title: 尼伯龙根覆灭
+  original: Dráp Niflunga
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 13 世纪抄本
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/drap-niflunga
+  note: 散文过渡段，交代贡纳尔与赫格尼之死、阿特利的结局，把前后诗篇接起来。
+
+- id: fra-dautha-sinfjotla
+  pantheon: norse
+  tier: T0
+  title: 辛菲奥利之死
+  original: Frá dauða Sinfjötla
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 13 世纪抄本
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/fra-dautha-sinfjotla
+  note: 同样是散文过渡段；沃尔松家族的诅咒在这里落到父子相残。
+
+- id: hyndluljoth
+  pantheon: norse
+  tier: T0
+  title: 辛德拉之歌
+  original: Hyndluljóð
+  work: 诗体埃达
+  work_original: Poetic Edda (Codex Regius)
+  date: 约 12 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/hyndluljoth
+  note: 弗蕾雅与女巨人辛德拉的谱系问答；末尾数十节单独成篇时称《短女巫的预言》。
+
+- id: hakonarmal
+  pantheon: norse
+  tier: T0
+  title: 哈康之歌
+  original: Hákonarmál
+  work: 宫廷诗
+  work_original: Skaldic poem
+  date: 约 960
+  author: Eyvindr skáldaspillir
+  lang: 古诺斯语
+  note: 女武神受奥丁之命在战场上拣选，与《格里姆尼尔之歌》的名单互为印证；仅存于《寰宇记》。
+
+- id: eiriksmal
+  pantheon: norse
+  tier: T0
+  title: 埃里克之歌
+  original: Eiríksmál
+  work: 宫廷诗
+  work_original: Skaldic poem
+  date: 约 954
+  lang: 古诺斯语
+  note: 埃里克王战死后被迎入英灵殿的场面，同类诗里最早的一批；作者不明。
+
+- id: nafnathulur
+  pantheon: norse
+  tier: T1
+  title: 名目表
+  original: Nafnaþulur
+  work: 散文埃达
+  work_original: Prose Edda (appended to Skáldskaparmál)
+  date: 约 13 世纪
+  lang: 古诺斯语
+  note: 女武神、巨人、矮人的名单在此；各家数目之所以不一，多半是抄本带不带这一节。
+
+- id: ynglingasaga
+  pantheon: norse
+  tier: T1
+  title: 英格林格萨迦
+  original: Ynglinga saga
+  work: 寰宇记（首篇）
+  work_original: Heimskringla
+  date: 约 1230
+  author: Snorri Sturluson
+  lang: 古诺斯语
+  url: https://sacred-texts.com/neu/heim/
+  note: 把奥丁写成从亚洲迁来的君王，是欧赫美鲁化的典型；理解「原典经过基督徒之手」绕不开它。
+
+- id: darradarljod
+  pantheon: norse
+  tier: T1
+  title: 达拉德尔之歌
+  original: Darraðarljóð
+  work: 尼亚尔萨迦（第 157 章）
+  work_original: Njáls saga
+  date: 诗约 11 世纪，散文 13 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/neu/ice/njal/
+  note: 十二位女子在织机前织出克伦塔夫战役的胜负，女武神形象最完整的一篇。
+
+- id: grottasongr
+  pantheon: norse
+  tier: T0
+  title: 格罗蒂之歌
+  original: Gróttasǫngr
+  work: 诗体埃达（外编）
+  work_original: Eddic poem, preserved in Skáldskaparmál
+  date: 约 10 世纪
+  lang: 古诺斯语
+  note: 两个女巨人为国王推磨，磨出黄金、和平，最后磨出军队；仅存于《诗语》引文与《弗拉泰书》。
+
+- id: svipdagsmal
+  pantheon: norse
+  tier: T0
+  title: 斯维普达格之歌
+  original: Svipdagsmál
+  work: 诗体埃达（外编）
+  work_original: Poetic Edda, not in Codex Regius
+  date: 约 13 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/svipdagsmol
+  note: 由《格罗阿的咒歌》与《菲约尔斯维尼尔之歌》两篇合成，不见于 Codex Regius，仅存于后期纸抄本。
+
+- id: voluspa-hin-skamma
+  pantheon: norse
+  tier: T0
+  title: 短女巫的预言
+  original: Völuspá hin skamma
+  work: 诗体埃达（辛德拉之歌末段）
+  work_original: Poetic Edda (Hyndluljóð 29–44)
+  date: 约 12 世纪
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-poetic-edda/hyndluljoth
+  note: 即《辛德拉之歌》后半，讲诸神黄昏前的人与神谱系及末日；单独成篇时用这个名字。
+
+- id: hrafnagaldr
+  pantheon: norse
+  tier: T2
+  title: 奥丁的渡鸦咒歌
+  original: Hrafnagaldr Óðins
+  work: 诗体埃达（附录）
+  work_original: Appendix to the Prose Edda, paper manuscripts
+  date: 仅存十七世纪纸抄本
+  lang: 古诺斯语
+  note: 常被附在《散文埃达》之后印行，成书年代不明，学界多视为晚期作品。
+
+- id: hljodskvida
+  pantheon: norse
+  tier: T0
+  title: 部队之歌
+  original: Hljóðskviða
+  work: 赫尔沃拉萨迦（插诗）
+  work_original: Hervarar saga
+  date: 约 11–13 世纪
+  lang: 古诺斯语
+  note: 哥特人与匈人的旧战，插在萨迦里；北欧材料中少见的东欧战事。
+
+- id: adam-bremen
+  pantheon: norse
+  tier: T1
+  title: 汉堡教会史
+  original: Gesta Hammaburgensis ecclesiae pontificum
+  work: 拉丁文史书
+  work_original: Gesta Hammaburgensis ecclesiae pontificum
+  date: 约 1075
+  author: Adam of Bremen
+  lang: 拉丁语
+  note: 乌普萨拉神庙与献祭的外部记载，出自信基督教的教士之手，视角与埃达不同。
+
+- id: tacitus-germania
+  pantheon: norse
+  tier: T1
+  title: 日耳曼尼亚志
+  original: Germania
+  work: 拉丁文史书
+  work_original: De origine et situ Germanorum
+  date: 98
+  author: Tacitus
+  lang: 拉丁语
+  url: https://sacred-texts.com/cla/tac/index.htm
+  note: 现存最早的日耳曼宗教记载，却比北欧文本早一千余年，只能作旁证，不能当同一传统的直接材料。
+
+- id: prose-edda-prologue
+  pantheon: norse
+  tier: T1
+  title: 散文埃达·序言
+  original: Prologus
+  work: 散文埃达
+  work_original: Prose Edda
+  date: 约 1220
+  author: Snorri Sturluson
+  lang: 古诺斯语
+  url: https://sacred-texts.com/book/the-prose-edda/prologue
+  note: 斯诺里把北欧诸神接到特洛伊谱系上，欧赫美鲁化的自白，也是「神被读成人」的关键文本。
+
+- id: hattatal
+  pantheon: norse
+  tier: T1
+  title: 韵格列举
+  original: Háttatal
+  work: 散文埃达
+  work_original: Prose Edda
+  date: 约 1220
+  author: Snorri Sturluson
+  lang: 古诺斯语
+  note: 诗体格律的示例集，与叙事无关；登记备考，不引用。
+
+- id: skaldatal
+  pantheon: norse
+  tier: T1
+  title: 诗人名录
+  original: Skáldatal
+  work: 散文埃达（附录）
+  work_original: Skáldatal
+  date: 约 13 世纪
+  lang: 古诺斯语
+  note: 诗人与所颂君主的名单，人物考订的辅助材料，与叙事无关。

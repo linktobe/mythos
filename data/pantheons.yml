@@ -22,8 +22,8 @@
   accent: '#9c3b2e'
   description: 以《诗体埃达》与《散文埃达》为主干。异说并列，各著出处。
   tier_note:
-    T0: 诗体埃达及同期诗歌
-    T1: 斯诺里《散文埃达》等古代汇编
+    T0: 诗体埃达及同期诗歌（含萨迦中的插诗）
+    T1: 斯诺里《散文埃达》、冰岛萨迦与丹麦、德意志的拉丁文史书等古代整理
   axes: [lineage, camp, realm]
   relation_kinds: [亲缘, 血盟, 婚姻, 敌对, 宿命, 从属, 师承, 化生, 同源]
   graph_center: odin

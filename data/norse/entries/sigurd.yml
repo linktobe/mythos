@@ -28,6 +28,8 @@ narrative:
 variants:
   - claim: "「齐格弗里德」是德语系统的名字（Nibelungenlied），北欧系统作 Sigurðr；两条传统的故事大体同源，细节各有出入。"
     refs: [sigurtharkvitha]
+  - claim: "《格里皮尔的预言》把齐格鲁德的一生提前讲完：舅舅格里皮尔逐段预言他的屠龙、娶妻、被负与身死，他明知结局仍照旧走下去。此篇成书较晚，多被视为对前几篇英雄诗的撮述，而非独立的第三种说法。"
+    refs: [gripisspa]
 relations:
   - { target: brynhildr, kind: 宿命, detail: 立誓相许而后相负，终至同死, refs: [sigurtharkvitha] }
   - { target: gudrun, kind: 婚姻, detail: 夫妻, refs: [sigurtharkvitha] }

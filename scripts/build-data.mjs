@@ -223,7 +223,7 @@ const SYMMETRIC = new Set(['亲缘', '血盟', '婚姻', '敌对', '宿命', '�
 
 const systems = [];
 const searchIndex = [];
-const totals = { entries: 0, relations: 0, sources: 0, paragraphs: 0, paraT0: 0, paraT1Only: 0, entriesT1Only: 0, t2sources: 0, t3sources: 0 };
+const totals = { entries: 0, relations: 0, sources: 0, sourcesUsed: 0, paragraphs: 0, paraT0: 0, paraT1Only: 0, entriesT1Only: 0, t2sources: 0, t3sources: 0 };
 
 for (const p of pantheons) {
   if (p.status !== 'live') continue;
@@ -460,6 +460,7 @@ for (const p of pantheons) {
     t2sources: sources.filter((s) => s.tier === 'T2').length,
     t3sources: sources.filter((s) => s.tier === 'T3').length,
     topSources,
+    sourcesUsed: usedBy.size,
   };
 
   systems.push({ pantheon: p, vocab, sources, entries, counts });
@@ -472,6 +473,7 @@ for (const p of pantheons) {
   totals.entriesT1Only += counts.entriesT1Only;
   totals.t2sources += counts.t2sources;
   totals.t3sources += counts.t3sources;
+  totals.sourcesUsed += counts.sourcesUsed;
 
   for (const e of entries) {
     searchIndex.push({

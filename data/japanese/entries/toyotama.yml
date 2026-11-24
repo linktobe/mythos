@@ -1,0 +1,41 @@
+id: toyotama
+pantheon: japanese
+entity_type: 神祇
+name: 丰玉姬
+name_original: "トヨタマビメ"
+aliases: [丰玉毗卖, 神女]
+summary: 海神绵津见之女，嫁山幸彦。渡海来产时被窥见原形，羞而归海，遣妹玉依姬抚养其子。
+role:
+  title: "被看见原形就走了的那一位"
+  brief: "她只要求一件事：不要看我。和伊邪那美一样，被看了；但后果不同——她没有变成追命的神，只是回海里去，再没回来。"
+identity:
+  lineage:
+    - { id: kamiumi }
+  camp:
+    - { id: chuu, note: 归海之后不再干预人间 }
+  realm:
+    - { id: watatsumi }
+    - { id: ashihara, note: 曾渡海来此产子 }
+narrative:
+  - text: 山幸彦坐在海宫井边桂树上，她的侍女取水时见井中有光，抬头见一美男子。她听了侍女回报，出见而心悦，告其父。绵津见遂以她嫁之。
+    refs: [kojiki]
+    at: { kojiki: "40" }
+  - text: 她在海宫与夫共居三年。后来怀有身孕，渡海来到苇原中国，临产前对丈夫说：我本是海神之女，产子之时愿以原形相见，请勿窥看。
+    refs: [kojiki]
+    at: { kojiki: "42" }
+  - text: 他忍耐不住而窥视，见她已化为鳄鱼伏地。她知其被见，以为大辱，即弃子归海，自此不复相见。
+    refs: [kojiki]
+    at: { kojiki: "42" }
+  - text: 她虽归海，仍念其子，遣其妹玉依姬前来代为抚育，并附歌一首，托妹转达对丈夫的思念。其子即鹈葺草葺不合命——名中「鹈葺草葺不合」，指产室以鹈羽与草葺而未及完工。
+    refs: [kojiki]
+    at: { kojiki: "42–43" }
+variants:
+  - claim: 她所化之物，记纪作「鳄」。后世注家或解为鲨、或解为鳄类海兽，未必即今日所谓鳄鱼。
+    refs: [kojiki]
+relations:
+  - { target: hoori, kind: 婚姻, refs: [kojiki] }
+  - { target: watatsumi, kind: 亲缘, detail: 父女, refs: [kojiki] }
+  - { target: tamayori, kind: 亲缘, detail: 姐妹, refs: [kojiki] }
+  - { target: ugayafukiaezu, kind: 亲缘, detail: 母子, refs: [kojiki] }
+legacy:
+  - "后世把她与「玉依姬」一并奉为海神、水神系统的女神；也有把她与「丰玉毗卖命」视作同一神格的不同写法的说法。"

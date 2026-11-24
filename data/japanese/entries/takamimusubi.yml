@@ -1,0 +1,42 @@
+id: takamimusubi
+pantheon: japanese
+entity_type: 神祇
+name: 高御产巢日神
+name_original: "タカミムスビノカミ"
+aliases: [高木神, 高皇产灵神, 高御产巢日神]
+summary: 别天神五柱之一，后称高木神。与天照共同主持让国与天孙降临；其女嫁天之忍穗耳，为天孙外祖。
+role:
+  title: "站在天照旁边的那一位"
+  brief: "记纪里凡有大事，总是「天照与高木神」并称。他不单独行动，却从不缺席：派遣、授命、判定，都有他一份。"
+identity:
+  lineage:
+    - { id: hitorigami }
+  camp:
+    - { id: takama }
+  realm:
+    - { id: takamagahara }
+narrative:
+  - text: 天地初发时于高天原成坐的三柱之一，独神而隐身。后世把前三柱合称「造化三神」。
+    refs: [kojiki]
+    at: { kojiki: "1" }
+  - text: 其后重新登场时多称「高木神」。让国之议中，八百万神奉命聚于天安河，即由他与天照共同下令。
+    refs: [kojiki]
+    at: { kojiki: "30" }
+  - text: 天若日子久不归报，他取回被射还的箭，祝道「若此箭是天若日子奉我们之命射向恶神者，则不要中他；若他有邪心，则死于此箭」，遂回掷而杀之。
+    refs: [kojiki]
+    at: { kojiki: "31" }
+  - text: 天孙将降，他与天照共同授命并赐三神器，叮嘱「以此镜如我御魂」。
+    refs: [kojiki]
+    at: { kojiki: "33" }
+relations:
+  - { target: betten, kind: 从属, detail: 五柱之一, refs: [kojiki] }
+  - { target: ninigi, kind: 亲缘, detail: 外祖, refs: [kojiki] }
+  - { target: amaterasu, kind: 同源, detail: 屡屡并称、共同主事, refs: [kojiki] }
+kinship:
+  - relation: 女
+    name: 万幡丰秋津师比卖命
+    name_original: "ヨロズハタトヨアキツシヒメ"
+    note: 嫁天之忍穗耳，生天孙琼琼杵尊。
+    refs: [kojiki]
+legacy:
+  - "近世国学与神道把「产巢日」解作生成化育之力，高御产巢日神遂被抬为与天照并列的宇宙神格之一；原典中他的分量并没有这么重。"

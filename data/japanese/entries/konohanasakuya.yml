@@ -1,0 +1,41 @@
+id: konohanasakuya
+pantheon: japanese
+entity_type: 神祇
+name: 木花开耶姬
+name_original: "コノハナノサクヤビメ"
+aliases: [木花之佐久夜毗卖, 神阿多都比卖, 浅间大神]
+summary: 大山津见之女，嫁天孙琼琼杵尊一夜而有孕；因被疑而筑无门之室、举火产子，生火照、火须势理、火远理三神。
+role:
+  title: "被怀疑了一次，就用火来证明"
+  brief: "「一夜怎么会有孩子」——她一句话没辩解，只是砌了一间没有门的房子，进去，点火。孩子是在火烧得最烈的时候出生的，名字就叫火照。"
+identity:
+  lineage:
+    - { id: kamiumi }
+  camp:
+    - { id: takama, note: 嫁天孙之后归此方 }
+  realm:
+    - { id: ashihara, note: 笠沙之岬与日向 }
+narrative:
+  - text: 天孙琼琼杵尊在笠沙之岬遇见她，问明是山神大山津见之女，遣使求婚。父亲把她的姐姐磐长姬一并送来，天孙退回了姐姐。
+    refs: [kojiki]
+    at: { kojiki: "37" }
+  - text: 她与天孙成婚一夜即有孕。天孙不信，说「一夜岂能有子，必是国神之子」。
+    refs: [kojiki]
+    at: { kojiki: "38" }
+  - text: 她不辩，只筑了一间没有门的产室，入内以土封门，临产时举火焚室。火势最烈时生下的孩子名火照命，其次火须势理命，再次火远理命。
+    refs: [kojiki]
+    at: { kojiki: "38" }
+  - text: 火照命为隼人阿多君之祖，火远理命即后来的山幸彦。三子皆平安，天孙之疑遂解。
+    refs: [kojiki]
+    at: { kojiki: "38" }
+variants:
+  - claim: 退婚与「人寿如花」之说，《日本书纪》亦有记载而异其辞；「磐长姬」在彼作「石长比卖」。
+    refs: [nihonshoki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: ninigi, kind: 婚姻, detail: 一夜成婚后举火产子, refs: [kojiki] }
+  - { target: ooyamatsumi, kind: 亲缘, detail: 父女, refs: [kojiki] }
+  - { target: hoderi, kind: 亲缘, detail: 母子, refs: [kojiki] }
+  - { target: hoori, kind: 亲缘, detail: 母子, refs: [kojiki] }
+legacy:
+  - "后世以她为富士山浅间大社的祭神「浅间大神」，掌管火山与安产——火中产子的故事与火山，被合到了一处。"

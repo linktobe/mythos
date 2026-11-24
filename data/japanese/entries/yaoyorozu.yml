@@ -1,0 +1,34 @@
+id: yaoyorozu
+pantheon: japanese
+entity_type: 群体
+name: 八百万神
+name_original: "ヤオヨロズノカミ"
+aliases: [八百万之神, 八百萬神]
+summary: 高天原与苇原中国的众神之总称。天岩屋户前议策、罚逐须佐之男、让国之议，皆以「八百万神集会」的形式进行。
+role:
+  title: "不是一个数，是一种议事的规模"
+  brief: "「八百万」是「极多」的意思。记纪用它做两件事：把所有神都叫来集体议事，和把所有神都叫来集体定罪——日本神话里唯一的「大会」。"
+identity:
+  lineage:
+    - { id: amatsu }
+  camp:
+    - { id: takama }
+  realm:
+    - { id: takamagahara }
+narrative:
+  - text: 天照隐入天石屋户，天地成夜，八百万神聚于天安河之河原，由思金神设策，铸镜、造玉、歌舞以诱她出户。
+    refs: [kojiki]
+    at: { kojiki: "16" }
+  - text: 须佐之男大闹之后，八百万神共议其罪，罚他偿千座台，剃须、拔去手足之甲，逐出高天原。
+    refs: [kojiki]
+    at: { kojiki: "17" }
+  - text: 让国之议亦由八百万神共议：天照与高木神命他们集会于天安河，思金神问「当遣何神」，众人举天菩比命，后又举天若日子。
+    refs: [kojiki]
+    at: { kojiki: "30–31" }
+variants:
+  - claim: 「八百万」是虚数，与「八十神」「八岛」同类，作「众多」解。它不含国津神，也不含后来的各种地方神；那一片「八百万神」是后世的说法，与记纪此词并不完全同义。
+    refs: [kojiki]
+relations:
+  - { target: amaterasu, kind: 从属, detail: 为其议事与定罪之众, refs: [kojiki] }
+  - { target: amano-iwato, kind: 从属, detail: 聚议而诱其出户, refs: [kojiki] }
+  - { target: takamimusubi, kind: 从属, detail: 受其与天照之命集会, refs: [kojiki] }

@@ -1,0 +1,43 @@
+id: kuniyuzuri
+pantheon: japanese
+entity_type: 事件
+name: 让国
+name_original: "クニユズリ"
+aliases: [国让り, 苇原中国平定]
+summary: 天照欲使苇原中国归天孙所治，先后遣使皆不成，最后以建御雷之男神迫降大国主之子，大国主以造殿掌幽界为条件交出国土。
+role:
+  title: "谈了三轮才谈成的一次移交"
+  brief: "第一任使者去巴结了对方，第二任去娶了对方的女儿——两任都不汇报。第三任根本没谈，直接把剑插在浪头坐在剑尖上问话。"
+identity: {}
+narrative:
+  - text: 天照说：苇原中国当由吾子天忍穗耳治理，遂遣其下降。他立于天浮桥一看，说此国喧扰未定，径自返回高天原复命。
+    refs: [kojiki]
+    at: { kojiki: "30" }
+  - text: 天照与高木神命八百万神聚于天安河，思金神议定先遣天菩比命。天菩比到了苇原中国，谄附大国主，三年不回报。
+    refs: [kojiki]
+    at: { kojiki: "30" }
+  - text: 再遣天若日子。他降下之后娶大国主之女下照比卖，又图谋夺国，八年不回报。天照遣雉名鸣女前去责问，天探女劝他射杀此鸟；箭穿雉身，直上至高天，落在天照与高木神所坐之处。
+    refs: [kojiki]
+    at: { kojiki: "31" }
+  - text: 高木神取箭祝曰：若此箭是天若日子奉命射恶神者，则不要中他；若他有邪心，则死于此箭。遂回掷，箭中其胸，天若日子在床而死。其妻下照比卖哭声随风上天，父家来建丧屋，奏乐八日八夜，是为「丧屋」之始。
+    refs: [kojiki]
+    at: { kojiki: "31" }
+  - text: 第三任遣建御雷之男神，以天鸟船神为副。二神降至出云伊那佐小滨，把十拳剑倒插在浪头上，盘腿坐在剑尖上，向大国主问其心意。大国主推说由我子事代主作答；事代主正在三保之岬捕鱼，被召回后当即应允，踏翻其舟，拍手而隐。
+    refs: [kojiki]
+    at: { kojiki: "32" }
+  - text: 大国主又说还有子建御名方神。建御名方举千引石而来，要与使者角力：他握住建御雷之手，先化为冰柱、再化为剑刃；建御雷反握其手，如折嫩苇般捏碎掷开，建御名方逃走，被追至科野之州羽海而请降，誓不出此地、不违父命。
+    refs: [kojiki]
+    at: { kojiki: "32" }
+  - text: 大国主遂允让国，只求为自己造一座「下及磐石之根、上抵高天原」的宫殿，退隐于八十道曲之中奉侍天孙；其百八十子神以事代主为首，亦当奉侍。天照一方依言于出云多艺志之滨造天之御舍，天八重神为膳夫，设宴奏乐。
+    refs: [kojiki]
+    at: { kojiki: "32" }
+variants:
+  - claim: 《日本书纪》记此事，多作大国主之子先降、大国主随后奉命退隐，与《古事记》「大国主亲口提出造殿掌幽界」的说法不同。
+    refs: [nihonshoki, kojiki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: amaterasu, kind: 从属, detail: 由她发起, refs: [kojiki] }
+  - { target: okuninushi, kind: 从属, detail: 交出国土的一方, refs: [kojiki] }
+  - { target: ninigi, kind: 从属, detail: 让国之后天孙方得以下降, refs: [kojiki] }
+  - { target: yaoyorozu, kind: 从属, detail: 再三集议遣使, refs: [kojiki] }
+  - { target: ashihara, kind: 从属, detail: 所让之国, refs: [kojiki] }

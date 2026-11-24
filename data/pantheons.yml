@@ -103,9 +103,10 @@
       route: shi
       types: [事件]
   order:
-    group: [betten, kamiyo-nanayo, yasogami]
+    entry: [izanagi, izanami, kagutsuchi, amaterasu, tsukuyomi, susanoo, takamimusubi, ooyamatsumi, okuninushi, suseri-bime, sukunabikona, ninigi, konohanasakuya, sarutahiko, watatsumi, toyotama, hoderi, hoori, tamayori, ugayafukiaezu]
+    group: [betten, kamiyo-nanayo, yaoyorozu, yasogami]
     place: [takamagahara, ashihara, yomi, ne-no-kuni]
-    event: [kuniumi, kamiumi, yomi-visit, misogi, amano-iwato, inaba-hare]
+    event: [kuniumi, kamiumi, yomi-visit, misogi, amano-iwato, inaba-hare, kuniyuzuri, tenson-korin, umisachi-yamasachi]
 
 - id: greco-roman
   zh: 古希腊罗马神话

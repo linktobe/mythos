@@ -1,0 +1,44 @@
+id: hoori
+pantheon: japanese
+entity_type: 神祇
+name: 火远理命
+name_original: "ホオリノミコト"
+aliases: [山幸彦, 天津日高日子穗穗手见命, 日子穗穗手见命]
+summary: 天孙第三子，得山幸之利。失兄之钓钩而入海宫，娶丰玉姬，携潮盈珠与潮涸珠归来降服其兄，为神武天皇之祖。
+role:
+  title: "下海找一根钓钩的人"
+  brief: "整件事的起因小得可笑：一根钩子。他为此潜入海底、住了三年、娶了海神之女——回来时带的是两颗能操纵潮水的珠子。"
+identity:
+  lineage:
+    - { id: tenson }
+  camp:
+    - { id: takama }
+  realm:
+    - { id: ashihara, note: 日向 }
+    - { id: watatsumi, note: 在彼处留居三年 }
+narrative:
+  - text: 天孙第三子，一称山幸彦，得「山幸」。他与兄火照命互换渔猎之利，拿着兄的钓钩出海，一尾未得，反把钩丢在海中。
+    refs: [kojiki]
+    at: { kojiki: "38–39" }
+  - text: 兄逼他归还原钩，他折断十拳剑制五百钩、又制一千钩赔偿，兄皆不受。他在海滨哭泣，盐椎神现身，造无隙小舟，教他沿「美知之潮路」前往海神之宫。
+    refs: [kojiki]
+    at: { kojiki: "39–40" }
+  - text: 他到了海宫，坐在井边桂树上，被宫人引入，绵津见神以女丰玉姬嫁之。三年后他叹气，海神问明缘由，尽召海鱼查问，从一尾鲷的喉中取出钓钩。
+    refs: [kojiki]
+    at: { kojiki: "40" }
+  - text: 海神教他还钩之法：背手递还，祝为「大钩、忙钩、贫钩、愚钩」；又赠潮盈珠与潮涸珠，命一丈之鳄送他归岸。他依教行事，兄三年而贫、来攻则被潮水所困，终于俯首称臣。
+    refs: [kojiki]
+    at: { kojiki: "40–41" }
+  - text: 后来丰玉姬渡海来产，嘱他不得窥看。他违约窥视，见她已化为鳄鱼，她羞而归海，遣其妹玉依姬来抚育此子。此子即鹈葺草葺不合命。
+    refs: [kojiki]
+    at: { kojiki: "42" }
+variants:
+  - claim: 记纪记丰玉姬所化之物为「鳄」，后世注家多解作鲨鱼或鳄类海兽，与今日汉语「鳄鱼」未必同指。译文若径写「鳄」，读者容易误解。
+    refs: [kojiki]
+relations:
+  - { target: hoderi, kind: 亲缘, detail: 兄弟, refs: [kojiki] }
+  - { target: hoderi, kind: 敌对, detail: 以潮盈珠・潮涸珠降服之, refs: [kojiki] }
+  - { target: toyotama, kind: 婚姻, refs: [kojiki] }
+  - { target: watatsumi, kind: 亲缘, detail: 妻父，授潮珠, refs: [kojiki] }
+  - { target: ugayafukiaezu, kind: 亲缘, detail: 父子, refs: [kojiki] }
+  - { target: ninigi, kind: 亲缘, detail: 父子, refs: [kojiki] }

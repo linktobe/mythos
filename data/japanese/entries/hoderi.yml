@@ -1,0 +1,38 @@
+id: hoderi
+pantheon: japanese
+entity_type: 神祇
+name: 火照命
+name_original: "ホデリノミコト"
+aliases: [海幸彦, 火照命]
+summary: 天孙长子，得海幸之利。与弟交换渔猎而失其钓钩，逼弟寻还；终为潮盈珠所困，俯首誓为昼夜守卫。
+role:
+  title: "靠一只钓钩输掉的那一位"
+  brief: "他不是被武力打败的，是被一颗珠子淹到认输。记纪把他的后代写成隼人——一个直到近代仍要向朝廷献舞的族群。"
+identity:
+  lineage:
+    - { id: tenson }
+  camp:
+    - { id: takama }
+  realm:
+    - { id: ashihara, note: 日向之阿多 }
+narrative:
+  - text: 天孙三子之长子，一称海幸彦，得「海幸」——善于捕鱼；弟火远理命得「山幸」，善于猎兽。
+    refs: [kojiki]
+    at: { kojiki: "38–39" }
+  - text: 弟请求互换，他三次不允，最后才勉强同意。弟拿着他的钓钩出海，一尾未得，还把钩遗失在海中。他索还原钩，弟折断十拳剑制五百钩、又制一千钩赔偿，他都不收，只索原物。
+    refs: [kojiki]
+    at: { kojiki: "39" }
+  - text: 弟自海宫归来，依海神之教背手还钩，祝之为「大钩、忙钩、贫钩、愚钩」，又反其道耕作。他自此日贫，三年而困。
+    refs: [kojiki]
+    at: { kojiki: "40–41" }
+  - text: 他怒而来攻，弟放潮盈珠淹之；他哀告，弟放潮涸珠活之。如此几番，他终于低头道：「自今以后，我昼夜为君守卫，奉侍于你。」
+    refs: [kojiki]
+    at: { kojiki: "41" }
+variants:
+  - claim: 记纪说他的子孙为隼人（阿多君之祖），「其溺水时的种种姿态至今献演」——这被认为是朝廷礼仪中隼人舞的来源。这是《古事记》少见地把神话直接接到当时制度上的一处。
+    refs: [kojiki]
+relations:
+  - { target: hoori, kind: 亲缘, detail: 兄弟, refs: [kojiki] }
+  - { target: hoori, kind: 敌对, detail: 索钩、来攻而败, refs: [kojiki] }
+  - { target: ninigi, kind: 亲缘, detail: 父子, refs: [kojiki] }
+  - { target: konohanasakuya, kind: 亲缘, detail: 母子, refs: [kojiki] }

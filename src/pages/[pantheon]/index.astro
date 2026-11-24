@@ -18,7 +18,15 @@ const unitOf = (section: any) =>
   section.key === 'object' ? '件' : section.key === 'place' ? '处' : section.key === 'event' ? '起' : '条';
 
 const lead = p.sections.find((s: any) => s.key === 'entry') ?? p.sections[0];
-const people = entries.filter((e: any) => e.section === lead.key);
+// 排序：pantheons.yml 的 order.<section> 优先，未列出的排在后面
+const leadOrder: string[] = system.pantheon.order?.[lead.key] ?? [];
+const people = entries
+  .filter((e: any) => e.section === lead.key)
+  .sort((a: any, b: any) => {
+    const ia = leadOrder.indexOf(a.id);
+    const ib = leadOrder.indexOf(b.id);
+    return (ia < 0 ? 999 : ia) - (ib < 0 ? 999 : ib);
+  });
 ---
 
 <Base

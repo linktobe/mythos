@@ -1,0 +1,36 @@
+id: umisachi-yamasachi
+pantheon: japanese
+entity_type: 事件
+name: 海幸山幸
+name_original: "ウミサチヤマサチ"
+aliases: [海幸彦与山幸彦, 钓针丧失]
+summary: 兄火照命得海幸、弟火远理命得山幸，二人交换渔猎而弟失其钩，遂入海宫求还，携潮珠归来降服其兄。
+role:
+  title: "一根钓钩引出的一整段"
+  brief: "交换一次生计，丢一根钩子，下海住三年，娶海神之女，带回两颗能操纵潮水的珠子——《古事记》里最长的一段支线，起因只是「弄丢了哥哥的钩」。"
+identity: {}
+narrative:
+  - text: 火照命得海幸，善捕鱼；火远理命得山幸，善猎兽。弟提议互换，兄三次不允，最后勉强同意。
+    refs: [kojiki]
+    at: { kojiki: "39" }
+  - text: 弟持兄之钩出海，一尾未得，钩亦遗失海中。兄索原钩，弟折断十拳剑制五百钩、又制一千钩为偿，兄皆不受，只索原物。
+    refs: [kojiki]
+    at: { kojiki: "39" }
+  - text: 盐椎神现身，造无隙小舟，教他沿潮路入海。他至海神之宫，坐井边桂树，被引入内，娶丰玉姬，居三年。海神尽召海鱼查问，从鲷鱼喉中取出钓钩。
+    refs: [kojiki]
+    at: { kojiki: "40" }
+  - text: 海神授还钩之法与潮盈珠、潮涸珠，命一丈之鳄送归。他依教行事，兄三年而贫，来攻则被潮水所困，终于俯首誓为昼夜守卫。
+    refs: [kojiki]
+    at: { kojiki: "40–41" }
+  - text: 丰玉姬后渡海来产，嘱勿窥看；他违约窥视，见她化为鳄鱼。她羞而归海，遣妹玉依姬抚育其子。此子即鹈葺草葺不合命，卷上神代至此收束。
+    refs: [kojiki]
+    at: { kojiki: "42–43" }
+variants:
+  - claim: 《日本书纪》记此事，兄弟之名与海宫诸节大体相同而细节有出入；「潮盈珠・潮涸珠」两书皆有。
+    refs: [nihonshoki, kojiki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: hoderi, kind: 从属, detail: 兄，索钩而终被降服, refs: [kojiki] }
+  - { target: hoori, kind: 从属, detail: 弟，入海取钩者, refs: [kojiki] }
+  - { target: watatsumi, kind: 从属, detail: 授珠与指路者, refs: [kojiki] }
+  - { target: toyotama, kind: 从属, detail: 产子而被窥见者, refs: [kojiki] }

@@ -1,0 +1,45 @@
+id: ooyamatsumi
+pantheon: japanese
+entity_type: 神祇
+name: 大山津见神
+name_original: "オオヤマツミノカミ"
+aliases: [大山祇神, 山神]
+summary: 山神，伊邪那岐与伊邪那美所生。其女遍嫁国津与天孙两系；因长女被退回，他咒天孙之寿如花之易落。
+role:
+  title: "把两个女儿一起献上去的岳父"
+  brief: "他要的是「磐石之寿」，天孙要的是「花之美」。退回一个丑女儿，换来的是整条皇统寿命不长——这笔账由他亲口说出。"
+identity:
+  lineage:
+    - { id: kamiumi }
+  camp:
+    - { id: chuu, note: 与出云、与天孙两系同时联姻 }
+  realm:
+    - { id: ashihara, note: 山 }
+narrative:
+  - text: 神生み之际，伊邪那岐与伊邪那美所生的山神，即大山津见神。
+    refs: [kojiki]
+    at: { kojiki: "6" }
+  - text: 他的女儿木花知流比卖嫁八岛士奴美，生下布波能母迟久奴须奴，是出云一系的母系源头之一；另一女则嫁须佐之男，生大年神与御岁神。
+    refs: [kojiki]
+    at: { kojiki: "20" }
+  - text: 天孙琼琼杵尊在笠沙之岬遇见他的女儿木花开耶姬，遣使求婚。他大喜，把长女磐长姬一并送上，又附上百机之礼物。
+    refs: [kojiki]
+    at: { kojiki: "37" }
+  - text: 天孙见磐长姬貌丑而惊，把她退回，只留木花开耶姬。大山津见以为大辱，遣使致辞：本意是让天孙之裔如磐石之坚、如花之荣；今退回磐石而独留花，天孙之裔当如花之易落。天皇寿数不长，即由此始。
+    refs: [kojiki]
+    at: { kojiki: "37" }
+variants:
+  - claim: 《日本书纪》作「大山祇神」，并记其另有一女「磐长姬」之外的说法；两书对退婚一节的措辞亦有出入。
+    refs: [nihonshoki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: konohanasakuya, kind: 亲缘, detail: 父女, refs: [kojiki] }
+  - { target: ninigi, kind: 亲缘, detail: 妻父，因退婚而咒其寿, refs: [kojiki] }
+  - { target: susanoo, kind: 亲缘, detail: 女婿, refs: [kojiki] }
+  - { target: ashihara, kind: 从属, detail: 山之神, refs: [kojiki] }
+kinship:
+  - relation: 长女
+    name: 磐长姬
+    name_original: "イワナガヒメ"
+    note: 又称石长比卖。被退回，其后果即「人寿如花」之说。
+    refs: [kojiki]

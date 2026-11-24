@@ -1,0 +1,35 @@
+id: ugayafukiaezu
+pantheon: japanese
+entity_type: 神祇
+name: 鹈葺草葺不合命
+name_original: "ウガヤフキアエズノミコト"
+aliases: [天津日高日子波限建鹈葺草葺不合命, 彦波限建鹈葺草葺不合命]
+summary: 山幸彦与丰玉姬之子，由姨母玉依姬抚养成人，后娶姨母为妻，生四子，末子即神武天皇。卷上神代至此结束。
+role:
+  title: "卷上的最后一位"
+  brief: "他的名字本身就是一段写实的记录：产室用鹈羽与草葺，还没盖完孩子就出生了。神代不在某位大神处终结，而在一间没盖完的产房里终结。"
+identity:
+  lineage:
+    - { id: tenson }
+  camp:
+    - { id: takama }
+  realm:
+    - { id: ashihara, note: 日向 }
+narrative:
+  - text: 父为火远理命（山幸彦），母为海神之女丰玉姬。母亲渡海来产，因产室以鹈羽与草葺而尚未完工，故以此为名。
+    refs: [kojiki]
+    at: { kojiki: "42" }
+  - text: 母亲因被窥见原形而羞归海，遣其妹玉依姬代为抚育。他由姨母养大成人。
+    refs: [kojiki]
+    at: { kojiki: "42–43" }
+  - text: 他娶姨母玉依姬为妻，生四子：五濑命、稻冰命、御毛沼命、若御毛沼命。若御毛沼命又名神倭伊波礼毗古命，即神武天皇。
+    refs: [kojiki]
+    at: { kojiki: "43" }
+  - text: 四子之中，御毛沼命踏浪渡往常世，稻冰命入海原；唯神倭伊波礼毗古留居此地。卷上神代至此终，卷中转入神武东征。
+    refs: [kojiki]
+    at: { kojiki: "43" }
+relations:
+  - { target: tamayori, kind: 婚姻, detail: 娶姨母为妻, refs: [kojiki] }
+  - { target: hoori, kind: 亲缘, detail: 父子, refs: [kojiki] }
+  - { target: toyotama, kind: 亲缘, detail: 母子, refs: [kojiki] }
+  - { target: ashihara, kind: 从属, detail: 居日向，其子由此东征, refs: [kojiki] }

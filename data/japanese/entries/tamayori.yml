@@ -1,0 +1,39 @@
+id: tamayori
+pantheon: japanese
+entity_type: 神祇
+name: 玉依姬
+name_original: "タマヨリビメ"
+aliases: [玉依毗卖, 玉依媛]
+summary: 丰玉姬之妹。代姐抚养外甥鹈葺草葺不合命，后为其妻，生四子，末子即神武天皇。
+role:
+  title: "养大了外甥，又嫁给了他"
+  brief: "记纪对此不作评论，只照实写：姐姐回海里去，妹妹留下抚育孩子，后来成为他的妻子。皇统的母系，在这里同时是姨母。"
+identity:
+  lineage:
+    - { id: kamiumi }
+  camp:
+    - { id: takama, note: 居于天孙一系之中 }
+  realm:
+    - { id: ashihara, note: 日向 }
+narrative:
+  - text: 丰玉姬归海之际，遣其妹前来代为抚育新生的孩子。此子即鹈葺草葺不合命，其名指产室以鹈羽与草葺而尚未完工。
+    refs: [kojiki]
+    at: { kojiki: "42" }
+  - text: 她抚养此子成人。后来鹈葺草葺不合命娶她为妻。记纪说她是他的姨母（母之妹），并未为这桩婚事作任何辩解。
+    refs: [kojiki]
+    at: { kojiki: "43" }
+  - text: 她生四子：五濑命、稻冰命、御毛沼命、若御毛沼命。若御毛沼命又名丰御毛沼命、神倭伊波礼毗古命，即后来的神武天皇。
+    refs: [kojiki]
+    at: { kojiki: "43" }
+  - text: 四子之中，御毛沼命踏浪渡往常世，稻冰命入海原——记纪说那里是他亡母之国；只有神倭伊波礼毗古留在此地，后来东征。
+    refs: [kojiki]
+    at: { kojiki: "43" }
+relations:
+  - { target: ugayafukiaezu, kind: 婚姻, detail: 既是姨母也是妻, refs: [kojiki] }
+  - { target: toyotama, kind: 亲缘, detail: 姐妹, refs: [kojiki] }
+kinship:
+  - relation: 子
+    name: 神倭伊波礼毗古命
+    name_original: "カムヤマトイワレビコ"
+    note: 即神武天皇。其三位兄长或渡常世、或入海原。
+    refs: [kojiki]

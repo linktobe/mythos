@@ -1,0 +1,55 @@
+id: ninigi
+pantheon: japanese
+entity_type: 神祇
+name: 琼琼杵尊
+name_original: "ニニギノミコト"
+aliases: [天津日高日子番能迩迩艺命, 天孙, 番能迩迩艺命]
+summary: 天照之孙。受三神器，自高天原降临日向高千穗，娶木花开耶姬，生火照、火须势理、火远理三神，为皇统直系之祖。
+role:
+  title: "从天上下来的第一代"
+  brief: "他不是最重要的神，却是最关键的一环：三件神器在他手上离开高天原，从此归人间所有。神代到此为止，后面是人的世系。"
+identity:
+  lineage:
+    - { id: amatsu }
+  camp:
+    - { id: takama }
+  realm:
+    - { id: takamagahara, note: 本居于此 }
+    - { id: ashihara, note: 降于日向高千穗之久士布流峰 }
+narrative:
+  - text: 父为天之忍穗耳命，母为高木神之女万幡丰秋津师比卖命。天照原命其父下治苇原中国，其父登天浮桥见国土喧扰而返，说我儿已生，当遣此子。
+    refs: [kojiki]
+    at: { kojiki: "30、33" }
+  - text: 天照与高木神授以八尺琼勾玉、八咫镜与草那艺之大刀，命他降临；又命思金神、天手力男神、天石户别神随行，并嘱「以此镜如我御魂，敬而祀之」。
+    refs: [kojiki]
+    at: { kojiki: "33" }
+  - text: 将降之时，天之八衢有一神，光华上照高天原、下照苇原中国，即猿田毗古神。天宇受卖命前往问明，其自称来为天孙作先导。
+    refs: [kojiki]
+    at: { kojiki: "33" }
+  - text: 他推开八重云，降临筑紫日向高千穗之久士布流峰，四望之后说此地「朝日直照、夕日亦照」，遂立柱建殿而居。
+    refs: [kojiki]
+    at: { kojiki: "34" }
+  - text: 其后在笠沙之岬遇木花开耶姬而娶之，退回其姐磐长姬；她举火产子，生火照、火须势理、火远理三神。
+    refs: [kojiki]
+    at: { kojiki: "37–38" }
+variants:
+  - claim: 《日本书纪》把天孙降临分记于卷二数条之下，随行之神与授受之物诸本略有出入；有的「一书」以天照之子径为天孙，不经过天之忍穗耳这一代。
+    refs: [nihonshoki]
+relations:
+  - { target: amaterasu, kind: 亲缘, detail: 祖母, refs: [kojiki] }
+  - { target: betten, kind: 亲缘, detail: 外祖为高御产巢日神, refs: [kojiki] }
+  - { target: konohanasakuya, kind: 婚姻, refs: [kojiki] }
+  - { target: hoderi, kind: 亲缘, detail: 父子, refs: [kojiki] }
+  - { target: hoori, kind: 亲缘, detail: 父子, refs: [kojiki] }
+  - { target: sanshu-no-jingi, kind: 从属, detail: 受此三物而降, refs: [kojiki] }
+kinship:
+  - relation: 父
+    name: 天之忍穗耳命
+    name_original: "アメノオシホミミ"
+    note: 天照之子。受命下治而未行，改由其子降临。
+    refs: [kojiki]
+  - relation: 母
+    name: 万幡丰秋津师比卖命
+    name_original: "ヨロズハタトヨアキツシヒメ"
+    note: 高木神（高御产巢日神）之女。
+    refs: [kojiki]

@@ -1,0 +1,34 @@
+id: tenson-korin
+pantheon: japanese
+entity_type: 事件
+name: 天孙降临
+name_original: "テンソンコウリン"
+aliases: [天孙降临, 天津日高日子番能迩迩艺命降临]
+summary: 琼琼杵尊受三神器与五部神，自高天原降临日向高千穗，神代由此转入皇统。
+role:
+  title: "把三件神器带下人间的那一次"
+  brief: "镜、玉、剑在这一刻离开高天原。此后它们不再是神的宝物，而是皇位的凭证——神代与人间，就在这条绳上分界。"
+identity: {}
+narrative:
+  - text: 建御雷之男神回报苇原中国已平，天照与高木神遂命天忍穗耳下降。他以「我儿已生」为辞，推荐其子番能迩迩艺命代行。
+    refs: [kojiki]
+    at: { kojiki: "33" }
+  - text: 授以八尺琼勾玉、八咫镜与草那艺之大刀，又命思金神、天手力男神、天石户别神随行，嘱「以此镜如我御魂，敬而祀之」。思金神并奉命执掌政务。
+    refs: [kojiki]
+    at: { kojiki: "33" }
+  - text: 天之八衢有一神当道，光华上照高天原、下照苇原中国。天宇受卖命前往问之，其自称猿田毗古神，来为天孙作先导。另有天儿屋命、布刀玉命、天宇受卖命、伊斯许理度卖命、玉祖命五部神随行。
+    refs: [kojiki]
+    at: { kojiki: "33" }
+  - text: 天孙推开八重云，降于筑紫日向高千穗之久士布流峰，四望而言「此地朝日直照、夕日亦照，是极好之地」，乃立柱建殿而居。
+    refs: [kojiki]
+    at: { kojiki: "34" }
+variants:
+  - claim: 《日本书纪》记天孙降临于卷二数条之下，随行之神与所受之物与《古事记》略有出入；有的「一书」根本不立天孙这一代，径以天照之子为下治者。
+    refs: [nihonshoki]
+relations:
+  - { target: ninigi, kind: 从属, detail: 降临者即琼琼杵尊, refs: [kojiki] }
+  - { target: amaterasu, kind: 从属, detail: 授命与授器者, refs: [kojiki] }
+  - { target: takamimusubi, kind: 从属, detail: 与天照共同授命, refs: [kojiki] }
+  - { target: sanshu-no-jingi, kind: 从属, detail: 三神器由此下传, refs: [kojiki] }
+  - { target: sarutahiko, kind: 从属, detail: 当道而愿为先导, refs: [kojiki] }
+  - { target: ashihara, kind: 从属, detail: 降临于此国, refs: [kojiki] }

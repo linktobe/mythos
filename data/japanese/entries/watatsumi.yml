@@ -1,0 +1,42 @@
+id: watatsumi
+pantheon: japanese
+entity_type: 神祇
+name: 绵津见神
+name_original: "ワタツミノカミ"
+aliases: [大绵津见神, 海神, 大海祇]
+summary: 海神，伊邪那岐与伊邪那美所生。居海底宫室；收留山幸彦，为其寻回钓钩，赠潮盈珠与潮涸珠。
+role:
+  title: "海里的那位老丈"
+  brief: "他不打仗、不争国，只在自己宫里管事：把鱼群叫来问话，从一条鲷的喉咙里取出钓钩，再送女婿两颗能涨潮退潮的珠子。"
+identity:
+  lineage:
+    - { id: kamiumi }
+  camp:
+    - { id: chuu }
+  realm:
+    - { id: watatsumi }
+narrative:
+  - text: 神生み之时所生的海神，名大绵津见神。海中的大小鱼族、航路与潮汐，后世皆归其管辖。
+    refs: [kojiki]
+    at: { kojiki: "6" }
+  - text: 山幸彦（火远理命）遗失其兄的钓钩，哭泣海滨，得盐椎神指点，乘无隙之小舟沿「美知之潮路」入海，至其宫。宫室如鱼鳞层叠，旁有桂树，他坐在树上被宫人发现。
+    refs: [kojiki]
+    at: { kojiki: "40" }
+  - text: 绵津见神认出他是天孙之子，延入宫内，铺海驴皮八重、其上再铺绢八重，设百机之宴，以女丰玉姬嫁之。他在此住了三年。
+    refs: [kojiki]
+    at: { kojiki: "40" }
+  - text: 三日后他叹气，绵津见问明缘由，乃尽召海中大小之鱼问之。一尾鲷鱼喉中卡着钓钩，取出一看，正是所失之物。绵津见洗净奉还，并教他归还之法：背手递还，祝之为「大钩、忙钩、贫钩、愚钩」，又令其反其道耕作，兄必三年而贫。
+    refs: [kojiki]
+    at: { kojiki: "40" }
+  - text: 又赠潮盈珠与潮涸珠二颗：兄来攻则放潮盈珠以淹之，其哀告则放潮涸珠以活之。并召鳄鱼问谁能送归，一丈之鳄愿一日往返，遂以之为坐骑送他上岸。
+    refs: [kojiki]
+    at: { kojiki: "40" }
+variants:
+  - claim: 「绵津见」不止一位。禊祓时伊邪那岐洗三处水域，生底津、中津、上津绵津见三神；此处所记「大绵津见」为神生み所生，与那三位同名而异出。名字相同不等于同一位神。
+    refs: [kojiki]
+    at: { kojiki: "10" }
+relations:
+  - { target: toyotama, kind: 亲缘, detail: 父女, refs: [kojiki] }
+  - { target: hoori, kind: 亲缘, detail: 女婿, refs: [kojiki] }
+legacy:
+  - "后世海神信仰多以「绵津见」为号，如住吉大神、和多都美神社；「潮盈珠・潮涸珠」也成为能剧与军记物语常用的母题。"

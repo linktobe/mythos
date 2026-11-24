@@ -29,6 +29,7 @@ relations:
   - { target: odin, kind: 从属, detail: 被其刺以睡棘, refs: [sigrdrifumal] }
   - { target: sigurd, kind: 宿命, detail: 相许而后相负，终至同死, refs: [sigurtharkvitha] }
   - { target: gudrun, kind: 敌对, detail: 因其嫁齐格鲁德而起杀心, refs: [sigurtharkvitha] }
+  - { target: runes, kind: 师承, detail: 于山上授齐格鲁德七种刻法, refs: [sigrdrifumal] }
 
 adaptations:
   - work: "瓦格纳《尼伯龙根的指环》（1876）"

@@ -29,6 +29,9 @@ narrative:
     refs: [grimnismal]
   - text: "奥丁曾自悬于此树九夜，以矛自刺，换来卢恩的文字。树因此又名「奥丁的绞架」。"
     refs: [havamal]
+variants:
+  - claim: "三泉与三根的对应，是《欺骗古鲁菲》给出的；诗体埃达分别提到这些泉与水，却没有把它们一一挂到根上。读者若把「三根三泉」当成诗里的原话，其实是把两处文本合并了。"
+    refs: [grimnismal, gylfaginning]
 relations:
   - { target: nidhogg, kind: 从属, detail: 龙在其根下啃啮, refs: [grimnismal] }
   - { target: nornir, kind: 从属, detail: 三女神在树下之泉边定命, refs: [gylfaginning] }

@@ -23,6 +23,9 @@ narrative:
     refs: [skaldskaparmal]
   - text: "洛基拿这三件宝物作赌注，与布洛克、辛德里相较，输赢之间才有了雷锤、德罗普尼尔与金鬃野猪。"
     refs: [skaldskaparmal]
+variants:
+  - claim: "金发一段只见于《诗语》：洛基剪去她的头发，矮人另造一头金发赔她。诗体埃达没有这回事，她的名字在那里只与索尔连在一起。"
+    refs: [skaldskaparmal]
 relations:
   - { target: thor, kind: 婚姻, detail: 夫妻, refs: [skaldskaparmal] }
   - { target: loki, kind: 敌对, detail: 剪去其发, refs: [skaldskaparmal] }

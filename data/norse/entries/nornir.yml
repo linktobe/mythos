@@ -27,5 +27,9 @@ narrative:
 variants:
   - claim: "三个名字的字义约近「应当」「正在」「必须」，后世多解作过去、现在、未来；原典并未明言三人分管三时。"
     refs: [voluspa, gylfaginning]
+relations:
+  - { target: yggdrasil, kind: 从属, detail: 居于其下泉边，取水浇树, refs: [gylfaginning] }
+  - { target: urdarbrunnr, kind: 从属, detail: 每日自泉中取水, refs: [voluspa, gylfaginning] }
+  - { target: humans, kind: 宿命, detail: 为每一个人定下寿数, refs: [voluspa] }
 legacy:
   - 现代作品常把她们简化成「纺线的三姐妹」，原典中她们在泉边取水浇树、刻写符文，并未纺线。

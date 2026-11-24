@@ -25,6 +25,9 @@ narrative:
   - text: "新世界里他与巴德尔一同自冥界归来，兄弟二人同住。"
     refs: [voluspa]
     at: { voluspa: "62" }
+variants:
+  - claim: "Saxo 的写法里，杀巴德尔的是凡人王子霍德尔（Hotherus），他为争南娜而战，用的是从林中取得的剑；他不瞎，也没有槲寄生与洛基参与。冰岛这边，他是盲神，被洛基牵着手投出那一击。"
+    refs: [saxo, gylfaginning]
 relations:
   - { target: odin, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
   - { target: baldr, kind: 亲缘, detail: 兄弟，为其所杀, refs: [gylfaginning] }

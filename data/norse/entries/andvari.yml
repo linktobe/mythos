@@ -21,6 +21,9 @@ narrative:
     refs: [reginsmol]
   - text: "洛基把金子交出去时，把这句诅咒一并留下了。"
     refs: [reginsmol]
+variants:
+  - claim: "「安德瓦利」在《女巫的预言》的矮人名录里也出现过一次，与杜林、奥里等并列；他与《雷金的歌》里守着黄金的那条鱼是否同一人，原典没有交代。"
+    refs: [voluspa, reginsmol]
 relations:
   - { target: andvaranaut, kind: 从属, detail: 为其所藏之戒, refs: [reginsmol] }
   - { target: loki, kind: 敌对, detail: 被其强夺全部黄金, refs: [reginsmol] }

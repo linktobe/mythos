@@ -24,6 +24,9 @@ narrative:
     refs: [voluspa]
   - text: "末日之后，一男一女自晨露中醒来，重新繁衍，成为新世界的人。"
     refs: [voluspa]
+variants:
+  - claim: "造人的三神，《女巫的预言》作奥丁、海尼尔、洛德；《欺骗古鲁菲》作奥丁、维利、维。同一件事，两组名字，谁也不覆盖谁——这里两说并列，不取其一。"
+    refs: [voluspa, gylfaginning]
 relations:
   - { target: midgard, kind: 从属, detail: 所居之地, refs: [gylfaginning] }
   - { target: odin, kind: 从属, detail: 由其三兄弟以漂木造成, refs: [voluspa] }

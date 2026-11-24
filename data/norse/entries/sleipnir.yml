@@ -24,5 +24,9 @@ narrative:
     refs: [gylfaginning]
   - text: "末日时奥丁骑它出阵，迎战芬里尔。"
     refs: [gylfaginning]
+relations:
+  - { target: loki, kind: 亲缘, detail: 为其所生, refs: [gylfaginning] }
+  - { target: odin, kind: 从属, detail: 为其坐骑, refs: [gylfaginning] }
+  - { target: hermodr, kind: 从属, detail: 载其下冥界求还巴德尔, refs: [gylfaginning] }
 legacy:
   - 八足的形象常被现代作品读作「速度」的夸张符号，也有考据认为八足本与葬礼抬棺的四人八足有关。

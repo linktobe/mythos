@@ -16,6 +16,9 @@ narrative:
     refs: [brot-sigurtharkvithu]
   - text: "布伦希尔德随后自尽，与他同焚于火葬堆；两人至死都是彼此的债主。"
     refs: [sigurtharkvitha]
+variants:
+  - claim: "谁实际下的手，两种传统各执一说：《沃尔松格萨迦》记作兄弟中最幼的古托姆，诗篇里则把共谋的责任放在贡纳尔与赫格尼身上。"
+    refs: [volsungasaga, sigurtharkvitha]
 relations:
   - { target: sigurd, kind: 从属, detail: 被杀者, refs: [brot-sigurtharkvithu] }
   - { target: brynhildr, kind: 从属, detail: 主谋, refs: [brot-sigurtharkvithu] }

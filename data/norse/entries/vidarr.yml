@@ -21,6 +21,9 @@ narrative:
     refs: [gylfaginning]
   - text: "末日之后他与瓦利存活下来，住在诸神旧日的圣地。"
     refs: [voluspa]
+variants:
+  - claim: "他能杀芬里尔，靠的是一只特殊的鞋：据《欺骗古鲁菲》，那只靴子由人们剪下的鞋料一点点积成。这件事诗里没有，《格里姆尼尔之歌》只说他住在「维迪」。"
+    refs: [gylfaginning, grimnismal]
 relations:
   - { target: odin, kind: 亲缘, detail: 父子, refs: [gylfaginning] }
   - { target: fenrir, kind: 敌对, detail: 撕裂其口，为父报仇, refs: [gylfaginning] }

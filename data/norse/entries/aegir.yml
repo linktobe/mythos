@@ -23,6 +23,9 @@ narrative:
     refs: [lokasenna]
   - text: "那口大锅是索尔专程从巨人希米尔处取来的——埃吉尔要办宴，缺的正是这件家伙。"
     refs: [hymiskvida]
+variants:
+  - claim: "《诗语》有一句说「埃吉尔与格伊米尔本是同一人」，把两个名字合在一起；这在别处没有照应，注家多以为是一处混淆。"
+    refs: [skaldskaparmal]
 relations:
   - { target: loki, kind: 敌对, detail: 在其厅中辱骂众神, refs: [lokasenna] }
   - { target: thor, kind: 从属, detail: 为其宴席取来煮酒大锅, refs: [hymiskvida] }

@@ -27,9 +27,11 @@ variants:
 relations:
   - { target: freyr, kind: 敌对, detail: 交战并将其杀死, refs: [gylfaginning] }
 legacy:
-  - 漫威《雷神3：诸神黄昏》以其为触发末日的一方；《战神：诸神黄昏》另作一套改写。
+  - text: "漫威《雷神3：诸神黄昏》以其为触发末日的一方；《战神：诸神黄昏》另作一套改写。"
+    refs: [mcu-thor, god-of-war-ragnarok]
 adaptations:
   - work: "漫威电影宇宙《雷神3：诸神黄昏》（2017）"
+    refs: [mcu-thor]
     kind: 电影
     portrayal: "被奥丁封印的火巨人，头颅与王冠被索尔取走；最终借永恒之火重获完整之身，将阿斯加德烧成废墟。"
     divergences:

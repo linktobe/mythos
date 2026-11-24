@@ -149,7 +149,15 @@ function makeEntrySchema(p) {
           })
         )
         .default([]),
-      legacy: z.array(z.string()).default([]),
+      // 后世演绎：一句定性的话，或带出处的一条。凡落在具体作品上的，挂 refs 指向该作品。
+      legacy: z
+        .array(
+          z.union([
+            z.string(),
+            z.object({ text: z.string().min(4), refs: RefList, at: AtMap }),
+          ])
+        )
+        .default([]),
       profiles: z
         .array(
           z.object({
@@ -191,6 +199,7 @@ function makeEntrySchema(p) {
             kind: z.string().min(1),
             portrayal: z.string().min(10),
             divergences: z.array(z.string().min(6)).min(1),
+            refs: RefList.optional(),
           })
         )
         .default([]),
@@ -214,7 +223,7 @@ const SYMMETRIC = new Set(['亲缘', '血盟', '婚姻', '敌对', '宿命', '�
 
 const systems = [];
 const searchIndex = [];
-const totals = { entries: 0, relations: 0, sources: 0 };
+const totals = { entries: 0, relations: 0, sources: 0, paragraphs: 0, paraT0: 0, paraT1Only: 0, entriesT1Only: 0, t2sources: 0, t3sources: 0 };
 
 for (const p of pantheons) {
   if (p.status !== 'live') continue;
@@ -325,14 +334,18 @@ for (const p of pantheons) {
 
   /* 引用与关系校验（同体系内） */
   const entryIds = new Set(entries.map((e) => e.id));
-  const checkRefs = (where, refs) => {
+  // allow：这一处允许出现的文本层级。叙事主干只许 T0/T1；异文可并列 T2 的古代重述；
+  // 后世演绎与改编对照可以指向 T2/T3。
+  const checkRefs = (where, refs, allow = ['T0', 'T1']) => {
     for (const r of refs) {
       const s = sourceIndex.get(r);
       if (!s) {
         fail(`${where}: 引用了本体系不存在的来源 ${r}`);
         continue;
       }
-      if (s.tier === 'T2' || s.tier === 'T3') fail(`${where}: 叙事引用必须是 T0/T1，${r} 是 ${s.tier}`);
+      if (!allow.includes(s.tier)) {
+        fail(`${where}: 此处只能引用 ${allow.join('/')}，${r} 是 ${s.tier}`);
+      }
     }
   };
   for (const e of entries) {
@@ -356,8 +369,16 @@ for (const p of pantheons) {
       checkAt(`${p.id}/${e.id}: narrative[${i}]`, n);
     });
     e.variants.forEach((n, i) => {
-      checkRefs(`${p.id}/${e.id}: variants[${i}]`, n.refs);
+      checkRefs(`${p.id}/${e.id}: variants[${i}]`, n.refs, ['T0', 'T1', 'T2']);
       checkAt(`${p.id}/${e.id}: variants[${i}]`, n);
+    });
+    e.legacy.forEach((n, i) => {
+      if (typeof n === 'string') return;
+      checkRefs(`${p.id}/${e.id}: legacy[${i}]`, n.refs, ['T0', 'T1', 'T2', 'T3']);
+    });
+    e.adaptations.forEach((a, i) => {
+      if (!a.refs) return;
+      checkRefs(`${p.id}/${e.id}: adaptations[${i}]`, a.refs, ['T2', 'T3']);
     });
     e.profiles.forEach((n, i) => checkRefs(`${p.id}/${e.id}: profiles[${i}]`, n.refs));
     e.weapons.forEach((n, i) => checkRefs(`${p.id}/${e.id}: weapons[${i}]`, n.refs));
@@ -403,16 +424,32 @@ for (const p of pantheons) {
     e.section = p.sections.find((s) => s.types.includes(e.entity_type))?.key ?? null;
   }
 
+  /* 层级占比：让读者知道主干有多少确实出自原典，多少只是汇编里的说法 */
+  const tierOf = (id) => sourceIndex.get(id)?.tier;
+  const paragraphs = entries.flatMap((e) => e.narrative);
   const counts = {
     entries: entries.length,
     relations: entries.reduce((n, e) => n + e.relations.length, 0),
     sources: sources.length,
+    paragraphs: paragraphs.length,
+    paraT0: paragraphs.filter((n) => n.refs.some((r) => tierOf(r) === 'T0')).length,
+    paraT1Only: paragraphs.filter((n) => n.refs.every((r) => tierOf(r) === 'T1')).length,
+    entriesT1Only: entries.filter((e) => e.narrative.every((n) => n.refs.every((r) => tierOf(r) === 'T1')))
+      .length,
+    t2sources: sources.filter((s) => s.tier === 'T2').length,
+    t3sources: sources.filter((s) => s.tier === 'T3').length,
   };
 
   systems.push({ pantheon: p, vocab, sources, entries, counts });
   totals.entries += counts.entries;
   totals.relations += counts.relations;
   totals.sources += counts.sources;
+  totals.paragraphs += counts.paragraphs;
+  totals.paraT0 += counts.paraT0;
+  totals.paraT1Only += counts.paraT1Only;
+  totals.entriesT1Only += counts.entriesT1Only;
+  totals.t2sources += counts.t2sources;
+  totals.t3sources += counts.t3sources;
 
   for (const e of entries) {
     searchIndex.push({

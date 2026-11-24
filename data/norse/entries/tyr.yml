@@ -31,6 +31,7 @@ legacy:
 
 adaptations:
   - work: "《战神》（2018）"
+    refs: [god-of-war-2018]
     kind: 游戏
     portrayal: "被视为和平与公正的象征，往来各界的旅行者，留下通道与壁画，是游戏中「共处」的化身。"
     divergences:

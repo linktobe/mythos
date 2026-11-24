@@ -30,4 +30,5 @@ relations:
   - { target: jormungandr, kind: 亲缘, detail: 母子, refs: [gylfaginning] }
   - { target: hel, kind: 亲缘, detail: 母女, refs: [gylfaginning] }
 legacy:
-  - 漫威电影宇宙中，海拉被改写为奥丁之女，与她的子女线完全无关。
+  - text: "漫威电影宇宙中，海拉被改写为奥丁之女，与她的子女线完全无关。"
+    refs: [mcu-thor]

@@ -32,10 +32,13 @@ relations:
   - { target: odin, kind: 师承, detail: 授其 seidr, refs: [gylfaginning] }
   - { target: frigg, kind: 同源, detail: 学界假说，存疑, refs: [gylfaginning] }
 legacy:
-  - 英语 Friday 亦有一说源自其名；漫威将其塑造成战场女武神。
+  - text: "漫威将其塑造成战场女武神，与丰饶女神的职司相去甚远。"
+    refs: [mcu-thor]
+  - 英语 Friday 亦有一说源自其名。
 
 adaptations:
   - work: "《战神》（2018）"
+    refs: [god-of-war-2018]
     kind: 游戏
     portrayal: "林中女巫，巴德尔的母亲，为护子施下咒护，被亲情与复仇来回撕扯。"
     divergences:

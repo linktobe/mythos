@@ -23,12 +23,16 @@ narrative:
 variants:
   - claim: "女武神的数目与名单各家记载不同，《格里姆尼尔之歌》所列与《诗语》所举并不一致。"
     refs: [grimnismal, skaldskaparmal]
+  - claim: "希露德之父赫格尼，与《阿特利之歌》里古德伦之兄赫格尼只是同名，家世与事迹都不相干。北欧材料里同名不同人的情形不止这一处，读时须按篇分流。"
+    refs: [skaldskaparmal, atlakvitha]
 relations:
   - { target: odin, kind: 从属, detail: 奉其命拣选战死者, refs: [grimnismal] }
 legacy:
-  - 瓦格纳《尼伯龙根的指环》中的布伦希尔德即取材于女武神；漫威《雷神3》另设「瓦尔基里」一角。
+  - text: "瓦格纳《尼伯龙根的指环》中的布伦希尔德即取材于女武神；漫威《雷神3》另设「瓦尔基里」一角。"
+    refs: [wagner-ring, mcu-thor]
 adaptations:
   - work: "漫威电影宇宙《雷神3：诸神黄昏》（2017）"
+    refs: [mcu-thor]
     kind: 电影
     portrayal: "阿斯加德的女战士军团，被海拉屠杀殆尽；仅存的瓦尔基里（布伦希尔德）酗酒流落萨卡星，后随索尔归来。"
     divergences:

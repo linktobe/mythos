@@ -36,6 +36,7 @@ legacy:
   - 现代改编多以其作为 "诸神黄昏的终结者" 符号出现。
 adaptations:
   - work: "漫威电影宇宙《雷神3：诸神黄昏》（2017）"
+    refs: [mcu-thor]
     kind: 电影
     portrayal: "海拉豢养的巨狼，与浩克交战，最终被推下彩虹桥。"
     divergences:

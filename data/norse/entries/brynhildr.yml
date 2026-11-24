@@ -24,6 +24,9 @@ narrative:
     refs: [sigurtharkvitha]
   - text: "齐格鲁德忘约另娶，又代贡纳尔来求她；她察觉受欺，遂催动贡纳尔一党杀死齐格鲁德，随后自尽于他的火葬堆。"
     refs: [sigurtharkvitha, brot-sigurtharkvithu]
+variants:
+  - claim: "《希格德里法之歌》里只叫「希格德里法」（sigrdrífa，意为「带来胜利者」），醒来的女武神没有报出布伦希尔德这个名字。把两者合为一人，是《沃尔松格萨迦》一系的整理才做的事；诗体埃达本身没有明说。"
+    refs: [sigrdrifumal, volsungasaga]
 relations:
   - { target: valkyries, kind: 从属, detail: 原为其一员, refs: [sigrdrifumal] }
   - { target: odin, kind: 从属, detail: 被其刺以睡棘, refs: [sigrdrifumal] }
@@ -33,6 +36,7 @@ relations:
 
 adaptations:
   - work: "瓦格纳《尼伯龙根的指环》（1876）"
+    refs: [wagner-ring]
     kind: 歌剧
     portrayal: "违抗沃坦的女武神，被剥去神性、沉睡于火中，只等无畏的英雄前来唤醒。"
     divergences:

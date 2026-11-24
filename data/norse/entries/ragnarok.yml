@@ -29,4 +29,5 @@ relations:
   - { target: thor, kind: 从属, detail: 杀蛇后中毒而亡, refs: [voluspa] }
   - { target: loki, kind: 从属, detail: 与海姆达尔同归于尽, refs: [voluspa] }
 legacy:
-  - 瓦格纳《尼伯龙根的指环》末部即名《诸神的黄昏》，取材于此。
+  - text: "瓦格纳《尼伯龙根的指环》末部即名《诸神的黄昏》，取材于此。"
+    refs: [wagner-ring]

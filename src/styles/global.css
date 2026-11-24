@@ -104,6 +104,8 @@ sup.ref a {
   font-size: 11px; color: var(--accent); vertical-align: super;
   padding: 0 1px; text-decoration: none;
 }
+/* 一段挂多个来源时，编号之间留一点空隙，免得并成一个数 */
+sup.ref + sup.ref { margin-left: 2px; }
 
 /* 仅见 T1 汇编的提示：告诉读者这一段不是从 T0 原典来的 */
 .tier-note {
@@ -144,6 +146,8 @@ sup.ref a {
   border: 1px solid var(--t0); color: var(--t0); margin-right: 8px;
 }
 .sources .tier.t1 { border-color: var(--muted); color: var(--muted); }
+.sources .tier.t2 { border-color: #c9a76d; color: #8a6a3a; }
+.sources .tier.t3 { border-color: #b393bf; color: #7a5a86; }
 .sources .meta { display: block; color: var(--muted); font-size: 12.5px; margin-top: 2px; }
 
 /* 后世演绎 */
@@ -307,6 +311,7 @@ button.chip[aria-pressed="true"] { background: var(--accent); border-color: var(
 
   .sources li { font-size: 13.5px; }
   h2 { margin-top: 40px; }
+  .tierbadge { display: block; margin: 6px 0 0; white-space: normal; }
 }
 
 @media (max-width: 420px) {
@@ -328,7 +333,12 @@ button.chip[aria-pressed="true"] { background: var(--accent); border-color: var(
   border-color: var(--line) !important;
   background: var(--paper-2) !important;
 }
-
+/* 词条页顶部：这一条的主干落在哪一层 */
+.tierbadge {
+  font-family: var(--sans); font-size: 11.5px; font-weight: 400;
+  letter-spacing: .1em; color: var(--muted);
+  margin-left: 10px; vertical-align: 7px; white-space: nowrap;
+}
 /* 整节均为 T1 时的单条提示，代替逐段重复的标记 */
 .tier-note-block {
   font-size: 12.5px; color: var(--muted); letter-spacing: .04em;

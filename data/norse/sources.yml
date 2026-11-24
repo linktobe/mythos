@@ -325,3 +325,89 @@
   url: https://sacred-texts.com/book/the-poetic-edda/atlamol-en-gronlenzku
   note: 阿特利故事的另一版本，篇幅更长，细节与《阿特利之歌》出入不小。
 
+# ── 汇编与后世重述 ──
+# T1 与诗体埃达同期或稍晚的散文整理；T2 中世纪另一条传统的重述；T3 十九世纪以后的改编。
+# 三者都不进叙事主干。
+
+- id: volsungasaga
+  pantheon: norse
+  tier: T1
+  title: 沃尔松格萨迦
+  original: Völsunga saga
+  work: 冰岛萨迦
+  work_original: Völsunga saga
+  date: 约 13 世纪后期
+  lang: 古诺斯语
+  url: https://sacred-texts.com/neu/vlsng/
+  note: 把诗体埃达里散落的英雄诗串成一部散文家史；齐格鲁德一系的来龙去脉，靠它才接得起来。
+
+- id: saxo
+  pantheon: norse
+  tier: T2
+  title: 丹麦人的业绩
+  original: Gesta Danorum
+  work: 拉丁文史书
+  work_original: Gesta Danorum
+  date: 约 1200
+  author: Saxo Grammaticus
+  lang: 拉丁语
+  url: https://sacred-texts.com/neu/saxo/
+  note: 丹麦人写的丹麦史，把北欧诸神改写成古代英雄；巴德尔之死在这里另有一套讲法。
+
+- id: nibelungenlied
+  pantheon: norse
+  tier: T2
+  title: 尼伯龙根之歌
+  original: Nibelungenlied
+  work: 中古高地德语史诗
+  work_original: Nibelungenlied
+  date: 约 1200
+  lang: 中古高地德语
+  note: 莱茵河一侧的讲法，人名、动机与结局都与北欧的一支不同。
+
+- id: wagner-ring
+  pantheon: norse
+  tier: T3
+  title: 尼伯龙根的指环
+  original: Der Ring des Nibelungen
+  work: 歌剧四部
+  work_original: Der Ring des Nibelungen
+  date: 1876
+  author: Richard Wagner
+  lang: 德语
+  note: 十九世纪对尼伯龙根材料的整体重写；后世通行的舞台形象多出自此。
+
+- id: god-of-war-2018
+  pantheon: norse
+  tier: T3
+  title: 战神
+  original: God of War
+  work: 电子游戏
+  work_original: God of War (2018)
+  date: 2018
+  author: Santa Monica Studio
+  lang: 英语
+  note: 以九界为背景的原创故事；名号取自原典，亲缘与动机另作安排。
+
+- id: mcu-thor
+  pantheon: norse
+  tier: T3
+  title: 漫威电影宇宙·雷神系列
+  original: Thor (Marvel Cinematic Universe)
+  work: 电影
+  work_original: Thor films, Marvel Studios
+  date: 2011–2023
+  lang: 英语
+  note: 以漫画为底的再创作；诸神被写成可死、可换的外星王族。
+
+- id: god-of-war-ragnarok
+  pantheon: norse
+  tier: T3
+  title: 战神：诸神黄昏
+  original: God of War Ragnarök
+  work: 电子游戏
+  work_original: God of War Ragnarök (2022)
+  date: 2022
+  author: Santa Monica Studio
+  lang: 英语
+  note: 前作的续篇，末日一线按游戏自己的安排推进，与原典的诸神黄昏出入更大。

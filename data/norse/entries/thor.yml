@@ -47,9 +47,12 @@ kinship:
     note: 索尔之女。原典只记其名与父女关系，未附事迹。
     refs: [gylfaginning]
 legacy:
-  - 英语 Thursday 源自其名；漫威塑造为幽默英雄；《战神》（2018）中为可交战对象。
+  - text: "漫威塑造为幽默英雄；《战神》（2018）中为可交战对象。"
+    refs: [mcu-thor, god-of-war-2018]
+  - 英语 Thursday 源自其名。
 adaptations:
   - work: "漫威电影宇宙《雷神》系列与《复仇者联盟》系列（2011–2022）"
+    refs: [mcu-thor]
     kind: 电影
     portrayal: "雷霆之神、阿斯加德王子；从傲慢的继承者，成长为失去父亲、弟弟与锤子的流浪者，叙事大量喜剧化。"
     divergences:

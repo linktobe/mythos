@@ -24,7 +24,7 @@ narrative:
     refs: [fafnismol]
 variants:
   - claim: "环后来如何转手、又怎样回到布伦希尔德手上，诗体埃达的篇章没有一路写完；完整的流转要靠《沃尔松格萨迦》。"
-    refs: [fafnismol, sigurtharkvitha]
+    refs: [fafnismol, sigurtharkvitha, volsungasaga]
 relations:
   - { target: andvari, kind: 从属, detail: 原为其所藏, refs: [reginsmol] }
   - { target: fafnir, kind: 从属, detail: 曾随宝藏归其看守, refs: [reginsmol] }

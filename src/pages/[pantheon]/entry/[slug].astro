@@ -39,6 +39,8 @@ entry.weapons.forEach((n: any) => note(n.refs));
 entry.kinship?.forEach((k: any) => note(k.refs));
 entry.relations.forEach((n: any) => note(n.refs));
 entry.related.forEach((n: any) => note(n.refs));
+entry.legacy.forEach((l: any) => { if (l && typeof l === 'object' && l.refs) note(l.refs); });
+entry.adaptations.forEach((a: any) => { if (a.refs) note(a.refs); });
 const refNo = new Map(usedRefs.map((id, i) => [id, i + 1]));
 
 // 节次：把本页所有 at 按来源汇总，显示在「引用来源」里
@@ -86,6 +88,13 @@ const orderedGroups = [...groupMap.entries()].sort(
 // 一段叙事若只挂 T1 来源，说明该情节在 T0 里没有，必须显性提示读者
 const isT1Only = (refs: string[]) => refs.every((id) => srcById.get(id)?.tier === 'T1');
 const allT1 = entry.narrative.every((n: any) => isT1Only(n.refs));
+// 词条页顶部的一句话交代：这一条的主干落在哪一层
+const t1OnlyCount = entry.narrative.filter((n: any) => isT1Only(n.refs)).length;
+const tierBadge = allT1
+  ? '主干 T1'
+  : t1OnlyCount > 0
+    ? `主干 T0 · ${t1OnlyCount} 段仅见汇编`
+    : '主干 T0';
 
 const crumbs = [
   { label: '神话图鉴', href: '/' },
@@ -100,7 +109,7 @@ const crumbs = [
     <a class="back" href={parent?.href ?? `/${p.id}/`}>← 返回{parent?.label ?? '体系首页'}</a>
 
     <header class="entry-head reveal">
-      <h1>{entry.name}<span class="etype">{entry.entity_type}</span></h1>
+      <h1>{entry.name}<span class="etype">{entry.entity_type}</span><span class="tierbadge">{tierBadge}</span></h1>
       <p class="aliases"><span class="original">{entry.name_original}</span>{entry.aliases.length > 0 && <>　又称：{entry.aliases.join(' · ')}</>}</p>
       <p class="summary">{entry.summary}</p>
 
@@ -257,7 +266,20 @@ const crumbs = [
       <>
         <h2>后世演绎</h2>
         <ul class="legacy">
-          {entry.legacy.map((l: string) => <li>{l}</li>)}
+          {entry.legacy.map((l: any) =>
+            typeof l === 'string' ? (
+              <li>{l}</li>
+            ) : (
+              <li>
+                {l.text}
+                {l.refs.map((id: string) => (
+                  <sup class="ref">
+                    <a href={`#src-${id}`} title={atTitle(id, l.at)}>{refNo.get(id)}</a>
+                  </sup>
+                ))}
+              </li>
+            )
+          )}
         </ul>
       </>
     )}
@@ -270,6 +292,11 @@ const crumbs = [
             <div class="adapt-head">
               <span class="adapt-work">{a.work}</span>
               <span class="adapt-kind">{a.kind}</span>
+              {a.refs?.map((id: string) => (
+                <sup class="ref">
+                  <a href={`#src-${id}`}>{refNo.get(id)}</a>
+                </sup>
+              ))}
             </div>
             <p class="adapt-portray">{a.portrayal}</p>
             <div class="adapt-diff">
@@ -290,12 +317,12 @@ const crumbs = [
         if (!s) return null;
         return (
           <li id={`src-${id}`}>
-            <span class={`tier ${s.tier === 'T0' ? '' : 't1'}`}>{s.tier}</span>
+            <span class={`tier ${s.tier.toLowerCase()}`}>{s.tier}</span>
             <strong>{s.title}</strong>（{s.original}）
             <span class="meta">
               {s.work} · {s.date}{s.author ? ` · ${s.author}` : ''}
               {atBySrc.get(id) && <span class="at">第 {atBySrc.get(id)!.join('、')} 节</span>}　
-              <a href={s.url} rel="noopener noreferrer" target="_blank">核对原文 ↗</a>
+              {s.url && <a href={s.url} rel="noopener noreferrer" target="_blank">核对原文 ↗</a>}
             </span>
           </li>
         );

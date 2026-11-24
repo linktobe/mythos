@@ -32,6 +32,7 @@ legacy:
   - 英语 Friday 有源自其名一说，学界尚有争议。
 adaptations:
   - work: "漫威电影宇宙《雷神》《雷神2：黑暗世界》（2011–2013）"
+    refs: [mcu-thor]
     kind: 电影
     portrayal: "奥丁之妻，索尔与洛基的养母，温和而有权势的王后；在《黑暗世界》中被黑暗精灵所杀。"
     divergences:

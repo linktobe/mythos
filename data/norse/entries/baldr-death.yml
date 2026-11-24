@@ -24,6 +24,8 @@ variants:
     refs: [baldrs-draumar, gylfaginning]
   - claim: "《巴德尔的梦》只写奥丁赴冥界问卜儿子之死，无槲寄生、霍德尔与托克等情节；这些仅见于《欺骗古鲁菲》。"
     refs: [baldrs-draumar, gylfaginning]
+  - claim: "Saxo 的《丹麦人的业绩》另讲一套：巴德尔是奥丁之子，看上南娜；霍德尔（Hotherus）是凡人王子，为争这门亲事与他交战。巴德尔的身体刀枪不入，只有林中萨堤尔米明看守的一柄剑能杀死他，霍德尔设法取得此剑，在阵上杀之。这套讲法里没有槲寄生，没有洛基，霍德尔也不是盲神。"
+    refs: [saxo, gylfaginning]
 relations:
   - { target: baldr, kind: 从属, detail: 事件主角, refs: [gylfaginning] }
   - { target: loki, kind: 从属, detail: 主谋, refs: [gylfaginning] }
@@ -31,4 +33,5 @@ relations:
   - { target: hodr, kind: 从属, detail: 投出槲寄生者, refs: [gylfaginning] }
   - { target: hel, kind: 从属, detail: 拒绝归还, refs: [gylfaginning] }
 legacy:
-  - 《战神》（2018）把巴德尔改写为受诅咒的不死战士，与这场「玩笑」无关。
+  - text: "《战神》（2018）把巴德尔改写为受诅咒的不死战士，与这场「玩笑」无关。"
+    refs: [god-of-war-2018]

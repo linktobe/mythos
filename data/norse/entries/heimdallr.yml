@@ -28,9 +28,11 @@ relations:
   - { target: loki, kind: 宿命, detail: 诸神黄昏互斗而同归于尽, refs: [voluspa] }
   - { target: odin, kind: 从属, detail: 侍奉阿萨神族, refs: [gylfaginning] }
 legacy:
-  - 漫威电影宇宙以其为彩虹桥守护者，最终死于灭霸之手。
+  - text: "漫威电影宇宙以其为彩虹桥守护者，最终死于灭霸之手。"
+    refs: [mcu-thor]
 adaptations:
   - work: "漫威电影宇宙《雷神》系列与《复仇者联盟3：无限战争》（2011–2018）"
+    refs: [mcu-thor]
     kind: 电影
     portrayal: "阿斯加德的守门人，凭一把剑开启彩虹桥，能看见九界众生；最终被灭霸所杀。"
     divergences:

@@ -27,11 +27,13 @@ variants:
     refs: [gylfaginning]
 relations:
   - { target: odin, kind: 从属, detail: 奥丁常向其问计, refs: [gylfaginning] }
+  - { target: yggdrasil, kind: 从属, detail: 守其根下之泉, refs: [voluspa] }
 legacy:
   - 现代作品里的「会说话的头颅」，多可追到这一段。
 
 adaptations:
   - work: "《战神》（2018）"
+    refs: [god-of-war-2018]
     kind: 游戏
     portrayal: "被奥丁悬吊审问的智慧头颅，成了父子旅途的向导兼解说。"
     divergences:

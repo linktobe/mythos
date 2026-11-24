@@ -38,6 +38,7 @@ relations:
 
 adaptations:
   - work: "瓦格纳《尼伯龙根的指环》（1876）"
+    refs: [wagner-ring]
     kind: 歌剧
     portrayal: "不知恐惧为何物的齐格弗里德，以重铸的诺通剑杀死巨龙，随后被阴谋吞没。"
     divergences:

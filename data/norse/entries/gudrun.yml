@@ -25,6 +25,9 @@ narrative:
     refs: [guthrunarhvot, hamthesmol]
   - text: "斯万希尔德被哥特王约尔蒙雷克处死，她催两个儿子前去行刺，三子皆死于此事，唯她独活。这条家史到她才收尾。"
     refs: [guthrunarhvot, hamthesmol]
+variants:
+  - claim: "同一个人物在德国传统里叫克里姆希尔德。她嫁齐格弗里德，为夫报仇的对象却是自己的兄弟哈根与贡特；北欧这边正好反过来——古德伦是为兄弟向丈夫阿特利报仇。两条线共用一批人名，因果却调了个头。"
+    refs: [nibelungenlied, atlakvitha]
 relations:
   - { target: sigurd, kind: 婚姻, detail: 夫妻, refs: [sigurtharkvitha] }
   - { target: brynhildr, kind: 敌对, detail: 情敌，亦为夫仇, refs: [sigurtharkvitha] }
@@ -34,6 +37,7 @@ relations:
 
 adaptations:
   - work: "瓦格纳《尼伯龙根的指环》（1876）"
+    refs: [wagner-ring]
     kind: 歌剧
     portrayal: "古特鲁妮，贡特之妹，被迷药摆布而嫁给齐格弗里德，此后一无所知。"
     divergences:

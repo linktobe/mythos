@@ -73,9 +73,11 @@ kinship:
     note: 母未详。骑斯雷普尼尔下冥界，向海拉求还巴德尔。
     refs: [gylfaginning]
 legacy:
-  - 瓦格纳《尼伯龙根的指环》以其为原型；漫威宇宙与《战神》（2018）另有大幅改写。
+  - text: "瓦格纳《尼伯龙根的指环》以其为原型；漫威宇宙与《战神》（2018）另有大幅改写。"
+    refs: [wagner-ring, mcu-thor, god-of-war-2018]
 adaptations:
   - work: "漫威电影宇宙《雷神》系列（2011–2017）"
+    refs: [mcu-thor]
     kind: 电影
     portrayal: "阿斯加德之王，索尔与洛基的父亲（洛基为养子）。在《雷神3》中被放逐至地球，于挪威海岸化作光点消散。"
     divergences:

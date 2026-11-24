@@ -24,3 +24,7 @@ npm-debug.log*
 .npmcache/
 .npmtmp/
 public/search-index.json
+
+# 临时草稿与调试输出
+.tmp-*
+.shot-*

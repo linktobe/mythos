@@ -26,6 +26,7 @@ narrative:
 variants:
   - claim: 《洛基的争辩》中他自陈 "是我使巴德尔不能再归来"，语气与《欺骗古鲁菲》的第三人称叙述明显不同。
     refs: [lokasenna]
+    at: { lokasenna: "28" }
 relations:
   - { target: odin, kind: 血盟, detail: 结为血兄弟, refs: [lokasenna] }
   - { target: fenrir, kind: 亲缘, detail: 父子, refs: [gylfaginning] }

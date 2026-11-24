@@ -24,6 +24,7 @@ narrative:
 variants:
   - claim: 他与洛基的关系，《散文埃达》记为二人结为血兄弟；《洛基的争辩》中洛基亦以此自陈，但语气近乎要挟。
     refs: [lokasenna]
+    at: { lokasenna: "9" }
   - claim: "中世纪的整理者另有一套说法：斯诺里在《散文埃达》序言里把诸神接到特洛伊的谱系上，《英格林格萨迦》更把奥丁写成从亚洲迁来的凡人君王。这不是原典的说法，而是基督徒执笔时的改造——读埃达时须记得这一层。"
     refs: [prose-edda-prologue, ynglingasaga]
 relations:

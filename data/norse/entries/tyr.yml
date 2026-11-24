@@ -21,6 +21,7 @@ narrative:
     refs: [gylfaginning]
   - text: "《洛基的争辩》中，洛基当众提起断手之事，以此讥讽他；提尔则反唇相讥，点破洛基的子女之祸。"
     refs: [lokasenna]
+    at: { lokasenna: "38–40" }
 variants:
   - claim: "有学者认为提尔原为日耳曼民族地位最高的神，其后为奥丁取代；此说属后世推论，原典并无记载。"
     refs: [gylfaginning]

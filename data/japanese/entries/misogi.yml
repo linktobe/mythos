@@ -1,0 +1,33 @@
+id: misogi
+pantheon: japanese
+entity_type: 事件
+name: 禊祓
+name_original: "ミソギハラエ"
+aliases: [禊, 阿波岐原禊祓]
+summary: 伊邪那岐自黄泉归来后于阿波岐原洗身：投弃衣物化生诸神，秽化祸津日神，洗三处水域得绵津见与住吉诸神，最后洗双目与鼻得三贵子。
+role:
+  title: "洗一次身，洗出整个神系"
+  brief: "记纪把最关键的一次生育放在洗浴里：洗眼生太阳，洗鼻生暴风。洁净不只是仪式，它本身就是创生的动作。"
+identity: {}
+narrative:
+  - text: 伊邪那岐自「秽国」归来，自觉身负污秽，乃赴筑紫日向之阿波岐原行禊祓。
+    refs: [kojiki]
+    at: { kojiki: "10" }
+  - text: 他投弃御杖、御带、御衣、御裤，各化生一神；又于水中洗涤，身上污秽化为八十祸津日神与祸津日神等，为矫正其祸，又生神直毗、大直毗与伊豆能卖三神。
+    refs: [kojiki]
+    at: { kojiki: "10" }
+  - text: 洗于水底，生底津绵津见神与底筒之男命；洗于水中，生中津绵津见神与中筒之男命；洗于水上，生上津绵津见神与上筒之男命。后三神即住吉三神，又称墨江之三前大神。
+    refs: [kojiki]
+    at: { kojiki: "10" }
+  - text: 最后洗左眼生天照，洗右眼生月读，洗鼻生须佐之男。三贵子由此而出，伊邪那岐随即把三界分交三人。
+    refs: [kojiki]
+    at: { kojiki: "10–11" }
+variants:
+  - claim: 《日本书纪》把三贵子之生记在「一书曰」的几种异传里，有以镜、以玉为神体者，也有说三神本已存在、此处只是分治者。洗身得神这一节，并非两书唯一说法。
+    refs: [nihonshoki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: izanagi, kind: 从属, detail: 行者即伊邪那岐, refs: [kojiki] }
+  - { target: amaterasu, kind: 从属, detail: 洗左眼而生, refs: [kojiki] }
+  - { target: tsukuyomi, kind: 从属, detail: 洗右眼而生, refs: [kojiki] }
+  - { target: susanoo, kind: 从属, detail: 洗鼻而生, refs: [kojiki] }

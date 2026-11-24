@@ -1,0 +1,32 @@
+id: kuniumi
+pantheon: japanese
+entity_type: 事件
+name: 国生み
+name_original: "クニウミ"
+aliases: [国土生成, 大八岛生成]
+summary: 伊邪那岐与伊邪那美以天沼矛凝成淤能碁吕岛，绕柱成婚，依次生下大八岛与六小岛，共十四岛。
+role:
+  title: "把海搅成岛"
+  brief: "日本不是被创造的，是被生出来的。第一次还生坏了——因为女人先开口。改过来之后，才有了淡路、四国、九州、本州。"
+identity: {}
+narrative:
+  - text: 二神立于天浮桥，以天沼矛搅动海水；矛尖滴下的盐水凝结成岛，即淤能碁吕岛。二神降于其上，立天之御柱，造八寻殿。
+    refs: [kojiki]
+    at: { kojiki: "3" }
+  - text: 二神绕柱而行，相遇时女神先开口说「好一个美男子」，男神应声，遂成婚。所生第一子为水蛭子，不良；次生淡岛，亦不入子数。
+    refs: [kojiki]
+    at: { kojiki: "4" }
+  - text: 二神商议，以为「女人先言不吉」，乃重行婚仪，由男神先言。此后依次生下淡路、伊豫二名、隐岐三子、筑紫、壹岐、对马、佐渡、大倭丰秋津——即大八岛。
+    refs: [kojiki]
+    at: { kojiki: "5" }
+  - text: 又生吉备儿岛、小豆岛、大岛、女岛、知诃岛、两儿岛等六岛，合计十四岛。淤能碁吕岛是凝结而成，不算在所生之内。
+    refs: [kojiki]
+    at: { kojiki: "5" }
+variants:
+  - claim: 《日本书纪》卷一「一书曰」有以泥、以苇、以镜为始者等数种生成说，岛名与次第亦与《古事记》互有出入。
+    refs: [nihonshoki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: izanagi, kind: 从属, detail: 二神共行, refs: [kojiki] }
+  - { target: izanami, kind: 从属, detail: 二神共行, refs: [kojiki] }
+  - { target: ashihara, kind: 从属, detail: 所生即苇原中国之雏形, refs: [kojiki] }

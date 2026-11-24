@@ -1,0 +1,40 @@
+id: suseri-bime
+pantheon: japanese
+entity_type: 神祇
+name: 须势理毗卖命
+name_original: "スセリビメノミコト"
+aliases: [须势理姬, 前妻女神]
+summary: 须佐之男之女，居根之坚洲国。与大国主一见成婚，助他连连通过父亲的试炼，随他逃出，成为其嫡妻。
+role:
+  title: "在父亲与其丈夫之间选了丈夫的那一个"
+  brief: "她父亲要杀的人，她一处一处地救：蛇室、虫室、火野。记纪写她只用了一句话——「我给你这个，蛇来的时候挥三次」。"
+identity:
+  lineage:
+    - { id: kunitsu }
+  camp:
+    - { id: izumo }
+  realm:
+    - { id: ne, note: 生于根之坚洲国 }
+    - { id: ashihara, note: 随夫迁出，居出云 }
+narrative:
+  - text: 大国主初到根之坚洲国，须佐之男之女出来相见，二人相看而成婚。她即回内报父，称「来了个极美的神」。
+    refs: [kojiki]
+    at: { kojiki: "23" }
+  - text: 父亲先命大国主宿于蛇室，她赠蛇皮巾，教他蛇来则挥三次；次日又命入蜈蚣与蜂之室，她同样赠巾、授法，两次都安然出来。
+    refs: [kojiki]
+    at: { kojiki: "23" }
+  - text: 父亲又射鸣镝于旷野、纵火焚之。一只老鼠引大国主踏地入穴，火过之后又衔来箭头、率子孙衔来箭羽。她则持丧具前往哭吊——父亲以为他已死，他却完好地把箭奉还。
+    refs: [kojiki]
+    at: { kojiki: "23" }
+  - text: 他逃走时背着她、又带走了父亲的三件宝物。父亲追至黄泉比良坂，非但不追回，反而把女儿与国土一并许给他。
+    refs: [kojiki]
+    at: { kojiki: "23" }
+  - text: 后来大国主求婚于越国的沼河比卖，又欲远赴大和，她嫉妒而歌，他答以歌，两人交杯而「至今安宁」。记纪把她写作嫡妻，其余诸妻皆在其下。
+    refs: [kojiki]
+    at: { kojiki: "24–25" }
+variants:
+  - claim: 她的名字又作「须世理毗卖」；「前妻」一称是《古事记》的用词（Forward-Princess），指先到的那一位，不必读作「前妻」意义上的前妻。
+    refs: [kojiki]
+relations:
+  - { target: okuninushi, kind: 婚姻, detail: 嫡妻, refs: [kojiki] }
+  - { target: susanoo, kind: 亲缘, detail: 父女, refs: [kojiki] }

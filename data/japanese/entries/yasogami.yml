@@ -1,0 +1,35 @@
+id: yasogami
+pantheon: japanese
+entity_type: 群体
+name: 八十神
+name_original: "ヤソガミ"
+aliases: [八十众神, 庶兄]
+summary: 大国主的八十位庶兄，为争夺八上比卖而三次谋害他，终被他持生大刀与生弓矢逐散。
+role:
+  title: "一群只为抢婚而存在的兄弟"
+  brief: "记纪没有给他们任何一个人的名字。他们的全部作用是当大国主的对照组：欺压弱者、被拒、动私刑，最后被赶散。"
+identity:
+  lineage:
+    - { id: kunitsu }
+  camp:
+    - { id: izumo }
+  realm:
+    - { id: ashihara, note: 因幡与出云之间 }
+narrative:
+  - text: 八十神都是大国主的庶兄，各怀娶因幡八上比卖之志，让大国主背行囊随行作从者。
+    refs: [kojiki]
+    at: { kojiki: "21" }
+  - text: 在气多岬遇见被剥皮的兔子，他们教它去浸海水、临风而卧，害得它皮肉尽裂；八上比卖回绝他们、只愿嫁大国主之后，他们转而谋害自己的弟弟。
+    refs: [kojiki]
+    at: { kojiki: "21–22" }
+  - text: 他们先烧红石头伪作野猪，诱他抱持；又诱他入裂木、抽去楔子将他夹死。两次都由母亲求神救活。
+    refs: [kojiki]
+    at: { kojiki: "22" }
+  - text: 大国主自根之坚洲国归来，持生大刀与生弓矢反攻，把他们追得伏于各道山坡、被冲入河中，自此溃散。
+    refs: [kojiki]
+    at: { kojiki: "23" }
+variants:
+  - claim: 「八十」不是确切人数，是「众多」的意思。记纪中此类数字（八十神、八百万神、八岛）多作虚数读，不宜按实数理解。
+    refs: [kojiki]
+relations:
+  - { target: okuninushi, kind: 敌对, detail: 屡次谋害庶弟, refs: [kojiki] }

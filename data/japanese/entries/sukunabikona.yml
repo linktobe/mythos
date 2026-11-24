@@ -1,0 +1,36 @@
+id: sukunabikona
+pantheon: japanese
+entity_type: 神祇
+name: 少名毗古那神
+name_original: "スクナビコナノカミ"
+aliases: [少彦名命, 少名毗古那]
+summary: 神产巢日神之子。乘天之罗摩船、着蛾皮衣漂至出云，与大国主协力治国，事成之后往常世。
+role:
+  title: "从海上漂来的搭档"
+  brief: "他小得能站在掌心里，来路不明，连记纪都说不清他是谁生的。可他来了国就治好了——治好之后又走了，只留下大国主一个人守着这片国土。"
+identity:
+  lineage:
+    - { id: kamiumi, note: 神产巢日神之子 }
+  camp:
+    - { id: izumo }
+  realm:
+    - { id: ashihara, note: 出云 }
+    - { id: tokoyo, note: 功成之后归此 }
+narrative:
+  - text: 大国主在出云的御大之御崎时，有神乘天之罗摩船、着蛾皮衣，自海上漂来。大国主问其名，他不答；问随行的众神，皆不知。
+    refs: [kojiki]
+    at: { kojiki: "27" }
+  - text: 有一只蟾蜍（一作久延毗古，即田间案山子之神）说：此乃神产巢日神之子，名少名毗古那。神产巢日神随即确认，并说「他是我的孩子，你二人当协力把这国土造成」。
+    refs: [kojiki]
+    at: { kojiki: "27" }
+  - text: 二人合力经营苇原中国。此后少名毗古那渡往常世国，大国主送至一处，叹道：若无你，这国土如何能成。记纪对二人所定之法只记「遂定此国」，未详其目。
+    refs: [kojiki]
+    at: { kojiki: "27" }
+variants:
+  - claim: 「久延毗古」是田间的案山子（稻草人）之神，见闻广博而知天下事；《古事记》让一个稻草人说出此神的来历，是这段最古怪也最耐读的一笔。
+    refs: [kojiki]
+legacy:
+  - "后世奉他为医药、温泉与酿酒的守护神，日本各地「少彦名神社」多与大国主同祀；也有把他与常世信仰、渡来神联系起来的说法。"
+relations:
+  - { target: okuninushi, kind: 从属, detail: 协力建国，事毕则去, refs: [kojiki] }
+  - { target: betten, kind: 亲缘, detail: 神产巢日神之子，属别天神五柱一系, refs: [kojiki] }

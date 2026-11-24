@@ -103,9 +103,9 @@
       route: shi
       types: [事件]
   order:
-    group: [betten, kamiyo-nanayo]
-    place: [takamagahara, ashihara, yomi]
-    event: [kuniumi, kamiumi, yomi-visit, misogi, amano-iwato]
+    group: [betten, kamiyo-nanayo, yasogami]
+    place: [takamagahara, ashihara, yomi, ne-no-kuni]
+    event: [kuniumi, kamiumi, yomi-visit, misogi, amano-iwato, inaba-hare]
 
 - id: greco-roman
   zh: 古希腊罗马神话

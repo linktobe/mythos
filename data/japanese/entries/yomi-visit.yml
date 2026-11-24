@@ -1,0 +1,32 @@
+id: yomi-visit
+pantheon: japanese
+entity_type: 事件
+name: 黄泉访问
+name_original: "ヨミクニヘトリ"
+aliases: [黄泉国访问, 黄泉比良坂]
+summary: 伊邪那岐追入黄泉求妻同返，违约窥见其腐身，被黄泉军追至比良坂，以千引石封路，生死自此分界。
+role:
+  title: "第一次「不该看」"
+  brief: "妻子只提了一个条件：不要看我。他看了。于是有了死亡，有了秽，有了逃与追，也有了一块谁也不能再推开的石头。"
+identity: {}
+narrative:
+  - text: 伊邪那美神避之后，伊邪那岐追入黄泉求她同返。她答：可惜来迟了，我已食过黄泉之灶；但既蒙你亲来，愿与黄泉诸神商议归返，只是你不可看我。
+    refs: [kojiki]
+    at: { kojiki: "9" }
+  - text: 她入内久不出来。伊邪那岐不耐，折下左髻之梳的齿，点火照看，见她腐身蛆聚，八雷神伏于其上。她怒道「你使我受辱」，即遣黄泉丑女追赶。
+    refs: [kojiki]
+    at: { kojiki: "9" }
+  - text: 他以黑御鬘掷地化为山葡萄、以梳化为竹笋，两番拖延追兵；八雷神与千五百黄泉军齐出，他拔十拳剑且战且退，至比良坂下取三枚桃子击退众军，并封桃为「意富加牟豆美命」。
+    refs: [kojiki]
+    at: { kojiki: "9" }
+  - text: 伊邪那美亲自追来，伊邪那岐以千引石塞住坂口，二人隔石立誓：一日千人死，一日千五百人生。黄泉比良坂即今出云之伊赋夜坂。
+    refs: [kojiki]
+    at: { kojiki: "9" }
+variants:
+  - claim: 《日本书纪》卷一记此事，或用「泉」，或用「根之国」，追及之处与石头之名诸本互有出入；有的「一书」把窥看一节写作她主动现身。
+    refs: [nihonshoki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: izanagi, kind: 从属, detail: 追入黄泉者为伊邪那岐, refs: [kojiki] }
+  - { target: izanami, kind: 从属, detail: 已食黄泉之灶，不得同返, refs: [kojiki] }
+  - { target: yomi, kind: 从属, detail: 其事即在此国与其坂口, refs: [kojiki] }

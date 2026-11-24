@@ -1,0 +1,37 @@
+id: ne-no-kuni
+pantheon: japanese
+entity_type: 地区
+name: 根之坚洲国
+name_original: "ネノカタスクニ"
+aliases: [根之国, 根坚洲国, 底之坚洲国]
+summary: 地下深处的国土，须佐之男被逐后所居。大国主曾赴此求教，得生大刀、生弓矢与天诏琴而返。
+role:
+  title: "父亲的国，也是试炼场"
+  brief: "须佐之男在这里不是暴风神，是个会设局杀女婿的岳父。他把女儿、三件宝物和一个新的名号都给了这个外来者——因为他通过了。"
+identity:
+  lineage:
+    - { id: kunitsu, note: 须佐之男所治 }
+  camp:
+    - { id: izumo }
+  realm:
+    - { id: ne }
+narrative:
+  - text: 须佐之男被逐出高天原后，所去之处即此国；后世的「根之国」一称多指这里。
+    refs: [kojiki]
+    at: { kojiki: "12、23" }
+  - text: 大国主在纪伊受大屋毗古神指点，来此投奔须佐之男。其女须势理毗卖出见，二人成婚。
+    refs: [kojiki]
+    at: { kojiki: "23" }
+  - text: 须佐之男连设蛇室、蜈蚣蜂室、火焚之野三关，皆由女儿暗中相助而免。他最终带走了须佐之男的生大刀、生弓矢与天诏琴，也带走了他的女儿。
+    refs: [kojiki]
+    at: { kojiki: "23" }
+  - text: 须佐之男追至黄泉比良坂，却不再追究，反把国土与女儿正式许给他，命他以此为凭逐散八十神、受封大国主。
+    refs: [kojiki]
+    at: { kojiki: "23" }
+variants:
+  - claim: 此地与黄泉国是否同一处，记纪未明说。须佐之男自称要往「亡母之国」，即指伊邪那美所在的黄泉；但《古事记》另立「根之坚洲国」一名，后人多将二者合称「根之国」，是把两处地名并作一处。
+    refs: [kojiki]
+relations:
+  - { target: susanoo, kind: 从属, detail: 被逐后居于此国, refs: [kojiki] }
+  - { target: suseri-bime, kind: 从属, detail: 生于此国, refs: [kojiki] }
+  - { target: okuninushi, kind: 从属, detail: 曾入此国求教与求婚, refs: [kojiki] }

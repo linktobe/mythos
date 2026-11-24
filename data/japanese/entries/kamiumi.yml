@@ -1,0 +1,32 @@
+id: kamiumi
+pantheon: japanese
+entity_type: 事件
+name: 神生み
+name_original: "カミウミ"
+aliases: [诸神诞生]
+summary: 二神生岛之后续生三十五柱神，涵盖海、河、风、木、山、野、草与火；生火神迦具土时伊邪那美被灼而死。
+role:
+  title: "把自然一样一样生出来"
+  brief: "这一段读起来像一份清单，但清单有次序：先水，再风、木、山、野，最后是火。火一出来，生育就停了——死的开始，也是自然的完成。"
+identity: {}
+narrative:
+  - text: 生岛之后，二神继续生神：海神大绵津见、水户神速秋津日子与速秋津比卖、风神志那都比古、木神久久能智、山神大山津见、野神鹿屋野比卖与草野比卖，又有天鸟船神等。
+    refs: [kojiki]
+    at: { kojiki: "6" }
+  - text: 最后生火神迦具土（又名火之夜艺速男神）。伊邪那美因此被灼，卧床不起。
+    refs: [kojiki]
+    at: { kojiki: "6–7" }
+  - text: 卧病之际，呕吐物与排泄之物又各化生神，如金山毗古、金山毗卖与土神之类；她终于神避，葬于出云与伯耆交界的比婆山。
+    refs: [kojiki]
+    at: { kojiki: "7" }
+  - text: 记纪明记二神共生岛十四、神三十五柱。此数只是记纪自己的统计，后世注家所数常有出入，不必强求与传世神名一一对上。
+    refs: [kojiki]
+    at: { kojiki: "6–7" }
+variants:
+  - claim: 《日本书纪》所记「神生み」的次序与神名与《古事记》多有不同，且同处并列「一书曰」数种，不易与《古事记》的清单逐条对应。
+    refs: [nihonshoki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: izanagi, kind: 从属, detail: 二神共行, refs: [kojiki] }
+  - { target: izanami, kind: 从属, detail: 生于火神而神避, refs: [kojiki] }
+  - { target: kagutsuchi, kind: 从属, detail: 最后一子，即其死因, refs: [kojiki] }

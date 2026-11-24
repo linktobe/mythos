@@ -1,0 +1,75 @@
+id: okuninushi
+pantheon: japanese
+entity_type: 神祇
+name: 大国主神
+name_original: "オオクニヌシノカミ"
+aliases: [大穴牟迟神, 苇原色许男神, 八千矛神, 宇都志国玉神, 大黑]
+summary: 出云之神。屡遭八十庶兄谋害而三次复活，赴根之坚洲国娶须势理毗卖、得生大刀与生弓矢，开拓苇原中国，最后将国土让与天孙。
+role:
+  title: "被谋害三次的建国者"
+  brief: "他不是被杀一次，是三次：烧死、夹死、又烧死。救他的依次是母亲、两位贝神、一只老鼠。他这一生全靠别人活下来，最后却成了国土之主。"
+identity:
+  lineage:
+    - { id: kunitsu }
+  camp:
+    - { id: izumo }
+  realm:
+    - { id: ashihara, note: 出云 }
+    - { id: ne, note: 曾赴此国求教于须佐之男 }
+narrative:
+  - text: 六世之孙：八岛士奴美生布波能母迟久奴须奴，再生深渊之水夜礼花，再生淤美豆奴，再生天之冬衣，天之冬衣娶刺国若比卖而生他。记纪另有「十七世神」一称，指这一长串谱系。
+    refs: [kojiki]
+    at: { kojiki: "20、26" }
+  - text: 他有五名：大穴牟迟神、苇原色许男神、八千矛神、宇都志国玉神、大国主神。八十位庶兄为争娶因幡的八上比卖，让他背着行囊随行；途中他救了被剥皮的因幡白兔，白兔预言八上比卖终归于他。
+    refs: [kojiki]
+    at: { kojiki: "21" }
+  - text: 八十神闻言大怒，先以烧红的石头假作野猪，诱他抱住而烫死；母亲哭诉于神产巢日神，遣蚶贝比卖与蛤贝比卖救治，他复活如美少年。八十神又诱他入裂开的树中、抽去楔子将他夹死，母亲再次寻回救活，命他逃往纪伊国。
+    refs: [kojiki]
+    at: { kojiki: "22" }
+  - text: 纪伊的大屋毗古神指点他赴根之坚洲国。须佐之男之女须势理毗卖与他相看而成婚，此后屡次救他：赠蛇皮巾、蜈蚣蜂巾以过蛇室与虫室，旷野放火时又有老鼠引他入穴、衔回鸣镝。
+    refs: [kojiki]
+    at: { kojiki: "23" }
+  - text: 他趁为须佐之男捉虱之机，把其发系于屋椽，以五百引石塞住地面，背妻携生大刀、生弓矢与天诏琴而逃。天诏琴触树作声，须佐之男惊醒追至黄泉比良坂，反而祝他持此刀矢逐散庶兄、受封大国主、娶其女为嫡妻。
+    refs: [kojiki]
+    at: { kojiki: "23" }
+  - text: 他依言逐散八十神，开始经营国土；又与少名毗古那神协力，把苇原中国治理成形。此后天照遣使来议让国，他以「为我造如高天原之宫殿、退而掌幽界」为条件交出国土，退出显界、专掌幽界。
+    refs: [kojiki]
+    at: { kojiki: "27、32" }
+variants:
+  - claim: 《日本书纪》以大己贵神为须佐之男之子，与《古事记》相差六代；两书对出云谱系的深浅处理完全不同。
+    refs: [nihonshoki]
+    at: { nihonshoki: "卷一" }
+relations:
+  - { target: susanoo, kind: 亲缘, detail: 娶其女，为其婿, refs: [kojiki] }
+  - { target: suseri-bime, kind: 婚姻, detail: 嫡妻, refs: [kojiki] }
+  - { target: yasogami, kind: 敌对, detail: 庶兄八十神屡次谋害他, refs: [kojiki] }
+  - { target: amaterasu, kind: 从属, detail: 让国之后归其治下, refs: [kojiki] }
+  - { target: ashihara, kind: 从属, detail: 开拓此土、又让于此, refs: [kojiki] }
+kinship:
+  - relation: 父
+    name: 天之冬衣神
+    name_original: "アメノフユキヌ"
+    note: 六世谱中的第五代。
+    refs: [kojiki]
+  - relation: 母
+    name: 刺国若比卖
+    name_original: "サシクニワカヒメ"
+    note: 刺国大神之女。他两次被害，皆由母亲求神救治。
+    refs: [kojiki]
+  - relation: 子
+    name: 事代主神
+    name_original: "コトシロヌシノカミ"
+    note: 母为神屋楯比卖。让国时率先应允。
+    refs: [kojiki]
+  - relation: 子
+    name: 味耜高彦根神
+    name_original: "アジスキタカヒコネ"
+    note: 母为宗像的多纪理毗卖，后世称贺茂之大御神。
+    refs: [kojiki]
+  - relation: 子
+    name: 木俣神
+    name_original: "キノマタノカミ"
+    note: 母为八上比卖；因惧嫡妻，生下后弃于树杈间。
+    refs: [kojiki]
+legacy:
+  - "后世把他与佛教的大黑天混同，成为七福神之一「大黑天」：头戴大黑帽、肩扛米袋、手持槌。原典里并没有这些。"

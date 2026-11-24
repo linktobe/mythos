@@ -427,6 +427,27 @@ for (const p of pantheons) {
   /* 层级占比：让读者知道主干有多少确实出自原典，多少只是汇编里的说法 */
   const tierOf = (id) => sourceIndex.get(id)?.tier;
   const paragraphs = entries.flatMap((e) => e.narrative);
+  // 每部典籍被多少条词目用到（含异文、关系、后世演绎等处）
+  const usedBy = new Map();
+  const touch = (id) => usedBy.set(id, (usedBy.get(id) ?? 0) + 1);
+  for (const e of entries) {
+    const ids = new Set();
+    const add = (refs) => refs?.forEach((r) => r && ids.add(r));
+    e.narrative.forEach((n) => add(n.refs));
+    e.variants.forEach((n) => add(n.refs));
+    e.profiles.forEach((n) => add(n.refs));
+    e.weapons.forEach((n) => add(n.refs));
+    e.kinship.forEach((n) => add(n.refs));
+    e.relations.forEach((n) => add(n.refs));
+    e.related.forEach((n) => add(n.refs));
+    e.legacy.forEach((n) => { if (n && typeof n === 'object') add(n.refs); });
+    e.adaptations.forEach((a) => add(a.refs));
+    for (const id of ids) touch(id);
+  }
+  const topSources = [...usedBy.entries()]
+    .map(([id, n]) => ({ id, title: sourceIndex.get(id)?.title ?? id, tier: tierOf(id), entries: n }))
+    .sort((a, b) => b.entries - a.entries)
+    .slice(0, 4);
   const counts = {
     entries: entries.length,
     relations: entries.reduce((n, e) => n + e.relations.length, 0),
@@ -438,6 +459,7 @@ for (const p of pantheons) {
       .length,
     t2sources: sources.filter((s) => s.tier === 'T2').length,
     t3sources: sources.filter((s) => s.tier === 'T3').length,
+    topSources,
   };
 
   systems.push({ pantheon: p, vocab, sources, entries, counts });

@@ -133,6 +133,23 @@ const tiers = [
     <p>
       典籍另按层级分：T2 {totals.t2sources} 种、T3 {totals.t3sources} 种，两者都不进叙事主干，只出现在「异文」「后世演绎」与「改编形象对照」里，各条单独注明。
     </p>
+    <p>
+      用得最广的几部：
+      {
+        systems.map(({ p }, i) => (
+          <>
+            {i > 0 && '；'}
+            {p.zh}：
+            {
+              (p.counts.topSources ?? []).map((s: any, j: number) => (
+                <>{j === 0 ? '' : '、'}{s.title}（{s.tier}，{s.entries} 条）</>
+              ))
+            }
+          </>
+        ))
+      }
+      。这个分布本身就说明问题：讲得最全的不是诗，是十三世纪的散文整理。
+    </p>
 
     <h2>九、版权</h2>
     <p>代码使用 MIT 许可，词条文本使用 CC BY-SA 4.0，所引古籍属于公有领域。</p>

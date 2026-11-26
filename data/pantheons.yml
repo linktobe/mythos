@@ -111,40 +111,33 @@
 - id: greco-roman
   zh: 古希腊罗马神话
   en: Greco-Roman
-  status: planned
+  status: live
   accent: '#3b6d5e'
-  description: 以赫西俄德、荷马与奥维德为主干；罗马与希腊视为同一谱系的两套名义。
+  description: 以荷马、赫西俄德为主干，阿波罗多洛斯与保萨尼亚斯为辅。罗马名义并入本体系，不单列。
   tier_note:
-    T0: 赫西俄德《神谱》、荷马史诗
-    T1: 阿波罗多洛斯《书库》、奥维德《变形记》、保萨尼亚斯
+    T0: 荷马史诗、赫西俄德《神谱》《工作与时日》、荷马颂歌
+    T1: 阿波罗多洛斯《书库》、保萨尼亚斯《希腊道里志》等古代汇编
+    T2: 奥维德《变形记》等罗马改写
   axes: [lineage, camp, realm]
-  relation_kinds: [亲缘, 婚姻, 敌对, 宿命, 从属, 师承, 化生, 同源, 等同, 对应]
+  relation_kinds: [亲缘, 婚姻, 情爱, 敌对, 宿命, 从属, 师承, 化生, 同源, 等同, 对应]
   graph_center: zeus
   sections:
     - key: entry
       label: 神祇
       desc: 奥林匹斯与更早的一代
       route: ''
-      types: [神祇, 泰坦, 宁芙, 英雄]
-    - key: monsters
-      label: 怪物
-      desc: 与英雄互为敌手
-      route: guaiwu
-      types: [怪物]
-    - key: object
-      label: 器物
-      desc: 兵刃与宝物
-      route: qi
-      types: [器物]
-    - key: place
-      label: 地区
-      desc: 山川、冥界与诸岛
-      route: di
-      types: [地区]
-    - key: event
-      label: 事件
-      desc: 战争与远征
-      route: shi
-      types: [事件]
+      types: [神祇, 泰坦, 宁芙]
+    - key: legend
+      label: 英雄传说
+      desc: 归乡、远征与神人之子
+      route: yingxiong
+      types: [英雄]
+    - key: group
+      label: 群体
+      desc: 神的集团与谱系
+      route: qun
+      types: [群体]
   order:
-    event: []
+    entry: [zeus, hera, poseidon, demeter, athena, apollo, artemis, ares, aphrodite, hephaestus, hermes, hestia, dionysus]
+    legend: [odysseus]
+    group: [dodekatheon]

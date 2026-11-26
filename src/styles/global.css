@@ -212,6 +212,22 @@ button.chip[aria-pressed="true"] { background: var(--accent); border-color: var(
 .role-body strong { font-family: var(--serif); font-size: 18px; letter-spacing: .04em; }
 .role-body p { margin: 6px 0 0; color: var(--muted); font-size: 15px; line-height: 1.75; }
 
+/* 特别标记：本条主线所据的那一部典籍 */
+.spotlight {
+  display: flex; gap: 14px; align-items: flex-start;
+  margin: 14px 0 0; padding: 16px 20px;
+  border: 1px solid var(--accent); border-radius: 16px;
+  background: var(--accent-soft);
+}
+.spotlight-label {
+  font-size: 11px; letter-spacing: .3em; color: var(--accent);
+  padding-top: 4px; white-space: nowrap;
+}
+.spotlight-body strong {
+  font-family: var(--serif); font-size: 18px; letter-spacing: .06em; color: var(--accent);
+}
+.spotlight-body p { margin: 6px 0 0; color: var(--ink-soft); font-size: 15px; line-height: 1.75; }
+
 .tag-role {
   color: var(--accent) !important;
   border-color: var(--accent) !important;

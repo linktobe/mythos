@@ -1,0 +1,68 @@
+id: demeter
+pantheon: greco-roman
+entity_type: 神祇
+name: 得墨忒耳
+name_original: "Δημήτηρ"
+aliases: [刻瑞斯, 谷物之母]
+summary: 掌谷物与地力的女神。女儿被劫走后，她让大地颗粒不生，逼众神让步；厄琉西斯秘仪即由这场饥荒而起。
+role:
+  title: "先让土地长东西，再让土地不长东西"
+  brief: "她手上只有一样权柄——谷物长不长。整部颂歌的力量就来自这一点：她不需要打仗，只要不说话、不使大地结果，奥林匹斯就得低头。"
+identity:
+  lineage:
+    - { id: olympian }
+  camp:
+    - { id: olympus }
+  realm:
+    - { id: earth }
+narrative:
+  - text: 她是克罗诺斯与瑞亚的女儿，生下即被父亲吞下，与赫斯提亚、赫拉、哈得斯、波塞冬一同在父腹中待到宙斯长成。
+    refs: [theogony]
+    at: { theogony: "453–491" }
+  - text: 她与宙斯生珀耳塞福涅。颂歌说，那女孩与俄刻阿诺斯的女儿们在草地上采花，大地按宙斯的意思长出一朵水仙；她伸手去摘，脚下的地裂开，哈得斯驾车冲出，把她带走。
+    refs: [theogony, homeric-hymns]
+    at: { theogony: "912–914", homeric-hymns: "2" }
+  - text: 她听见女儿的呼喊，寻了九天九夜，不吃不喝。赫卡忒持火炬来告诉她声音的方向，赫利俄斯把真相说破。她从此离开奥林匹斯，不再看众神的席面。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "2" }
+  - text: 她化作老妇走到厄琉西斯，被刻勒俄斯一家收留，做了王子得摩丰的乳母。她想把孩子放进火里炼成不死之身，被母亲撞破，孩子落地，她只好表明身份，要人为她建庙、立祭仪。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "2" }
+  - text: 庙成之后她坐在里面，任大地颗粒不生。整整一年，神与人都拿不到祭品，宙斯才派人来请。她开出条件：女儿得回来。最后议定，珀耳塞福涅每年有一部分时间留在冥界，其余时间回到母亲身边。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "2" }
+  - text: 她另与克里特的英雄伊阿西翁在三耕之地上结合，生普路托斯（财富）。宙斯后来以雷霆击死伊阿西翁，此事神谱只留一句。
+    refs: [theogony]
+    at: { theogony: "969–974" }
+variants:
+  - claim: 珀耳塞福涅每年在冥界待多久，各本说法不一：颂歌只说三分之一在地下；后世常算作六个月，也有按季节分成三段的算法。本编不取整数，只记「一部分时间」。
+    refs: [homeric-hymns, library]
+    at: { homeric-hymns: "2", library: "1" }
+relations:
+  - { target: zeus, kind: 亲缘, detail: 姐弟, refs: [theogony] }
+  - { target: zeus, kind: 情爱, detail: 生珀耳塞福涅, refs: [theogony] }
+  - { target: poseidon, kind: 亲缘, detail: 姐弟, refs: [theogony] }
+  - { target: hera, kind: 亲缘, detail: 姐妹, refs: [theogony] }
+  - { target: hestia, kind: 亲缘, detail: 姐妹, refs: [theogony] }
+  - { target: dodekatheon, kind: 从属, detail: 十二主神之一，掌谷物, refs: [homeric-hymns] }
+kinship:
+  - relation: 父
+    name: 克罗诺斯
+    name_original: "Κρόνος"
+    refs: [theogony]
+  - relation: 母
+    name: 瑞亚
+    name_original: "Ῥέα"
+    refs: [theogony]
+  - relation: 女
+    name: 珀耳塞福涅
+    name_original: "Περσεφόνη"
+    note: 被哈得斯劫走，成为冥后。每年有一部分时间回到母亲身边，是季节的由来。
+    refs: [homeric-hymns]
+  - relation: 子
+    name: 普路托斯
+    name_original: "Πλοῦτος"
+    note: 与伊阿西翁所生，司财富。谷物丰而财富至，故归于她名下。
+    refs: [theogony]
+legacy:
+  - "厄琉西斯秘仪以她与珀耳塞福涅为祭神，延续近两千年，直到公元四世纪末被禁。仪式内容守密，今人所知只到外围。"

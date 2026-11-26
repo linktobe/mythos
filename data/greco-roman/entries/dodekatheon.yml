@@ -1,0 +1,48 @@
+id: dodekatheon
+pantheon: greco-roman
+entity_type: 群体
+name: 奥林匹斯十二主神
+name_original: "Δωδεκάθεον"
+aliases: [十二神, 奥林匹斯众神]
+summary: 以宙斯为首的十二位主神。数目固定，名单不固定：第十二位在赫斯提亚与狄俄尼索斯之间摆动，各时代给出的答案并不一致。
+role:
+  title: "「十二」是祭祀上的合称，不是家谱上的定数"
+  brief: "这个数目属于祭坛与节庆，不属于谱系。原典里找不到一份「十二主神名单」；本编把两种排法都收，不代读者取舍，也不把哪一位当成冒名。"
+identity:
+  lineage:
+    - { id: olympian }
+  camp:
+    - { id: olympus }
+  realm:
+    - { id: olympus }
+narrative:
+  - text: 克罗诺斯与瑞亚所生六子——赫斯提亚、得墨忒耳、赫拉、哈得斯、波塞冬、宙斯——先被父亲吞进腹中，宙斯长大后设法救出兄姐，六人成为新的掌权者。奥林匹斯这一支的班底，就是这六人加上他们在山上所生的子女。
+    refs: [theogony]
+    at: { theogony: "453–491" }
+  - text: 战败提坦之后，三兄弟拈阄分治：宙斯得天空，波塞冬得海，哈得斯得冥界；大地与奥林匹斯山为三方共有。此后诸神各有职司与荣衔，山上的席位按出身与功劳排定。
+    refs: [theogony, iliad]
+    at: { theogony: "881–885", iliad: "15" }
+  - text: 他们住在奥林匹斯山上，聚而议事、分席而食。人间有战事，他们各助一方，公开辩论，也公开结怨；宙斯的意志最大，但连他也常被赫拉绕过去。
+    refs: [iliad]
+    at: { iliad: "1" }
+variants:
+  - claim: 《神谱》把宙斯一房的家谱一路排到凡人，却始终没有「十二主神」这个说法；后世的谱系手册如《书库》按家谱整理诸神，也没有给出过一份固定名单。数目与席位是祭祀层面的事，不在谱系文本之内。
+    refs: [library]
+    at: { library: "3" }
+relations:
+  - { target: zeus, kind: 从属, detail: 族长，山上议事的裁决者, refs: [iliad] }
+  - { target: hera, kind: 从属, detail: 宙斯之妻，婚姻的主保, refs: [iliad] }
+  - { target: poseidon, kind: 从属, detail: 得海，与宙斯、哈得斯分治, refs: [iliad] }
+  - { target: demeter, kind: 从属, detail: 掌谷物与地力, refs: [homeric-hymns] }
+  - { target: athena, kind: 从属, detail: 生于宙斯之头，掌技艺与战阵, refs: [theogony] }
+  - { target: apollo, kind: 从属, detail: 掌预言、音乐与远射, refs: [homeric-hymns] }
+  - { target: artemis, kind: 从属, detail: 掌狩猎与贞洁, refs: [homeric-hymns] }
+  - { target: ares, kind: 从属, detail: 掌战场的杀伐, refs: [theogony] }
+  - { target: aphrodite, kind: 从属, detail: 掌情爱，出身不在山上而在海沫, refs: [theogony] }
+  - { target: hephaestus, kind: 从属, detail: 掌锻铸，众神的匠人, refs: [theogony] }
+  - { target: hermes, kind: 从属, detail: 掌传信、行旅与引魂, refs: [theogony] }
+  - { target: hestia, kind: 从属, detail: 守炉火；第十二位的两种排法之一, refs: [theogony] }
+  - { target: dionysus, kind: 从属, detail: 第十二位的两种排法之一, refs: [theogony] }
+legacy:
+  - "两种通行的排法：其一为宙斯、赫拉、波塞冬、得墨忒耳、雅典娜、阿波罗、阿尔忒弥斯、阿瑞斯、阿佛洛狄忒、赫淮斯托斯、赫尔墨斯、赫斯提亚；其二把末一位换成狄俄尼索斯。前者较古，后者在雅典一带更常见。"
+  - "本编两神并存。名单差异写在两位词条里，不合并、不标注谁更「正确」——原典没有给出过名单，也就没有标准答案可标。"

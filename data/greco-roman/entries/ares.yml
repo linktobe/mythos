@@ -1,0 +1,57 @@
+id: ares
+pantheon: greco-roman
+entity_type: 神祇
+name: 阿瑞斯
+name_original: "Ἄρης"
+aliases: [玛尔斯, 战神]
+summary: 宙斯与赫拉之子，掌战场的杀伐与溃败。荷马对他没有好感：他一受伤就嚎叫着回奥林匹斯告状，被父亲当面斥为最厌恶的一个。
+role:
+  title: "管打仗，却打不赢任何一场单挑"
+  brief: "他代表战争里最不体面的那部分——混战、恐慌、见血就上。真正的胜仗归雅典娜的谋划，败仗与哭声归他。"
+identity:
+  lineage:
+    - { id: olympian }
+  camp:
+    - { id: olympus }
+  realm:
+    - { id: olympus }
+narrative:
+  - text: 他是宙斯与赫拉之子，与赫柏、厄勒梯亚同母。神谱只在宙斯的婚姻谱里给他一行，没有单独的事迹。
+    refs: [theogony]
+    at: { theogony: "921–923" }
+  - text: 伊利亚特第五卷，雅典娜把胆气注入狄俄墨得斯，让他直取阿瑞斯。枪尖刺入腰腹，他吼得「像九千人或一万人同时开战」，带伤逃回奥林匹斯，坐在宙斯身边诉苦。宙斯的话是：你是我在奥林匹斯众神里最厌恶的一个。
+    refs: [iliad]
+    at: { iliad: "5" }
+  - text: 第二十一卷诸神混战，他又遇上雅典娜。她拾起一块石头砸在他颈上，把他撂倒在地，盔甲作响，身下扬起七顷尘土。
+    refs: [iliad]
+    at: { iliad: "21" }
+  - text: 他与阿佛洛狄忒私通。赫菲斯托斯打了一张看不见的网，悬在床顶；二人一躺下便被罩住，动弹不得。赫菲斯托斯召众神来看，男神们都站在门口笑，女神们则留在门内。
+    refs: [odyssey]
+    at: { odyssey: "8" }
+  - text: 神谱记阿佛洛狄忒为他生了两个儿子：福波斯（惊惧）与得摩斯（恐慌）。这两个名字也是他出战时带在身边的人。
+    refs: [theogony]
+    at: { theogony: "933–937" }
+variants:
+  - claim: 《神谱》给他安排的身份只有一行，荷马却把他写成战场上的常客与笑柄；到罗马，他改称玛尔斯，成了罗马人的祖先神——同一位神，在希腊是笑话，在罗马是国本。
+    refs: [theogony, library]
+    at: { theogony: "921–923", library: "3" }
+relations:
+  - { target: zeus, kind: 亲缘, detail: 父子，母为赫拉, refs: [theogony] }
+  - { target: hera, kind: 亲缘, detail: 母子, refs: [theogony] }
+  - { target: athena, kind: 敌对, detail: 战场上两次正面相搏，皆败, refs: [iliad] }
+  - { target: aphrodite, kind: 情爱, detail: 私通，被赫菲斯托斯以网捉住, refs: [odyssey] }
+  - { target: hephaestus, kind: 敌对, detail: 因其与阿佛洛狄忒私通，被设网当众羞辱, refs: [odyssey] }
+  - { target: dodekatheon, kind: 从属, detail: 十二主神之一，掌杀伐, refs: [theogony] }
+kinship:
+  - relation: 子
+    name: 福波斯
+    name_original: "Φόβος"
+    note: 惊惧之神，随父出战。
+    refs: [theogony]
+  - relation: 子
+    name: 得摩斯
+    name_original: "Δεῖμος"
+    note: 恐慌之神，与福波斯同出。
+    refs: [theogony]
+legacy:
+  - "罗马的玛尔斯是罗马城与罗马人的祖先神（之子罗慕路斯），地位远高于希腊的阿瑞斯；本编按体系合并，但两者的分量不能互换。"

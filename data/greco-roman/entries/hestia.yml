@@ -1,0 +1,48 @@
+id: hestia
+pantheon: greco-roman
+entity_type: 神祇
+name: 赫斯提亚
+name_original: "Ἑστία"
+aliases: [维斯塔, 炉火女神]
+summary: 克罗诺斯与瑞亚的长女，掌炉火与家宅。她几乎没有独立的故事：不嫁、不战、不争，只守着那一炉火——而这恰是她在十二主神里位置不稳的原因。
+role:
+  title: "最先出生，最先被吞，最后出世"
+  brief: "她的一生只做过两个决定：拒绝所有求婚，以及守住炉火。神谱给她的篇幅不足三行，正因如此，后世排十二主神时，末位常常把她换掉。"
+identity:
+  lineage:
+    - { id: olympian }
+  camp:
+    - { id: olympus }
+  realm:
+    - { id: olympus }
+narrative:
+  - text: 她是克罗诺斯与瑞亚的长女，第一个出生，也是第一个被父亲吞下的。宙斯逼父亲吐出兄姐时，次序倒转，她成了最后一个出世的孩子。
+    refs: [theogony]
+    at: { theogony: "453–491" }
+  - text: 波塞冬与阿波罗都曾向她求婚，她断然拒绝，抱住宙斯的头起誓终身不嫁。宙斯应允，并赐她一份别人没有的荣衔：凡有祭祀，无论神人，都先向她献一份，最后再向她献一份。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "5" }
+  - text: 她因此不占任何一段情节。诸神争战、远行、恋爱时，她在炉边；人间立宅、建城、殖民时，先从他处的炉火引一撮火种过去。她没有故事，只有位置。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "5" }
+variants:
+  - claim: 十二主神的末位有两种排法：较古的名单列赫斯提亚，较晚的（尤其雅典一带）以狄俄尼索斯代之。原典没有给过名单，本编两神并存，不判谁冒名。
+    refs: [theogony, homeric-hymns]
+    at: { theogony: "453–491", homeric-hymns: "5" }
+relations:
+  - { target: zeus, kind: 亲缘, detail: 姐弟；他被吞的次序在她之后, refs: [theogony] }
+  - { target: hera, kind: 亲缘, detail: 姐妹, refs: [theogony] }
+  - { target: demeter, kind: 亲缘, detail: 姐妹, refs: [theogony] }
+  - { target: poseidon, kind: 亲缘, detail: 姐弟；曾向她求婚被拒, refs: [homeric-hymns] }
+  - { target: dodekatheon, kind: 从属, detail: 十二主神之一；末位常被狄俄尼索斯替换, refs: [theogony] }
+kinship:
+  - relation: 父
+    name: 克罗诺斯
+    name_original: "Κρόνος"
+    refs: [theogony]
+  - relation: 母
+    name: 瑞亚
+    name_original: "Ῥέα"
+    refs: [theogony]
+legacy:
+  - "罗马的维斯塔与她对应，但罗马的灶火是国祀：六位贞女看守圣火，火熄即是国难。这一层分量在希腊原典里没有。"

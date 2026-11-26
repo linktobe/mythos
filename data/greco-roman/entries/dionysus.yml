@@ -1,0 +1,53 @@
+id: dionysus
+pantheon: greco-roman
+entity_type: 神祇
+name: 狄俄尼索斯
+name_original: "Διόνυσος"
+aliases: [巴克科斯, 酒神, 两次出生者]
+summary: 宙斯与塞墨勒之子。母亲被雷霆烧死，他被缝进父亲的大腿里足月再生；掌酒、迷狂与剧场。他在十二主神里是那个「后来的」。
+role:
+  title: "从死人肚子里出生的神"
+  brief: "他带来的是会让人失去自持的东西：酒、音乐、集体的狂喜。城邦给他节庆，也提防他；十二主神的末位之争，争的就是这位外来户该不该上桌。"
+identity:
+  lineage:
+    - { id: olympian }
+    - { id: demigod }
+  camp:
+    - { id: olympus }
+  realm:
+    - { id: earth }
+    - { id: olympus }
+narrative:
+  - text: 他的母亲塞墨勒是忒拜王卡德摩斯之女。赫拉诱她要求宙斯以真身相见，雷霆落下，她被烧死；宙斯从火中取出胎儿，缝进自己的大腿，足月后再生出来。
+    refs: [theogony, library]
+    at: { theogony: "940–942", library: "3" }
+  - text: 荷马颂歌第七篇写他少年时在海边被第勒尼安海盗掳走。船上生出藤蔓缠住桅杆，酒香四溢，水手们纷纷跳海，变成海豚；只有掌舵的被他留下。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "7" }
+  - text: 伊利亚特第六卷提到，色雷斯的吕枯耳戈斯曾追杀他的保姆，她们把手中的权杖丢在地上；狄俄尼索斯本人跳进海里，忒提斯把他抱在怀中。荷马写这一段，只为一个警告：不要与神争。
+    refs: [iliad]
+    at: { iliad: "6" }
+  - text: 他在纳克索斯岛上遇见被忒修斯遗下的阿里阿德涅，娶她为妻，并使之不死。神谱在末尾的婚姻谱里记下这一条。
+    refs: [theogony]
+    at: { theogony: "947–949" }
+variants:
+  - claim: 十二主神的末位有两种排法：一说赫斯提亚在列，一说狄俄尼索斯代之。他出身凡人女子、又晚一辈，列入十二本就比别的神更勉强——这份勉强，古典文献里也没有给出过统一的解决。
+    refs: [theogony, library]
+    at: { theogony: "940–942", library: "3" }
+relations:
+  - { target: zeus, kind: 亲缘, detail: 父子；被缝进其大腿足月再生, refs: [theogony, library] }
+  - { target: hera, kind: 敌对, detail: 生母塞墨勒因她的设计而死于雷霆, refs: [library] }
+  - { target: dodekatheon, kind: 从属, detail: 十二主神之一；末位常由其替代赫斯提亚, refs: [theogony] }
+kinship:
+  - relation: 母
+    name: 塞墨勒
+    name_original: "Σεμέλη"
+    note: 忒拜王卡德摩斯之女。被宙斯的雷霆烧死，狄俄尼索斯因此有「两次出生」之称。
+    refs: [theogony, library]
+  - relation: 妻
+    name: 阿里阿德涅
+    name_original: "Ἀριάδνη"
+    note: 克里特王弥诺斯之女，被忒修斯遗在纳克索斯，后嫁狄俄尼索斯并得不死。
+    refs: [theogony]
+legacy:
+  - "雅典的狄俄尼索斯剧场是悲剧与喜剧的演出场所；戏剧节即祭他的节庆。酒神因此也是剧场之神——这一层关联在荷马与赫西俄德那里还没有。"

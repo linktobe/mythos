@@ -33,6 +33,7 @@ const note = (refs: string[]) => {
   for (const r of refs) if (!usedRefs.includes(r)) usedRefs.push(r);
 };
 entry.narrative.forEach((n: any) => note(n.refs));
+if (entry.spotlight) note(entry.spotlight.refs);
 entry.variants.forEach((n: any) => note(n.refs));
 entry.profiles.forEach((n: any) => note(n.refs));
 entry.weapons.forEach((n: any) => note(n.refs));
@@ -164,6 +165,21 @@ const crumbs = [
           <p>{entry.role.brief}</p>
         </div>
       </div>
+
+      {entry.spotlight && (
+        <div class="spotlight reveal">
+          <span class="spotlight-label">本篇主线</span>
+          <div class="spotlight-body">
+            <strong>{entry.spotlight.title}</strong>
+            <p>
+              {entry.spotlight.text}
+              {entry.spotlight.refs.map((id: string) => (
+                <sup class="ref"><a href={`#src-${id}`} title={srcById.get(id)?.title}>{refNo.get(id)}</a></sup>
+              ))}
+            </p>
+          </div>
+        </div>
+      )}
 
       {hasIdentity && (
         <div class="identity">

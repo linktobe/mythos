@@ -1,0 +1,62 @@
+# 族（血统 / 从何而来）
+#
+# 希腊神话的「族」是生成关系，不是政治分类：谁生出谁。
+# 本表按世代分层——原初神 → 提坦 → 奥林匹斯 → 宁芙／半神 → 凡人。
+# 一个词条可以同时属于多层（如狄俄尼索斯：奥林匹斯神族所生，又被列入奥林匹斯），
+# 这种情况在词条里并列写，不在表里合并。
+
+- id: olympian
+  zh: 奥林匹斯神族
+  en: Olympians
+  pantheon: greco-roman
+  parent: theoi
+  note: 克罗诺斯与瑞亚所生的一代，及其在奥林匹斯山上所生的子女。宙斯为族长。
+
+- id: titan
+  zh: 提坦神族
+  en: Titans
+  pantheon: greco-roman
+  parent: theoi
+  note: 乌拉诺斯与盖亚所生的一代。战败后或囚于塔耳塔罗斯，或仍旧留在天地之间（如赫利俄斯、普罗米修斯）。
+
+- id: primordial
+  zh: 原初神
+  en: Primordial Deities
+  pantheon: greco-roman
+  parent: theoi
+  note: 天地未分时自行出现者——卡俄斯、盖亚、塔耳塔罗斯、厄洛斯等，无父无母。
+
+- id: daimon
+  zh: 宁芙与精灵
+  en: Nymphs and Daimones
+  pantheon: greco-roman
+  parent: theoi
+  note: 山林水泽的次级神，多为某位大神的女儿，与特定地点或自然物绑定。
+
+- id: demigod
+  zh: 半神
+  en: Demigods
+  pantheon: greco-roman
+  parent: mortals
+  note: 神与凡人所生。生来有神力，寿命仍是凡人的；英雄的主要来源。
+
+- id: mortal
+  zh: 凡人
+  en: Mortals
+  pantheon: greco-roman
+  parent: mortals
+  note: 纯人世血统。王族与英雄多半是这一类，只是家谱上远挂一位神。
+
+# ── 上层归类（abstract，只作 parent 的落点，不能写进词条的 identity）──
+
+- id: theoi
+  zh: 神
+  en: Theoi
+  pantheon: greco-roman
+  abstract: true
+
+- id: mortals
+  zh: 人
+  en: Mortals
+  pantheon: greco-roman
+  abstract: true

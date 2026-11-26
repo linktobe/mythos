@@ -1,0 +1,71 @@
+id: hera
+pantheon: greco-roman
+entity_type: 神祇
+name: 赫拉
+name_original: "Ἥρα"
+aliases: [朱诺, 宙斯之妻]
+summary: 奥林匹斯之后，掌婚姻与妇女。与宙斯既是姐弟，又是夫妻；她的故事多半围绕丈夫的私情与自己的报复展开。
+role:
+  title: "婚姻的主保，也是婚姻里受伤的那一方"
+  brief: "她守的是婚约本身，所以每一次私情都是对她的冒犯。她的报复极少落到宙斯身上，而是落在他碰过的凡女与他们所生的孩子身上。"
+identity:
+  lineage:
+    - { id: olympian }
+  camp:
+    - { id: olympus }
+  realm:
+    - { id: olympus }
+narrative:
+  - text: 她是克罗诺斯与瑞亚的女儿，排行在赫斯提亚与得墨忒耳之后，生下即被父亲吞下，在父腹中待到宙斯长成，才与兄姐一同被吐出来。
+    refs: [theogony]
+    at: { theogony: "453–491" }
+  - text: 她与宙斯是姐弟，也是夫妻。伊利亚特里她说，二人瞒着父母同宿了三百年，直到众神都知道了才办婚礼。
+    refs: [iliad]
+    at: { iliad: "14" }
+  - text: 她为宙斯生赫柏、阿瑞斯与厄勒梯亚。赫柏在山上为众神斟酒，厄勒梯亚管生育，阿瑞斯管杀伐——三人的职司，恰好各有她与宙斯的一面。
+    refs: [theogony]
+    at: { theogony: "921–923" }
+  - text: 特洛伊战争中她站阿开亚一方，与雅典娜同党。宙斯下令诸神不得插手时，她借睡神把宙斯按在伊达山上睡着，让波塞冬趁机替希腊人扳回一局；宙斯醒来后，她的说法是「海神自己愿意，我并没有叫他」。
+    refs: [iliad]
+    at: { iliad: "14、15" }
+  - text: 对宙斯的情人，她的报复一贯到底：勒托怀了阿波罗与阿尔忒弥斯，她追着不许任何大地接纳她生产，最后只有浮岛得洛斯收留；阿尔克墨涅怀赫拉克勒斯，她让产期拖长、逼得孩子在最后一刻才落地。
+    refs: [homeric-hymns, iliad]
+    at: { homeric-hymns: "3", iliad: "14" }
+  - text: 她也曾不与宙斯同房而生子：因宙斯独自生出雅典娜，她便独自生出赫淮斯托斯。孩子生来跛足，她把他抛下奥林匹斯，忒提斯与欧律诺墨接住养大。
+    refs: [iliad, library]
+    at: { iliad: "18", library: "1" }
+variants:
+  - claim: 《书库》说赫菲斯托斯是赫拉独自所生，因她恼恨宙斯无妻而生雅典娜；《伊利亚特》则另有赫拉把跛足的儿子抛下山的说法，两段并不冲突，但都指向同一件事——赫菲斯托斯与父母的关系从出生起就是僵的。
+    refs: [library, iliad]
+    at: { library: "1", iliad: "18" }
+relations:
+  - { target: zeus, kind: 婚姻, detail: 姐弟成婚，神界的正配, refs: [theogony] }
+  - { target: poseidon, kind: 亲缘, detail: 姐弟, refs: [theogony] }
+  - { target: demeter, kind: 亲缘, detail: 姐妹, refs: [theogony] }
+  - { target: hestia, kind: 亲缘, detail: 姐妹, refs: [theogony] }
+  - { target: ares, kind: 亲缘, detail: 母子, refs: [theogony] }
+  - { target: hephaestus, kind: 亲缘, detail: 母子，独生一说，因他跛足而抛下奥林匹斯, refs: [iliad, library] }
+  - { target: athena, kind: 敌对, detail: 因她生于宙斯之头而结怨，特洛伊战争中长期对立, refs: [iliad] }
+  - { target: artemis, kind: 敌对, detail: 战场口角中夺其弓、掴其耳, refs: [iliad] }
+  - { target: aphrodite, kind: 敌对, detail: 特洛伊战争中分属两方, refs: [iliad] }
+  - { target: apollo, kind: 敌对, detail: 特洛伊战争中分属两方, refs: [iliad] }
+  - { target: dodekatheon, kind: 从属, detail: 十二主神之一，宙斯之妻, refs: [theogony] }
+kinship:
+  - relation: 父
+    name: 克罗诺斯
+    name_original: "Κρόνος"
+    refs: [theogony]
+  - relation: 母
+    name: 瑞亚
+    name_original: "Ῥέα"
+    refs: [theogony]
+  - relation: 女
+    name: 赫柏
+    name_original: "Ἥβη"
+    note: 青春女神，在山上为众神斟酒；后嫁赫拉克勒斯。
+    refs: [theogony]
+  - relation: 女
+    name: 厄勒梯亚
+    name_original: "Εἰλείθυια"
+    note: 生育女神。赫拉曾命她阻延阿尔克墨涅的分娩。
+    refs: [theogony, iliad]

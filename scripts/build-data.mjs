@@ -136,6 +136,15 @@ function makeEntrySchema(p) {
       aliases: z.array(z.string()).default([]),
       summary: z.string().min(1),
       role: z.object({ title: z.string().min(2), brief: z.string().min(10) }),
+      // 特别标记：本条目主线所据的那一部典籍（如奥德修斯之于《奥德赛》）。
+      // 只在「全条主要靠这一部」时才填，避免每页都挂一块。
+      spotlight: z
+        .object({
+          title: z.string().min(1),
+          text: z.string().min(8),
+          refs: RefList,
+        })
+        .optional(),
       identity: z.object(identityShape).default({}),
       narrative: z.array(z.object({ text: z.string().min(10), refs: RefList, at: AtMap })).min(1, '叙事至少一段'),
       variants: z.array(z.object({ claim: z.string().min(5), refs: RefList, at: AtMap })).default([]),

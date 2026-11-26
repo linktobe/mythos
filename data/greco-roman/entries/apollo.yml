@@ -1,0 +1,67 @@
+id: apollo
+pantheon: greco-roman
+entity_type: 神祇
+name: 阿波罗
+name_original: "Ἀπόλλων"
+aliases: [福玻斯, 远射之神]
+summary: 掌预言、音乐、医术与远射的神。生于得洛斯，立庙于德尔斐；他的箭既治病也降瘟疫，全看人有没有冒犯他的祭司。
+role:
+  title: "既降瘟疫，也止瘟疫的那一位"
+  brief: "他不持刀剑，只有弓与琴。伊利亚特的第一场灾难不是战争，是他为祭司出气降下的九天瘟疫——整部史诗由此开始。"
+identity:
+  lineage:
+    - { id: olympian }
+  camp:
+    - { id: olympus }
+  realm:
+    - { id: olympus }
+narrative:
+  - text: 他是宙斯与勒托之子。赫拉追着勒托不许任何土地接纳她生产，走遍大地与岛屿，最后只有漂在海上的得洛斯岛应允。勒托扶着棕榈树，先产下阿尔忒弥斯，再由姐姐助产，生下阿波罗。
+    refs: [theogony, homeric-hymns]
+    at: { theogony: "918–920", homeric-hymns: "3" }
+  - text: 少年时他走到德尔斐，射杀盘踞此地的巨蛇皮同。尸身在阳光下腐烂，地名与蛇名从此都叫「皮同」；他在此建庙，设女祭司代传神谕。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "3" }
+  - text: 赫尔墨斯出生当天偷走他的五十头牛，又以龟壳做成竖琴。阿波罗追到山洞，听完一曲，提出交换：琴归他，牛归赫尔墨斯，另赠双蛇杖与占卜之权。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "4" }
+  - text: 伊利亚特开篇，阿伽门农拒绝归还祭司克律塞斯的女儿。阿波罗听祷，从奥林波斯山下来，先在营中射骡马与狗，再射人，火烧尸堆，连烧九天。
+    refs: [iliad]
+    at: { iliad: "1" }
+  - text: 尼俄柏有十二个子女，夸口说自己比只生了两个的勒托更该受祭。阿波罗与阿尔忒弥斯以箭尽杀其子女；尼俄柏化为石，至今仍在山上流泪。
+    refs: [iliad]
+    at: { iliad: "24" }
+  - text: 特洛伊战争中他助特洛伊一方，瘟疫与箭都是他的手段。但他不愿与波塞冬交手——二人在人间一同吃过苦，在战场上便各自退让。
+    refs: [iliad]
+    at: { iliad: "1、21" }
+variants:
+  - claim: 德尔斐的神庙原属大地女神，阿波罗以武力夺取一说，见于颂歌；另一种说法是和平交接。保萨尼亚斯记下了当地人对这两套记忆的不同处理。
+    refs: [homeric-hymns, pausanias]
+    at: { homeric-hymns: "3", pausanias: "10" }
+relations:
+  - { target: zeus, kind: 亲缘, detail: 父子，母为勒托, refs: [theogony] }
+  - { target: artemis, kind: 亲缘, detail: 双生姐弟，同为勒托所生, refs: [theogony] }
+  - { target: hermes, kind: 亲缘, detail: 同父异母，以琴换牛，自此交好, refs: [homeric-hymns] }
+  - { target: hera, kind: 敌对, detail: 生母被其追迫，特洛伊战争中又分属两方, refs: [homeric-hymns, iliad] }
+  - { target: athena, kind: 敌对, detail: 特洛伊战争中分属两方, refs: [iliad] }
+  - { target: poseidon, kind: 敌对, detail: 特洛伊战争中分属两方, refs: [iliad] }
+  - { target: dodekatheon, kind: 从属, detail: 十二主神之一，掌预言与远射, refs: [homeric-hymns] }
+kinship:
+  - relation: 母
+    name: 勒托
+    name_original: "Λητώ"
+    note: 提坦科俄斯之女。被赫拉追赶，无处生产，最后在得洛斯生下双生姐弟。
+    refs: [homeric-hymns]
+  - relation: 子
+    name: 阿斯克勒庇俄斯
+    name_original: "Ἀσκληπιός"
+    note: 医神，从喀戎学得医术，能起死回生；因复活死者被宙斯以雷霆击死。
+    refs: [library]
+weapons:
+  - name: 银弓
+    name_original: "τόξον"
+    note: 远射的神弓，箭无虚发且不带血——中箭者先染疫，再死。
+    refs: [iliad]
+    at: { iliad: "1" }
+legacy:
+  - "德尔斐神谕在古典时代是全希腊共同的求问处，城邦立法、开战、殖民前多先请示；罗马人把他与阿波罗同等并置，不加改名。"

@@ -1,0 +1,63 @@
+id: athena
+pantheon: greco-roman
+entity_type: 神祇
+name: 雅典娜
+name_original: "Ἀθηνᾶ"
+aliases: [密涅瓦, 帕拉斯·雅典娜, 特里托革涅亚]
+summary: 生于宙斯头颅的女神，掌技艺、战阵与城邦的谋划。她护英雄、护城邦，也在战场上与同族的神正面冲突。
+role:
+  title: "从父亲的头里出生，所以永远站在父权这一边"
+  brief: "她的权柄是「想清楚再动手」：纺织、制陶、驭马、列阵、攻城，全都归她。她不出手则已，出手必是替某个具体的人和某座具体的城。"
+identity:
+  lineage:
+    - { id: olympian }
+  camp:
+    - { id: olympus }
+  realm:
+    - { id: olympus }
+    - { id: earth }
+narrative:
+  - text: 宙斯先娶墨提斯，她最聪明。有预言说她的第二胎将夺父位，宙斯便把她吞下；胎儿在他体内继续长成，到产期，宙斯头痛难忍，雅典娜全副武装从他头里跃出。
+    refs: [theogony]
+    at: { theogony: "886–900、924–929" }
+  - text: 神谱只写到「他自己从头顶生出了明眸的特里托革涅亚」；谁来劈开那颗头，是后来才补上的细节——《书库》说是赫淮斯托斯，另一说归于普罗米修斯。
+    refs: [library]
+    at: { library: "1" }
+  - text: 伊利亚特里她站在阿开亚人一边。第五卷中她把力量与胆气注入狄俄墨得斯，让他直取阿佛洛狄忒的手腕与阿瑞斯的腰腹——两位神带伤逃回奥林匹斯，她与赫拉相视而笑。
+    refs: [iliad]
+    at: { iliad: "5" }
+  - text: 她的埃癸斯胸甲上嵌着戈尔贡之首，抖起来便是恐慌。战场上她把这一面朝向谁，谁就崩阵。
+    refs: [iliad]
+    at: { iliad: "5、15" }
+  - text: 特洛伊的木马是她的主意。奥德赛中，歌手得摩多科斯唱这一段，奥德修斯听到自己的计策被唱出来，当场落泪。
+    refs: [odyssey]
+    at: { odyssey: "8" }
+  - text: 奥德修斯漂泊十年，她一路照看：在宙斯的女儿中替他说话，替他改换容貌、隐去行迹，直到他回到伊塔卡、把弓拉开。荷马写她对这个凡人的偏爱，几乎不加掩饰。
+    refs: [odyssey]
+    at: { odyssey: "1、13" }
+variants:
+  - claim: 她与波塞冬争阿提卡，各献一物：海神以三叉击石涌出海水，她种下橄榄树。裁决者是众神（一说刻克洛普斯与雅典市民），结果判给橄榄树。保萨尼亚斯在卫城上还能指出那口井与那棵树的位置。
+    refs: [library, pausanias]
+    at: { library: "3", pausanias: "1" }
+relations:
+  - { target: zeus, kind: 亲缘, detail: 父女，生于其头, refs: [theogony] }
+  - { target: hera, kind: 敌对, detail: 因她生于宙斯之头而结怨，特洛伊战争中长期对立, refs: [iliad] }
+  - { target: poseidon, kind: 敌对, detail: 争阿提卡，败而结怨, refs: [library] }
+  - { target: ares, kind: 敌对, detail: 战场上正面相搏，以石击倒他, refs: [iliad] }
+  - { target: aphrodite, kind: 敌对, detail: 借狄俄墨得斯之手刺伤其腕, refs: [iliad] }
+  - { target: odysseus, kind: 从属, detail: 受其庇护，漂泊与归乡中屡加照看, refs: [odyssey] }
+  - { target: dodekatheon, kind: 从属, detail: 十二主神之一，掌技艺与战阵, refs: [theogony] }
+kinship:
+  - relation: 母
+    name: 墨提斯
+    name_original: "Μῆτις"
+    note: 智慧女神。被宙斯吞下，雅典娜因此从父而生，不经过母腹。
+    refs: [theogony]
+weapons:
+  - name: 埃癸斯
+    name_original: "αἰγίς"
+    note: 胸甲或披风，饰以戈尔贡之首，抖动即生恐慌；宙斯亦用，雅典娜用得更多。
+    refs: [iliad]
+    at: { iliad: "5" }
+legacy:
+  - "雅典卫城的帕特农神庙以她为祭神；城邦的铸币、职官誓言与战前献祭都与她绑定。罗马人把她与密涅瓦并置。"

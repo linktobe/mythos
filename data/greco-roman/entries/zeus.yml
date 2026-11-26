@@ -1,0 +1,91 @@
+id: zeus
+pantheon: greco-roman
+entity_type: 神祇
+name: 宙斯
+name_original: "Ζεύς"
+aliases: [朱庇特, 克罗诺斯之子, 雷霆之主]
+summary: 奥林匹斯之主，掌天空、雷电与誓约。率兄姐推翻提坦，与兄弟三分天地海；此后神界一切秩序都与他本人的意志纠缠不清。
+role:
+  title: "分到天空的那一位，也是定规矩的那一位"
+  brief: "他靠联盟夺权，不靠血统继承。掌权之后，「谁的意志算数」成了神界唯一的问题——他说了算，但连他也绕不过命运，也常被妻子骗过去。"
+identity:
+  lineage:
+    - { id: olympian }
+  camp:
+    - { id: olympus }
+  realm:
+    - { id: sky }
+    - { id: olympus }
+narrative:
+  - text: 克罗诺斯怕子女夺位，把瑞亚所生的孩子一个个吞下。瑞亚在克里特生下宙斯，用襁褓裹一块石头交给克罗诺斯，他照吞不误；宙斯由山中的宁芙与山羊抚养长大。
+    refs: [theogony]
+    at: { theogony: "453–491" }
+  - text: 长成之后，宙斯设法让父亲吐出兄姐，又救出被锁在大地深处的百臂巨人。巨人以百手投石，宙斯掷出雷霆，提坦一方在十年的时间里被压垮，战败者被押往塔耳塔罗斯。
+    refs: [theogony]
+    at: { theogony: "617–643、687–735" }
+  - text: 战后三兄弟拈阄分治：宙斯得天空，波塞冬得海，哈得斯得冥界，大地与奥林匹斯山共有。从此诸神各有职司，宙斯以天空与雷电为凭，居首席。
+    refs: [theogony, iliad]
+    at: { theogony: "881–885", iliad: "15" }
+  - text: 盖亚因提坦被囚而怒，生下提丰。宙斯以雷霆与火与之缠斗，把整座山烧熔；提丰败后，从它身上吹出的风成为海上暴风的来源。
+    refs: [theogony]
+    at: { theogony: "820–868" }
+  - text: 他的统治靠三样东西维持：誓约、好客之道与雷电。违誓者与欺凌来客者由他追究；但命运与既成之事，他也改不了。赫拉要骗他时，仍能骗过去——伊利亚特里，她借睡眠与情欲把他按在伊达山上，让波塞冬趁机替阿开亚人扳回一局。
+    refs: [iliad]
+    at: { iliad: "14、15" }
+  - text: 他的子女极多，且各有其母：雅典娜生于他头颅（先吞下有孕的墨提斯），阿波罗与阿尔忒弥斯出于勒托，赫尔墨斯出于迈亚，狄俄尼索斯出于塞墨勒，阿瑞斯、赫柏与厄勒梯亚出于赫拉。
+    refs: [theogony]
+    at: { theogony: "886–900、918–942" }
+variants:
+  - claim: 赫西俄德说宙斯吞下墨提斯，是因为预言其子将夺位；《书库》则把「救出兄姐」写成先灌药催吐，再以石头换出诸子，细节更完整。
+    refs: [library]
+    at: { library: "1" }
+relations:
+  - { target: hera, kind: 婚姻, detail: 姐弟成婚，神界的正配, refs: [theogony] }
+  - { target: poseidon, kind: 亲缘, detail: 兄弟，拈阄得海, refs: [theogony] }
+  - { target: demeter, kind: 亲缘, detail: 姐弟, refs: [theogony] }
+  - { target: demeter, kind: 情爱, detail: 生珀耳塞福涅, refs: [theogony] }
+  - { target: hestia, kind: 亲缘, detail: 姐弟，她是他最先吞下的一个, refs: [theogony] }
+  - { target: athena, kind: 亲缘, detail: 父女，生于其头, refs: [theogony] }
+  - { target: apollo, kind: 亲缘, detail: 父子，母为勒托, refs: [theogony] }
+  - { target: artemis, kind: 亲缘, detail: 父女，与阿波罗双生, refs: [theogony] }
+  - { target: ares, kind: 亲缘, detail: 父子，母为赫拉, refs: [theogony] }
+  - { target: hermes, kind: 亲缘, detail: 父子，母为迈亚, refs: [theogony] }
+  - { target: dionysus, kind: 亲缘, detail: 父子，母为塞墨勒, refs: [theogony] }
+  - { target: hephaestus, kind: 亲缘, detail: 父子一说；另有赫拉独生之说, refs: [library, iliad] }
+  - { target: aphrodite, kind: 亲缘, detail: 父女一说；另一说其生于海沫，无父母, refs: [iliad, theogony] }
+  - { target: dodekatheon, kind: 从属, detail: 十二主神之首，山上议事的裁决者, refs: [iliad] }
+  - { target: odysseus, kind: 敌对, detail: 因其同伴宰食赫利俄斯之牛，罚其不得归乡, refs: [odyssey] }
+kinship:
+  - relation: 父
+    name: 克罗诺斯
+    name_original: "Κρόνος"
+    note: 提坦之长。吞下子女，后被宙斯逼吐，战败后囚于塔耳塔罗斯。
+    refs: [theogony]
+  - relation: 母
+    name: 瑞亚
+    name_original: "Ῥέα"
+    note: 提坦女神。以石头换下宙斯，把他藏在克里特。
+    refs: [theogony]
+  - relation: 兄
+    name: 哈得斯
+    name_original: "Ἅιδης"
+    note: 同被吞下，拈阄得冥界。不住奥林匹斯山，也不参与山上议事。
+    refs: [theogony, iliad]
+  - relation: 女
+    name: 珀耳塞福涅
+    name_original: "Περσεφόνη"
+    note: 与得墨忒耳所生。被哈得斯劫走，成为冥后。
+    refs: [theogony, homeric-hymns]
+  - relation: 女
+    name: 赫柏
+    name_original: "Ἥβη"
+    note: 与赫拉所生，青春女神，在山上为众神斟酒。
+    refs: [theogony]
+weapons:
+  - name: 雷霆
+    name_original: "κεραυνός"
+    note: 神谱写他在提坦之战中掷出雷霆、闪电与霹雳，把对手的阵线烧穿；雷霆既是兵器，也是他裁决的凭据。
+    refs: [theogony]
+    at: { theogony: "687–712" }
+legacy:
+  - "罗马人把他与朱庇特并置，神格、职司、祭仪一并承接；本编按体系合并处理，不单列罗马词条。"

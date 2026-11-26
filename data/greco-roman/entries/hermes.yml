@@ -1,0 +1,62 @@
+id: hermes
+pantheon: greco-roman
+entity_type: 神祇
+name: 赫尔墨斯
+name_original: "Ἑρμῆς"
+aliases: [墨丘利, 引路者]
+summary: 宙斯与迈亚之子，掌传信、行旅、盗贼与引魂。出生当天就偷了阿波罗的牛，用龟壳造出第一把竖琴，再拿琴去换回和平。
+role:
+  title: "他什么都经手，什么都不属于他"
+  brief: "神与神之间、神与人之间、生与死之间的路都归他走。他不掌权，也不打仗，却出现在每一件需要「带话」或「带路」的事里。"
+identity:
+  lineage:
+    - { id: olympian }
+  camp:
+    - { id: olympus }
+  realm:
+    - { id: olympus }
+    - { id: earth }
+narrative:
+  - text: 他生于阿卡迪亚的库勒涅山洞，母亲是阿特拉斯的女儿迈亚，父亲是宙斯。黎明刚出生，中午就能走，傍晚已经出了山洞。
+    refs: [theogony, homeric-hymns]
+    at: { theogony: "938–939", homeric-hymns: "4" }
+  - text: 他到皮埃里亚偷走阿波罗的五十头牛，给牛蹄绑上树枝倒退着走，抹掉脚印，自己再倒着回洞。一位老人看见了他，他追上去威胁那人闭嘴。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "4" }
+  - text: 回到洞里，他杀了一只乌龟，把龟壳绷上牛肠，做出第一把竖琴。阿波罗追来质问，他先装睡、再抵赖、最后弹唱一曲；阿波罗听完，用整群牛换这把琴，并把双蛇杖与占卜之权给了他。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "4" }
+  - text: 他是众神的信使，也是死者的引路人。奥德赛末尾，他手持金杖，把求婚者们的魂灵一路领到冥界，像牧人赶羊。
+    refs: [odyssey]
+    at: { odyssey: "24" }
+  - text: 奥德修斯被困在卡吕普索的岛上时，是宙斯派他前往传令；喀耳刻要奥德修斯往冥界问路时，也是他把摩吕草交给他，教他如何避开女巫的咒。
+    refs: [odyssey]
+    at: { odyssey: "5、10" }
+variants:
+  - claim: 《神谱》只给他一行出身（宙斯与迈亚之子），《荷马颂歌》第四篇却用五百多行写他出生第一天的偷牛与造琴——同一位神，在两处的分量差得极远。
+    refs: [theogony, homeric-hymns]
+    at: { theogony: "938–939", homeric-hymns: "4" }
+relations:
+  - { target: zeus, kind: 亲缘, detail: 父子，母为迈亚, refs: [theogony] }
+  - { target: apollo, kind: 亲缘, detail: 同父异母；以琴换牛，自此交好, refs: [homeric-hymns] }
+  - { target: odysseus, kind: 从属, detail: 受宙斯之命传令，并授其破解咒术的草, refs: [odyssey] }
+  - { target: dodekatheon, kind: 从属, detail: 十二主神之一，掌传信与行旅, refs: [theogony] }
+kinship:
+  - relation: 母
+    name: 迈亚
+    name_original: "Μαῖα"
+    note: 阿特拉斯之女，普勒阿得斯七姊妹之一。在库勒涅山洞中独自生下他。
+    refs: [homeric-hymns]
+  - relation: 子
+    name: 奥托吕科斯
+    name_original: "Αὐτόλυκος"
+    note: 技艺高超的盗贼，奥德修斯的外祖父。偷技隔代传了下去。
+    refs: [odyssey]
+weapons:
+  - name: 双蛇杖
+    name_original: "κηρύκειον"
+    note: 传令与引魂的凭信，杖上盘着两条蛇。阿波罗赠此物，以换他的竖琴。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "4" }
+legacy:
+  - "罗马人与墨丘利并置。后世把他的双蛇杖用作商业、交通与邮政的标记，至今仍在一些国家的机构徽章上。"

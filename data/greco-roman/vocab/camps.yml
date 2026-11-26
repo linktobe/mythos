@@ -1,0 +1,40 @@
+# 阵营（立场归属）
+#
+# 记的是「在神界与人间的事务上站哪一边」，不是血统。
+# 同一位神可以同时有两三个阵营并不同时期归属——这种就用 from/until/note 说明。
+# 特洛伊战争是本体系里最主要的一条战线，故阿开亚与特洛伊单列。
+
+- id: olympus
+  zh: 奥林匹斯方
+  pantheon: greco-roman
+  note: 以宙斯为首的奥林匹斯集团。第三次神界战争后的掌权派。
+
+- id: titan
+  zh: 提坦方
+  pantheon: greco-roman
+  note: 克罗诺斯旧党。战败后退出权力中心，个别成员仍在世。
+
+- id: underworld
+  zh: 冥界方
+  pantheon: greco-roman
+  note: 哈得斯所治。同为克罗诺斯之子，但不住奥林匹斯山，也不参与山上的议事。
+
+- id: achaean
+  zh: 阿开亚方
+  pantheon: greco-roman
+  note: 特洛伊战争中的希腊联军一方。
+
+- id: trojan
+  zh: 特洛伊方
+  pantheon: greco-roman
+  note: 特洛伊战争中的守城一方。诸神在这条战线上各有所助，且随时改换。
+
+- id: mortal
+  zh: 凡人方
+  pantheon: greco-roman
+  note: 不站在神界任何一党的人。对神的态度因人而异，从虔敬到冒犯都有。
+
+- id: neutral
+  zh: 中立
+  pantheon: greco-roman
+  note: 不介入神界与人间战争，或依情势随时倒向一边者。

@@ -1,0 +1,56 @@
+id: artemis
+pantheon: greco-roman
+entity_type: 神祇
+name: 阿尔忒弥斯
+name_original: "Ἄρτεμις"
+aliases: [狄安娜, 狩猎女神]
+summary: 掌狩猎、野兽与分娩的女神，阿波罗的双生姐姐。她终身不嫁，谁越过她划的界线，谁就变成猎物。
+role:
+  title: "她护的是野兽，射的是人"
+  brief: "山林、野兽、初生的婴儿都归她管。她的惩罚从不讲道理，也不给申诉：看见她洗澡的变成鹿，夸口胜过她母亲的失去子女。"
+identity:
+  lineage:
+    - { id: olympian }
+  camp:
+    - { id: olympus }
+  realm:
+    - { id: earth }
+narrative:
+  - text: 她是勒托的长女。母亲被赫拉追着不许生产，最后在得洛斯落脚；她先出世，随即帮母亲接生弟弟阿波罗，因此也被奉为分娩的主保。
+    refs: [theogony, homeric-hymns]
+    at: { theogony: "918–920", homeric-hymns: "3" }
+  - text: 荷马颂歌说，有三位女神始终不受阿佛洛狄忒的力——雅典娜、阿尔忒弥斯与赫斯提亚。阿尔忒弥斯向宙斯求得的礼物是：永不受婚配，长年在山林中与野兽为伴。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "5" }
+  - text: 猎人阿克泰翁在林中撞见她沐浴。她掬水泼去，把他变成一头鹿；他自己的猎犬认不出主人，把他撕碎。
+    refs: [library]
+    at: { library: "3" }
+  - text: 尼俄柏夸口子女比勒托多，阿尔忒弥斯与阿波罗以箭尽杀之。伊利亚特里，尼俄柏的结局被当作「凡人不要与神比」的范例讲给阿喀琉斯听。
+    refs: [iliad]
+    at: { iliad: "24" }
+  - text: 特洛伊战争中她也站在特洛伊一边。第二十一卷她与赫拉当面对骂，被赫拉夺过弓来击打，又被掴了耳光，哭着回奥林匹斯，坐在父亲膝上诉苦。
+    refs: [iliad]
+    at: { iliad: "21" }
+variants:
+  - claim: 阿克泰翁之死，《书库》只说他被变成鹿、被猎犬撕碎；奥维德《变形记》把心理写得极细，还添了「她泼水时说的那句话」。两本相差数百年，情节骨架一致，动机与语气全是后加的。
+    refs: [library, metamorphoses]
+    at: { library: "3", metamorphoses: "3" }
+relations:
+  - { target: zeus, kind: 亲缘, detail: 父女，母为勒托, refs: [theogony] }
+  - { target: apollo, kind: 亲缘, detail: 双生姐弟，她先出世并助其降生, refs: [theogony] }
+  - { target: hera, kind: 敌对, detail: 生母被其追迫；战场上又正面冲突, refs: [iliad] }
+  - { target: dodekatheon, kind: 从属, detail: 十二主神之一，掌狩猎, refs: [homeric-hymns] }
+kinship:
+  - relation: 母
+    name: 勒托
+    name_original: "Λητώ"
+    note: 与阿波罗同母。分娩之地得洛斯因此成为她的圣地之一。
+    refs: [homeric-hymns]
+weapons:
+  - name: 金弓
+    name_original: "τόξον"
+    note: 与阿波罗同源的远射之弓。她的箭多用于猎杀，也用于处死冒犯者。
+    refs: [iliad]
+    at: { iliad: "21" }
+legacy:
+  - "以弗所的阿尔忒弥斯神庙为古代七大奇迹之一；罗马人把她与狄安娜并置，但以弗所的那一尊是丰产神像，与希腊的猎装少女相去甚远。"

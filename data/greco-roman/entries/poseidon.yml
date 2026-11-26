@@ -1,0 +1,68 @@
+id: poseidon
+pantheon: greco-roman
+entity_type: 神祇
+name: 波塞冬
+name_original: "Ποσειδῶν"
+aliases: [涅普顿, 摇地者]
+summary: 掌海与地震的三巨头之一，拈阄得海。特洛伊战争中站阿开亚一边，却因儿子被刺瞎而与奥德修斯结下十年之仇。
+role:
+  title: "分到海的那一位，也是摇动大地的那一位"
+  brief: "海、地震与马都归他。他与宙斯平起平坐地争吵，却始终是「另一个拿到阄的人」；一旦涉及自己的儿子，神界的立场立刻让位给私仇。"
+identity:
+  lineage:
+    - { id: olympian }
+  camp:
+    - { id: olympus }
+  realm:
+    - { id: sea }
+narrative:
+  - text: 他是克罗诺斯与瑞亚之子，生下即被父亲吞下，与兄姐一同在父腹中待到宙斯长成。宙斯救出他们之后，他成为反对提坦的一方里资历最老的三位之一。
+    refs: [theogony]
+    at: { theogony: "453–491" }
+  - text: 战后三兄弟拈阄：宙斯得广阔的天空，哈得斯得昏冥的冥界，他拈得灰白的海。三界之外的大地与奥林匹斯山，按他的说法是三方共有——这句话是他在战场上被宙斯压制时亲口讲的。
+    refs: [iliad]
+    at: { iliad: "15" }
+  - text: 他曾与阿波罗一同为特洛伊王拉俄墨冬筑城墙。工成之后，拉俄墨冬赖掉工钱，还要把二人捆起来卖掉；此后特洛伊在他眼里始终是赖账的城。
+    refs: [iliad]
+    at: { iliad: "21" }
+  - text: 特洛伊战争中他站阿开亚一方。宙斯偏袒特洛伊时，他仍留在战场，化作老预言者的模样鼓舞希腊人；直到宙斯醒来，他才退回海里。
+    refs: [iliad]
+    at: { iliad: "13、14" }
+  - text: 他与雅典娜争阿提卡，各献一物：他以三叉击石，涌出海水（一说涌出马），雅典娜种下橄榄树。众神判给橄榄树，城从此以她为名。
+    refs: [library, pausanias]
+    at: { library: "3", pausanias: "1" }
+  - text: 奥德修斯刺瞎了他的儿子波吕斐摩斯。他不能杀死奥德修斯，便要他在海上多熬十年：船毁、同伴尽失，回到家乡时已是一个人不认得的人。
+    refs: [odyssey]
+    at: { odyssey: "1、9、13" }
+variants:
+  - claim: 争雅典一事，《书库》说是众神裁决，保萨尼亚斯在雅典卫城所见则是另一套：井里的海水与橄榄树都还在，铭文与祭仪各有说法。同一场争执，两种记忆。
+    refs: [library, pausanias]
+    at: { library: "3", pausanias: "1" }
+relations:
+  - { target: zeus, kind: 亲缘, detail: 兄弟，拈阄得天空, refs: [theogony] }
+  - { target: hera, kind: 亲缘, detail: 姐弟, refs: [theogony] }
+  - { target: demeter, kind: 亲缘, detail: 姐弟, refs: [theogony] }
+  - { target: hestia, kind: 亲缘, detail: 姐弟, refs: [theogony] }
+  - { target: athena, kind: 敌对, detail: 争阿提卡，败而结怨, refs: [library] }
+  - { target: apollo, kind: 亲缘, detail: 同为拉俄墨冬筑城，工钱被赖, refs: [iliad] }
+  - { target: odysseus, kind: 敌对, detail: 其子波吕斐摩斯被刺瞎，罚其十年不得归, refs: [odyssey] }
+  - { target: dodekatheon, kind: 从属, detail: 十二主神之一，得海, refs: [iliad] }
+kinship:
+  - relation: 父
+    name: 克罗诺斯
+    name_original: "Κρόνος"
+    refs: [theogony]
+  - relation: 母
+    name: 瑞亚
+    name_original: "Ῥέα"
+    refs: [theogony]
+  - relation: 子
+    name: 波吕斐摩斯
+    name_original: "Πολύφημος"
+    note: 独眼巨人。被奥德修斯灌醉后刺瞎，向父亲求罚，波塞冬应其所请。
+    refs: [odyssey]
+  - relation: 子
+    name: 特里同
+    name_original: "Τρίτων"
+    note: 与安菲特里忒所生，随父居于海底。
+    refs: [theogony]

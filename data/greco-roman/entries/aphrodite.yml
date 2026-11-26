@@ -1,0 +1,65 @@
+id: aphrodite
+pantheon: greco-roman
+entity_type: 神祇
+name: 阿佛洛狄忒
+name_original: "Ἀφροδίτη"
+aliases: [维纳斯, 库忒瑞亚, 塞浦路斯的女神]
+summary: 掌情爱的女神。神谱说她生于海沫、无父无母；伊利亚特又说她是宙斯之女。她能让神与人都失了分寸，自己却在战场上被人刺伤手腕，哭着退场。
+role:
+  title: "她的权柄是让人失去判断"
+  brief: "她不持兵器，却能让宙斯、阿瑞斯与凡间的英雄一块儿昏头。整部伊利亚特里，她唯一一次亲自上阵就被刺伤——那不是她的战场。"
+identity:
+  lineage:
+    - { id: olympian }
+    - { id: primordial }
+  camp:
+    - { id: olympus }
+  realm:
+    - { id: sea }
+    - { id: olympus }
+narrative:
+  - text: 克罗诺斯割下乌拉诺斯的生殖器抛入海中，白沫里生出一位少女。她先漂到库忒拉，再到塞浦路斯上岸，所过之处脚下长出青草。神谱给她的出身只有这一段，没有父母。
+    refs: [theogony]
+    at: { theogony: "176–206" }
+  - text: 伊利亚特另有说法：她是宙斯与狄俄涅的女儿，在战场上受伤后扑到母亲膝上哭诉。同一部史诗里，两种出身并存。
+    refs: [iliad]
+    at: { iliad: "5" }
+  - text: 宙斯把她嫁给赫菲斯托斯。她与阿瑞斯私通，被丈夫用看不见的网罩在床上，众神围看，男神们笑得停不下来。
+    refs: [odyssey]
+    at: { odyssey: "8" }
+  - text: 特洛伊战争中她助帕里斯。决斗中帕里斯将败，她把他从阵前摄回卧室；后来她亲自上阵救儿子埃涅阿斯，被狄俄墨得斯一枪刺中手腕，血（一说为神液）流出来，她丢下儿子逃回奥林匹斯。
+    refs: [iliad]
+    at: { iliad: "3、5" }
+  - text: 她与特洛伊的牧人安喀塞斯结合，生埃涅阿斯。神谱在末尾列她与凡人所生，荷马颂歌第五篇把这一夜写成一整篇：她向他隐瞒身份，事后警告他不要声张。
+    refs: [theogony, homeric-hymns]
+    at: { theogony: "1008–1010", homeric-hymns: "5" }
+variants:
+  - claim: 出身两说：海沫所生（无父母，属原初一代）与宙斯与狄俄涅之女（属奥林匹斯第三代）在荷马与赫西俄德之间并存，本编两说并列，不合并。
+    refs: [theogony, iliad]
+    at: { theogony: "176–206", iliad: "5" }
+relations:
+  - { target: zeus, kind: 亲缘, detail: 父女一说；另一说其生于海沫，无父母, refs: [iliad, theogony] }
+  - { target: hephaestus, kind: 婚姻, detail: 由其安排下嫁，婚后不忠, refs: [odyssey] }
+  - { target: ares, kind: 情爱, detail: 私通，被赫菲斯托斯以网捉住, refs: [odyssey] }
+  - { target: athena, kind: 敌对, detail: 特洛伊战争中分属两方，被她借狄俄墨得斯之手刺伤, refs: [iliad] }
+  - { target: hera, kind: 敌对, detail: 特洛伊战争中分属两方, refs: [iliad] }
+  - { target: dodekatheon, kind: 从属, detail: 十二主神之一，掌情爱, refs: [theogony] }
+kinship:
+  - relation: 子
+    name: 埃涅阿斯
+    name_original: "Αἰνείας"
+    note: 与安喀塞斯所生。特洛伊城破后携父出逃，罗马人奉其为始祖。
+    refs: [homeric-hymns]
+  - relation: 母
+    name: 狄俄涅
+    name_original: "Διώνη"
+    note: 提坦之女。仅《伊利亚特》一派以她为阿佛洛狄忒之母。
+    refs: [iliad]
+weapons:
+  - name: 腰带
+    name_original: "κεστός"
+    note: 绣花的腰带，其中藏着她全部的魅力与诱惑，能夺去明白人的心智。赫拉曾借它去骗宙斯。
+    refs: [iliad]
+    at: { iliad: "14" }
+legacy:
+  - "罗马人把她与维纳斯并置，凯撒称其为家族始祖；本编按体系合并处理。"

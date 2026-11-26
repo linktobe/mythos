@@ -1,1 +1,111 @@
-# 古希腊罗马神话词条（尚未开始）
+# 原典登记表
+# tier: T0 = 原典（荷马、赫西俄德等古风期作品）；T1 = 古代汇编／系统整理
+#       T2 = 后世重述（罗马人的改写）。
+# 规则：叙事主干只引用 T0/T1；T2/T3 只能出现在 variants / legacy / adaptations。
+# 引文一律「原文 + 自译」，不抄现代中译本。url 指向公有领域原文库，供读者核对。
+#
+# unit：该部典籍的计节单位。荷马按「卷」，赫西俄德按「行」，颂歌按「篇」。
+
+- id: theogony
+  pantheon: greco-roman
+  tier: T0
+  title: 神谱
+  original: Θεογονία
+  work: 赫西俄德
+  work_original: Hesiod, Theogony
+  date: 约公元前 700 年
+  lang: 古希腊语
+  unit: 行
+  url: https://sacred-texts.com/book/the-theogony-of-hesiod/the-theogony-of-hesiod
+  note: 全诗 1022 行。诸神谱系与奥林匹斯掌权的由来，以本书为最早的系统叙述；引文按行号。
+
+- id: works-days
+  pantheon: greco-roman
+  tier: T0
+  title: 工作与时日
+  original: Ἔργα καὶ Ἡμέραι
+  work: 赫西俄德
+  work_original: Hesiod, Works and Days
+  date: 约公元前 700 年
+  lang: 古希腊语
+  unit: 行
+  url: https://sacred-texts.com/book/works-and-days/hesiod-works-and-days
+  note: 普罗米修斯盗火、潘多拉与人类五个时代的完整叙述在此，《神谱》只一句带过。
+
+- id: iliad
+  pantheon: greco-roman
+  tier: T0
+  title: 伊利亚特
+  original: Ἰλιάς
+  work: 荷马
+  work_original: Homer, Iliad
+  date: 约公元前 8 世纪
+  lang: 古希腊语
+  unit: 卷
+  url: https://sacred-texts.com/book/the-iliad-of-homer
+  note: 二十四卷。特洛伊战争第十年的五十一天。神界政治写得最细，诸神各助一方，互相拆台。
+
+- id: odyssey
+  pantheon: greco-roman
+  tier: T0
+  title: 奥德赛
+  original: Ὀδύσσεια
+  work: 荷马
+  work_original: Homer, Odyssey
+  date: 约公元前 8 世纪
+  lang: 古希腊语
+  unit: 卷
+  url: https://sacred-texts.com/book/the-odyssey-of-homer
+  note: 二十四卷。奥德修斯自特洛伊归乡的十年。第九至十二卷由他本人在费埃克斯人的席上口述。
+
+- id: homeric-hymns
+  pantheon: greco-roman
+  tier: T0
+  title: 荷马颂歌
+  original: Ὁμηρικοὶ ὕμνοι
+  work: 荷马颂歌集
+  work_original: Homeric Hymns
+  date: 约公元前 7–前 5 世纪
+  lang: 古希腊语
+  unit: 篇
+  url: https://sacred-texts.com/book/the-homeric-hymns
+  note: 三十三篇长短不一的六音步颂歌。得墨忒耳、阿波罗、赫尔墨斯、阿佛洛狄忒、狄俄尼索斯各有长篇专颂，是这几位神最早的完整叙事。
+
+- id: library
+  pantheon: greco-roman
+  tier: T1
+  title: 书库
+  original: Βιβλιοθήκη
+  work: 阿波罗多洛斯
+  work_original: Pseudo-Apollodorus, Bibliotheca
+  date: 约公元前 1 世纪–公元 2 世纪
+  lang: 古希腊语
+  unit: 卷
+  url: https://www.theoi.com/Text/Apollodorus1.html
+  note: 三卷加摘要，按谱系把散在各处的神话串成连续叙述。不少故事只剩它一个完整版本；作者托名阿波罗多洛斯，今人只称「托名阿波罗多洛斯」。
+
+- id: pausanias
+  pantheon: greco-roman
+  tier: T1
+  title: 希腊道里志
+  original: Ἑλλάδος Περιήγησις
+  work: 保萨尼亚斯
+  work_original: Pausanias, Description of Greece
+  date: 约公元 2 世纪
+  lang: 古希腊语
+  unit: 卷
+  url: https://www.theoi.com/Text/Pausanias1A.html
+  note: 十卷游记，逐地记神庙、祭仪与当地异传。凡与史诗不合处，多由它保存下来。
+
+- id: metamorphoses
+  pantheon: greco-roman
+  tier: T2
+  title: 变形记
+  original: Metamorphōsēs
+  work: 奥维德
+  work_original: Ovid, Metamorphoses
+  date: 公元 8 年
+  lang: 拉丁语
+  unit: 卷
+  url: https://www.theoi.com/Text/OvidMetamorphoses1.html
+  note: 罗马人重述希腊神话，十五卷、约二百五十个变形故事。文笔最盛，离原典也最远；本编只用于异文与后世演绎。

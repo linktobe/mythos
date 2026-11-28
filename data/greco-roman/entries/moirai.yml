@@ -1,9 +1,9 @@
 id: moirai
 pantheon: greco-roman
 entity_type: 群体
-name: 摩伊赖
+name: 命运三女神
 name_original: "The Moirai"
-aliases: [命运三女神, 命运女神]
+aliases: [摩伊赖, 命运女神, 摩伊拉]
 summary: 分派每个人命数的三位女神；她们的父亲，原典自己都有两说。
 role:
   title: "比宙斯还早，还是宙斯的女儿"
@@ -22,15 +22,31 @@ narrative:
   - text: 同书后文另有一处：宙斯娶忒弥斯，生下时序三女神与摩伊赖——克洛托、拉刻西斯、阿特洛波斯，她们给人分配祸福。
     refs: [theogony]
     at: { theogony: "901–906" }
+  - text: 三人的名号本身就是职司：「克洛托」从「纺」来，「拉刻西斯」从「拈阄、分派」来，「阿特洛波斯」意为「不可转」。神谱给的是这三个名字，没有说明谁做哪一步。
+    refs: [theogony]
+    at: { theogony: "901–906" }
 variants:
   - claim: 两处出身不能并存：一处是夜的女儿（比奥林帕斯更早），一处是宙斯的女儿（受他管辖）。神谱都写了，没有取舍；后世多半取后一说。
     refs: [theogony]
     at: { theogony: "211–225, 901–906" }
-  - claim: 名字与职司是后一处才给的：克洛托纺、拉刻西斯量、阿特洛波斯剪，这一套形象在原典里只有轮廓，细节出自后世。
+  - claim: 纺、量、剪这三道分工，原典没有写明。神谱只给名字与「分派祸福」一句；把三人分别配给纺车、尺与剪刀，是后世一步步补上的。
     refs: [theogony]
     at: { theogony: "901–906" }
+profiles:
+  - name: 克洛托
+    name_original: Klotho
+    story: 名从「纺」（κλώθω）来。神谱只在三名之中点了她，没有说她负责哪一段；后世把「纺出生命之线」给了她。
+    refs: [theogony]
+  - name: 拉刻西斯
+    name_original: Lachesis
+    story: 名从「拈阄、分得」（λαγχάνω）来。她的名字本身就是「分派」这件事，后世说她量定每个人所得的那一段。
+    refs: [theogony]
+  - name: 阿特洛波斯
+    name_original: Atropos
+    story: 名意为「不可转」「不容更改」。三人里她的名字最硬；后世给她的那把剪刀，是对这个名字的图解。
+    refs: [theogony]
 relations:
   - { target: nyx, kind: 亲缘, detail: 母女（神谱前一说）, refs: [theogony] }
   - { target: zeus, kind: 亲缘, detail: 父女（神谱后一说）, refs: [theogony] }
 legacy:
-  - 「命运女神」的形象在后世被画成三位老妇与一卷线；那把剪刀是罗马与近代的添加。
+  - 「命运女神」的形象在后世被画成三位老妇与一卷线；那把剪刀与那根纺锤，原典里都没有提到过。

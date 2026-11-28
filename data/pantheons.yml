@@ -156,6 +156,6 @@
     entry: [zeus, hera, poseidon, demeter, hades, persephone, athena, apollo, artemis, ares, aphrodite, hephaestus, hermes, hestia, dionysus]
     beast: [typhon, echidna, medusa, cyclops, cerberus, hydra, chimera, sphinx, sirens, minotaur]
     allusion: [achilles-heel, pandoras-box, promethean-fire, atlas-burden, sisyphus-stone, tantalus-torment, augean-stables, ariadnes-thread, daedalus-wings, narcissus, cassandra, pygmalion, heracles-choice, damocles-sword, ship-of-theseus, odysseus]
-    group: [dodekatheon]
+    group: [primordials, titans, dodekatheon]
     place: [olympus, tartarus, underworld, elysium, styx, acheron]
     event: [titanomachy, gigantomachy, deucalion-flood, argonauts, seven-against-thebes, trojan-war]

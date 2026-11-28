@@ -1,0 +1,45 @@
+id: titans
+pantheon: greco-roman
+entity_type: 群体
+name: 泰坦神族
+name_original: "Titans"
+aliases: [提坦神族, 泰坦, 提坦]
+summary: 盖亚与乌拉诺斯所生的第二代神，克洛诺斯为首；战败后被关进塔尔塔罗斯。
+role:
+  title: "第二代"
+  brief: "他们上承无父无母的原始神，下接宙斯一代。名字在神谱里带着骂意——不是自称，是父亲给的一句贬话。"
+identity:
+  lineage:
+    - { id: titan }
+  camp:
+    - { id: titan }
+  realm:
+    - { id: beyond, note: 战前据俄特律斯山，战后多囚于塔尔塔罗斯 }
+narrative:
+  - text: 神谱列的是十二位：六个儿子——俄刻阿诺斯、科俄斯、克瑞俄斯、许佩里翁、伊阿珀托斯，加上最后生的克洛诺斯；六个女儿——忒亚、瑞亚、忒弥斯、谟涅摩叙涅、福柏、忒堤斯。克洛诺斯最幼，也最凶，恨自己的父亲。
+    refs: [theogony]
+    at: { theogony: "132–138" }
+  - text: 「泰坦」这个名字不是好话。神谱说乌拉诺斯这样骂他和盖亚所生的这些儿子，指他们「使劲」（τιταίνοντας）做了那件可怕的事，而报应随后就来。这个名字由父亲所起，是斥责，不是这一族自己的称呼。
+    refs: [theogony]
+    at: { theogony: "207–210" }
+  - text: 克洛诺斯推翻乌拉诺斯，与瑞亚生下六子女；宙斯长大之后救出兄姐，与泰坦打了一场十年不分胜负的仗。战败的泰坦被捆着投进塔尔塔罗斯。
+    refs: [theogony]
+    at: { theogony: "617–735" }
+  - text: 但「泰坦」不等于「被囚者」。神谱后文照旧写许佩里翁之子赫利俄斯驾日车、伊阿珀托斯之子普罗米修斯在人间盗火——这些人同属泰坦，却仍在各自的职司上。
+    refs: [theogony]
+    at: { theogony: "371–374, 507–543" }
+variants:
+  - claim: 神谱并不数「十二」：它只按顺序列出这些儿女，没有给一个数字。《书库》才明白地数出十二位泰坦。数目是后世整理出来的。
+    refs: [theogony, library]
+    at: { theogony: "132–138", library: "1" }
+  - claim: 他们与原始神的界线在生成方式上：原始神无父无母自行出现，泰坦是盖亚与乌拉诺斯所生。两代都「在奥林帕斯之前」，但不是一个层次。
+    refs: [theogony]
+    at: { theogony: "116–138" }
+relations:
+  - { target: titanomachy, kind: 从属, detail: 战败的一方, refs: [theogony] }
+  - { target: tartarus, kind: 从属, detail: 战后囚于此, refs: [theogony] }
+  - { target: zeus, kind: 敌对, detail: 被宙斯一代推翻, refs: [theogony] }
+  - { target: hades, kind: 敌对, detail: 奥林帕斯一方的对手, refs: [theogony] }
+  - { target: primordials, kind: 亲缘, detail: 上一代；盖亚与乌拉诺斯生下他们, refs: [theogony] }
+legacy:
+  - 后世把「泰坦」借去指庞大的东西（如「泰坦巨人」「泰坦尼克」）；这一层用法与克洛诺斯那一族已无关系。

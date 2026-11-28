@@ -1,0 +1,43 @@
+id: primordials
+pantheon: greco-roman
+entity_type: 群体
+name: 原始神
+name_original: "Primordial Deities"
+aliases: [希腊原始神, 原初神]
+summary: 天地未分时自行出现的第一批：卡俄斯、盖亚、塔尔塔罗斯、厄洛斯等，无父无母。
+role:
+  title: "没有父母的那一批"
+  brief: "神谱讲希腊神话，是从「最先有的是什么」讲起的。这一批不需要谁生：它们自己就在那里。泰坦是它们的下一代。"
+identity:
+  lineage:
+    - { id: primordial }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond }
+narrative:
+  - text: 神谱开头先交代「最先有的是什么」：第一个是卡俄斯；其次是大胸的盖亚、幽暗的塔尔塔罗斯，以及厄洛斯。这四个都不是谁生的。
+    refs: [theogony]
+    at: { theogony: "116–125" }
+  - text: 接着才是生：从卡俄斯生出厄瑞玻斯与黑夜，黑夜又生出埃忒耳与白昼；盖亚则独自生出星空、群山与海，不需要配偶。
+    refs: [theogony]
+    at: { theogony: "116–125" }
+  - text: 再往后，盖亚与乌拉诺斯结合，才生下十二位泰坦。所以这两批神的关系很清楚：原始神在先，泰坦是他们的下一代。
+    refs: [theogony]
+    at: { theogony: "132–138" }
+  - text: 「原始神」不是古希腊人自己的类目。神谱只是按「谁先出现」排下来，没有给这一批起一个族名；这个词是后人整理希腊创世神谱时用的。
+    refs: [theogony]
+    at: { theogony: "116–125" }
+variants:
+  - claim: 名单没有定本。神谱的开头只点了卡俄斯、盖亚、塔尔塔罗斯、厄洛斯四个，往后才生出其他；别的神谱收得更宽，把命运、睡与死、报应之类也排进这一代。所谓「原始神」是一批，不是一份名单。
+    refs: [theogony]
+    at: { theogony: "116–125, 211–225" }
+  - claim: 盖亚同时属于两代：她是自行出现的原始神，又是泰坦的母亲。这一个人身上的重叠，正是「原始神与泰坦」常被混为一谈的来由。
+    refs: [theogony]
+    at: { theogony: "116–138" }
+relations:
+  - { target: titans, kind: 亲缘, detail: 下一代；盖亚与乌拉诺斯生下他们, refs: [theogony] }
+  - { target: typhon, kind: 亲缘, detail: 盖亚与塔尔塔罗斯所生, refs: [theogony] }
+  - { target: tartarus, kind: 从属, detail: 自身即其中之一, refs: [theogony] }
+legacy:
+  - 近代把这一批称为「原始神」或「宇宙生成神」，并常与别的民族的创世神并排比较；这类比较多出自后世，原典只是按先后排列。

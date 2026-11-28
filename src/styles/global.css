@@ -257,6 +257,17 @@ button.chip[aria-pressed="true"] { background: var(--accent); border-color: var(
 }
 .spotlight-body p { margin: 6px 0 0; color: var(--ink-soft); font-size: 15px; line-height: 1.75; }
 
+/* 特别说明：与「本篇主线」同一版式，改用中性色，避免与强调块混淆 */
+.notice {
+  display: flex; gap: 14px; align-items: flex-start;
+  margin: 14px 0 0; padding: 16px 20px;
+  border: 1px dashed var(--line); border-radius: 16px;
+  background: rgba(0, 0, 0, .015);
+}
+.notice-label { font-size: 11px; letter-spacing: .3em; color: var(--muted); padding-top: 4px; white-space: nowrap; }
+.notice-body strong { font-family: var(--serif); font-size: 17px; letter-spacing: .06em; color: var(--ink); }
+.notice-body p { margin: 6px 0 0; color: var(--ink-soft); font-size: 15px; line-height: 1.75; }
+
 .tag-role {
   color: var(--accent) !important;
   border-color: var(--accent) !important;

@@ -179,6 +179,16 @@ const crumbs = [
         </div>
       </div>
 
+      {entry.notice && (
+        <div class="notice reveal">
+          <span class="notice-label">特别说明</span>
+          <div class="notice-body">
+            <strong>{entry.notice.title}</strong>
+            <p>{entry.notice.text}</p>
+          </div>
+        </div>
+      )}
+
       {entry.spotlight && (
         <div class="spotlight reveal">
           <span class="spotlight-label">本篇主线</span>

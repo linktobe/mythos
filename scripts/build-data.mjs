@@ -146,6 +146,13 @@ function makeEntrySchema(p) {
         .optional(),
       // 特别标记：本条目主线所据的那一部典籍（如奥德修斯之于《奥德赛》）。
       // 只在「全条主要靠这一部」时才填，避免每页都挂一块。
+      // 特别说明：这一条需要先跟读者交代一句范围上的事（如「这不是神话」）。
+      notice: z
+        .object({
+          title: z.string().min(1),
+          text: z.string().min(4),
+        })
+        .optional(),
       spotlight: z
         .object({
           title: z.string().min(1),

@@ -84,3 +84,9 @@
   zh: 亡灵
   en: Undead
   axes: true
+
+- id: allusion
+  zh: 典故
+  en: Allusion
+  axes: false
+  note: 神话在后来语言里留下的固定说法：一个成语、一个比喻、一个常见的引子。它们不构成叙事，故此类别不填三轴。

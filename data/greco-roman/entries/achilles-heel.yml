@@ -1,0 +1,35 @@
+id: achilles-heel
+pantheon: greco-roman
+entity_type: 典故
+name: 阿基里斯之踵
+name_original: "Achilles' heel"
+aliases: [阿喀琉斯之踵, 阿基里斯腱]
+summary: 全身刀枪不入，只有脚踝是唯一的破口。
+role:
+  title: "唯一的破口"
+  brief: "这个说法的用法比它的来历清楚：「再强也有一个致命处」。而「脚踝」这一层，出现得比荷马晚得多。"
+identity: {}
+narrative:
+  - text: 荷马笔下的阿基里斯没有刀枪不入这回事。他自己清楚命数：母亲说过，他若上特洛伊战场，就回不来；他照去，宁可短命而名声大。
+    refs: [iliad]
+    at: { iliad: "9" }
+  - text: 全诗止于赫克托耳的葬礼，没有写他的死。他的死讯在诗外：赫克托耳断气前留了一句——帕里斯与阿波罗会在斯开亚门要你的命。
+    refs: [iliad]
+    at: { iliad: "22" }
+  - text: 《书库·摘要》把这一箭落到实处：帕里斯与阿波罗在斯开亚门射中了他的脚踝。这是「脚踝」见于古代叙述的较早一处。
+    refs: [library-epitome]
+    at: { library-epitome: "5" }
+  - text: 「全身浸过冥河、只有被捏住的脚踝没沾到水」这一层，不在荷马、赫西俄德与《书库》里；它属于更晚的转述。
+    refs: [library-epitome]
+    at: { library-epitome: "5" }
+variants:
+  - claim: 常见说法把「刀枪不入」归给荷马，其实荷马没有写过；荷马的阿基里斯是会死的英雄，死得早、死得壮烈，正因如此才是英雄。
+    refs: [iliad]
+    at: { iliad: "9、22" }
+  - claim: 踵的故事与冥河浸泡的故事分属两层：箭中脚踝见于《书库·摘要》，浸河一层更晚。两层常被当成一件事讲。
+    refs: [library-epitome]
+    at: { library-epitome: "5" }
+relations:
+  - { target: trojan-war, kind: 从属, detail: 死于此战的最后阶段, refs: [iliad] }
+legacy:
+  - 解剖学上的「阿基里斯腱」（跟腱）就是借这个故事命名的；中文里「阿喀琉斯之踵」多用来指组织或体系里那处致命的薄弱环节。

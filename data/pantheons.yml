@@ -132,11 +132,11 @@
       desc: 神与人之外的另一群生民
       route: shou
       types: [异兽]
-    - key: legend
-      label: 英雄传说
-      desc: 归乡、远征与神人之子
-      route: yingxiong
-      types: [英雄]
+    - key: allusion
+      label: 典故
+      desc: 神话在后来语言里留下的说法
+      route: diangu
+      types: [典故, 英雄]
     - key: group
       label: 群体
       desc: 神的集团与谱系
@@ -155,7 +155,7 @@
   order:
     entry: [zeus, hera, poseidon, demeter, hades, persephone, athena, apollo, artemis, ares, aphrodite, hephaestus, hermes, hestia, dionysus]
     beast: [typhon, echidna, medusa, cyclops, cerberus, hydra, chimera, sphinx, sirens, minotaur]
-    legend: [odysseus]
+    allusion: [achilles-heel, pandoras-box, promethean-fire, atlas-burden, sisyphus-stone, tantalus-torment, augean-stables, ariadnes-thread, odysseus]
     group: [dodekatheon]
-    place: [underworld]
+    place: [olympus, tartarus, underworld, elysium, styx, acheron]
     event: [titanomachy, gigantomachy, deucalion-flood, argonauts, seven-against-thebes, trojan-war]

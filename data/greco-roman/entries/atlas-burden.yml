@@ -1,0 +1,26 @@
+id: atlas-burden
+pantheon: greco-roman
+entity_type: 典故
+name: 阿特拉斯扛天
+name_original: "Atlas bearing the sky"
+aliases: [擎天者, 阿特拉斯扛天]
+summary: 泰坦战后被罚以肩托住苍穹，不能歇。
+role:
+  title: "被罚撑住天的那一个"
+  brief: "他不是在举石头，是在撑天。罗马人把他认成北非的一座山，地图集又借了他的名字——一条很长的误解链，从荷马接到十六世纪。"
+identity: {}
+narrative:
+  - text: 神谱把他排在伊阿珀托斯与克吕墨涅的儿子里，与普罗米修斯、厄庇墨透斯同支；他被罚以头肩顶上广天，立在大地尽头、赫斯珀里得斯姊妹的前面。
+    refs: [theogony]
+    at: { theogony: "507–543" }
+  - text: 荷马让他在海上独自撑着高高的柱子，把天与地分开；奥德修斯在海上望见的那一带，就被说成是他的所在。
+    refs: [odyssey]
+    at: { odyssey: "1" }
+variants:
+  - claim: 他扛的是天还是「撑天的柱子」，两处说法不同：神谱是天，荷马是柱子。后世多半只取「擎天」这一个形象。
+    refs: [theogony, odyssey]
+    at: { theogony: "507–543", odyssey: "1" }
+relations:
+  - { target: titanomachy, kind: 从属, detail: 泰坦一方的战败者之一, refs: [theogony] }
+legacy:
+  - 十六世纪的地图集（atlas）以他命名，此后「阿特拉斯」在多数语言里就是地图册的意思；与扛天这一层已经没有关系。

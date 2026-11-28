@@ -1,0 +1,26 @@
+id: sisyphus-stone
+pantheon: greco-roman
+entity_type: 典故
+name: 西西弗斯推石
+name_original: "Sisyphus' stone"
+aliases: [西西弗斯, 薛西弗斯]
+summary: 罚他推石上山，到顶即滚落，永无休止。
+role:
+  title: "推上去，滚下来"
+  brief: "惩罚的设计很讲究：力气全用在了推的时候，成就却在到顶那一下归零。荷马只用了几行写完它。"
+identity: {}
+narrative:
+  - text: 奥德修斯在冥界见到他：西西弗斯双手撑住巨石，脚蹬手推，把石头往山上顶；快到山顶时，那股力量反过来，石头又滚回平地。
+    refs: [odyssey]
+    at: { odyssey: "11" }
+  - text: 他只得再从底下推起，浑身是汗、头上扬尘。荷马没有交代他为什么受罚，只写这场劳作的往复。
+    refs: [odyssey]
+    at: { odyssey: "11" }
+variants:
+  - claim: 他因何受罚，荷马没有说；后世补的理由不止一种，最通行的一条是他在冥界泄露了宙斯的秘密。哪一种都不是荷马的话。
+    refs: [odyssey]
+    at: { odyssey: "11" }
+relations:
+  - { target: underworld, kind: 从属, detail: 在冥界受罚, refs: [odyssey] }
+legacy:
+  - 「西西弗斯式的」成了固定说法，指那种永无尽头又徒劳无功的重复劳动。

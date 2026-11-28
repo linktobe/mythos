@@ -1,0 +1,36 @@
+id: styx
+pantheon: greco-roman
+entity_type: 地区
+name: 斯堤克斯
+name_original: "Styx"
+aliases: [斯提克斯, 誓河, 冥河]
+summary: 冥界的河，也是众神立誓所对的那一道水。
+role:
+  title: "众神发誓的水"
+  brief: "它既是地名也是神名：河是一位女神，女神就是这条河。宙斯把最重的一条誓押在它上头——说谎的人躺一年不能动。"
+identity:
+  lineage:
+    - { id: daimon, note: 作神时是俄刻阿诺斯之女 }
+  camp:
+    - { id: underworld }
+  realm:
+    - { id: underworld }
+narrative:
+  - text: 神谱把她说成俄刻阿诺斯与忒堤斯的长女，与帕拉斯生下「热情」与「胜利」；宙斯让她住在冥界，是最受敬重的一条河。
+    refs: [theogony]
+    at: { theogony: "383–403" }
+  - text: 泰坦之战时，她是第一个投向奥林帕斯的神。宙斯因此给她极重的报答，把她定作众神立誓所对的那一道水。
+    refs: [theogony]
+    at: { theogony: "383–403" }
+  - text: 众神起誓的方式见神谱：宙斯遣伊丽丝用金壶去取那一道凉水；说谎的神要躺整整一年不能吃喝，之后还要被逐出众神的座席九年。
+    refs: [theogony]
+    at: { theogony: "775–806" }
+variants:
+  - claim: 「冥河」这个中文通名其实指好几条：斯堤克斯、阿刻戎、科库托斯、皮里佛勒革同都有人这么叫。哪一条是主河，原典各书不一。
+    refs: [theogony, odyssey]
+    at: { theogony: "775–806", odyssey: "10" }
+relations:
+  - { target: zeus, kind: 从属, detail: 以其水为众神立誓之凭, refs: [theogony] }
+  - { target: underworld, kind: 同源, detail: 冥界诸水之一, refs: [theogony] }
+legacy:
+  - 但丁笔下的斯堤克斯是一圈沼泽，泡着怒者；那是他自排的地狱图，与希腊原典的河不同。

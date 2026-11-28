@@ -1,0 +1,36 @@
+id: acheron
+pantheon: greco-roman
+entity_type: 地区
+name: 阿刻戎
+name_original: "Acheron"
+aliases: [阿刻龙, 苦河]
+summary: 亡魂入冥界要渡的那条河，在今希腊西北的实地也有一处同名。
+role:
+  title: "渡口那一条"
+  brief: "荷马只说「渡河」，不说谁在摆渡。摆渡人卡戎是后起的角色，画在瓶上、写在游记里，慢慢成了这条河的一部分。"
+identity:
+  lineage:
+    - { id: daimon, note: 作河神时属水泽一支 }
+  camp:
+    - { id: underworld }
+  realm:
+    - { id: underworld }
+narrative:
+  - text: 荷马把冥界的入口写在一片汇流上：皮里佛勒革同与科库托斯在这里流入阿刻戎，两条河在一片岩石旁合成一条。
+    refs: [odyssey]
+    at: { odyssey: "10" }
+  - text: 奥德修斯到那里时，是顺着喀耳刻指的路走的；他先挖沟、以血引魂，众魂从四面八方涌来——这一套程序跟渡船无关，荷马的冥界还不需要买路钱。
+    refs: [odyssey]
+    at: { odyssey: "11" }
+  - text: 摆渡的卡戎不见于荷马与赫西俄德。他是后来才被安到这条河上的，且与一枚渡资的习俗一起流传；这一点「冥界」条已提过。
+    refs: [odyssey]
+    at: { odyssey: "11" }
+variants:
+  - claim: 「阿刻戎」在实地也有一处：希腊西北的伊庇鲁斯有一条同名的河，古人就在那里设了通冥的入口。地名与神话哪一边先有，说不清。
+    refs: [odyssey]
+    at: { odyssey: "10" }
+relations:
+  - { target: underworld, kind: 同源, detail: 入冥界所渡之河, refs: [odyssey] }
+  - { target: odysseus, kind: 从属, detail: 在此渡河入冥问卜, refs: [odyssey] }
+legacy:
+  - 近代文学里「渡过阿刻戎」几乎等于「死了」；这一层比喻出自后世，原典只是地名。

@@ -1,0 +1,29 @@
+id: tantalus-torment
+pantheon: greco-roman
+entity_type: 典故
+name: 坦塔洛斯的折磨
+name_original: "Tantalus' torment"
+aliases: [坦塔洛斯, 坦塔罗斯]
+summary: 立在果树枝与水之间，想喝的退开，想吃的升高。
+role:
+  title: "够不着的那一下"
+  brief: "惩罚不在痛，在差一点：水和果子都只差一寸。荷马写的不是刑罚的强度，是距离的残忍。"
+identity: {}
+narrative:
+  - text: 奥德修斯见他在池里站着：水到下巴，渴了便俯身去喝，水一沾唇就渗进土里，脚边只剩一片干黑的地。
+    refs: [odyssey]
+    at: { odyssey: "11" }
+  - text: 头顶的果树挂着梨、石榴、苹果、无花果与橄榄，人要伸手，风就把枝条推上去，推到够不着的地方。
+    refs: [odyssey]
+    at: { odyssey: "11" }
+  - text: 荷马也没有写他的罪名。后世补的理由是他藐视众神：把儿子的肉煮了试探神明，或偷了神食分给凡人。
+    refs: [odyssey]
+    at: { odyssey: "11" }
+variants:
+  - claim: 「他煮了自己的儿子」这一层不见于荷马，是后世补的；《书库·摘要》记了另一个版本，情节更细。荷马只给刑罚，不给罪名。
+    refs: [odyssey, library-epitome]
+    at: { odyssey: "11", library-epitome: "2" }
+relations:
+  - { target: underworld, kind: 从属, detail: 在冥界受罚, refs: [odyssey] }
+legacy:
+  - 英语 tantalize（吊胃口）就从他这名字来；中文里「坦塔洛斯式的」接近「可望而不可即」。

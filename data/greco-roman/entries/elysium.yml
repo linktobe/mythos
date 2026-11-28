@@ -1,0 +1,39 @@
+id: elysium
+pantheon: greco-roman
+entity_type: 地区
+name: 至福乐土
+name_original: "Elysium"
+aliases: [极乐境, 福岛, 乐土]
+summary: 有福的亡魂所居之地；在荷马笔下在大地的尽头，不在冥界之内。
+role:
+  title: "不落雪的那一片"
+  brief: "它最初不在冥界里：荷马把它放在大地的尽头，终年吹西风，是给极少数人的去处。把它挪进冥界、与受罚的那些人分作两半，是后来的事。"
+identity:
+  lineage:
+    - { id: mortal, note: 所居者为有福的亡魂 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond, note: 荷马作大地尽头 }
+narrative:
+  - text: 荷马在《奥德赛》里让普罗透斯先说出这一处：大地的尽头有一片平原，终年有西风从海上吹来，不落雪，不降雨，也不寒冷；神把最喜爱的那些人送到那里去。
+    refs: [odyssey]
+    at: { odyssey: "4" }
+  - text: 同一段点了名：墨涅拉俄斯因为娶了海伦、又是宙斯的女婿，死后不去冥界，而是去这一片地方。门槛这么高，可见它原不是给多数人的。
+    refs: [odyssey]
+    at: { odyssey: "4" }
+  - text: 同一个名字后来换了位置：它被挪进冥界的版图，与受罚的那一片相对，成了「善者所居」的那一半。这一步不在荷马笔下，荷马只把它放在大地的尽头。
+    refs: [odyssey]
+    at: { odyssey: "4" }
+variants:
+  - claim: 荷马的乐土在大地尽头，不在冥界之内；把它写成冥界的一角、还要过审判才进得去，是后世层层叠加的结果。两处不是同一个地方。
+    refs: [odyssey]
+    at: { odyssey: "4" }
+  - claim: 荷马的门槛极高，只举例了墨涅拉俄斯一人；后世的乐土宽得多，只要「有德」便可入。同一名字，两套标准。
+    refs: [odyssey]
+    at: { odyssey: "4" }
+relations:
+  - { target: underworld, kind: 同源, detail: 后世并入冥界版图, refs: [odyssey] }
+  - { target: zeus, kind: 从属, detail: 由神择人送往, refs: [odyssey] }
+legacy:
+  - 近代诗歌里的「福岛」与「极乐境」多从这一处借名，画的却常是基督教式的乐园。

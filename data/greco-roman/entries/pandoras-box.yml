@@ -1,0 +1,33 @@
+id: pandoras-box
+pantheon: greco-roman
+entity_type: 典故
+name: 潘朵拉的盒子
+name_original: "Pandora's box"
+aliases: [潘多拉魔盒, 潘多拉的罐子]
+summary: 众神造出的第一个女人带来的一只罐子，打开之后人间尽是祸患。
+role:
+  title: "打开的是一只罐子"
+  brief: "原典里它不是盒子，是一只大罐。罐里装的也不止是祸——最后一件留在罐底的，是希望。"
+identity: {}
+narrative:
+  - text: 赫西俄德写宙斯如何回敬普罗米修斯的盗火：他命赫菲斯托斯用土和水造出一个女子，众神各赠一样，取名潘朵拉。
+    refs: [theogony, works-days]
+    at: { theogony: "561–612", works-days: "60–89" }
+  - text: 她带着一只大罐来到人间，揭开盖子，罐里的东西四散而去——疾病、劳苦与种种祸患从此落在地上；只有一样留在罐口底下没有飞走，那就是希望。
+    refs: [works-days]
+    at: { works-days: "90–105" }
+  - text: 神谱的写法更冷：这一族「女人的种族」本身就是代价，故事讲到「谁娶了她们，谁就得养活一张不事生产的嘴」为止，不写罐子。
+    refs: [theogony]
+    at: { theogony: "561–612" }
+variants:
+  - claim: 「盒子」是后世的误译：希腊语是 pithos（大罐），文艺复兴时被译成 pyxis（小盒），从此定型。看古代的瓶画，画的都是一只大罐。
+    refs: [works-days]
+    at: { works-days: "90–105" }
+  - claim: 罐里有没有「希望」，两说都有：一说希望留下是好事，一说留下才是真正的惩罚——人连指望都被扣住了。赫西俄德自己没有解释。
+    refs: [works-days]
+    at: { works-days: "90–105" }
+relations:
+  - { target: zeus, kind: 从属, detail: 遣她下界以为报复, refs: [works-days] }
+  - { target: hephaestus, kind: 从属, detail: 受命以土造其形, refs: [theogony] }
+legacy:
+  - 中文多作「潘多拉魔盒」，意思固定为「一打开就收不回去的祸端」。

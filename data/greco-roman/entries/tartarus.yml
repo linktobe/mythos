@@ -1,0 +1,42 @@
+id: tartarus
+pantheon: greco-roman
+entity_type: 地区
+name: 塔尔塔罗斯
+name_original: "Tartarus"
+aliases: [塔耳塔罗斯, 深渊]
+summary: 大地之下的深渊，泰坦战败后的囚所，与冥界不是一地。
+role:
+  title: "量得出深度的那口井"
+  brief: "希腊人没有地狱图可画，只有一把尺：一块铜砧落九天九夜到地面，再落九天九夜才到它。这是全篇最具体的一处描写，说的却是最抽象的地方。"
+identity:
+  lineage:
+    - { id: primordial, note: 本身被当作原初之力，与盖亚同列 }
+  camp:
+    - { id: titan, note: 泰坦的囚所 }
+  realm:
+    - { id: tartarus }
+narrative:
+  - text: 神谱量过它的深度：一块铜砧从天上落九天九夜，第十天落到地面；再让它从地面落九天九夜，第十天才落到塔尔塔罗斯。
+    refs: [theogony]
+    at: { theogony: "713–735" }
+  - text: 四周是铜墙，夜以三重黑暗围在它外边，顶上压着大地的根，海也从那里生出来。
+    refs: [theogony]
+    at: { theogony: "713–735" }
+  - text: 门是波赛顿造的，青铜的；门口有百臂巨人守夜。战败的泰坦被捆着投进去，出不来了。
+    refs: [theogony]
+    at: { theogony: "713–735" }
+  - text: 荷马也用这个名号：宙斯在众神面前说，他若生起气来，可以把谁一把扔下去，扔到那口最深的坑里——比大地还要深得多的地方。
+    refs: [iliad]
+    at: { iliad: "8" }
+variants:
+  - claim: 荷马笔下的冥界与这口坑分得不严，常常拿它当最深处来用；把它与冥界分开、单列成一处的整理，主要在神谱一系与后世注家。
+    refs: [theogony, iliad]
+    at: { theogony: "713–735", iliad: "8" }
+  - claim: 后世基督教的地狱图式一旦套上来，塔尔塔罗斯就被当作「地狱」；原典里它是关神的地方，不是关人的地方。
+    refs: [theogony]
+    at: { theogony: "713–735" }
+relations:
+  - { target: typhon, kind: 从属, detail: 战败后被抛入此处, refs: [theogony] }
+  - { target: hades, kind: 敌对, detail: 被明确写成在冥界之下更深处, refs: [iliad] }
+legacy:
+  - 但丁与弥尔顿笔下的深层地狱各有自己的分法，都不照神谱这座「铜墙深坑」来画。

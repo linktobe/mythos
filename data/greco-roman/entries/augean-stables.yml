@@ -1,0 +1,27 @@
+id: augean-stables
+pantheon: greco-roman
+entity_type: 典故
+name: 奥吉亚斯的牛圈
+name_original: "Augean stables"
+aliases: [奥吉亚斯牛圈, 奥格阿斯牛圈]
+summary: 一整个牛圈积了几十年的粪，限一天清完。
+role:
+  title: "一天清完"
+  brief: "这桩差事本来就是设计来羞辱人的：不清是抗命，清不了是无力。赫拉克勒斯的解法是把两条河改道，让水替他干活。"
+identity: {}
+narrative:
+  - text: 《书库》把这一件列为第五桩差事：一天之内，把奥吉亚斯王那圈牛的粪清出去。奥吉亚斯是厄利斯之王，牛群极多，圈里的粪积了不知多少年。
+    refs: [library]
+    at: { library: "2" }
+  - text: 赫拉克勒斯没有答应是无偿的：他先跟奥吉亚斯讲定，事成之后得十分之一的牛。然后他挖开圈墙，把阿尔斐俄斯与珀涅俄斯两条河引进来，用水把粪冲走。
+    refs: [library]
+    at: { library: "2" }
+  - text: 事后奥吉亚斯翻脸，不肯给；欧律斯透斯也不肯把这一件算进去，理由是他做这事时讲了价钱——算不算数，两边各说各的。
+    refs: [library]
+    at: { library: "2" }
+variants:
+  - claim: 用河水冲粪是「取巧」还是「完成」，古代就有争议：一说他全靠力气就该算，一说他借了水、还收了钱，不算数。原典把这层争议记下来了，没有判。
+    refs: [library]
+    at: { library: "2" }
+legacy:
+  - 中文里的用法来自「清牛圈」这一意象，指积弊深重、非得下重手才能收拾的地方。

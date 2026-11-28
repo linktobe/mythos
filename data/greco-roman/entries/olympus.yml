@@ -1,0 +1,41 @@
+id: olympus
+pantheon: greco-roman
+entity_type: 地区
+name: 奥林帕斯山
+name_original: "Mount Olympus"
+aliases: [奥林匹斯山, 奥林波斯山, 众神之山]
+summary: 希腊北部的高山，众神的居所与议事之地。
+role:
+  title: "众神议事的那座山"
+  brief: "荷马写它不吹风、不下雨、不落雪，终年一片晴光。山上没有一座总神殿：众神各住自家，谁的事谁在自己的厅里吵。"
+identity:
+  lineage:
+    - { id: olympian, note: 居者出自这一族 }
+  camp:
+    - { id: olympus }
+  realm:
+    - { id: olympus }
+narrative:
+  - text: 荷马先写它的天候：不遭风吹，不遭雨淋，不落雪，只有晴朗的空气与四散的辉光；有福的神明在那里度日无忧。
+    refs: [odyssey]
+    at: { odyssey: "6" }
+  - text: 山上是众神的家，一家一处，各按性情建屋。争端也在山上解决：伊利亚特开篇那场争执，就起在宙斯的厅堂里，赫拉与宙斯隔着众神对吵。
+    refs: [iliad]
+    at: { iliad: "1" }
+  - text: 「奥林帕斯」在荷马笔下并不总指那座山：说众神是「奥林帕斯的主人」时，指的是整个神界，不是某一块高地。
+    refs: [iliad]
+    at: { iliad: "1" }
+  - text: 神谱把山写进分治里：三兄弟拈阄之后，大地与奥林帕斯是三方共有的，不在任何一人名下。
+    refs: [theogony]
+    at: { theogony: "881–885" }
+variants:
+  - claim: 山与神界混用，是原典本来的写法；把它当作一座可以指认的地理实体，是后世的读法。今日通行的说法（希腊北部米蒂卡斯峰）不属原典。
+    refs: [iliad, odyssey]
+    at: { iliad: "1", odyssey: "6" }
+relations:
+  - { target: zeus, kind: 从属, detail: 居于此山，为众神之主, refs: [iliad] }
+  - { target: hera, kind: 从属, detail: 居于此山, refs: [iliad] }
+  - { target: athena, kind: 从属, detail: 居于此山, refs: [iliad] }
+  - { target: apollo, kind: 从属, detail: 居于此山, refs: [iliad] }
+legacy:
+  - 「奥林帕斯」后来成了一个圈子的代号：说某人是「奥林帕斯级的」，意思是进了最上面那一层。这层用法出自后世，与原典无关。

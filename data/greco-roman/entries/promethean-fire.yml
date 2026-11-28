@@ -1,0 +1,30 @@
+id: promethean-fire
+pantheon: greco-roman
+entity_type: 典故
+name: 普罗米修斯之火
+name_original: "Promethean fire"
+aliases: [盗火, 普罗米修斯盗火]
+summary: 从神那里偷火给人，代价是被缚在崖上。
+role:
+  title: "偷来的那一把"
+  brief: "他偷的不是取暖的火，是一种技术：有了火，人就自己过日子，不必事事问神。所以惩罚落在偷的人身上，也落在受赠的人身上。"
+identity: {}
+narrative:
+  - text: 神谱里的起因是一场分肉：普罗米修斯把牛肉藏在牛皮里、骨头裹上肥油，让宙斯挑；宙斯挑了油脂那一份，从此人类得到肉，神只得到脂与骨。
+    refs: [theogony]
+    at: { theogony: "507–543" }
+  - text: 宙斯因此收回了火：把火从人类那里藏起来。普罗米修斯于是偷了回来，藏在空心的茴香杆里带下界。
+    refs: [theogony, works-days]
+    at: { theogony: "561–584", works-days: "42–53" }
+  - text: 报复分两步：一是造出潘朵拉，让祸患落到人身上；二是把普罗米修斯缚在高加索的崖上，日间由鹰啄食肝，夜里再长回去。
+    refs: [theogony]
+    at: { theogony: "507–543" }
+variants:
+  - claim: 缚崖与啄肝的细节，神谱与《书库》都提到，但赫西俄德的重点在分肉与火，不在刑罚的惨烈；后世戏剧（如《被缚的普罗米修斯》）把受苦写成了主题。
+    refs: [theogony, library]
+    at: { theogony: "507–543", library: "1" }
+relations:
+  - { target: zeus, kind: 敌对, detail: 分肉与盗火两番得罪, refs: [theogony] }
+  - { target: deucalion-flood, kind: 从属, detail: 其子杜卡利翁得他预先告知而造箱, refs: [library] }
+legacy:
+  - 「盗火者」成了为众人冒犯最高权威者的代称；现代语汇里「普罗米修斯式的」常指这种反向的献身。

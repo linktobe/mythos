@@ -1,0 +1,30 @@
+id: ariadnes-thread
+pantheon: greco-roman
+entity_type: 典故
+name: 阿里阿德涅的线
+name_original: "Ariadne's thread"
+aliases: [引路的线, 阿里阿德涅线]
+summary: 一条线从门口牵进迷宫，人靠它才走得回来。
+role:
+  title: "牵进去，也牵出来"
+  brief: "它解决的不是如何杀死怪物，是如何出来。所以这个说法后来指的是「找到出路的线索」，不是「取胜的办法」。"
+identity: {}
+narrative:
+  - text: 忒修斯到克里特时，米诺斯的女儿阿里阿德涅愿意帮他，条件是带她走。她听了代达洛斯的话，给了他一条线。
+    refs: [library-epitome]
+    at: { library-epitome: "1" }
+  - text: 忒修斯把线头系在迷宫门上，一路牵着往里走；在最深处找到米诺陶洛斯，赤手把它打死，再顺着线退出来。
+    refs: [library-epitome]
+    at: { library-epitome: "1" }
+  - text: 同一条线在另一处还有用：代达洛斯把线系在蚂蚁身上，让蚂蚁穿过螺壳，破解了米诺斯的难题。线与「巧解」在这个故事群里是同一个意思。
+    refs: [library-epitome]
+    at: { library-epitome: "1" }
+variants:
+  - claim: 线是代达洛斯的主意，不是阿里阿德涅自己想的；《书库·摘要》明说是她听了他的话才给。后世多把功劳记在她一人身上。
+    refs: [library-epitome]
+    at: { library-epitome: "1" }
+relations:
+  - { target: minotaur, kind: 从属, detail: 因这条线而死, refs: [library-epitome] }
+  - { target: seven-against-thebes, kind: 宿命, detail: 与忒拜一系相隔一代, refs: [library-epitome] }
+legacy:
+  - 现在的软件里有「阿里阿德涅线」这个比喻，专指在一堆岔路里保命的那条退路。

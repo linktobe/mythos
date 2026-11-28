@@ -47,7 +47,7 @@ kinship:
     refs: [gylfaginning]
   - relation: 子
     name: 巴德尔
-    name_original: "Baldr"
+    name_original: "Balder"
     target: baldr
     note: 母为弗丽嘉。其死是诸神黄昏的起点。
     refs: [gylfaginning]

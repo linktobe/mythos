@@ -38,6 +38,8 @@ relations:
   - { target: hypnos, kind: 亲缘, detail: 母子, refs: [theogony] }
   - { target: eris, kind: 亲缘, detail: 母女, refs: [theogony] }
   - { target: moirai, kind: 亲缘, detail: 母女（神谱一说）, refs: [theogony] }
+  - { target: nemesis, kind: 亲缘, detail: 母女, refs: [theogony] }
+  - { target: moros, kind: 亲缘, detail: 母子, refs: [theogony] }
 kinship:
   - relation: 子
     name: 埃忒耳
@@ -50,11 +52,6 @@ kinship:
     note: 同上，白昼之神。
     refs: [theogony]
   - relation: 子
-    name: 摩罗斯
-    name_original: Moros
-    note: 命数之神的化身，除此处外几乎不再出场。
-    refs: [theogony]
-  - relation: 子
     name: 刻耳
     name_original: Ker
     note: 凶死之命。
@@ -63,11 +60,6 @@ kinship:
     name: 摩摩斯
     name_original: Momus
     note: 讥刺与挑剔的化身。
-    refs: [theogony]
-  - relation: 女
-    name: 涅墨西斯
-    name_original: Nemesis
-    note: 报应女神。她另有后世的祭仪与形象，站内暂未立条。
     refs: [theogony]
   - relation: 女
     name: 阿帕忒

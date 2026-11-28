@@ -153,7 +153,7 @@
       route: shi
       types: [事件]
   order:
-    entry: [zeus, hera, poseidon, demeter, hades, persephone, athena, apollo, artemis, ares, aphrodite, hephaestus, hermes, hestia, dionysus, nyx, erebus, hekate, prometheus, thanatos, hypnos, eris]
+    entry: [zeus, hera, poseidon, demeter, hades, persephone, athena, apollo, artemis, ares, aphrodite, hephaestus, hermes, hestia, dionysus, nyx, erebus, hekate, prometheus, thanatos, hypnos, eris, nemesis, moros]
     beast: [typhon, echidna, medusa, cyclops, cerberus, hydra, chimera, sphinx, sirens, minotaur]
     allusion: [achilles-heel, pandoras-box, promethean-fire, atlas-burden, sisyphus-stone, tantalus-torment, augean-stables, ariadnes-thread, daedalus-wings, narcissus, cassandra, pygmalion, heracles-choice, damocles-sword, ship-of-theseus, odysseus]
     group: [primordials, titans, dodekatheon, moirai]

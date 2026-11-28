@@ -1,0 +1,50 @@
+id: nemesis
+pantheon: greco-roman
+entity_type: 神祇
+name: 涅墨西斯
+name_original: "Nemesis"
+aliases: [涅墨西斯, 报应女神, 义愤女神]
+summary: 夜之女，报应的化身；《书库》另留一说，说她是海伦的母亲。
+role:
+  title: "把账算平的那一位"
+  brief: "她不是复仇，是报应：谁越了线，她来把多出来的那部分收回去。神谱只给她一行，倒是在别处留下了一段最奇的出身说。"
+identity:
+  lineage:
+    - { id: daimon, note: 夜所生 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond }
+narrative:
+  - text: 神谱把她列在黑夜的儿女之中，紧接在摩伊赖之后，写作「义愤」（Nemesis）——专叫凡人生出不平之气的那一位。
+    refs: [theogony]
+    at: { theogony: "226–232" }
+  - text: 《书库》另留一说，说她与宙斯生下海伦：她为躲宙斯变成一只鹅，宙斯变成天鹅，两相结合，她下了一个蛋，蛋里孵出海伦。
+    refs: [library]
+    at: { library: "3" }
+  - text: 同一部书的正统写法是另一套：海伦是勒达与宙斯之女，同夜廷达瑞俄斯也和她同宿，所以她生下波吕丢刻斯与海伦属宙斯，卡斯托耳与克吕泰涅斯特拉属廷达瑞俄斯。
+    refs: [library]
+    at: { library: "3" }
+variants:
+  - claim: 她与摩伊赖贴得很近：神谱里两处紧挨着，都在讲「越分就要受罚」，但一边是命数本身，一边是报应这股气。后世常把两者混作一谈。
+    refs: [theogony]
+    at: { theogony: "211–232" }
+  - claim: 天鹅与蛋这一说不见于荷马与赫西俄德，是后世才有的；靠《书库》一句「有人说」才留到今天，且《书库》自己也不采信。
+    refs: [library]
+    at: { library: "3" }
+relations:
+  - { target: nyx, kind: 亲缘, detail: 母女, refs: [theogony] }
+  - { target: zeus, kind: 情爱, detail: 后世一说与她生下海伦, refs: [library] }
+  - { target: eris, kind: 亲缘, detail: 同胞姐妹, refs: [theogony] }
+adaptations:
+  - work: "《哈迪斯 II》（Supergiant Games，2025）"
+    refs: [hades-game-2]
+    kind: 游戏
+    portrayal: "十字路口的一员，赫卡蒂安排她守这儿；她把这差事当成大材小用，常常溜出去，在冥界的关隘开头拦住主角，比谁杀得多。"
+    divergences:
+      - "原典的她是「报应」这一股气的化身，不与人打交道；游戏把她做成一个有脾气、爱较劲的同龄对手。"
+      - "原典里她降罚于越分的人，从不挑对象；游戏把她摆到主角这一边，站进了对抗克洛诺斯的阵营。"
+      - "她与摩伊赖在原典里紧挨着，职能有重叠；游戏把两方拆开：她守路口，命运之书交给摩罗斯管。"
+legacy:
+  - 中文里常把她叫「复仇女神」，但希腊的复仇女神另有一组——厄里倪厄斯（罗马人叫孚里埃）。她是报应，不是报仇。
+  - 拉姆努斯有她的庙，那尊神像后世很有名；「涅墨西斯式的」多用来形容那种不容人长久得意、终要反噬的力量。

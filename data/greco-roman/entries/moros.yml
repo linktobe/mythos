@@ -1,0 +1,46 @@
+id: moros
+pantheon: greco-roman
+entity_type: 神祇
+name: 摩罗斯
+name_original: "Moros"
+aliases: [摩罗斯, 命数, 厄运]
+summary: 夜之子，命数本身的化身；原典只给他一行。
+role:
+  title: "只有一行的神"
+  brief: "神谱点名他一次，此前此后都不再提。名字就是「命定的一份」，所以他不需要故事——他就是那个词被拟人一次的结果。"
+identity:
+  lineage:
+    - { id: daimon, note: 夜所生 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond }
+narrative:
+  - text: 神谱把他排在黑夜的子女最前面：「可憎的命数、黑色的命运、死」——三个连成一串，他是第一个。
+    refs: [theogony]
+    at: { theogony: "211–225" }
+  - text: 此后神谱不再提他，别处也极少。他没有场面，没有对话，没有属于自己的那一段故事；留在地上的只有一个名字。
+    refs: [theogony]
+    at: { theogony: "211–225" }
+  - text: 名字本身倒说明了一切：μόρος 就是「命定的一份」，与摩伊赖同出一个词根。希腊人把「命数」这个抽象的东西拟成一个人，却没有给他安排戏份。
+    refs: [theogony]
+    at: { theogony: "211–225" }
+variants:
+  - claim: 他与摩伊赖常被并提，其实是两种造神法：摩伊赖是三位执掌者，他是被执掌的那件事本身。原典自己也不严格分开，两边都挂在黑夜名下。
+    refs: [theogony]
+    at: { theogony: "211–232" }
+relations:
+  - { target: nyx, kind: 亲缘, detail: 母子, refs: [theogony] }
+  - { target: thanatos, kind: 亲缘, detail: 同胞兄弟, refs: [theogony] }
+  - { target: moirai, kind: 同源, detail: 名同出「命定」一词，职能与她们叠合, refs: [theogony] }
+adaptations:
+  - work: "《哈迪斯 II》（Supergiant Games，2025）"
+    refs: [hades-game-2]
+    kind: 游戏
+    portrayal: "十字路口里管「天命清单」的那一位，就坐在主角房门外；开场他还忙着别的事，得先做出一项咒法、再死一次，才见得到他。"
+    divergences:
+      - "原典只给他一行；游戏把这一行铺开成一个常驻角色，有性格、有日常、有话说。"
+      - "原典里他不掌任何簿册，命数也不由他记；游戏给他一本「天命清单」，把「命定」这件抽象的事做成了一份可勾选的待办。"
+      - "原典的他是可怕的东西；游戏把他写成和气、乐于帮忙的角色，与原典的「可憎」正好相反。"
+legacy:
+  - 后世极少单独提到他；「摩罗斯」这个名字在近代文学里多只作「厄运」的雅称。

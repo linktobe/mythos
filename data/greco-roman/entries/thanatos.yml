@@ -1,0 +1,36 @@
+id: thanatos
+pantheon: greco-roman
+entity_type: 神祇
+name: 塔纳托斯
+name_original: "Thanatos"
+aliases: [塔纳托斯, 死神, 死]
+summary: 夜之子，死亡本身；与兄长许普诺斯一同搬运阵亡者的遗体。
+role:
+  title: "不是判官，是那个动作"
+  brief: "希腊人的死亡之神不掌审判，也不持镰刀。他就是一个「把人放倒」的动作，常常与睡眠并列，成对出场。"
+identity:
+  lineage:
+    - { id: daimon, note: 夜所生 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond }
+narrative:
+  - text: 神谱把他列在黑夜的儿女里，与许普诺斯一前一后。同段还说他的心是铁做的，是「不讨饶的死」。
+    refs: [theogony]
+    at: { theogony: "211–225" }
+  - text: 伊利亚特里他与许普诺斯是一对信使：宙斯吩咐阿波罗把萨耳珀冬的遗体洗净、涂膏、穿上不朽的衣，再交给「两位迅捷的使者，死与睡」，由他们把遗体送回吕基亚。
+    refs: [iliad]
+    at: { iliad: "16" }
+variants:
+  - claim: 他与许普诺斯几乎是成对概念：一为放倒，一为合眼。后世把两人画成兄弟、有时画成睡神抱着死神的形貌，那是从这一对关系里长出来的。
+    refs: [iliad, theogony]
+    at: { iliad: "16", theogony: "211–225" }
+  - claim: 希腊的他没有审判权，也不是「收割者」；镰刀、黑袍、渡亡魂那一套属于后世与别的传统，原典未见。
+    refs: [theogony]
+    at: { theogony: "211–225" }
+relations:
+  - { target: nyx, kind: 亲缘, detail: 母子, refs: [theogony] }
+  - { target: hypnos, kind: 亲缘, detail: 同胞兄弟，常成对出场, refs: [theogony, iliad] }
+legacy:
+  - 近代心理学借他造了「死亡本能」这个词（Thanatos），与希腊原典无关。

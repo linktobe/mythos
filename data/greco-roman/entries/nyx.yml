@@ -1,0 +1,83 @@
+id: nyx
+pantheon: greco-roman
+entity_type: 神祇
+name: 倪克斯
+name_original: "Nyx"
+aliases: [黑夜, 夜之女神]
+summary: 自卡俄斯生出的黑夜，连宙斯也要让三分；一长串次神是她的儿女。
+role:
+  title: "连宙斯也不惹的那一位"
+  brief: "她的分量不在权柄，在资历：别的神要对宙斯低头，宙斯自己碰到她时也让一步。荷马只留了这一笔，比任何神谱都说得清楚。"
+identity:
+  lineage:
+    - { id: primordial, note: 自卡俄斯生出，非两性所生 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond, note: 神谱称她的居所在冥界边上 }
+narrative:
+  - text: 神谱开头说：从卡俄斯生出厄瑞玻斯与黑夜；黑夜又与厄瑞玻斯生下埃忒耳与白昼。
+    refs: [theogony]
+    at: { theogony: "116–125" }
+  - text: 她不需要配偶也能生育，而且生得极多：摩罗斯、刻耳、塔纳托斯、许普诺斯、梦、摩摩斯、奥伊聚斯、赫斯珀里得斯、摩伊赖、刻瑞斯、涅墨西斯、阿帕忒、菲洛忒斯、革剌斯，以及厄里斯。
+    refs: [theogony]
+    at: { theogony: "211–225" }
+  - text: 神谱后文写她的宅子：幽暗的夜神在那里有一座森然的住所，云气围绕；睡与死也住在那一带。
+    refs: [theogony]
+    at: { theogony: "744–757" }
+  - text: 荷马留了最有力的一笔：许普诺斯说，他从前被宙斯追着打，逃到夜那里才躲过去，宙斯就停了手——「他不敢做叫夜不高兴的事」。
+    refs: [iliad]
+    at: { iliad: "14" }
+variants:
+  - claim: 她的地位两处写法不同：神谱把她排在创世的最初几位，给了她一大串儿女；荷马几乎不写她的来历，只用一个动作交代她的分量——宙斯让她。
+    refs: [theogony, iliad]
+    at: { theogony: "116–125", iliad: "14" }
+relations:
+  - { target: erebus, kind: 婚姻, detail: 生下埃忒耳与白昼, refs: [theogony] }
+  - { target: thanatos, kind: 亲缘, detail: 母子, refs: [theogony] }
+  - { target: hypnos, kind: 亲缘, detail: 母子, refs: [theogony] }
+  - { target: eris, kind: 亲缘, detail: 母女, refs: [theogony] }
+  - { target: moirai, kind: 亲缘, detail: 母女（神谱一说）, refs: [theogony] }
+kinship:
+  - relation: 子
+    name: 埃忒耳
+    name_original: Aether
+    note: 与厄瑞玻斯所生的光明之气；原典只给家谱，没有属于他的一段故事。
+    refs: [theogony]
+  - relation: 女
+    name: 赫墨拉
+    name_original: Hemera
+    note: 同上，白昼之神。
+    refs: [theogony]
+  - relation: 子
+    name: 摩罗斯
+    name_original: Moros
+    note: 命数之神的化身，除此处外几乎不再出场。
+    refs: [theogony]
+  - relation: 子
+    name: 刻耳
+    name_original: Ker
+    note: 凶死之命。
+    refs: [theogony]
+  - relation: 子
+    name: 摩摩斯
+    name_original: Momus
+    note: 讥刺与挑剔的化身。
+    refs: [theogony]
+  - relation: 女
+    name: 涅墨西斯
+    name_original: Nemesis
+    note: 报应女神。她另有后世的祭仪与形象，站内暂未立条。
+    refs: [theogony]
+  - relation: 女
+    name: 阿帕忒
+    name_original: Apate
+    note: 欺诳。
+    refs: [theogony]
+  - relation: 女
+    name: 革剌斯
+    name_original: Geras
+    note: 老年。
+    refs: [theogony]
+legacy:
+  - 「夜」在各族神话里都容易被写成比主神更早、更深的那一层；希腊这一位保留了这个位置，却没有发展出自己的祭祀。

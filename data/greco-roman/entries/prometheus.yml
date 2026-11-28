@@ -1,0 +1,56 @@
+id: prometheus
+pantheon: greco-roman
+entity_type: 泰坦
+name: 普罗米修斯
+name_original: "Prometheus"
+aliases: [普罗米修斯, 先见者]
+summary: 泰坦一系的先知，替人争肉、盗火，代价是被缚在崖上。
+role:
+  title: "站在人这一边的那一位"
+  brief: "他的名字意思是「先想的人」。希腊神话里很少有神公开站在人这边——他两次得罪宙斯，两次都是替人争。"
+identity:
+  lineage:
+    - { id: titan, note: 伊阿珀托斯与克吕墨涅之子 }
+  camp:
+    - { id: mortal, note: 站在人类一边，与宙斯对抗 }
+  realm:
+    - { id: earth }
+narrative:
+  - text: 神谱说他是伊阿珀托斯与克吕墨涅的儿子，与阿特拉斯、墨诺提俄斯、厄庇墨透斯同支。他在一次分肉上做了手脚：把肉藏在牛皮里，把骨头裹上肥油，让宙斯先挑。
+    refs: [theogony]
+    at: { theogony: "507–543" }
+  - text: 宙斯挑了油脂那一份，从此人得肉、神得脂与骨。宙斯因此收回火；普罗米修斯把火偷回来，藏在空心的茴香杆里带下界。
+    refs: [theogony, works-days]
+    at: { theogony: "561–584", works-days: "42–53" }
+  - text: 报复分两步：一是造出潘朵拉，让祸患落到人身上；二是把他缚在高加索的崖上，日间由鹰啄食肝，夜里长回去。
+    refs: [theogony]
+    at: { theogony: "507–543" }
+  - text: 他也不是没有后手：神谱说他预先知道那桩婚事会带来什么，也说过自己握着一条能救宙斯的秘密，两方都不肯先低头。
+    refs: [theogony]
+    at: { theogony: "507–543" }
+variants:
+  - claim: 缚崖与啄肝，神谱与《书库》都记了；赫西俄德的重点在分肉与盗火，受苦只是附带的一句，把它写成整部戏的主题是后来的事。
+    refs: [theogony, library]
+    at: { theogony: "507–543", library: "1" }
+relations:
+  - { target: zeus, kind: 敌对, detail: 分肉与盗火两番得罪, refs: [theogony] }
+  - { target: deucalion-flood, kind: 亲缘, detail: 其子杜卡利翁得他预先告知而造箱, refs: [library] }
+  - { target: titans, kind: 从属, detail: 出身此族，却未随泰坦一战被囚, refs: [theogony] }
+kinship:
+  - relation: 子
+    name: 杜卡利翁
+    name_original: Deucalion
+    note: 洪水之后以石再造人类的那一位，站内另有事件词条。
+    refs: [library]
+  - relation: 兄弟
+    name: 厄庇墨透斯
+    name_original: Epimetheus
+    note: 「后想的人」，接下潘朵拉的那一位。
+    refs: [theogony]
+  - relation: 兄弟
+    name: 阿特拉斯
+    name_original: Atlas
+    note: 战后被罚扛天。
+    refs: [theogony]
+legacy:
+  - 近代把他读成反抗权威的象征：雪莱的《解放了的普罗米修斯》写的已不是赫西俄德的这位；「普罗米修斯式的」一语出自这一层。

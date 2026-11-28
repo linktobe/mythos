@@ -1,0 +1,36 @@
+id: eris
+pantheon: greco-roman
+entity_type: 神祇
+name: 厄里斯
+name_original: "Eris"
+aliases: [厄里斯, 不和女神, 纷争]
+summary: 夜之女，不和本身；特洛伊战争的那只金苹果由她抛出。
+role:
+  title: "抛出金苹果的那一位"
+  brief: "她不是战士，只是「争执」这个动作的化身。特洛伊战争打了十年，起因是她在婚宴上被漏请，于是送来一只苹果。"
+identity:
+  lineage:
+    - { id: daimon, note: 夜所生 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond }
+narrative:
+  - text: 神谱把她列在黑夜的儿女里，还给了她一串自己的儿女：劳苦、遗忘、饥荒、哀伤、战斗、杀戮、谎言、争讼，以及誓约。
+    refs: [theogony]
+    at: { theogony: "226–232" }
+  - text: 伊利亚特里她是战场上的一个身影：她起初很小，头却顶着天，一路把争斗从这边推到那边。
+    refs: [iliad]
+    at: { iliad: "4" }
+  - text: 特洛伊战争的起因归到她名下：众神赴婚宴时她被漏请，于是抛下一只金苹果作「最美者」的彩头，赫拉、雅典娜、阿芙罗黛蒂三人争起来，最后由亚历山德罗斯裁定。
+    refs: [library-epitome]
+    at: { library-epitome: "3" }
+variants:
+  - claim: 「金苹果」这一段不在《伊利亚特》里；荷马只把战争起因说成帕里斯的判词，宴会与苹果的情节要等到《书库·摘要》才有完整叙述。
+    refs: [iliad, library-epitome]
+    at: { iliad: "4", library-epitome: "3" }
+relations:
+  - { target: nyx, kind: 亲缘, detail: 母女, refs: [theogony] }
+  - { target: trojan-war, kind: 从属, detail: 金苹果挑起争端, refs: [library-epitome] }
+legacy:
+  - 「厄里斯式的」多用来形容那种靠挑动对立来推进局面的力量。

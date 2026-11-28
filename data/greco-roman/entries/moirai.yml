@@ -1,0 +1,36 @@
+id: moirai
+pantheon: greco-roman
+entity_type: 群体
+name: 摩伊赖
+name_original: "The Moirai"
+aliases: [命运三女神, 命运女神]
+summary: 分派每个人命数的三位女神；她们的父亲，原典自己都有两说。
+role:
+  title: "比宙斯还早，还是宙斯的女儿"
+  brief: "神谱里有两处写到她们，一处说她们是夜的女儿，一处说她们是宙斯与忒弥斯的女儿。同一本书，两个出身——这一个矛盾原典自己没有解决。"
+identity:
+  lineage:
+    - { id: daimon, note: 两说：夜之女，或宙斯与忒弥斯之女 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond }
+narrative:
+  - text: 神谱前面把她们列在黑夜的儿女里，没有给名字，只说她们分派人的祸福。
+    refs: [theogony]
+    at: { theogony: "211–225" }
+  - text: 同书后文另有一处：宙斯娶忒弥斯，生下时序三女神与摩伊赖——克洛托、拉刻西斯、阿特洛波斯，她们给人分配祸福。
+    refs: [theogony]
+    at: { theogony: "901–906" }
+variants:
+  - claim: 两处出身不能并存：一处是夜的女儿（比奥林帕斯更早），一处是宙斯的女儿（受他管辖）。神谱都写了，没有取舍；后世多半取后一说。
+    refs: [theogony]
+    at: { theogony: "211–225, 901–906" }
+  - claim: 名字与职司是后一处才给的：克洛托纺、拉刻西斯量、阿特洛波斯剪，这一套形象在原典里只有轮廓，细节出自后世。
+    refs: [theogony]
+    at: { theogony: "901–906" }
+relations:
+  - { target: nyx, kind: 亲缘, detail: 母女（神谱前一说）, refs: [theogony] }
+  - { target: zeus, kind: 亲缘, detail: 父女（神谱后一说）, refs: [theogony] }
+legacy:
+  - 「命运女神」的形象在后世被画成三位老妇与一卷线；那把剪刀是罗马与近代的添加。

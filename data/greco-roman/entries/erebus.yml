@@ -1,0 +1,32 @@
+id: erebus
+pantheon: greco-roman
+entity_type: 神祇
+name: 厄瑞玻斯
+name_original: "Erebus"
+aliases: [厄瑞波斯, 幽暗]
+summary: 自卡俄斯生出的幽暗，与黑夜生下光明与白昼；此后几乎没有他的场面。
+role:
+  title: "一个词，兼一位神"
+  brief: "在希腊语里，ἔρεβος 本来就是「幽暗」这个普通词。神谱给了他一次家谱的位置，后世才把他当成冥界里的一片黑。"
+identity:
+  lineage:
+    - { id: primordial, note: 自卡俄斯生出，非两性所生 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond }
+narrative:
+  - text: 神谱把他列在最初的几位之中：从卡俄斯生出厄瑞玻斯与黑夜；两者结合，生下埃忒耳与白昼。
+    refs: [theogony]
+    at: { theogony: "116–125" }
+  - text: 他此后再没有独立的场面。神谱讲完这一句就转向黑夜的儿子们；创世之后的故事里，没有一处要他出场。
+    refs: [theogony]
+    at: { theogony: "116–125, 211–225" }
+variants:
+  - claim: 他的「神格」大部分是词义给的：ἔρεβος 在希腊语里就是幽暗、冥暗之处，作普通名词用的次数远多于作神名。
+    refs: [theogony]
+    at: { theogony: "116–125" }
+relations:
+  - { target: nyx, kind: 婚姻, detail: 生下埃忒耳与白昼, refs: [theogony] }
+legacy:
+  - 后世把他当成冥界的一处黑暗区域，或通往冥界的那段幽暗；那是罗马诗人与近代译本铺开的一层，原典只有一句家谱。

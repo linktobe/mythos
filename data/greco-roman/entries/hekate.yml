@@ -1,0 +1,36 @@
+id: hekate
+pantheon: greco-roman
+entity_type: 神祇
+name: 黑卡蒂
+name_original: "Hekate"
+aliases: [赫卡忒, 黑卡忒]
+summary: 泰坦一代的女神，宙斯特意给她留了份额；持火炬为狄蜜特照路的那一位。
+role:
+  title: "宙斯没有削她"
+  brief: "神谱在她身上写了一整段颂辞，这在一部以谱系为主的书里很反常。她站在新旧两代之间，却没有被划进任何一边。"
+identity:
+  lineage:
+    - { id: titan, note: 佩耳塞斯与阿斯忒里亚之女 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: earth }
+narrative:
+  - text: 神谱说她是佩耳塞斯与阿斯忒里亚的独女，宙斯把她排在众神之上，给了她一份大地、一份荒海，还有星空的一份荣衔。
+    refs: [theogony]
+    at: { theogony: "404–452" }
+  - text: 这一段颂辞接着说她的权能：谁想求得她的欢心，她就给谁好运；在众神的议事里她也有一席。一个有如此篇幅的女神，在神谱里是少见的。
+    refs: [theogony]
+    at: { theogony: "404–452" }
+  - text: 荷马颂歌里她换了场合：狄蜜特寻找女儿时，是黑卡蒂持着火炬来，把听见声音的方向告诉她；此后她成了波瑟芬妮的伴从，随她在两界之间来往。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "2" }
+variants:
+  - claim: 她的分量在原典里已经不小，但「冥界、地面、天空三处都有权」这一类说法，是后世把她与月亮、魔法、岔路口绑在一起之后才铺开的。
+    refs: [theogony]
+    at: { theogony: "404–452" }
+relations:
+  - { target: demeter, kind: 从属, detail: 持火炬为其照路, refs: [homeric-hymns] }
+  - { target: persephone, kind: 从属, detail: 此后为其伴从, refs: [homeric-hymns] }
+legacy:
+  - 岔路口的三面像、黑狗、咒术与月相，都是后世加在她身上的；希腊古风期的她还不是「女巫之神」。

@@ -1,0 +1,37 @@
+id: hypnos
+pantheon: greco-roman
+entity_type: 神祇
+name: 许普诺斯
+name_original: "Hypnos"
+aliases: [许普诺斯, 睡神, 睡]
+summary: 夜之子，睡本身；连宙斯也被他放倒过一次。
+role:
+  title: "能把宙斯放倒的那一位"
+  brief: "在伊利亚特里他不是概念，是一个有脾气、会讨价还价的角色：赫拉求他办事，他先讲条件，再讲自己被宙斯追打过的旧账。"
+identity:
+  lineage:
+    - { id: daimon, note: 夜所生 }
+  camp:
+    - { id: neutral }
+  realm:
+    - { id: beyond }
+narrative:
+  - text: 神谱把他列在黑夜的儿女里，与塔纳托斯相邻；两人同住在一处，与夜神的宅子相隔不远。
+    refs: [theogony]
+    at: { theogony: "211–225" }
+  - text: 伊利亚特第十四卷里他有一整场戏：赫拉要他去把宙斯弄睡，他先不肯，说自己上一次已经吃过亏——把宙斯放倒之后，宙斯醒来满屋追打他。
+    refs: [iliad]
+    at: { iliad: "14" }
+  - text: 他最后躲到夜那里，宙斯才停手——「他不敢做叫夜不高兴的事」。这一句是他自己说的，也是全篇写夜神分量最重的一笔。
+    refs: [iliad]
+    at: { iliad: "14" }
+variants:
+  - claim: 「睡」与「死」在希腊语里是一对：入睡与倒下用的是同一类说法，两人因此在原典里常并称。后世画成同胞兄弟，是照原典的关系画的，不是后加的发明。
+    refs: [iliad, theogony]
+    at: { iliad: "14, 16", theogony: "211–225" }
+relations:
+  - { target: nyx, kind: 亲缘, detail: 母子, refs: [theogony] }
+  - { target: thanatos, kind: 亲缘, detail: 同胞兄弟, refs: [theogony] }
+  - { target: hera, kind: 从属, detail: 受其请托而弄睡宙斯, refs: [iliad] }
+legacy:
+  - 「催眠」（hypnosis）这个词从他而来；现代医学的用法与原典只共用一个词根。

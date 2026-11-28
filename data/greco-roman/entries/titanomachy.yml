@@ -1,0 +1,40 @@
+id: titanomachy
+pantheon: greco-roman
+entity_type: 事件
+name: 泰坦之战
+name_original: "Titanomachy"
+aliases: [泰坦战争, 神界第一次战争]
+summary: 奥林帕斯一代与泰坦一代打了十年，最后把泰坦扔进塔尔塔罗斯。
+role:
+  title: "十年的对峙"
+  brief: "两边都是神，谁也打不动谁，一僵就是十年。胜负不是靠勇力翻的，是靠放出了三个一直被关着的百臂巨人。"
+identity: {}
+narrative:
+  - text: 起因是先一代的吞子：克洛诺斯怕子女夺位，见一个吞一个。宙斯被雷亚换走，在克里特长大，回来先让父亲吐出兄弟，再联合他们开战。
+    refs: [theogony]
+    at: { theogony: "453–491" }
+  - text: 神谱说这仗打了十年整，「胜负的结局既无终结也无休止，两边的形势一直悬着」。泰坦据俄特律斯山，奥林帕斯一方据奥林帕斯山。
+    refs: [theogony]
+    at: { theogony: "617–735" }
+  - text: 转折是三个百臂巨人：科托斯、布里阿瑞俄斯、古革斯。他们一直被缚在地下，宙斯把他们放了出来，给了神食琼浆，三人才肯出力。他们从手里掷出三百块巨石，一下把泰坦压住。
+    refs: [theogony]
+    at: { theogony: "617–735" }
+  - text: 之后的处置是扔下去：泰坦被捆着投进塔尔塔罗斯，距地面之远与天距地相等，铜墙铁门，波赛顿造的门，百臂巨人守着出口。
+    refs: [theogony]
+    at: { theogony: "713–735" }
+variants:
+  - claim: 十年这个数字出自神谱；《书库》只说打了很久，没有给年数，重点放在宙斯借百臂巨人之力取胜。
+    refs: [theogony, library]
+    at: { theogony: "617–735", library: "1" }
+  - claim: 这一场常与「巨人之战」混作一事。前者打的是克洛诺斯一代，后者打的是盖亚后来另生的巨人，两场不接连，起因也不同。
+    refs: [theogony, library]
+    at: { theogony: "617–735", library: "1" }
+relations:
+  - { target: zeus, kind: 从属, detail: 奥林帕斯一方的统帅, refs: [theogony] }
+  - { target: hades, kind: 从属, detail: 奥林帕斯一方, 战后分得地下, refs: [theogony] }
+  - { target: poseidon, kind: 从属, detail: 奥林帕斯一方, 战后分得海域, refs: [theogony] }
+  - { target: hera, kind: 从属, detail: 被父亲吞下，后获救参战, refs: [theogony] }
+  - { target: demeter, kind: 从属, detail: 同上, refs: [theogony] }
+  - { target: hestia, kind: 从属, detail: 同上, refs: [theogony] }
+legacy:
+  - 后世把这个词用成一类冲突的通名：凡是新旧两代神争夺统治权，都可以叫某某的泰坦之战。

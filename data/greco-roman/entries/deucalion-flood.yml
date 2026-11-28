@@ -1,0 +1,47 @@
+id: deucalion-flood
+pantheon: greco-roman
+entity_type: 事件
+name: 杜卡利翁的洪水
+name_original: "Deucalion's Flood"
+aliases: [丢卡利翁的洪水, 大洪水]
+summary: 宙斯以大雨淹掉青铜时代的人类，只留下一只箱子和箱中的两人。
+role:
+  title: "剩下的一只箱子"
+  brief: "洪水不是一个惩罚故事的终点，它的重点是之后：人类不是被重新造出来的，是从石头里长回来的。"
+identity: {}
+narrative:
+  - text: 起因是青铜时代的人被众神判为当灭。宙斯立意毁掉这一代，普罗米修斯提前告诉儿子杜卡利翁造一只箱子，把粮食装进去，与妻子皮拉一同登箱。
+    refs: [library]
+    at: { library: "1" }
+  - text: 宙斯从天上倾下大雨，希腊大半被淹，除了就近逃上高山的人，其余都死了。忒萨利亚的山在这一场里断开；地峡与伯罗奔尼撒之外的地方全被淹没。
+    refs: [library]
+    at: { library: "1" }
+  - text: 杜卡利翁在海上漂了九天九夜，漂到帕耳那索斯山，雨停之后靠岸，向「逃生的宙斯」献祭。
+    refs: [library]
+    at: { library: "1" }
+  - text: 宙斯派赫耳墨斯来，许他自己选一样；他选的不是活命，是「得人」。按宙斯的吩咐，两人把石头从头顶抛过去，他抛的成了男人，皮拉抛的成了女人。所以后来人称「民」（laos），说是从石头（laas）来的。
+    refs: [library]
+    at: { library: "1" }
+variants:
+  - claim: 洪水过后人类如何再造，原典有两套：一套是说书里这一套，两人以石造人；另一套见奥维德《变形记》，写他们去问忒弥斯的神谕，依照神谕掷石。
+    refs: [library, metamorphoses]
+    at: { library: "1", metamorphoses: "1" }
+  - claim: 杜卡利翁与皮拉的儿子赫楞（Hellen）被认为是全希腊人的祖先；「希腊人」这个名字就从他来。这一层属神话谱系，不是历史记载。
+    refs: [library]
+    at: { library: "1" }
+relations:
+  - { target: zeus, kind: 从属, detail: 降下洪水, refs: [library] }
+  - { target: hermes, kind: 从属, detail: 受宙斯之遣前来传话, refs: [library] }
+kinship:
+  - relation: 妻
+    name: 皮拉
+    name_original: Pyrrha
+    note: 厄庇墨透斯之女，与他一同登箱。
+    refs: [library]
+  - relation: 父
+    name: 普罗米修斯
+    name_original: Prometheus
+    note: 提前告知他造箱避水。
+    refs: [library]
+legacy:
+  - 「丢卡利翁的洪水」是后世拿来与别民族洪水故事并提的那一个；这类比较本身出自后世，原典没有这层用意。

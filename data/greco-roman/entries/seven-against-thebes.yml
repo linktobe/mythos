@@ -1,0 +1,35 @@
+id: seven-against-thebes
+pantheon: greco-roman
+entity_type: 事件
+name: 七雄攻忒拜
+name_original: "Seven against Thebes"
+aliases: [七将攻底比斯, 七将攻忒拜]
+summary: 俄狄浦斯的两个儿子争位，一位引外兵攻城，结果死在对方手里。
+role:
+  title: "兄弟对城门"
+  brief: "七位首领、七道城门，到最后收在一对兄弟的对刺上。城没被攻下，王位也没落到赢家手里——两边都死了。"
+identity: {}
+narrative:
+  - text: 俄狄浦斯被逐出忒拜之后，厄忒俄克勒斯与波吕涅刻斯约定一年一轮。一说波吕涅刻斯先当，一年后交了出去；一说是厄忒俄克勒斯先当，当上就不肯让。
+    refs: [library]
+    at: { library: "3" }
+  - text: 波吕涅刻斯被逐出忒拜，带着那条项链与那件袍子去了阿耳戈斯。夜里他在王宫门口与逃出来的堤丢斯动手，阿德刺斯托斯出来劝开；他想起术士的话——把女儿嫁给一只野猪和一头狮子——就把两个女儿分别许给了这两人。
+    refs: [library]
+    at: { library: "3" }
+  - text: 阿德刺斯托斯答应替两人夺回各自的故土，先打忒拜。七位首领各领一队攻一道城门，阿德刺斯托斯、波吕涅刻斯、堤丢斯都在其中。
+    refs: [library]
+    at: { library: "3" }
+  - text: 攻城失败。收场是两个兄弟在阵前单挑，互相刺死。忒拜守住了，王位空了；阿耳戈斯带回的是七具尸体。
+    refs: [library]
+    at: { library: "3" }
+variants:
+  - claim: 谁先执政，两说并存：《书库》自己就并记了两种说法，既不能定谁先，也就没法判谁失信。
+    refs: [library]
+    at: { library: "3" }
+  - claim: 这一役之后还有后一辈的再攻（厄庇戈诺伊），那一次城才破；两个故事常被并作「攻忒拜」，其实是两代人、两场仗。
+    refs: [library]
+    at: { library: "3" }
+relations:
+  - { target: sphinx, kind: 宿命, detail: 斯芬克斯被解后不久，俄狄浦斯一家的旧事连着爆发, refs: [library] }
+legacy:
+  - 埃斯库罗斯的《七将攻底比斯》演的正是这一役的最后一段，剧本本身是后世的改编。

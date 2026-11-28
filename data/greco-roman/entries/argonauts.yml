@@ -1,0 +1,39 @@
+id: argonauts
+pantheon: greco-roman
+entity_type: 事件
+name: 阿尔戈号的远征
+name_original: "The Argonautica"
+aliases: [寻取金羊毛, 阿耳戈号的远征]
+summary: 伊阿宋率希腊英雄乘一条船东行，去科尔基斯取金羊毛。
+role:
+  title: "一条船上的英雄册"
+  brief: "这一趟几乎把当时有名的人都装上了船，所以它更像一份名录而不是一场战事。取羊毛是目的，路上的事才是叙事主体。"
+identity: {}
+narrative:
+  - text: 起因是王位：佩利阿斯夺了伊阿宋父亲埃宋的位，神谕警告他提防一个只穿一只鞋的人。伊阿宋渡河时丢了一只鞋，佩利阿斯认出他来，便命他去取金羊毛。
+    refs: [library]
+    at: { library: "1" }
+  - text: 伊阿宋召集希腊诸王。船名阿尔戈，据说由雅典娜监造；名册里点得到这些名字：赫拉克勒斯、忒修斯、佩琉斯、忒拉蒙、墨勒阿格洛斯、阿塔兰忒、俄耳甫斯、卡斯托耳与波吕丢刻斯。
+    refs: [library]
+    at: { library: "1" }
+  - text: 路上要过好几道：莱姆诺斯岛上全是女人，船队在那里耽搁；赛莲那一段由俄耳甫斯以琴声压过歌声，只有布忒斯一个人跳下海。
+    refs: [library]
+    at: { library: "1" }
+  - text: 终点在科尔基斯，国王埃厄忒斯把金羊毛挂在阿瑞斯的林子里，由一条不睡的龙看守。他许给伊阿宋的条件是驾驭两头顶上喷火的铜蹄公牛、驾驭之后再播下龙牙。
+    refs: [library]
+    at: { library: "1" }
+  - text: 帮他的是国王的女儿美狄亚，赫卡忒的女祭司。她给他药膏抵御火力，又用药让守龙睡去，两人带着羊毛连夜离岸，随后才有那场追着他们走的归程。
+    refs: [library]
+    at: { library: "1" }
+variants:
+  - claim: 名册各本不一：《书库》的记录与别的版本对不上，某些名字在甲书里有、乙书里没有。要立一份定本，原典本身不支持。
+    refs: [library]
+    at: { library: "1" }
+  - claim: 赫拉克勒斯半途离队，《书库》的写法是他去找被宁芙掳走的许拉斯，船队趁这时候开了；不是被赶下船，也不是自己走的。
+    refs: [library]
+    at: { library: "1" }
+relations:
+  - { target: athena, kind: 从属, detail: 监造阿尔戈号, refs: [library] }
+  - { target: sirens, kind: 敌对, detail: 以琴声压过其歌, refs: [library] }
+legacy:
+  - 阿耳戈号被说成升天列星，成为南船座；这是星名，不是原典的叙事。

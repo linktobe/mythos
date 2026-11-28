@@ -1,0 +1,45 @@
+id: trojan-war
+pantheon: greco-roman
+entity_type: 事件
+name: 特洛伊战争
+name_original: "Trojan War"
+aliases: [特洛伊之战, 木马屠城]
+summary: 希腊联军围特洛伊十年，最后靠一匹木马入城。
+role:
+  title: "十年围一城"
+  brief: "起因是一位王后被带走。十年里诸神各帮一边，中途还换过立场；城不是被打下来的，是被骗开的。荷马只写了其中几十天。"
+identity: {}
+narrative:
+  - text: 起因记在《书库·摘要》里：不和女神抛下一只金苹果，作为「最美者」的彩头，赫拉、雅典娜、阿芙罗黛蒂三人相争。宙斯让赫耳墨斯把她们带到伊达山，由亚历山德罗斯裁定。三人各许他一样——王权、战功、最美的女人，他取了第三样。
+    refs: [library-epitome]
+    at: { library-epitome: "3" }
+  - text: 他到斯巴达做客，墨涅拉俄斯款待了九天，第十天因事外出；他趁这时候带着海伦与财物上船。墨涅拉俄斯回来，与兄长阿伽门农纠合希腊诸王，在奥利斯集结，渡海围城。
+    refs: [library-epitome]
+    at: { library-epitome: "3" }
+  - text: 伊利亚特只取第十年里几十天：阿基琉斯因分赃不均退出战阵，赫克托耳一路打到船边，帕特罗克洛斯披着他的甲出战而死，他回头杀了赫克托耳。全诗止于赫克托耳的葬礼，城还没破。
+    refs: [iliad]
+    at: { iliad: "1、22" }
+  - text: 城陷在另一部书里：木马是奥德修斯的主意，由建筑师厄佩俄斯造，腹中空的，侧面开一道口；马身刻着一行字——「希腊人为归乡献此谢礼给雅典娜」。辛农留在岸上点烽火。特洛伊人把马拖进城，停在普里阿摩斯的宫旁，当夜城破。
+    refs: [library-epitome]
+    at: { library-epitome: "5" }
+  - text: 战后各人的归程散在《奥德赛》里：奥德修斯在海上又漂了十年，许多同伴没能回到伊塔刻。
+    refs: [odyssey]
+    at: { odyssey: "1" }
+variants:
+  - claim: 木马肚里装了多少人，来源自己就打架：《书库·摘要》作五十人，同段又说《小伊利亚特》作三千人。
+    refs: [library-epitome]
+    at: { library-epitome: "5" }
+  - claim: 《伊利亚特》不讲起因。它从第十年的一场争吵开篇，金苹果与帕里斯的裁定要靠《书库·摘要》补。
+    refs: [iliad, library-epitome]
+    at: { iliad: "1", library-epitome: "3" }
+  - claim: 原典没有给出这场仗的年代。后世据考古与赫梯文献推在公元前十三世纪前后，那是推断，不是荷马的说法。
+    refs: [iliad]
+    at: { iliad: "1" }
+relations:
+  - { target: athena, kind: 从属, detail: 站在阿开亚一方, refs: [iliad] }
+  - { target: aphrodite, kind: 从属, detail: 站在特洛伊一方, refs: [iliad] }
+  - { target: apollo, kind: 从属, detail: 站在特洛伊一方, refs: [iliad] }
+  - { target: odysseus, kind: 从属, detail: 献木马之计, refs: [library-epitome] }
+  - { target: zeus, kind: 宿命, detail: 有意让这场仗打起来, refs: [library-epitome] }
+legacy:
+  - 「特洛伊木马」后来成了一类东西的名字：看着是礼物，里面藏着人。

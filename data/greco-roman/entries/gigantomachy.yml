@@ -1,0 +1,40 @@
+id: gigantomachy
+pantheon: greco-roman
+entity_type: 事件
+name: 巨人之战
+name_original: "Gigantomachy"
+aliases: [巨人战争, 癸干忒斯之战]
+summary: 盖亚所生的巨人与奥林帕斯众神的一场大战，须借凡人之手才打得赢。
+role:
+  title: "神杀不了的那一场"
+  brief: "巨人打不死在神手里，神谕说必须借一个凡人。于是天上第一次需要一个活着的人来收尾——赫拉克勒斯赶上了。"
+identity: {}
+narrative:
+  - text: 巨人是盖亚所生，脚是龙尾，力大而貌凶。出生地说法有二：一说佛勒格拉，一说帕勒涅。他们朝天抛石头、扔燃烧的橡树。
+    refs: [library]
+    at: { library: "1" }
+  - text: 其中波菲利翁与阿尔库俄纽斯最强。阿尔库俄纽斯还有一个条件：只要在他出生的那块地上作战，就不死。
+    refs: [library]
+    at: { library: "1" }
+  - text: 众神得了神谕：巨人不能由神杀死，须借凡人之手。地母听说后去找能救命的药草；宙斯抢在前头，不许黎明、月亮、太阳出来，趁黑自己把那棵草割了。
+    refs: [library]
+    at: { library: "1" }
+  - text: 战事里赫拉克勒斯成了那双手：他先射倒阿尔库俄纽斯，见人落地又缓过来，依雅典娜之言把他拖出帕勒涅才死透。其余各有着落——雅典娜把西西里岛压在逃跑的恩刻拉多斯身上，波赛顿从科斯岛掰下尼叙罗斯岛砸向波吕玻忒斯。倒下的一律由赫拉克勒斯补箭。
+    refs: [library]
+    at: { library: "1" }
+variants:
+  - claim: 这一场与泰坦之战常被并提，其实是两回事：泰坦是克洛诺斯一代，巨人是盖亚为报仇另生的，须借凡人才死得成。
+    refs: [library, theogony]
+    at: { library: "1", theogony: "617–735" }
+  - claim: 神谱没有专章写这一战，它主要的完整叙述在《书库》；古代雕刻里它倒是与泰坦之战并列的常见题材。
+    refs: [library]
+    at: { library: "1" }
+relations:
+  - { target: zeus, kind: 从属, detail: 奥林帕斯一方, refs: [library] }
+  - { target: athena, kind: 从属, detail: 参战, refs: [library] }
+  - { target: poseidon, kind: 从属, detail: 参战, refs: [library] }
+  - { target: aphrodite, kind: 从属, detail: 参战, refs: [library] }
+  - { target: ares, kind: 从属, detail: 参战, refs: [library] }
+  - { target: apollo, kind: 从属, detail: 参战, refs: [library] }
+legacy:
+  - 帕加马大祭坛上的那条浮雕带画的就是这一战；「巨人之战」在艺术史里是一个固定的题材名。

@@ -147,9 +147,15 @@
       desc: 诸神所辖之境
       route: di
       types: [地区]
+    - key: event
+      label: 事件
+      desc: 把散在各书里的经过串成时间线
+      route: shi
+      types: [事件]
   order:
     entry: [zeus, hera, poseidon, demeter, hades, persephone, athena, apollo, artemis, ares, aphrodite, hephaestus, hermes, hestia, dionysus]
     beast: [typhon, echidna, medusa, cyclops, cerberus, hydra, chimera, sphinx, sirens, minotaur]
     legend: [odysseus]
     group: [dodekatheon]
     place: [underworld]
+    event: [titanomachy, gigantomachy, deucalion-flood, argonauts, seven-against-thebes, trojan-war]

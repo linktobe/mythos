@@ -2,7 +2,7 @@ id: ragnarok
 pantheon: norse
 entity_type: 事件
 name: 诸神黄昏
-name_original: "Ragnarök"
+name_original: "Ragnarok"
 aliases: [诸神的黄昏, 末日]
 summary: 神与巨人同归于尽的终局之战，世界烧尽之后复又从海中升起。
 role:

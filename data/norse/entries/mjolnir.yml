@@ -2,7 +2,7 @@ id: mjolnir
 pantheon: norse
 entity_type: 器物
 name: 雷神之锤
-name_original: "Mjölnir"
+name_original: "Mjolnir"
 aliases: [妙尔尼尔, 姆乔尔尼尔]
 summary: 矮人所造的雷锤，索尔所持，击中必中，可飞回手中。
 role:

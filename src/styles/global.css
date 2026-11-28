@@ -201,11 +201,11 @@ button.chip[aria-pressed="true"] { background: var(--accent); border-color: var(
 /* 卡片是容器型链接：悬停整块不再画下划线，只给标题一条 */
 .card:hover, .card:hover * { text-decoration: none; }
 .card:hover .name { text-decoration: none; }
-.card .name { font-family: var(--serif); font-size: 20px; display: flex; align-items: baseline; gap: 8px; }
+.card .name { font-family: var(--serif); font-size: 20px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
 .card .name > .n { white-space: nowrap; }
 .card .alias {
   color: var(--muted); font-size: 12px; flex: 1 1 auto; min-width: 0;
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  white-space: normal; line-height: 1.5; overflow-wrap: break-word;
 }
 .card .desc { color: var(--muted); font-size: 13px; margin-top: 6px; line-height: 1.6; }
 .card .tags { margin-top: 10px; display: flex; gap: 6px; flex-wrap: wrap; }

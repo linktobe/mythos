@@ -2,7 +2,7 @@ id: odin
 pantheon: norse
 entity_type: 神祇
 name: 奥丁
-name_original: "Óðinn"
+name_original: "Odin"
 aliases: [众神之父, 独眼者, 高者]
 summary: 阿萨神族之首，以自我献祭换取智慧与卢恩。
 role:
@@ -41,7 +41,7 @@ relations:
 kinship:
   - relation: 子
     name: 索尔
-    name_original: "Þórr"
+    name_original: "Thor"
     target: thor
     note: 母为大地女神约尔德。诸子中最重的一支，执雷锤守米德加德。
     refs: [gylfaginning]
@@ -53,25 +53,25 @@ kinship:
     refs: [gylfaginning]
   - relation: 子
     name: 霍德尔
-    name_original: "Höðr"
+    name_original: "Hod"
     target: hodr
     note: 与巴德尔同母，双目失明；被洛基引着手投出槲寄生，亲手杀死兄弟。
     refs: [gylfaginning]
   - relation: 子
     name: 维达
-    name_original: "Víðarr"
+    name_original: "Vidar"
     target: vidarr
     note: 母为女巨人格莉德。沉默而力强，末日中撕裂芬里尔为父报仇。
     refs: [skaldskaparmal]
   - relation: 子
     name: 瓦利
-    name_original: "Váli"
+    name_original: "Vali"
     target: vali
     note: 母为女巨人琳达。甫生即长成，射杀霍德尔以偿巴德尔之命。
     refs: [gylfaginning]
   - relation: 子
     name: 赫尔莫德
-    name_original: "Hermóðr"
+    name_original: "Hermod"
     target: hermodr
     note: 母未详。骑斯雷普尼尔下冥界，向海拉求还巴德尔。
     refs: [gylfaginning]

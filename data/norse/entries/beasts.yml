@@ -2,7 +2,7 @@ id: beasts
 pantheon: norse
 entity_type: 群体
 name: 异兽
-name_original: "Dýr"
+name_original: "Beasts"
 aliases: [巨兽, 非人者]
 summary: 狼、蟒、龙、马——既非神也非人的那些角色。原典不给它们统称，此处归作一类以便索引。
 role:

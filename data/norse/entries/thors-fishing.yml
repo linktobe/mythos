@@ -2,7 +2,7 @@ id: thors-fishing
 pantheon: norse
 entity_type: 事件
 name: 托尔钓巨蛇
-name_original: "Ormstunga"
+name_original: "Thor's Fishing"
 aliases: [钓耶梦加得, 索尔钓鱼]
 summary: 索尔随巨人希米尔出海，用牛头做饵，把耶梦加得钓到船边；一个举锤，一个割线。
 role:

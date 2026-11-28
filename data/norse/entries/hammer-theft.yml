@@ -2,7 +2,7 @@ id: hammer-theft
 pantheon: norse
 entity_type: 事件
 name: 索尔的锤被偷
-name_original: "Þrymskviða"
+name_original: "The Theft of Thor's Hammer"
 aliases: [索尔扮新娘, 索列姆偷锤]
 summary: 巨人索列姆偷走雷锤，索尔扮作新娘赴宴，才把锤拿回来。
 role:

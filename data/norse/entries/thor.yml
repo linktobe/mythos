@@ -2,7 +2,7 @@ id: thor
 pantheon: norse
 entity_type: 神祇
 name: 索尔
-name_original: "Þórr"
+name_original: "Thor"
 aliases: [雷神, 托尔]
 summary: 阿萨神族的武力担当，与尘世巨蟒互为宿命。
 role:
@@ -38,12 +38,12 @@ kinship:
     refs: [skaldskaparmal]
   - relation: 子
     name: 莫迪
-    name_original: "Móði"
+    name_original: "Modi"
     note: 与马格尼并称，同为索尔之子。除名字与「末日之后继承雷锤」一句结局外，原典没有给他自己的故事。
     refs: [gylfaginning, vafthrudnismal]
   - relation: 女
     name: 斯露德
-    name_original: "Þrúðr"
+    name_original: "Thrud"
     note: 索尔之女。原典只记其名与父女关系，未附事迹。
     refs: [gylfaginning]
 legacy:
@@ -62,14 +62,14 @@ adaptations:
       - "原典索尔直率、屡受洛基捉弄；MCU 保留这点，但加入大量自嘲式幽默，使其更接近超级英雄而非神祇。"
 weapons:
   - name: 妙尔尼尔
-    name_original: "Mjölnir"
+    name_original: "Mjolnir"
     note: "雷锤，击必中、掷必回，柄短一截。索尔以之镇压巨人，末日以此击杀尘世巨蟒。"
     refs: [skaldskaparmal]
   - name: 梅金吉奥德
-    name_original: "Megingjörð"
+    name_original: "Megingjord"
     note: "力之腰带，系上则神力倍增。"
     refs: [skaldskaparmal]
   - name: 雅恩格利佩尔
-    name_original: "Járngreipr"
+    name_original: "Jarngreipr"
     note: "铁手套，握锤时不可或缺。"
     refs: [skaldskaparmal]

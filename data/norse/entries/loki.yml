@@ -44,7 +44,7 @@ kinship:
     refs: [gylfaginning]
   - relation: 子
     name: 耶梦加得
-    name_original: "Jörmungandr"
+    name_original: "Jormungandr"
     target: jormungandr
     note: 母为安格尔波达。被奥丁抛入深海，环绕米德加德，与索尔互为宿命。
     refs: [gylfaginning]
@@ -56,7 +56,7 @@ kinship:
     refs: [gylfaginning]
   - relation: 子
     name: 瓦利
-    name_original: "Váli"
+    name_original: "Vali"
     note: 母为西格恩。被诸神变成狼，咬死兄弟纳尔弗；与奥丁之子瓦利同名，不是同一人。
     refs: [gylfaginning]
   - relation: 子

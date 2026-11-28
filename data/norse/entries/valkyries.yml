@@ -1,7 +1,7 @@
 id: valkyries
 pantheon: norse
 name: 女武神
-name_original: "Valkyrjur"
+name_original: "Valkyries"
 aliases: [瓦尔基里]
 entity_type: 群体
 summary: 奥丁的侍女，在战场上拣选战死者，送往英灵殿。
@@ -48,7 +48,7 @@ adaptations:
       - "原典中布伦希尔德是独立的女武神形象；MCU 把她压缩成「最后一个幸存者」的叙事。"
 profiles:
   - name: 希格露恩
-    name_original: "Sigrún"
+    name_original: "Sigrun"
     story: "她与英雄海尔吉相爱成婚。海尔吉后来被她的兄弟达格所杀，她悲恸不已；诗中写他死后重生，二人再度相遇。这一组诗在诗体埃达中分前后两篇，结局各本不同。"
     refs: [helgakvida, helgakvitha-i]
   - name: 希露德
@@ -56,18 +56,18 @@ profiles:
     story: "她的父亲赫格尼与她的情人赫丁交战，她每夜以魔法唤醒死者，令这场仗永远打不完——后世称「希露德之战」。她不属于英灵殿的挑选者，更像把战争本身留了下来的人。"
     refs: [skaldskaparmal]
   - name: 斯薇法
-    name_original: "Sváva"
+    name_original: "Svava"
     story: "海尔吉·赫约瓦尔松爱上她，二人成婚。她的父亲也叫埃利米，与齐格鲁德的外公同名不同人。海尔吉后来被阿尔夫所杀，她在诗中悲恸不已。"
     refs: [helgakvitha-hjorvarthssonar]
   - name: 卡拉
-    name_original: "Kára"
+    name_original: "Kara"
     story: "同一篇末尾的散文说，海尔吉与斯薇法转生为「海尔吉·哈丁加斯卡提」与女武神卡拉，再演一遍同样的故事；抄本在这里注了一句，称这段为「老妇人的闲谈」。"
     refs: [helgakvitha-hjorvarthssonar]
   - name: 贡杜尔与诗嘉古尔
-    name_original: "Göndul ok Skögul"
+    name_original: "Gondul and Skogul"
     story: "《哈康之歌》里，奥丁派这两人到诸王之间挑选；她们披甲执矛找到战死的哈康王，与死者有一场问答。这是女武神在诗里真正开口说话的一处。"
     refs: [hakonarmal]
   - name: 三位天鹅少女
-    name_original: "Álftir"
+    name_original: "Alftir"
     story: "《沃伦德之歌》开场，三位女子披天鹅羽衣飞来，在湖边纺织，与沃伦德兄弟结为夫妻，七年后飞走。诗里说她们是女武神，却没给她们一个挑选战死者的场面——在这里她们更像会飞的外来者。"
     refs: [volundarkvitha]

@@ -2,7 +2,7 @@ id: hades
 pantheon: greco-roman
 entity_type: 神祇
 name: 黑帝斯
-name_original: "Ἅιδης"
+name_original: "Hades"
 aliases: [哈得斯, 哈迪斯, 阿伊得斯]
 counterpart:
   name: 普路托
@@ -70,6 +70,14 @@ legacy:
   - "1930 年发现的那颗行星取名 Pluto（冥王星），用的正是他的罗马名号。"
 
 adaptations:
+  - work: "《刺客信条：奥德赛》附加内容《亚特兰蒂斯的命运》第二幕《黑帝斯的折磨》（Ubisoft，2019）"
+    refs: [ac-odyssey]
+    kind: 游戏
+    portrayal: "冥界的主人，把玩家当成债户：人杀了他的看门犬，就得替他把逃出去的亡魂押回塔耳塔罗斯。"
+    divergences:
+      - "原典里他守在冥界，不跟活人讲价；游戏里他开口就是讨债，还要人替他挑守门的。"
+      - "原典里冥界的看守是刻耳柏洛斯一头；游戏里要玩家去打败柏修斯、阿基里斯、阿加曼农与海克力斯，请这四位英雄替他守门。"
+      - "原典里亡魂入了冥界就不再出来；游戏把塔耳塔罗斯写成一座会崩的牢，逃犯成群。"
   - work: "《哈迪斯》（Supergiant Games，2020）"
     refs: [hades-game]
     kind: 游戏

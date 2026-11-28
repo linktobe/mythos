@@ -2,7 +2,7 @@ id: persephone
 pantheon: greco-roman
 entity_type: 神祇
 name: 波瑟芬妮
-name_original: "Περσεφόνη"
+name_original: "Persephone"
 aliases: [珀耳塞福涅, 科瑞, 冥后]
 counterpart:
   name: 普洛塞庇娜
@@ -61,6 +61,14 @@ legacy:
   - "「冥后」在中文里成了她的通称；本编条目名取「波瑟芬妮」。"
 
 adaptations:
+  - work: "《刺客信条：奥德赛》附加内容《亚特兰蒂斯的命运》第一幕《极乐境的原野》（Ubisoft，2019）"
+    refs: [ac-odyssey]
+    kind: 游戏
+    portrayal: "极乐境的主人，铁腕统治着这一层乐土；玩家要离开，只有从她这里过。极乐境最后陷进内战，收场时是她把玩家丢进了黑帝斯的地界。"
+    divergences:
+      - "原典里至福乐土是死后蒙福者所居之地，不在冥后的治下；游戏里它成了她一个人的领地，还打起了内战。"
+      - "原典里她是被劫的新妇，名分由宙斯与黑帝斯定；游戏里她是掌权者，玩家在这一幕要过的是她这一关。"
+      - "原典里她与黑帝斯同掌冥界；游戏把两界拆开，她守极乐境，黑帝斯守冥界，各是一幕的主人。"
   - work: "《哈迪斯》（Supergiant Games，2020）"
     refs: [hades-game]
     kind: 游戏

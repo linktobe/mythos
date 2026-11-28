@@ -2,7 +2,7 @@ id: hermes
 pantheon: greco-roman
 entity_type: 神祇
 name: 荷米斯
-name_original: "Ἑρμῆς"
+name_original: "Hermes"
 aliases: [引路者, 赫尔墨斯]
 counterpart:
   name: 墨丘利
@@ -63,6 +63,14 @@ weapons:
     at: { homeric-hymns: "4" }
 
 adaptations:
+  - work: "《刺客信条：奥德赛》附加内容《亚特兰蒂斯的命运》第一幕《极乐境的原野》（Ubisoft，2019）"
+    refs: [ac-odyssey]
+    kind: 游戏
+    portrayal: "极乐境里替玩家牵线的一位：传话、引路，把这一层里几方的委托交到玩家手上。"
+    divergences:
+      - "原典里他往来于神界、人间与冥界之间；游戏里他也跑腿，跑的是一个造出来的地界。"
+      - "原典里他替众神传令，自己不站队；游戏里他站在波瑟芬妮的对头一边，帮着把极乐境的底细掀开。"
+      - "原典里他身兼信使与引魂人，两件事都是本职；游戏里他只管传话，死者的去处不在他手上。"
   - work: "《哈迪斯》与《哈迪斯 II》（Supergiant Games，2020／2025）"
     refs: [hades-game, hades-game-2]
     kind: 游戏

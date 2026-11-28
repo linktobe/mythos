@@ -124,7 +124,7 @@
   sections:
     - key: entry
       label: 神祇
-      desc: 奥林匹斯与更早的一代
+      desc: 奥林帕斯与更早的一代
       route: ''
       types: [神祇, 泰坦, 宁芙]
     - key: legend
@@ -137,7 +137,13 @@
       desc: 神的集团与谱系
       route: qun
       types: [群体]
+    - key: place
+      label: 地区
+      desc: 诸神所辖之境
+      route: di
+      types: [地区]
   order:
-    entry: [zeus, hera, poseidon, demeter, athena, apollo, artemis, ares, aphrodite, hephaestus, hermes, hestia, dionysus]
+    entry: [zeus, hera, poseidon, demeter, hades, persephone, athena, apollo, artemis, ares, aphrodite, hephaestus, hermes, hestia, dionysus]
     legend: [odysseus]
     group: [dodekatheon]
+    place: [underworld]

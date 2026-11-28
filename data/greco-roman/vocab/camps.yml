@@ -5,19 +5,19 @@
 # 特洛伊战争是本体系里最主要的一条战线，故阿开亚与特洛伊单列。
 
 - id: olympus
-  zh: 奥林匹斯方
+  zh: 奥林帕斯方
   pantheon: greco-roman
-  note: 以宙斯为首的奥林匹斯集团。第三次神界战争后的掌权派。
+  note: 以宙斯为首的奥林帕斯集团。第三次神界战争后的掌权派。
 
 - id: titan
-  zh: 提坦方
+  zh: 泰坦方
   pantheon: greco-roman
-  note: 克罗诺斯旧党。战败后退出权力中心，个别成员仍在世。
+  note: 克洛诺斯旧党。战败后退出权力中心，个别成员仍在世。
 
 - id: underworld
   zh: 冥界方
   pantheon: greco-roman
-  note: 哈得斯所治。同为克罗诺斯之子，但不住奥林匹斯山，也不参与山上的议事。
+  note: 黑帝斯所治。同为克洛诺斯之子，但不住奥林帕斯山，也不参与山上的议事。
 
 - id: achaean
   zh: 阿开亚方

@@ -1,0 +1,80 @@
+id: hades
+pantheon: greco-roman
+entity_type: 神祇
+name: 黑帝斯
+name_original: "Ἅιδης"
+aliases: [哈得斯, 哈迪斯, 阿伊得斯]
+counterpart:
+  name: 普路托
+  name_original: Pluto
+  note: 又译普路同
+summary: 克洛诺斯之子，与宙斯、波赛顿拈阄分得地下。凡人死后所往之处的统治者；不住奥林帕斯山，也不在十二主神之列——他分到的那一份，不在山上。
+role:
+  title: "分到地下那一位"
+  brief: "他掌的不是刑罚，是那道关：来了的人回不去，连他自己的妻子一年也只能离开一部分时间。他很少出手，出手时也不解释。"
+identity:
+  lineage:
+    - { id: olympian }
+  camp:
+    - { id: underworld }
+  realm:
+    - { id: underworld }
+narrative:
+  - text: 他是克洛诺斯与雷亚的儿子，出生即被父亲吞下，与赫斯缇雅、狄蜜特、赫拉、波赛顿一同在父腹中待到宙斯长成。被救出之后，他与兄弟一同打完了泰坦之战。
+    refs: [theogony]
+    at: { theogony: "453–491" }
+  - text: 战后三兄弟拈阄：宙斯得天空，波赛顿得海，黑帝斯得地下的昏冥；大地与奥林帕斯山三方共有。波赛顿在伊利亚特里复述这件事，用它回绝宙斯的命令——「我们三人是兄弟，拈阄分定了各自的一份」。
+    refs: [iliad, theogony]
+    at: { iliad: "15", theogony: "881–885" }
+  - text: 他极少离开自己的地界。阿加曼农在阵前说他是众神中最叫人类恨的一个，因为他不肯让步、不肯收回成命；这句话是说给阿基里斯听的，劝他别学这位地下之主。
+    refs: [iliad]
+    at: { iliad: "9" }
+  - text: 他娶的是狄蜜特的女儿波瑟芬妮。神谱只交代一句：宙斯把她许给了他，他把人劫走了。颂歌把这一句铺成整整一部诗，写母亲的寻找与大地的荒芜。
+    refs: [theogony, homeric-hymns]
+    at: { theogony: "912–914", homeric-hymns: "2" }
+  - text: 门前守着克尔柏洛斯。神谱说它是艾奇德娜与堤丰所生，「吃生肉、青铜之声、五十个头」，狠而不肯让路。
+    refs: [theogony]
+    at: { theogony: "306–332" }
+  - text: 他的地界倒不全是刑场。奥德修斯下去时，见米诺斯持金杖断案，见提堤俄斯、坦塔洛斯、薛西弗斯各自受罚；但刑罚是少数人的事，多数死者只是影子，凑在血沟边上，说不出一句完整的话。
+    refs: [odyssey]
+    at: { odyssey: "11" }
+variants:
+  - claim: 《书库》通篇把他写作「普路同」，与黑帝斯是同一人；那里还多出一件东西——独眼巨人为三兄弟各打了一件兵器，宙斯得雷霆，波赛顿得三叉戟，他得头盔。
+    refs: [library]
+    at: { library: "1" }
+relations:
+  - { target: zeus, kind: 亲缘, detail: 兄弟，拈阄得天空, refs: [theogony] }
+  - { target: poseidon, kind: 亲缘, detail: 兄弟，拈阄得海, refs: [iliad] }
+  - { target: demeter, kind: 亲缘, detail: 姐弟；其女为他所劫, refs: [theogony] }
+  - { target: hera, kind: 亲缘, detail: 兄弟, refs: [theogony] }
+  - { target: hestia, kind: 亲缘, detail: 姐弟, refs: [theogony] }
+  - { target: persephone, kind: 婚姻, detail: 其妻，宙斯许之, refs: [theogony] }
+kinship:
+  - relation: 父
+    name: 克洛诺斯
+    name_original: "Κρόνος"
+    note: 吞下五个子女，后被宙斯逼吐；战败后囚于塔尔塔罗斯。
+    refs: [theogony]
+  - relation: 母
+    name: 雷亚
+    name_original: "Ῥέα"
+    refs: [theogony]
+weapons:
+  - name: 隐身盔
+    name_original: "κυνέη Ἅιδου"
+    note: 独眼巨人所造，与宙斯的雷霆、波赛顿的三叉戟同时出炉。原典里它常被别人借去用：伊利亚特里雅典娜戴上它，为的是不让阿瑞斯看见自己。
+    refs: [library, iliad]
+    at: { library: "1", iliad: "5" }
+legacy:
+  - "大陆通行作「哈得斯」，台湾作「黑帝斯」；本编用台湾译名，两种写法在站内都能搜到。"
+  - "1930 年发现的那颗行星取名 Pluto（冥王星），用的正是他的罗马名号。"
+
+adaptations:
+  - work: "《哈迪斯》（Supergiant Games，2020）"
+    refs: [hades-game]
+    kind: 游戏
+    portrayal: "冥府的家长，也是这款游戏最后一关的对手。儿子扎格柔斯一次次逃出去找母亲，他一次次在终点把人打回去，台词里只有训斥。"
+    divergences:
+      - "原典里他没有子女；游戏给他添了儿子扎格柔斯。这个名字见于俄耳甫斯教的残篇，那里他是宙斯与波瑟芬妮之子、被提坦撕碎；游戏把他的父亲换成了黑帝斯。"
+      - "原典的冥界有去无回；游戏的整个玩法就是逃出去。他拦路不是为了规矩，是不肯认这个儿子。"
+      - "原典里他不参与奥林帕斯的议事；游戏里山上的众神反而常常隔着界，过问冥界这桩家事。"

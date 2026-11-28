@@ -1,9 +1,12 @@
 id: hermes
 pantheon: greco-roman
 entity_type: 神祇
-name: 赫尔墨斯
+name: 荷米斯
 name_original: "Ἑρμῆς"
-aliases: [墨丘利, 引路者]
+aliases: [引路者, 赫尔墨斯]
+counterpart:
+  name: 墨丘利
+  name_original: Mercurius
 summary: 宙斯与迈亚之子，掌传信、行旅、盗贼与引魂。出生当天就偷了阿波罗的牛，用龟壳造出第一把竖琴，再拿琴去换回和平。
 role:
   title: "他什么都经手，什么都不属于他"
@@ -58,5 +61,12 @@ weapons:
     note: 传令与引魂的凭信，杖上盘着两条蛇。阿波罗赠此物，以换他的竖琴。
     refs: [homeric-hymns]
     at: { homeric-hymns: "4" }
-legacy:
-  - "罗马人与墨丘利并置。后世把他的双蛇杖用作商业、交通与邮政的标记，至今仍在一些国家的机构徽章上。"
+
+adaptations:
+  - work: "《哈迪斯》与《哈迪斯 II》（Supergiant Games，2020／2025）"
+    refs: [hades-game, hades-game-2]
+    kind: 游戏
+    portrayal: "奥林帕斯跑得最快的一个，话也最短；祝福是速度与闪避。"
+    divergences:
+      - "原典里他引魂下界，是活人与死者之间的信使；游戏里他的台词常常一两句就收，说完便催主角快走。"
+      - "原典里他替众神跑腿，也替自己打算；游戏把他写成众神中最像生意人的一个。"

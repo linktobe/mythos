@@ -1,9 +1,12 @@
 id: dionysus
 pantheon: greco-roman
 entity_type: 神祇
-name: 狄俄尼索斯
+name: 狄奥尼索斯
 name_original: "Διόνυσος"
-aliases: [巴克科斯, 酒神, 两次出生者]
+aliases: [酒神, 两次出生者, 狄俄尼索斯]
+counterpart:
+  name: 巴克斯
+  name_original: Bacchus
 summary: 宙斯与塞墨勒之子。母亲被雷霆烧死，他被缝进父亲的大腿里足月再生；掌酒、迷狂与剧场。他在十二主神里是那个「后来的」。
 role:
   title: "从死人肚子里出生的神"
@@ -24,30 +27,39 @@ narrative:
   - text: 荷马颂歌第七篇写他少年时在海边被第勒尼安海盗掳走。船上生出藤蔓缠住桅杆，酒香四溢，水手们纷纷跳海，变成海豚；只有掌舵的被他留下。
     refs: [homeric-hymns]
     at: { homeric-hymns: "7" }
-  - text: 伊利亚特第六卷提到，色雷斯的吕枯耳戈斯曾追杀他的保姆，她们把手中的权杖丢在地上；狄俄尼索斯本人跳进海里，忒提斯把他抱在怀中。荷马写这一段，只为一个警告：不要与神争。
+  - text: 伊利亚特第六卷提到，色雷斯的吕枯耳戈斯曾追杀他的保姆，她们把手中的权杖丢在地上；狄奥尼索斯本人跳进海里，忒提斯把他抱在怀中。荷马写这一段，只为一个警告：不要与神争。
     refs: [iliad]
     at: { iliad: "6" }
   - text: 他在纳克索斯岛上遇见被忒修斯遗下的阿里阿德涅，娶她为妻，并使之不死。神谱在末尾的婚姻谱里记下这一条。
     refs: [theogony]
     at: { theogony: "947–949" }
 variants:
-  - claim: 十二主神的末位有两种排法：一说赫斯提亚在列，一说狄俄尼索斯代之。他出身凡人女子、又晚一辈，列入十二本就比别的神更勉强——这份勉强，古典文献里也没有给出过统一的解决。
+  - claim: 十二主神的末位有两种排法：一说赫斯缇雅在列，一说狄奥尼索斯代之。他出身凡人女子、又晚一辈，列入十二本就比别的神更勉强——这份勉强，古典文献里也没有给出过统一的解决。
     refs: [theogony, library]
     at: { theogony: "940–942", library: "3" }
 relations:
   - { target: zeus, kind: 亲缘, detail: 父子；被缝进其大腿足月再生, refs: [theogony, library] }
   - { target: hera, kind: 敌对, detail: 生母塞墨勒因她的设计而死于雷霆, refs: [library] }
-  - { target: dodekatheon, kind: 从属, detail: 十二主神之一；末位常由其替代赫斯提亚, refs: [theogony] }
+  - { target: dodekatheon, kind: 从属, detail: 十二主神之一；末位常由其替代赫斯缇雅, refs: [theogony] }
 kinship:
   - relation: 母
     name: 塞墨勒
     name_original: "Σεμέλη"
-    note: 忒拜王卡德摩斯之女。被宙斯的雷霆烧死，狄俄尼索斯因此有「两次出生」之称。
+    note: 忒拜王卡德摩斯之女。被宙斯的雷霆烧死，狄奥尼索斯因此有「两次出生」之称。
     refs: [theogony, library]
   - relation: 妻
     name: 阿里阿德涅
     name_original: "Ἀριάδνη"
-    note: 克里特王弥诺斯之女，被忒修斯遗在纳克索斯，后嫁狄俄尼索斯并得不死。
+    note: 克里特王弥诺斯之女，被忒修斯遗在纳克索斯，后嫁狄奥尼索斯并得不死。
     refs: [theogony]
 legacy:
-  - "雅典的狄俄尼索斯剧场是悲剧与喜剧的演出场所；戏剧节即祭他的节庆。酒神因此也是剧场之神——这一层关联在荷马与赫西俄德那里还没有。"
+  - "雅典的狄奥尼索斯剧场是悲剧与喜剧的演出场所；戏剧节即祭他的节庆。酒神因此也是剧场之神——这一层关联在荷马与赫西俄德那里还没有。"
+
+adaptations:
+  - work: "《哈迪斯》与《哈迪斯 II》（Supergiant Games，2020／2025）"
+    refs: [hades-game, hades-game-2]
+    kind: 游戏
+    portrayal: "祝福是「宿醉」——被碰到的敌人会慢慢掉血，像酒后的第二天。"
+    divergences:
+      - "原典的酒神与秘仪、疯狂、再生相连；游戏只留下开派对的那一面。"
+      - "原典里他是宙斯与塞墨勒之子，有从父腿中再生的说法；游戏里没有这一段，他出场时已经是成年的神。"

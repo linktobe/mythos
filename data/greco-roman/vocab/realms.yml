@@ -1,10 +1,10 @@
 # 界（居所 / 所辖之境）
 #
 # 记的是「住在哪、管着哪」，不是血统，也不是立场。
-# 奥林匹斯山是众神的聚所，但各神另有职司所在（海、地、冥界），故另立条目。
+# 奥林帕斯山是众神的聚所，但各神另有职司所在（海、地、冥界），故另立条目。
 
 - id: olympus
-  zh: 奥林匹斯山
+  zh: 奥林帕斯山
   en: Olympus
   pantheon: greco-roman
   note: 希腊北部的高山，被视为众神的居所与议事之地。山门由时序女神看守。
@@ -13,7 +13,7 @@
   zh: 大地
   en: Earth
   pantheon: greco-roman
-  note: 人间，包括田野、山林与城邦。得墨忒耳的职司所在，也是诸神干涉人事的舞台。
+  note: 人间，包括田野、山林与城邦。狄蜜特的职司所在，也是诸神干涉人事的舞台。
 
 - id: sky
   zh: 天空
@@ -25,19 +25,19 @@
   zh: 海域
   en: Sea
   pantheon: greco-roman
-  note: 环绕大地的海。波塞冬所辖；阿佛洛狄忒生于海中，故也与之相关。
+  note: 环绕大地的海。波赛顿所辖；阿芙罗黛蒂生于海中，故也与之相关。
 
 - id: underworld
   zh: 冥界
   en: Underworld
   pantheon: greco-roman
-  note: 哈得斯与珀耳塞福涅所治，凡人死后所往之处。与塔耳塔罗斯不是一地。
+  note: 黑帝斯与波瑟芬妮所治，凡人死后所往之处。与塔尔塔罗斯不是一地。
 
 - id: tartarus
-  zh: 塔耳塔罗斯
+  zh: 塔尔塔罗斯
   en: Tartarus
   pantheon: greco-roman
-  note: 大地之下的深渊，提坦战败后的囚所。距地面之远，与天距地相等。
+  note: 大地之下的深渊，泰坦战败后的囚所。距地面之远，与天距地相等。
 
 - id: beyond
   zh: 界外／未定

@@ -1,0 +1,71 @@
+id: persephone
+pantheon: greco-roman
+entity_type: 神祇
+name: 波瑟芬妮
+name_original: "Περσεφόνη"
+aliases: [珀耳塞福涅, 科瑞, 冥后]
+counterpart:
+  name: 普洛塞庇娜
+  name_original: Proserpina
+summary: 宙斯与狄蜜特的女儿，采花时被黑帝斯劫往地下；因一颗石榴籽，一年中有一部分时间必须留在那里。她因此一半是春天回来的少女，一半是地下的王后。
+role:
+  title: "一颗石榴籽换来的季节"
+  brief: "她的去留由两样东西决定：父亲的一句话，和一颗籽。此后一年分成两半——一半在母亲身边，一半在丈夫的宫里；而亡魂放不放上来，在地下由她说了算。"
+identity:
+  lineage:
+    - { id: olympian }
+  camp:
+    - { id: underworld }
+  realm:
+    - { id: underworld }
+    - { id: earth }
+narrative:
+  - text: 她是宙斯与狄蜜特的女儿。神谱只给了一句：宙斯到了狄蜜特的床上，生下白臂的波瑟芬妮，随即把她许给了黑帝斯。
+    refs: [theogony]
+    at: { theogony: "912–914" }
+  - text: 颂歌写她在草地上与俄刻阿诺斯的女儿们采花。大地按宙斯的意思长出一朵水仙，香气冲天；她伸手去摘，脚下的平原裂开，黑帝斯驾着不死的马冲出，把人抱上车就走。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "2" }
+  - text: 她母亲听见了喊声，却没有看见是谁。狄蜜特寻了九天九夜，最后从海利欧斯口中问出真相：不是别人做主，是宙斯把她许了出去。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "2" }
+  - text: 议定的结果是折中：她一年中有一部分在地下，其余时间回到母亲与众神身边。颂歌说宙斯亲自点头，派雷亚去传这句话。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "2" }
+  - text: 就在她要走的时候，黑帝斯暗中把一颗石榴籽塞进她嘴里——颂歌说，这是为了让她不能长久留在母亲身边。她后来向母亲自述此事，用的是「违背我意，强迫我尝」。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "2" }
+  - text: 回到地下，她是王后。奥德修斯在冥界献祭时，一并向黑帝斯与她祈祷；女魂由她放上来，他临走时怕的也是她——怕她放出戈耳工之首。
+    refs: [odyssey]
+    at: { odyssey: "11" }
+variants:
+  - claim: 后世常把这故事讲成「她自己吃了石榴籽」，把留下的责任放在她身上；颂歌写的却是黑帝斯在她要离开时暗中塞给她，她被迫吞下。同一颗籽，两种写法，过错落在不同的人身上。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "2" }
+  - claim: 她在地下待多久，各本不一：颂歌说三分之一年，后世多算作六个月，也有按季节分三段的算法。本编不取整数，只记「一部分时间」。
+    refs: [homeric-hymns]
+    at: { homeric-hymns: "2" }
+relations:
+  - { target: demeter, kind: 亲缘, detail: 母女，颂歌即写她被劫与归来, refs: [homeric-hymns] }
+  - { target: zeus, kind: 亲缘, detail: 父女，且由他许配给黑帝斯, refs: [theogony] }
+  - { target: hades, kind: 婚姻, detail: 其夫，劫她为后, refs: [theogony] }
+  - { target: hermes, kind: 亲缘, detail: 同父异母的兄弟；奉父命下去引她回来, refs: [homeric-hymns] }
+kinship:
+  - relation: 伴从
+    name: 黑卡蒂
+    name_original: "Ἑκάτη"
+    note: 自她归来那天起，黑卡蒂成了她的伴从，随她在两界之间来往。
+    refs: [homeric-hymns]
+legacy:
+  - "厄琉西斯秘仪的神话底本就是她被劫与归来这一段；秘仪守密，今人所知只到外围。"
+  - "「冥后」在中文里成了她的通称；本编条目名取「波瑟芬妮」。"
+
+adaptations:
+  - work: "《哈迪斯》（Supergiant Games，2020）"
+    refs: [hades-game]
+    kind: 游戏
+    portrayal: "从冥界出走之后，她住在人间的花圃里，种花、待客，从不提自己做过冥后；儿子一路打上来找她，母女与夫妻之间的旧账才被翻出来。"
+    divergences:
+      - "原典里她是被劫走的，婚事由宙斯许配；游戏改成她自己离开，把「回不回去」写成她自己的选择。"
+      - "原典的一年三分之一在地下，是宙斯的裁定；游戏结尾她两界往返，理由不是裁定，而是两边都放不下。"
+      - "原典的通行说法里，她与黑帝斯没有子女；游戏里她是扎格柔斯的生母。"

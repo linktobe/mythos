@@ -17,7 +17,7 @@
   lang: 古希腊语
   unit: 行
   url: https://sacred-texts.com/book/the-theogony-of-hesiod/the-theogony-of-hesiod
-  note: 全诗 1022 行。诸神谱系与奥林匹斯掌权的由来，以本书为最早的系统叙述；引文按行号。
+  note: 全诗 1022 行。诸神谱系与奥林帕斯掌权的由来，以本书为最早的系统叙述；引文按行号。
 
 - id: works-days
   pantheon: greco-roman
@@ -69,7 +69,7 @@
   lang: 古希腊语
   unit: 篇
   url: https://sacred-texts.com/book/the-homeric-hymns
-  note: 三十三篇长短不一的六音步颂歌。得墨忒耳、阿波罗、赫尔墨斯、阿佛洛狄忒、狄俄尼索斯各有长篇专颂，是这几位神最早的完整叙事。
+  note: 三十三篇长短不一的六音步颂歌。狄蜜特、阿波罗、荷米斯、阿芙罗黛蒂、狄奥尼索斯各有长篇专颂，是这几位神最早的完整叙事。
 
 - id: library
   pantheon: greco-roman
@@ -109,3 +109,44 @@
   unit: 卷
   url: https://www.theoi.com/Text/OvidMetamorphoses1.html
   note: 罗马人重述希腊神话，十五卷、约二百五十个变形故事。文笔最盛，离原典也最远；本编只用于异文与后世演绎。
+
+# ── T3 现代改编：只进「改编形象对照」，不进叙事 ──────────────
+
+- id: hades-game
+  pantheon: greco-roman
+  tier: T3
+  title: 哈迪斯
+  original: Hades
+  work: 电子游戏
+  work_original: Hades, Supergiant Games
+  date: 2020 年
+  author: Supergiant Games
+  lang: 英语
+  unit: ''
+  note: 以冥界为舞台的地牢游戏。主角扎格柔斯在俄耳甫斯教的残篇里只有一个名字，这里被写成想逃出冥界的儿子；冥神一家按现代家庭剧重排。
+
+- id: hades-game-2
+  pantheon: greco-roman
+  tier: T3
+  title: 哈迪斯 II
+  original: Hades II
+  work: 电子游戏
+  work_original: Hades II, Supergiant Games
+  date: 2024 年（抢先体验）／2025 年（正式版）
+  author: Supergiant Games
+  lang: 英语
+  unit: ''
+  note: 前作的续篇。主角换成墨利诺厄——这个名字在原典里只出现过一两次；对手是逃出塔耳塔罗斯的时间之神克洛诺斯。
+
+- id: ac-odyssey
+  pantheon: greco-roman
+  tier: T3
+  title: 刺客信条：奥德赛
+  original: Assassin's Creed Odyssey
+  work: 电子游戏
+  work_original: Assassin's Creed Odyssey, Ubisoft
+  date: 2018 年（附加内容《亚特兰蒂斯的命运》2019 年）
+  author: Ubisoft Quebec
+  lang: 英语
+  unit: ''
+  note: 以公元前 431 年的伯罗奔尼撒战争为舞台。附加内容把极乐境、冥界与亚特兰蒂斯写成三处可游玩的地界，诸神在其中出场。

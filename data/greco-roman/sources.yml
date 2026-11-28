@@ -176,3 +176,29 @@
   lang: 英语
   unit: ''
   note: 以公元前 431 年的伯罗奔尼撒战争为舞台。附加内容把极乐境、冥界与亚特兰蒂斯写成三处可游玩的地界，诸神在其中出场。
+
+- id: plutarch-theseus
+  pantheon: greco-roman
+  tier: T1
+  title: 忒修斯传
+  original: Θησεύς
+  work: 普鲁塔克
+  work_original: Plutarch, Life of Theseus
+  date: 约公元 2 世纪
+  lang: 古希腊语
+  unit: 章
+  url: https://classics.mit.edu/Plutarch/theseus.html
+  note: 《希腊罗马名人传》中的一篇，与《罗慕路斯传》配对。忒修斯一生的材料靠它串起来；「忒修斯之船」一段只是它顺笔带过的一处。
+
+- id: cicero-tusculan
+  pantheon: greco-roman
+  tier: T2
+  title: 图斯库卢姆辩论
+  original: Tusculanae Disputationes
+  work: 西塞罗
+  work_original: Cicero, Tusculan Disputations
+  date: 公元前 45 年
+  lang: 拉丁语
+  unit: 卷
+  url: https://www.thelatinlibrary.com/cicero/tusc5.shtml
+  note: 罗马人的哲学随笔，第五卷论「幸福能否抵消不幸」。「达摩克利斯之剑」是其中一则举例，也是这一典故今存最早的出处。

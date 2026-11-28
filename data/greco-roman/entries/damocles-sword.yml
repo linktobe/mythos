@@ -1,0 +1,33 @@
+id: damocles-sword
+pantheon: greco-roman
+entity_type: 典故
+name: 达摩克利斯之剑
+name_original: "The Sword of Damocles"
+aliases: [达摩克利斯, 达摩克里斯之剑, 头顶上的剑]
+summary: 一柄用马鬃悬在头顶的剑，让坐上宝座的人看清「好运」的样子。
+role:
+  title: "头顶上的那一柄"
+  brief: "这不是神话，是罗马人讲的一则宫廷轶事：一个奉承的朝臣被请上王座，然后看见了那柄剑。故事的锋芒不在剑，在他从此吃不下那顿饭。"
+identity: {}
+narrative:
+  - text: 西塞罗在《图斯库卢姆辩论》第五卷里讲：达摩克利斯是叙拉古僭主狄奥尼修斯身边的侍臣，席间常夸主上的兵力、财富、威仪与宫室之盛，说世上再没有比他更幸福的人。
+    refs: [cicero-tusculan]
+    at: { cicero-tusculan: "5" }
+  - text: 狄奥尼修斯便请他换位：让人躺上金榻，铺着绣工极精的织毯，几张案子摆满金银器；又挑了几个俊美的少年侍立听候。香膏、花冠、香料都上齐，席面堆得满满。
+    refs: [cicero-tusculan]
+    at: { cicero-tusculan: "5" }
+  - text: 达摩克利斯觉得自己确实有福——就在这时，主人命人从天花板上放下一柄雪亮的剑，只用一根马鬃系着，就悬在「这位幸福人」的颈子上面。
+    refs: [cicero-tusculan]
+    at: { cicero-tusculan: "5" }
+  - text: 他从此不看那些侍者，也不碰那些珍馐；方才羡慕的东西，此刻只想退席。
+    refs: [cicero-tusculan]
+    at: { cicero-tusculan: "5" }
+variants:
+  - claim: 「用一根马鬃系着」不是后人的修辞：西塞罗写的是 saeta equina（马鬃）。后世的画上常改成一根细线。
+    refs: [cicero-tusculan]
+    at: { cicero-tusculan: "5" }
+  - claim: 它不属于神话：狄奥尼修斯是公元前四世纪叙拉古的僭主，达摩克利斯是宫里的人；故事由西塞罗在公元前一世纪写下来，是拿来论证「权势不等于幸福」的一个例子。
+    refs: [cicero-tusculan]
+    at: { cicero-tusculan: "5" }
+legacy:
+  - 今指位高权重者头顶那把随时会落的危险，也常说「像达摩克利斯之剑一样悬着」，用来说一种尚未落下、但一直压着的威胁。

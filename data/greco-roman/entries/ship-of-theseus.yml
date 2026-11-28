@@ -1,0 +1,30 @@
+id: ship-of-theseus
+pantheon: greco-roman
+entity_type: 典故
+name: 忒修斯之船
+name_original: "The Ship of Theseus"
+aliases: [忒修斯悖论, 提修斯之船]
+summary: 一条被逐块换掉木板的船：全换完了，它还是不是原来那条。
+role:
+  title: "换完了还是不是它"
+  brief: "这不是一个故事，是一个问题。普鲁塔克只是顺笔记下雅典人保养这条船的办法，后人拿它去问「同一性」。"
+identity: {}
+narrative:
+  - text: 普鲁塔克写忒修斯一生的末尾，顺带提到一条船：忒修斯带着雅典的少年们从克里特回来时坐的那条，有三十支桨；雅典人一直把它留着。
+    refs: [plutarch-theseus]
+    at: { plutarch-theseus: "23" }
+  - text: 留的办法是换板：旧木板朽了，就拆下来，换上新的、更结实的木头。这样修修补补，一直修到德米特里乌斯·法勒柔斯的时候，船还在。
+    refs: [plutarch-theseus]
+    at: { plutarch-theseus: "23" }
+  - text: 也正因为这样，普鲁塔克说，这条船在哲学家中间成了一个现成的例子——讲「生长之物」的同一性问题：一方说它还是原来那条，一方说它已经不是了。
+    refs: [plutarch-theseus]
+    at: { plutarch-theseus: "23" }
+variants:
+  - claim: 「忒修斯之船」这个名目是后起的。普鲁塔克记的只是雅典人修船的办法与哲学家们拿它做的争论，并没有把它立成一个独立的悖论。
+    refs: [plutarch-theseus]
+    at: { plutarch-theseus: "23" }
+  - claim: 换板不是一次换完，是朽一块换一块。所以这问题起初并不尖锐——船是「一点一点变得不是它」的，难处正在这个「一点一点」。
+    refs: [plutarch-theseus]
+    at: { plutarch-theseus: "23" }
+legacy:
+  - 现在这个词多用来谈身份与连续性：一家公司、一座城市、一个人，零件全换过之后还是不是同一个。讨论已经离普鲁塔克那条三十桨的船很远了。

@@ -132,14 +132,19 @@ const orderedGroups = [...groupMap.entries()].sort(
 
 // 一段叙事若只挂 T1 来源，说明该情节在 T0 里没有，必须显性提示读者
 const isT1Only = (refs: string[]) => refs.every((id) => srcById.get(id)?.tier === 'T1');
+// 典故类可以整段落在 T2（如皮格马利翁只见于奥维德），单列一档
+const isT2Only = (refs: string[]) => refs.every((id) => srcById.get(id)?.tier === 'T2');
 const allT1 = entry.narrative.every((n: any) => isT1Only(n.refs));
+const allT2 = entry.narrative.every((n: any) => isT2Only(n.refs));
 // 词条页顶部的一句话交代：这一条的主干落在哪一层
 const t1OnlyCount = entry.narrative.filter((n: any) => isT1Only(n.refs)).length;
-const tierBadge = allT1
-  ? '主干 T1'
-  : t1OnlyCount > 0
-    ? `主干 T0 · ${t1OnlyCount} 段仅见汇编`
-    : '主干 T0';
+const tierBadge = allT2
+  ? '主干 T2 · 后世重述'
+  : allT1
+    ? '主干 T1'
+    : t1OnlyCount > 0
+      ? `主干 T0 · ${t1OnlyCount} 段仅见汇编`
+      : '主干 T0';
 
 const crumbs = [
   { label: '神话图鉴', href: '/' },
@@ -223,6 +228,7 @@ const crumbs = [
             <sup class="ref"><a href={`#src-${id}`} title={atTitle(id, n.at)}>{refNo.get(id)}</a></sup>
           ))}
           {!allT1 && isT1Only(n.refs) && <span class="tier-note">此段仅见 T1 汇编</span>}
+          {isT2Only(n.refs) && <span class="tier-note">此段仅见 T2 重述</span>}
         </p>
       ))}
     </div>

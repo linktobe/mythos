@@ -1,0 +1,30 @@
+id: narcissus
+pantheon: greco-roman
+entity_type: 典故
+name: 纳西瑟斯
+name_original: "Narcissus"
+aliases: [那喀索斯, 水仙, 自恋]
+summary: 在泉边看见自己的影子，认不出，爱上了它。
+role:
+  title: "认不出的那一张脸"
+  brief: "最古的一层不是爱情故事，是一个观察：一个到了能谈恋爱的年纪的人，居然认不出那是自己的影子。记录这件事的人自己就说这是蠢话。"
+identity: {}
+narrative:
+  - text: 保萨尼亚斯记下这一处：忒斯皮埃境内有个叫「芦床」的地方，那里有一眼泉。人说纳西瑟斯在泉边看见自己的影子，不知道那是自己，不知不觉爱上了自己，就死在泉边。
+    refs: [pausanias]
+    at: { pausanias: "9" }
+  - text: 他对这个说法毫不客气：一个到了能谈情说爱的年纪的人，分不清一个人和一个人的倒影，是十足的蠢话。这是他自己的评语，不是转述。
+    refs: [pausanias]
+    at: { pausanias: "9" }
+  - text: 他还另记了一说，比前者冷门：纳西瑟斯有个孪生妹妹，两人面貌、发色、衣着都一样，一同打猎；妹妹死后，他对着自己的影子看，是因为那影子像她。
+    refs: [pausanias]
+    at: { pausanias: "9" }
+variants:
+  - claim: 今人熟悉的那一版——回声女神厄科、求而不得、化为水仙——出自奥维德《变形记》，属后世重述。保萨尼亚斯记的两说里都没有厄科。
+    refs: [pausanias, metamorphoses]
+    at: { pausanias: "9", metamorphoses: "3" }
+  - claim: 「自恋」这个断语比故事本身晚得多；保萨尼亚斯给的是一种「看不明白」的情形，未必是关于爱自己。
+    refs: [pausanias]
+    at: { pausanias: "9" }
+legacy:
+  - 精神分析把这名字借去做了术语（自恋），植物学又用它给水仙属命名；两条线都离保萨尼亚斯笔下的那眼泉很远了。

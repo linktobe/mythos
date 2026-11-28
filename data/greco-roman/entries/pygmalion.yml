@@ -1,0 +1,30 @@
+id: pygmalion
+pantheon: greco-roman
+entity_type: 典故
+name: 比马龙的雕像
+name_original: "Pygmalion's statue"
+aliases: [皮格马利翁, 皮格马利翁效应, 伽拉忒亚]
+summary: 雕刻家爱上自己刻出的女子，神让那尊像活了过来。
+role:
+  title: "爱上自己刻的东西"
+  brief: "这个故事有两个后世：一个讲「爱能使死物有生命」，一个讲「期望会把人塑成那个样子」。后一个与奥维德没有关系，是二十世纪的说法。"
+identity: {}
+narrative:
+  - text: 奥维德《变形记》卷十：塞浦路斯的比马龙厌恶女人，独自过活，却用象牙刻出一个女子，刻得比任何真人都好；刻完之后，他爱上了自己的作品。
+    refs: [metamorphoses]
+    at: { metamorphoses: "10" }
+  - text: 他给它穿衣、戴饰、送它小礼物，同它躺在一处；到了爱神的节日，他登上祭坛，只求「赐我一个像那象牙女子的妻子」，没敢说要活的。
+    refs: [metamorphoses]
+    at: { metamorphoses: "10" }
+  - text: 回家之后，他去吻那尊像，象牙在他手下变软、回温，像蜡受热那样；他再摸，指下有了血脉。爱神成全了这桩婚，后来他们生了一个女儿。
+    refs: [metamorphoses]
+    at: { metamorphoses: "10" }
+variants:
+  - claim: 这故事只见于奥维德，是罗马人的重述，希腊古风期没有；所以它的位置在「后世重述」一档，而不是原典主轴。
+    refs: [metamorphoses]
+    at: { metamorphoses: "10" }
+  - claim: 后世把「期望会改变被期望者」叫作比马龙效应（或皮格马利翁效应），那是二十世纪教育心理学的术语，与奥维德的情节只共用了一个名字。
+    refs: [metamorphoses]
+    at: { metamorphoses: "10" }
+legacy:
+  - 萧伯纳的话剧《比马龙》把这个母题搬到语音学上：一个「被塑造的人」，后来又改编成音乐剧《窈窕淑女》。

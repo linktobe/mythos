@@ -1,0 +1,33 @@
+id: daedalus-wings
+pantheon: greco-roman
+entity_type: 典故
+name: 代达洛斯的翅膀
+name_original: "Daedalus' wings"
+aliases: [伊卡洛斯, 伊卡洛斯之翼, 蜡做的翅膀]
+summary: 一对蜡粘的翅膀，父亲叮嘱别飞高，儿子飞高了。
+role:
+  title: "父亲叮嘱过"
+  brief: "这不是一个关于骄傲的寓言：原典给的是两条技术性的嘱咐——高了蜡化，低了受潮。是儿子没照做，不是他不知道。"
+identity: {}
+narrative:
+  - text: 代达洛斯替米诺斯造了迷宫，后来失宠，连儿子伊卡洛斯一起被关了进去。
+    refs: [library]
+    at: { library: "3" }
+  - text: 他给自己和儿子做了翅膀：用羽毛排列，小的在内、大的在外，中间用蜡粘住。起飞前的嘱咐很具体——不要飞得太高，太阳会化开蜡；也不要贴着海面飞，湿气会把羽毛松掉。
+    refs: [library-epitome]
+    at: { library-epitome: "1" }
+  - text: 伊卡洛斯忘了嘱咐，越飞越高，蜡化了，羽毛散落，人坠入海中；那片海此后就被叫作伊卡利亚海。父亲收了他的尸，筑坟，然后飞走。
+    refs: [library-epitome]
+    at: { library-epitome: "1" }
+variants:
+  - claim: 「飞得太高就会跌下来」是后世的教训式读法，原典里那对翅膀不是隐喻，是逃走的工具；伊卡洛斯的错是不听技术性的嘱咐，不是野心。
+    refs: [library-epitome]
+    at: { library-epitome: "1" }
+  - claim: 「伊卡洛斯」在今天多半只作为堕落的象征出现，代达洛斯反而退到背景里；原典的叙述重心在父亲的手艺与嘱咐上。
+    refs: [library-epitome]
+    at: { library-epitome: "1" }
+relations:
+  - { target: minotaur, kind: 从属, detail: 其迷宮为囚它而造, refs: [library] }
+  - { target: ariadnes-thread, kind: 同源, detail: 线的办法也是他给的, refs: [library-epitome] }
+legacy:
+  - 十九世纪以后，这个故事被反复画成「翅膀、太阳、坠落」三件套；那套图像里几乎没有代达洛斯。

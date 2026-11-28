@@ -381,8 +381,10 @@ for (const p of pantheons) {
         if (!n.refs.includes(k)) fail(`${where}: at 里的「${k}」不在 refs 中`);
       }
     };
+    // 典故类的来源本就多半在后世——皮格马利翁只见于奥维德——故放开到 T2。
+    const narrativeTiers = e.entity_type === '典故' ? ['T0', 'T1', 'T2'] : ['T0', 'T1'];
     e.narrative.forEach((n, i) => {
-      checkRefs(`${p.id}/${e.id}: narrative[${i}]`, n.refs);
+      checkRefs(`${p.id}/${e.id}: narrative[${i}]`, n.refs, narrativeTiers);
       checkAt(`${p.id}/${e.id}: narrative[${i}]`, n);
     });
     e.variants.forEach((n, i) => {

@@ -97,6 +97,19 @@
   url: https://www.theoi.com/Text/ApollodorusE.html
   note: 随《书库》一同传下的节要，从忒修斯一路讲到特洛伊战后归乡，另含赫拉克勒斯诸差事的补记。原书三卷在此不重出，故单列一目，按摘要自身的卷次引用。
 
+- id: xenophon
+  pantheon: greco-roman
+  tier: T1
+  title: 回忆苏格拉底
+  original: Ἀπομνημονεύματα
+  work: 色诺芬
+  work_original: Xenophon, Memorabilia
+  date: 约公元前 4 世纪
+  lang: 古希腊语
+  unit: 卷
+  url: https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0207:book=2:chapter=1
+  note: 苏格拉底言行录。第二卷末记普罗狄科斯所讲「海克力斯的选择」，是这一典故今存最早的完整出处。
+
 - id: pausanias
   pantheon: greco-roman
   tier: T1

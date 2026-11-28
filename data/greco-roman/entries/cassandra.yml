@@ -1,0 +1,33 @@
+id: cassandra
+pantheon: greco-roman
+entity_type: 典故
+name: 卡珊德拉的预言
+name_original: "Cassandra's prophecy"
+aliases: [卡珊德拉, 没人相信的预言]
+summary: 能看见要来的事，说出去却没有人信。
+role:
+  title: "说对了也没用"
+  brief: "这个说法的关键在于它不是「能力不足」，而是「能力被削掉了一半」：预言还在，取信的力量没有了。"
+identity: {}
+narrative:
+  - text: 阿波罗想求她的欢心，许她学会预言之术。她学了本事，却不肯履约；阿波罗于是收回了另一件东西——她的预言从此没有取信于人的力量。
+    refs: [library]
+    at: { library: "3" }
+  - text: 木马被拖进城那天，她说马肚子里藏着武装的人，先知拉奥孔也这么说；多数人却主张把它当作献给神明的祭品留下，于是去献祭、饮宴。
+    refs: [library-epitome]
+    at: { library-epitome: "5" }
+  - text: 城破时，小埃阿斯在雅典娜的神像前侵犯了她；后世说那尊神像从此朝着天，是不忍看。
+    refs: [library-epitome]
+    at: { library-epitome: "5" }
+variants:
+  - claim: 「预言无人信」的机制，《书库》讲得很干脆：不是她说不清，是神把「说服力」单独拿走了。这一层在后世常被简化成「她总是说真话而没人听」。
+    refs: [library]
+    at: { library: "3" }
+  - claim: 她被阿伽门农带回、随后与他一并被杀，这一线不见于《书库》的摘要，属另一部传统（悲剧与后世史话）。
+    refs: [library-epitome]
+    at: { library-epitome: "5" }
+relations:
+  - { target: apollo, kind: 敌对, detail: 术从他来，取信之力也由他拿去, refs: [library] }
+  - { target: trojan-war, kind: 从属, detail: 她的警告应在此役收场上, refs: [library-epitome] }
+legacy:
+  - 现代把「卡珊德拉式的」用于指那种被证实了也没人肯听的判断；金融、医学与情报写作里用得最多。

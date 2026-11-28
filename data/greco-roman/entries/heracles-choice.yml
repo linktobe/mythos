@@ -1,0 +1,30 @@
+id: heracles-choice
+pantheon: greco-roman
+entity_type: 典故
+name: 海克力斯的选择
+name_original: "The Choice of Heracles"
+aliases: [海克力斯在十字路口, 赫拉克勒斯的选择]
+summary: 少年海克力斯坐在岔路口，两位女子各许他一条路，他选了难走的那条。
+role:
+  title: "岔路口的那一次"
+  brief: "这不是史诗里的情节，是哲人讲的一则寓言：用一位英雄少年时的犹豫，说明一条伦理主张。"
+identity: {}
+narrative:
+  - text: 色诺芬记苏格拉底转述普罗狄科斯的一段话：海克力斯从少年将长成的时候，独自坐着，思量该走哪一条路——是安逸的那条，还是费力的那条。
+    refs: [xenophon]
+    at: { xenophon: "2" }
+  - text: 两个女子各自上前。一个许诺轻松、享乐与现成的好处；另一个许诺辛劳、坚持与事情做成之后的名声。两个都自称能把他带到幸福那里去。
+    refs: [xenophon]
+    at: { xenophon: "2" }
+  - text: 他选了后一个。这个故事后来被叫作「海克力斯的选择」，用在任何一次「好走的」与「值得的」之间的取舍上。
+    refs: [xenophon]
+    at: { xenophon: "2" }
+variants:
+  - claim: 这一则不出自史诗：荷马与赫西俄德都没有写过海克力斯少年时的抉择。它出自公元前四世纪的一篇道德讲辞，由色诺芬记下。
+    refs: [xenophon]
+    at: { xenophon: "2" }
+  - claim: 两位女子的名字（「德性」与「恶德」）是后世注家与修辞家给的，讲辞里只说她们的样貌与允诺。
+    refs: [xenophon]
+    at: { xenophon: "2" }
+legacy:
+  - 文艺复兴以来的寓意画反复画这个场面，标题就叫「海克力斯的选择」；画上通常添了竖琴与剑，原典没有这些细节。

@@ -1,0 +1,67 @@
+id: cerberus
+pantheon: greco-roman
+entity_type: 异兽
+name: 克尔柏洛斯
+name_original: "Cerberus"
+aliases: [刻耳柏洛斯, 塞伯拉斯, 地狱三头犬]
+summary: 守着冥界入口的犬，黑帝斯门下最硬的一道关。
+role:
+  title: "门口那一位"
+  brief: "它不判人，也不吃人，只负责让进去的出不来。脑袋有几个，原典自己就没统一：赫西俄德说五十个，阿波罗多洛斯说三个。"
+identity:
+  lineage:
+    - { id: monster }
+  camp:
+    - { id: underworld }
+  realm:
+    - { id: underworld }
+narrative:
+  - text: 神谱把它列在艾奇德娜与堤丰的子女里：吃生肉、青铜之声、五十个头，狠而不肯退让，是「黑帝斯的犬」。
+    refs: [theogony]
+    at: { theogony: "306–332" }
+  - text: 《书库》给的数字要小得多：三个狗头，一条龙尾，背上一列各式各样的蛇头。赫拉克勒斯的第十二件差事就是把它从冥界带上来。黑帝斯答应了，条件是不得用随身兵器；他在阿刻戎门口抱住它的头，尾巴上的龙咬他，他一直没有松手。
+    refs: [library]
+    at: { library: "2" }
+  - text: 同一段还交代了后事：赫拉克勒斯把它带到地面上给欧律斯透斯看了一眼，随后又原样送回冥界。它守的是一道只进不出的门，连被人硬拖出去一趟，也还得回来。
+    refs: [library]
+    at: { library: "2" }
+  - text: 奥德修斯下到冥界时，众魂从四面八方涌向血沟，他得挥剑挡开；那股不肯散去的拥挤，就是这道门在来客背后的样子。
+    refs: [odyssey]
+    at: { odyssey: "11" }
+variants:
+  - claim: 头数是原典里最不稳的一项：神谱作五十个，另一些本子作一百个，后世图像与通行说法作三个。三种数字都有人据，不能只取三个为「正」。
+    refs: [theogony, library]
+    at: { theogony: "306–332", library: "2" }
+  - claim: 神谱把它算作堤丰与艾奇德娜所生；同卷后文又说俄耳托斯是它的兄弟。这一族的家谱在两本书里都排得下，却没有一本排得完全一样。
+    refs: [theogony]
+    at: { theogony: "306–332" }
+relations:
+  - { target: hades, kind: 从属, detail: 守冥界之门, refs: [theogony] }
+  - { target: typhon, kind: 亲缘, detail: 父子, refs: [theogony] }
+  - { target: echidna, kind: 亲缘, detail: 母子, refs: [theogony] }
+  - { target: hydra, kind: 亲缘, detail: 同胞, refs: [theogony] }
+  - { target: chimera, kind: 亲缘, detail: 同胞, refs: [theogony] }
+kinship:
+  - relation: 兄弟
+    name: 俄耳托斯
+    name_original: Orthus
+    note: 双头犬，与它同母。
+    refs: [theogony]
+legacy:
+  - 「地狱犬」成了通名：后世凡是守门的恶犬，都被叫作某某的刻耳柏洛斯。
+adaptations:
+  - work: "《哈迪斯》（Supergiant Games，2020）"
+    refs: [hades-game]
+    kind: 游戏
+    portrayal: "它趴在冥河神庙的出口挡路，打不得；要先在侧翼的岔路房间里找到一份萨堤尔的口粮喂它，才过得去。回到冥府之家，倒是可以摸它。"
+    divergences:
+      - "原典的它守的是「只进不出」的门；游戏把它翻了个方向，变成一道拦着不让人出去的门槛，还得先喂。"
+      - "原典里它只有凶狠这一面；游戏把它写成一条认人的家犬，能摸、有脾气，凶相只在挡路时露出来。"
+      - "原典的头数五十、三个、一百各说各话；游戏取三个，却只许你摸其中一个——这一处倒是站在《书库》那边。"
+  - work: "《哈迪斯 II》（Supergiant Games，2025）"
+    refs: [hades-game-2]
+    kind: 游戏
+    portrayal: "续作里它被克洛诺斯逐出冥府、染上了冥气，坐镇哀悼原野，是该区的守卫，名目叫「地狱凶兽」。"
+    divergences:
+      - "原典里它是黑帝斯门下的看守，不会背叛主人；续作让它落到敌方手里，站到了自己守过的那道门的对面。"
+      - "初代不让打的那一条，续作反过来做成必打：同一头犬，两作给了它两种身份。"

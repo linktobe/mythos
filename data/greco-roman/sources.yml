@@ -84,6 +84,19 @@
   url: https://www.theoi.com/Text/Apollodorus1.html
   note: 三卷加摘要，按谱系把散在各处的神话串成连续叙述。不少故事只剩它一个完整版本；作者托名阿波罗多洛斯，今人只称「托名阿波罗多洛斯」。
 
+- id: library-epitome
+  pantheon: greco-roman
+  tier: T1
+  title: 书库·摘要
+  original: Ἐπιτομή
+  work: 阿波罗多洛斯
+  work_original: Pseudo-Apollodorus, Epitome
+  date: 约公元前 1 世纪–公元 2 世纪
+  lang: 古希腊语
+  unit: 卷
+  url: https://www.theoi.com/Text/ApollodorusE.html
+  note: 随《书库》一同传下的节要，从忒修斯一路讲到特洛伊战后归乡，另含赫拉克勒斯诸差事的补记。原书三卷在此不重出，故单列一目，按摘要自身的卷次引用。
+
 - id: pausanias
   pantheon: greco-roman
   tier: T1

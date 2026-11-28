@@ -1,0 +1,64 @@
+id: echidna
+pantheon: greco-roman
+entity_type: 异兽
+name: 艾奇德娜
+name_original: "Echidna"
+aliases: [厄喀德那, 厄客德娜]
+summary: 半身为蛇的女怪，希腊神话里一大半怪物的母亲。
+role:
+  title: "怪物的母亲"
+  brief: "上半身是美貌女子，下半身是一条巨蛇。神谱让她住在地下的洞里，替众神守着洞穴；她生下的一串儿女，构成了后世希腊怪物谱系的大半。"
+identity:
+  lineage:
+    - { id: monster }
+  camp:
+    - { id: wild }
+  realm:
+    - { id: beyond, note: 一说在阿里马的地下洞穴 }
+narrative:
+  - text: 神谱形容她两不像：既不像有死者，也不像不死的神。半身是目光流盼的宁芙，脸容姣好；半身是一条巨蛇，斑纹斑斓，在圣地之下的深处吃生肉。
+    refs: [theogony]
+    at: { theogony: "295–305" }
+  - text: 众神替她安排了一处住所：空旷岩石之下的深洞，离不死者与有死者都远。她在阿里马的地下守着那个洞，不老，也不死。
+    refs: [theogony]
+    at: { theogony: "295–305" }
+  - text: 她与堤丰结合，生下俄耳托斯、克尔柏洛斯、勒拿的九头蛇与喷火的奇美拉；随后又与俄耳托斯生下斯芬克斯与尼米亚狮子。这一份生育清单，几乎就是希腊怪物名录的底本。
+    refs: [theogony]
+    at: { theogony: "306–332" }
+  - text: 《书库》给她另换了一套来历：说她是塔尔塔罗斯与盖亚的女儿，惯于掳走行人，被百眼巨人阿耳戈斯趁她睡着时杀死。同一位怪物，两本书给出了两个出身和两种结局。
+    refs: [library]
+    at: { library: "2" }
+variants:
+  - claim: 神谱说她是刻托与福耳库斯之女；《书库》说她是塔尔塔罗斯与盖亚之女。前者把她挂在海怪那一支上，后者把她挂在地下的根上。
+    refs: [theogony, library]
+    at: { theogony: "295–305", library: "2" }
+  - claim: 神谱里斯芬克斯的父亲是俄耳托斯；《书库》改作堤丰。父子关系在两本书里没有对齐。
+    refs: [theogony, library]
+    at: { theogony: "306–332", library: "3" }
+  - claim: 她后来被阿耳戈斯杀死的说法只见于《书库》；神谱没有写她的死，只说她在洞中不老不死。
+    refs: [theogony, library]
+    at: { theogony: "295–305", library: "2" }
+relations:
+  - { target: typhon, kind: 婚姻, detail: 与堤丰生下克尔柏洛斯、海德拉、奇美拉等, refs: [theogony] }
+  - { target: cerberus, kind: 亲缘, detail: 母子, refs: [theogony] }
+  - { target: hydra, kind: 亲缘, detail: 母女, refs: [theogony] }
+  - { target: chimera, kind: 亲缘, detail: 母女, refs: [theogony] }
+  - { target: sphinx, kind: 亲缘, detail: 母女, refs: [theogony, library] }
+kinship:
+  - relation: 母
+    name: 刻托
+    name_original: Ceto
+    note: 神谱说她出自刻托与福耳库斯。
+    refs: [theogony]
+  - relation: 父
+    name: 福耳库斯
+    name_original: Phorcys
+    note: 同上。另《书库》一系改作塔尔塔罗斯与盖亚。
+    refs: [theogony]
+  - relation: 子
+    name: 俄耳托斯
+    name_original: Orthus
+    note: 双头犬，后与她生下斯芬克斯与尼米亚狮子。
+    refs: [theogony]
+legacy:
+  - 「一切怪物之母」是后世转述的叫法；神谱给的是一份生育清单，并没有为她加上这个头衔。

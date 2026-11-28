@@ -1,0 +1,61 @@
+id: sirens
+pantheon: greco-roman
+entity_type: 异兽
+name: 赛莲
+name_original: "Sirens"
+aliases: [塞壬, 塞伦, 海妖]
+summary: 坐在草地上唱歌的女妖，听过的人不再想回家。
+role:
+  title: "歌声那一边"
+  brief: "它们不追人，也不抓人：坐在花草地上唱，路过的人自己上岸，然后死在那里。这一手比爪子难防。"
+identity:
+  lineage:
+    - { id: monster }
+  camp:
+    - { id: wild }
+  realm:
+    - { id: earth, note: 海中一岛 }
+narrative:
+  - text: 奥德赛第十二卷，喀耳刻先给他打招呼：先到赛莲那里，凡是靠近听歌的人，妻儿再不会迎他回家。它们坐在青草地上唱，把来者唱死，脚边堆着白骨与人皮。
+    refs: [odyssey]
+    at: { odyssey: "12" }
+  - text: 奥德修斯的办法是两道：给同伴的耳朵塞蜡，让他们听不见；自己不肯错过，就叫人把他绑在桅杆上，越求越绑紧。
+    refs: [odyssey]
+    at: { odyssey: "12" }
+  - text: 《书库》把它们的母亲记作缪斯墨尔波墨涅，父亲是河神阿刻罗俄斯；同一本书里另留一说，母亲是斯特罗佩。它们的名字与形貌，书里推到讲奥德修斯的地方再交代。
+    refs: [library]
+    at: { library: "1" }
+  - text: 另一批过客是阿耳戈号的船员。船行到那一段，俄耳甫斯用更响的琴声压过它们；只有布忒斯一个人跳下海游过去，被阿芙罗黛蒂提走，安置在利吕拜翁。
+    refs: [library]
+    at: { library: "1" }
+variants:
+  - claim: 母亲是谁，《书库》自己就有两说：一处作墨尔波墨涅，一处作斯特罗佩。两处都称父亲是阿刻罗俄斯。
+    refs: [library]
+    at: { library: "1" }
+  - claim: 数目不定：荷马没有数，只说「赛莲们」；《书库·摘要》后面点出三个名字。后世的图像有的画两个，有的画五个以上。
+    refs: [odyssey, library-epitome]
+    at: { odyssey: "12", library-epitome: "7" }
+relations:
+  - { target: odysseus, kind: 敌对, detail: 以歌声诱之，被他以蜡与绳索躲过, refs: [odyssey] }
+kinship:
+  - relation: 母
+    name: 墨尔波墨涅
+    name_original: Melpomene
+    note: 缪斯之一，《书库》主记的一说。
+    refs: [library]
+  - relation: 父
+    name: 阿刻罗俄斯
+    name_original: Achelous
+    note: 河神，两说皆同。
+    refs: [library]
+legacy:
+  - 「赛莲的歌声」后来泛指明知有害而仍然动人的东西。航海时代以后，图像把它们改画成鱼尾，与古希腊的鸟形人已不是一回事。
+adaptations:
+  - work: "《哈迪斯 II》（Supergiant Games，2025）"
+    refs: [hades-game-2]
+    kind: 游戏
+    portrayal: "欧开诺斯的守卫是一支三人乐队「斯库拉与赛莲」：主唱斯库拉，另两名乐手在攻略资料里叫罗克西与杰蒂，三人共用一条血条。"
+    divergences:
+      - "原典的赛莲坐在草地上唱，等人自己上岸；游戏把她们挪到海底，唱变成了乐队演出，诱人那一层换成了舞台。"
+      - "原典的赛莲是数名同质的女妖，没有主次；游戏给她们分了主唱与乐手，还把另一头怪物斯库拉编进来做领队——原典里斯库拉与她们不住一处，隔着一段海峡。"
+      - "原典里躲过它们的是奥德修斯，办法是蜡与绳索；游戏把这一场做成必须打赢的关，躲过去的那条路没有留。"

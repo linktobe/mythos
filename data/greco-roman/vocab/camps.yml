@@ -38,3 +38,13 @@
   zh: 中立
   pantheon: greco-roman
   note: 不介入神界与人间战争，或依情势随时倒向一边者。
+
+- id: wild
+  zh: 无主
+  pantheon: greco-roman
+  note: 野处的异类。不归属任何一党，或在边地、洞穴、沼泽自处；与人相遇时多半是祸。
+
+- id: hostile
+  zh: 与神为敌
+  pantheon: greco-roman
+  note: 主动对抗奥林帕斯者。与「泰坦方」不同：那边是旧党的政治立场，这里是打上门的敌手。

@@ -1,0 +1,58 @@
+id: sphinx
+pantheon: greco-roman
+entity_type: 异兽
+name: 斯芬克斯
+name_original: "Sphinx"
+aliases: [史芬克斯, 斯芬克司]
+summary: 坐在忒拜城外提问的翼狮，答不出的人被它吃掉。
+role:
+  title: "把人问死的那一位"
+  brief: "希腊的斯芬克斯是雌的：女人脸、狮子身、鸟翼。它不守门也不守宝，只出了一道谜，答不出来的人就死。"
+identity:
+  lineage:
+    - { id: monster }
+  camp:
+    - { id: wild }
+  realm:
+    - { id: earth, note: 忒拜城外的菲基翁山 }
+narrative:
+  - text: 神谱把它列在艾奇德娜的子女里，只说一句「害了卡德摩斯族人的斯芬克斯」，父亲写作俄耳托斯。同段紧接着讲到尼米亚狮子，两兄妹一并被点了名。
+    refs: [theogony]
+    at: { theogony: "306–332" }
+  - text: 《书库》换了个来历：克瑞翁当政时忒拜遭了大难，赫拉把这头怪物派来。它有女人的脸、狮子的胸腹与尾、鸟的翅膀，从缪斯那里学来一道谜，坐在菲基翁山上向忒拜人提问。
+    refs: [library]
+    at: { library: "3" }
+  - text: 谜面是：什么东西只有一种声音，却先四条腿、再两条腿、后三条腿。答不出的人就被它叼走吃掉。俄狄浦斯答「人」——婴儿用四肢爬、成人两条腿走、老年再加一根杖——它便从卫城上跳下去死了。
+    refs: [library]
+    at: { library: "3" }
+variants:
+  - claim: 父亲是谁，两本书不一致：神谱作俄耳托斯，与她同母的兄弟；《书库》作堤丰。前者把它排进犬科那一支，后者把它排进堤丰那一支。
+    refs: [theogony, library]
+    at: { theogony: "306–332", library: "3" }
+  - claim: 是谁把它派来的，也不一致：神谱没有交代动机，只说它害了卡德摩斯一族；《书库》明说是赫拉所遣。
+    refs: [theogony, library]
+    at: { theogony: "306–332", library: "3" }
+  - claim: 希腊的斯芬克斯与埃及的不同源：这边是带翼的雌兽、以谜杀人，那边是没有翅膀的雄性石像。后世常把两者并作一个词。
+    refs: [library]
+    at: { library: "3" }
+relations:
+  - { target: echidna, kind: 亲缘, detail: 母女, refs: [theogony, library] }
+  - { target: typhon, kind: 亲缘, detail: 父女（《书库》一系）, refs: [library] }
+  - { target: hydra, kind: 亲缘, detail: 同胞（神谱一系）, refs: [theogony] }
+kinship:
+  - relation: 兄弟
+    name: 尼米亚狮子
+    name_original: Nemean Lion
+    note: 与她同母而生，后为赫拉克勒斯所杀。
+    refs: [theogony]
+legacy:
+  - 「斯芬克斯之谜」成了通名：凡是逼人作答、答不出就要命的处境，都借它的名字。
+adaptations:
+  - work: "《刺客信条：奥德赛》（Ubisoft，2018）"
+    refs: [ac-odyssey]
+    kind: 游戏
+    portrayal: "在玻俄提亚科普阿斯湖南岸的遗迹里，任务是「斯芬克斯之主」。这一段没有打斗：她出题，玩家作答，答错即死。"
+    divergences:
+      - "这一处几乎是照原典做的：出谜、答不出就死，两样都留着；连「以谜换命」的规矩也没有改。"
+      - "原典的谜底是「人」，且只有那一道；游戏改成一串问题，答对才放行，是把原典的单一场景做成了关卡。"
+      - "原典的斯芬克斯是赫拉派来惩罚忒拜的（《书库》），带着神意；游戏把它做成一处遗迹的看守，神来的一层没有了。"

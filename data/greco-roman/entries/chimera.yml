@@ -1,0 +1,51 @@
+id: chimera
+pantheon: greco-roman
+entity_type: 异兽
+name: 奇美拉
+name_original: "Chimera"
+aliases: [凯美拉, 喀迈拉]
+summary: 狮头、羊身、蛇尾的三头怪，口吐烈火，被柏勒洛丰射落。
+role:
+  title: "三个身子长在一处"
+  brief: "赫西俄德把它拆开写：前面是狮子，中间是羊，后面是龙。这个「拼起来」的形象，后来成了它名字所代表的那件事。"
+identity:
+  lineage:
+    - { id: monster }
+  camp:
+    - { id: wild }
+  realm:
+    - { id: earth, note: 吕基亚山地 }
+narrative:
+  - text: 神谱给的三段式很具体：前段是目光凶悍的狮子，后段是龙，中段是一只山羊，从那里喷出灼人的火。它是艾奇德娜的女儿。
+    refs: [theogony]
+    at: { theogony: "306–332" }
+  - text: 同一段交代了它的死法：珀伽索斯与高贵的柏勒洛丰把它杀了。珀伽索斯正是从梅杜莎颈中生出的那匹马，两条线在这里接上。
+    refs: [theogony]
+    at: { theogony: "306–332" }
+  - text: 伊利亚特卷六也是同一套骨架：柏勒洛丰奉吕基亚王之命去杀它，荷马写它有狮子的头、山羊的身子、蛇的尾巴，口吐火焰；末了还说一句「她不是凡人，是一位女神」。
+    refs: [iliad]
+    at: { iliad: "6" }
+  - text: 《书库》的写法更简：柏勒洛丰杀了这头喷火的奇美拉。同书别处把它的出身挂在堤丰与艾奇德娜名下，与神谱一致。
+    refs: [library]
+    at: { library: "1、2" }
+variants:
+  - claim: 三段式两书一致，摆法不同：神谱给三个头（狮子在前、山羊在中、龙在后）；荷马只给一个狮头，山羊作身子、蛇作尾。差的是一个头，不是骨架。
+    refs: [iliad, theogony]
+    at: { iliad: "6", theogony: "306–332" }
+  - claim: 它的名字来自普通名词「母山羊」，所以中段是山羊并不是随手配的。荷马与赫西俄德都只写狮、羊、蛇三样，没提翅膀；后世图像常给它添上一对。
+    refs: [theogony, library]
+    at: { theogony: "306–332", library: "2" }
+relations:
+  - { target: echidna, kind: 亲缘, detail: 母女, refs: [theogony] }
+  - { target: typhon, kind: 亲缘, detail: 父女, refs: [theogony, library] }
+  - { target: medusa, kind: 同源, detail: 珀伽索斯自梅杜莎颈中生出，由它载柏勒洛丰来杀, refs: [theogony] }
+  - { target: hydra, kind: 亲缘, detail: 同胞, refs: [theogony] }
+  - { target: cerberus, kind: 亲缘, detail: 同胞, refs: [theogony] }
+kinship:
+  - relation: 兄弟
+    name: 俄耳托斯
+    name_original: Orthus
+    note: 双头犬，与它同母。
+    refs: [theogony]
+legacy:
+  - 「奇美拉」后来成了一个通名：凡是把几种东西拼在一处、本身又不像任何一样的事物，都借它的名字。

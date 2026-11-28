@@ -1,0 +1,75 @@
+id: medusa
+pantheon: greco-roman
+entity_type: 异兽
+name: 梅杜莎
+name_original: "Medusa"
+aliases: [美杜莎, 墨杜萨]
+summary: 戈耳工三姐妹中唯一会死的一个，被珀耳修斯斩首。
+role:
+  title: "三姐妹里会死的那一个"
+  brief: "赫西俄德把她们写成住在环海之外、靠近黑夜的地方。斯忒诺与欧律阿勒不老不死，只有梅杜莎是凡人——这一句差别，后来成了她全部命运的理由。"
+identity:
+  lineage:
+    - { id: monster }
+  camp:
+    - { id: wild }
+  realm:
+    - { id: beyond, note: 神谱作环海之外、近黑夜之地 }
+narrative:
+  - text: 神谱把戈耳工排在刻托与福耳库斯的名下：斯忒诺、欧律阿勒、梅杜莎。前两位不老不死，只有梅杜莎被写成「遭了不幸的命运」——她会死。
+    refs: [theogony]
+    at: { theogony: "270–294" }
+  - text: 同段说她躺在春天的花丛里，与「黑发的那一位」同宿；随后一句就跳到珀耳修斯斩下她的头。从她颈上生出克律萨俄耳与飞马珀伽索斯，前者持金剑，后者飞上奥林帕斯，替宙斯运送雷霆。
+    refs: [theogony]
+    at: { theogony: "270–294" }
+  - text: 《书库》补了前面的路：珀耳修斯先找到共用一只眼睛和一颗牙齿的格赖埃三姐妹，逼她们指路，再从宁芙手中取得飞鞋与革囊，凭雅典娜的盾看清她的位置，趁镜像下手。
+    refs: [library]
+    at: { library: "2" }
+  - text: 她死后仍有余威：赫拉克勒斯下冥界取克尔柏洛斯时，众魂四散，只有墨勒阿格洛斯与戈耳工没躲；他拔剑就砍，被赫耳墨斯拦住，告诉他那只是一具空影。
+    refs: [library]
+    at: { library: "2" }
+variants:
+  - claim: 「谁看她谁就变成石头」，在荷马与赫西俄德里没有写成这样。神谱只说珀耳修斯斩了她的头；把石化的眼力归给她，是后来才铺开的一层。
+    refs: [theogony, metamorphoses]
+    at: { theogony: "270–294", metamorphoses: "4" }
+  - claim: 奥维德另给了一套前情：她在雅典娜的神殿里被波赛顿所侵，女神因此把她的头发变成蛇。这一层不见于希腊古风期。
+    refs: [metamorphoses]
+    at: { metamorphoses: "4" }
+  - claim: 神谱没有说她的父母是谁，只把她列在刻托与福耳库斯的子女之中；后世另有一说，把她的父母换成堤丰与艾奇德娜。
+    refs: [theogony]
+    at: { theogony: "270–294" }
+relations:
+  - { target: poseidon, kind: 情爱, detail: 神谱只说「与黑发的那一位同宿」, refs: [theogony] }
+  - { target: athena, kind: 敌对, detail: 珀耳修斯持其盾、得她指引而斩之, refs: [library] }
+kinship:
+  - relation: 姐妹
+    name: 斯忒诺
+    name_original: Sthenno
+    note: 戈耳工之一，不老不死。
+    refs: [theogony]
+  - relation: 姐妹
+    name: 欧律阿勒
+    name_original: Euryale
+    note: 戈耳工之一，不老不死。
+    refs: [theogony]
+  - relation: 子
+    name: 克律萨俄耳
+    name_original: Chrysaor
+    note: 自她被斩的颈中生出的持金剑者，革律翁之父。
+    refs: [theogony]
+  - relation: 子
+    name: 珀伽索斯
+    name_original: Pegasus
+    note: 与克律萨俄耳同出，飞上奥林帕斯替宙斯运雷。
+    refs: [theogony]
+legacy:
+  - 后世艺术把她画成蛇发的女面，用作辟邪的标记；这一层衍生与「石化」的说法一起长大，与原典的叙述并不同步。
+adaptations:
+  - work: "《刺客信条：奥德赛》（Ubisoft，2018）"
+    refs: [ac-odyssey]
+    kind: 游戏
+    portrayal: "在莱斯博斯岛西南的石化谷一处伊述遗迹里，由「石园求爱」这条任务引来；她能石化玩家，还会召起石像战士，是当时等级上限一档的硬仗。"
+    divergences:
+      - "「看见她就变成石头」这一层，原典里的荷马与赫西俄德都没写，出处是奥维德一系的改写；游戏采用的是后者。"
+      - "原典只交代珀耳修斯借镜像斩下她的头，没有正面交手；游戏把这一场做成必须面对面打的仗。"
+      - "原典的戈耳工住在环海之外、近黑夜之地；游戏把她安置在爱琴海的一座岛上，地界整个换了。"

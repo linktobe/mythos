@@ -1,0 +1,69 @@
+id: typhon
+pantheon: greco-roman
+entity_type: 异兽
+name: 堤丰
+name_original: "Typhon"
+aliases: [堤福俄斯, 提丰, 泰风]
+summary: 盖亚所生的最后一个孩子，百头喷火，与宙斯争夺天下。
+role:
+  title: "最后一位挑战者"
+  brief: "泰坦战败之后，地母又生了他。原典把他说成差一点就统治神与人的那个；宙斯赢了，但赢得很吃力。后世把火山与飓风归到他名下。"
+identity:
+  lineage:
+    - { id: monster }
+  camp:
+    - { id: hostile }
+  realm:
+    - { id: beyond, note: 一说压在火山之下 }
+narrative:
+  - text: 神谱把他排在泰坦战败之后：盖亚与塔尔塔罗斯所生，是她的幼子。肩上一百个蛇头，眼里喷火，每个头都能发出不同的声音——有时是神听得懂的话，有时是牛吼、狮吼、犬吠，有时只是蛇的嘶声。
+    refs: [theogony]
+    at: { theogony: "820–868" }
+  - text: 他几乎赢了。「若不是众神与凡人之父眼快」，那天他就会统治不死者与有死者。宙斯用雷霆与他硬拼，火烧到海上，大地呻吟，奥林帕斯在两位的脚下摇晃。
+    refs: [theogony]
+    at: { theogony: "820–868" }
+  - text: 神谱接着交代他的下场：被打败之后扔进塔尔塔罗斯。同卷末尾又说，从他那几场风暴里生出刮倒船帆的狂风——不是温和的南风北风，是专事破坏的那几种。
+    refs: [theogony]
+    at: { theogony: "869–880" }
+  - text: 伊利亚特只留了一句：宙斯发怒、鞭打大地的时候，大地在众军脚下呻吟，就像压在阿里米人地界里堤福俄斯身上那样——「据说他躺在那儿」。荷马没有写那片地在何处，也没有写他的下场。
+    refs: [iliad]
+    at: { iliad: "2" }
+variants:
+  - claim: 神谱说他是盖亚与塔尔塔罗斯之子；《书库》则把他算进巨人之战那一批，说他比所有盖亚所生的人都高大。两处不是一回事。
+    refs: [theogony, library]
+    at: { theogony: "820–868", library: "1" }
+  - claim: 「堤丰」与「堤福俄斯」是同一个名字的两种写法，古人自己就混用；后世又分出「堤丰」（父）与「厄喀德那」（母）为一对配偶，这一层配对在神谱里已经有了。
+    refs: [theogony]
+    at: { theogony: "306–332" }
+relations:
+  - { target: zeus, kind: 敌对, detail: 争夺神界统治权，败后被雷霆击落, refs: [theogony] }
+  - { target: echidna, kind: 婚姻, detail: 与她生下克尔柏洛斯、海德拉等, refs: [theogony] }
+  - { target: cerberus, kind: 亲缘, detail: 父子, refs: [theogony] }
+  - { target: hydra, kind: 亲缘, detail: 父女, refs: [theogony] }
+  - { target: chimera, kind: 亲缘, detail: 父女, refs: [theogony] }
+kinship:
+  - relation: 母
+    name: 盖亚
+    name_original: Gaia
+    note: 神谱作盖亚与塔尔塔罗斯所生，是她最小的孩子。
+    refs: [theogony]
+  - relation: 父
+    name: 塔尔塔罗斯
+    name_original: Tartarus
+    note: 深渊本身，与盖亚同为他这一支的来源。
+    refs: [theogony]
+  - relation: 子
+    name: 俄耳托斯
+    name_original: Orthus
+    note: 双头犬，替革律翁看牛，被赫拉克勒斯所杀。
+    refs: [theogony]
+legacy:
+  - 火山口冒烟的地方，古人常说是他被压在底下；埃特纳火山在罗马诗里就归到他名下。这一层说法不出自荷马与赫西俄德。
+adaptations:
+  - work: "《哈迪斯 II》（Supergiant Games，2025）"
+    refs: [hades-game-2]
+    kind: 游戏
+    portrayal: "奥林帕斯山顶的最终一战，他被称作「众妖之父」，是主角一路打上去要收的那一位。"
+    divergences:
+      - "原典里他与宙斯争的是天下的归属，而且差一点赢；游戏把最终一战放在奥林帕斯山顶，正接上「一路打上山」这条路，输赢也照原典。"
+      - "原典的他是提坦战败之后才登场的地母幼子；游戏把他排在最末，前面挡路的都是他的后代。"

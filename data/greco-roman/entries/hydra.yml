@@ -1,0 +1,58 @@
+id: hydra
+pantheon: greco-roman
+entity_type: 异兽
+name: 海德拉
+name_original: "Hydra"
+aliases: [勒拿九头蛇, 许德拉, 九头蛇]
+summary: 勒拿沼泽里的多头水蛇，赫拉克勒斯的第二件差事。
+role:
+  title: "砍不尽的那一头"
+  brief: "它的麻烦不在凶，在砍了还会长。原典把这个门槛设得很硬：赫拉克勒斯不是打赢了它，是学会了一次性处理掉它——连同它身边那个帮忙的人。"
+identity:
+  lineage:
+    - { id: monster }
+  camp:
+    - { id: wild }
+  realm:
+    - { id: earth, note: 勒拿的沼泽 }
+narrative:
+  - text: 神谱把她排在艾奇德娜与堤丰的子女里，只说一句：勒拿的九头蛇，白臂的赫拉养大的，因为她对赫拉克勒斯怀着说不出的怒气。同段还交代，斩它的是赫拉克勒斯与伊俄拉俄斯，凭雅典娜的安排。
+    refs: [theogony]
+    at: { theogony: "306–332" }
+  - text: 《书库》给的是细节：它养在勒拿的沼泽里，常出到平原上伤牲畜与庄稼。身子巨大，九个头，其中八个会死，中间那个不死。
+    refs: [library]
+    at: { library: "2" }
+  - text: 赫拉克勒斯驾着伊俄拉俄斯赶的车到了那里，用火箭逼它出洞，再近身扭住。每打掉一个头，原处长出两个；一只大蟹爬来夹他的脚，他先把蟹踩死。最后伊俄拉俄斯点着旁边的林子，用烧着的木柴烙住断颈的根，头才不再生。
+    refs: [library]
+    at: { library: "2" }
+  - text: 剩下那颗不死的头，他砍下来埋了，压上一块大石，位置在勒拿通往埃莱乌斯的大道旁；随后剖开蛇身，把箭浸进它的胆汁。欧律斯透斯却不肯把这一件算进十件里，理由是他借了伊俄拉俄斯的手。
+    refs: [library]
+    at: { library: "2" }
+variants:
+  - claim: 头数两本书对不齐：神谱只称它是「勒拿的水蛇」，没有给数字；《书库》写明九个，八个会死，中间那个不死。中文通行的「九头蛇」这个数，出处是后者。
+    refs: [theogony, library]
+    at: { theogony: "306–332", library: "2" }
+  - claim: 它与赫拉克勒斯的仇不是它自己结的：神谱明说赫拉养大它是为了对付赫拉克勒斯，它的凶名一半是替神出气。
+    refs: [theogony]
+    at: { theogony: "306–332" }
+relations:
+  - { target: echidna, kind: 亲缘, detail: 母女, refs: [theogony] }
+  - { target: typhon, kind: 亲缘, detail: 父女, refs: [theogony] }
+  - { target: cerberus, kind: 亲缘, detail: 同胞, refs: [theogony] }
+  - { target: chimera, kind: 亲缘, detail: 同胞, refs: [theogony] }
+kinship:
+  - relation: 兄弟
+    name: 俄耳托斯
+    name_original: Orthus
+    note: 双头犬，与它同母。
+    refs: [theogony]
+legacy:
+  - 后世凡是「砍掉一个长出两个」的困境，都以它的名字作比；这一层比喻比原典的描述传得更远。
+adaptations:
+  - work: "《哈迪斯》（Supergiant Games，2020）"
+    refs: [hades-game]
+    kind: 游戏
+    portrayal: "阿斯福德罗斯那一区的守卫是一具只剩骨头的九头蛇，玩家按原名缩写叫它「勒尼」，打起来会一节节重生。"
+    divergences:
+      - "原典的它是勒拿沼泽里活生生的水蛇，赫拉养大的；游戏把它做成骨龙式的区域守卫，血肉那一层换成骨头。"
+      - "原典里砍一个长两个是它最要命的特性，靠火烙断颈才压得住；游戏保留了「会再长」，但玩家靠的是打断的时机，不是火。"

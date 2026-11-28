@@ -1,0 +1,64 @@
+id: minotaur
+pantheon: greco-roman
+entity_type: 异兽
+name: 米诺陶洛斯
+name_original: "Minotaur"
+aliases: [弥诺陶洛斯, 牛头怪, 米诺陶]
+summary: 克里特迷宫里的牛头人身怪，雅典人每九年送一次童男童女喂它。
+role:
+  title: "迷宫里那一个"
+  brief: "它自己不作恶：投进来的祭品是别人替它备的。真正把它关起来的，是米诺斯。"
+identity:
+  lineage:
+    - { id: monster }
+  camp:
+    - { id: wild, note: 被米诺斯囚于克里特 }
+  realm:
+    - { id: earth, note: 克里特岛的迷宫 }
+narrative:
+  - text: 《书库》先交代它的出生：米诺斯的妻子帕西淮被波赛顿送来的一头公牛所动，代达罗斯替她做了一具木牛，她因此生下阿斯忒里俄斯——世称米诺陶洛斯，脸是牛，其余是人。
+    refs: [library]
+    at: { library: "3" }
+  - text: 米诺斯按神谕把它关起来，关在代达罗斯造的迷宫里——那座「绕进去就绕不出来」的宫室。同书说，迷宫的样子与米诺陶洛斯的故事，都要等到讲忒修斯时才有下文。
+    refs: [library]
+    at: { library: "3" }
+  - text: 下文在摘要里：雅典定期送祭品过去，忒修斯是第三批里被选上的人，也有说他自愿报名。到了克里特，米诺斯的女儿阿里阿德涅给他一条线，他才走得回来。
+    refs: [library-epitome]
+    at: { library-epitome: "1" }
+variants:
+  - claim: 它的名字是两块拼起来的：「米诺斯」加「公牛」。「米诺陶洛斯」严格说只是「米诺斯家的牛」，不是先有这一个物种的名字。
+    refs: [library]
+    at: { library: "3" }
+  - claim: 它到底是牛头人身还是牛身人面，原典只给了大略：「脸是牛，其余是人」；后世的图像与转述在两者之间来回摆。
+    refs: [library]
+    at: { library: "3" }
+relations:
+  - { target: poseidon, kind: 亲缘, detail: 那头公牛出自波赛顿, refs: [library] }
+kinship:
+  - relation: 母
+    name: 帕西淮
+    name_original: Pasiphae
+    note: 米诺斯之妻，与公牛生下它。
+    refs: [library]
+  - relation: 父
+    name: 克里特公牛
+    name_original: Cretan Bull
+    note: 波赛顿送来、本应献祭的那一头。
+    refs: [library]
+legacy:
+  - 迷宫与牛头人后来各自独立流传；现代语境里「迷宫」几乎总与它一同出现。
+adaptations:
+  - work: "《刺客信条：奥德赛》（Ubisoft，2018）"
+    refs: [ac-odyssey]
+    kind: 游戏
+    portrayal: "在克里特岛墨萨拉的克诺索斯宫下方，顺着迷宫的深处才能找到它；靠一条从男孩阿尔多斯接来的任务线开锁。"
+    divergences:
+      - "原典的迷宫是代达罗斯造的囚所，专为关它；游戏把它连同迷宫一起做成一处遗迹关卡，宫室之下另有一层。"
+      - "原典里它是被投食的祭品吞噬者，自己不作恶；游戏把它做成守在深处的敌手，等人上门。"
+  - work: "《哈迪斯》（Supergiant Games，2020）"
+    refs: [hades-game]
+    kind: 游戏
+    portrayal: "以「阿斯忒里俄斯」之名登场，与忒修斯搭档镇守厄瑞西翁，两个共用一场战斗。"
+    divergences:
+      - "原典里它是被忒修斯杀死的；游戏把杀它的人与它摆成并肩的一对，这是全作最彻底的一处改写。"
+      - "原典的它是米诺斯家的囚徒；游戏让它成了极乐境里的一位守卫，身份从囚徒翻成守门人。"

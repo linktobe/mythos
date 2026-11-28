@@ -1,0 +1,87 @@
+id: cyclops
+pantheon: greco-roman
+entity_type: 异兽
+name: 独眼巨人
+name_original: "Cyclops"
+aliases: [库克洛普斯, 塞克洛普斯, 圆目巨人]
+summary: 额心长着一只眼的一族；神谱里替宙斯锻雷的三个匠人，与奥德修斯在洞里遇见的那个牧人。
+role:
+  title: "额上一只眼"
+  brief: "希腊人把「圆眼」当成他们的名字。同一个词底下压着两种来历：赫西俄德笔下替众神锻雷的三兄弟，与荷马笔下的牧人。后世把他们合成一族，原典没有这么说。"
+identity:
+  lineage:
+    - { id: monster }
+  camp:
+    - { id: wild, note: 三兄弟曾助宙斯，波吕斐摩斯则无党 }
+  realm:
+    - { id: earth, note: 一说居海岛与西西里 }
+narrative:
+  - text: 神谱把他们排在乌拉诺斯与盖亚的子女里：布戎忒斯、斯忒洛佩斯、阿尔革斯三兄弟。除额心只有一只眼睛，其余与神无异；他们替宙斯造了雷霆与闪电。
+    refs: [theogony]
+    at: { theogony: "139–146" }
+  - text: 《书库》交代了他们的下场：阿波罗因儿子阿斯克勒庇俄斯被雷击而死，迁怒于造雷的人，把这几个库克洛普斯杀了。此后雷是谁造的，书里不再提。
+    refs: [library]
+    at: { library: "3" }
+  - text: 荷马笔下的那个是另一路：波吕斐摩斯，波赛顿与宁芙托俄萨之子，住在海岛的洞里牧羊，不耕地，也不敬神。奥德修斯带人进了他的洞，他随口问一句来路，随后抓过两个人吃了。
+    refs: [odyssey]
+    at: { odyssey: "9" }
+  - text: 奥德修斯把他灌醉，问他叫什么，他答「无人」；趁他睡熟，用烧红的木桩刺瞎那只眼。他喊痛，邻人隔洞相问，他只答「无人害我」，于是没人来救。
+    refs: [odyssey]
+    at: { odyssey: "9" }
+  - text: 船开出去一段，奥德修斯忍不住扬声报了真名；波吕斐摩斯求父亲降罪，波赛顿自此在海上与他为难了十年。一句自报家门，代价是十年归路。
+    refs: [odyssey]
+    at: { odyssey: "9" }
+variants:
+  - claim: 神谱的三兄弟与荷马的牧人同名而不同事：前者是匠人，替众神造器；后者是牧人，独居洞穴。把两者并成一个「种族」，是后来的整理。
+    refs: [theogony, odyssey]
+    at: { theogony: "139–146", odyssey: "9" }
+profiles:
+  - name: 波吕斐摩斯
+    name_original: Polyphemus
+    story: 波赛顿与托俄萨之子，海岛上的独眼牧人。奥德修斯刺瞎他后，他在洞口一块块摸羊背放羊出去，人藏在羊肚皮下混出洞去；他则求父亲降罚。
+    refs: [odyssey]
+  - name: 布戎忒斯
+    name_original: Brontes
+    story: 神谱点名的三兄弟之一，与斯忒洛佩斯、阿尔革斯一同替宙斯锻造雷霆。
+    refs: [theogony]
+  - name: 斯忒洛佩斯
+    name_original: Steropes
+    story: 同上。三兄弟的名字在神谱里只出现一次，此后各自没有独立的故事。
+    refs: [theogony]
+  - name: 阿尔革斯
+    name_original: Arges
+    story: 同上。三兄弟中名字含「闪亮」之意的那一个，后世注家常据此把他说成闪电的化身。
+    refs: [theogony]
+relations:
+  - { target: zeus, kind: 从属, detail: 为其锻造雷霆, refs: [theogony] }
+  - { target: odysseus, kind: 敌对, detail: 独眼被刺瞎, refs: [odyssey] }
+  - { target: poseidon, kind: 亲缘, detail: 波吕斐摩斯为其子, refs: [odyssey] }
+kinship:
+  - relation: 母
+    name: 盖亚
+    name_original: Gaia
+    note: 神谱作乌拉诺斯与盖亚所生。
+    refs: [theogony]
+  - relation: 父
+    name: 乌拉诺斯
+    name_original: Uranus
+    note: 同上。
+    refs: [theogony]
+legacy:
+  - 地中海沿岸那些不用灰浆的巨石墙，近代旅行者称「库克洛普斯式砌法」，说的正是这种得由巨人来搬的石头；荷马与赫西俄德都没有把筑墙派给他们。
+adaptations:
+  - work: "《刺客信条：奥德赛》（Ubisoft，2018）"
+    refs: [ac-odyssey]
+    kind: 游戏
+    portrayal: "本篇的伊述神器任务线「两个世界之间」里，四只神话生物各守一件神器；独眼巨人守的是提斯维岛上的那一件，入门任务叫「人群中有一位神」，攻略资料把它记作布戎忒斯。"
+    divergences:
+      - "原典的三兄弟是替宙斯锻雷的匠人，没有一个守过洞窟；游戏把其中一个的名字安在一头被关在遗迹里的独眼巨人身上。"
+      - "原典里库克洛普斯是神族出身；游戏把这一族接进「伊述」——被后人当作神的史前文明，独眼成了遗迹守卫的标记。"
+      - "原典的波吕斐摩斯是被刺瞎的受害者；游戏里这一只先是守门的敌手，打完才有话说。"
+  - work: "《哈迪斯 II》（Supergiant Games，2025）"
+    refs: [hades-game-2]
+    kind: 游戏
+    portrayal: "波吕斐摩斯在地表路线的第一区艾菲拉城当守卫，是打通该区必须过的一道关。"
+    divergences:
+      - "原典里他被刺瞎之后求父亲降罚，此后再没有自己的场面；续作把他放回一线，身份从受害者变成关卡的门槛。"
+      - "原典的牧人独居海岛洞穴，与城邦无关；游戏把他摆在城里当守卫，牧羊人那一层整个抹掉了。"

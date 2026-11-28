@@ -127,6 +127,11 @@
       desc: 奥林帕斯与更早的一代
       route: ''
       types: [神祇, 泰坦, 宁芙]
+    - key: beast
+      label: 异兽
+      desc: 神与人之外的另一群生民
+      route: shou
+      types: [异兽]
     - key: legend
       label: 英雄传说
       desc: 归乡、远征与神人之子
@@ -144,6 +149,7 @@
       types: [地区]
   order:
     entry: [zeus, hera, poseidon, demeter, hades, persephone, athena, apollo, artemis, ares, aphrodite, hephaestus, hermes, hestia, dionysus]
+    beast: [typhon, echidna, medusa, cyclops, cerberus, hydra, chimera, sphinx, sirens, minotaur]
     legend: [odysseus]
     group: [dodekatheon]
     place: [underworld]

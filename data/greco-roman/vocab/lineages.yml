@@ -47,6 +47,13 @@
   parent: mortals
   note: 纯人世血统。王族与英雄多半是这一类，只是家谱上远挂一位神。
 
+- id: monster
+  zh: 异类
+  en: Monsters
+  pantheon: greco-roman
+  parent: theoi
+  note: 原典里没有「怪物」这一族：它们各有生成，或出自神与巨兽，或出自地母。此栏只作归类，不含血统上的统一说法。
+
 # ── 上层归类（abstract，只作 parent 的落点，不能写进词条的 identity）──
 
 - id: theoi

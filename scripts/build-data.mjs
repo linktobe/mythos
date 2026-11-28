@@ -136,6 +136,14 @@ function makeEntrySchema(p) {
       aliases: z.array(z.string()).default([]),
       summary: z.string().min(1),
       role: z.object({ title: z.string().min(2), brief: z.string().min(10) }),
+      // 罗马对应：希腊神祇在罗马神话里的那一版。合体系并收，不单列词条。
+      counterpart: z
+        .object({
+          name: z.string().min(1),
+          name_original: z.string().min(1),
+          note: z.string().optional(),
+        })
+        .optional(),
       // 特别标记：本条目主线所据的那一部典籍（如奥德修斯之于《奥德赛》）。
       // 只在「全条主要靠这一部」时才填，避免每页都挂一块。
       spotlight: z
@@ -491,7 +499,7 @@ for (const p of pantheons) {
       pantheon_zh: p.zh,
       name: e.name,
       name_original: e.name_original,
-      aliases: e.aliases,
+      aliases: [...e.aliases, ...(e.counterpart ? [e.counterpart.name] : [])],
       entity_type: e.entity_type,
       url: `/${p.id}/entry/${e.id}/`,
     });

@@ -156,6 +156,14 @@ const crumbs = [
     <header class="entry-head reveal">
       <h1>{entry.name}<span class="etype">{entry.entity_type}</span><span class="tierbadge">{tierBadge}</span></h1>
       <p class="aliases"><span class="original">{entry.name_original}</span>{entry.aliases.length > 0 && <>　又称：{entry.aliases.join(' · ')}</>}</p>
+      {entry.counterpart && (
+        <p class="counterpart">
+          <span class="cp-label">罗马对应</span>
+          <span class="cp-name">{entry.counterpart.name}</span>
+          <span class="cp-original">{entry.counterpart.name_original}</span>
+          {entry.counterpart.note && <span class="cp-note">{entry.counterpart.note}</span>}
+        </p>
+      )}
       <p class="summary">{entry.summary}</p>
 
       <div class="role reveal">
